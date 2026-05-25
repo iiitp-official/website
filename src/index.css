@@ -17,3 +17,13 @@
     @apply font-serif;
   }
 }
+
+/* Hide Scrollbar */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}

@@ -87,21 +87,32 @@ const Navbar = () => {
       {/* Row 1: Logo, Name, Icons */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-blue-800/50 dark:border-gray-800">
         <div className="flex justify-between items-center py-3 md:py-4">
-          <Link to="/" className="flex items-center space-x-4">
-            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center shrink-0">
+          <Link to="/" className="flex items-start space-x-3">
+            <div className="w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden flex items-center justify-center shrink-0">
               <img
                 src="/iiitp-logo.png"
                 alt="IIIT Pune Logo"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="text-white dark:text-text-dark flex flex-col justify-center">
-              <h1 className="text-lg md:text-2xl font-bold font-serif leading-tight">
+
+            <div className="text-white dark:text-text-dark leading-tight">
+              <h1 className="text-xl md:text-2xl font-bold font-serif">
                 Indian Institute of Information Technology Pune
               </h1>
-              <h2 className="text-sm md:text-base font-medium opacity-90 font-serif">
-                भारतीय सूचना प्रौद्योगिकी संस्थान पुणे
+
+              <h2 className="text-sm md:text-2xl font-medium opacity-90 font-serif mt-1">
+                भारतीय सूचना प्रौद्योगिकी संस्थान, पुणे
               </h2>
+
+              <p className="text-[10px] md:text-sm opacity-80 mt-1">
+                (An Institute of National Importance)
+              </p>
+
+              <p className="text-[8px] md:text-xs opacity-70 mt-0.5">
+                Gat No. 5 & 6, Village Nanoli-Tathawade, Tal. Maval, Pune -
+                412106
+              </p>
             </div>
           </Link>
 
