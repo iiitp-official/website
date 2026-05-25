@@ -13,9 +13,9 @@ const TopBar = () => {
         </div>
         <div className="flex items-center space-x-4 text-text dark:text-text-dark">
           <div className="flex items-center space-x-2">
-            <a href="#" aria-label="Facebook" className="hover:text-accent dark:hover:text-accent-dark transition-colors"><FacebookIcon size={14} /></a>
-            <a href="#" aria-label="Twitter" className="hover:text-accent dark:hover:text-accent-dark transition-colors"><TwitterIcon size={14} /></a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-accent dark:hover:text-accent-dark transition-colors"><LinkedinIcon size={14} /></a>
+            <a href="#" aria-label="Facebook" className="hover:text-accent dark:hover:text-accent-dark transition-colors"><FacebookIcon size={16} /></a>
+            <a href="#" aria-label="Twitter" className="hover:text-accent dark:hover:text-accent-dark transition-colors"><TwitterIcon size={16} /></a>
+            <a href="#" aria-label="LinkedIn" className="hover:text-accent dark:hover:text-accent-dark transition-colors"><LinkedinIcon size={16} /></a>
           </div>
           <div className="h-3 w-px bg-gray-300 dark:bg-gray-700"></div>
           <div className="flex items-center space-x-2">

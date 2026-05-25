@@ -24,6 +24,7 @@ const Navbar = () => {
   });
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const location = useLocation();
 
   useEffect(() => {
@@ -84,7 +85,7 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full shadow-md bg-primary dark:bg-surface-dark transition-colors duration-200">
-      {/* Row 1: Logo, Name, Icons */}
+      {/* Row 1: Logo, Name, Icons, and Search */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-blue-800/50 dark:border-gray-800">
         <div className="flex justify-between items-center py-3 md:py-4">
           <Link to="/" className="flex items-start space-x-3">
