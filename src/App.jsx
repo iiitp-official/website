@@ -27,7 +27,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-bg text-text dark:bg-bg-dark dark:text-text-dark font-sans transition-colors duration-200">
-        <TopBar />
+        {/* <TopBar /> */}
         <Navbar />
         <main className="flex-grow">
           <Routes>

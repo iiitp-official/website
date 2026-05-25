@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroCarousel from '../components/home/HeroCarousel';
-import StatsBar from '../components/home/StatsBar';
 import LatestNews from '../components/home/LatestNews';
 import InfoCards from '../components/home/InfoCards';
 import InformationDesk from '../components/home/InformationDesk';
@@ -11,7 +10,6 @@ const HomePage = () => {
   return (
     <main className="w-full">
       <HeroCarousel />
-      <StatsBar />
       <LatestNews />
       <InfoCards />
       <InformationDesk />
