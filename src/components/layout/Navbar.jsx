@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { Search, Sun, Moon, Menu, X, ChevronDown, BookOpen } from "lucide-react";
+import {
+  Search,
+  Sun,
+  Moon,
+  Menu,
+  X,
+  ChevronDown,
+  BookOpen,
+} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -8,7 +16,8 @@ const Navbar = () => {
     if (typeof window !== "undefined") {
       return (
         localStorage.getItem("darkMode") === "true" ||
-        (!("darkMode" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        (!("darkMode" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
       );
     }
     return false;
@@ -63,7 +72,9 @@ const Navbar = () => {
   // Helper for active styling
   const navLinkClass = ({ isActive }) =>
     `relative py-2 px-3 text-sm font-medium transition-colors duration-200 group flex items-center ${
-      isActive ? "text-accent-dark" : "text-white hover:text-accent-dark dark:text-gray-200 dark:hover:text-accent-dark"
+      isActive
+        ? "text-accent-dark"
+        : "text-white hover:text-accent-dark dark:text-gray-200 dark:hover:text-accent-dark"
     }`;
 
   const navLinkStyle = ({ isActive }) => (
@@ -78,9 +89,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-blue-800/50 dark:border-gray-800">
         <div className="flex justify-between items-start md:items-center py-3 md:py-4 gap-4 flex-col md:flex-row">
           <Link to="/" className="flex items-center space-x-4">
-            <div className="w-12 h-12 md:w-16 md:h-16 bg-white rounded-full flex items-center justify-center p-1 overflow-hidden shrink-0 shadow-sm">
-              {/* Replace BookOpen with actual img tag when logo is available */}
-              <BookOpen className="text-primary w-8 h-8" />
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center shrink-0">
+              <img
+                src="/iiitp-logo.png"
+                alt="IIIT Pune Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="text-white dark:text-text-dark flex flex-col justify-center">
               <h1 className="text-lg md:text-2xl font-bold font-serif leading-tight">
@@ -92,93 +106,31 @@ const Navbar = () => {
             </div>
           </Link>
 
-          {/* Control Panel: Dark Mode, Language, Text Size, and Search */}
-          <div className="flex flex-col gap-3 w-full md:w-auto">
-            {/* Top Row: Buttons */}
-            <div className="flex items-center gap-2 md:gap-3">
-              {/* Dark Mode Toggle */}
-              <button
-                onClick={toggleDarkMode}
-                className="flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
-                aria-label="Toggle dark mode"
-                title={isDark ? "Light Mode" : "Dark Mode"}
-              >
-                {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              </button>
-
-              {/* Vertical Divider */}
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600"></div>
-
-              {/* Language Selector */}
-              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                <button
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
-                  title="English"
-                >
-                  EN
-                </button>
-                <span className="text-gray-400 dark:text-gray-500 text-xs font-light">|</span>
-                <button
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
-                  title="Hindi"
-                >
-                  हिं
-                </button>
-              </div>
-
-              {/* Vertical Divider */}
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600"></div>
-
-              {/* Text Size Selector */}
-              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                <button
-                  className="px-1.5 py-0.5 rounded text-xs font-light text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Decrease Text Size"
-                >
-                  A<span className="text-xs">-</span>
-                </button>
-                <button
-                  className="px-1.5 py-0.5 rounded text-xs font-medium text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Default Text Size"
-                >
-                  A
-                </button>
-                <button
-                  className="px-1.5 py-0.5 rounded text-sm font-bold text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Increase Text Size"
-                >
-                  A<span className="text-xs">+</span>
-                </button>
-              </div>
-
-              {/* Mobile Menu Button */}
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200"
-                aria-label="Toggle menu"
-              >
-                {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-              </button>
-            </div>
-
-            {/* Bottom Row: Search Bar */}
-            <div className="hidden md:flex items-center gap-1.5">
-              <button
-                className="flex items-center justify-center p-2 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110 flex-shrink-0"
-                aria-label="Search"
-                title="Search"
-              >
-                <Search className="w-4 h-4" />
-              </button>
-              <input
-                type="text"
-                placeholder="Search..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
-                className="px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 dark:placeholder-gray-500 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none transition-all duration-200 text-sm min-w-[160px]"
-              />
-            </div>
+          <div className="flex items-center space-x-4">
+            <button className="text-white hover:text-accent-dark dark:text-gray-300 dark:hover:text-white transition-colors hidden md:block">
+              <Search className="w-5 h-5" />
+            </button>
+            <button
+              onClick={toggleDarkMode}
+              className="text-white hover:text-accent-dark dark:text-gray-300 dark:hover:text-white transition-colors"
+              aria-label="Toggle dark mode"
+            >
+              {isDark ? (
+                <Sun className="w-5 h-5" />
+              ) : (
+                <Moon className="w-5 h-5" />
+              )}
+            </button>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-white hover:text-accent-dark dark:text-gray-300 transition-colors"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
           </div>
         </div>
       </div>
@@ -191,7 +143,9 @@ const Navbar = () => {
               {({ isActive }) => (
                 <>
                   {link.name}
-                  {link.hasDropdown && <ChevronDown className="w-4 h-4 ml-1 opacity-70" />}
+                  {link.hasDropdown && (
+                    <ChevronDown className="w-4 h-4 ml-1 opacity-70" />
+                  )}
                   {navLinkStyle({ isActive })}
                 </>
               )}
@@ -236,7 +190,9 @@ const Navbar = () => {
                     >
                       <div className="flex items-center justify-between">
                         {link.name}
-                        {link.hasDropdown && <ChevronDown className="w-4 h-4 opacity-70" />}
+                        {link.hasDropdown && (
+                          <ChevronDown className="w-4 h-4 opacity-70" />
+                        )}
                       </div>
                     </NavLink>
                   ))}
