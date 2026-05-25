@@ -1,36 +1,36 @@
 [
   {
     "id": 1,
-    "title": "Academic Calendar for Odd Semester 2024-25",
-    "date": "2024-07-15",
+    "title": "Notice regarding Mid-Semester Examination Schedule for Even Semester 2024-25",
+    "date": "2025-05-20",
     "category": "Academic",
     "link": "#"
   },
   {
     "id": 2,
-    "title": "Revised Fee Structure for B.Tech Batch 2024",
-    "date": "2024-06-20",
-    "category": "Administration",
+    "title": "Extension of last date for fee payment (B.Tech 3rd Year)",
+    "date": "2025-05-18",
+    "category": "Administrative",
     "link": "#"
   },
   {
     "id": 3,
-    "title": "Notice regarding Hostel Accommodation for First Year Students",
-    "date": "2024-07-25",
-    "category": "Hostel",
+    "title": "List of shortlisted candidates for PhD Interview (CSE Dept)",
+    "date": "2025-05-15",
+    "category": "Admissions",
     "link": "#"
   },
   {
     "id": 4,
-    "title": "Call for Applications: Summer Internship Program 2025",
-    "date": "2024-11-10",
-    "category": "Research",
-    "link": "#"
+    "title": "Invitation for Quotations: Purchase of Lab Equipment (Networking Lab)",
+    "date": "2025-05-10",
+    "category": "Tender",
+    "link": "/e-tender"
   },
   {
     "id": 5,
-    "title": "Holiday declared on occasion of Diwali",
-    "date": "2024-10-30",
+    "title": "Circular: Observance of Anti-Terrorism Day on 21st May",
+    "date": "2025-05-08",
     "category": "General",
     "link": "#"
   }
