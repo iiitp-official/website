@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "IIIT Pune hosts Annual Tech Fest 2024",
+    "date": "2024-10-15",
+    "excerpt": "The annual tech fest witnessed participation from over 50 colleges across India.",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "New Research Grant awarded to CSE Department",
+    "date": "2024-09-28",
+    "excerpt": "A prestigious research grant of INR 50 Lakhs was awarded for AI in Healthcare.",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "Placement Drive 2024 achieves 95% success",
+    "date": "2024-08-10",
+    "excerpt": "Top recruiters including Google, Microsoft, and Amazon visited the campus this year.",
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "title": "IIIT Pune signs MoU with International Universities",
+    "date": "2024-07-22",
+    "excerpt": "New collaborative programs and student exchange opportunities are now available.",
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "title": "Workshop on Quantum Computing successfully conducted",
+    "date": "2024-06-05",
+    "excerpt": "Experts from industry and academia led an intensive 3-day workshop for students.",
+    "link": "#"
+  }
+]

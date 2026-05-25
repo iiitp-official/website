@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Academic Calendar for Odd Semester 2024-25",
+    "date": "2024-07-15",
+    "category": "Academic",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "Revised Fee Structure for B.Tech Batch 2024",
+    "date": "2024-06-20",
+    "category": "Administration",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "Notice regarding Hostel Accommodation for First Year Students",
+    "date": "2024-07-25",
+    "category": "Hostel",
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "title": "Call for Applications: Summer Internship Program 2025",
+    "date": "2024-11-10",
+    "category": "Research",
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "title": "Holiday declared on occasion of Diwali",
+    "date": "2024-10-30",
+    "category": "General",
+    "link": "#"
+  }
+]
