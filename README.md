@@ -1,16 +1,73 @@
-# React + Vite
+# Indian Institute of Information Technology Pune (IIITP) Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and highly aesthetic web application built for IIIT Pune—an Institute of National Importance. Designed with a focus on performance, accessibility, and a professional UI/UX that truly represents the institute.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React** (v19)
+- **Vite** (Next Generation Frontend Tooling)
+- **Tailwind CSS v3** (Utility-first CSS framework with full Dark Mode support)
+- **React Router v6** (Declarative routing)
+- **Framer Motion** (Production-ready animation library)
+- **Lucide React** (Beautiful and consistent icons)
+- **Recharts** (Composable charting library)
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dark Mode Support**: Seamless toggle between Light and Dark modes with persistent `localStorage` integration.
+- **Extensive Routing**: Over 15 distinct pages perfectly structured to represent university departments including Academics, Placement, Research, Administration, and Life @ IIITP.
+- **Interactive UI Components**: Includes a 70vh Hero Carousel, animated viewport counters, a scrolling news ticker, tabbed important links, and an interactive Information Desk.
+- **Data Visualizations**: Integrated Recharts for rendering rich placement trends over the years.
+- **Fully Responsive**: A mobile-first design that adapts elegantly to any screen size, complete with an animated slide-down mobile navigation menu.
 
-## Expanding the ESLint configuration
+## 🛠️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Hardikjha09/iiitp-website.git
+   cd iiitp-website
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the local server URL provided in the terminal (typically `http://localhost:5173`).
+
+### Building for Production
+To create a production-ready build, run:
+```bash
+npm run build
+```
+This will compile, minify, and optimize the application into the `dist` folder.
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── home/       # Homepage specific components (HeroCarousel, StatsBar, etc.)
+│   ├── layout/     # Structural layout wrappers (Navbar, TopBar, Footer)
+│   └── shared/     # Reusable UI elements (PageHeader, Breadcrumb, ScrollToTop)
+├── data/           # Mock JSON data for notices and news
+├── pages/          # All individual React Router page components
+├── App.jsx         # Main application routing and core entry point
+└── index.css       # Global styles, fonts, and Tailwind directives
+```
+
+## 🤝 Contribution
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 📝 License
+This project is developed as a demonstration for the Indian Institute of Information Technology Pune.
