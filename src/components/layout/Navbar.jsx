@@ -144,14 +144,14 @@ const Navbar = () => {
     { name: "People", path: "/people", hasDropdown: false },
     { name: "Life@IIITP", path: "/life", hasDropdown: false },
     { name: "Notice", path: "/notice", hasDropdown: false },
-    { name: "E-TENDER", path: "/e-tender", hasDropdown: false },
     { name: "Library", path: "/library", hasDropdown: false },
     { name: "Careers", path: "/careers", hasDropdown: false },
     { name: "Placement", path: "/placement", hasDropdown: false },
+    { name: "Contact Us", path: "/contact", hasDropdown: false },
+    { name: "E-TENDER", path: "/e-tender", hasDropdown: false },
   ];
 
   const secondaryLinks = [
-    // { name: "Contact Us", path: "/contact" },
     // { name: "Fees", path: "/fees" },
     // { name: "NIRF", path: "/nirf" },
     // { name: "Report and Minutes", path: "/#" },
