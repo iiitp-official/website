@@ -645,11 +645,7 @@ const Navbar = () => {
               </div>
 
               {/* Secondary Links */}
-              <div className="border-t border-blue-800/50 dark:border-gray-800 pt-4">
-                <h3 className="text-blue-300 dark:text-blue-400 text-xs font-bold uppercase tracking-wider mb-2 px-3">
-                  Other Links
-                </h3>
-                <div className="flex flex-wrap gap-2 px-3">
+                {/* <div className="flex flex-wrap gap-2 px-3">
                   {secondaryLinks.map((link) => (
                     <NavLink
                       key={link.name}
@@ -665,8 +661,7 @@ const Navbar = () => {
                       {link.name}
                     </NavLink>
                   ))}
-                </div>
-              </div>
+                </div> */}
             </div>
           </motion.div>
         )}
