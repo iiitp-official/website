@@ -26,12 +26,12 @@ const ImportantLinks = () => {
             >
               Downloads
             </button>
-            <button 
+            {/* <button 
               onClick={() => setActiveTab('twitter')}
               className={`flex-shrink-0 text-left px-6 py-5 font-bold font-serif border-b-4 lg:border-b-0 lg:border-l-4 transition-colors whitespace-nowrap text-lg ${activeTab === 'twitter' ? 'text-white border-accent lg:bg-blue-800/50 dark:lg:bg-gray-800' : 'text-blue-300 border-transparent hover:text-white hover:bg-blue-800/20 dark:hover:bg-gray-800/50'}`}
             >
               Twitter / Updates
-            </button>
+            </button> */}
           </div>
 
           {/* Content Area */}
