@@ -14,7 +14,7 @@ const CareersPage = () => {
     <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
       <PageHeader title="Careers @ IIIT Pune" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden">
+        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 w-full overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-primary text-white dark:bg-gray-800">

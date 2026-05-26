@@ -19,7 +19,7 @@ const AdministrationPage = () => {
           <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-6 border-b pb-2 border-gray-200 dark:border-gray-800">
             Board of Governors
           </h2>
-          <div className="overflow-x-auto bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
+          <div className="w-full overflow-x-auto bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-primary text-white dark:bg-gray-800">

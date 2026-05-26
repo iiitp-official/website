@@ -10,7 +10,7 @@ const FeesPage = () => {
           <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-6 border-b pb-2 border-gray-200 dark:border-gray-700">
             B.Tech Program (Per Semester)
           </h2>
-          <div className="overflow-x-auto">
+          <div className="w-full overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-gray-50 dark:bg-gray-800">

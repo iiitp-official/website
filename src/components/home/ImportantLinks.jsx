@@ -35,7 +35,7 @@ const ImportantLinks = () => {
           </div>
 
           {/* Content Area */}
-          <div className="lg:w-3/4 p-6 md:p-10">
+          <div className="w-full lg:w-3/4 p-6 md:p-10 overflow-hidden">
             <AnimatePresence mode="wait">
               {activeTab === 'links' && (
                 <motion.div key="links" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.3 }}>

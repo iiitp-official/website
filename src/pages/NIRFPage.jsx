@@ -15,7 +15,7 @@ const NIRFPage = () => {
             The National Institutional Ranking Framework (NIRF) outlines a methodology to rank institutions across the country. IIIT Pune has been actively participating in the rankings to maintain transparency and showcase its academic and research excellence.
           </p>
 
-          <div className="overflow-x-auto">
+          <div className="w-full overflow-x-auto">
             <table className="w-full text-left border-collapse border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-gray-50 dark:bg-gray-800">

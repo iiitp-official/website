@@ -46,7 +46,7 @@ const AcademicsPage = () => {
               <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-4 border-b pb-2 border-gray-200 dark:border-gray-800">
                 Curriculum Structure (B.Tech CSE - 1st Year)
               </h2>
-              <div className="overflow-x-auto bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
+              <div className="w-full overflow-x-auto bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
                 <table className="w-full text-left border-collapse">
                   <thead>
                     <tr className="bg-gray-50 dark:bg-gray-800/80">

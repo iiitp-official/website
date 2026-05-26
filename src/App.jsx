@@ -26,10 +26,10 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-bg text-text dark:bg-bg-dark dark:text-text-dark font-sans transition-colors duration-200">
-        {/* <TopBar /> */}
+      <div className="w-full overflow-x-hidden min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-bg dark:bg-bg-dark transition-colors duration-200">
+        <TopBar />
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow w-full overflow-x-hidden">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
