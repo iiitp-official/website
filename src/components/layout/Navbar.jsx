@@ -66,6 +66,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearch, setShowSearch] = useState(false);
+  const [openDropdowns, setOpenDropdowns] = useState({});
   const location = useLocation();
 
   useEffect(() => {
@@ -80,9 +81,18 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    setOpenDropdowns({});
   }, [location.pathname]);
 
   const toggleDarkMode = () => setIsDark(!isDark);
+
+  const toggleDropdown = (name, e) => {
+    e.preventDefault();
+    setOpenDropdowns(prev => ({
+      ...prev,
+      [name]: !prev[name]
+    }));
+  };
 
   // Text size control
   const handleTextSize = (action) => {
@@ -96,12 +106,40 @@ const Navbar = () => {
   };
 
   const primaryLinks = [
-    { name: "About Us", path: "/about", hasDropdown: true },
-    { name: "Administration", path: "/administration", hasDropdown: true },
-    { name: "Academics", path: "/academics", hasDropdown: true },
-    { name: "Research", path: "/research", hasDropdown: true },
-    { name: "People", path: "/people", hasDropdown: true },
-    { name: "Life@IIITP", path: "/life", hasDropdown: true },
+    { 
+      name: "About Us", 
+      path: "#", 
+      hasDropdown: true,
+      subLinks: [
+        { 
+          name: "ACT(PPP)", 
+          path: "#", 
+          hasDropdown: true,
+          subLinks: [
+            { name: "Act", path: "/documents/IIIT_PPP_Act.pdf", isExternal: true },
+            { name: "Amendment Act", path: "/documents/iiit_ppp_amendment_act.pdf", isExternal: true },
+          ]
+        },
+        { 
+          name: "STATUTE", 
+          path: "#", 
+          hasDropdown: true,
+          subLinks: [
+            { name: "STATUTE", path: "/documents/IIIT_Pune_Statute_2017 22.10.2018.pdf", isExternal: true },
+            { name: "statute(amendment)", path: "/documents/ammendment.pdf", isExternal: true },
+          ]
+        },
+        { name: "Vision & Mission", path: "/about/vision-mission" },
+        { name: "Director Desk", path: "/about/director-desk" },
+        { name: "Overview", path: "/documents/INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, PUNE20240315-_0.pdf", isExternal: true },
+        { name: "ARIIA Ranking", path: "/documents/ARI-U-0804-1-3.pdf", isExternal: true },
+      ]
+    },
+    { name: "Administration", path: "/administration", hasDropdown: false },
+    { name: "Academics", path: "/academics", hasDropdown: false },
+    { name: "Research", path: "/research", hasDropdown: false },
+    { name: "People", path: "/people", hasDropdown: false },
+    { name: "Life@IIITP", path: "/life", hasDropdown: false },
     { name: "Notice", path: "/notice", hasDropdown: false },
     { name: "E-TENDER", path: "/e-tender", hasDropdown: false },
     { name: "Library", path: "/library", hasDropdown: false },
@@ -252,21 +290,21 @@ const Navbar = () => {
               {/* Social Icons */}
               <div className="flex items-center gap-1">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/iiitpune"
                   aria-label="Facebook"
                   className="text-white hover:text-accent-dark transition-colors p-1.5"
                 >
                   <FacebookIcon size={14} />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/IIIT_PUNE"
                   aria-label="Twitter"
                   className="text-white hover:text-accent-dark transition-colors p-1.5"
                 >
                   <TwitterIcon size={14} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
                   aria-label="LinkedIn"
                   className="text-white hover:text-accent-dark transition-colors p-1.5"
                 >
@@ -314,17 +352,65 @@ const Navbar = () => {
       <nav className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-center items-center py-2 gap-x-2 gap-y-1">
           {primaryLinks.map((link) => (
-            <NavLink key={link.name} to={link.path} className={navLinkClass}>
-              {({ isActive }) => (
-                <>
-                  {link.name}
-                  {link.hasDropdown && (
-                    <ChevronDown className="w-4 h-4 ml-1 opacity-70" />
-                  )}
-                  {navLinkUnderline({ isActive })}
-                </>
+            <div key={link.name} className="relative group">
+              <NavLink 
+                to={link.path} 
+                className={({ isActive }) => navLinkClass({ 
+                  isActive: link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive 
+                })}
+                onClick={link.path === "#" ? (e) => e.preventDefault() : undefined}
+              >
+                {({ isActive }) => {
+                  const activeState = link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive;
+                  return (
+                    <>
+                      {link.name}
+                      {link.hasDropdown && (
+                        <ChevronDown className="w-4 h-4 ml-1 opacity-70 transition-transform group-hover:rotate-180" />
+                      )}
+                      {navLinkUnderline({ isActive: activeState })}
+                    </>
+                  );
+                }}
+              </NavLink>
+              {link.hasDropdown && link.subLinks && (
+                <div className="absolute top-full left-0 mt-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
+                  {link.subLinks.map(sub => (
+                    <div key={sub.name} className="relative group/sub">
+                      {sub.hasDropdown ? (
+                        <>
+                          <div className="px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white cursor-pointer flex justify-between items-center transition-colors">
+                            {sub.name}
+                            <ChevronDown className="w-3 h-3 -rotate-90 opacity-70" />
+                          </div>
+                          <div className="absolute top-0 left-full ml-0 w-48 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
+                            {sub.subLinks.map(nested => (
+                              nested.isExternal ? (
+                                <a key={nested.name} href={nested.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white first:rounded-t-md last:rounded-b-md transition-colors text-left">
+                                  {nested.name}
+                                </a>
+                              ) : (
+                                <Link key={nested.name} to={nested.path} className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white first:rounded-t-md last:rounded-b-md transition-colors text-left">
+                                  {nested.name}
+                                </Link>
+                              )
+                            ))}
+                          </div>
+                        </>
+                      ) : sub.isExternal ? (
+                        <a href={sub.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors text-left">
+                          {sub.name}
+                        </a>
+                      ) : (
+                        <Link to={sub.path} className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors text-left">
+                          {sub.name}
+                        </Link>
+                      )}
+                    </div>
+                  ))}
+                </div>
               )}
-            </NavLink>
+            </div>
           ))}
         </div>
         <div className="flex flex-wrap justify-center items-center py-1 pb-2 gap-x-4 gap-y-1 text-xs opacity-90 border-t border-blue-800/30 dark:border-gray-800 mt-1 pt-2">
@@ -368,21 +454,21 @@ const Navbar = () => {
               {/* Mobile Social + Language + Text Size */}
               <div className="flex items-center gap-3 px-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/iiitpune"
                   aria-label="Facebook"
                   className="text-white hover:text-accent-dark transition-colors"
                 >
                   <FacebookIcon size={16} />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/IIIT_PUNE"
                   aria-label="Twitter"
                   className="text-white hover:text-accent-dark transition-colors"
                 >
                   <TwitterIcon size={16} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
                   aria-label="LinkedIn"
                   className="text-white hover:text-accent-dark transition-colors"
                 >
@@ -426,24 +512,131 @@ const Navbar = () => {
                 </h3>
                 <div className="flex flex-col space-y-1">
                   {primaryLinks.map((link) => (
-                    <NavLink
-                      key={link.name}
-                      to={link.path}
-                      className={({ isActive }) =>
-                        `block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                          isActive
-                            ? "bg-blue-800 text-white dark:bg-gray-800"
-                            : "text-white hover:bg-blue-800/50 dark:text-gray-300 dark:hover:bg-gray-800/50"
-                        }`
-                      }
-                    >
+                    <div key={link.name} className="flex flex-col">
                       <div className="flex items-center justify-between">
-                        {link.name}
+                        <NavLink
+                          to={link.path}
+                          onClick={(e) => {
+                            if (link.path === "#") {
+                              e.preventDefault();
+                              toggleDropdown(link.name, e);
+                            } else {
+                              setIsMobileMenuOpen(false);
+                            }
+                          }}
+                          className={({ isActive }) => {
+                            const activeState = link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive;
+                            return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                              activeState
+                                ? "bg-blue-800 text-white dark:bg-gray-800"
+                                : "text-white hover:bg-blue-800/50 dark:text-gray-300 dark:hover:bg-gray-800/50"
+                            }`;
+                          }}
+                        >
+                          {link.name}
+                        </NavLink>
                         {link.hasDropdown && (
-                          <ChevronDown className="w-4 h-4 opacity-70" />
+                          <button 
+                            onClick={(e) => toggleDropdown(link.name, e)}
+                            className="p-2 text-white hover:bg-blue-800/50 dark:text-gray-300 dark:hover:bg-gray-800/50 rounded-md"
+                          >
+                            <ChevronDown className={`w-4 h-4 transition-transform ${openDropdowns[link.name] ? 'rotate-180' : ''}`} />
+                          </button>
                         )}
                       </div>
-                    </NavLink>
+                      <AnimatePresence>
+                        {link.hasDropdown && link.subLinks && openDropdowns[link.name] && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            className="flex flex-col pl-6 space-y-1 mt-1 overflow-hidden"
+                          >
+                            {link.subLinks.map(sub => (
+                              <div key={sub.name} className="flex flex-col">
+                                {sub.hasDropdown ? (
+                                  <>
+                                    <div className="flex items-center justify-between">
+                                      <div className="flex-1 px-3 py-2 text-sm font-medium text-gray-300">
+                                        {sub.name}
+                                      </div>
+                                      <button 
+                                        onClick={(e) => toggleDropdown(sub.name, e)}
+                                        className="p-2 text-white hover:bg-blue-800/50 rounded-md"
+                                      >
+                                        <ChevronDown className={`w-4 h-4 transition-transform ${openDropdowns[sub.name] ? 'rotate-180' : ''}`} />
+                                      </button>
+                                    </div>
+                                    <AnimatePresence>
+                                      {openDropdowns[sub.name] && (
+                                        <motion.div
+                                          initial={{ height: 0, opacity: 0 }}
+                                          animate={{ height: "auto", opacity: 1 }}
+                                          exit={{ height: 0, opacity: 0 }}
+                                          className="flex flex-col pl-4 space-y-1 mt-1 overflow-hidden"
+                                        >
+                                          {sub.subLinks.map(nested => (
+                                            nested.isExternal ? (
+                                              <a
+                                                key={nested.name}
+                                                href={nested.path}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                              >
+                                                {nested.name}
+                                              </a>
+                                            ) : (
+                                              <NavLink
+                                                key={nested.name}
+                                                to={nested.path}
+                                                onClick={() => setIsMobileMenuOpen(false)}
+                                                className={({ isActive }) =>
+                                                  `block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                                                    isActive
+                                                      ? "text-accent-dark bg-blue-900/30 dark:bg-gray-800"
+                                                      : "text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                                  }`
+                                                }
+                                              >
+                                                {nested.name}
+                                              </NavLink>
+                                            )
+                                          ))}
+                                        </motion.div>
+                                      )}
+                                    </AnimatePresence>
+                                  </>
+                                ) : sub.isExternal ? (
+                                  <a
+                                    href={sub.path}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                  >
+                                    {sub.name}
+                                  </a>
+                                ) : (
+                                  <NavLink
+                                    to={sub.path}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className={({ isActive }) =>
+                                      `block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                                        isActive
+                                          ? "text-accent-dark bg-blue-900/30 dark:bg-gray-800"
+                                          : "text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                      }`
+                                    }
+                                  >
+                                    {sub.name}
+                                  </NavLink>
+                                )}
+                              </div>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
                   ))}
                 </div>
               </div>

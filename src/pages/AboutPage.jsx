@@ -43,10 +43,10 @@ const AboutPage = () => {
                 <h2 className="text-xl font-bold font-serif text-white">Director's Message</h2>
               </div>
               <div className="p-6">
-                <div className="w-32 h-32 mx-auto bg-gray-200 dark:bg-gray-700 rounded-full mb-4 flex items-center justify-center border-4 border-white dark:border-gray-800 shadow-md">
-                  <span className="text-sm text-gray-500 font-medium text-center">Director<br/>Photo</span>
+                <div className="w-32 h-32 mx-auto bg-gray-200 dark:bg-gray-700 rounded-full mb-4 flex items-center justify-center border-4 border-white dark:border-gray-800 shadow-md overflow-hidden">
+                  <img src="/director.jpeg" alt="Director Prof. Anupam Shukla" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="text-center font-bold text-lg text-gray-900 dark:text-white mb-1">Prof. Anupam Shukla</h3>
+                <h3 className="text-center font-bold text-lg text-gray-900 dark:text-white mb-1">Prof. Vineet Kansal</h3>
                 <p className="text-center text-accent dark:text-accent-dark text-sm mb-6">Director, IIIT Pune</p>
                 <div className="relative">
                   <span className="absolute -top-4 -left-2 text-4xl text-gray-200 dark:text-gray-700 font-serif">"</span>

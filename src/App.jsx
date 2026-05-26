@@ -7,6 +7,9 @@ import Footer from './components/layout/Footer';
 // Pages
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import DirectorDeskPage from './pages/DirectorDeskPage';
+import VisionMissionPage from './pages/VisionMissionPage';
+import AboutPlaceholderPage from './pages/AboutPlaceholderPage';
 import AdministrationPage from './pages/AdministrationPage';
 import AcademicsPage from './pages/AcademicsPage';
 import ResearchPage from './pages/ResearchPage';
@@ -33,6 +36,12 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/about/director-desk" element={<DirectorDeskPage />} />
+            <Route path="/about/vision-mission" element={<VisionMissionPage />} />
+            <Route path="/about/act" element={<AboutPlaceholderPage title="ACT(PPP)" />} />
+            <Route path="/about/statute" element={<AboutPlaceholderPage title="STATUTE" />} />
+            <Route path="/about/overview" element={<AboutPlaceholderPage title="Overview" />} />
+            <Route path="/about/ariia" element={<AboutPlaceholderPage title="ARIIA Ranking" />} />
             <Route path="/administration" element={<AdministrationPage />} />
             <Route path="/academics" element={<AcademicsPage />} />
             <Route path="/research" element={<ResearchPage />} />
