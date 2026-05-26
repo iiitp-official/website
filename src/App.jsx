@@ -24,6 +24,8 @@ import FeesPage from './pages/FeesPage';
 import LibraryPage from './pages/LibraryPage';
 import NIRFPage from './pages/NIRFPage';
 import NotFoundPage from './pages/NotFoundPage';
+import StudentAchievementsPage from './pages/StudentAchievementsPage';
+import FacultyAchievementsPage from './pages/FacultyAchievementsPage';
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/about/director-desk" element={<DirectorDeskPage />} />
             <Route path="/about/vision-mission" element={<VisionMissionPage />} />
+            <Route path="/about/student-achievements" element={<StudentAchievementsPage />} />
+            <Route path="/about/faculty-achievements" element={<FacultyAchievementsPage />} />
             <Route path="/about/act" element={<AboutPlaceholderPage title="ACT(PPP)" />} />
             <Route path="/about/statute" element={<AboutPlaceholderPage title="STATUTE" />} />
             <Route path="/about/overview" element={<AboutPlaceholderPage title="Overview" />} />
