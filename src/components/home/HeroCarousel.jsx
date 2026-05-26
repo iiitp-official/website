@@ -4,9 +4,11 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const slides = [
-  { id: 1, gradient: 'from-blue-900 to-primary' },
-  { id: 2, gradient: 'from-primary to-indigo-900' },
-  { id: 3, gradient: 'from-blue-800 to-blue-950' },
+  { id: 1, image: '/carousel/slide_1.jpg' },
+  { id: 2, image: '/carousel/slide_2.jpeg' },
+  { id: 3, image: '/carousel/slide_3.jpeg' },
+  { id: 4, image: '/carousel/slide_4.jpeg' },
+  { id: 5, image: '/carousel/slide_5.jpeg' },
 ];
 
 const HeroCarousel = () => {
@@ -31,7 +33,8 @@ const HeroCarousel = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8 }}
-          className={`absolute inset-0 bg-gradient-to-br ${slides[current].gradient} opacity-80`}
+          className="absolute inset-0 bg-cover bg-center opacity-80"
+          style={{ backgroundImage: `url(${slides[current].image})` }}
         />
       </AnimatePresence>
 
