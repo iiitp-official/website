@@ -12,7 +12,7 @@ const HomePage = () => {
       <HeroCarousel />
       <LatestNews />
       <InfoCards />
-      {/* <InformationDesk /> */}
+      <InformationDesk />
       <ImportantLinks />
       <Testimonials />
     </main>
