@@ -26,17 +26,18 @@ const HeroCarousel = () => {
 
   return (
     <div className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] overflow-hidden bg-gray-900">
-      <AnimatePresence initial={false}>
-        <motion.div
-          key={current}
+      {slides.map((slide, idx) => (
+        <motion.img
+          key={slide.id}
+          src={slide.image}
+          alt={`Slide ${idx + 1}`}
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
-          className="absolute inset-0 bg-cover bg-center opacity-80"
-          style={{ backgroundImage: `url(${slides[current].image})` }}
+          animate={{ opacity: current === idx ? 1 : 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ zIndex: current === idx ? 1 : 0, pointerEvents: current === idx ? 'auto' : 'none' }}
         />
-      </AnimatePresence>
+      ))}
 
       <div className="absolute inset-0 bg-black/40 z-10" />
 
