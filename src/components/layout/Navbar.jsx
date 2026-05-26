@@ -135,6 +135,7 @@ const Navbar = () => {
         { name: "Faculty Achievements", path: "/about/faculty-achievements" },
         { name: "Overview", path: "/documents/INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, PUNE20240315-_0.pdf", isExternal: true },
         { name: "ARIIA Ranking", path: "/documents/ARI-U-0804-1-3.pdf", isExternal: true },
+        { name: "NIRF", path: "/nirf" },
       ]
     },
     { name: "Administration", path: "/administration", hasDropdown: false },
@@ -145,20 +146,20 @@ const Navbar = () => {
     { name: "Notice", path: "/notice", hasDropdown: false },
     { name: "E-TENDER", path: "/e-tender", hasDropdown: false },
     { name: "Library", path: "/library", hasDropdown: false },
+    { name: "Careers", path: "/careers", hasDropdown: false },
+    { name: "Placement", path: "/placement", hasDropdown: false },
   ];
 
   const secondaryLinks = [
-    { name: "Careers", path: "/careers" },
-    { name: "Placement", path: "/placement" },
-    { name: "Contact Us", path: "/contact" },
-    { name: "Fees", path: "/fees" },
-    { name: "NIRF", path: "/nirf" },
-    { name: "Report and Minutes", path: "/#" },
-    { name: "RTI", path: "/#" },
-    { name: "Sports & Gymnasium", path: "/#" },
-    { name: "Suo-Motu Disclosure", path: "/#" },
-    { name: "राजभाषा अनुभाग", path: "/#" },
-    { name: "ACM Chapter", path: "/#" },
+    // { name: "Contact Us", path: "/contact" },
+    // { name: "Fees", path: "/fees" },
+    // { name: "NIRF", path: "/nirf" },
+    // { name: "Report and Minutes", path: "/#" },
+    // { name: "RTI", path: "/#" },
+    // { name: "Sports & Gymnasium", path: "/#" },
+    // { name: "Suo-Motu Disclosure", path: "/#" },
+    // { name: "राजभाषा अनुभाग", path: "/#" },
+    // { name: "ACM Chapter", path: "/#" },
   ];
 
   const navLinkClass = ({ isActive }) =>
