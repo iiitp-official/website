@@ -56,8 +56,7 @@ const Navbar = () => {
     if (typeof window !== "undefined") {
       return (
         localStorage.getItem("darkMode") === "true" ||
-        (!("darkMode" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
+        (!("darkMode" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
       );
     }
     return false;
@@ -88,9 +87,9 @@ const Navbar = () => {
 
   const toggleDropdown = (name, e) => {
     e.preventDefault();
-    setOpenDropdowns(prev => ({
+    setOpenDropdowns((prev) => ({
       ...prev,
-      [name]: !prev[name]
+      [name]: !prev[name],
     }));
   };
 
@@ -98,51 +97,95 @@ const Navbar = () => {
   const handleTextSize = (action) => {
     const root = document.documentElement;
     const current = parseFloat(getComputedStyle(root).fontSize);
-    if (action === "increase")
-      root.style.fontSize = Math.min(current + 1, 20) + "px";
-    else if (action === "decrease")
-      root.style.fontSize = Math.max(current - 1, 14) + "px";
+    if (action === "increase") root.style.fontSize = Math.min(current + 1, 20) + "px";
+    else if (action === "decrease") root.style.fontSize = Math.max(current - 1, 14) + "px";
     else root.style.fontSize = "16px";
   };
 
   const primaryLinks = [
-    { 
-      name: "About Us", 
-      path: "#", 
+    {
+      name: "About Us",
+      path: "#",
       hasDropdown: true,
       subLinks: [
-        { 
-          name: "ACT(PPP)", 
-          path: "#", 
+        {
+          name: "ACT(PPP)",
+          path: "#",
           hasDropdown: true,
           subLinks: [
             { name: "Act", path: "/documents/IIIT_PPP_Act.pdf", isExternal: true },
             { name: "Amendment Act", path: "/documents/iiit_ppp_amendment_act.pdf", isExternal: true },
-          ]
+          ],
         },
-        { 
-          name: "STATUTE", 
-          path: "#", 
+        {
+          name: "STATUTE",
+          path: "#",
           hasDropdown: true,
           subLinks: [
             { name: "STATUTE", path: "/documents/IIIT_Pune_Statute_2017 22.10.2018.pdf", isExternal: true },
             { name: "statute(amendment)", path: "/documents/ammendment.pdf", isExternal: true },
-          ]
+          ],
         },
         { name: "Vision & Mission", path: "/about/vision-mission" },
         { name: "Director Desk", path: "/about/director-desk" },
-        { name: "Overview", path: "/documents/INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, PUNE20240315-_0.pdf", isExternal: true },
+        {
+          name: "Overview",
+          path: "/documents/INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, PUNE20240315-_0.pdf",
+          isExternal: true,
+        },
         { name: "ARIIA Ranking", path: "/documents/ARI-U-0804-1-3.pdf", isExternal: true },
-      ]
+      ],
     },
     { name: "Administration", path: "/administration", hasDropdown: false },
-    { name: "Academics", path: "/academics", hasDropdown: false },
+    {
+      name: "Academics",
+      hasDropdown: true,
+      subLinks: [
+        { name: "Academic Calendar", path: "/academics/Calendar" },
+        {
+          name: "B.Tech.",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Computer Science and Engineering", path: "/academics/btech/cse" },
+            { name: "Electronics and Communication Engineering", path: "/academics/btech/ece" },
+            { name: "B.Tech. Honours", path: "/academics/btech/honors" },
+          ]
+        },
+        {
+          name: "M.Tech.",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Computer Science and Engineering", path: "/academics/mtech/cse" },
+            { name: "Electronics and Communication Engineering", path: "/academics/mtech/ece" },
+          ]
+        },
+        { name: "Ph.D.", path: "/academics/phd" },
+        { name: "Fee Structure", path: "/docs/Fee_Structure_2025-26.pdf", isExternal: true },
+        { name: "Ordinance", path: "/academics/ordinance" },
+        {
+          name: "Library",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Library Website", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
+            { name: "IRINS", path: "https://iiitp.irins.org/", isExternal: true },
+            { name: "IDP", path: "https://idp.iiitp.ac.in/", isExternal: true },
+          ]
+        },
+      ],
+    },
     { name: "Research", path: "/research", hasDropdown: false },
     { name: "People", path: "/people", hasDropdown: false },
-    { name: "Life@IIITP", path: "/life", hasDropdown: false },
+    {
+      name: "Life@IIITP",
+      path: "/life",
+      hasDropdown: true,
+      subLinks: [
+        { name: "Overview", path: "/life" },
+        { name: "ACM Chapter", path: "/#" },
+      ]
+    },
     { name: "Notice", path: "/notice", hasDropdown: false },
     { name: "E-TENDER", path: "/e-tender", hasDropdown: false },
-    { name: "Library", path: "/library", hasDropdown: false },
   ];
 
   const secondaryLinks = [
@@ -156,21 +199,16 @@ const Navbar = () => {
     { name: "Sports & Gymnasium", path: "/#" },
     { name: "Suo-Motu Disclosure", path: "/#" },
     { name: "राजभाषा अनुभाग", path: "/#" },
-    { name: "ACM Chapter", path: "/#" },
   ];
 
   const navLinkClass = ({ isActive }) =>
-    `relative py-2 px-3 text-sm font-medium transition-colors duration-200 group flex items-center ${
-      isActive
-        ? "text-accent-dark"
-        : "text-white hover:text-accent-dark dark:text-gray-200 dark:hover:text-accent-dark"
+    `relative py-2 px-3 text-sm font-medium transition-colors duration-200 group flex items-center ${isActive ? "text-accent-dark" : "text-white hover:text-accent-dark dark:text-gray-200 dark:hover:text-accent-dark"
     }`;
 
   const navLinkUnderline = ({ isActive }) => (
     <span
-      className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent-dark transform origin-left transition-transform duration-300 ${
-        isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
-      }`}
+      className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent-dark transform origin-left transition-transform duration-300 ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+        }`}
     />
   );
 
@@ -182,11 +220,7 @@ const Navbar = () => {
           {/* Logo + Name */}
           <Link to="/" className="flex items-start space-x-3">
             <div className="w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden flex items-center justify-center shrink-0">
-              <img
-                src="/iiitp-logo.png"
-                alt="IIIT Pune Logo"
-                className="w-full h-full object-contain"
-              />
+              <img src="/iiitp-logo.png" alt="IIIT Pune Logo" className="w-full h-full object-contain" />
             </div>
             <div className="text-white dark:text-text-dark leading-tight">
               <h1 className="text-xl md:text-2xl font-bold font-serif">
@@ -195,12 +229,9 @@ const Navbar = () => {
               <h2 className="text-sm md:text-2xl font-medium opacity-90 font-serif mt-1">
                 भारतीय सूचना प्रौद्योगिकी संस्थान, पुणे
               </h2>
-              <p className="text-[10px] md:text-sm opacity-80 mt-1">
-                (An Institute of National Importance)
-              </p>
+              <p className="text-[10px] md:text-sm opacity-80 mt-1">(An Institute of National Importance)</p>
               <p className="text-[8px] md:text-xs opacity-70 mt-0.5">
-                Gat No. 5 &amp; 6, Village Nanoli-Tathawade, Tal. Maval, Pune -
-                412106
+                Gat No. 5 &amp; 6, Village Nanoli-Tathawade, Tal. Maval, Pune - 412106
               </p>
             </div>
           </Link>
@@ -216,11 +247,7 @@ const Navbar = () => {
                 aria-label="Toggle dark mode"
                 title={isDark ? "Light Mode" : "Dark Mode"}
               >
-                {isDark ? (
-                  <Sun className="w-4 h-4" />
-                ) : (
-                  <Moon className="w-4 h-4" />
-                )}
+                {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
               </button>
 
               <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
@@ -233,9 +260,7 @@ const Navbar = () => {
                 >
                   EN
                 </button>
-                <span className="text-gray-400 dark:text-gray-500 text-xs font-light">
-                  |
-                </span>
+                <span className="text-gray-400 dark:text-gray-500 text-xs font-light">|</span>
                 <button
                   className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
                   title="Hindi"
@@ -277,11 +302,7 @@ const Navbar = () => {
                 className="md:hidden flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200"
                 aria-label="Toggle menu"
               >
-                {isMobileMenuOpen ? (
-                  <X className="w-5 h-5" />
-                ) : (
-                  <Menu className="w-6 h-6" />
-                )}
+                {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-6 h-6" />}
               </button>
             </div>
 
@@ -335,9 +356,7 @@ const Navbar = () => {
                     placeholder="Search..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    onKeyPress={(e) =>
-                      e.key === "Enter" && console.log("Search:", searchQuery)
-                    }
+                    onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
                     autoFocus
                     className="h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 dark:placeholder-gray-500 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm overflow-hidden"
                   />
@@ -353,15 +372,19 @@ const Navbar = () => {
         <div className="flex flex-wrap justify-center items-center py-2 gap-x-2 gap-y-1">
           {primaryLinks.map((link) => (
             <div key={link.name} className="relative group">
-              <NavLink 
-                to={link.path} 
-                className={({ isActive }) => navLinkClass({ 
-                  isActive: link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive 
-                })}
+              <NavLink
+                to={link.path}
+                className={({ isActive }) =>
+                  navLinkClass({
+                    isActive:
+                      link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive,
+                  })
+                }
                 onClick={link.path === "#" ? (e) => e.preventDefault() : undefined}
               >
                 {({ isActive }) => {
-                  const activeState = link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive;
+                  const activeState =
+                    link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive;
                   return (
                     <>
                       {link.name}
@@ -375,7 +398,7 @@ const Navbar = () => {
               </NavLink>
               {link.hasDropdown && link.subLinks && (
                 <div className="absolute top-full left-0 mt-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
-                  {link.subLinks.map(sub => (
+                  {link.subLinks.map((sub) => (
                     <div key={sub.name} className="relative group/sub">
                       {sub.hasDropdown ? (
                         <>
@@ -384,25 +407,43 @@ const Navbar = () => {
                             <ChevronDown className="w-3 h-3 -rotate-90 opacity-70" />
                           </div>
                           <div className="absolute top-0 left-full ml-0 w-48 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
-                            {sub.subLinks.map(nested => (
+                            {sub.subLinks.map((nested) =>
                               nested.isExternal ? (
-                                <a key={nested.name} href={nested.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white first:rounded-t-md last:rounded-b-md transition-colors text-left">
+                                <a
+                                  key={nested.name}
+                                  href={nested.path}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white first:rounded-t-md last:rounded-b-md transition-colors text-left"
+                                >
                                   {nested.name}
                                 </a>
                               ) : (
-                                <Link key={nested.name} to={nested.path} className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white first:rounded-t-md last:rounded-b-md transition-colors text-left">
+                                <Link
+                                  key={nested.name}
+                                  to={nested.path}
+                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white first:rounded-t-md last:rounded-b-md transition-colors text-left"
+                                >
                                   {nested.name}
                                 </Link>
-                              )
-                            ))}
+                              ),
+                            )}
                           </div>
                         </>
                       ) : sub.isExternal ? (
-                        <a href={sub.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors text-left">
+                        <a
+                          href={sub.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors text-left"
+                        >
                           {sub.name}
                         </a>
                       ) : (
-                        <Link to={sub.path} className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors text-left">
+                        <Link
+                          to={sub.path}
+                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors text-left"
+                        >
                           {sub.name}
                         </Link>
                       )}
@@ -443,9 +484,7 @@ const Navbar = () => {
                   placeholder="Search..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  onKeyPress={(e) =>
-                    e.key === "Enter" && console.log("Search:", searchQuery)
-                  }
+                  onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
                   className="flex-1 h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm"
                 />
                 <Search className="w-4 h-4 text-white opacity-70" />
@@ -525,22 +564,26 @@ const Navbar = () => {
                             }
                           }}
                           className={({ isActive }) => {
-                            const activeState = link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive;
-                            return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                              activeState
+                            const activeState =
+                              link.path === "#"
+                                ? location.pathname.startsWith("/about") && link.name === "About Us"
+                                : isActive;
+                            return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
                                 ? "bg-blue-800 text-white dark:bg-gray-800"
                                 : "text-white hover:bg-blue-800/50 dark:text-gray-300 dark:hover:bg-gray-800/50"
-                            }`;
+                              }`;
                           }}
                         >
                           {link.name}
                         </NavLink>
                         {link.hasDropdown && (
-                          <button 
+                          <button
                             onClick={(e) => toggleDropdown(link.name, e)}
                             className="p-2 text-white hover:bg-blue-800/50 dark:text-gray-300 dark:hover:bg-gray-800/50 rounded-md"
                           >
-                            <ChevronDown className={`w-4 h-4 transition-transform ${openDropdowns[link.name] ? 'rotate-180' : ''}`} />
+                            <ChevronDown
+                              className={`w-4 h-4 transition-transform ${openDropdowns[link.name] ? "rotate-180" : ""}`}
+                            />
                           </button>
                         )}
                       </div>
@@ -552,7 +595,7 @@ const Navbar = () => {
                             exit={{ height: 0, opacity: 0 }}
                             className="flex flex-col pl-6 space-y-1 mt-1 overflow-hidden"
                           >
-                            {link.subLinks.map(sub => (
+                            {link.subLinks.map((sub) => (
                               <div key={sub.name} className="flex flex-col">
                                 {sub.hasDropdown ? (
                                   <>
@@ -560,11 +603,13 @@ const Navbar = () => {
                                       <div className="flex-1 px-3 py-2 text-sm font-medium text-gray-300">
                                         {sub.name}
                                       </div>
-                                      <button 
+                                      <button
                                         onClick={(e) => toggleDropdown(sub.name, e)}
                                         className="p-2 text-white hover:bg-blue-800/50 rounded-md"
                                       >
-                                        <ChevronDown className={`w-4 h-4 transition-transform ${openDropdowns[sub.name] ? 'rotate-180' : ''}`} />
+                                        <ChevronDown
+                                          className={`w-4 h-4 transition-transform ${openDropdowns[sub.name] ? "rotate-180" : ""}`}
+                                        />
                                       </button>
                                     </div>
                                     <AnimatePresence>
@@ -575,7 +620,7 @@ const Navbar = () => {
                                           exit={{ height: 0, opacity: 0 }}
                                           className="flex flex-col pl-4 space-y-1 mt-1 overflow-hidden"
                                         >
-                                          {sub.subLinks.map(nested => (
+                                          {sub.subLinks.map((nested) =>
                                             nested.isExternal ? (
                                               <a
                                                 key={nested.name}
@@ -592,17 +637,16 @@ const Navbar = () => {
                                                 to={nested.path}
                                                 onClick={() => setIsMobileMenuOpen(false)}
                                                 className={({ isActive }) =>
-                                                  `block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                                                    isActive
-                                                      ? "text-accent-dark bg-blue-900/30 dark:bg-gray-800"
-                                                      : "text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                                  `block px-3 py-2 text-sm font-medium rounded-md transition-colors ${isActive
+                                                    ? "text-accent-dark bg-blue-900/30 dark:bg-gray-800"
+                                                    : "text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
                                                   }`
                                                 }
                                               >
                                                 {nested.name}
                                               </NavLink>
-                                            )
-                                          ))}
+                                            ),
+                                          )}
                                         </motion.div>
                                       )}
                                     </AnimatePresence>
@@ -621,10 +665,9 @@ const Navbar = () => {
                                     to={sub.path}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className={({ isActive }) =>
-                                      `block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                                        isActive
-                                          ? "text-accent-dark bg-blue-900/30 dark:bg-gray-800"
-                                          : "text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                      `block px-3 py-2 text-sm font-medium rounded-md transition-colors ${isActive
+                                        ? "text-accent-dark bg-blue-900/30 dark:bg-gray-800"
+                                        : "text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
                                       }`
                                     }
                                   >
@@ -652,10 +695,9 @@ const Navbar = () => {
                       key={link.name}
                       to={link.path}
                       className={({ isActive }) =>
-                        `px-3 py-1.5 rounded-full text-xs font-medium transition-colors border border-blue-800/50 dark:border-gray-700 ${
-                          isActive
-                            ? "bg-blue-800 text-white dark:bg-gray-700"
-                            : "text-gray-200 hover:bg-blue-800/50 dark:text-gray-400 dark:hover:bg-gray-800"
+                        `px-3 py-1.5 rounded-full text-xs font-medium transition-colors border border-blue-800/50 dark:border-gray-700 ${isActive
+                          ? "bg-blue-800 text-white dark:bg-gray-700"
+                          : "text-gray-200 hover:bg-blue-800/50 dark:text-gray-400 dark:hover:bg-gray-800"
                         }`
                       }
                     >
