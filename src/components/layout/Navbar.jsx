@@ -138,6 +138,7 @@ const Navbar = () => {
     { name: "Administration", path: "/administration", hasDropdown: false },
     {
       name: "Academics",
+      path: "#",
       hasDropdown: true,
       subLinks: [
         { name: "Academic Calendar", path: "/academics/Calendar" },
@@ -184,7 +185,6 @@ const Navbar = () => {
       ]
     },
     { name: "Notice", path: "/notice", hasDropdown: false },
-    { name: "Library", path: "/library", hasDropdown: false },
     { name: "Careers", path: "/careers", hasDropdown: false },
     { name: "Placement", path: "/placement", hasDropdown: false },
     { name: "Contact Us", path: "/contact", hasDropdown: false },
@@ -375,17 +375,18 @@ const Navbar = () => {
             <div key={link.name} className="relative group">
               <NavLink
                 to={link.path}
-                className={({ isActive }) =>
-                  navLinkClass({
-                    isActive:
-                      link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive,
-                  })
-                }
+                className={({ isActive }) => {
+                  const isLinkActive = link.path === "#" 
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                    : isActive;
+                  return navLinkClass({ isActive: isLinkActive });
+                }}
                 onClick={link.path === "#" ? (e) => e.preventDefault() : undefined}
               >
                 {({ isActive }) => {
-                  const activeState =
-                    link.path === "#" ? location.pathname.startsWith("/about") && link.name === "About Us" : isActive;
+                  const activeState = link.path === "#" 
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                    : isActive;
                   return (
                     <>
                       {link.name}
@@ -565,13 +566,12 @@ const Navbar = () => {
                             }
                           }}
                           className={({ isActive }) => {
-                            const activeState =
-                              link.path === "#"
-                                ? location.pathname.startsWith("/about") && link.name === "About Us"
-                                : isActive;
+                            const activeState = link.path === "#" 
+                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                              : isActive;
                             return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
-                                ? "bg-blue-800 text-white dark:bg-gray-800"
-                                : "text-white hover:bg-blue-800/50 dark:text-gray-300 dark:hover:bg-gray-800/50"
+                              ? "bg-blue-800 text-white dark:bg-gray-800"
+                              : "text-white hover:bg-blue-800/50 dark:text-gray-300 dark:hover:bg-gray-800/50"
                               }`;
                           }}
                         >
@@ -686,7 +686,7 @@ const Navbar = () => {
               </div>
 
               {/* Secondary Links */}
-                {/* <div className="flex flex-wrap gap-2 px-3">
+              {/* <div className="flex flex-wrap gap-2 px-3">
                   {secondaryLinks.map((link) => (
                     <NavLink
                       key={link.name}
