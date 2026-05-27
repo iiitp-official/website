@@ -8,7 +8,7 @@ const Breadcrumb = () => {
 
   return (
     <nav aria-label="Breadcrumb" className="flex items-center text-sm font-medium text-blue-200 dark:text-gray-400 overflow-x-auto whitespace-nowrap no-scrollbar pb-1">
-      <Link to="/" className="hover:text-white transition-colors flex items-center">
+      <Link to="/" className="hover:text-brand-red dark:hover:text-brand-red-dark transition-colors flex items-center">
         <Home size={14} className="mr-1.5" />
         Home
       </Link>
@@ -42,7 +42,7 @@ const Breadcrumb = () => {
             {last || isUnclickable ? (
               <span className="text-white dark:text-gray-200 font-semibold">{label}</span>
             ) : (
-              <Link to={to} className="hover:text-white transition-colors">
+              <Link to={to} className="hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
                 {label}
               </Link>
             )}

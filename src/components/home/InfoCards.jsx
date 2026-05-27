@@ -191,7 +191,7 @@ const InfoCards = () => {
         <div className="mt-4 pt-3 border-t border-gray-100 dark:border-gray-800/60">
           <Link 
             to={`/about/${activeTab === 'students' ? 'student' : 'faculty'}-achievements`}
-            className="text-xs font-bold text-accent dark:text-accent-dark hover:underline flex items-center"
+            className="text-xs font-bold text-brand-red dark:text-brand-red-dark hover:underline flex items-center"
           >
             Read Full Story <ChevronRight size={14} className="ml-1" />
           </Link>
@@ -219,7 +219,7 @@ const InfoCards = () => {
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
                 Indian Institute of Information Technology Pune, established in 2016, is an Institute of National Importance set up by the Ministry of Education, Government of India. We are dedicated to delivering world-class IT education and research.
               </p>
-              <Link to="/about" className="text-accent dark:text-accent-dark font-semibold text-sm flex items-center hover:underline group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
+              <Link to="/about" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors">
                 Read More <ChevronRight size={16} className="ml-1" />
               </Link>
             </div>
@@ -249,7 +249,7 @@ const InfoCards = () => {
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">International Admissions (DASA)</span>
                 </li>
               </ul>
-              <Link to="/academics" className="inline-block text-center w-full py-2.5 bg-accent hover:bg-blue-700 text-white font-medium rounded-md shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 text-sm">
+              <Link to="/academics" className="inline-block text-center w-full py-2.5 bg-brand-red hover:bg-red-700 text-white font-medium rounded-md shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 text-sm">
                 Apply Now
               </Link>
             </div>
@@ -273,7 +273,7 @@ const InfoCards = () => {
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow line-clamp-4">
                 "Indian Institute of Information Technology Pune is committed to imparting high-quality technical education and instilling a long-term vision among students. Our focus lies not just on academic brilliance but also on the knowledge that is pervasive in areas of emerging technologies."
               </p>
-              <Link to="/about/director-desk" className="text-accent dark:text-accent-dark font-semibold text-sm flex items-center hover:underline group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors mt-auto">
+              <Link to="/about/director-desk" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors mt-auto">
                 Read Director's Message <ChevronRight size={16} className="ml-1" />
               </Link>
             </div>
@@ -301,7 +301,7 @@ const InfoCards = () => {
                   onClick={() => handleTabChange('students')}
                   className={`px-4 py-2 text-xs font-bold rounded-md transition-all duration-200 ${
                     activeTab === 'students'
-                      ? 'bg-accent text-white shadow-sm'
+                      ? 'bg-brand-red text-white shadow-sm'
                       : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
                   }`}
                 >
@@ -312,7 +312,7 @@ const InfoCards = () => {
                   onClick={() => handleTabChange('faculty')}
                   className={`px-4 py-2 text-xs font-bold rounded-md transition-all duration-200 ${
                     activeTab === 'faculty'
-                      ? 'bg-accent text-white shadow-sm'
+                      ? 'bg-brand-red text-white shadow-sm'
                       : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
                   }`}
                 >

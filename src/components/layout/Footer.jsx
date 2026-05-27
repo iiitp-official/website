@@ -37,31 +37,31 @@ const Footer = () => {
           
           {/* Quick Links Column */}
           <div>
-            <h3 className="text-white font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Quick Links</h3>
+            <h3 className="text-brand-red font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Quick Links</h3>
             <div className="grid grid-cols-2 gap-4">
               <ul className="space-y-3">
-                <li><Link to="/about" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> About Us</Link></li>
-                <li><Link to="/academics" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> Academics</Link></li>
-                <li><Link to="/research" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> Research</Link></li>
-                <li><Link to="/placement" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> Placement</Link></li>
-                <li><Link to="/careers" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> Careers</Link></li>
+                <li><Link to="/about" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> About Us</Link></li>
+                <li><Link to="/academics" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Academics</Link></li>
+                <li><Link to="/research" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Research</Link></li>
+                <li><Link to="/placement" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Placement</Link></li>
+                <li><Link to="/careers" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Careers</Link></li>
               </ul>
               <ul className="space-y-3">
-                <li><Link to="/notice" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> Notice Board</Link></li>
-                <li><Link to="/e-tender" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> E-Tender</Link></li>
-                <li><Link to="/library" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> Library</Link></li>
-                <li><Link to="/fees" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> Fees Structure</Link></li>
-                <li><Link to="/contact" className="hover:text-accent-dark transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-accent-dark" /> Contact Us</Link></li>
+                <li><Link to="/notice" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Notice Board</Link></li>
+                <li><Link to="/e-tender" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> E-Tender</Link></li>
+                <li><Link to="/library" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Library</Link></li>
+                <li><Link to="/fees" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Fees Structure</Link></li>
+                <li><Link to="/contact" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Contact Us</Link></li>
               </ul>
             </div>
           </div>
 
           {/* Address Column */}
           <div>
-            <h3 className="text-white font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Locate Us</h3>
+            <h3 className="text-brand-red font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Locate Us</h3>
             <div className="space-y-4">
               <div className="flex items-start">
-                <MapPin className="w-5 h-5 text-accent-dark mr-3 mt-1 shrink-0" />
+                <MapPin className="w-5 h-5 text-brand-red mr-3 mt-1 shrink-0" />
                 <p className="leading-relaxed text-sm">
                   Indian Institute of Information Technology (IIIT) Pune<br />
                   Gate No - 5 & 6,<br />
@@ -72,11 +72,11 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex items-center text-sm">
-                <Phone className="w-5 h-5 text-accent-dark mr-3 shrink-0" />
+                <Phone className="w-5 h-5 text-brand-red mr-3 shrink-0" />
                 <p>02114-224510</p>
               </div>
               <div className="flex items-center text-sm">
-                <Mail className="w-5 h-5 text-accent-dark mr-3 shrink-0" />
+                <Mail className="w-5 h-5 text-brand-red mr-3 shrink-0" />
                 <p>enquiry@iiitp.ac.in</p>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Footer = () => {
 
           {/* Map Column */}
           <div>
-            <h3 className="text-white font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Map Location</h3>
+            <h3 className="text-brand-red font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Map Location</h3>
             <div className="h-40 w-full rounded-lg overflow-hidden border border-gray-800 relative group shadow-sm">
               <iframe 
                 title="IIIT Pune Location Map"

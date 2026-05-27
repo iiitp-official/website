@@ -203,12 +203,12 @@ const Navbar = () => {
   ];
 
   const navLinkClass = ({ isActive }) =>
-    `relative py-2 px-3 text-sm font-medium transition-colors duration-200 group flex items-center ${isActive ? "text-accent-dark" : "text-white hover:text-accent-dark dark:text-gray-200 dark:hover:text-accent-dark"
+    `relative py-2 px-3 text-sm font-medium transition-colors duration-200 group flex items-center ${isActive ? "text-brand-red dark:text-brand-red-dark" : "text-white hover:text-brand-red dark:text-gray-200 dark:hover:text-brand-red-dark"
     }`;
 
   const navLinkUnderline = ({ isActive }) => (
     <span
-      className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent-dark transform origin-left transition-transform duration-300 ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+      className={`absolute bottom-0 left-0 w-full h-0.5 bg-brand-red dark:bg-brand-red-dark transform origin-left transition-transform duration-300 ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
         }`}
     />
   );
@@ -376,7 +376,7 @@ const Navbar = () => {
               <NavLink
                 to={link.path}
                 className={({ isActive }) => {
-                  const isLinkActive = link.path === "#" 
+                  const isLinkActive = link.path === "#"
                     ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
                     : isActive;
                   return navLinkClass({ isActive: isLinkActive });
@@ -384,7 +384,7 @@ const Navbar = () => {
                 onClick={link.path === "#" ? (e) => e.preventDefault() : undefined}
               >
                 {({ isActive }) => {
-                  const activeState = link.path === "#" 
+                  const activeState = link.path === "#"
                     ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
                     : isActive;
                   return (
@@ -404,7 +404,7 @@ const Navbar = () => {
                     <div key={sub.name} className="relative group/sub">
                       {sub.hasDropdown ? (
                         <>
-                          <div className="px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white cursor-pointer flex justify-between items-center transition-colors">
+                          <div className="px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark cursor-pointer flex justify-between items-center transition-colors">
                             {sub.name}
                             <ChevronDown className="w-3 h-3 -rotate-90 opacity-70" />
                           </div>
@@ -416,7 +416,7 @@ const Navbar = () => {
                                   href={nested.path}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white first:rounded-t-md last:rounded-b-md transition-colors text-left"
+                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
                                 >
                                   {nested.name}
                                 </a>
@@ -424,7 +424,7 @@ const Navbar = () => {
                                 <Link
                                   key={nested.name}
                                   to={nested.path}
-                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white first:rounded-t-md last:rounded-b-md transition-colors text-left"
+                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
                                 >
                                   {nested.name}
                                 </Link>
@@ -437,14 +437,14 @@ const Navbar = () => {
                           href={sub.path}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors text-left"
+                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left"
                         >
                           {sub.name}
                         </a>
                       ) : (
                         <Link
                           to={sub.path}
-                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors text-left"
+                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left"
                         >
                           {sub.name}
                         </Link>
@@ -566,12 +566,12 @@ const Navbar = () => {
                             }
                           }}
                           className={({ isActive }) => {
-                            const activeState = link.path === "#" 
+                            const activeState = link.path === "#"
                               ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
                               : isActive;
                             return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
-                              ? "bg-blue-800 text-white dark:bg-gray-800"
-                              : "text-white hover:bg-blue-800/50 dark:text-gray-300 dark:hover:bg-gray-800/50"
+                              ? "bg-brand-red text-white dark:bg-brand-red-dark/50"
+                              : "text-white hover:bg-brand-red/50 dark:text-gray-300 dark:hover:bg-brand-red-dark/30"
                               }`;
                           }}
                         >
@@ -628,7 +628,7 @@ const Navbar = () => {
                                                 href={nested.path}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                                className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                               >
                                                 {nested.name}
                                               </a>
@@ -640,7 +640,7 @@ const Navbar = () => {
                                                 className={({ isActive }) =>
                                                   `block px-3 py-2 text-sm font-medium rounded-md transition-colors ${isActive
                                                     ? "text-accent-dark bg-blue-900/30 dark:bg-gray-800"
-                                                    : "text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                                    : "text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                                   }`
                                                 }
                                               >
@@ -657,7 +657,7 @@ const Navbar = () => {
                                     href={sub.path}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                    className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                   >
                                     {sub.name}
                                   </a>
@@ -668,7 +668,7 @@ const Navbar = () => {
                                     className={({ isActive }) =>
                                       `block px-3 py-2 text-sm font-medium rounded-md transition-colors ${isActive
                                         ? "text-accent-dark bg-blue-900/30 dark:bg-gray-800"
-                                        : "text-gray-300 hover:text-white hover:bg-blue-900/30 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-800"
+                                        : "text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                       }`
                                     }
                                   >

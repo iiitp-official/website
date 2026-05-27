@@ -13,6 +13,10 @@ export default {
           DEFAULT: '#2563EB', // Light mode accent
           dark: '#60A5FA',    // Dark mode accent
         },
+        'brand-red': {
+          DEFAULT: '#DC2626', // Lighter maroon / crimson
+          dark: '#F87171',    // Light red
+        },
         surface: {
           DEFAULT: '#F0F4FA', // Light mode surface
           dark: '#161B22',    // Dark mode surface
@@ -22,7 +26,7 @@ export default {
           dark: '#E6EDF3',    // Dark mode text
         },
         bg: {
-          DEFAULT: '#FFFFFF', // Light mode background
+          DEFAULT: '#F8FAFC', // Cool Slate off-white
           dark: '#0D1117',    // Dark mode background
         },
         footer: '#0A1628',

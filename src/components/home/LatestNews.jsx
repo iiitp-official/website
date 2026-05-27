@@ -76,7 +76,7 @@ const LatestNews = () => {
 
             <Link
               to="/notice"
-              className="block text-center py-3 bg-gray-50 dark:bg-gray-800/80 text-accent dark:text-accent-dark font-semibold text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors border-t border-gray-100 dark:border-gray-800"
+              className="block text-center py-3 bg-gray-50 dark:bg-gray-800/80 text-brand-red dark:text-brand-red-dark font-semibold text-sm hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 transition-colors border-t border-gray-100 dark:border-gray-800"
             >
               View All Notices
             </Link>
