@@ -416,7 +416,7 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-wrap justify-center items-center py-1 pb-2 gap-x-4 gap-y-1 text-xs opacity-90 border-t border-blue-800/30 dark:border-gray-800 mt-1 pt-2">
+        {/* <div className="flex flex-wrap justify-center items-center py-1 pb-2 gap-x-4 gap-y-1 text-xs opacity-90 border-t border-blue-800/30 dark:border-gray-800 mt-1 pt-2">
           {secondaryLinks.map((link) => (
             <NavLink
               key={link.name}
@@ -426,7 +426,7 @@ const Navbar = () => {
               {link.name}
             </NavLink>
           ))}
-        </div>
+        </div> */}
       </nav>
 
       {/* Mobile Menu */}
