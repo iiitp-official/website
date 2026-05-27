@@ -128,13 +128,12 @@ const Navbar = () => {
         },
         { name: "Vision & Mission", path: "/about/vision-mission" },
         { name: "Director Desk", path: "/about/director-desk" },
-        {
-          name: "Overview",
-          path: "/documents/INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, PUNE20240315-_0.pdf",
-          isExternal: true,
-        },
+        { name: "Student Achievements", path: "/about/student-achievements" },
+        { name: "Faculty Achievements", path: "/about/faculty-achievements" },
+        { name: "Overview", path: "/documents/INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, PUNE20240315-_0.pdf", isExternal: true },
         { name: "ARIIA Ranking", path: "/documents/ARI-U-0804-1-3.pdf", isExternal: true },
-      ],
+        { name: "NIRF", path: "/nirf" },
+      ]
     },
     { name: "Administration", path: "/administration", hasDropdown: false },
     {
@@ -185,20 +184,22 @@ const Navbar = () => {
       ]
     },
     { name: "Notice", path: "/notice", hasDropdown: false },
+    { name: "Library", path: "/library", hasDropdown: false },
+    { name: "Careers", path: "/careers", hasDropdown: false },
+    { name: "Placement", path: "/placement", hasDropdown: false },
+    { name: "Contact Us", path: "/contact", hasDropdown: false },
     { name: "E-TENDER", path: "/e-tender", hasDropdown: false },
   ];
 
   const secondaryLinks = [
-    { name: "Careers", path: "/careers" },
-    { name: "Placement", path: "/placement" },
-    { name: "Contact Us", path: "/contact" },
-    { name: "Fees", path: "/fees" },
-    { name: "NIRF", path: "/nirf" },
-    { name: "Report and Minutes", path: "/#" },
-    { name: "RTI", path: "/#" },
-    { name: "Sports & Gymnasium", path: "/#" },
-    { name: "Suo-Motu Disclosure", path: "/#" },
-    { name: "राजभाषा अनुभाग", path: "/#" },
+    // { name: "Fees", path: "/fees" },
+    // { name: "NIRF", path: "/nirf" },
+    // { name: "Report and Minutes", path: "/#" },
+    // { name: "RTI", path: "/#" },
+    // { name: "Sports & Gymnasium", path: "/#" },
+    // { name: "Suo-Motu Disclosure", path: "/#" },
+    // { name: "राजभाषा अनुभाग", path: "/#" },
+    // { name: "ACM Chapter", path: "/#" },
   ];
 
   const navLinkClass = ({ isActive }) =>
@@ -454,7 +455,7 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-wrap justify-center items-center py-1 pb-2 gap-x-4 gap-y-1 text-xs opacity-90 border-t border-blue-800/30 dark:border-gray-800 mt-1 pt-2">
+        {/* <div className="flex flex-wrap justify-center items-center py-1 pb-2 gap-x-4 gap-y-1 text-xs opacity-90 border-t border-blue-800/30 dark:border-gray-800 mt-1 pt-2">
           {secondaryLinks.map((link) => (
             <NavLink
               key={link.name}
@@ -464,7 +465,7 @@ const Navbar = () => {
               {link.name}
             </NavLink>
           ))}
-        </div>
+        </div> */}
       </nav>
 
       {/* Mobile Menu */}
@@ -685,11 +686,7 @@ const Navbar = () => {
               </div>
 
               {/* Secondary Links */}
-              <div className="border-t border-blue-800/50 dark:border-gray-800 pt-4">
-                <h3 className="text-blue-300 dark:text-blue-400 text-xs font-bold uppercase tracking-wider mb-2 px-3">
-                  Other Links
-                </h3>
-                <div className="flex flex-wrap gap-2 px-3">
+                {/* <div className="flex flex-wrap gap-2 px-3">
                   {secondaryLinks.map((link) => (
                     <NavLink
                       key={link.name}
@@ -704,8 +701,7 @@ const Navbar = () => {
                       {link.name}
                     </NavLink>
                   ))}
-                </div>
-              </div>
+                </div> */}
             </div>
           </motion.div>
         )}

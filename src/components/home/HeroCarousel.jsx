@@ -39,9 +39,9 @@ const HeroCarousel = () => {
         />
       ))}
 
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10 z-10" />
 
-      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
+      <div className="absolute inset-0 z-20 flex flex-col items-center justify-end text-center px-4 pb-20">
         <motion.h1 
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

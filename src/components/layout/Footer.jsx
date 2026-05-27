@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer className="bg-footer text-gray-300 border-t border-gray-800 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           
           {/* Quick Links Column */}
           <div>
@@ -62,22 +62,50 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 text-accent-dark mr-3 mt-1 shrink-0" />
-                <p className="leading-relaxed">
-                  Indian Institute of Information Technology Pune<br />
-                  Survey No. 25 & 27, Near Bopdev Ghat,<br />
-                  Kondhwa Annexe, A/P: Pisoli (MC),<br />
-                  Taluka: Haveli, District: Pune - 411048<br />
-                  Maharashtra, India
+                <p className="leading-relaxed text-sm">
+                  Indian Institute of Information Technology (IIIT) Pune<br />
+                  Gate No - 5 & 6,<br />
+                  Vill - Nanoli-Tarf Chakan,<br />
+                  PO - Talegaon,<br />
+                  Tah - Maval, Dist-Pune,<br />
+                  Maharashtra-410507
                 </p>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center text-sm">
                 <Phone className="w-5 h-5 text-accent-dark mr-3 shrink-0" />
-                <p>+91 (020) 24xxxxxx</p>
+                <p>02114-224510</p>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center text-sm">
                 <Mail className="w-5 h-5 text-accent-dark mr-3 shrink-0" />
-                <p>info@iiitp.ac.in</p>
+                <p>enquiry@iiitp.ac.in</p>
               </div>
+            </div>
+          </div>
+
+          {/* Map Column */}
+          <div>
+            <h3 className="text-white font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Map Location</h3>
+            <div className="h-40 w-full rounded-lg overflow-hidden border border-gray-800 relative group shadow-sm">
+              <iframe 
+                title="IIIT Pune Location Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.043690623351!2d73.6953457750284!3d18.763784782200388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b70007204f19%3A0x6700c253b3425039!2sIIIT%20Pune!5e0!3m2!1sen!2sin!4v1716744000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+              ></iframe>
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-300 pointer-events-none"></div>
+              <a 
+                href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology+Pune/@18.7531606,73.6877379,14z/data=!4m6!3m5!1s0x3bc2b405ac494d45:0xc302bc70566bb0f8!8m2!3d18.7651235!4d73.6970609!16s%2Fg%2F11c1qzfh2p?hl=en&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute bottom-2 right-2 z-10 bg-black/70 hover:bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded transition-all duration-200"
+              >
+                View Large Map
+              </a>
             </div>
           </div>
           
