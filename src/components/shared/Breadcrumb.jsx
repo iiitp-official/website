@@ -4,7 +4,7 @@ import { ChevronRight, Home } from 'lucide-react';
 
 const Breadcrumb = () => {
   const location = useLocation();
-  const pathnames = location.pathname.split('/').filter((x) => x && x.toLowerCase() !== 'about');
+  const allPaths = location.pathname.split('/').filter((x) => x);
 
   return (
     <nav aria-label="Breadcrumb" className="flex items-center text-sm font-medium text-blue-200 dark:text-gray-400 overflow-x-auto whitespace-nowrap no-scrollbar pb-1">
@@ -12,16 +12,34 @@ const Breadcrumb = () => {
         <Home size={14} className="mr-1.5" />
         Home
       </Link>
-      {pathnames.map((value, index) => {
-        const last = index === pathnames.length - 1;
-        const to = `/${pathnames.slice(0, index + 1).join('/')}`;
-        // Capitalize and format text (e.g., e-tender -> E-Tender)
-        const label = value.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+      {allPaths.map((value, index) => {
+        if (value.toLowerCase() === 'about' || value.toLowerCase() === 'academics') {
+          return null;
+        }
+
+        const last = index === allPaths.length - 1;
+        const to = `/${allPaths.slice(0, index + 1).join('/')}`;
+        const specialNames = {
+          'cse': 'CSE',
+          'ece': 'ECE',
+          'btech': 'B.Tech.',
+          'mtech': 'M.Tech.',
+          'phd': 'Ph.D.',
+          'honors': 'Honours'
+        };
+
+        // Capitalize and format text, handling special acronyms
+        let label = specialNames[value.toLowerCase()];
+        if (!label) {
+          label = value.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        }
+
+        const isUnclickable = value.toLowerCase() === 'btech' || value.toLowerCase() === 'mtech';
 
         return (
           <React.Fragment key={to}>
             <ChevronRight size={14} className="mx-2 opacity-50 shrink-0" />
-            {last ? (
+            {last || isUnclickable ? (
               <span className="text-white dark:text-gray-200 font-semibold">{label}</span>
             ) : (
               <Link to={to} className="hover:text-white transition-colors">
