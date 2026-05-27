@@ -29,8 +29,6 @@ import PlacementPage from "./pages/PlacementPage";
 import ContactPage from "./pages/ContactPage";
 import NIRFPage from "./pages/NIRFPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import FeesPage from './pages/FeesPage';
-import LibraryPage from './pages/LibraryPage';
 import StudentAchievementsPage from './pages/StudentAchievementsPage';
 import FacultyAchievementsPage from './pages/FacultyAchievementsPage';
 
