@@ -182,7 +182,7 @@ const BtechCsePage = () => {
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
                   <strong>Head of Department</strong>
                 </p>
-                <p className="text-sm text-accent-dark font-medium break-all">
+                <p className="text-sm text-brand-red dark:text-brand-red-dark font-medium break-all">
                   hodcse@iiitp.ac.in
                 </p>
               </div>
@@ -208,7 +208,7 @@ const BtechCsePage = () => {
                     key={sem}
                     onClick={() => setActiveSemester(sem)}
                     className={`px-5 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all duration-200 ${activeSemester === sem
-                      ? "bg-primary text-white shadow-md dark:bg-accent-dark"
+                      ? "bg-brand-red text-white shadow-md dark:bg-brand-red-dark"
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
                       }`}
                   >
@@ -223,9 +223,9 @@ const BtechCsePage = () => {
                   <table className="w-full text-left border-collapse">
                     <thead>
                       <tr className="bg-gray-50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300">
-                        <th className="py-4 px-6 font-bold text-sm tracking-wider border-b border-gray-200 dark:border-gray-700">Course Name</th>
-                        <th className="py-4 px-6 font-bold text-sm tracking-wider border-b border-gray-200 dark:border-gray-700 text-center">Hours/Week(L-T-P)</th>
-                        <th className="py-4 px-6 font-bold text-sm tracking-wider border-b border-gray-200 dark:border-gray-700 text-center">Credits</th>
+                        <th className="w-[60%] py-2.5 px-4 font-bold text-sm tracking-wider border-b border-gray-200 dark:border-gray-700">Course Name</th>
+                        <th className="w-[25%] py-2.5 px-4 font-bold text-sm tracking-wider border-b border-gray-200 dark:border-gray-700 text-center whitespace-nowrap">Hours/Week(L-T-P)</th>
+                        <th className="w-[15%] py-2.5 px-4 font-bold text-sm tracking-wider border-b border-gray-200 dark:border-gray-700 text-center">Credits</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -239,9 +239,9 @@ const BtechCsePage = () => {
                             key={course.name}
                             className="border-b border-gray-100 dark:border-gray-800 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors"
                           >
-                            <td className="py-4 px-6 text-gray-800 dark:text-gray-200 font-medium">{course.name}</td>
-                            <td className="py-4 px-6 text-center text-gray-700 dark:text-gray-300 font-bold">{course.hours}</td>
-                            <td className="py-4 px-6 text-center text-accent-dark font-bold">{course.credits}</td>
+                            <td className="py-2.5 px-4 text-gray-800 dark:text-gray-200 font-medium">{course.name}</td>
+                            <td className="py-2.5 px-4 text-center text-gray-700 dark:text-gray-300 font-bold">{course.hours}</td>
+                            <td className="py-2.5 px-4 text-center text-accent-dark font-bold">{course.credits}</td>
                           </motion.tr>
                         )) || (
                             <tr>
@@ -258,10 +258,10 @@ const BtechCsePage = () => {
                             exit={{ opacity: 0 }}
                             className="bg-blue-50/80 dark:bg-blue-900/20 border-t-2 border-blue-200 dark:border-blue-800"
                           >
-                            <td className="py-4 px-6 text-right font-bold text-gray-800 dark:text-gray-200" colSpan="2">
+                            <td className="py-2.5 px-4 text-right font-bold text-gray-800 dark:text-gray-200" colSpan="2">
                               Total Credits
                             </td>
-                            <td className="py-4 px-6 text-center text-accent-dark font-black text-lg">
+                            <td className="py-2.5 px-4 text-center text-accent-dark font-black text-lg">
                               {curriculum.find(c => c.semester === activeSemester).totalCredits}
                             </td>
                           </motion.tr>
