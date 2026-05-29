@@ -1,55 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { Search, Sun, Moon, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Social Icons
-const FacebookIcon = ({ size }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-  </svg>
-);
-
-const TwitterIcon = ({ size }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-  </svg>
-);
-
-const LinkedinIcon = ({ size }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect x="2" y="9" width="4" height="12" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
+// Social Icons replaced by PNGs
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(() => {
@@ -65,11 +19,8 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearch, setShowSearch] = useState(false);
-  const [searchResults, setSearchResults] = useState([]);
-  const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState({});
   const location = useLocation();
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (isDark) {
@@ -84,49 +35,7 @@ const Navbar = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setOpenDropdowns({});
-    setShowSearch(false);
-    setSearchQuery("");
   }, [location.pathname]);
-
-  const getFlattenedLinks = (links) => {
-    let flat = [];
-    links.forEach(link => {
-      if (link.path && link.path !== "#") {
-        flat.push({ name: link.name, path: link.path, isExternal: link.isExternal });
-      }
-      if (link.subLinks) {
-        flat = flat.concat(getFlattenedLinks(link.subLinks));
-      }
-    });
-    return flat;
-  };
-
-  useEffect(() => {
-    if (searchQuery.trim() === "") {
-      setSearchResults([]);
-      return;
-    }
-    const allLinks = getFlattenedLinks(primaryLinks);
-    const query = searchQuery.toLowerCase();
-    const results = allLinks.filter(link => link.name.toLowerCase().includes(query));
-    // Remove duplicates by path
-    const uniqueResults = Array.from(new Map(results.map(item => [item.path, item])).values());
-    setSearchResults(uniqueResults.slice(0, 6)); // show top 6
-  }, [searchQuery]);
-
-  const handleSearchEnter = (e) => {
-    if (e.key === "Enter" && searchResults.length > 0) {
-      const firstResult = searchResults[0];
-      if (firstResult.isExternal) {
-        window.open(firstResult.path, "_blank");
-      } else {
-        navigate(firstResult.path);
-      }
-      setShowSearch(false);
-      setIsMobileMenuOpen(false);
-      setSearchQuery("");
-    }
-  };
 
   const toggleDarkMode = () => setIsDark(!isDark);
 
@@ -145,31 +54,6 @@ const Navbar = () => {
     if (action === "increase") root.style.fontSize = Math.min(current + 1, 20) + "px";
     else if (action === "decrease") root.style.fontSize = Math.max(current - 1, 14) + "px";
     else root.style.fontSize = "16px";
-  };
-
-  // Language control
-  const changeLanguage = (lang) => {
-    const host = window.location.hostname;
-    
-    // Always set base path cookie
-    if (lang === 'en') {
-      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-    } else {
-      document.cookie = `googtrans=/en/${lang}; path=/`;
-    }
-
-    // Only set domain cookie if it's not localhost
-    if (host !== 'localhost' && host !== '127.0.0.1') {
-      if (lang === 'en') {
-        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${host}; path=/;`;
-        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.${host}; path=/;`;
-      } else {
-        document.cookie = `googtrans=/en/${lang}; domain=${host}; path=/`;
-        document.cookie = `googtrans=/en/${lang}; domain=.${host}; path=/`;
-      }
-    }
-    
-    window.location.reload();
   };
 
   const primaryLinks = [
@@ -205,23 +89,7 @@ const Navbar = () => {
         { name: "NIRF", path: "/nirf" },
       ]
     },
-    {
-      name: "Administration",
-      path: "#",
-      hasDropdown: true,
-      subLinks: [
-        { name: "Chairperson", path: "/administration/chairperson" },
-        { name: "Director", path: "/about/director-desk" },
-        { name: "Registrar", path: "/administration/registrar" },
-        { name: "Board of Governors", path: "/administration/board-of-governors" },
-        { name: "Finance Committee", path: "/administration/finance-committee" },
-        { name: "Building and Works Committee", path: "/administration/building-and-works-committee" },
-        { name: "Senate", path: "/administration/senate" },
-        { name: "Board of Studies (CSE)", path: "/administration/board-of-studies-cse" },
-        { name: "Board of Studies (ECE)", path: "/administration/board-of-studies-ece" },
-        { name: "Board of Studies (AS&H)", path: "/administration/board-of-studies-ash" },
-      ]
-    },
+    { name: "Administration", path: "/administration", hasDropdown: false },
     {
       name: "Academics",
       path: "#",
@@ -259,126 +127,41 @@ const Navbar = () => {
         },
       ],
     },
+    { name: "Research", path: "/research", hasDropdown: false },
     {
-      name: "Research",
+      name: "People",
       path: "#",
       hasDropdown: true,
       subLinks: [
-        { name: "Centres", path: "/research/centres" },
-        { name: "Internship @IIIT Pune", path: "/research/internships" },
-        // { name: "Library", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
-        { 
-          name: "Funded Projects", 
-          hasDropdown: true, 
-          subLinks: [
-            { name: "Funded Project (Completed)", path: "/research/funded-projects/completed" },
-            { name: "Funded Project (Ongoing)", path: "/research/funded-projects/ongoing" }
-          ]
-        },
-        { name: "Events", path: "/research/events" },
-        { 
-          name: "Research Scholar", 
-          hasDropdown: true,
-          subLinks: [
-            { name: "Institute Scheme", path: "/research/scholar/institute" },
-            { name: "Visvesvaraya Scheme", path: "/research/scholar/visvesvaraya" },
-            { name: "Graduated PhD Students", path: "/research/scholar/graduated" }
-          ]
-        },
-        { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
-      ]
+        { name: "Faculty", path: "/people/faculty" },
+        { name: "Visiting Faculty", path: "/people/visiting-faculty" },
+        { name: "Non-Teaching Staff", path: "/people/non-teaching-staff" },
+        { name: "Alumni", path: "/people/alumni" },
+      ],
     },
-    { name: "People", path: "/people", hasDropdown: false },
     {
       name: "Life@IIITP",
-      path: "#",
+      path: "/life",
       hasDropdown: true,
       subLinks: [
         { name: "Overview", path: "/life" },
-        {
-          name: "Professional Clubs",
-          hasDropdown: true,
-          path: "/life?tab=clubs",
-          subLinks: [
-            { name: "Blueprint", path: "/life?tab=clubs&club=blueprint" },
-            { name: "Club Heads (2025-26)", path: "https://www.iiitp.ac.in/sites/default/files/2025-09/Club%20Head%20and%20Co%20Head-2025-2026.pdf", isExternal: true },
-            { name: "Rang", path: "/life?tab=clubs&club=rang" },
-            { name: "QuantNum", path: "/life?tab=clubs&club=quantnum" },
-            { name: "Bit-Legion", path: "/life?tab=clubs&club=bit-legion" },
-            { name: "C-CUBE", path: "/life?tab=clubs&club=c-cube" },
-            { name: "E-Cell", path: "/life?tab=clubs&club=e-cell" },
-            { name: "Eclectic", path: "/life?tab=clubs&club=eclectic" },
-            { name: "SAAZ", path: "https://saaz-iiitp.vercel.app/", isExternal: true },
-            { name: "Vanity Crew", path: "/life?tab=clubs&club=vanity-crew" },
-            { name: "Sports", path: "/life?tab=clubs&club=sports" },
-            { name: "ROFIES", path: "/life?tab=clubs&club=rofies" },
-            { name: "localhost", path: "/life?tab=clubs&club=localhost" },
-            { name: "Horizon", path: "/life?tab=clubs&club=horizon" },
-            { name: "Abhinay", path: "/life?tab=clubs&club=abhinay" },
-            { name: "Q-riocity", path: "/life?tab=clubs&club=q-riocity" },
-          ]
-        },
-        {
-          name: "Activities",
-          hasDropdown: true,
-          path: "/life?tab=activities",
-          subLinks: [
-            { name: "Azadi Ka Amrit Mahotsav", path: "/life?tab=activities&act=azadi" },
-            { name: "EBSB", path: "/life?tab=activities&act=ebsb" },
-            { name: "Fit India Movement", path: "/life?tab=activities&act=fit-india" },
-            { name: "Hindi Pakhwada", path: "/life?tab=activities&act=hindi" },
-            { name: "Swachh Bharat", path: "/life?tab=activities&act=swachh" },
-            { name: "Unity Day", path: "/life?tab=activities&act=unity" },
-            { name: "Yoga Day", path: "/life?tab=activities&act=yoga" },
-            { name: "Youth Day", path: "/life?tab=activities&act=youth" },
-            { name: "AI Talent Hackathon", path: "/life?tab=activities&act=ai-talent" },
-          ]
-        },
-        { name: "Photo Gallery", path: "/life?tab=gallery" },
-        { name: "College Events", path: "/life?tab=events" },
-        { name: "HR Summit (2021)", path: "/life?tab=hr-summit" },
-        { name: "Magazine", path: "/life?tab=magazine" },
-        { name: "Permanent Campus", path: "/life?tab=campus" },
-        { name: "ACM Chapter", path: "/life?tab=acm" },
+        { name: "ACM Chapter", path: "/#" },
       ]
     },
-    {
-      name: "Notice",
-      path: "#",
-      hasDropdown: true,
-      subLinks: [
-        { name: "ANTI-RAGGING COMMITTEE & SQUADS", path: "/notice/anti-ragging" },
-        { name: "Late Fee for the even semester", path: "/notice/late-fee" },
-        {
-          name: "National Overseas Scholarship Scheme for ST students (2025-26)",
-          path: "#",
-          hasDropdown: true,
-          subLinks: [
-            { name: "Letter", path: "/documents/Letter to 265 institutions regarding NSP portal opening for the Year 2025-26.pdf", isExternal: true },
-            { name: "Guidelines NATIONAL FELLOWSHIP & SCHOLARSHIP", path: "/documents/Guidelines Scholarship - Top Class Part - B_compressed_compressed.pdf", isExternal: true }
-          ]
-        },
-        { name: "Odd Semester B.Tech (3rd, 5th & 7th Semesters) / M.Tech (3rd Semester) for AY (2025-26)", path: "/documents/Odd Sem Registration Instruction for Btech and Mtech_0.pdf", isExternal: true },
-        { name: "Rajbhasha Committee", path: "/documents/Rajbhasha committee.pdf", isExternal: true },
-        { name: "List of Faculty Advisor for B.Tech, M.Tech & PhD (Odd Semester) AY 2025-26", path: "/documents/List of Faculty Advisor for Odd Sem Registration.pdf", isExternal: true },
-        { name: "Notice in respect to the registration to the registration for B.Tech, M.Tech & PhD", path: "/documents/Notice in respect to the regstration for B.Tech, M.Tech & Ph.D programmes.pdf", isExternal: true },
-        { name: "List of Holidays", path: "/documents/office order (Holidays).pdf", isExternal: true },
-      ]
-    },
+    { name: "Notice", path: "/notice", hasDropdown: false },
     { name: "Careers", path: "/careers", hasDropdown: false },
     { name: "Placement", path: "/placement", hasDropdown: false },
     { name: "Contact Us", path: "/contact", hasDropdown: false },
-    { name: "E-TENDER", path: "/e-tender", hasDropdown: false },
-    // {
-    //   name: "More",
-    //   path: "#",
-    //   hasDropdown: true,
-    //   subLinks: [
-    //     { name: "RTI", path: "/rti" },
-    //     { name: "Suo-Motu Disclosure", path: "/suo-motu-disclosure" },
-    //     { name: "राजभाषा अनुभाग", path: "/rajbhasha-anubhag" },
-    //   ]
-    // },
+    { 
+      name: "E-TENDER", 
+      path: "#", 
+      hasDropdown: true,
+      subLinks: [
+        { name: "Live E-Tender", path: "/e-tender/live" },
+        { name: "Archive E-Tender", path: "/e-tender/archive" },
+        { name: "Awarded Tender", path: "https://www.iiitp.ac.in/sites/default/files/2026-04/Awarde%20Tender.pdf", isExternal: true },
+      ]
+    },
   ];
 
   const secondaryLinks = [
@@ -386,6 +169,7 @@ const Navbar = () => {
     // { name: "NIRF", path: "/nirf" },
     // { name: "Report and Minutes", path: "/#" },
     // { name: "RTI", path: "/#" },
+    // { name: "Sports & Gymnasium", path: "/#" },
     // { name: "Suo-Motu Disclosure", path: "/#" },
     // { name: "राजभाषा अनुभाग", path: "/#" },
     // { name: "ACM Chapter", path: "/#" },
@@ -445,19 +229,15 @@ const Navbar = () => {
               {/* Language Selector */}
               <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
                 <button
-                  onClick={() => changeLanguage('en')}
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors notranslate"
+                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
                   title="English"
-                  translate="no"
                 >
                   EN
                 </button>
                 <span className="text-gray-400 dark:text-gray-500 text-xs font-light">|</span>
                 <button
-                  onClick={() => changeLanguage('hi')}
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors notranslate"
+                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
                   title="Hindi"
-                  translate="no"
                 >
                   हिं
                 </button>
@@ -503,27 +283,27 @@ const Navbar = () => {
             {/* Bottom Row: Social Icons + Search (Desktop only) */}
             <div className="hidden md:flex items-center gap-1.5">
               {/* Social Icons */}
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-2">
                 <a
                   href="https://www.facebook.com/iiitpune"
                   aria-label="Facebook"
-                  className="text-white hover:text-accent-dark transition-colors p-1.5"
+                  className="opacity-80 hover:opacity-100 transition-opacity p-1.5"
                 >
-                  <FacebookIcon size={14} />
+                  <img src="/facebook.png" alt="Facebook" className="w-[22px] h-[22px] object-contain" />
                 </a>
                 <a
                   href="https://x.com/IIIT_PUNE"
                   aria-label="Twitter"
-                  className="text-white hover:text-accent-dark transition-colors p-1.5"
+                  className="opacity-80 hover:opacity-100 transition-opacity p-1.5"
                 >
-                  <TwitterIcon size={14} />
+                  <img src="/x.png" alt="X (Twitter)" className="w-[30px] h-[30px] object-contain" />
                 </a>
                 <a
                   href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
                   aria-label="LinkedIn"
-                  className="text-white hover:text-accent-dark transition-colors p-1.5"
+                  className="opacity-80 hover:opacity-100 transition-opacity p-1.5"
                 >
-                  <LinkedinIcon size={14} />
+                  <img src="/linkedin.png" alt="LinkedIn" className="w-[25px] h-[25px] object-contain" />
                 </a>
               </div>
 
@@ -541,49 +321,19 @@ const Navbar = () => {
 
               <AnimatePresence>
                 {showSearch && (
-                  <div className="relative">
-                    <motion.input
-                      initial={{ width: 0, opacity: 0 }}
-                      animate={{ width: 160, opacity: 1 }}
-                      exit={{ width: 0, opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                      type="text"
-                      placeholder="Search..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      onKeyPress={handleSearchEnter}
-                      onFocus={() => setIsSearchFocused(true)}
-                      onBlur={() => setTimeout(() => setIsSearchFocused(false), 200)}
-                      autoFocus
-                      className="h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 dark:placeholder-gray-500 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm overflow-hidden"
-                    />
-                    <AnimatePresence>
-                      {searchQuery && isSearchFocused && (
-                        <motion.div
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: 10 }}
-                          className="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-lg shadow-xl overflow-hidden z-50"
-                        >
-                          {searchResults.length > 0 ? (
-                            searchResults.map((result, idx) => (
-                              result.isExternal ? (
-                                <a key={idx} href={result.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0">
-                                  {result.name}
-                                </a>
-                              ) : (
-                                <Link key={idx} to={result.path} className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0" onClick={() => {setShowSearch(false); setSearchQuery("")}}>
-                                  {result.name}
-                                </Link>
-                              )
-                            ))
-                          ) : (
-                            <div className="px-4 py-3 text-sm text-gray-500 text-center">No results found</div>
-                          )}
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
+                  <motion.input
+                    initial={{ width: 0, opacity: 0 }}
+                    animate={{ width: 160, opacity: 1 }}
+                    exit={{ width: 0, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                    type="text"
+                    placeholder="Search..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
+                    autoFocus
+                    className="h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 dark:placeholder-gray-500 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm overflow-hidden"
+                  />
                 )}
               </AnimatePresence>
             </div>
@@ -600,7 +350,7 @@ const Navbar = () => {
                 to={link.path}
                 className={({ isActive }) => {
                   const isLinkActive = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
                     : isActive;
                   return navLinkClass({ isActive: isLinkActive });
                 }}
@@ -608,7 +358,7 @@ const Navbar = () => {
               >
                 {({ isActive }) => {
                   const activeState = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
                     : isActive;
                   return (
                     <>
@@ -622,20 +372,16 @@ const Navbar = () => {
                 }}
               </NavLink>
               {link.hasDropdown && link.subLinks && (
-                <div className="absolute top-full left-0 mt-0 w-64 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
+                <div className="absolute top-full left-0 mt-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
                   {link.subLinks.map((sub) => (
                     <div key={sub.name} className="relative group/sub">
                       {sub.hasDropdown ? (
                         <>
-                          <Link
-                            to={sub.path || "#"}
-                            className="px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark cursor-pointer flex justify-between items-center transition-colors w-full"
-                          >
+                          <div className="px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark cursor-pointer flex justify-between items-center transition-colors">
                             {sub.name}
-                            <ChevronDown className="w-3 h-3 -rotate-90 opacity-70 shrink-0" />
-                          </Link>
-                          {/* Flyout panel to the RIGHT */}
-                          <div className="absolute left-full top-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg border border-gray-100 dark:border-gray-800 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 flex flex-col z-[60] max-h-[70vh] overflow-y-auto custom-scrollbar">
+                            <ChevronDown className="w-3 h-3 -rotate-90 opacity-70" />
+                          </div>
+                          <div className="absolute top-0 left-full ml-0 w-48 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
                             {sub.subLinks.map((nested) =>
                               nested.isExternal ? (
                                 <a
@@ -643,7 +389,7 @@ const Navbar = () => {
                                   href={nested.path}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left border-l-2 border-transparent hover:border-brand-red"
+                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
                                 >
                                   {nested.name}
                                 </a>
@@ -651,7 +397,7 @@ const Navbar = () => {
                                 <Link
                                   key={nested.name}
                                   to={nested.path}
-                                  className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left border-l-2 border-transparent hover:border-brand-red"
+                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
                                 >
                                   {nested.name}
                                 </Link>
@@ -707,68 +453,47 @@ const Navbar = () => {
           >
             <div className="px-4 py-4 space-y-4 max-h-[70vh] overflow-y-auto">
               {/* Mobile Search */}
-              <div className="relative px-3 z-50">
-                <div className="flex items-center gap-2">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    onKeyPress={handleSearchEnter}
-                    className="flex-1 h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm"
-                  />
-                  <Search className="w-4 h-4 text-white opacity-70" />
-                </div>
-                {searchQuery && (
-                  <div className="absolute top-full left-3 right-3 mt-2 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-lg shadow-xl overflow-hidden">
-                    {searchResults.length > 0 ? (
-                      searchResults.map((result, idx) => (
-                        result.isExternal ? (
-                          <a key={idx} href={result.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0" onClick={() => setIsMobileMenuOpen(false)}>
-                            {result.name}
-                          </a>
-                        ) : (
-                          <Link key={idx} to={result.path} className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0" onClick={() => {setIsMobileMenuOpen(false); setSearchQuery("")}}>
-                            {result.name}
-                          </Link>
-                        )
-                      ))
-                    ) : (
-                      <div className="px-4 py-3 text-sm text-gray-500 text-center">No results found</div>
-                    )}
-                  </div>
-                )}
+              <div className="flex items-center gap-2 px-3">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
+                  className="flex-1 h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm"
+                />
+                <Search className="w-4 h-4 text-white opacity-70" />
               </div>
 
               {/* Mobile Social + Language + Text Size */}
-              <div className="flex items-center gap-3 px-3">
+              <div className="flex items-center gap-4 px-3">
                 <a
                   href="https://www.facebook.com/iiitpune"
                   aria-label="Facebook"
-                  className="text-white hover:text-accent-dark transition-colors"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  <FacebookIcon size={16} />
+                  <img src="/facebook.png" alt="Facebook" className="w-5 h-5 object-contain" />
                 </a>
                 <a
                   href="https://x.com/IIIT_PUNE"
                   aria-label="Twitter"
-                  className="text-white hover:text-accent-dark transition-colors"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  <TwitterIcon size={16} />
+                  <img src="/x.png" alt="X (Twitter)" className="w-5 h-5 object-contain" />
                 </a>
                 <a
                   href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
                   aria-label="LinkedIn"
-                  className="text-white hover:text-accent-dark transition-colors"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  <LinkedinIcon size={16} />
+                  <img src="/linkedin.png" alt="LinkedIn" className="w-5 h-5 object-contain" />
                 </a>
                 <div className="ml-auto flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                  <button onClick={() => changeLanguage('en')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors notranslate" translate="no">
+                  <button className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
                     EN
                   </button>
                   <span className="text-gray-400 text-xs">|</span>
-                  <button onClick={() => changeLanguage('hi')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors notranslate" translate="no">
+                  <button className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
                     हिं
                   </button>
                 </div>
@@ -815,7 +540,7 @@ const Navbar = () => {
                           }}
                           className={({ isActive }) => {
                             const activeState = link.path === "#"
-                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
+                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
                               : isActive;
                             return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
                               ? "bg-brand-red text-white dark:bg-brand-red-dark/50"
@@ -849,13 +574,9 @@ const Navbar = () => {
                                 {sub.hasDropdown ? (
                                   <>
                                     <div className="flex items-center justify-between">
-                                      <Link
-                                        to={sub.path || "#"}
-                                        onClick={() => setIsMobileMenuOpen(false)}
-                                        className="flex-1 px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-red transition-colors text-left"
-                                      >
+                                      <div className="flex-1 px-3 py-2 text-sm font-medium text-gray-300">
                                         {sub.name}
-                                      </Link>
+                                      </div>
                                       <button
                                         onClick={(e) => toggleDropdown(sub.name, e)}
                                         className="p-2 text-white hover:bg-blue-800/50 rounded-md"
