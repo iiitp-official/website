@@ -64,7 +64,11 @@ function App() {
       <ScrollToTop />
       <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-bg dark:bg-bg-dark transition-colors duration-200">
         <Navbar />
-        <main className="flex-grow w-full overflow-x-hidden flex flex-col">
+
+
+
+
+              <main className="flex-grow w-full overflow-x-hidden flex flex-col">
           <Suspense fallback={<LoadingFallback />}>
             <Routes>
               {/* Home */}
@@ -126,8 +130,8 @@ function App() {
               
               {/* Other Pages */}
               <Route path="/life" element={<LifePage />} />
-              <Route path="/notice" element={<NoticePage />} />
               <Route path="/news" element={<NewsPage />} />
+              <Route path="/notice" element={<NoticePage />} />
               <Route path="/notice/anti-ragging" element={<AntiRaggingPage />} />
               <Route path="/notice/late-fee" element={<AboutPlaceholderPage title="Late Fee for the even semester" />} />
               <Route path="/careers" element={<CareersPage />} />

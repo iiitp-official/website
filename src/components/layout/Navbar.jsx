@@ -74,6 +74,31 @@ const Navbar = () => {
     else root.style.fontSize = "16px";
   };
 
+  // Language control
+  const changeLanguage = (lang) => {
+    const host = window.location.hostname;
+
+    // Always set base path cookie
+    if (lang === 'en') {
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    } else {
+      document.cookie = `googtrans=/en/${lang}; path=/`;
+    }
+
+    // Only set domain cookie if it's not localhost
+    if (host !== 'localhost' && host !== '127.0.0.1') {
+      if (lang === 'en') {
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${host}; path=/;`;
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.${host}; path=/;`;
+      } else {
+        document.cookie = `googtrans=/en/${lang}; domain=${host}; path=/`;
+        document.cookie = `googtrans=/en/${lang}; domain=.${host}; path=/`;
+      }
+    }
+
+    window.location.reload();
+  };
+
   const primaryLinks = [
     {
       name: "About Us",
@@ -145,7 +170,35 @@ const Navbar = () => {
         },
       ],
     },
-    { name: "Research", path: "/research", hasDropdown: false },
+    { name: "Research",
+     path: "/research",
+     hasDropdown: true,
+     subLinks: [
+       { name: "Centres", path: "/research/centres" },
+       { name: "Internship @IIIT Pune", path: "/research/internships" },
+       { name: "Library", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
+       {
+          name: "Funded Projects",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Funded Project (Completed)", path: "/research/funded-projects/completed" },
+            { name: "Funded Project (Ongoing)", path: "/research/funded-projects/ongoing" }
+          ]
+        },
+        { name: "Events", path: "/research/events" },
+        {
+          name: "Research Scholar",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Institute Scheme", path: "/research/scholar/institute" },
+            { name: "Visvesvaraya Scheme", path: "/research/scholar/visvesvaraya" },
+            { name: "Graduated PhD Students", path: "/research/scholar/graduated" }
+          ]
+        },
+        { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
+      ]
+     
+    },
     {
       name: "People",
       path: "#",
@@ -163,7 +216,52 @@ const Navbar = () => {
       hasDropdown: true,
       subLinks: [
         { name: "Overview", path: "/life" },
+        {
+          name: "Professional Clubs",
+          hasDropdown: true,
+          path: "/life?tab=clubs",
+          subLinks: [
+            { name: "Blueprint", path: "/life?tab=clubs&club=blueprint" },
+            { name: "Club Heads (2025-26)", path: "https://www.iiitp.ac.in/sites/default/files/2025-09/Club%20Head%20and%20Co%20Head-2025-2026.pdf", isExternal: true },
+            { name: "Rang", path: "/life?tab=clubs&club=rang" },
+            { name: "QuantNum", path: "/life?tab=clubs&club=quantnum" },
+            { name: "Bit-Legion", path: "/life?tab=clubs&club=bit-legion" },
+            { name: "C-CUBE", path: "/life?tab=clubs&club=c-cube" },
+            { name: "E-Cell", path: "/life?tab=clubs&club=e-cell" },
+            { name: "Eclectic", path: "/life?tab=clubs&club=eclectic" },
+            { name: "SAAZ", path: "https://saaz-iiitp.vercel.app/", isExternal: true },
+            { name: "Vanity Crew", path: "/life?tab=clubs&club=vanity-crew" },
+            { name: "Sports", path: "/life?tab=clubs&club=sports" },
+            { name: "ROFIES", path: "/life?tab=clubs&club=rofies" },
+            { name: "localhost", path: "/life?tab=clubs&club=localhost" },
+            { name: "Horizon", path: "/life?tab=clubs&club=horizon" },
+            { name: "Abhinay", path: "/life?tab=clubs&club=abhinay" },
+            { name: "Q-riocity", path: "/life?tab=clubs&club=q-riocity" },
+          ]
+        },
+        {
+          name: "Activities",
+          hasDropdown: true,
+          path: "/life?tab=activities",
+          subLinks: [
+            { name: "Azadi Ka Amrit Mahotsav", path: "/life?tab=activities&act=azadi" },
+            { name: "EBSB", path: "/life?tab=activities&act=ebsb" },
+            { name: "Fit India Movement", path: "/life?tab=activities&act=fit-india" },
+            { name: "Hindi Pakhwada", path: "/life?tab=activities&act=hindi" },
+            { name: "Swachh Bharat", path: "/life?tab=activities&act=swachh" },
+            { name: "Unity Day", path: "/life?tab=activities&act=unity" },
+            { name: "Yoga Day", path: "/life?tab=activities&act=yoga" },
+            { name: "Youth Day", path: "/life?tab=activities&act=youth" },
+            { name: "AI Talent Hackathon", path: "/life?tab=activities&act=ai-talent" },
+          ]
+        },
+        { name: "Photo Gallery", path: "/life?tab=gallery" },
+        { name: "College Events", path: "/life?tab=events" },
+        { name: "HR Summit (2021)", path: "/life?tab=hr-summit" },
+        { name: "Magazine", path: "/life?tab=magazine" },
+        { name: "Permanent Campus", path: "/life?tab=campus" },
         { name: "ACM Chapter", path: "/#" },
+        { name: "Sports & Gymnasium", path: "/#" },
       ]
     },
     { name: "Notice", path: "/notice", hasDropdown: false },
@@ -194,7 +292,7 @@ const Navbar = () => {
   ];
 
   const navLinkClass = ({ isActive }) =>
-    `relative py-2 px-3 text-sm font-medium transition-colors duration-200 group flex items-center ${isActive ? "text-brand-red dark:text-brand-red-dark" : "text-white hover:text-brand-red dark:text-gray-200 dark:hover:text-brand-red-dark"
+    `relative py-1 px-2.5 text-xs md:text-sm font-medium transition-colors duration-200 group flex items-center ${isActive ? "text-brand-red dark:text-brand-red-dark" : "text-white hover:text-brand-red dark:text-gray-200 dark:hover:text-brand-red-dark"
     }`;
 
   const navLinkUnderline = ({ isActive }) => (
@@ -208,28 +306,28 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full shadow-md bg-primary dark:bg-surface-dark transition-colors duration-200">
       {/* Row 1: Logo + Name + Controls */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-blue-800/50 dark:border-gray-800">
-        <div className="flex justify-between items-center py-3 md:py-4">
+        <div className="flex justify-between items-center py-1 md:py-2">
           {/* Logo + Name */}
-          <Link to="/" className="flex items-start space-x-3">
-            <div className="w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden flex items-center justify-center shrink-0">
+          <Link to="/" className="flex items-center space-x-2 md:space-x-3">
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center shrink-0">
               <img src="/iiitp-logo.png" alt="IIIT Pune Logo" className="w-full h-full object-contain" />
             </div>
             <div className="text-white dark:text-text-dark leading-tight">
-              <h1 className="text-xl md:text-2xl font-bold font-serif">
+              <h1 className="text-sm md:text-base lg:text-lg font-bold font-serif">
                 Indian Institute of Information Technology Pune
               </h1>
-              <h2 className="text-sm md:text-2xl font-medium opacity-90 font-serif mt-1">
+              <h2 className="text-xs md:text-sm lg:text-base font-medium opacity-90 font-serif mt-0.5">
                 भारतीय सूचना प्रौद्योगिकी संस्थान, पुणे
               </h2>
-              <p className="text-[10px] md:text-sm opacity-80 mt-1">(An Institute of National Importance)</p>
-              <p className="text-[8px] md:text-xs opacity-70 mt-0.5">
+              <p className="text-[9px] md:text-[11px] opacity-80 mt-0.5">(An Institute of National Importance)</p>
+              <p className="text-[7px] md:text-[9px] opacity-70 mt-0.5">
                 Gat No. 5 &amp; 6, Village Nanoli-Tathawade, Tal. Maval, Pune - 412106
               </p>
             </div>
           </Link>
 
           {/* Right Controls */}
-          <div className="flex flex-col items-end gap-3">
+          <div className="flex flex-col items-end gap-1 md:gap-1.5">
             {/* Top Row: Dark mode + Language + Text Size + Mobile menu */}
             <div className="flex items-center gap-2 md:gap-3">
               {/* Dark Mode */}
@@ -361,7 +459,7 @@ const Navbar = () => {
 
       {/* Row 2: Primary Nav Links (Desktop) */}
       <nav className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-center items-center py-2 gap-x-2 gap-y-1">
+        <div className="flex flex-wrap justify-center items-center py-1 gap-x-2 gap-y-0.5">
           {primaryLinks.map((link) => (
             <div key={link.name} className="relative group">
               <NavLink
