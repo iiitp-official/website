@@ -294,8 +294,7 @@ const Navbar = () => {
         { name: "HR Summit (2021)", path: "/life?tab=hr-summit" },
         { name: "Magazine", path: "/life?tab=magazine" },
         { name: "Permanent Campus", path: "/life?tab=campus" },
-        { name: "ACM Chapter", path: "/#" },
-        { name: "Sports & Gymnasium", path: "/#" },
+        { name: "ACM Chapter", path: "/life?tab=acm" },
       ]
     },
     {
@@ -548,7 +547,7 @@ const Navbar = () => {
                 }}
               </NavLink>
               {link.hasDropdown && link.subLinks && (
-                <div className={`absolute top-full left-0 mt-0 w-64 max-h-[70vh] overflow-y-auto overflow-x-hidden custom-scrollbar bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50`}>
+                <div className="absolute top-full left-0 mt-0 w-64 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
                   {link.subLinks.map((sub) => (
                     <div key={sub.name} className="relative group/sub">
                       {sub.hasDropdown ? (
@@ -558,9 +557,10 @@ const Navbar = () => {
                             className="px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark cursor-pointer flex justify-between items-center transition-colors w-full"
                           >
                             {sub.name}
-                            <ChevronDown className="w-3 h-3 transition-transform duration-200 group-hover/sub:rotate-180 opacity-70" />
+                            <ChevronDown className="w-3 h-3 -rotate-90 opacity-70 shrink-0" />
                           </Link>
-                          <div className={`max-h-0 overflow-hidden opacity-0 group-hover/sub:max-h-[500px] group-hover/sub:opacity-100 transition-all duration-300 flex flex-col w-full bg-blue-50/50 dark:bg-gray-800/50`}>
+                          {/* Flyout panel to the RIGHT */}
+                          <div className="absolute left-full top-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg border border-gray-100 dark:border-gray-800 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 flex flex-col z-[60] max-h-[70vh] overflow-y-auto custom-scrollbar">
                             {sub.subLinks.map((nested) =>
                               nested.isExternal ? (
                                 <a
@@ -568,7 +568,7 @@ const Navbar = () => {
                                   href={nested.path}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="block px-6 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left border-l-2 border-transparent hover:border-brand-red"
+                                  className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left border-l-2 border-transparent hover:border-brand-red"
                                 >
                                   {nested.name}
                                 </a>
@@ -576,7 +576,7 @@ const Navbar = () => {
                                 <Link
                                   key={nested.name}
                                   to={nested.path}
-                                  className="block px-6 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left border-l-2 border-transparent hover:border-brand-red"
+                                  className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left border-l-2 border-transparent hover:border-brand-red"
                                 >
                                   {nested.name}
                                 </Link>
