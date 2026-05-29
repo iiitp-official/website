@@ -11,6 +11,15 @@ import DirectorDeskPage from "./pages/DirectorDeskPage";
 import VisionMissionPage from "./pages/VisionMissionPage";
 import AboutPlaceholderPage from "./pages/AboutPlaceholderPage";
 import AdministrationPage from "./pages/AdministrationPage";
+import ChairpersonPage from "./pages/ChairpersonPage";
+import RegistrarPage from "./pages/RegistrarPage";
+import BoardOfGovernorsPage from "./pages/BoardOfGovernorsPage";
+import FinanceCommitteePage from "./pages/FinanceCommitteePage";
+import BuildingWorksCommitteePage from "./pages/BuildingWorksCommitteePage";
+import SenatePage from "./pages/SenatePage";
+import BoardOfStudiesCsePage from "./pages/BoardOfStudiesCsePage";
+import BoardOfStudiesEcePage from "./pages/BoardOfStudiesEcePage";
+import BoardOfStudiesAshPage from "./pages/BoardOfStudiesAshPage";
 import BtechCsePage from "./pages/BtechCsePage";
 import BtechEcePage from "./pages/BtechEcePage";
 import BtechHonorsPage from "./pages/BtechHonorsPage";
@@ -36,10 +45,10 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="w-full overflow-x-hidden min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-bg dark:bg-bg-dark transition-colors duration-200">
+      <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-bg dark:bg-bg-dark transition-colors duration-200">
         {/* <TopBar /> */}
         <Navbar />
-        <main className="flex-grow w-full overflow-x-hidden">
+        <main className="flex-grow w-full">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
@@ -52,6 +61,15 @@ function App() {
             <Route path="/about/overview" element={<AboutPlaceholderPage title="Overview" />} />
             <Route path="/about/ariia" element={<AboutPlaceholderPage title="ARIIA Ranking" />} />
             <Route path="/administration" element={<AdministrationPage />} />
+            <Route path="/administration/chairperson" element={<ChairpersonPage />} />
+            <Route path="/administration/registrar" element={<RegistrarPage />} />
+            <Route path="/administration/board-of-governors" element={<BoardOfGovernorsPage />} />
+            <Route path="/administration/finance-committee" element={<FinanceCommitteePage />} />
+            <Route path="/administration/building-and-works-committee" element={<BuildingWorksCommitteePage />} />
+            <Route path="/administration/senate" element={<SenatePage />} />
+            <Route path="/administration/board-of-studies-cse" element={<BoardOfStudiesCsePage />} />
+            <Route path="/administration/board-of-studies-ece" element={<BoardOfStudiesEcePage />} />
+            <Route path="/administration/board-of-studies-ash" element={<BoardOfStudiesAshPage />} />
             <Route path="/academics/btech/cse" element={<BtechCsePage />} />
             <Route path="/academics/btech/ece" element={<BtechEcePage />} />
             <Route path="/academics/btech/honors" element={<BtechHonorsPage />} />

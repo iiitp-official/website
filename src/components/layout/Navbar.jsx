@@ -102,6 +102,31 @@ const Navbar = () => {
     else root.style.fontSize = "16px";
   };
 
+  // Language control
+  const changeLanguage = (lang) => {
+    const host = window.location.hostname;
+    
+    // Always set base path cookie
+    if (lang === 'en') {
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    } else {
+      document.cookie = `googtrans=/en/${lang}; path=/`;
+    }
+
+    // Only set domain cookie if it's not localhost
+    if (host !== 'localhost' && host !== '127.0.0.1') {
+      if (lang === 'en') {
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${host}; path=/;`;
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.${host}; path=/;`;
+      } else {
+        document.cookie = `googtrans=/en/${lang}; domain=${host}; path=/`;
+        document.cookie = `googtrans=/en/${lang}; domain=.${host}; path=/`;
+      }
+    }
+    
+    window.location.reload();
+  };
+
   const primaryLinks = [
     {
       name: "About Us",
@@ -135,7 +160,23 @@ const Navbar = () => {
         { name: "NIRF", path: "/nirf" },
       ]
     },
-    { name: "Administration", path: "/administration", hasDropdown: false },
+    {
+      name: "Administration",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "Chairperson", path: "/administration/chairperson" },
+        { name: "Director", path: "/about/director-desk" },
+        { name: "Registrar", path: "/administration/registrar" },
+        { name: "Board of Governors", path: "/administration/board-of-governors" },
+        { name: "Finance Committee", path: "/administration/finance-committee" },
+        { name: "Building and Works Committee", path: "/administration/building-and-works-committee" },
+        { name: "Senate", path: "/administration/senate" },
+        { name: "Board of Studies (CSE)", path: "/administration/board-of-studies-cse" },
+        { name: "Board of Studies (ECE)", path: "/administration/board-of-studies-ece" },
+        { name: "Board of Studies (AS&H)", path: "/administration/board-of-studies-ash" },
+      ]
+    },
     {
       name: "Academics",
       path: "#",
@@ -182,6 +223,7 @@ const Navbar = () => {
       subLinks: [
         { name: "Overview", path: "/life" },
         { name: "ACM Chapter", path: "/#" },
+        { name: "Sports & Gymnasium", path: "/#" },
       ]
     },
     { name: "Notice", path: "/notice", hasDropdown: false },
@@ -189,6 +231,16 @@ const Navbar = () => {
     { name: "Placement", path: "/placement", hasDropdown: false },
     { name: "Contact Us", path: "/contact", hasDropdown: false },
     { name: "E-TENDER", path: "/e-tender", hasDropdown: false },
+    // {
+    //   name: "More",
+    //   path: "#",
+    //   hasDropdown: true,
+    //   subLinks: [
+    //     { name: "RTI", path: "/rti" },
+    //     { name: "Suo-Motu Disclosure", path: "/suo-motu-disclosure" },
+    //     { name: "राजभाषा अनुभाग", path: "/rajbhasha-anubhag" },
+    //   ]
+    // },
   ];
 
   const secondaryLinks = [
@@ -196,7 +248,6 @@ const Navbar = () => {
     // { name: "NIRF", path: "/nirf" },
     // { name: "Report and Minutes", path: "/#" },
     // { name: "RTI", path: "/#" },
-    // { name: "Sports & Gymnasium", path: "/#" },
     // { name: "Suo-Motu Disclosure", path: "/#" },
     // { name: "राजभाषा अनुभाग", path: "/#" },
     // { name: "ACM Chapter", path: "/#" },
@@ -256,6 +307,7 @@ const Navbar = () => {
               {/* Language Selector */}
               <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
                 <button
+                  onClick={() => changeLanguage('en')}
                   className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
                   title="English"
                 >
@@ -263,6 +315,7 @@ const Navbar = () => {
                 </button>
                 <span className="text-gray-400 dark:text-gray-500 text-xs font-light">|</span>
                 <button
+                  onClick={() => changeLanguage('hi')}
                   className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
                   title="Hindi"
                 >
@@ -377,7 +430,7 @@ const Navbar = () => {
                 to={link.path}
                 className={({ isActive }) => {
                   const isLinkActive = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
                     : isActive;
                   return navLinkClass({ isActive: isLinkActive });
                 }}
@@ -385,7 +438,7 @@ const Navbar = () => {
               >
                 {({ isActive }) => {
                   const activeState = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
                     : isActive;
                   return (
                     <>
@@ -516,11 +569,11 @@ const Navbar = () => {
                   <LinkedinIcon size={16} />
                 </a>
                 <div className="ml-auto flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                  <button className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
+                  <button onClick={() => changeLanguage('en')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
                     EN
                   </button>
                   <span className="text-gray-400 text-xs">|</span>
-                  <button className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
+                  <button onClick={() => changeLanguage('hi')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
                     हिं
                   </button>
                 </div>
@@ -567,7 +620,7 @@ const Navbar = () => {
                           }}
                           className={({ isActive }) => {
                             const activeState = link.path === "#"
-                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
                               : isActive;
                             return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
                               ? "bg-brand-red text-white dark:bg-brand-red-dark/50"

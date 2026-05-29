@@ -13,7 +13,7 @@ const Breadcrumb = () => {
         Home
       </Link>
       {allPaths.map((value, index) => {
-        if (value.toLowerCase() === 'about' || value.toLowerCase() === 'academics') {
+        if (value.toLowerCase() === 'about' || value.toLowerCase() === 'academics' || value.toLowerCase() === 'administration') {
           return null;
         }
 
@@ -25,7 +25,10 @@ const Breadcrumb = () => {
           'btech': 'B.Tech.',
           'mtech': 'M.Tech.',
           'phd': 'Ph.D.',
-          'honors': 'Honours'
+          'honors': 'Honours',
+          'board-of-studies-cse': 'Board of Studies (CSE)',
+          'board-of-studies-ece': 'Board of Studies (ECE)',
+          'board-of-studies-ash': 'Board of Studies (AS&H)'
         };
 
         // Capitalize and format text, handling special acronyms

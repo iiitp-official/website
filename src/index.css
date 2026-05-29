@@ -5,8 +5,18 @@
 @tailwind utilities;
 
 html, body {
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
+  top: 0 !important;
+}
+
+/* Hide the Google Translate top bar */
+.skiptranslate > iframe.skiptranslate {
+  display: none !important; 
+  visibility: hidden !important;
+}
+body {
+  top: 0px !important; 
 }
 
 @layer base {
