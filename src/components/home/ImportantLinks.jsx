@@ -137,13 +137,14 @@ const ImportantLinks = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                       {[
                         { name: 'Ministry of Education', url: 'https://www.education.gov.in/' },
-                        { name: 'National Informatics Centre (NIC)', url: 'https://www.nic.in/' },
+                        { name: 'National Informatics Centre (NIC)', url: 'https://www.nic.gov.in/' },
                         { name: 'National Testing Agency (NTA)', url: 'https://nta.ac.in/' },
-                        { name: 'JoSAA / CSAB', url: 'https://josaa.admissions.nic.in/' },
-                        { name: 'AICTE', url: 'https://www.aicte-india.org/' },
+                        { name: 'JoSAA', url: 'https://josaa.nic.in/' },
+                        { name: 'CSAB', url: 'https://csab.nic.in/' },
+                        { name: 'AICTE', url: 'https://www.aicte.gov.in/' },
                         { name: 'National Scholarship Portal', url: 'https://scholarships.gov.in/' },
                         { name: 'Swayam Portal', url: 'https://swayam.gov.in/' },
-                        { name: 'National Digital Library', url: 'https://ndl.iitkgp.ac.in/' },
+                        { name: 'National Digital Library', url: 'https://www.ndl.gov.in/' },
                       ].map((link, idx) => (
                         <a
                           key={idx}

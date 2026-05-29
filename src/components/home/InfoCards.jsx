@@ -271,7 +271,7 @@ const InfoCards = () => {
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow line-clamp-4">
-                "Indian Institute of Information Technology Pune is committed to imparting high-quality technical education and instilling a long-term vision among students. Our focus lies not just on academic brilliance but also on the knowledge that is pervasive in areas of emerging technologies."
+                "Prof. Vineet Kansal has assumed charge as the Director of the Indian Institute of Information Technology (IIIT) Pune with effect from the forenoon of April 4, 2026, following his appointment by the Hon'ble President of India in his capacity as the Visitor of the Institute."
               </p>
               <Link to="/about/director-desk" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors mt-auto">
                 Read Director's Message <ChevronRight size={16} className="ml-1" />
