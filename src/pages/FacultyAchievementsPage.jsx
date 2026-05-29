@@ -120,7 +120,7 @@ const publications = [
     doi: "10.1080/09205071.2025.2505051"
   },
   {
-    authors: "B. Pramodini, D. Chaturvedi,L. Darasi, G. Rana and A. Kumar",
+    authors: "B. Pramodini, D. Chaturvedi,L. Darasi, G. Rana and A. Kumar",
     title: "Optimized Compact MIMO Antenna Design: HMSIW-Based and Cavity-Backed for Enhanced Bandwidth,",
     journal: "IEEE Access, vol. 12, pp. 189820-189828 .https://ieeexplore.ieee.org/abstract/document/10792883",
     year: "2024",
@@ -162,9 +162,9 @@ const publications = [
     doi: ""
   },
   {
-    authors: "Sushant Kumar and S. Majhi",
+    authors: "Sushant Kumar and S. Majhi",
     title: "Design and Testbed Implementation of Multiuser CFOs Estimation for MIMO SC-FDMA System,",
-    journal: "in IEEE Transactions on Signal Processing, vol. 70, pp. 1880-1889",
+    journal: "in IEEE Transactions on Signal Processing, vol. 70, pp. 1880-1889",
     year: "2022",
     doi: "https"
   },
@@ -178,7 +178,7 @@ const publications = [
   {
     authors: "Tanmoy Hazra, Kushal Anjaria",
     title: "Applications of game theory in deep learning: a Survey",
-    journal: "Multimed Tools Appl 81, 8963–8994",
+    journal: "Multimed Tools Appl 81, 8963-8994",
     year: "2022",
     doi: ""
   },
@@ -355,7 +355,7 @@ const conferences = [
     details: "A. Kumar, D. Chaturvedi, et al. \"QMSIW Based Self-Diplexing MIMO Antenna \" 2025, IEEE, European Conference on Antenna and Propagation (EuCAP), Stockholm, Sweden, 30 March - 4 April 2025."
   },
   {
-    details: "T. Ganesh, A. Kumar, M. Bhavani, D. Chaturvedi Design of Meta Surface Based Monopole Antenna Sensor for Breast Cancer Detection\", IEEE Microwaves, Antennas, and Propagation Conference (MAPCON), Hyderabad, Dec 9-13, 2024."
+    details: "T. Ganesh, A. Kumar, M. Bhavani, D. Chaturvedi Design of Meta Surface Based Monopole Antenna Sensor for Breast Cancer Detection\", IEEE Microwaves, Antennas, and Propagation Conference (MAPCON), Hyderabad, Dec 9-13, 2024."
   }
 ];
 
