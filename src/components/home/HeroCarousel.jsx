@@ -48,7 +48,7 @@ const HeroCarousel = () => {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="text-3xl md:text-5xl lg:text-6xl font-bold text-white font-serif mb-4 shadow-sm"
         >
-          Indian Institute of Information Technology Pune
+          {/* Indian Institute of Information Technology Pune */}
         </motion.h1>
         
         <motion.p 
@@ -57,7 +57,7 @@ const HeroCarousel = () => {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-lg md:text-2xl text-gray-200 mb-8 max-w-3xl font-medium"
         >
-          Empowering Innovation, Shaping Tomorrow
+          {/* Empowering Innovation, Shaping Tomorrow */}
         </motion.p>
         
         <motion.div 
@@ -66,12 +66,12 @@ const HeroCarousel = () => {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <Link to="/academics" className="px-8 py-3 bg-accent text-white font-semibold rounded-md shadow-lg hover:bg-blue-700 hover:-translate-y-0.5 transition-all duration-200">
+          {/* <Link to="/academics" className="px-8 py-3 bg-accent text-white font-semibold rounded-md shadow-lg hover:bg-blue-700 hover:-translate-y-0.5 transition-all duration-200">
             Explore Programs
           </Link>
           <Link to="/academics" className="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-primary transition-all duration-200">
             Admissions 2025-26
-          </Link>
+          </Link> */}
         </motion.div>
       </div>
 

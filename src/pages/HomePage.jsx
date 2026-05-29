@@ -4,6 +4,7 @@ import LatestNews from '../components/home/LatestNews';
 import InfoCards from '../components/home/InfoCards';
 import RecruiterCarousel from '../components/home/RecruiterCarousel';
 import ImportantLinks from '../components/home/ImportantLinks';
+import TestimonialsCarousel from '../components/home/TestimonialsCarousel';
 
 const HomePage = () => {
   return (
@@ -11,8 +12,9 @@ const HomePage = () => {
       <HeroCarousel />
       <LatestNews />
       <InfoCards />
-      <ImportantLinks />
+      <TestimonialsCarousel />
       <RecruiterCarousel />
+      <ImportantLinks />
     </main>
   );
 };
