@@ -170,9 +170,9 @@ const Navbar = () => {
     { name: "Careers", path: "/careers", hasDropdown: false },
     { name: "Placement", path: "/placement", hasDropdown: false },
     { name: "Contact Us", path: "/contact", hasDropdown: false },
-    { 
-      name: "E-TENDER", 
-      path: "#", 
+    {
+      name: "E-TENDER",
+      path: "#",
       hasDropdown: true,
       subLinks: [
         { name: "Live E-Tender", path: "/e-tender/live" },
