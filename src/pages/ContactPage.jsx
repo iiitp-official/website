@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PageHeader from '../components/shared/PageHeader';
+import InteractiveMap from '../components/shared/InteractiveMap';
 import { 
   MapPin, 
   Phone, 
@@ -275,29 +276,10 @@ const ContactPage = () => {
           </div>
 
           {/* Right Column: Google Map */}
-          <div className="bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-md border border-gray-150 dark:border-gray-800 flex flex-col justify-between space-y-6">
-            <div className="group relative flex-grow min-h-[300px] bg-gray-200 dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-150 dark:border-gray-800 shadow-sm">
-              <iframe 
-                title="IIIT Pune Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.043690623351!2d73.6953457750284!3d18.763784782200388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b70007204f19%3A0x6700c253b3425039!2sIIIT%20Pune!5e0!3m2!1sen!2sin!4v1716744000000!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen="" 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0 grayscale contrast-125 opacity-90 dark:opacity-70 dark:invert transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100"
-              ></iframe>
+          <div className="bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-md border border-gray-150 dark:border-gray-800 flex flex-col justify-between">
+            <div className="flex-grow min-h-[400px]">
+              <InteractiveMap />
             </div>
-            <a 
-              href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology+Pune/@18.7531606,73.6877379,14z/data=!4m6!3m5!1s0x3bc2b405ac494d45:0xc302bc70566bb0f8!8m2!3d18.7651235!4d73.6970609!16s%2Fg%2F11c1qzfh2p?hl=en&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center justify-center space-x-2 bg-primary hover:bg-accent text-white py-3 rounded-lg font-bold text-sm shadow-md transition-all duration-300 w-full hover:scale-[1.01]"
-            >
-              <MapPin size={14} />
-              <span>Open in Google Maps</span>
-            </a>
           </div>
         </div>
 

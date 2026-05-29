@@ -36,12 +36,31 @@ const NIRFPage = lazy(() => import("./pages/NIRFPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 const StudentAchievementsPage = lazy(() => import('./pages/StudentAchievementsPage'));
 const FacultyAchievementsPage = lazy(() => import('./pages/FacultyAchievementsPage'));
+const ChairpersonPage = lazy(() => import("./pages/ChairpersonPage"));
+const RegistrarPage = lazy(() => import("./pages/RegistrarPage"));
+const BoardOfGovernorsPage = lazy(() => import("./pages/BoardOfGovernorsPage"));
+const FinanceCommitteePage = lazy(() => import("./pages/FinanceCommitteePage"));
+const BuildingWorksCommitteePage = lazy(() => import("./pages/BuildingWorksCommitteePage"));
+const SenatePage = lazy(() => import("./pages/SenatePage"));
+const BoardOfStudiesCsePage = lazy(() => import("./pages/BoardOfStudiesCsePage"));
+const BoardOfStudiesEcePage = lazy(() => import("./pages/BoardOfStudiesEcePage"));
+const BoardOfStudiesAshPage = lazy(() => import("./pages/BoardOfStudiesAshPage"));
+const CentresPage = lazy(() => import("./pages/CentresPage"));
+const InternshipsPage = lazy(() => import("./pages/InternshipsPage"));
+const FundedProjectsCompletedPage = lazy(() => import("./pages/FundedProjectsCompletedPage"));
+const FundedProjectsOngoingPage = lazy(() => import("./pages/FundedProjectsOngoingPage"));
+const EventsPage = lazy(() => import("./pages/EventsPage"));
+const PostDocFellowPage = lazy(() => import("./pages/PostDocFellowPage"));
+const ResearchScholarInstitutePage = lazy(() => import("./pages/ResearchScholarInstitutePage"));
+const ResearchScholarVisvesvarayaPage = lazy(() => import("./pages/ResearchScholarVisvesvarayaPage"));
+const ResearchScholarGraduatedPage = lazy(() => import("./pages/ResearchScholarGraduatedPage"));
+const AntiRaggingPage = lazy(() => import("./pages/AntiRaggingPage"));
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="w-full overflow-x-hidden min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-bg dark:bg-bg-dark transition-colors duration-200">
+      <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-bg dark:bg-bg-dark transition-colors duration-200">
         <Navbar />
         <main className="flex-grow w-full overflow-x-hidden flex flex-col">
           <Suspense fallback={<LoadingFallback />}>

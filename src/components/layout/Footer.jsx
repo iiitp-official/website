@@ -54,6 +54,10 @@ const Footer = () => {
                 <li><Link to="/contact" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Contact Us</Link></li>
               </ul>
             </div>
+            <div className="mt-6 pt-4 border-t border-gray-800 flex items-center text-sm">
+              <span className="text-gray-400 uppercase tracking-wider text-xs font-semibold mr-2">GST No:</span>
+              <span className="text-gray-200 font-mono font-medium bg-gray-800 px-2 py-0.5 rounded shadow-sm">27AAAGI1149H1ZK</span>
+            </div>
           </div>
 
           {/* Address Column */}
@@ -96,7 +100,12 @@ const Footer = () => {
           {/* Map Column */}
           <div>
             <h3 className="text-brand-red font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Map Location</h3>
-            <div className="h-40 w-full rounded-lg overflow-hidden border border-gray-800 relative group shadow-sm">
+            <a 
+              href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology+Pune/@18.7531606,73.6877379,14z/data=!4m6!3m5!1s0x3bc2b405ac494d45:0xc302bc70566bb0f8!8m2!3d18.7651235!4d73.6970609!16s%2Fg%2F11c1qzfh2p?hl=en&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block h-40 w-full rounded-lg overflow-hidden border border-gray-800 relative group shadow-sm cursor-pointer"
+            >
               <iframe 
                 title="IIIT Pune Location Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.043690623351!2d73.6953457750284!3d18.763784782200388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b70007204f19%3A0x6700c253b3425039!2sIIIT%20Pune!5e0!3m2!1sen!2sin!4v1716744000000!5m2!1sen!2sin" 
@@ -106,18 +115,15 @@ const Footer = () => {
                 allowFullScreen="" 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                className="absolute inset-0 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none"
               ></iframe>
               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-300 pointer-events-none"></div>
-              <a 
-                href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology+Pune/@18.7531606,73.6877379,14z/data=!4m6!3m5!1s0x3bc2b405ac494d45:0xc302bc70566bb0f8!8m2!3d18.7651235!4d73.6970609!16s%2Fg%2F11c1qzfh2p?hl=en&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="absolute bottom-2 right-2 z-10 bg-black/70 hover:bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded transition-all duration-200"
+              <div 
+                className="absolute bottom-2 right-2 z-10 bg-black/70 group-hover:bg-primary text-white text-[10px] font-bold px-2.5 py-1 rounded transition-all duration-200"
               >
                 View Large Map
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
           
         </div>
@@ -126,8 +132,14 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="bg-black/40 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm">
-          <div className="text-gray-400">
-            &copy; {new Date().getFullYear()} IIIT Pune. All rights reserved.
+          <div className="text-gray-400 flex flex-col space-y-1 text-center md:text-left">
+            <div>&copy; {new Date().getFullYear()} IIIT Pune. All rights reserved.</div>
+            <div className="text-xs text-gray-500">
+              Designed & Developed by{' '}
+              <a href="https://www.linkedin.com/in/hardik-jha-a1985b160" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Hardik Jha</a>,{' '}
+              <a href="https://www.linkedin.com/in/abhay-gugale-40875632b/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Abhay Gugale</a> and{' '}
+              <a href="https://www.linkedin.com/in/aanoush-surana-73964a335/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Aanoush Surana</a>
+            </div>
           </div>
           
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
@@ -154,9 +166,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-            Language: English
-          </div>
+
         </div>
       </div>
     </footer>
