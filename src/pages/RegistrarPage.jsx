@@ -6,8 +6,12 @@ const RegistrarPage = () => {
     <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
       <PageHeader title="Registrar" />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white dark:bg-surface-dark p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800">
-          <div className="flex flex-col md:flex-row gap-8 mb-8 pb-8 border-b border-gray-200 dark:border-gray-800">
+        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
+          <div className="bg-primary dark:bg-primary-dark px-6 py-4">
+            <h2 className="text-2xl font-bold text-white">Registrar</h2>
+          </div>
+          <div className="p-8 md:p-12">
+            <div className="flex flex-col md:flex-row gap-8 mb-8 pb-8 border-b border-gray-200 dark:border-gray-800">
             <div className="w-56 shrink-0">
               <div className="rounded-xl overflow-hidden shadow-md">
                 <img src="/registrar.jpeg" alt="Dr. Nagendra Kushwaha" className="w-full h-auto object-cover block" />
@@ -44,6 +48,7 @@ const RegistrarPage = () => {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

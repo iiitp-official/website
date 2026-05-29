@@ -28,6 +28,15 @@ import MtechEcePage from "./pages/MtechEcePage";
 import PhdPage from "./pages/PhdPage";
 import AcademicCalendarPage from "./pages/AcademicCalendarPage";
 import OrdinancePage from "./pages/OrdinancePage";
+import CentresPage from "./pages/CentresPage";
+import InternshipsPage from "./pages/InternshipsPage";
+import FundedProjectsCompletedPage from "./pages/FundedProjectsCompletedPage";
+import FundedProjectsOngoingPage from "./pages/FundedProjectsOngoingPage";
+import EventsPage from "./pages/EventsPage";
+import PostDocFellowPage from "./pages/PostDocFellowPage";
+import ResearchScholarInstitutePage from "./pages/ResearchScholarInstitutePage";
+import ResearchScholarVisvesvarayaPage from "./pages/ResearchScholarVisvesvarayaPage";
+import ResearchScholarGraduatedPage from "./pages/ResearchScholarGraduatedPage";
 import ResearchPage from "./pages/ResearchPage";
 import PeoplePage from "./pages/PeoplePage";
 import LifePage from "./pages/LifePage";
@@ -79,6 +88,15 @@ function App() {
             <Route path="/academics/calendar" element={<AcademicCalendarPage />} />
             <Route path="/academics/Calendar" element={<AcademicCalendarPage />} />
             <Route path="/academics/ordinance" element={<OrdinancePage />} />
+            <Route path="/research/centres" element={<CentresPage />} />
+            <Route path="/research/internships" element={<InternshipsPage />} />
+            <Route path="/research/funded-projects/completed" element={<FundedProjectsCompletedPage />} />
+            <Route path="/research/funded-projects/ongoing" element={<FundedProjectsOngoingPage />} />
+            <Route path="/research/events" element={<EventsPage />} />
+            <Route path="/research/scholar/institute" element={<ResearchScholarInstitutePage />} />
+            <Route path="/research/scholar/visvesvaraya" element={<ResearchScholarVisvesvarayaPage />} />
+            <Route path="/research/scholar/graduated" element={<ResearchScholarGraduatedPage />} />
+            <Route path="/research/postdoc-fellow" element={<PostDocFellowPage />} />
             <Route path="/research" element={<ResearchPage />} />
             <Route path="/people" element={<PeoplePage />} />
             <Route path="/life" element={<LifePage />} />

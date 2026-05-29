@@ -214,7 +214,35 @@ const Navbar = () => {
         },
       ],
     },
-    { name: "Research", path: "/research", hasDropdown: false },
+    {
+      name: "Research",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "Centres", path: "/research/centres" },
+        { name: "Internship @IIIT Pune", path: "/research/internships" },
+        { name: "Library", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
+        { 
+          name: "Funded Projects", 
+          hasDropdown: true, 
+          subLinks: [
+            { name: "Funded Project (Completed)", path: "/research/funded-projects/completed" },
+            { name: "Funded Project (Ongoing)", path: "/research/funded-projects/ongoing" }
+          ]
+        },
+        { name: "Events", path: "/research/events" },
+        { 
+          name: "Research Scholar", 
+          hasDropdown: true,
+          subLinks: [
+            { name: "Institute Scheme", path: "/research/scholar/institute" },
+            { name: "Visvesvaraya Scheme", path: "/research/scholar/visvesvaraya" },
+            { name: "Graduated PhD Students", path: "/research/scholar/graduated" }
+          ]
+        },
+        { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
+      ]
+    },
     { name: "People", path: "/people", hasDropdown: false },
     {
       name: "Life@IIITP",
@@ -308,16 +336,18 @@ const Navbar = () => {
               <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
                 <button
                   onClick={() => changeLanguage('en')}
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
+                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors notranslate"
                   title="English"
+                  translate="no"
                 >
                   EN
                 </button>
                 <span className="text-gray-400 dark:text-gray-500 text-xs font-light">|</span>
                 <button
                   onClick={() => changeLanguage('hi')}
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
+                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors notranslate"
                   title="Hindi"
+                  translate="no"
                 >
                   हिं
                 </button>
@@ -569,11 +599,11 @@ const Navbar = () => {
                   <LinkedinIcon size={16} />
                 </a>
                 <div className="ml-auto flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                  <button onClick={() => changeLanguage('en')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
+                  <button onClick={() => changeLanguage('en')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors notranslate" translate="no">
                     EN
                   </button>
                   <span className="text-gray-400 text-xs">|</span>
-                  <button onClick={() => changeLanguage('hi')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
+                  <button onClick={() => changeLanguage('hi')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors notranslate" translate="no">
                     हिं
                   </button>
                 </div>

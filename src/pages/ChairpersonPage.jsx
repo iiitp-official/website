@@ -7,8 +7,12 @@ const ChairpersonPage = () => {
     <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
       <PageHeader title="Chairperson" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white dark:bg-surface-dark p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 border-b border-gray-200 dark:border-gray-800 pb-8">
+        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
+          <div className="bg-primary dark:bg-primary-dark px-6 py-4">
+            <h2 className="text-2xl font-bold text-white">Chairperson</h2>
+          </div>
+          <div className="p-8 md:p-12">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-8 border-b border-gray-200 dark:border-gray-800 pb-8">
             <div className="w-48 h-48 shrink-0 bg-gray-100 dark:bg-gray-800 rounded-2xl overflow-hidden border-4 border-white dark:border-gray-800 shadow-md flex items-center justify-center text-gray-400 dark:text-gray-600">
               {/* Empty placeholder image as requested */}
               <User className="w-24 h-24" />
@@ -33,6 +37,7 @@ const ChairpersonPage = () => {
           
           <div className="mt-16 text-right text-sm text-gray-500 dark:text-gray-400">
             Last Updated: 25-04-2026
+          </div>
           </div>
         </div>
       </div>

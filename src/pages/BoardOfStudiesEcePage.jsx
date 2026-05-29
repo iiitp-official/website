@@ -22,22 +22,23 @@ const BoardOfStudiesEcePage = () => {
     <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
       <PageHeader title="Board of Studies (ECE)" />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white dark:bg-surface-dark p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800">
-          <h2 className="text-2xl font-bold text-center text-primary dark:text-white mb-2">
-            Board of Studies (ECE)
-          </h2>
-          <CommitteeTable data={data} />
-          
-          <div className="mt-8">
-            <p className="text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">Please click here for the official Memorandum</p>
+        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
+          <div className="bg-primary dark:bg-primary-dark px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <h2 className="text-2xl font-bold text-center text-white">
+              Board of Studies (ECE)
+            </h2>
             <a 
-              href="/documents/BoS_ECE_IIITP_v1.pdf"
-              target="_blank"
+              href="/documents/BoS_ECE_IIITP_v1.pdf" 
+              target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block bg-[#241c5c] text-white px-4 py-2 text-sm font-medium hover:bg-opacity-90 transition-colors shadow-sm rounded-md"
+              className="inline-flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors shadow-sm"
             >
+              <FileText size={18} />
               View Document
             </a>
+          </div>
+          <div className="p-6 md:p-8">
+            <CommitteeTable data={data} />
           </div>
         </div>
       </div>
