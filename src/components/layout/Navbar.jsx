@@ -177,11 +177,54 @@ const Navbar = () => {
     { name: "People", path: "/people", hasDropdown: false },
     {
       name: "Life@IIITP",
-      path: "/life",
+      path: "#",
       hasDropdown: true,
       subLinks: [
         { name: "Overview", path: "/life" },
-        { name: "ACM Chapter", path: "/#" },
+        {
+          name: "Professional Clubs",
+          hasDropdown: true,
+          path: "/life?tab=clubs",
+          subLinks: [
+            { name: "Blueprint", path: "/life?tab=clubs&club=blueprint" },
+            { name: "Club Heads (2025-26)", path: "https://www.iiitp.ac.in/sites/default/files/2025-09/Club%20Head%20and%20Co%20Head-2025-2026.pdf", isExternal: true },
+            { name: "Rang", path: "/life?tab=clubs&club=rang" },
+            { name: "QuantNum", path: "/life?tab=clubs&club=quantnum" },
+            { name: "Bit-Legion", path: "/life?tab=clubs&club=bit-legion" },
+            { name: "C-CUBE", path: "/life?tab=clubs&club=c-cube" },
+            { name: "E-Cell", path: "/life?tab=clubs&club=e-cell" },
+            { name: "Eclectic", path: "/life?tab=clubs&club=eclectic" },
+            { name: "SAAZ", path: "https://saaz-iiitp.vercel.app/", isExternal: true },
+            { name: "Vanity Crew", path: "/life?tab=clubs&club=vanity-crew" },
+            { name: "Sports", path: "/life?tab=clubs&club=sports" },
+            { name: "ROFIES", path: "/life?tab=clubs&club=rofies" },
+            { name: "localhost", path: "/life?tab=clubs&club=localhost" },
+            { name: "Horizon", path: "/life?tab=clubs&club=horizon" },
+            { name: "Abhinay", path: "/life?tab=clubs&club=abhinay" },
+            { name: "Q-riocity", path: "/life?tab=clubs&club=q-riocity" },
+          ]
+        },
+        {
+          name: "Activities",
+          hasDropdown: true,
+          path: "/life?tab=activities",
+          subLinks: [
+            { name: "Azadi Ka Amrit Mahotsav", path: "/life?tab=activities&act=azadi" },
+            { name: "EBSB", path: "/life?tab=activities&act=ebsb" },
+            { name: "Fit India Movement", path: "/life?tab=activities&act=fit-india" },
+            { name: "Hindi Pakhwada", path: "/life?tab=activities&act=hindi" },
+            { name: "Swachh Bharat", path: "/life?tab=activities&act=swachh" },
+            { name: "Unity Day", path: "/life?tab=activities&act=unity" },
+            { name: "Yoga Day", path: "/life?tab=activities&act=yoga" },
+            { name: "Youth Day", path: "/life?tab=activities&act=youth" },
+            { name: "AI Talent Hackathon", path: "/life?tab=activities&act=ai-talent" },
+          ]
+        },
+        { name: "Photo Gallery", path: "/life?tab=gallery" },
+        { name: "College Events", path: "/life?tab=events" },
+        { name: "HR Summit (2021)", path: "/life?tab=hr-summit" },
+        { name: "Magazine", path: "/life?tab=magazine" },
+        { name: "Permanent Campus", path: "/life?tab=campus" },
       ]
     },
     { name: "Notice", path: "/notice", hasDropdown: false },
@@ -404,10 +447,13 @@ const Navbar = () => {
                     <div key={sub.name} className="relative group/sub">
                       {sub.hasDropdown ? (
                         <>
-                          <div className="px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark cursor-pointer flex justify-between items-center transition-colors">
+                          <Link
+                            to={sub.path || "#"}
+                            className="px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark cursor-pointer flex justify-between items-center transition-colors w-full"
+                          >
                             {sub.name}
                             <ChevronDown className="w-3 h-3 -rotate-90 opacity-70" />
-                          </div>
+                          </Link>
                           <div className="absolute top-0 left-full ml-0 w-48 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
                             {sub.subLinks.map((nested) =>
                               nested.isExternal ? (
@@ -601,9 +647,13 @@ const Navbar = () => {
                                 {sub.hasDropdown ? (
                                   <>
                                     <div className="flex items-center justify-between">
-                                      <div className="flex-1 px-3 py-2 text-sm font-medium text-gray-300">
+                                      <Link
+                                        to={sub.path || "#"}
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        className="flex-1 px-3 py-2 text-sm font-medium text-gray-300 hover:text-brand-red transition-colors text-left"
+                                      >
                                         {sub.name}
-                                      </div>
+                                      </Link>
                                       <button
                                         onClick={(e) => toggleDropdown(sub.name, e)}
                                         className="p-2 text-white hover:bg-blue-800/50 rounded-md"

@@ -1,0 +1,468 @@
+================================================================================
+CLUB KEY: blueprint
+Title: Blueprint | Indian Institute of Information Technology, Pune
+================================================================================
+  [strong] Blueprint
+  [p] Blueprint is the college’s graphic design and creative media club, bringing together students passionate about visual storytelling, branding, UI/UX, motion graphics, and digital creativity. The club serves as a collaborative space where members explore industry-standard design tools, develop creative thinking, and work on hands-on projects across multiple domains of design.
+  [p] Through regular workshops, design meets, collaborative sessions, and competitions, Blueprint encourages students to learn, experiment, and grow as creators. From graphic design and illustration to video editing, animation, and 3D design, the club provides opportunities for members to gain practical exposure while building a strong creative community on campus.
+  [p] Blueprint also represents the college in various design events and competitions, promoting innovation, teamwork, and artistic expression among students. With a focus on learning by doing, the club aims to nurture both technical skills and creative confidence in aspiring designers.
+  [text] Highlight in iConclave '26: Zokei
+  [text] Zokei was a poster-making competition organized by Blueprint as part of iconClave, aimed at encouraging creativity and visual storytelling among students. Participants designed posters based on a given theme, showcasing their skills in graphic design, composition, and digital creativity. The event provided a platform for students to explore innovative ideas, compete in a creative environment, and enhance their practical design experience.
+
+
+
+================================================================================
+CLUB KEY: rang-0
+Title: Rang | Indian Institute of Information Technology, Pune
+================================================================================
+  [title] RANG - The Art Club of IIIT Pune
+  [div] The Art Club of IIIT Pune
+  [span] Art is more than expression
+  [text] — it is a language of imagination, identity, and innovation. At the heart of the creative culture of the Indian Institute of Information Technology Pune stands
+  [strong] RANG
+  [text] , the institute’s Visual Arts Collective dedicated to fostering artistic excellence and creative exploration.
+  [p] RANG serves as a vibrant platform for students who perceive stories in colors, meaning in patterns, and emotion in every stroke. Rooted in
+  [strong] creativity, collaboration, and innovation
+  [text] , the collective nurtures artistic talent while enriching the cultural and visual identity of the campus.
+  [h3] Our Initiatives
+  [strong] Bleach Painting Workshops
+  [text] encouraging experimentation with textures, techniques, and unconventional mediums.
+  [strong] Sketching and Illustration Sessions
+  [text] focused on artistic fundamentals, observation, and individual style.
+  [strong] Digital Art and Design Explorations
+  [text] blending creativity with technology and modern visual communication.
+  [strong] Halo Runway
+  [text] , a fashion walk event introduced during I-Conclave, reflecting fashion as a contemporary art form.
+  [strong] Mandala Art and Intricate Pattern-Based Creations
+  [text] celebrating precision, mindfulness, and detail-oriented artistry.
+  [strong] Rangoli Installations
+  [text] during cultural and festive occasions, showcasing tradition through artistic expression.
+  [strong] Campus Decorations and Event Design
+  [text] enhancing the aesthetic appeal and visual identity of institute events.
+  [strong] Artistic Installations and Collaborative Projects
+  [text] transforming ordinary spaces into immersive creative experiences.
+  [p] Through these initiatives, RANG plays a significant role in shaping the artistic atmosphere of IIIT Pune, ensuring that creativity remains an integral part of campus life.
+  [p] Beyond workshops and events, RANG is a thriving community that values
+  [strong] originality, teamwork, and artistic growth
+  [text] . Whether members are refining their techniques or discovering a new creative passion, the collective provides an environment of inspiration, encouragement, and collaboration.
+  [p] The artworks showcased stand as a testament to the
+  [strong] creativity, dedication, discipline, and artistic excellence
+  [text] that define RANG.
+  [h3] RANG — where imagination takes form and creativity leaves its mark. ✨
+  [h3] RANG Annual Report 2025-26
+  [p] Explore the complete annual report showcasing the club’s activities, workshops, creative projects, events, artistic achievements, and contributions during the academic year 2025-26.
+  [a] Download Report
+  [h3] Club Leadership
+  [strong] Club Head:
+  [text] Avani Patil
+
+
+
+================================================================================
+CLUB KEY: quantnum-club
+Title: QuantNum Club | Indian Institute of Information Technology, Pune
+================================================================================
+  [title] QuantNum - Mathematics Club of IIIT Pune
+  [div] The Mathematics Club of IIIT Pune
+  [span] Curious About the Magic Behind Numbers?
+  [text] Step into a realm where mathematics transcends numbers and formulas and becomes a journey of discovery!
+  [h2] Welcome to QuantNum: The Mathematics Club of IIIT Pune!
+  [p] At QuantNum, we believe that mathematics is more than equations and symbols; it is a powerful language, an intellectual adventure, and a work of art.
+  [p] As the Mathematics Club of IIIT Pune, we are dedicated to illuminating the wonders of math, celebrating its timeless elegance and immense real-world value.
+  [p] QuantNum is more than just a club; it’s a vibrant community for those passionate about exploring mathematics beyond the classroom walls.
+  [h1] Our Activities
+  [p] We host engaging math seminars, interactive student-led and faculty-guided sessions, exciting problem-solving challenges, and fun mathematical events that inspire curiosity and analytical thinking.
+  [p] Through these activities, we aim to make mathematics more accessible, collaborative, and relevant to real-world applications.
+  [h1] Events and Celebrations
+  [p] One of the club’s major highlights this year was Quant-Bid Arena, organized during iConclave ’26.
+  [p] The event combined mathematics, logical reasoning, strategy, and competitive decision-making, creating a unique and engaging experience for participants.
+  [p] The club also celebrates important occasions such as Pi Day and National Mathematics Day through engaging activities and interactive sessions.
+  [h1] Achievements and Highlights
+  [p] QuantNum successfully organized Quant-Bid Arena during iConclave ’26, which witnessed excellent participation from students across multiple colleges and became one of the major highlights of the fest.
+  [p] The club also conducted engaging seminars, problem-solving sessions, and mathematical activities to promote analytical and logical thinking among students.
+  [p] Through Instagram initiatives like “Problem of the Week” and “Did You Know?” posts, the club encouraged mathematical curiosity and student engagement.
+  [h1] Future Scope
+  [p] QuantNum aims to further expand its reach by organizing larger inter-college competitions, interactive workshops, speaker sessions, and innovative mathematical events.
+  [p] The club also plans to strengthen collaborative learning initiatives and create more opportunities for students to explore practical applications of mathematics in technology and research.
+  [h1] Our Diverse Departments
+  [p] At QuantNum, we encourage everyone to leverage their unique strengths.
+  [p] In addition to our mathematics section, we have dedicated departments for Content, Public Relations, Design, Marketing, Videography, Social Media Management, and Decor.
+  [h1] Community and Collaboration
+  [p] QuantNum is a collaborative and inclusive community where students from all backgrounds and skill levels can learn, grow, and innovate together.
+  [p] Through seminars, competitions, collaborative sessions, and innovative initiatives, QuantNum continues to promote curiosity, creativity, and analytical excellence within the IIIT Pune community.
+  [div] “Being part of QuantNum helped me realize that mathematics is more than formulas; it is a powerful tool for solving real-world engineering problems.”
+  [div] — Sudhanshu Kumar
+  [text] Founder, QuantNum
+  [div] “QuantNum has consistently encouraged students to think analytically and creatively while applying mathematical concepts beyond academics.”
+  [div] — Dr. Jatin Majithia
+  [text] Faculty Incharge
+  [h2] Club Leadership
+  [strong] Head:
+  [text] Suharsh Kumar (CSE)
+  [strong] Co-Head:
+  [text] Shreya Khandelwal (ECE)
+
+
+
+================================================================================
+CLUB KEY: bit-legion
+Title: BiT Legion | Indian Institute of Information Technology, Pune
+================================================================================
+  [p] BiT Legion is the elite coding club of IIIT Pune. It is an active student-driven community of like-minded people striving to reach new heights in the programming field, whether competitive programming, Development, Open Source, interview prep, etc.
+  [p] This year marks the 3rd anniversary of the Bit Legion Coding Club. Throughout these years, the club's primary focus has been to introduce students to the beautiful world of programming and build a strong coding culture in the institute.
+  [p] BitLegion ensures that every individual gets a smooth onboarding, to begin with their programming journey. We conduct a variety of
+  [span] coding sessions
+  [span] team-building events
+  [span] fun activities
+  [span] The club also conducted guidance sessions on ICPC Contests, where seniors who Qualified for ICPC West Continent Finals shared their experiences and insights, which helped to inspire and guide their juniors.
+  [p] Club members participate in all primary coding contests to showcase and improve their coding skills, like ICPC (The Olympics of coding), Google Summer of Code and various inter-college competitions. Assertion to this is that IIIT Pune has Ranked First back-to-back among all IIITs at Amritapuri ICPC Regionals and even at Asia-West Continentals, which made our Institute proud!
+  [p] The club is well known internationally for hosting InfInITy. InfInITy is a coding contest that was initiated in 2017 by Bit Legion. It is the flagship coding contest of IIIT Pune, which attracts thousands of participants each year. Last year, Bit Legion successfully conducted InfInITY 2k22, the flagship coding event of IIIT Pune, in collaboration with Codechef, which was rated as a 6-star contest. InfInITy concluded with more than 1,28,000 submissions and around 25K Competitive Programmers across the Globe, including masters and GrandMasters, making it the best coding contest of Bit Legion so far.
+  [p] Since its inception, the contest has gained a remarkable global reach. From a humble beginning as an inter-college event, Infinity became a rated contest on CodeChef. This was a significant achievement for Bit Legion, bringing us recognition on a much larger scale.
+
+
+
+================================================================================
+CLUB KEY: c-cube
+Title: C-CUBE | Indian Institute of Information Technology, Pune
+================================================================================
+  [span] C-CUBE CLUB, IIIT PUNE
+  [b] The goal of C-Cube is to rekindle the innate wisdom about meaning and purpose of life.
+  [span] Invite technical experts in various fields for talks and workshops on subjects pertaining to the academic curriculum or to the higher realm of studies from various branches including Electronics, Civil, Computer Science, Production etc.
+  [span] Conduct the series of Discover Yourself seminars. This will help the students gain a well-balanced perspective in life, gearing them up to a bright future.
+  [span] Conduct various other technical and personality development programs as per the availability of the faculties of C-Cube Club throughout the year.
+  [span] Invite eminent personalities from various MNC’s, Fortune 500 companies and organizations for imparting knowledge in the ongoing research fields through the platform of Youth Empowerment Seminars
+  [span] c-cube club
+
+
+
+================================================================================
+CLUB KEY: e-cell
+Title: E-Cell Activities | Indian Institute of Information Technology, Pune
+================================================================================
+  [span] Activities conducted by E-Cell in A.Y. 2020-2021, 2021-22 & 2022-23
+  [span] Innovation and Incubation Cell (IIC)
+  [span] at IIIT Pune was formed to conduct lectures, contact industries and other places for startup grants, and engage students in product-based projects. This cell incudes following faculty members:
+  [span] 1. Dr. Ritu Tiwari, President
+  [span] 2. Dr. Tanmoy Hazra, Member
+  [span] 3. Dr. Ranjith Nair, Member
+  [span] 4. Dr. Sanjeev Sharma, Member
+  [span] 5. Dr. Bhupendra Singh, Member & Convener
+  [span] The Innovation and Incubation Cell (IIC) at IIIT Pune conducted its first event as the Guest Lecture on
+  [i] National Innovation and Startup Policy (NISP) 2019: Guidelines for Faculty and Students
+  [b] Dr. R. N. Patel
+  [text] , Associate Professor, National Institute of Technology (NIT) Raipur. The speaker discussed NISP Guidelines in detail among the students and faculty members of IIIT Pune and suggested the tools that can help in implementing the ‘
+  [b] Startup India’
+  [span] For the implementation of NISP 2019 at Institute level, Institute has developed a roadmap that includes the following points:
+  [span] Formation of Innovation and Incubation Cell and registration of the same at MoE Innovation Cell (MIC) portal
+  [span] Formation of E-Cell and I-Cell
+  [span] Faculty nomination by IIIT Pune for NISP implementation
+  [span] Creation of Section-8 company at Institute level
+  [span] Prototype submission from students on themes such IoT based technologies (e.g. Security & Surveillance systems, ICT, cyber-physical systems, Blockchain, Cognitive computing, Cloud computing, AI & ML etc.
+  [span] Major focus of IIC
+  [span] To create a vibrant local innovation ecosystem.
+  [span] Start-up supporting mechanism in IIIT Pune.
+  [span] Prepare IIIT Pune for Atal Ranking of Institutions on Innovation Achievements (ARIIA) framework.
+  [span] Establish function ecosystem for scouting ideas and pre-incubation of ideas.
+  [span] Develop better cognitive ability for technology students.
+  [span] Functions of IIC:
+  [span] To conduct various innovation and entrepreneurship-related activities prescribed by Central MIC in time bound fashion.
+  [span] Identify and reward innovations and share success stories.
+  [span] Organize periodic workshops/ seminars/ interactions with entrepreneurs, investors, professionals and create a mentor pool for student innovators.
+  [span] Network with peers and national entrepreneurship development organizations.
+  [span] Create an Institution’s Innovation portal to highlight innovative projects carried out by institution’s faculty and students.
+  [span] Organize Hackathons, idea competition, mini-challenges etc. with the involvement of industries.
+  [span] Here is the list of activities/events conducted by Institute’s Innovation Cell:
+  [span] 5-hours hands-on session on Applied Machine Learning with Python
+  [span] Ideathon 2k21
+  [span] Silk Route Quiz
+  [span] Hackathon 2k21
+  [span] Workshop on Applied Machine learning with Python
+  [span] Innovation and Incubation Cell (IIC) in association of Internity foundation conducted a 5-hours long workshop on Applied Machine Learning with Python on
+  [text] . More than
+
+
+
+================================================================================
+CLUB KEY: electic
+Title: Electic | Indian Institute of Information Technology, Pune
+================================================================================
+  [title] Eclectic Literary Club - IIIT Pune
+  [div] Eclectic Literary Club
+  [div] The Bar Counter of Ecstatic Geeks!
+  [span] A club of like-minded individuals who share a passion for literature and a perennial hunger for fun:
+  [text] that’s Eclectic!
+  [p] We proudly call ourselves
+  [strong] “The Bar Counter of Ecstatic Geeks”
+  [text] , and we leave no stone unturned in living up to that reputation.
+  [p] At Eclectic, we organise writing activities, conduct open mics and literary quizzes, have book discussions, and much more.
+  [p] However, it isn’t just the activities that define Eclectic — it is our vibrant and welcoming community.
+  [h2] Our Community
+  [p] Eclectic comprises a diverse group of students from different backgrounds who share a common love for language, literature, creativity, and self-expression.
+  [p] The club encourages students to discover their voices, express their thoughts confidently, and continuously improve themselves through meaningful interaction and collaboration.
+  [h2] Innovative Initiatives
+  [p] When it comes to trying new things, Eclectic never backs down.
+  [p] One of our major initiatives was the launch of the podcast series
+  [strong] “Yours, Clueless”
+  [text] , designed to bridge the gap between college life and the professional world.
+  [p] Through one-on-one interactions between seniors and juniors, students gained valuable insights into careers, opportunities, challenges, and life beyond college.
+  [h2] Events and Activities
+  [p] In 2022, Eclectic organised
+  [strong] ‘Eloquence’
+  [text] with the theme:
+  [em] “What if you were a TEDx speaker?”
+  [p] Former TEDx speakers were invited to evaluate participants and share their valuable insights, making the event an inspiring experience for everyone involved.
+  [p] The club also conducted formal debate sessions during freshmen auditions for the batch of 2026, encouraging participants to think critically and communicate effectively.
+  [p] New recruits brought fresh enthusiasm and energy, motivating members to organise engaging literary sessions and interactive activities.
+  [h2] Book Society
+  [p] A literary club would be incomplete without a dedicated space for readers.
+  [p] Eclectic therefore founded its internal
+  [strong] Book Society
+  [text] , where readers gather to explore new books, exchange reviews and perspectives, and engage in wholesome spoiler-free discussions.
+  [p] The Book Society has become a meaningful platform for readers to connect through shared literary interests and thoughtful conversations.
+  [div] “With an energetic group of individuals, our biggest goal is to make Eclectic a supportive community where everyone progresses through engagement and expression.”
+  [a] Visit Eclectic Website
+  [a] Download Annual Report 2025-26
+
+
+
+================================================================================
+CLUB KEY: vanity-crew
+Title: Vanity Crew | Indian Institute of Information Technology, Pune
+================================================================================
+  [span] Vanity Crew
+  [span] Vanity Crew is recognized for bringing energy and enthusiasm to campus life through performances at college events, flash mobs, cultural showcases, and intercollegiate competitions. The club continuously strives to represent IIIT Pune with dedication, creativity, and professionalism while building a strong community united by a shared passion for dance.
+  [span] Activities and Club Management
+  [span] Throughout the academic year 2025–26, Vanity Crew actively organized and participated in multiple events while maintaining a structured approach toward training, skill development, and performance preparation. The club provides members with opportunities to strengthen technical abilities, creativity, teamwork, and stage presence through regular rehearsals and collaborative learning.
+  [span] Through performances, workshops, and campus engagement initiatives, Vanity Crew continues to contribute to IIIT Pune’s cultural environment while creating a space where students can develop confidence, creativity, and a lasting passion for dance.
+  [span] Major Events and Performances
+  [span] Club Induction:
+  [span] Beginning of Academic Year 2025–26
+  [span] The annual Club Induction served as the formal introduction of Vanity Crew to incoming students. The event included orientation sessions, auditions, and introductory interactions aimed at familiarizing prospective members with the club’s culture, expectations, and vision. Existing members also presented performances to showcase the standards, creativity, and collaborative spirit that define Vanity Crew.
+  [span] Academic Year 2025–26
+  [span] Vanity Crew organized a campus flash mob that attracted participation and engagement from students and faculty alike. The event demonstrated the club’s choreographic talent and spontaneity while creating an energetic atmosphere on campus. The flash mob also served as an effective outreach initiative by introducing a wider audience to the club’s activities and creative expression.
+  [span] Republic Day Performance:
+  [span] 26 January 2026
+  [span] As part of IIIT Pune’s Republic Day celebrations, Vanity Crew presented a patriotic dance performance reflecting themes of national pride, unity, and cultural diversity. The performance formed an important contribution to the institution’s celebration of national values and collective identity.
+  [span] Shivjayanti Celebration Performance:
+  [span] February 2026
+  [span] To commemorate the birth anniversary of Chhatrapati Shivaji Maharaj, Vanity Crew delivered a tribute performance incorporating elements of traditional folk dance alongside contemporary choreography. The performance celebrated Maharashtra’s cultural heritage while demonstrating the club’s ability to blend tradition with modern artistic interpretation.
+  [span] iConclave Performance:
+  [span] Vanity Crew performed at iConclave, IIIT Pune’s intercollegiate cultural festival, representing the institute through a performance that reflected extensive preparation, coordination, and dedication. The showcase highlighted the club’s.
+  [span] Club Information
+  [span] Official Dance Club of IIIT Pune
+  [span] Avani Yadav
+  [span] Arushi Ramesh
+  [text] Aaryan Singh
+  [span] Vanity Crew continues to serve as a creative and collaborative space where students can pursue dance not only as an artistic discipline but also as a medium for building confidence, leadership, teamwork, and lasting connections within the IIIT Pune community.
+  [span] Vanity Crew’s Website link:
+  [a] https://vanitycrew.vercel.app/
+
+
+
+================================================================================
+CLUB KEY: sports
+Title: Sports | Indian Institute of Information Technology, Pune
+================================================================================
+  [h2] Sports Club of IIIT Pune
+  [p] Sports are a great way to make friends, learn new skills and have fun. Apart from providing a social outlet for people sharing a common interest in a particular sport, they act as a platform to meet new people from different backgrounds and experiences. Sports and fitness go hand in hand and are essential for good mental and physical health. We at IIIT Pune Sports Club are here to build a community and create a sense of belonging to inspire people to reach their full potential and to help people improve their physical fitness and health.
+  [strong] Past Events:
+  [p] The sports club has conducted some successful events in the past. One of the highlights was the 5v5 Valorant Tournament on the institute premises. It was live streamed through a projector in the computer lab for everyone to watch. The tournament was a fabulous opportunity for students to showcase their talents and connect with other gamers on campus. It also helped in promoting esports at the college.
+  [text] An inter-batch Kabaddi tournament was held in April of 2023. Students from all the batches participated enthusiastically and displayed remarkable skills and sportsmanship. There were some nail-biting and enthralling matches in the tournament. The Batch ‘24 team triumphed, winning the trophy credit to their incredible teamwork and coordination.
+  [strong] Inter IIIT Sports Meet 2023:
+  [p] The Inter IIIT Sports Meet, held at IIIT Kancheepuram from the 14th to the 17th of March 2023, stands as a remarkable event that successfully united athletes from various IIITs across the nation. Co-hosted by IIIT Kancheepuram and IIIT Kurnool, this event encompassed a diverse spectrum of sports, including athletics, basketball, badminton, chess, cricket, volleyball, football, and table tennis, among others. The dedication and zeal exhibited by the athletes were truly commendable, with the evident presence of fierce competition throughout the event. The atmosphere was characterized by a sense of mutual respect and encouragement, fostering an environment that prioritized participation and sportsmanship. Everyone gave their heart and soul in each of their respective games.
+  [text] The Volleyball team thrashed the competition and won the bronze medal and a trophy, and the Football team made everyone proud by securing the 4th position.
+  [p] We are passionate about sports, and we want to share that passion with you. We are always looking for new ways to improve and are committed to providing the best possible experience for everyone.
+  [text] New ideas and suggestions are always welcomed here, and students can feel free to contact us in case of any issues or emergencies.
+  [figcaption] Valorant Tournament
+  [figcaption] Inter-batch kabaddi tournament
+  [figcaption] Contingent for Inter IIIT Sports Meet 2023
+  [strong] The yearly report of the Sports Club for the academic year 2025–26-
+  [p] Under the leadership of
+  [strong] Shriraj Nilare (Head, Sports Club)
+  [strong] Bhavin Barad (Co-Head, Sports Club)
+  [text] , the club remained committed to promoting fitness, teamwork, discipline, leadership, and sportsmanship among students by organizing a wide range of sporting and recreational activities throughout the year. Along with a highly dedicated and capable team of club members, the club worked consistently towards building a stronger sports culture within the institute while ensuring active student participation and engagement across all events.
+  [p] Several planning sessions and coordination meetings were conducted by the club members before every major event to ensure smooth execution, proper management, and maximum student involvement. The events organized during the year not only encouraged competitive spirit but also helped students strengthen friendships, improve communication, and foster a strong sense of unity and belonging within the college community.
+  [p] The Sports Club successfully conducted the following major events during the academic year:
+  [strong] Esports Tournament (23rd November 2025)
+  [text] The Sports Club organized an exciting Esports Tournament that brought together gaming enthusiasts from across different batches and departments of the institute. The tournament featured highly popular games such as FIFA, Valorant, Clash Royale, Fall Guys, and several other multiplayer competitive titles that attracted enthusiastic participation from students.
+  [p] The event created a lively and energetic atmosphere on campus, with students gathering in large numbers not only to participate but also to cheer for their friends and teams. The intense matches, strategic gameplay, and competitive spirit made the tournament highly entertaining and memorable for everyone involved. Students displayed exceptional teamwork, quick decision-making abilities, communication skills, and coordination throughout the competition.
+  [p] Beyond competition, the tournament acted as a platform for students to interact, bond, and build stronger connections with one another. Participants and spectators alike thoroughly enjoyed the event, making it one of the most engaging student activities of the semester. The Esports Tournament successfully highlighted the growing interest in digital gaming while promoting healthy competition, collaboration, and student unity.
+  [strong] Eklavya – Annual Sports Fest (27th–29th March 2026)
+  [text] Eklavya, the annual three-day sports fest organized by the Sports Club, was one of the biggest and most successful events conducted during the academic year. The event witnessed enthusiastic participation from students across all years and departments and transformed the campus into a vibrant and energetic sporting environment.
+  [p] The fest included a wide variety of indoor and outdoor sports competitions such as football, cricket, volleyball, basketball, badminton, kabaddi, chess, carroms, and table tennis. Students participated with immense enthusiasm and dedication, displaying remarkable athletic ability, teamwork, determination, and sportsmanship throughout the competitions.
+  [p] Across the three days, the campus was filled with excitement, cheering crowds, and moments of intense competition. Students gathered in large numbers to support their friends and teams, creating an atmosphere filled with energy, motivation, and unity. Every match and competition brought students together, strengthening friendships and encouraging interaction among participants from different batches and backgrounds.
+  [p] Eklavya provided students with a much-needed opportunity to relax, enjoy, and engage in healthy recreational activities alongside academics. The event successfully promoted physical fitness, team coordination, leadership qualities, and mutual respect among students while also creating several memorable experiences for participants and spectators alike.
+  [p] The event played a significant role in enhancing the overall campus spirit and fostering a strong sense of togetherness within the institute community.
+  [strong] Participation in Inter IIIT Sports Competition at IIITDM Kurnool
+  [text] Students from the institute actively participated in the Inter IIIT Sports Competition hosted at IIITDM Kurnool, proudly representing the college across multiple sporting events. The competition provided students with valuable exposure to high-level inter-college sports and allowed them to compete with talented participants from various IIITs across the country.
+  [p] Participation in such large-scale competitions greatly motivated students and encouraged greater involvement in sports activities within the institute. The Sports Club played an important role in supporting and encouraging the participating teams, contributing significantly towards strengthening the sports culture of the college.
+  [p] The successful execution of all these activities and events was made possible through continuous efforts, teamwork, planning, and coordination by the Sports Club members.
+  [p] The academic year 2025–26 proved to be highly productive and memorable for the Sports Club. Through its various initiatives and events, the club successfully encouraged fitness, teamwork, leadership, discipline, and sportsmanship while also strengthening unity and student interaction across the institute.
+  [p] Reach out to us –
+  [strong] Email
+  [text] : sports@iiitp.ac.in
+
+
+
+================================================================================
+CLUB KEY: rofies
+Title: R.O.F.I.E.S. | Indian Institute of Information Technology, Pune
+================================================================================
+  [div] R.O.F.I.E.S.
+  [div] Robotics Oriented Futuristic & Innovative Engineers Society
+  [span] R.O.F.I.E.S. (Robotics Oriented Futuristic & Innovative Engineers Society)
+  [text] is the official robotics and embedded systems club of the Indian Institute of Information Technology Pune, focused on promoting practical learning, innovation, and technical development in the fields of
+  [strong] robotics, embedded systems, IoT, automation, autonomous systems, drone technology, and intelligent system development.
+  [p] The club provides a collaborative platform for students to explore real-world engineering through
+  [strong] hands-on workshops, interactive technical sessions, project development, and robotics competitions.
+  [text] Along with technical learning, ROFIES also promotes
+  [strong] student collaboration, peer learning, teamwork, leadership, and practical problem-solving
+  [text] , helping members gain valuable exposure through interaction, project execution, and participation in technical activities.
+  [p] R.O.F.I.E.S. has actively represented the Indian Institute of Information Technology Pune at various prestigious technical competitions and robotics festivals including
+  [strong] MindSpark at COEP
+  [strong] Cognizance at IIT Roorkee
+  [text] , and several inter-college robotics competitions.
+  [strong] Major Event Highlight
+  [p] One of the major highlights of the club was
+  [strong] “Hashiriya – The Street Racers”
+  [text] , a robotics racing competition organized by ROFIES as part of
+  [strong] iConclave 2026
+  [p] R.O.F.I.E.S. is also actively involved in innovation-driven and research-oriented development. The club’s project
+  [strong] “Project Aura”
+  [text] , a mood-aware interactive robotic companion, successfully cleared the
+  [strong] Level 1 screening of the international TRON 2026 contest
+  [p] The club has also successfully developed an
+  [strong] autonomous drone system
+  [text] involving autonomous navigation, path planning, object detection, and a GUI-based monitoring interface.
+  [p] With a strong focus on
+  [strong] practical learning, innovation, teamwork, and technical excellence
+  [text] , ROFIES continues to create opportunities for students to explore advanced technologies and build impactful projects.
+
+
+
+================================================================================
+CLUB KEY: localhost
+Title: Localhost | Indian Institute of Information Technology, Pune
+================================================================================
+  [strong] LOCALHOST?
+  [text] Is it a new name around the block? Well maybe and maybe not. localhost is our very own cult of developers who are passionate about BUIDLing things. What things? Tech things that you use, things that you see or hear or listen to. The wizards at localhost
+  [em] do not gauge at the task, they find a problem statement and solve it
+  [text] . localhost may be a cult, but it is also an open community which is striving to establish a very fulfilling coding culture within the institute. localhost as a concept started way back in September ‘21 with one idea -
+  [span] “Better developers, better humans and together”
+  [p] To be a place for developers to hang out, realise exciting ideas and become a strong network of builders who will leave their mark on the world.
+  [p] From weekly sprints of Web Development and Flutter Development to contributing at Hacktoberfest and GSoC, localhost is marching on many fronts to bring development to the students of IIIT Pune.
+  [p] This year localhost started its journey with Hacktoberfest, a global event that gives a kick to developers towards contributing in open-source. Electrifying workshops were organized to teach students how to use Git and GitHub - the essentials for open-source development. This workshop was the ultimate power-up for students to join the movement, contribute to open-source projects, and get some awesome swag.
+  [p] Sprints - started this year is a weekly event taking the devs’ skills to the next level - high-energy coding sessions where members come together to tackle a specific challenge that they will eventually ship. These are a rollercoaster ride of excitement, adrenaline, and pure coding bliss. Members get to flex their coding muscles, learn new techniques, and collaborate with other tech enthusiasts. But it's not just about the coding - the community spirit is what makes these sprints truly special. Members cheer each other on, share tips and tricks, and celebrate their achievements together.
+  [span] https://t.me/localhost_iiitp
+
+
+
+================================================================================
+CLUB KEY: horizon
+Title: Horizon | Indian Institute of Information Technology, Pune
+================================================================================
+  [p] Horizon, established in January 2022 with the ideology of "
+  [b] capture imagination
+  [text] ," continues to steadfastly pursue and expand upon this captivating concept. As the photography and videography club of IIIT Pune, Horizon has swiftly emerged as one of the institute's most dynamic and youthful clubs. Its ubiquitous presence is felt throughout campus events, where it skillfully encapsulates cherished memories. This proactive involvement has rightfully earned Horizon the designation of being IIIT Pune's dedicated media house.
+  [p] The scope of Horizon extends beyond mere media coverage. The club fervently fosters an environment of creativity and engagement. Among its diverse initiatives, Horizon hosts contests tailored for newcomers, fostering an inclusive atmosphere. With an ambitious vision in mind, the club is actively targeting and working towards organizing its flagship annual photography competition, an event eagerly anticipated by the IIIT Pune community.
+  [p] Horizon's endeavors extend beyond campus grounds. The club has orchestrated enriching photowalks, including some along FC Road and a collaborative participation in a Photowalk India event at KasbaPeth. These outings serve as a testament to Horizon's commitment to exploration and innovation, encapsulating its essence as a platform for curious minds.
+  [p] For those who possess an insatiable thirst for exploration and a penchant for innovation, Horizon stands as an inviting realm of possibilities. As the club continues to evolve, capturing the imagination remains at its core.
+  [p] For an immersive visual experience and to relish the captivating moments captured by Horizon, please explore our collection of photos and videos at our Linktree:
+  [span] [Linktree Link]:
+  [span] https://linktr.ee/horizon_iiitp
+  [p] In summary, Horizon, the photography and videography club of IIIT Pune, not only thrives as the institute's primary media house but also radiates an unwavering dedication to nurturing creativity, innovation, and the art of capturing imagination.
+
+
+
+================================================================================
+CLUB KEY: abhinay
+Title: Abhinay | Indian Institute of Information Technology, Pune
+================================================================================
+  [strong] ABHINAY
+  [strong] Abhinay
+  [text] , the beating heart of drama at
+  [strong] IIIT Pune
+  [strong] Lights, Camera, Action!
+  [p] Abhinay isn't just a club; it's where stories come alive. Step into our world and unleash your inner performer. From thrilling performances to lifelong friendships, Abhinay is the stage where your journey begins.
+  [span] Departments
+  [span] Script writing
+  [span] Backstage(lights and sound)
+  [span] Video editing
+  [span] Social media/outreach
+  [span] Achievements
+  [p] Abhinay is a tradition of artistic excellence that continues to evolve. Our journey from just a few members to finishing top 5 in IIT Kharagpur's Springfest is something to behold.
+  [p] Mood Indigo's Street Play Preliminaries at MIT-WPU
+  [span] :Despite being newcomers to the event,actors and scriptwriters collaborated effectively, resulting in a memorable performance.
+  [p] Finalist in IIT Kharagpur's Springfest: Seeking more opportunities, our team decided to participate in IIT Kharagpur's Springfest, a prestigious cultural event in the country. We dedicated ourselves to creating a murder thriller script, and our hard work paid off when our team was selected among the top five from across the country for the Springfest finals.
+  [span] It's evident that our dedication, teamwork, and passion for acting have been key factors in our success.
+  [strong] gnite Your Creativity
+  [text] : Embrace the magic of storytelling and explore your creative genius.
+  [strong] Express, Empower, Excel
+  [text] : Improve your confidence and communication skills through the art of drama.
+  [strong] Build Bonds
+  [text] : Connect with fellow drama enthusiasts and create memories to cherish.
+  [p] Join us at Abhinay, where every act is a new adventure and every member is a star in the making. Dare to dream, dare to act – together, let's steal the spotlight!
+  [strong] Below are the details of the club leadership:
+  [text] Name: Swayam Patel
+  [text] MIS No.: 112315191
+  [text] Mobile No.: 9909810461
+  [b] Club Co-Head:
+  [text] Name: Aashutosh Bharti
+  [text] MIS No.: 112315005
+  [text] Mobile No.: 7972986769
+  [b] Induction Day :
+  [a] https://www.instagram.com/p/DRSNGJtEhlr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+  [b] 24th September
+  [text] Anti-Ragging Week ( 22nd – 26 th September )
+  [text] Faculty Coordinator : Sabah Tazeen
+  [b] Student Coordinator : Swayam Patel and Aashutosh Bharti
+  [a] https://www.instagram.com/reel/DQJ39hnkh_Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
+  [b] Mood indigo Prelims
+
+
+
+================================================================================
+CLUB KEY: q-riocity
+Title: Q-riocity | Indian Institute of Information Technology, Pune
+================================================================================
+  [title] Q-Riocity - IIIT Pune
+  [div] Official Quizzing Society of IIIT Pune
+  [text] is the Quizzing Society of the Indian Institute of Information Technology Pune. It is a student community built around curiosity, quick thinking, observation, teamwork, and the joy of learning beyond the classroom.
+  [p] The club brings together students who enjoy exploring the world through quizzes, discussions, games, and interactive activities across a wide range of topics including history, geography, current affairs, global culture, pop-culture, sports, literature, cinema, anime, defence, science, technology, space, languages, flags, maps, internet culture, and more.
+  [h2] About the Club
+  [p] Q-Riocity is more than a quiz club. It is a close-knit community where students can learn, host, participate, and have fun with any topic they are passionate about.
+  [p] Whether someone is interested in world history, sports trivia, mythology, military vehicles, cinema, anime, memes, geography, linguistics, technology, or obscure science facts, Q-Riocity gives them a platform to explore and share that curiosity.
+  [h2] Our Activities
+  [h3] Freshers Quiz
+  [p] At the beginning of the academic session, Q-Riocity organizes a Freshers Quiz to introduce first-year students to the quizzing culture of IIIT Pune.
+  [h3] Theme-Based Quiz Sessions
+  [p] Q-Riocity regularly conducts quiz sessions across a wide variety of themes including anime, sports, geography, science, technology, arts, literature, pop culture, history, cinema, and current affairs.
+  [h3] Interactive Learning and Games
+  [p] The club also conducts interactive learning-based games such as GeoGuessr sessions, Skribbl sessions, Wikipedia Racing, Family-Feud inspired activities, and other creative quiz formats.
+  [h2] Quiz Workshops and Club Meets
+  [p] Regular club meets are conducted for planning, brainstorming, and coordination including quiz themes, question framing, round design, recruitment, onboarding, and internal coordination.
+  [h2] Major Events
+  [h3] Cognition: Seikai Showdown
+  [p] Cognition: Seikai Showdown was one of the major quiz events conducted by Q-Riocity during the academic year.
+  [p] The event included multiple-choice rounds, visual identification, map-based clues, buzzer rounds, common-link questions, country silhouette identification, and language recognition formats.
+  [h3] Sakura Survey
+  [p] Sakura Survey was a Family Feud-style interactive event organized by Q-Riocity where participants guessed the most common responses given by students.
+  [h2] Community and Learning
+  [p] Q-Riocity believes that learning becomes more meaningful when it is shared.
+  [p] The club provides a welcoming environment where students can bring their own interests, learn from others, and participate without needing to be experts.
+  [h2] Club Team
+  [td] Aditya Apoorva Negi
+  [td] MIS: 112315010 | 3rd Year CSE
+  [td] Core Team Member
+  [td] Aadit Bajaj
+  [td] MIS: 112415002 | 2nd Year CSE
+  [td] Core Team Member
+  [td] MIS: 112415018 | 2nd Year CSE
+  [h2] Contact
+  [p] For participation, collaboration, or club-related queries, students may contact Q-Riocity through:
+  [a] q_riocity@iiitp.ac.in
+  [a] @q_riocity_
+  [strong] Phone:
+  [text] +91 80803 44491
+
+
