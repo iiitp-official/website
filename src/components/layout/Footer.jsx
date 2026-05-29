@@ -54,6 +54,10 @@ const Footer = () => {
                 <li><Link to="/contact" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Contact Us</Link></li>
               </ul>
             </div>
+            <div className="mt-6 pt-4 border-t border-gray-800 flex items-center text-sm">
+              <span className="text-gray-400 uppercase tracking-wider text-xs font-semibold mr-2">GST No:</span>
+              <span className="text-gray-200 font-mono font-medium bg-gray-800 px-2 py-0.5 rounded shadow-sm">27AAAGI1149H1ZK</span>
+            </div>
           </div>
 
           {/* Address Column */}
