@@ -117,8 +117,14 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="bg-black/40 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm">
-          <div className="text-gray-400">
-            &copy; {new Date().getFullYear()} IIIT Pune. All rights reserved.
+          <div className="text-gray-400 flex flex-col space-y-1 text-center md:text-left">
+            <div>&copy; {new Date().getFullYear()} IIIT Pune. All rights reserved.</div>
+            <div className="text-xs text-gray-500">
+              Designed & Developed by{' '}
+              <a href="https://www.linkedin.com/in/hardik-jha-a1985b160" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Hardik Jha</a>,{' '}
+              <a href="https://www.linkedin.com/in/abhay-gugale-40875632b/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Abhay Gugale</a> and{' '}
+              <a href="https://www.linkedin.com/in/aanoush-surana-73964a335/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Aanoush Surana</a>
+            </div>
           </div>
           
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
