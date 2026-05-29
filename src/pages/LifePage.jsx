@@ -27,6 +27,25 @@ const Instagram = ({ size = 16, className = "" }) => (
   </svg>
 );
 
+const Linkedin = ({ size = 16, className = "" }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    className={className}
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <rect x="2" y="9" width="4" height="12"/>
+    <circle cx="4" cy="4" r="2"/>
+  </svg>
+);
+
 // Clubs List Data
 // Clubs List Data
 const CLUBS = {
@@ -1047,144 +1066,235 @@ const LifePage = () => {
       }
 
       case 'events': {
+        const EVENTS = [
+          {
+            name: "iConclave 2026",
+            type: "Tech-Cultural Extravaganza",
+            typeColor: "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+            desc: "iConclave is IIIT Pune's flagship annual fest — a seamless blend of technology, culture, and community. The 2026 edition featured the Thinking Machine AI Hackathon, the Hashiriya Bot Racing Championship by ROFIES, the Zokei Poster Design Contest by Blueprint, Nritya Nova dance battles by Vanity Crew, and more. Thousands of students from colleges across Pune and India participated, making it the biggest edition yet.",
+            images: [
+              'https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.FI_.E.S_2.jpeg',
+              'https://www.iiitp.ac.in/sites/default/files/2026-05/rang12.JPG',
+              'https://www.iiitp.ac.in/sites/default/files/2026-02/1.jpg',
+            ],
+            highlights: ["AI Hackathon — 330+ teams", "Bot Racing Championship", "Poster Design + Dance Battles", "Intercollegiate Participation"]
+          },
+          {
+            name: "Ananta Cultural Fest",
+            type: "Cultural Extravaganza",
+            typeColor: "bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300",
+            desc: "Ananta is the annual socio-cultural festival of IIIT Pune. Spanning three vibrant days, it features group dance battles, fashion pageants (like Halo Runway by RANG), vocal showcases by SAAZ, nukkad natak street plays by Abhinay, quiz nights by Q-riocity, acoustic unplugged evenings, rangoli installations, and a grand closing concert with star performances. It draws participants from top colleges across Maharashtra.",
+            images: [
+              'https://www.iiitp.ac.in/sites/default/files/2026-05/rang6.jpg',
+              'https://www.iiitp.ac.in/sites/default/files/2026-05/rang8.jpeg',
+              'https://www.iiitp.ac.in/sites/default/files/2026-05/Picture2.jpg',
+            ],
+            highlights: ["Dance Battles", "Fashion Showcase", "Star Night Concert", "Literary Events"]
+          },
+          {
+            name: "Eklavya Sports Fest",
+            type: "Annual Sports Meet",
+            typeColor: "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+            desc: "Eklavya is the annual three-day sports festival organized by the IIIT Pune Sports Club. It features competitive tournaments in football, cricket, volleyball, basketball, badminton, kabaddi, chess, and carrom. The 2024 edition also added an Esports tournament featuring FIFA, Valorant, Clash Royale, and Fall Guys with live screenings on campus. Eklavya is a celebration of sportsmanship, fitness, and team spirit.",
+            images: [
+              'https://www.iiitp.ac.in/sites/default/files/inline-images/image042.jpg',
+              'https://www.iiitp.ac.in/sites/default/files/inline-images/image043.jpg',
+              'https://iiitp.ac.in/sites/default/files/2023-03/DSC_3082%20%281%29%20%281%29.jpg',
+            ],
+            highlights: ["Football, Cricket, Volleyball", "Basketball, Kabaddi", "Esports Tournament", "Inter-Batch Leagues"]
+          },
+          {
+            name: "InfInITy Coding Contest",
+            type: "Technical Event",
+            typeColor: "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300",
+            desc: "InfInITy is the flagship competitive programming contest organized by Bit Legion in collaboration with CodeChef. Rated as a 6-star global event, it attracted 1,28,000+ submissions and 25,000+ participants worldwide. The contest featured algorithmic challenges across multiple difficulty levels, drawing top-rated competitive programmers including grandmasters and masters from around the globe.",
+            images: [
+              'https://www.iiitp.ac.in/sites/default/files/inline-images/image001.jpg',
+              'https://www.iiitp.ac.in/sites/default/files/inline-images/image003.jpg',
+              'https://www.iiitp.ac.in/sites/default/files/inline-images/image005.jpg',
+            ],
+            highlights: ["1,28,000+ Submissions", "25K+ Global Participants", "CodeChef 6-Star Rated", "Grandmaster Participation"]
+          },
+        ];
+
         return (
           <div className="space-y-8">
+            {/* Header */}
             <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-sm">
               <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white mb-2">
-                College Events &amp; Festivals
+                College Events & Festivals
               </h2>
-              <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed mb-6">
-                Fests are the heart of campus life. They provide students with opportunities to showcase their technical prowess, cultural talents, and organizational management skills.
+              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                Fests are the heartbeat of campus life at IIIT Pune. From flagship national hackathons to three-day cultural extravaganzas, every event provides students the platform to showcase technical prowess, cultural talents, and organizational skills.
               </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 dark:bg-gray-850 border border-gray-100/50 dark:border-gray-800/30 rounded-xl p-5">
-                  <span className="px-2 py-0.5 rounded-md text-[9px] font-bold bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 uppercase tracking-wide">
-                    Cultural Extravaganza
-                  </span>
-                  <h3 className="text-xl font-bold font-serif text-gray-800 dark:text-white mt-2.5 mb-2">
-                    Ananta Cultural Fest
-                  </h3>
-                  <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                    The annual socio-cultural festival of IIIT Pune. Ananta is a three-day celebration featuring group dance battles, fashion pageants, singing contests, art exhibits, and star performances. It draws participants from top colleges across Maharashtra.
-                  </p>
-                </div>
+            </div>
 
-                <div className="bg-gray-50 dark:bg-gray-850 border border-gray-100/50 dark:border-gray-800/30 rounded-xl p-5">
-                  <span className="px-2 py-0.5 rounded-md text-[9px] font-bold bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 uppercase tracking-wide">
-                    Technological Arena
-                  </span>
-                  <h3 className="text-xl font-bold font-serif text-gray-800 dark:text-white mt-2.5 mb-2">
-                    Ananta Tech Fest
-                  </h3>
-                  <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                    The tech segment of Ananta, hosting national hackathons, competitive programming rounds (InfInITy), robotics matches (Robo-Wars), and paper presentations in CS and ECE domains. Industry leaders judge the finals, offering internship opportunities.
-                  </p>
+            {/* Events List */}
+            <div className="space-y-8">
+              {EVENTS.map((event, idx) => (
+                <div key={idx} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl shadow-sm overflow-hidden">
+                  {/* Images Strip */}
+                  <div className="grid grid-cols-3 gap-0.5 h-48">
+                    {event.images.map((img, i) => (
+                      <div key={i} className="overflow-hidden bg-gray-100 dark:bg-gray-800">
+                        <img
+                          src={img}
+                          alt={`${event.name} ${i+1}`}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                          onError={(e) => { e.target.parentElement.style.display='none'; }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6">
+                    <div className="flex flex-wrap items-center gap-3 mb-3">
+                      <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide ${event.typeColor}`}>
+                        {event.type}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-extrabold font-serif text-gray-800 dark:text-white mb-3">{event.name}</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">{event.desc}</p>
+
+                    {/* Highlights */}
+                    <div className="flex flex-wrap gap-2">
+                      {event.highlights.map((h, i) => (
+                        <span key={i} className="px-3 py-1 rounded-lg text-[11px] font-semibold bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-100 dark:border-gray-700">
+                          {h}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         );
       }
 
       case 'hr-summit': {
+        // Redirect to external HR Summit site
+        window.location.replace('https://placements.iiitp.ac.in/HrSummit/');
         return (
-          <div className="space-y-8">
-            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-sm">
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-100 dark:border-gray-800 pb-6 mb-6">
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white">
-                    HR Summit (2021)
-                  </h2>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Jointly organized by IIIT Pune and IIIT Bhagalpur</p>
-                </div>
-                <span className="px-3 py-1 rounded-full text-xs font-bold bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-100/30 dark:border-blue-900/30">
-                  March 19-20, 2021
-                </span>
-              </div>
-
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white mb-2">Overview &amp; Purpose</h3>
-                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                    The HR Summit 2021 was held in online mode with the theme <strong>"Bridging the Gap between Academia and Industry."</strong> The primary focus was on analyzing changing corporate trends during the post-pandemic recovery phase and defining technical and soft-skill parameters to enhance engineering students' employability.
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                  <div className="bg-gray-50 dark:bg-gray-850 p-4 rounded-xl border border-gray-100/50 dark:border-gray-800/30 text-center">
-                    <h4 className="text-2xl font-black text-blue-600 dark:text-blue-400">20+</h4>
-                    <span className="text-xs font-bold text-gray-700 dark:text-gray-300 block mt-1">Eminent Speakers</span>
-                    <span className="text-[10px] text-gray-400 block">CEOs &amp; CHROs</span>
-                  </div>
-                  <div className="bg-gray-50 dark:bg-gray-850 p-4 rounded-xl border border-gray-100/50 dark:border-gray-800/30 text-center">
-                    <h4 className="text-2xl font-black text-blue-600 dark:text-blue-400">2 Days</h4>
-                    <span className="text-xs font-bold text-gray-700 dark:text-gray-300 block mt-1">Panel Discussions</span>
-                    <span className="text-[10px] text-gray-400 block">Interactive Q&amp;A</span>
-                  </div>
-                  <div className="bg-gray-50 dark:bg-gray-850 p-4 rounded-xl border border-gray-100/50 dark:border-gray-800/30 text-center">
-                    <h4 className="text-2xl font-black text-blue-600 dark:text-blue-400">Joint</h4>
-                    <span className="text-xs font-bold text-gray-700 dark:text-gray-300 block mt-1">Academic Collaboration</span>
-                    <span className="text-[10px] text-gray-400 block">IIIT Pune &amp; IIIT Bhagalpur</span>
-                  </div>
-                </div>
-
-                <div className="bg-blue-50/30 dark:bg-blue-900/10 border border-blue-100/30 dark:border-blue-900/30 rounded-xl p-5">
-                  <h4 className="text-sm font-bold text-blue-800 dark:text-blue-300 mb-2">Key Outcomes:</h4>
-                  <ul className="space-y-2">
-                    <li className="flex items-start gap-2 text-xs text-blue-700/80 dark:text-blue-350">
-                      <CheckCircle2 size={14} className="shrink-0 mt-0.5" />
-                      <span>Formulated new academic curriculum electives addressing industry-specific stacks (AI, cloud security, IoT).</span>
-                    </li>
-                    <li className="flex items-start gap-2 text-xs text-blue-700/80 dark:text-blue-350">
-                      <CheckCircle2 size={14} className="shrink-0 mt-0.5" />
-                      <span>Increased direct recruitment relationships with multinational corporations.</span>
-                    </li>
-                    <li className="flex items-start gap-2 text-xs text-blue-700/80 dark:text-blue-350">
-                      <CheckCircle2 size={14} className="shrink-0 mt-0.5" />
-                      <span>Introduced mandatory industry-partnered student internship semesters.</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+          <div className="flex flex-col items-center justify-center py-24 text-center space-y-4">
+            <div className="w-14 h-14 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center">
+              <ExternalLink size={26} className="text-blue-600 dark:text-blue-400" />
             </div>
+            <h2 className="text-xl font-bold text-gray-800 dark:text-white">Redirecting to HR Summit...</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Taking you to the official HR Summit portal at IIIT Pune.
+            </p>
+            <a
+              href="https://placements.iiitp.ac.in/HrSummit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors"
+            >
+              Open HR Summit Portal <ExternalLink size={14} />
+            </a>
           </div>
         );
       }
 
       case 'magazine': {
+        const EDITIONS = [
+          {
+            year: "2024–25",
+            embedUrl: "https://online.fliphtml5.com/jpsva/pmdk/",
+            cover: "https://www.iiitp.ac.in/sites/default/files/inline-images/frontpage.png",
+            desc: "The latest edition captures research breakthroughs, creative writing, student artwork, faculty interviews, club highlights, and the vibrant spirit of campus life at IIIT Pune."
+          },
+          {
+            year: "2023–24",
+            embedUrl: "https://online.fliphtml5.com/wscmc/peim/",
+            cover: "https://www.iiitp.ac.in/sites/default/files/inline-images/aygycs_blue.png",
+            desc: "Celebrated IIIT Pune's growing research culture with features on funded projects, PhD scholar spotlights, club achievements, and an artistic tribute to campus life."
+          },
+        ];
+
         return (
           <div className="space-y-8">
+            {/* Header */}
             <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-sm">
-              <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="w-full md:w-48 shrink-0 aspect-[3/4] bg-gradient-to-br from-blue-700 to-indigo-950 rounded-2xl shadow-lg border border-blue-800 flex flex-col items-center justify-center p-6 text-center text-white relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full blur-xl pointer-events-none" />
-                  <BookOpen size={42} className="text-accent mb-4" />
-                  <h3 className="font-extrabold font-serif text-lg tracking-wide uppercase">Eminence</h3>
-                  <span className="text-[10px] text-accent/80 font-bold uppercase tracking-wider mt-1">Annual Magazine</span>
-                </div>
-                <div className="flex-1 space-y-4">
-                  <span className="px-2 py-0.5 rounded-md text-[9px] font-bold bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 uppercase tracking-wide">
-                    Creative Outlet
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white">
-                    Eminence Annual Magazine
-                  </h2>
-                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                    <strong>Eminence</strong> is the official annual student publication of IIIT Pune. It serves as a creative canvas for the campus community, capturing tech research reviews, literary poems, artwork, opinions, interview series, and highlights of student and faculty achievements throughout the academic year.
+              <div>
+                <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white mb-3">
+                  Eminence — Annual Magazine
+                </h2>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <strong>Eminence</strong> is the official annual student publication of IIIT Pune. It is a creative canvas for the entire campus community — capturing tech research reviews, literary poetry, student artwork, opinion pieces, interview series, and highlights of student and faculty achievements throughout the academic year. Published by the joint efforts of the Literary and Arts societies, Eminence reflects the intellectual and creative spirit of IIIT Pune.
                   </p>
-                  
-                  <div className="border-t border-gray-100 dark:border-gray-800 pt-4 flex flex-wrap gap-4">
+                  <div className="mt-4 flex flex-wrap gap-4 border-t border-gray-100 dark:border-gray-800 pt-4">
                     <div>
                       <span className="text-[10px] font-bold text-gray-400 uppercase block">Published by</span>
-                      <span className="text-xs font-semibold text-gray-850 dark:text-gray-300">IIIT Pune Literary &amp; Art Societies</span>
+                      <span className="text-xs font-semibold text-gray-800 dark:text-gray-300">IIIT Pune Literary & Arts Societies</span>
                     </div>
                     <div>
                       <span className="text-[10px] font-bold text-gray-400 uppercase block">Frequency</span>
-                      <span className="text-xs font-semibold text-gray-850 dark:text-gray-300">Annual</span>
+                      <span className="text-xs font-semibold text-gray-800 dark:text-gray-300">Annual</span>
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-bold text-gray-400 uppercase block">Language</span>
+                      <span className="text-xs font-semibold text-gray-800 dark:text-gray-300">English</span>
                     </div>
                   </div>
                 </div>
+              </div>
+
+            {/* Live Flipbook Embeds */}
+            <div className="space-y-10">
+              {EDITIONS.map((ed, idx) => (
+                <div key={idx}>
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white">
+                      Eminence {ed.year}
+                    </h3>
+                    <a
+                      href={ed.embedUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 text-xs font-bold text-accent dark:text-accent-dark hover:underline"
+                    >
+                      Open fullscreen <ExternalLink size={12} />
+                    </a>
+                  </div>
+                  <div className="w-full rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm">
+                    <iframe
+                      allowFullScreen={true}
+                      allowTransparency={true}
+                      className="inner w-full"
+                      frameBorder="0"
+                      scrolling="no"
+                      seamless="seamless"
+                      src={ed.embedUrl}
+                      title={`Eminence ${ed.year}`}
+                      style={{ height: '520px' }}
+                    />
+                  </div>
+                  <p className="text-[11px] text-gray-400 dark:text-gray-500 mt-2 text-center">
+                    Academic Year {ed.year} · Use the arrows inside to turn pages
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* What's Inside */}
+            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 shadow-sm">
+              <h3 className="text-base font-bold font-serif text-gray-800 dark:text-white mb-4">What's Inside Eminence</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {[
+                  { label: "Research Articles", icon: "📄" },
+                  { label: "Creative Writing & Poetry", icon: "✍️" },
+                  { label: "Student Artwork", icon: "🎨" },
+                  { label: "Faculty Interviews", icon: "🎤" },
+                  { label: "Club Highlights", icon: "🏆" },
+                  { label: "Campus Photography", icon: "📷" },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-2.5 p-3 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700">
+                    <span className="text-lg">{item.icon}</span>
+                    <span className="text-xs font-semibold text-gray-700 dark:text-gray-300">{item.label}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -1192,64 +1302,340 @@ const LifePage = () => {
       }
 
       case 'campus': {
+        const CAMPUS_IMAGES = [
+          { src: 'https://www.iiitp.ac.in/sites/default/files/inline-images/image042.jpg', caption: 'Campus Sports Ground' },
+          { src: 'https://www.iiitp.ac.in/sites/default/files/inline-images/_THC3794.JPG', caption: 'Campus Life' },
+          { src: 'https://www.iiitp.ac.in/sites/default/files/inline-images/Frame%20780.png', caption: 'IIIT Pune Events' },
+          { src: 'https://www.iiitp.ac.in/sites/default/files/2026-02/2.jpg', caption: 'Thinking Machine Hackathon' },
+          { src: 'https://www.iiitp.ac.in/sites/default/files/2026-02/3.jpg', caption: 'Innovation at IIIT Pune' },
+          { src: 'https://iiitp.ac.in/sites/default/files/2023-03/DSC_0845%20%281%29%20%281%29.jpg', caption: 'Campus Cultural Day' },
+        ];
+
+        const FACILITIES = [
+          { icon: "🏫", title: "Smart Classrooms", desc: "Fully equipped smart classrooms and seminar halls with multimedia projection systems, interactive boards, and high-speed internet connectivity for a modern learning experience." },
+          { icon: "🔬", title: "Advanced Laboratories", desc: "State-of-the-art CS, ECE, and IoT laboratories with industry-grade hardware, VLSI design tools, embedded systems rigs, robotics platforms, and high-performance computing clusters." },
+          { icon: "🏠", title: "Student Hostels", desc: "Separate hostel blocks for boys and girls with 24/7 high-speed Wi-Fi, laundry facilities, round-the-clock security, and a hygienic mess serving balanced and nutritious meals." },
+          { icon: "📚", title: "Central Library", desc: "A well-stocked library with thousands of technical books, journals, international e-resources, IEEE and Springer digital subscriptions, and dedicated reading rooms for focused study." },
+          { icon: "⚽", title: "Sports Facilities", desc: "Dedicated grounds for football, cricket, volleyball, basketball, badminton, and a fully-equipped indoor gymnasium to promote physical fitness and wellness among students." },
+          { icon: "🌐", title: "High-Speed Connectivity", desc: "Campus-wide optical fibre network with gigabit internet access in all academic blocks, hostels, and common areas, enabling seamless academic and research activities." },
+        ];
+
         return (
           <div className="space-y-8">
+            {/* Hero Header */}
             <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-sm">
-              <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white mb-2">
+              <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white mb-1">
                 Permanent Campus
               </h2>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-                Gat No. 5 &amp; 6, Village Nanoli Tarf Chakan, Tal. Maval, Pune - 412106
+              <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1.5 mb-4">
+                <MapPin size={14} className="text-primary" />
+                Gat No. 5 & 6, Village Nanoli-Tathawade, Tal. Maval, Pune — 412106
               </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white border-b pb-1.5 border-gray-100 dark:border-gray-800">
-                    Infrastructure &amp; Facilities
-                  </h3>
-                  <div className="space-y-3">
-                    <div className="flex gap-3">
-                      <Building className="w-5 h-5 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
-                      <div>
-                        <h4 className="text-xs font-bold text-gray-800 dark:text-white">Academic Blocks</h4>
-                        <p className="text-[11px] text-gray-500 dark:text-gray-450 leading-relaxed mt-0.5">
-                          Spacious smart classrooms, seminar halls, advanced computer science laboratories, and ECE testing centers equipped with state-of-the-art testing gears.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-3">
-                      <Users className="w-5 h-5 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
-                      <div>
-                        <h4 className="text-xs font-bold text-gray-800 dark:text-white">Student Hostels &amp; Dining</h4>
-                        <p className="text-[11px] text-gray-500 dark:text-gray-450 leading-relaxed mt-0.5">
-                          Comfortable hostel blocks for boys and girls, with 24/7 high-speed Wi-Fi, laundry facilities, security guards, and a hygienic mess serving nutritious food.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                Spread across a scenic expanse in the pristine Maval valley near Chakan, the permanent campus of IIIT Pune offers a calm, green, and intellectually stimulating environment. Located close to the Talegaon MIDC and the Pune–Mumbai Expressway, it connects students directly to major IT hubs, automobile clusters, and tech startups. The campus is designed to foster innovation, research, and holistic student development within a modern infrastructure that combines academic excellence with comfortable living.
+              </p>
+            </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white border-b pb-1.5 border-gray-100 dark:border-gray-800">
-                    Maval Valley Campus Life
-                  </h3>
-                  <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Spanning across a scenic expanse in the Maval valley, near Chakan, the permanent campus offers a calm and peaceful environment that is highly conducive to rigorous studies, research, and technical focus.
-                  </p>
-                  <div className="bg-emerald-50/50 dark:bg-emerald-900/10 border border-emerald-100/30 dark:border-emerald-900/30 rounded-xl p-4">
-                    <h4 className="text-xs font-bold text-emerald-800 dark:text-emerald-350 flex gap-2 items-center">
-                      <MapPin size={14} /> Location Advantage
-                    </h4>
-                    <p className="text-[11px] text-emerald-700 dark:text-emerald-300 mt-1 leading-relaxed">
-                      Located close to the Talegaon MIDC and Pune-Mumbai Express corridor, providing students with direct linkages to IT hubs, automobile clusters, and tech startups.
-                    </p>
+            {/* Photo Gallery */}
+            <div>
+              <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white mb-4">Campus Gallery</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                {CAMPUS_IMAGES.map((img, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => setSelectedImage(img.src)}
+                    className="group relative aspect-video overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-pointer border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all"
+                  >
+                    <img
+                      src={img.src}
+                      alt={img.caption}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      onError={(e) => { e.target.closest('.group').style.display='none'; }}
+                    />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-2 backdrop-blur-[2px]">
+                      <span className="text-white text-[11px] font-semibold">{img.caption}</span>
+                    </div>
                   </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Facilities Grid */}
+            <div>
+              <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white mb-4">Campus Facilities</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {FACILITIES.map((f, i) => (
+                  <div key={i} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
+                    <span className="text-2xl mb-3 block">{f.icon}</span>
+                    <h4 className="text-sm font-bold text-gray-800 dark:text-white mb-2">{f.title}</h4>
+                    <p className="text-[11px] text-gray-500 dark:text-gray-400 leading-relaxed">{f.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Location Box */}
+            <div className="bg-gradient-to-br from-primary/5 to-blue-50 dark:from-primary/10 dark:to-blue-900/10 border border-blue-100/30 dark:border-blue-900/30 rounded-2xl p-6">
+              <h3 className="text-base font-bold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
+                <MapPin size={16} className="text-primary" /> Location & Connectivity
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div className="space-y-1">
+                  <span className="text-[10px] font-bold text-gray-400 uppercase">Address</span>
+                  <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">Gat No. 5 & 6, Village Nanoli-Tathawade, Tal. Maval, Dist. Pune — 412106</p>
+                </div>
+                <div className="space-y-1">
+                  <span className="text-[10px] font-bold text-gray-400 uppercase">Nearest Highway</span>
+                  <p className="text-xs text-gray-700 dark:text-gray-300">Pune–Mumbai Expressway (NH-48)</p>
+                </div>
+                <div className="space-y-1">
+                  <span className="text-[10px] font-bold text-gray-400 uppercase">Nearest City</span>
+                  <p className="text-xs text-gray-700 dark:text-gray-300">Pune City (~35 km) | Talegaon MIDC (~5 km)</p>
                 </div>
               </div>
             </div>
           </div>
         );
       }
+
+      case 'acm': {
+        const ACTIONS = [
+          {
+            title: "UX / HCI Workshops",
+            desc: "Learn practical tools and methodologies of user experience and human-computer interaction.",
+            icon: BookOpen,
+            color: "from-blue-500/10 to-indigo-500/10 border-blue-500/20 text-[#0B61A4] dark:text-blue-400"
+          },
+          {
+            title: "Design Sprints & Hackathons",
+            desc: "Apply skills in fast-paced, collaborative challenges targeting real-world problems.",
+            icon: Trophy,
+            color: "from-purple-500/10 to-pink-500/10 border-purple-500/20 text-purple-600 dark:text-purple-400"
+          },
+          {
+            title: "Research Exposure",
+            desc: "Get involved in cutting-edge Human-Computer Interaction and design research projects.",
+            icon: Compass,
+            color: "from-emerald-500/10 to-teal-500/10 border-emerald-500/20 text-emerald-600 dark:text-emerald-400"
+          },
+          {
+            title: "ACM Digital Library Access",
+            desc: "Gain free access to millions of research papers, articles, and conference publications.",
+            icon: Sparkles,
+            color: "from-amber-500/10 to-orange-500/10 border-amber-500/20 text-amber-600 dark:text-amber-400"
+          },
+          {
+            title: "Guest Lectures",
+            desc: "Exclusive sessions with industry-leading UX Designers, User Researchers, and experts.",
+            icon: Users,
+            color: "from-indigo-500/10 to-sky-500/10 border-indigo-500/20 text-indigo-600 dark:text-indigo-400"
+          },
+          {
+            title: "Publication Opportunities",
+            desc: "Receive mentorship and guidance for publishing your research work at international conferences.",
+            icon: Award,
+            color: "from-rose-500/10 to-red-500/10 border-rose-500/20 text-rose-600 dark:text-rose-400"
+          },
+          {
+            title: "Certifications",
+            desc: "Access structured resources and guides to gain professional industry-recognized credentials.",
+            icon: CheckCircle2,
+            color: "from-teal-500/10 to-emerald-500/10 border-teal-500/20 text-teal-600 dark:text-teal-400"
+          }
+        ];
+
+        const CONTACTS = [
+          { name: "Saurav Dabhade", role: "Chair", email: "sauravdabhade@acm.org" },
+          { name: "Roshni Sahoo", role: "Vice Chair", email: "212515011@cse.iiitp.ac.in" },
+          { name: "Piyush Kulkarni", role: "Membership Lead", email: "112316021@ece.iiitp.ac.in" }
+        ];
+
+        return (
+          <div className="space-y-12">
+            {/* Hero Section */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-[#0B61A4] via-[#094775] to-[#052842] text-white rounded-3xl p-8 md:p-12 shadow-xl border border-[#094775]">
+              <div className="absolute top-0 right-0 -mt-12 -mr-12 w-72 h-72 rounded-full bg-blue-400/10 blur-3xl pointer-events-none" />
+              <div className="absolute bottom-0 left-0 -mb-12 -ml-12 w-72 h-72 rounded-full bg-indigo-400/10 blur-3xl pointer-events-none" />
+              
+              <div className="relative z-10 space-y-6 max-w-4xl">
+                <div className="flex flex-wrap gap-2">
+                  {["HCI", "UX Design", "User Research"].map((tag, i) => (
+                    <span key={i} className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-xs font-semibold text-blue-205 text-[#0B61A4] dark:text-[#E8F1FA] bg-[#E8F1FA] dark:bg-blue-950/40 border-[#0B61A4]/30 dark:border-blue-900/30">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                
+                <h2 className="text-3xl md:text-5xl font-extrabold font-serif tracking-tight leading-tight">
+                  ACM SIGCHI <br />
+                  <span className="bg-gradient-to-r from-blue-300 via-sky-200 to-indigo-300 bg-clip-text text-transparent">
+                    IIIT Pune Chapter
+                  </span>
+                </h2>
+                
+                <p className="text-sm md:text-base text-gray-200 leading-relaxed max-w-2xl">
+                  The Special Interest Group on Computer-Human Interaction (SIGCHI) is the global hub for research and practice in Human-Computer Interaction (HCI), UX Design, and User Experience (UX). We are the student division of ACM SIGCHI at IIITP, serving as a pre-professional incubator that equips students with the specific knowledge, practical skills, industry connections, and professional credentials necessary to transition successfully into careers in technology and design.
+                </p>
+
+                <div className="flex flex-wrap gap-4 pt-2">
+                  <a
+                    href="https://services.acm.org/public/qj/prod/quickjoin/qjcontrol.cfm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#F77F00] hover:bg-[#d96e00] text-xs font-bold transition-all shadow-lg shadow-[#F77F00]/20 text-white"
+                  >
+                    <Award size={14} /> ACM Student Membership
+                  </a>
+                  <a
+                    href="https://forms.gle/CyC8gqfqhFFDfAdm6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-xs font-bold transition-all text-white"
+                  >
+                    <CheckCircle2 size={14} /> Join Chapter Form
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* What We Do */}
+            <div className="space-y-6">
+              <div className="border-b border-gray-100 dark:border-gray-800 pb-3">
+                <h3 className="text-xl font-bold font-serif text-gray-800 dark:text-white">What We Do</h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400">Core activities, platforms, and programs offered by our student division.</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {ACTIONS.map((act, idx) => {
+                  const Icon = act.icon;
+                  return (
+                    <div key={idx} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+                      <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br ${act.color} border shrink-0`}>
+                        <Icon size={20} />
+                      </div>
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-bold text-gray-800 dark:text-white">{act.title}</h4>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{act.desc}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* How to Join */}
+            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm space-y-6">
+              <div className="border-b border-gray-100 dark:border-gray-800 pb-3">
+                <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white">How to Join</h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400">Step-by-step registration for new student members.</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="space-y-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                  <p>
+                    Joining the chapter is simple! Follow these two quick steps:
+                  </p>
+                  <ol className="list-decimal pl-5 space-y-2.5 text-xs">
+                    <li>
+                      Register for an official student membership using the <strong>ACM Quick Join Application Form</strong>.
+                    </li>
+                    <li>
+                      Complete our local chapter registration via the <strong>Google Form</strong> to join the community directory and mailing lists.
+                    </li>
+                  </ol>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-end">
+                  <a
+                    href="https://services.acm.org/public/qj/prod/quickjoin/qjcontrol.cfm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-xs font-bold text-gray-800 dark:text-white border border-gray-200 dark:border-gray-700 transition-all text-center"
+                  >
+                    1. ACM Quick Join <ExternalLink size={12} />
+                  </a>
+                  <a
+                    href="https://forms.gle/CyC8gqfqhFFDfAdm6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-[#0B61A4] hover:bg-[#094775] text-xs font-bold text-white transition-all text-center"
+                  >
+                    2. Complete Google Form <ExternalLink size={12} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Contacts & Socials */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {/* Contact Us */}
+              <div className="lg:col-span-2 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 shadow-sm space-y-4">
+                <h3 className="text-base font-bold font-serif text-gray-800 dark:text-white">Contact Us</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {CONTACTS.map((c, i) => (
+                    <div key={i} className="p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-750 space-y-2">
+                      <div className="space-y-0.5">
+                        <h4 className="text-xs font-bold text-gray-800 dark:text-white">{c.name}</h4>
+                        <span className="text-[10px] font-bold text-blue-600 dark:text-blue-400 block uppercase tracking-wider">{c.role}</span>
+                      </div>
+                      <a
+                        href={`mailto:${c.email}`}
+                        className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-blue-400 break-all"
+                      >
+                        <Mail size={12} /> {c.email}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Social Channels */}
+              <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
+                <div>
+                  <h3 className="text-base font-bold font-serif text-gray-800 dark:text-white mb-4">Follow &amp; Stay Updated</h3>
+                  <div className="grid grid-cols-3 gap-3">
+                    <a
+                      href="https://iiitpsigchi.acm.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center justify-center p-3 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-750 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:border-blue-200 dark:hover:border-blue-900/30 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
+                    >
+                      <Globe size={18} className="mb-1" />
+                      <span className="text-[10px] font-bold">Website</span>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/iiitpsigchi/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center justify-center p-3 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-750 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:border-blue-200 dark:hover:border-blue-900/30 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
+                    >
+                      <Linkedin size={18} className="mb-1" />
+                      <span className="text-[10px] font-bold">LinkedIn</span>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/iiitp.sigchi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center justify-center p-3 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-750 hover:bg-pink-50 dark:hover:bg-pink-900/10 hover:border-pink-200 dark:hover:border-pink-900/30 text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-all"
+                    >
+                      <Instagram size={18} className="mb-1" />
+                      <span className="text-[10px] font-bold">Instagram</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="border-t border-gray-100 dark:border-gray-800 pt-4 mt-4 flex items-center justify-between">
+                  <a
+                    href="mailto:acm.chapter@iiitp.ac.in"
+                    className="inline-flex items-center gap-1.5 text-[11px] font-bold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-blue-400"
+                  >
+                    <Mail size={12} /> acm.chapter@iiitp.ac.in
+                  </a>
+                  <span className="text-[10px] text-gray-400 font-semibold">Last Updated: 25-11-2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+
 
       default:
       case 'overview':
@@ -1364,7 +1750,8 @@ const LifePage = () => {
               { key: 'events', label: 'College Events', icon: Calendar },
               { key: 'hr-summit', label: 'HR Summit (2021)', icon: Award },
               { key: 'magazine', label: 'Magazine', icon: BookMarked },
-              { key: 'campus', label: 'Permanent Campus', icon: Building }
+              { key: 'campus', label: 'Permanent Campus', icon: Building },
+              { key: 'acm', label: 'ACM Chapter', icon: Code }
             ].map((tab) => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.key;
