@@ -254,7 +254,29 @@ const Navbar = () => {
         { name: "Sports & Gymnasium", path: "/#" },
       ]
     },
-    { name: "Notice", path: "/notice", hasDropdown: false },
+    {
+      name: "Notice",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "ANTI-RAGGING COMMITTEE & SQUADS", path: "/notice/anti-ragging" },
+        { name: "Late Fee for the even semester", path: "/notice/late-fee" },
+        {
+          name: "National Overseas Scholarship Scheme for ST students (2025-26)",
+          path: "#",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Letter", path: "/documents/Letter to 265 institutions regarding NSP portal opening for the Year 2025-26.pdf", isExternal: true },
+            { name: "Guidelines NATIONAL FELLOWSHIP & SCHOLARSHIP", path: "/documents/Guidelines Scholarship - Top Class Part - B_compressed_compressed.pdf", isExternal: true }
+          ]
+        },
+        { name: "Odd Semester B.Tech (3rd, 5th & 7th Semesters) / M.Tech (3rd Semester) for AY (2025-26)", path: "/documents/Odd Sem Registration Instruction for Btech and Mtech_0.pdf", isExternal: true },
+        { name: "Rajbhasha Committee", path: "/documents/Rajbhasha committee.pdf", isExternal: true },
+        { name: "List of Faculty Advisor for B.Tech, M.Tech & PhD (Odd Semester) AY 2025-26", path: "/documents/List of Faculty Advisor for Odd Sem Registration.pdf", isExternal: true },
+        { name: "Notice in respect to the registration to the registration for B.Tech, M.Tech & PhD", path: "/documents/Notice in respect to the regstration for B.Tech, M.Tech & Ph.D programmes.pdf", isExternal: true },
+        { name: "List of Holidays", path: "/documents/office order (Holidays).pdf", isExternal: true },
+      ]
+    },
     { name: "Careers", path: "/careers", hasDropdown: false },
     { name: "Placement", path: "/placement", hasDropdown: false },
     { name: "Contact Us", path: "/contact", hasDropdown: false },

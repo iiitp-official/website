@@ -33,7 +33,8 @@ const Breadcrumb = () => {
           'scholar': 'Research Scholar',
           'visvesvaraya': 'Visvesvaraya Scheme',
           'institute': 'Institute Scheme',
-          'graduated': 'Graduated PhD Students'
+          'graduated': 'Graduated PhD Students',
+          'anti-ragging': 'Anti-Ragging Committee'
         };
 
         // Capitalize and format text, handling special acronyms
@@ -42,7 +43,7 @@ const Breadcrumb = () => {
           label = value.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
         }
 
-        const isUnclickable = ['btech', 'mtech', 'scholar', 'funded-projects'].includes(value.toLowerCase());
+        const isUnclickable = ['btech', 'mtech', 'scholar', 'funded-projects', 'notice'].includes(value.toLowerCase());
 
         return (
           <React.Fragment key={to}>
