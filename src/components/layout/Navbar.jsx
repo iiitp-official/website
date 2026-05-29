@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { Search, Sun, Moon, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -65,11 +65,8 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearch, setShowSearch] = useState(false);
-  const [searchResults, setSearchResults] = useState([]);
-  const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState({});
   const location = useLocation();
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (isDark) {
@@ -84,49 +81,7 @@ const Navbar = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setOpenDropdowns({});
-    setShowSearch(false);
-    setSearchQuery("");
   }, [location.pathname]);
-
-  const getFlattenedLinks = (links) => {
-    let flat = [];
-    links.forEach(link => {
-      if (link.path && link.path !== "#") {
-        flat.push({ name: link.name, path: link.path, isExternal: link.isExternal });
-      }
-      if (link.subLinks) {
-        flat = flat.concat(getFlattenedLinks(link.subLinks));
-      }
-    });
-    return flat;
-  };
-
-  useEffect(() => {
-    if (searchQuery.trim() === "") {
-      setSearchResults([]);
-      return;
-    }
-    const allLinks = getFlattenedLinks(primaryLinks);
-    const query = searchQuery.toLowerCase();
-    const results = allLinks.filter(link => link.name.toLowerCase().includes(query));
-    // Remove duplicates by path
-    const uniqueResults = Array.from(new Map(results.map(item => [item.path, item])).values());
-    setSearchResults(uniqueResults.slice(0, 6)); // show top 6
-  }, [searchQuery]);
-
-  const handleSearchEnter = (e) => {
-    if (e.key === "Enter" && searchResults.length > 0) {
-      const firstResult = searchResults[0];
-      if (firstResult.isExternal) {
-        window.open(firstResult.path, "_blank");
-      } else {
-        navigate(firstResult.path);
-      }
-      setShowSearch(false);
-      setIsMobileMenuOpen(false);
-      setSearchQuery("");
-    }
-  };
 
   const toggleDarkMode = () => setIsDark(!isDark);
 
@@ -150,7 +105,7 @@ const Navbar = () => {
   // Language control
   const changeLanguage = (lang) => {
     const host = window.location.hostname;
-    
+
     // Always set base path cookie
     if (lang === 'en') {
       document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
@@ -168,7 +123,7 @@ const Navbar = () => {
         document.cookie = `googtrans=/en/${lang}; domain=.${host}; path=/`;
       }
     }
-    
+
     window.location.reload();
   };
 
@@ -266,18 +221,18 @@ const Navbar = () => {
       subLinks: [
         { name: "Centres", path: "/research/centres" },
         { name: "Internship @IIIT Pune", path: "/research/internships" },
-        // { name: "Library", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
-        { 
-          name: "Funded Projects", 
-          hasDropdown: true, 
+        { name: "Library", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
+        {
+          name: "Funded Projects",
+          hasDropdown: true,
           subLinks: [
             { name: "Funded Project (Completed)", path: "/research/funded-projects/completed" },
             { name: "Funded Project (Ongoing)", path: "/research/funded-projects/ongoing" }
           ]
         },
         { name: "Events", path: "/research/events" },
-        { 
-          name: "Research Scholar", 
+        {
+          name: "Research Scholar",
           hasDropdown: true,
           subLinks: [
             { name: "Institute Scheme", path: "/research/scholar/institute" },
@@ -339,7 +294,8 @@ const Navbar = () => {
         { name: "HR Summit (2021)", path: "/life?tab=hr-summit" },
         { name: "Magazine", path: "/life?tab=magazine" },
         { name: "Permanent Campus", path: "/life?tab=campus" },
-        { name: "ACM Chapter", path: "/life?tab=acm" },
+        { name: "ACM Chapter", path: "/#" },
+        { name: "Sports & Gymnasium", path: "/#" },
       ]
     },
     {
@@ -392,7 +348,7 @@ const Navbar = () => {
   ];
 
   const navLinkClass = ({ isActive }) =>
-    `relative py-2 px-3 text-sm font-medium transition-colors duration-200 group flex items-center ${isActive ? "text-brand-red dark:text-brand-red-dark" : "text-white hover:text-brand-red dark:text-gray-200 dark:hover:text-brand-red-dark"
+    `relative py-1 px-2.5 text-xs md:text-sm font-medium transition-colors duration-200 group flex items-center ${isActive ? "text-brand-red dark:text-brand-red-dark" : "text-white hover:text-brand-red dark:text-gray-200 dark:hover:text-brand-red-dark"
     }`;
 
   const navLinkUnderline = ({ isActive }) => (
@@ -406,28 +362,28 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full shadow-md bg-primary dark:bg-surface-dark transition-colors duration-200">
       {/* Row 1: Logo + Name + Controls */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-blue-800/50 dark:border-gray-800">
-        <div className="flex justify-between items-center py-3 md:py-4">
+        <div className="flex justify-between items-center py-1 md:py-2">
           {/* Logo + Name */}
-          <Link to="/" className="flex items-start space-x-3">
-            <div className="w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden flex items-center justify-center shrink-0">
+          <Link to="/" className="flex items-center space-x-2 md:space-x-3">
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center shrink-0">
               <img src="/iiitp-logo.png" alt="IIIT Pune Logo" className="w-full h-full object-contain" />
             </div>
             <div className="text-white dark:text-text-dark leading-tight">
-              <h1 className="text-xl md:text-2xl font-bold font-serif">
+              <h1 className="text-sm md:text-base lg:text-lg font-bold font-serif">
                 Indian Institute of Information Technology Pune
               </h1>
-              <h2 className="text-sm md:text-2xl font-medium opacity-90 font-serif mt-1">
+              <h2 className="text-xs md:text-sm lg:text-base font-medium opacity-90 font-serif mt-0.5">
                 भारतीय सूचना प्रौद्योगिकी संस्थान, पुणे
               </h2>
-              <p className="text-[10px] md:text-sm opacity-80 mt-1">(An Institute of National Importance)</p>
-              <p className="text-[8px] md:text-xs opacity-70 mt-0.5">
+              <p className="text-[9px] md:text-[11px] opacity-80 mt-0.5">(An Institute of National Importance)</p>
+              <p className="text-[7px] md:text-[9px] opacity-70 mt-0.5">
                 Gat No. 5 &amp; 6, Village Nanoli-Tathawade, Tal. Maval, Pune - 412106
               </p>
             </div>
           </Link>
 
           {/* Right Controls */}
-          <div className="flex flex-col items-end gap-3">
+          <div className="flex flex-col items-end gap-1 md:gap-1.5">
             {/* Top Row: Dark mode + Language + Text Size + Mobile menu */}
             <div className="flex items-center gap-2 md:gap-3">
               {/* Dark Mode */}
@@ -541,49 +497,19 @@ const Navbar = () => {
 
               <AnimatePresence>
                 {showSearch && (
-                  <div className="relative">
-                    <motion.input
-                      initial={{ width: 0, opacity: 0 }}
-                      animate={{ width: 160, opacity: 1 }}
-                      exit={{ width: 0, opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                      type="text"
-                      placeholder="Search..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      onKeyPress={handleSearchEnter}
-                      onFocus={() => setIsSearchFocused(true)}
-                      onBlur={() => setTimeout(() => setIsSearchFocused(false), 200)}
-                      autoFocus
-                      className="h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 dark:placeholder-gray-500 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm overflow-hidden"
-                    />
-                    <AnimatePresence>
-                      {searchQuery && isSearchFocused && (
-                        <motion.div
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: 10 }}
-                          className="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-lg shadow-xl overflow-hidden z-50"
-                        >
-                          {searchResults.length > 0 ? (
-                            searchResults.map((result, idx) => (
-                              result.isExternal ? (
-                                <a key={idx} href={result.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0">
-                                  {result.name}
-                                </a>
-                              ) : (
-                                <Link key={idx} to={result.path} className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0" onClick={() => {setShowSearch(false); setSearchQuery("")}}>
-                                  {result.name}
-                                </Link>
-                              )
-                            ))
-                          ) : (
-                            <div className="px-4 py-3 text-sm text-gray-500 text-center">No results found</div>
-                          )}
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
+                  <motion.input
+                    initial={{ width: 0, opacity: 0 }}
+                    animate={{ width: 160, opacity: 1 }}
+                    exit={{ width: 0, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                    type="text"
+                    placeholder="Search..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
+                    autoFocus
+                    className="h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 dark:placeholder-gray-500 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm overflow-hidden"
+                  />
                 )}
               </AnimatePresence>
             </div>
@@ -593,7 +519,7 @@ const Navbar = () => {
 
       {/* Row 2: Primary Nav Links (Desktop) */}
       <nav className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-center items-center py-2 gap-x-2 gap-y-1">
+        <div className="flex flex-wrap justify-center items-center py-1 gap-x-2 gap-y-0.5">
           {primaryLinks.map((link) => (
             <div key={link.name} className="relative group">
               <NavLink
@@ -707,37 +633,16 @@ const Navbar = () => {
           >
             <div className="px-4 py-4 space-y-4 max-h-[70vh] overflow-y-auto">
               {/* Mobile Search */}
-              <div className="relative px-3 z-50">
-                <div className="flex items-center gap-2">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    onKeyPress={handleSearchEnter}
-                    className="flex-1 h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm"
-                  />
-                  <Search className="w-4 h-4 text-white opacity-70" />
-                </div>
-                {searchQuery && (
-                  <div className="absolute top-full left-3 right-3 mt-2 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-lg shadow-xl overflow-hidden">
-                    {searchResults.length > 0 ? (
-                      searchResults.map((result, idx) => (
-                        result.isExternal ? (
-                          <a key={idx} href={result.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0" onClick={() => setIsMobileMenuOpen(false)}>
-                            {result.name}
-                          </a>
-                        ) : (
-                          <Link key={idx} to={result.path} className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0" onClick={() => {setIsMobileMenuOpen(false); setSearchQuery("")}}>
-                            {result.name}
-                          </Link>
-                        )
-                      ))
-                    ) : (
-                      <div className="px-4 py-3 text-sm text-gray-500 text-center">No results found</div>
-                    )}
-                  </div>
-                )}
+              <div className="flex items-center gap-2 px-3">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
+                  className="flex-1 h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm"
+                />
+                <Search className="w-4 h-4 text-white opacity-70" />
               </div>
 
               {/* Mobile Social + Language + Text Size */}

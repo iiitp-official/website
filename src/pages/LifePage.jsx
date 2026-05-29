@@ -9,40 +9,21 @@ import {
 } from 'lucide-react';
 
 const Instagram = ({ size = 16, className = "" }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    width={size} 
-    height={size} 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className={className}
   >
-    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-  </svg>
-);
-
-const Linkedin = ({ size = 16, className = "" }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    width={size} 
-    height={size} 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    className={className}
-  >
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-    <rect x="2" y="9" width="4" height="12"/>
-    <circle cx="4" cy="4" r="2"/>
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
   </svg>
 );
 
@@ -76,7 +57,7 @@ const CLUBS = {
       "Conducted campus-wide Figma and Illustrator design bootcamps for 150+ students"
     ],
     images: ["https://www.iiitp.ac.in/sites/default/files/inline-images/Screenshot%202026-05-19%20180053.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/Screenshot%202026-05-19%20175837.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/aygycs_blue.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/frontpage.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/pngs.png"],
-    leadership: {"heads": [], "email": "blueprint@iiitp.ac.in", "instagram": "@blueprint_iiitp", "website": ""}
+    leadership: { "heads": [], "email": "blueprint@iiitp.ac.in", "instagram": "@blueprint_iiitp", "website": "" }
   },
   'rang': {
     name: 'Rang',
@@ -109,7 +90,7 @@ const CLUBS = {
       "Completed multiple collaborative art installations around the college host zones"
     ],
     images: ["https://www.iiitp.ac.in/sites/default/files/2026-05/rang12.JPG", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang6.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang8.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang5.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang4.jpg.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang1.jpg"],
-    leadership: {"heads": [{"name": "Avani Patil", "role": "Club Head"}, {"name": "Akshad Khune", "role": "Club Co-Head"}], "email": "rang@iiitp.ac.in", "instagram": "@rangiiitp", "website": ""}
+    leadership: { "heads": [{ "name": "Avani Patil", "role": "Club Head" }, { "name": "Akshad Khune", "role": "Club Co-Head" }], "email": "rang@iiitp.ac.in", "instagram": "@rangiiitp", "website": "" }
   },
   'quantnum': {
     name: 'QuantNum',
@@ -138,7 +119,7 @@ const CLUBS = {
       "Maintained weekly 'Problem of the Week' challenges and 'Did You Know' math series on social media to build curiosity"
     ],
     images: ["https://www.iiitp.ac.in/sites/default/files/2026-05/download.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/download.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/download%20%281%29.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/download%20%282%29.png"],
-    leadership: {"heads": [{"name": "Suharsh Kumar", "role": "Club Head (CSE)"}, {"name": "Shreya Khandelwal", "role": "Club Co-Head (ECE)"}], "email": "quantnum@iiitp.ac.in", "instagram": "@quantnum_iiitp", "website": ""}
+    leadership: { "heads": [{ "name": "Suharsh Kumar", "role": "Club Head (CSE)" }, { "name": "Shreya Khandelwal", "role": "Club Co-Head (ECE)" }], "email": "quantnum@iiitp.ac.in", "instagram": "@quantnum_iiitp", "website": "" }
   },
   'bit-legion': {
     name: 'Bit-Legion',
@@ -167,7 +148,7 @@ const CLUBS = {
       "Conducted InfInITY 2k22 globally, attracting top-rated competitive programmers including masters and grandmasters"
     ],
     images: ["https://www.iiitp.ac.in/sites/default/files/inline-images/image001.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image003.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image005.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image007.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image009.jpg"],
-    leadership: {"heads": [], "email": "bitlegion@iiitp.ac.in", "instagram": "@bit_legion_iiitp", "website": ""}
+    leadership: { "heads": [], "email": "bitlegion@iiitp.ac.in", "instagram": "@bit_legion_iiitp", "website": "" }
   },
   'c-cube': {
     name: 'C-CUBE',
@@ -196,7 +177,7 @@ const CLUBS = {
       "Successfully established key mentor relationships with experts from leading corporate companies"
     ],
     images: [],
-    leadership: {"heads": [], "email": "ccube@iiitp.ac.in", "instagram": "@c_cube_iiitp", "website": ""}
+    leadership: { "heads": [], "email": "ccube@iiitp.ac.in", "instagram": "@c_cube_iiitp", "website": "" }
   },
   'e-cell': {
     name: 'E-Cell',
@@ -229,7 +210,7 @@ const CLUBS = {
       "Created a comprehensive local startup-supporting mechanism and student mentor pool on campus"
     ],
     images: [],
-    leadership: {"heads": [], "email": "ecell@iiitp.ac.in", "instagram": "@e-celliiitpune4629", "website": ""}
+    leadership: { "heads": [], "email": "ecell@iiitp.ac.in", "instagram": "@e-celliiitpune4629", "website": "" }
   },
   'eclectic': {
     name: 'Eclectic',
@@ -262,7 +243,7 @@ const CLUBS = {
       "Founded the Book Society to promote a reading and critical writing culture inside the institute"
     ],
     images: [],
-    leadership: {"heads": [], "email": "eclectic@iiitp.ac.in", "instagram": "@media", "website": ""}
+    leadership: { "heads": [], "email": "eclectic@iiitp.ac.in", "instagram": "@media", "website": "" }
   },
   'saaz': {
     name: 'SAAZ',
@@ -291,7 +272,7 @@ const CLUBS = {
       "Recorded and produced original soundtracks for college promotional media and short student films"
     ],
     images: [],
-    leadership: {"heads": [], "email": "saaz@iiitp.ac.in", "instagram": "@saaz_iiitp", "website": "https://saaz-iiitp.vercel.app/"}
+    leadership: { "heads": [], "email": "saaz@iiitp.ac.in", "instagram": "@saaz_iiitp", "website": "https://saaz-iiitp.vercel.app/" }
   },
   'vanity-crew': {
     name: 'Vanity Crew',
@@ -330,7 +311,7 @@ const CLUBS = {
       "/assets/clubs/vanity-crew_4.jpg",
       "/assets/clubs/vanity-crew_5.jpg"
     ],
-    leadership: {"heads": [{"name": "Avani Yadav", "role": "Club Head"}, {"name": "Arushi Ramesh", "role": "Club Co-Head"}, {"name": "Aaryan Singh", "role": "Club Co-Head"}], "email": "vanitycrew@iiitp.ac.in", "instagram": "@vanity_crew_iiitp", "website": "https://vanitycrew.vercel.app/"}
+    leadership: { "heads": [{ "name": "Avani Yadav", "role": "Club Head" }, { "name": "Arushi Ramesh", "role": "Club Co-Head" }, { "name": "Aaryan Singh", "role": "Club Co-Head" }], "email": "vanitycrew@iiitp.ac.in", "instagram": "@vanity_crew_iiitp", "website": "https://vanitycrew.vercel.app/" }
   },
   'sports': {
     name: 'Sports',
@@ -359,7 +340,7 @@ const CLUBS = {
       "Sent an athletic contingent to represent the institute at the Inter-IIIT Sports Meet at IIITDM Kurnool"
     ],
     images: ["https://www.iiitp.ac.in/sites/default/files/inline-images/image042.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image043.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image045.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/Frame%20780.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/_THC3794.JPG"],
-    leadership: {"heads": [{"name": "Shriraj Nilare", "role": "Sports Club Head"}, {"name": "Bhavin Barad", "role": "Sports Club Co-Head"}], "email": "sports@iiitp.ac.in", "instagram": "@sports_iiitp", "website": ""}
+    leadership: { "heads": [{ "name": "Shriraj Nilare", "role": "Sports Club Head" }, { "name": "Bhavin Barad", "role": "Sports Club Co-Head" }], "email": "sports@iiitp.ac.in", "instagram": "@sports_iiitp", "website": "" }
   },
   'rofies': {
     name: 'ROFIES',
@@ -392,7 +373,7 @@ const CLUBS = {
       "Successfully cleared Level 1 of TRON 2026 with Project Aura, competing against global universities"
     ],
     images: ["https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.FI_.E.S_2.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.F.I.E.S_4.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.F.I.E.S_3.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.F.I.E.S_1.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.F.I.E.S_5.png"],
-    leadership: {"heads": [], "email": "rofies@iiitp.ac.in", "instagram": "@media", "website": ""}
+    leadership: { "heads": [], "email": "rofies@iiitp.ac.in", "instagram": "@media", "website": "" }
   },
   'localhost': {
     name: 'localhost',
@@ -425,7 +406,7 @@ const CLUBS = {
       "Maintained active community dev channels on Telegram to support beginners in web and app development"
     ],
     images: ["https://www.iiitp.ac.in/sites/default/files/inline-images/image061.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image063.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image066.gif"],
-    leadership: {"heads": [], "email": "localhost@iiitp.ac.in", "instagram": "@localhost_iiitp", "website": ""}
+    leadership: { "heads": [], "email": "localhost@iiitp.ac.in", "instagram": "@localhost_iiitp", "website": "" }
   },
   'horizon': {
     name: 'Horizon',
@@ -454,7 +435,7 @@ const CLUBS = {
       "Maintained the official Linktree portal to share digital photography portfolios and promotional videography"
     ],
     images: [],
-    leadership: {"heads": [], "email": "horizon@iiitp.ac.in", "instagram": "@horizon_iiitp", "website": ""}
+    leadership: { "heads": [], "email": "horizon@iiitp.ac.in", "instagram": "@horizon_iiitp", "website": "" }
   },
   'abhinay': {
     name: 'Abhinay',
@@ -493,7 +474,7 @@ const CLUBS = {
       "/assets/clubs/abhinay_4.png",
       "/assets/clubs/abhinay_5.png"
     ],
-    leadership: {"heads": [{"name": "Swayam Patel", "role": "Club Head (CSE 3rd Year)"}, {"name": "Aashutosh Bharti", "role": "Club Co-Head (CSE 3rd Year)"}], "email": "abhinay@iiitp.ac.in", "instagram": "@abhinay_iiitp", "website": ""}
+    leadership: { "heads": [{ "name": "Swayam Patel", "role": "Club Head (CSE 3rd Year)" }, { "name": "Aashutosh Bharti", "role": "Club Co-Head (CSE 3rd Year)" }], "email": "abhinay@iiitp.ac.in", "instagram": "@abhinay_iiitp", "website": "" }
   },
   'q-riocity': {
     name: 'Q-riocity',
@@ -526,7 +507,7 @@ const CLUBS = {
       "Successfully built a welcoming learning-sharing environment for quiz hosting and framing"
     ],
     images: ["https://www.iiitp.ac.in/sites/default/files/2026-05/Picture1%20%281%29.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/Picture2.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/Picture3.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/Picture4.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/Picture5.png"],
-    leadership: {"heads": [{"name": "Aditya Apoorva Negi", "role": "Club Head (CSE 3rd Year)"}, {"name": "Aadit Bajaj", "role": "Core Team Member (CSE 2nd Year)"}, {"name": "Amol Raj", "role": "Core Team Member (CSE 2nd Year)"}], "email": "q_riocity@iiitp.ac.in", "instagram": "@q_riocity_", "website": ""}
+    leadership: { "heads": [{ "name": "Aditya Apoorva Negi", "role": "Club Head (CSE 3rd Year)" }, { "name": "Aadit Bajaj", "role": "Core Team Member (CSE 2nd Year)" }, { "name": "Amol Raj", "role": "Core Team Member (CSE 2nd Year)" }], "email": "q_riocity@iiitp.ac.in", "instagram": "@q_riocity_", "website": "" }
   },
 };
 
@@ -715,11 +696,10 @@ const LifePage = () => {
                       <button
                         key={key}
                         onClick={() => setSearchParams({ tab: 'clubs', club: key })}
-                        className={`w-full flex flex-col items-start px-3.5 py-3 rounded-xl text-left transition-all duration-250 border ${
-                          isSelected
+                        className={`w-full flex flex-col items-start px-3.5 py-3 rounded-xl text-left transition-all duration-250 border ${isSelected
                             ? `bg-gradient-to-r ${c.color} text-white border-transparent shadow-lg shadow-blue-500/10 scale-[1.01]`
                             : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800/80 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700'
-                        }`}
+                          }`}
                       >
                         <div className="flex items-center gap-2 w-full">
                           <span className={`w-2 h-2 rounded-full shrink-0 ${isSelected ? 'bg-white shadow' : `bg-gradient-to-br ${c.color}`}`} />
@@ -751,7 +731,7 @@ const LifePage = () => {
               <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl shadow-sm overflow-hidden transition-all duration-300">
                 {/* Visual Accent Top Bar */}
                 <div className={`h-1.5 bg-gradient-to-r ${club.color}`} />
-                
+
                 <div className="p-6 md:p-8">
                   {/* Header */}
                   <div className="border-b border-gray-100 dark:border-gray-800 pb-5 mb-6">
@@ -857,8 +837,8 @@ const LifePage = () => {
                         </h3>
                         <div className="flex flex-col gap-2">
                           {club.leadership.email && (
-                            <a 
-                              href={`mailto:${club.leadership.email}`} 
+                            <a
+                              href={`mailto:${club.leadership.email}`}
                               className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl bg-white dark:bg-surface-dark text-xs text-gray-650 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 hover:shadow-xs transition-all border border-gray-100 dark:border-gray-800/80"
                             >
                               <Mail size={14} className="text-gray-400 shrink-0" />
@@ -866,10 +846,10 @@ const LifePage = () => {
                             </a>
                           )}
                           {club.leadership.instagram && (
-                            <a 
-                              href={`https://instagram.com/${club.leadership.instagram.replace('@', '')}`} 
-                              target="_blank" 
-                              rel="noopener noreferrer" 
+                            <a
+                              href={`https://instagram.com/${club.leadership.instagram.replace('@', '')}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl bg-white dark:bg-surface-dark text-xs text-gray-650 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 hover:shadow-xs transition-all border border-gray-100 dark:border-gray-800/80"
                             >
                               <Instagram size={14} className="text-gray-400 shrink-0" />
@@ -877,10 +857,10 @@ const LifePage = () => {
                             </a>
                           )}
                           {club.leadership.website && (
-                            <a 
-                              href={club.leadership.website} 
-                              target="_blank" 
-                              rel="noopener noreferrer" 
+                            <a
+                              href={club.leadership.website}
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl bg-white dark:bg-surface-dark text-xs text-gray-655 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 hover:shadow-xs transition-all border border-gray-100 dark:border-gray-800/80 font-bold"
                             >
                               <ExternalLink size={14} className="text-gray-400 shrink-0" />
@@ -901,13 +881,13 @@ const LifePage = () => {
                     {club.images && club.images.length > 0 ? (
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         {club.images.map((imgUrl, idx) => (
-                          <div 
-                            key={idx} 
+                          <div
+                            key={idx}
                             onClick={() => setSelectedImage(imgUrl)}
                             className="group relative aspect-video rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800/80 shadow-sm cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
                           >
-                            <img 
-                              src={imgUrl} 
+                            <img
+                              src={imgUrl}
                               alt={`${club.name} Activity ${idx + 1}`}
                               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                               onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
@@ -956,11 +936,10 @@ const LifePage = () => {
                       <button
                         key={act.id}
                         onClick={() => setSearchParams({ tab: 'activities', act: act.id })}
-                        className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-left text-sm font-semibold transition-all ${
-                          isSelected
+                        className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-left text-sm font-semibold transition-all ${isSelected
                             ? 'bg-primary text-white shadow-md'
                             : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/40'
-                        }`}
+                          }`}
                       >
                         <span className="truncate">{act.name}</span>
                         <ChevronRight size={14} className={isSelected ? 'text-white' : 'text-gray-400'} />
@@ -997,13 +976,13 @@ const LifePage = () => {
                         <h4 className="text-sm font-bold text-gray-800 dark:text-white mb-4">Event Gallery</h4>
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                           {act.images.map((imgUrl, idx) => (
-                            <div 
-                              key={idx} 
+                            <div
+                              key={idx}
                               onClick={() => setSelectedImage(imgUrl)}
                               className="group relative aspect-video rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800/80 shadow-sm cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
                             >
-                              <img 
-                                src={imgUrl} 
+                              <img
+                                src={imgUrl}
                                 alt={`${act.name} Photo ${idx + 1}`}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
@@ -1036,14 +1015,14 @@ const LifePage = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {GALLERY_ITEMS.map((item, idx) => (
-                <div 
-                  key={idx} 
+                <div
+                  key={idx}
                   onClick={() => setSelectedImage(item.imgUrl)}
                   className="group relative overflow-hidden bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer transition-all duration-300"
                 >
                   <div className="aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-850">
-                    <img 
-                      src={item.imgUrl} 
+                    <img
+                      src={item.imgUrl}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
@@ -1139,9 +1118,9 @@ const LifePage = () => {
                       <div key={i} className="overflow-hidden bg-gray-100 dark:bg-gray-800">
                         <img
                           src={img}
-                          alt={`${event.name} ${i+1}`}
+                          alt={`${event.name} ${i + 1}`}
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                          onError={(e) => { e.target.parentElement.style.display='none'; }}
+                          onError={(e) => { e.target.parentElement.style.display = 'none'; }}
                         />
                       </div>
                     ))}
@@ -1217,10 +1196,18 @@ const LifePage = () => {
           <div className="space-y-8">
             {/* Header */}
             <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-sm">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white mb-3">
-                  Eminence — Annual Magazine
-                </h2>
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="w-20 h-28 rounded-xl bg-gradient-to-br from-blue-700 to-indigo-950 flex flex-col items-center justify-center shadow-lg border border-blue-800 text-white shrink-0">
+                  <BookOpen size={28} className="text-accent mb-1.5" />
+                  <span className="text-[9px] font-bold uppercase tracking-widest text-accent/90">Eminence</span>
+                </div>
+                <div>
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 uppercase tracking-wide">
+                    Annual Publication
+                  </span>
+                  <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white mt-2 mb-2">
+                    Eminence — Annual Magazine
+                  </h2>
                   <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
                     <strong>Eminence</strong> is the official annual student publication of IIIT Pune. It is a creative canvas for the entire campus community — capturing tech research reviews, literary poetry, student artwork, opinion pieces, interview series, and highlights of student and faculty achievements throughout the academic year. Published by the joint efforts of the Literary and Arts societies, Eminence reflects the intellectual and creative spirit of IIIT Pune.
                   </p>
@@ -1240,6 +1227,7 @@ const LifePage = () => {
                   </div>
                 </div>
               </div>
+            </div>
 
             {/* Live Flipbook Embeds */}
             <div className="space-y-10">
@@ -1350,7 +1338,7 @@ const LifePage = () => {
                       src={img.src}
                       alt={img.caption}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      onError={(e) => { e.target.closest('.group').style.display='none'; }}
+                      onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
                     />
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-2 backdrop-blur-[2px]">
                       <span className="text-white text-[11px] font-semibold">{img.caption}</span>
@@ -1391,244 +1379,6 @@ const LifePage = () => {
                 <div className="space-y-1">
                   <span className="text-[10px] font-bold text-gray-400 uppercase">Nearest City</span>
                   <p className="text-xs text-gray-700 dark:text-gray-300">Pune City (~35 km) | Talegaon MIDC (~5 km)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        );
-      }
-
-      case 'acm': {
-        const ACTIONS = [
-          {
-            title: "UX / HCI Workshops",
-            desc: "Learn practical tools and methodologies of user experience and human-computer interaction.",
-            icon: BookOpen,
-            color: "from-blue-500/10 to-indigo-500/10 border-blue-500/20 text-[#0B61A4] dark:text-blue-400"
-          },
-          {
-            title: "Design Sprints & Hackathons",
-            desc: "Apply skills in fast-paced, collaborative challenges targeting real-world problems.",
-            icon: Trophy,
-            color: "from-purple-500/10 to-pink-500/10 border-purple-500/20 text-purple-600 dark:text-purple-400"
-          },
-          {
-            title: "Research Exposure",
-            desc: "Get involved in cutting-edge Human-Computer Interaction and design research projects.",
-            icon: Compass,
-            color: "from-emerald-500/10 to-teal-500/10 border-emerald-500/20 text-emerald-600 dark:text-emerald-400"
-          },
-          {
-            title: "ACM Digital Library Access",
-            desc: "Gain free access to millions of research papers, articles, and conference publications.",
-            icon: Sparkles,
-            color: "from-amber-500/10 to-orange-500/10 border-amber-500/20 text-amber-600 dark:text-amber-400"
-          },
-          {
-            title: "Guest Lectures",
-            desc: "Exclusive sessions with industry-leading UX Designers, User Researchers, and experts.",
-            icon: Users,
-            color: "from-indigo-500/10 to-sky-500/10 border-indigo-500/20 text-indigo-600 dark:text-indigo-400"
-          },
-          {
-            title: "Publication Opportunities",
-            desc: "Receive mentorship and guidance for publishing your research work at international conferences.",
-            icon: Award,
-            color: "from-rose-500/10 to-red-500/10 border-rose-500/20 text-rose-600 dark:text-rose-400"
-          },
-          {
-            title: "Certifications",
-            desc: "Access structured resources and guides to gain professional industry-recognized credentials.",
-            icon: CheckCircle2,
-            color: "from-teal-500/10 to-emerald-500/10 border-teal-500/20 text-teal-600 dark:text-teal-400"
-          }
-        ];
-
-        const CONTACTS = [
-          { name: "Saurav Dabhade", role: "Chair", email: "sauravdabhade@acm.org" },
-          { name: "Roshni Sahoo", role: "Vice Chair", email: "212515011@cse.iiitp.ac.in" },
-          { name: "Piyush Kulkarni", role: "Membership Lead", email: "112316021@ece.iiitp.ac.in" }
-        ];
-
-        return (
-          <div className="space-y-12">
-            {/* Hero Section */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-[#0B61A4] via-[#094775] to-[#052842] text-white rounded-3xl p-8 md:p-12 shadow-xl border border-[#094775]">
-              <div className="absolute top-0 right-0 -mt-12 -mr-12 w-72 h-72 rounded-full bg-blue-400/10 blur-3xl pointer-events-none" />
-              <div className="absolute bottom-0 left-0 -mb-12 -ml-12 w-72 h-72 rounded-full bg-indigo-400/10 blur-3xl pointer-events-none" />
-              
-              <div className="relative z-10 space-y-6 max-w-4xl">
-                <div className="flex flex-wrap gap-2">
-                  {["HCI", "UX Design", "User Research"].map((tag, i) => (
-                    <span key={i} className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-xs font-semibold text-blue-205 text-[#0B61A4] dark:text-[#E8F1FA] bg-[#E8F1FA] dark:bg-blue-950/40 border-[#0B61A4]/30 dark:border-blue-900/30">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                
-                <h2 className="text-3xl md:text-5xl font-extrabold font-serif tracking-tight leading-tight">
-                  ACM SIGCHI <br />
-                  <span className="bg-gradient-to-r from-blue-300 via-sky-200 to-indigo-300 bg-clip-text text-transparent">
-                    IIIT Pune Chapter
-                  </span>
-                </h2>
-                
-                <p className="text-sm md:text-base text-gray-200 leading-relaxed max-w-2xl">
-                  The Special Interest Group on Computer-Human Interaction (SIGCHI) is the global hub for research and practice in Human-Computer Interaction (HCI), UX Design, and User Experience (UX). We are the student division of ACM SIGCHI at IIITP, serving as a pre-professional incubator that equips students with the specific knowledge, practical skills, industry connections, and professional credentials necessary to transition successfully into careers in technology and design.
-                </p>
-
-                <div className="flex flex-wrap gap-4 pt-2">
-                  <a
-                    href="https://services.acm.org/public/qj/prod/quickjoin/qjcontrol.cfm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#F77F00] hover:bg-[#d96e00] text-xs font-bold transition-all shadow-lg shadow-[#F77F00]/20 text-white"
-                  >
-                    <Award size={14} /> ACM Student Membership
-                  </a>
-                  <a
-                    href="https://forms.gle/CyC8gqfqhFFDfAdm6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-xs font-bold transition-all text-white"
-                  >
-                    <CheckCircle2 size={14} /> Join Chapter Form
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* What We Do */}
-            <div className="space-y-6">
-              <div className="border-b border-gray-100 dark:border-gray-800 pb-3">
-                <h3 className="text-xl font-bold font-serif text-gray-800 dark:text-white">What We Do</h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400">Core activities, platforms, and programs offered by our student division.</p>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {ACTIONS.map((act, idx) => {
-                  const Icon = act.icon;
-                  return (
-                    <div key={idx} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
-                      <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br ${act.color} border shrink-0`}>
-                        <Icon size={20} />
-                      </div>
-                      <div className="space-y-1">
-                        <h4 className="text-sm font-bold text-gray-800 dark:text-white">{act.title}</h4>
-                        <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{act.desc}</p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* How to Join */}
-            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm space-y-6">
-              <div className="border-b border-gray-100 dark:border-gray-800 pb-3">
-                <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white">How to Join</h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400">Step-by-step registration for new student members.</p>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div className="space-y-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
-                  <p>
-                    Joining the chapter is simple! Follow these two quick steps:
-                  </p>
-                  <ol className="list-decimal pl-5 space-y-2.5 text-xs">
-                    <li>
-                      Register for an official student membership using the <strong>ACM Quick Join Application Form</strong>.
-                    </li>
-                    <li>
-                      Complete our local chapter registration via the <strong>Google Form</strong> to join the community directory and mailing lists.
-                    </li>
-                  </ol>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-end">
-                  <a
-                    href="https://services.acm.org/public/qj/prod/quickjoin/qjcontrol.cfm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-xs font-bold text-gray-800 dark:text-white border border-gray-200 dark:border-gray-700 transition-all text-center"
-                  >
-                    1. ACM Quick Join <ExternalLink size={12} />
-                  </a>
-                  <a
-                    href="https://forms.gle/CyC8gqfqhFFDfAdm6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-[#0B61A4] hover:bg-[#094775] text-xs font-bold text-white transition-all text-center"
-                  >
-                    2. Complete Google Form <ExternalLink size={12} />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Contacts & Socials */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {/* Contact Us */}
-              <div className="lg:col-span-2 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 shadow-sm space-y-4">
-                <h3 className="text-base font-bold font-serif text-gray-800 dark:text-white">Contact Us</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {CONTACTS.map((c, i) => (
-                    <div key={i} className="p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-750 space-y-2">
-                      <div className="space-y-0.5">
-                        <h4 className="text-xs font-bold text-gray-800 dark:text-white">{c.name}</h4>
-                        <span className="text-[10px] font-bold text-blue-600 dark:text-blue-400 block uppercase tracking-wider">{c.role}</span>
-                      </div>
-                      <a
-                        href={`mailto:${c.email}`}
-                        className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-blue-400 break-all"
-                      >
-                        <Mail size={12} /> {c.email}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Social Channels */}
-              <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 shadow-sm flex flex-col justify-between">
-                <div>
-                  <h3 className="text-base font-bold font-serif text-gray-800 dark:text-white mb-4">Follow &amp; Stay Updated</h3>
-                  <div className="grid grid-cols-3 gap-3">
-                    <a
-                      href="https://iiitpsigchi.acm.org"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex flex-col items-center justify-center p-3 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-750 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:border-blue-200 dark:hover:border-blue-900/30 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
-                    >
-                      <Globe size={18} className="mb-1" />
-                      <span className="text-[10px] font-bold">Website</span>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/iiitpsigchi/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex flex-col items-center justify-center p-3 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-750 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:border-blue-200 dark:hover:border-blue-900/30 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
-                    >
-                      <Linkedin size={18} className="mb-1" />
-                      <span className="text-[10px] font-bold">LinkedIn</span>
-                    </a>
-                    <a
-                      href="https://www.instagram.com/iiitp.sigchi"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex flex-col items-center justify-center p-3 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-750 hover:bg-pink-50 dark:hover:bg-pink-900/10 hover:border-pink-200 dark:hover:border-pink-900/30 text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-all"
-                    >
-                      <Instagram size={18} className="mb-1" />
-                      <span className="text-[10px] font-bold">Instagram</span>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="border-t border-gray-100 dark:border-gray-800 pt-4 mt-4 flex items-center justify-between">
-                  <a
-                    href="mailto:acm.chapter@iiitp.ac.in"
-                    className="inline-flex items-center gap-1.5 text-[11px] font-bold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-blue-400"
-                  >
-                    <Mail size={12} /> acm.chapter@iiitp.ac.in
-                  </a>
-                  <span className="text-[10px] text-gray-400 font-semibold">Last Updated: 25-11-2025</span>
                 </div>
               </div>
             </div>
@@ -1750,8 +1500,7 @@ const LifePage = () => {
               { key: 'events', label: 'College Events', icon: Calendar },
               { key: 'hr-summit', label: 'HR Summit (2021)', icon: Award },
               { key: 'magazine', label: 'Magazine', icon: BookMarked },
-              { key: 'campus', label: 'Permanent Campus', icon: Building },
-              { key: 'acm', label: 'ACM Chapter', icon: Code }
+              { key: 'campus', label: 'Permanent Campus', icon: Building }
             ].map((tab) => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.key;
@@ -1759,11 +1508,10 @@ const LifePage = () => {
                 <button
                   key={tab.key}
                   onClick={() => handleTabChange(tab.key)}
-                  className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold transition-all shrink-0 ${
-                    isActive
+                  className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold transition-all shrink-0 ${isActive
                       ? 'bg-primary text-white shadow-md shadow-blue-500/15 scale-105'
                       : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-850'
-                  }`}
+                    }`}
                 >
                   <Icon size={14} className={isActive ? 'text-white' : 'text-gray-400'} />
                   {tab.label}
@@ -1781,11 +1529,11 @@ const LifePage = () => {
 
       {/* Image Lightbox Modal */}
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
           onClick={() => setSelectedImage(null)}
         >
-          <button 
+          <button
             onClick={() => setSelectedImage(null)}
             className="absolute top-6 right-6 text-white/75 hover:text-white bg-white/10 hover:bg-white/20 p-2.5 rounded-full transition-all"
             aria-label="Close modal"
@@ -1793,9 +1541,9 @@ const LifePage = () => {
             <X size={20} />
           </button>
           <div className="max-w-4xl max-h-[85vh] overflow-hidden rounded-2xl shadow-2xl border border-white/15">
-            <img 
-              src={selectedImage} 
-              alt="Club Activity Fullscreen" 
+            <img
+              src={selectedImage}
+              alt="Club Activity Fullscreen"
               className="max-w-full max-h-[85vh] object-contain"
             />
           </div>

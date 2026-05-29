@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  ChevronRight, 
-  Trophy, 
-  Code, 
-  Cpu, 
-  Microscope, 
+import {
+  ChevronRight,
+  Trophy,
+  Code,
+  Cpu,
+  Microscope,
   FileText,
   Award,
   ChevronLeft
@@ -133,11 +133,11 @@ const InfoCards = () => {
   // Auto-play effect
   useEffect(() => {
     if (isHovered) return;
-    
+
     const timer = setInterval(() => {
       setStartIndex((prev) => (prev + 1) % currentList.length);
     }, 5000);
-    
+
     return () => clearInterval(timer);
   }, [currentList.length, isHovered]);
 
@@ -189,7 +189,7 @@ const InfoCards = () => {
 
         {/* Read story link */}
         <div className="mt-4 pt-3 border-t border-gray-100 dark:border-gray-800/60">
-          <Link 
+          <Link
             to={`/about/${activeTab === 'students' ? 'student' : 'faculty'}-achievements`}
             className="text-xs font-bold text-brand-red dark:text-brand-red-dark hover:underline flex items-center"
           >
@@ -203,10 +203,10 @@ const InfoCards = () => {
   return (
     <section className="py-12 bg-bg dark:bg-bg-dark transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Row 1: 3-Card Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
+
           {/* Card 1: Welcome */}
           <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md overflow-hidden border border-gray-150 dark:border-gray-800 flex flex-col group">
             <div className="bg-primary dark:bg-gray-800 text-white py-3 px-5 font-bold font-serif text-lg">
@@ -292,29 +292,27 @@ const InfoCards = () => {
                 Celebrating outstanding milestones achieved by our students and faculty.
               </p>
             </div>
-            
+
             <div className="flex items-center space-x-4 self-start md:self-center">
               {/* Tab Selectors */}
               <div className="flex bg-gray-100 dark:bg-gray-800/40 p-1 rounded-lg">
                 <button
                   type="button"
                   onClick={() => handleTabChange('students')}
-                  className={`px-4 py-2 text-xs font-bold rounded-md transition-all duration-200 ${
-                    activeTab === 'students'
+                  className={`px-4 py-2 text-xs font-bold rounded-md transition-all duration-200 ${activeTab === 'students'
                       ? 'bg-brand-red text-white shadow-sm'
                       : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-                  }`}
+                    }`}
                 >
                   Students
                 </button>
                 <button
                   type="button"
                   onClick={() => handleTabChange('faculty')}
-                  className={`px-4 py-2 text-xs font-bold rounded-md transition-all duration-200 ${
-                    activeTab === 'faculty'
+                  className={`px-4 py-2 text-xs font-bold rounded-md transition-all duration-200 ${activeTab === 'faculty'
                       ? 'bg-brand-red text-white shadow-sm'
                       : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-                  }`}
+                    }`}
                 >
                   Faculty
                 </button>
@@ -322,14 +320,14 @@ const InfoCards = () => {
 
               {/* Navigation Chevrons */}
               <div className="flex bg-gray-100 dark:bg-gray-800/40 p-1 rounded-lg space-x-1">
-                <button 
+                <button
                   onClick={prevSlide}
                   className="p-1.5 rounded hover:bg-white dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
                   aria-label="Previous slide"
                 >
                   <ChevronLeft size={16} />
                 </button>
-                <button 
+                <button
                   onClick={nextSlide}
                   className="p-1.5 rounded hover:bg-white dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors"
                   aria-label="Next slide"
@@ -341,7 +339,7 @@ const InfoCards = () => {
           </div>
 
           {/* Sliding Grid Layout of Achievements */}
-          <div 
+          <div
             className="relative"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -349,7 +347,7 @@ const InfoCards = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-500 ease-in-out">
               {/* Card 1 (Always visible) */}
               {currentList.length > 0 && renderCard(currentList[startIndex])}
-              
+
               {/* Card 2 (Visible on md and up) */}
               {currentList.length > 1 && (
                 <div className="hidden md:block">

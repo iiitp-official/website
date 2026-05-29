@@ -27,16 +27,30 @@ const HeroCarousel = () => {
   return (
     <div className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] overflow-hidden bg-gray-900">
       {slides.map((slide, idx) => (
-        <motion.img
+        <div
           key={slide.id}
-          src={slide.image}
-          alt={`Slide ${idx + 1}`}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: current === idx ? 1 : 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full"
           style={{ zIndex: current === idx ? 1 : 0, pointerEvents: current === idx ? 'auto' : 'none' }}
-        />
+        >
+          {/* Blurred background to fill any letterbox area */}
+          <motion.img
+            src={slide.image}
+            alt=""
+            initial={{ opacity: 0 }}
+            animate={{ opacity: current === idx ? 0.35 : 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 select-none pointer-events-none"
+          />
+          {/* Sharp foreground image shown in full */}
+          <motion.img
+            src={slide.image}
+            alt={`Slide ${idx + 1}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: current === idx ? 1 : 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-contain"
+          />
+        </div>
       ))}
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10 z-10" />

@@ -41,6 +41,7 @@ import ResearchPage from "./pages/ResearchPage";
 import PeoplePage from "./pages/PeoplePage";
 import LifePage from "./pages/LifePage";
 import NoticePage from "./pages/NoticePage";
+import NewsPage from "./pages/NewsPage";
 import AntiRaggingPage from "./pages/AntiRaggingPage";
 import CareersPage from "./pages/CareersPage";
 import ETenderPage from "./pages/ETenderPage";
@@ -102,6 +103,7 @@ function App() {
             <Route path="/people" element={<PeoplePage />} />
             <Route path="/life" element={<LifePage />} />
             <Route path="/notice" element={<NoticePage />} />
+            <Route path="/news" element={<NewsPage />} />
             <Route path="/notice/anti-ragging" element={<AntiRaggingPage />} />
             <Route path="/notice/late-fee" element={<AboutPlaceholderPage title="Late Fee for the even semester" />} />
             <Route path="/careers" element={<CareersPage />} />
