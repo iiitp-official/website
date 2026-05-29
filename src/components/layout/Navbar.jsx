@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 import { Search, Sun, Moon, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -65,8 +65,11 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearch, setShowSearch] = useState(false);
+  const [searchResults, setSearchResults] = useState([]);
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState({});
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (isDark) {
@@ -81,7 +84,49 @@ const Navbar = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setOpenDropdowns({});
+    setShowSearch(false);
+    setSearchQuery("");
   }, [location.pathname]);
+
+  const getFlattenedLinks = (links) => {
+    let flat = [];
+    links.forEach(link => {
+      if (link.path && link.path !== "#") {
+        flat.push({ name: link.name, path: link.path, isExternal: link.isExternal });
+      }
+      if (link.subLinks) {
+        flat = flat.concat(getFlattenedLinks(link.subLinks));
+      }
+    });
+    return flat;
+  };
+
+  useEffect(() => {
+    if (searchQuery.trim() === "") {
+      setSearchResults([]);
+      return;
+    }
+    const allLinks = getFlattenedLinks(primaryLinks);
+    const query = searchQuery.toLowerCase();
+    const results = allLinks.filter(link => link.name.toLowerCase().includes(query));
+    // Remove duplicates by path
+    const uniqueResults = Array.from(new Map(results.map(item => [item.path, item])).values());
+    setSearchResults(uniqueResults.slice(0, 6)); // show top 6
+  }, [searchQuery]);
+
+  const handleSearchEnter = (e) => {
+    if (e.key === "Enter" && searchResults.length > 0) {
+      const firstResult = searchResults[0];
+      if (firstResult.isExternal) {
+        window.open(firstResult.path, "_blank");
+      } else {
+        navigate(firstResult.path);
+      }
+      setShowSearch(false);
+      setIsMobileMenuOpen(false);
+      setSearchQuery("");
+    }
+  };
 
   const toggleDarkMode = () => setIsDark(!isDark);
 
@@ -496,19 +541,49 @@ const Navbar = () => {
 
               <AnimatePresence>
                 {showSearch && (
-                  <motion.input
-                    initial={{ width: 0, opacity: 0 }}
-                    animate={{ width: 160, opacity: 1 }}
-                    exit={{ width: 0, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                    type="text"
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
-                    autoFocus
-                    className="h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 dark:placeholder-gray-500 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm overflow-hidden"
-                  />
+                  <div className="relative">
+                    <motion.input
+                      initial={{ width: 0, opacity: 0 }}
+                      animate={{ width: 160, opacity: 1 }}
+                      exit={{ width: 0, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                      type="text"
+                      placeholder="Search..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      onKeyPress={handleSearchEnter}
+                      onFocus={() => setIsSearchFocused(true)}
+                      onBlur={() => setTimeout(() => setIsSearchFocused(false), 200)}
+                      autoFocus
+                      className="h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 dark:placeholder-gray-500 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm overflow-hidden"
+                    />
+                    <AnimatePresence>
+                      {searchQuery && isSearchFocused && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 10 }}
+                          className="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-lg shadow-xl overflow-hidden z-50"
+                        >
+                          {searchResults.length > 0 ? (
+                            searchResults.map((result, idx) => (
+                              result.isExternal ? (
+                                <a key={idx} href={result.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0">
+                                  {result.name}
+                                </a>
+                              ) : (
+                                <Link key={idx} to={result.path} className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0" onClick={() => {setShowSearch(false); setSearchQuery("")}}>
+                                  {result.name}
+                                </Link>
+                              )
+                            ))
+                          ) : (
+                            <div className="px-4 py-3 text-sm text-gray-500 text-center">No results found</div>
+                          )}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
                 )}
               </AnimatePresence>
             </div>
@@ -632,16 +707,37 @@ const Navbar = () => {
           >
             <div className="px-4 py-4 space-y-4 max-h-[70vh] overflow-y-auto">
               {/* Mobile Search */}
-              <div className="flex items-center gap-2 px-3">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
-                  className="flex-1 h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm"
-                />
-                <Search className="w-4 h-4 text-white opacity-70" />
+              <div className="relative px-3 z-50">
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyPress={handleSearchEnter}
+                    className="flex-1 h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm"
+                  />
+                  <Search className="w-4 h-4 text-white opacity-70" />
+                </div>
+                {searchQuery && (
+                  <div className="absolute top-full left-3 right-3 mt-2 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-lg shadow-xl overflow-hidden">
+                    {searchResults.length > 0 ? (
+                      searchResults.map((result, idx) => (
+                        result.isExternal ? (
+                          <a key={idx} href={result.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0" onClick={() => setIsMobileMenuOpen(false)}>
+                            {result.name}
+                          </a>
+                        ) : (
+                          <Link key={idx} to={result.path} className="block px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 hover:text-brand-red dark:hover:text-brand-red-dark dark:hover:bg-gray-800 transition-colors border-b border-gray-50 dark:border-gray-800/50 last:border-0" onClick={() => {setIsMobileMenuOpen(false); setSearchQuery("")}}>
+                            {result.name}
+                          </Link>
+                        )
+                      ))
+                    ) : (
+                      <div className="px-4 py-3 text-sm text-gray-500 text-center">No results found</div>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Mobile Social + Language + Text Size */}
