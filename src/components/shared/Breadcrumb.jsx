@@ -13,7 +13,7 @@ const Breadcrumb = () => {
         Home
       </Link>
       {allPaths.map((value, index) => {
-        if (value.toLowerCase() === 'about' || value.toLowerCase() === 'academics') {
+        if (value.toLowerCase() === 'about' || value.toLowerCase() === 'academics' || value.toLowerCase() === 'administration' || value.toLowerCase() === 'research') {
           return null;
         }
 
@@ -22,10 +22,19 @@ const Breadcrumb = () => {
         const specialNames = {
           'cse': 'CSE',
           'ece': 'ECE',
+          'ash': 'AS&H',
           'btech': 'B.Tech.',
           'mtech': 'M.Tech.',
           'phd': 'Ph.D.',
-          'honors': 'Honours'
+          'honors': 'Honours',
+          'board-of-studies-cse': 'Board of Studies (CSE)',
+          'board-of-studies-ece': 'Board of Studies (ECE)',
+          'board-of-studies-ash': 'Board of Studies (AS&H)',
+          'scholar': 'Research Scholar',
+          'visvesvaraya': 'Visvesvaraya Scheme',
+          'institute': 'Institute Scheme',
+          'graduated': 'Graduated PhD Students',
+          'anti-ragging': 'Anti-Ragging Committee'
         };
 
         // Capitalize and format text, handling special acronyms
@@ -34,7 +43,7 @@ const Breadcrumb = () => {
           label = value.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
         }
 
-        const isUnclickable = value.toLowerCase() === 'btech' || value.toLowerCase() === 'mtech';
+        const isUnclickable = ['btech', 'mtech', 'scholar', 'funded-projects', 'notice'].includes(value.toLowerCase());
 
         return (
           <React.Fragment key={to}>

@@ -102,6 +102,31 @@ const Navbar = () => {
     else root.style.fontSize = "16px";
   };
 
+  // Language control
+  const changeLanguage = (lang) => {
+    const host = window.location.hostname;
+    
+    // Always set base path cookie
+    if (lang === 'en') {
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    } else {
+      document.cookie = `googtrans=/en/${lang}; path=/`;
+    }
+
+    // Only set domain cookie if it's not localhost
+    if (host !== 'localhost' && host !== '127.0.0.1') {
+      if (lang === 'en') {
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${host}; path=/;`;
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.${host}; path=/;`;
+      } else {
+        document.cookie = `googtrans=/en/${lang}; domain=${host}; path=/`;
+        document.cookie = `googtrans=/en/${lang}; domain=.${host}; path=/`;
+      }
+    }
+    
+    window.location.reload();
+  };
+
   const primaryLinks = [
     {
       name: "About Us",
@@ -135,7 +160,23 @@ const Navbar = () => {
         { name: "NIRF", path: "/nirf" },
       ]
     },
-    { name: "Administration", path: "/administration", hasDropdown: false },
+    {
+      name: "Administration",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "Chairperson", path: "/administration/chairperson" },
+        { name: "Director", path: "/about/director-desk" },
+        { name: "Registrar", path: "/administration/registrar" },
+        { name: "Board of Governors", path: "/administration/board-of-governors" },
+        { name: "Finance Committee", path: "/administration/finance-committee" },
+        { name: "Building and Works Committee", path: "/administration/building-and-works-committee" },
+        { name: "Senate", path: "/administration/senate" },
+        { name: "Board of Studies (CSE)", path: "/administration/board-of-studies-cse" },
+        { name: "Board of Studies (ECE)", path: "/administration/board-of-studies-ece" },
+        { name: "Board of Studies (AS&H)", path: "/administration/board-of-studies-ash" },
+      ]
+    },
     {
       name: "Academics",
       path: "#",
@@ -173,7 +214,35 @@ const Navbar = () => {
         },
       ],
     },
-    { name: "Research", path: "/research", hasDropdown: false },
+    {
+      name: "Research",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "Centres", path: "/research/centres" },
+        { name: "Internship @IIIT Pune", path: "/research/internships" },
+        { name: "Library", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
+        { 
+          name: "Funded Projects", 
+          hasDropdown: true, 
+          subLinks: [
+            { name: "Funded Project (Completed)", path: "/research/funded-projects/completed" },
+            { name: "Funded Project (Ongoing)", path: "/research/funded-projects/ongoing" }
+          ]
+        },
+        { name: "Events", path: "/research/events" },
+        { 
+          name: "Research Scholar", 
+          hasDropdown: true,
+          subLinks: [
+            { name: "Institute Scheme", path: "/research/scholar/institute" },
+            { name: "Visvesvaraya Scheme", path: "/research/scholar/visvesvaraya" },
+            { name: "Graduated PhD Students", path: "/research/scholar/graduated" }
+          ]
+        },
+        { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
+      ]
+    },
     { name: "People", path: "/people", hasDropdown: false },
     {
       name: "Life@IIITP",
@@ -225,13 +294,47 @@ const Navbar = () => {
         { name: "HR Summit (2021)", path: "/life?tab=hr-summit" },
         { name: "Magazine", path: "/life?tab=magazine" },
         { name: "Permanent Campus", path: "/life?tab=campus" },
+        { name: "ACM Chapter", path: "/#" },
+        { name: "Sports & Gymnasium", path: "/#" },
       ]
     },
-    { name: "Notice", path: "/notice", hasDropdown: false },
+    {
+      name: "Notice",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "ANTI-RAGGING COMMITTEE & SQUADS", path: "/notice/anti-ragging" },
+        { name: "Late Fee for the even semester", path: "/notice/late-fee" },
+        {
+          name: "National Overseas Scholarship Scheme for ST students (2025-26)",
+          path: "#",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Letter", path: "/documents/Letter to 265 institutions regarding NSP portal opening for the Year 2025-26.pdf", isExternal: true },
+            { name: "Guidelines NATIONAL FELLOWSHIP & SCHOLARSHIP", path: "/documents/Guidelines Scholarship - Top Class Part - B_compressed_compressed.pdf", isExternal: true }
+          ]
+        },
+        { name: "Odd Semester B.Tech (3rd, 5th & 7th Semesters) / M.Tech (3rd Semester) for AY (2025-26)", path: "/documents/Odd Sem Registration Instruction for Btech and Mtech_0.pdf", isExternal: true },
+        { name: "Rajbhasha Committee", path: "/documents/Rajbhasha committee.pdf", isExternal: true },
+        { name: "List of Faculty Advisor for B.Tech, M.Tech & PhD (Odd Semester) AY 2025-26", path: "/documents/List of Faculty Advisor for Odd Sem Registration.pdf", isExternal: true },
+        { name: "Notice in respect to the registration to the registration for B.Tech, M.Tech & PhD", path: "/documents/Notice in respect to the regstration for B.Tech, M.Tech & Ph.D programmes.pdf", isExternal: true },
+        { name: "List of Holidays", path: "/documents/office order (Holidays).pdf", isExternal: true },
+      ]
+    },
     { name: "Careers", path: "/careers", hasDropdown: false },
     { name: "Placement", path: "/placement", hasDropdown: false },
     { name: "Contact Us", path: "/contact", hasDropdown: false },
     { name: "E-TENDER", path: "/e-tender", hasDropdown: false },
+    // {
+    //   name: "More",
+    //   path: "#",
+    //   hasDropdown: true,
+    //   subLinks: [
+    //     { name: "RTI", path: "/rti" },
+    //     { name: "Suo-Motu Disclosure", path: "/suo-motu-disclosure" },
+    //     { name: "राजभाषा अनुभाग", path: "/rajbhasha-anubhag" },
+    //   ]
+    // },
   ];
 
   const secondaryLinks = [
@@ -239,7 +342,6 @@ const Navbar = () => {
     // { name: "NIRF", path: "/nirf" },
     // { name: "Report and Minutes", path: "/#" },
     // { name: "RTI", path: "/#" },
-    // { name: "Sports & Gymnasium", path: "/#" },
     // { name: "Suo-Motu Disclosure", path: "/#" },
     // { name: "राजभाषा अनुभाग", path: "/#" },
     // { name: "ACM Chapter", path: "/#" },
@@ -299,15 +401,19 @@ const Navbar = () => {
               {/* Language Selector */}
               <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
                 <button
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
+                  onClick={() => changeLanguage('en')}
+                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors notranslate"
                   title="English"
+                  translate="no"
                 >
                   EN
                 </button>
                 <span className="text-gray-400 dark:text-gray-500 text-xs font-light">|</span>
                 <button
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
+                  onClick={() => changeLanguage('hi')}
+                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors notranslate"
                   title="Hindi"
+                  translate="no"
                 >
                   हिं
                 </button>
@@ -420,7 +526,7 @@ const Navbar = () => {
                 to={link.path}
                 className={({ isActive }) => {
                   const isLinkActive = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
                     : isActive;
                   return navLinkClass({ isActive: isLinkActive });
                 }}
@@ -428,7 +534,7 @@ const Navbar = () => {
               >
                 {({ isActive }) => {
                   const activeState = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
                     : isActive;
                   return (
                     <>
@@ -562,11 +668,11 @@ const Navbar = () => {
                   <LinkedinIcon size={16} />
                 </a>
                 <div className="ml-auto flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                  <button className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
+                  <button onClick={() => changeLanguage('en')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors notranslate" translate="no">
                     EN
                   </button>
                   <span className="text-gray-400 text-xs">|</span>
-                  <button className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
+                  <button onClick={() => changeLanguage('hi')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors notranslate" translate="no">
                     हिं
                   </button>
                 </div>
@@ -613,7 +719,7 @@ const Navbar = () => {
                           }}
                           className={({ isActive }) => {
                             const activeState = link.path === "#"
-                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
                               : isActive;
                             return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
                               ? "bg-brand-red text-white dark:bg-brand-red-dark/50"
