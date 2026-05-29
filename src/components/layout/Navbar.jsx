@@ -3,8 +3,26 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import { Search, Sun, Moon, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Social Icons replaced by PNGs
+// Social Icons
+const FacebookIcon = ({ size }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
 
+const TwitterIcon = ({ size }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="white">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
+
+const LinkedinIcon = ({ size }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect x="2" y="9" width="4" height="12" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
 const Navbar = () => {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== "undefined") {
@@ -289,21 +307,21 @@ const Navbar = () => {
                   aria-label="Facebook"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5"
                 >
-                  <img src="/facebook.png" alt="Facebook" className="w-[22px] h-[22px] object-contain" />
+                  <FacebookIcon size={18} />
                 </a>
                 <a
                   href="https://x.com/IIIT_PUNE"
                   aria-label="Twitter"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5"
                 >
-                  <img src="/x.png" alt="X (Twitter)" className="w-[30px] h-[30px] object-contain" />
+                  <TwitterIcon size={18} />
                 </a>
                 <a
                   href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
                   aria-label="LinkedIn"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5"
                 >
-                  <img src="/linkedin.png" alt="LinkedIn" className="w-[25px] h-[25px] object-contain" />
+                  <LinkedinIcon size={18} />
                 </a>
               </div>
 
@@ -472,21 +490,21 @@ const Navbar = () => {
                   aria-label="Facebook"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  <img src="/facebook.png" alt="Facebook" className="w-5 h-5 object-contain" />
+                  <FacebookIcon size={20} />
                 </a>
                 <a
                   href="https://x.com/IIIT_PUNE"
                   aria-label="Twitter"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  <img src="/x.png" alt="X (Twitter)" className="w-5 h-5 object-contain" />
+                  <TwitterIcon size={20} />
                 </a>
                 <a
                   href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
                   aria-label="LinkedIn"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  <img src="/linkedin.png" alt="LinkedIn" className="w-5 h-5 object-contain" />
+                  <LinkedinIcon size={20} />
                 </a>
                 <div className="ml-auto flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
                   <button className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
