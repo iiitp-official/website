@@ -1,55 +1,100 @@
 import React from 'react';
 import PageHeader from '../components/shared/PageHeader';
-import { Briefcase } from 'lucide-react';
 
 const CareersPage = () => {
   const jobs = [
-    { id: 1, title: 'Assistant Professor (CSE)', type: 'Faculty', deadline: '2025-06-15', status: 'Open' },
-    { id: 2, title: 'Assistant Professor (ECE)', type: 'Faculty', deadline: '2025-06-15', status: 'Open' },
-    { id: 3, title: 'Registrar', type: 'Non-Teaching', deadline: '2025-06-01', status: 'Open' },
-    { id: 4, title: 'System Administrator', type: 'Non-Teaching', deadline: '2025-05-20', status: 'Closed' },
+    {
+      title: "Cancellation of Advertisement for the Post of Assistant Registrar",
+      buttons: [
+        { label: "Application", file: "1.pdf" },
+        { label: "Details", file: "2.pdf" },
+      ]
+    },
+    {
+      title: "Advertisement for various research positions under Anusandhan National Research Foundation -Partnerships for Accelerated Innovation and Research (ANRF-PAIR) initiative",
+      buttons: [
+        { label: "Application", file: "3.docx" },
+        { label: "Details", file: "4.pdf" },
+        { label: "Corrigendum", file: "5.pdf" },
+      ]
+    },
+    {
+      title: "Advertisement for the Post of Project Associate-I under the Project SMDP-Chips to Startup (C2S)",
+      buttons: [
+        { label: "Application", file: "6.pdf" },
+        { label: "Details", file: "7.pdf" },
+      ]
+    },
+    {
+      title: "Advertisement for the Post of Junior Research Fellow (JRF) in Sponsored Project",
+      buttons: [
+        { label: "Application", file: "8.pdf" },
+        { label: "Details", file: "9.pdf" },
+      ]
+    },
+    {
+      title: "RECRUITMENT NOTICE FOR THE POST OF ADJUNCT ASSISTANT PROFESSOR (AAP) (ON TEMPORARY BASIS)",
+      buttons: [
+        { label: "Application", file: "10.pdf" },
+        { label: "Details", file: "11.pdf" },
+        { label: "Corrigendum", file: "12.pdf" },
+      ]
+    },
+    {
+      title: "WALK-IN-INTERVIEW FOR THE POST OF ADVISOR (CIVIL) ON CONTRACT BASIS – THROUGH OUTSOURCING AGENCY",
+      buttons: [
+        { label: "Application", file: "13.pdf" },
+        { label: "Details", file: "14.pdf" },
+        { label: "Corrigendum", file: "15.pdf" },
+      ]
+    },
+    {
+      title: "Advertisement for the Post of Research Associate-I in Sponsored Project",
+      buttons: [
+        { label: "Application", file: "16.pdf" },
+        { label: "Details", file: "17.pdf" },
+      ]
+    },
+    {
+      title: "Advertisement for the Post of Intern in Sponsored Project",
+      buttons: [
+        { label: "Application", file: "18.pdf" },
+        { label: "Details", file: "19.pdf" },
+      ]
+    }
   ];
 
   return (
     <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
       <PageHeader title="Careers @ IIIT Pune" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 w-full overflow-x-auto">
-          <table className="w-full text-left border-collapse">
-            <thead>
-              <tr className="bg-primary text-white dark:bg-gray-800">
-                <th className="p-4 font-semibold text-sm w-16 text-center">#</th>
-                <th className="p-4 font-semibold text-sm">Position / Title</th>
-                <th className="p-4 font-semibold text-sm">Category</th>
-                <th className="p-4 font-semibold text-sm w-32">Deadline</th>
-                <th className="p-4 font-semibold text-sm w-24 text-center">Status</th>
-                <th className="p-4 font-semibold text-sm w-24 text-center">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {jobs.map((job) => (
-                <tr key={job.id} className="border-b border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
-                  <td className="p-4 text-sm text-gray-500 text-center">{job.id}</td>
-                  <td className="p-4 text-sm font-medium text-gray-900 dark:text-gray-200">{job.title}</td>
-                  <td className="p-4 text-sm text-gray-600 dark:text-gray-400">{job.type}</td>
-                  <td className="p-4 text-sm text-gray-600 dark:text-gray-400">{job.deadline}</td>
-                  <td className="p-4 text-center">
-                    <span className={`px-2.5 py-1 rounded-full text-xs font-semibold ${job.status === 'Open' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' : 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400'}`}>
-                      {job.status}
-                    </span>
-                  </td>
-                  <td className="p-4 text-center">
-                    <button 
-                      disabled={job.status === 'Closed'}
-                      className="text-accent hover:text-blue-800 dark:text-accent-dark disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+      
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="bg-white dark:bg-surface-dark border-t-2 border-brand-red shadow-sm w-full overflow-hidden">
+          <div className="flex flex-col">
+            {jobs.map((job, idx) => (
+              <div 
+                key={idx} 
+                className="flex flex-col md:flex-row items-start md:items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors last:border-b-0"
+              >
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-4 md:mb-0 md:pr-8 leading-relaxed flex-1">
+                  {job.title}
+                </h3>
+                <div className="flex flex-wrap items-center gap-1 shrink-0">
+                  {job.buttons.map((btn, bidx) => (
+                    <a
+                      key={bidx}
+                      href={`/careers/${btn.file}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-[#2C195D] hover:bg-[#1E1140] text-white text-xs px-5 py-2.5 transition-colors inline-block text-center shadow-sm"
                     >
-                      <Briefcase size={18} className="mx-auto" />
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                      {btn.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

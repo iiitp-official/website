@@ -151,9 +151,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-            Language: English
-          </div>
+
         </div>
       </div>
     </footer>
