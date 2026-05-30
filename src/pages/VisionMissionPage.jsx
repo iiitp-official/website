@@ -1,55 +1,109 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import PageHeader from '../components/shared/PageHeader';
 
 const VisionMissionPage = () => {
+  const scrollVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: 'easeOut' }
+    }
+  };
+
+  const missionPillars = [
+    {
+      number: "01",
+      title: "Academic & Research Excellence",
+      description: "To provide academic excellence in Engineering and Technology by imparting quality as well as value-based education, and foster a collaborative environment open to the free exchange of ideas, where research capabilities are leveraged to address challenges."
+    },
+    {
+      number: "02",
+      title: "Innovation & Entrepreneurship",
+      description: "To develop competent and proficient youth imbued with the spirit of innovation and entrepreneurship with a social and environmental orientation, meeting knowledge requisites and providing leadership in IT."
+    },
+    {
+      number: "03",
+      title: "Ethics & Social Equity",
+      description: "To promote the significance of ethics and integrity in technical education, fostering learning with respect for individual human rights and an unyielding commitment to equal opportunity and justice."
+    },
+    {
+      number: "04",
+      title: "Heritage & Integration",
+      description: "To endorse application and research in Indian languages for technical education, further edifying Indian traditional knowledge in technical systems."
+    }
+  ];
+
+
   return (
     <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
-      <PageHeader title="Vision & Mission" />
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="space-y-12">
-          
-          <section className="bg-white dark:bg-surface-dark p-8 md:p-10 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800">
-            <h2 className="text-3xl font-bold font-serif text-primary dark:text-white mb-6 flex items-center gap-3">
-              <span className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-accent dark:text-accent-dark">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
-              </span>
-              Vision
-            </h2>
-            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-              To be a leading global Information Technology institute that imparts an innovative education to produce proficient and ethical professionals and leaders, disseminating novel knowledge in Information Technology and allied disciplines to serve as a valuable resource for society and the world.
-            </p>
-          </section>
+      <PageHeader 
+        title="Vision & Mission" 
+      />
 
-          <section className="bg-white dark:bg-surface-dark p-8 md:p-10 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800">
-            <h2 className="text-3xl font-bold font-serif text-primary dark:text-white mb-6 flex items-center gap-3">
-              <span className="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </span>
-              Mission
+      {/* SECTION 1: VISION (Centered Spotlight) */}
+      <section className="bg-white dark:bg-surface-dark pt-14 pb-8 border-b border-gray-100 dark:border-gray-800/40">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            className="text-center space-y-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={scrollVariants}
+          >
+            <h2 className="text-2xl md:text-3xl font-bold font-serif text-primary dark:text-white">
+              Our Vision
             </h2>
-            <ol className="list-decimal pl-5 space-y-4 text-gray-700 dark:text-gray-300 text-lg leading-relaxed marker:font-bold marker:text-primary dark:marker:text-blue-400">
-              <li className="pl-2">
-                To provide academic excellence in Engineering and Technology by imparting quality as well as value-based education, and foster a collaborative environment open to the free exchange of ideas, where research capabilities could be leveraged to address the challenges of the present scenario.
-              </li>
-              <li className="pl-2">
-                To develop competent and proficient youth imbued with the spirit of innovation and entrepreneurship with the social and environmental orientation further meeting the knowledge requisites and providing universal leadership in Information Technology and allied fields.
-              </li>
-              <li className="pl-2">
-                To promote the significance of ethics and integrity in technical education further fostering learning with respect for individual human rights and an unyielding commitment to the principles of equal opportunity, equity, and justice.
-              </li>
-              <li className="pl-2">
-                To endorse application and research in Indian languages for technical education, further edifying Indian traditional knowledge in technical education.
-              </li>
-            </ol>
-          </section>
-
+            <div className="relative max-w-3xl mx-auto px-8 sm:px-12">
+              <span className="absolute -top-6 left-2 sm:left-4 text-7xl font-serif text-blue-100 dark:text-blue-900/10 pointer-events-none">&ldquo;</span>
+              <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed text-justify italic font-medium relative z-10">
+                To be a leading global Information Technology institute that imparts an innovative education to produce proficient and ethical professionals and leaders, disseminating novel knowledge in Information Technology and allied disciplines to serve as a valuable resource for society and the world.
+              </p>
+              <span className="absolute -bottom-12 right-2 sm:right-4 text-7xl font-serif text-blue-100 dark:text-blue-900/10 pointer-events-none">&rdquo;</span>
+            </div>
+          </motion.div>
         </div>
-      </div>
+      </section>
+
+      {/* SECTION 2: MISSION (2x2 Minimal Grid) */}
+      <section className="bg-bg dark:bg-bg-dark pt-8 pb-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            className="space-y-12"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={scrollVariants}
+          >
+            <div className="text-center">
+              <h2 className="text-2xl md:text-3xl font-bold font-serif text-primary dark:text-white">
+                Our Mission
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 pt-4">
+              {missionPillars.map((pillar, idx) => {
+                return (
+                  <div key={idx} className="flex gap-4 items-start">
+                    <span className="text-lg font-bold text-accent dark:text-accent-dark font-mono leading-none mt-1">
+                      {pillar.number}.
+                    </span>
+                    <div>
+                      <h3 className="font-semibold text-primary dark:text-white text-base md:text-lg leading-snug">
+                        {pillar.title}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-450 text-sm mt-1 leading-relaxed text-justify">
+                        {pillar.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 };
