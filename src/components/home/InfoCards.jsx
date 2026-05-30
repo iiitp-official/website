@@ -252,9 +252,9 @@ const InfoCards = () => {
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">International Admissions (DASA)</span>
                 </li>
               </ul>
-              <Link to="/academics" className="inline-block text-center w-full py-2.5 bg-brand-red hover:bg-red-700 text-white font-medium rounded-md shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 text-sm">
+              {/* <Link to="/academics" className="inline-block text-center w-full py-2.5 bg-brand-red hover:bg-red-700 text-white font-medium rounded-md shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 text-sm">
                 Apply Now
-              </Link>
+              </Link> */}
             </div>
           </div>
 
