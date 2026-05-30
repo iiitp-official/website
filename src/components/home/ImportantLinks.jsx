@@ -97,7 +97,7 @@ const ImportantLinks = () => {
                     <Download className="mr-3 text-accent dark:text-accent-dark" size={24} />
                     Forms &amp; Documents
                   </h3>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-h-[330px] overflow-y-auto pr-2 custom-scrollbar">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-h-[320px] overflow-y-auto pr-2 custom-scrollbar">
                     {[
                       { name: 'Medical Reimbursement Claim Form', path: '/downloads/Medical reimbursement CLAIM FORM.pdf' },
                       { name: 'Children Education Allowance Form', path: '/downloads/cea-form-iiitp.pdf' },

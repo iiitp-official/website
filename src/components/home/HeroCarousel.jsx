@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const slides = [
-  { id: 1, image: '/carousel/slide_1.jpg' },
+  { id: 1, image: '/carousel/slide_1.png' },
   { id: 2, image: '/carousel/slide_2.jpeg' },
   { id: 3, image: '/carousel/slide_3.jpeg' },
   { id: 4, image: '/carousel/slide_4.jpeg' },
@@ -48,7 +48,7 @@ const HeroCarousel = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: current === idx ? 1 : 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="absolute inset-0 w-full h-full object-contain"
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
       ))}

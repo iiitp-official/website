@@ -1,5 +1,4 @@
 import React from 'react';
-import PageHeader from '../components/shared/PageHeader';
 import CommitteeTable from '../components/shared/CommitteeTable';
 
 const BoardOfStudiesCsePage = () => {
@@ -25,25 +24,29 @@ const BoardOfStudiesCsePage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
-      <PageHeader title="Board of Studies (CSE)" />
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
-          <div className="bg-primary dark:bg-primary-dark px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <h2 className="text-2xl font-bold text-center text-white">
-              Board of Studies (CSE)
-            </h2>
-            <button 
-              className="inline-flex items-center gap-2 bg-gray-200 text-gray-500 px-4 py-2 rounded-lg font-medium cursor-not-allowed shadow-sm"
-              disabled
-              title="Document not available yet"
-            >
-              View Document
-            </button>
-          </div>
-          <div className="p-6 md:p-8">
-            <CommitteeTable data={data} />
-          </div>
+    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200 py-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-bold text-blue-700 dark:text-blue-400 text-center mb-8">
+          Board of Studies (CSE)
+        </h1>
+        
+        <CommitteeTable data={data} />
+        
+        <div className="mt-8">
+          <p className="font-bold text-gray-900 dark:text-white mb-3">
+            Please click here for the official Memorandum
+          </p>
+          <button 
+            disabled
+            title="Document not available yet"
+            className="inline-block bg-gray-400 dark:bg-gray-700 text-white dark:text-gray-300 px-6 py-2.5 rounded-sm shadow-sm cursor-not-allowed font-medium text-sm"
+          >
+            View Document
+          </button>
+        </div>
+        
+        <div className="text-right text-gray-600 dark:text-gray-400 mt-8 text-sm">
+          Last Updated: 25-04-2026
         </div>
       </div>
     </div>
