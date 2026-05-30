@@ -327,12 +327,25 @@ const Navbar = () => {
     },
     {
       name: "Notice",
-      path: "/notice",
+      path: "#",
       hasDropdown: true,
       subLinks: [
-        { name: "All Notices", path: "/notice" },
-        { name: "Anti-Ragging", path: "/notice/anti-ragging" },
-        { name: "Late Fee for the even semester", path: "/notice/late-fee" },
+        { name: "ANTI-RAGGING COMMITTEE & SQUADS", path: "/notice/anti-ragging" },
+        { name: "Late fee for the even semester", path: "/notice/late-fee" },
+        {
+          name: "National Overseas Scholarship Scheme for ST students (2025-26)",
+          path: "#",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Letters", path: "/documents/Letter to 265 institutions regarding NSP portal opening for the Year 2025-26.pdf", isExternal: true },
+            { name: "Guidelines NATIONAL FELLOWSHIP & SCHOLARSHIP", path: "/documents/Guidelines Scholarship - Top Class Part - B_compressed_compressed.pdf", isExternal: true },
+          ]
+        },
+        { name: "Odd Semester B.Tech (3rd, 5th & 7th Semesters) / M.Tech (3rd Semester) for AY (2025-26)", path: "/documents/Odd Sem Registration Instruction for Btech and Mtech_0.pdf", isExternal: true },
+        { name: "Rajbhasha Committee", path: "/documents/Rajbhasha committee.pdf", isExternal: true },
+        { name: "List of Faculty Advisor for B.Tech M.Tech & PhD (Odd Semester) AY 2025-26", path: "/documents/List of Faculty Advisor for Odd Sem Registration.pdf", isExternal: true },
+        { name: "Notice in respect to the registration for B.Tech M.Tech & PhD", path: "/documents/Notice in respect to the regstration for B.Tech, M.Tech & Ph.D programmes.pdf", isExternal: true },
+        { name: "List of Holidays", path: "/documents/office order (Holidays).pdf", isExternal: true }
       ]
     },
     { name: "Careers", path: "/careers", hasDropdown: false },
@@ -565,7 +578,7 @@ const Navbar = () => {
                 to={link.path}
                 className={({ isActive }) => {
                   const isLinkActive = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration")) || (link.name === "Notice" && location.pathname.startsWith("/notice"))
                     : isActive;
                   return navLinkClass({ isActive: isLinkActive });
                 }}
@@ -573,7 +586,7 @@ const Navbar = () => {
               >
                 {({ isActive }) => {
                   const activeState = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration")) || (link.name === "Notice" && location.pathname.startsWith("/notice"))
                     : isActive;
                   return (
                     <>
@@ -784,7 +797,7 @@ const Navbar = () => {
                           }}
                           className={({ isActive }) => {
                             const activeState = link.path === "#"
-                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
+                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration")) || (link.name === "Notice" && location.pathname.startsWith("/notice"))
                               : isActive;
                             return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
                               ? "bg-brand-red text-white dark:bg-brand-red-dark/50"
