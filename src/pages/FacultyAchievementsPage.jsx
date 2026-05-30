@@ -73,7 +73,7 @@ const publications = [
   {
     authors: "Tiruganesh Lanka, Divya Chaturvedi, Maddirala Vijaya Lakshmi Bhavani, Arvind Kumar; Sreenivasulu Tupakula",
     title: "Integration of a Slotted Monopole Antenna with a Partially Reflective Surface for Enhanced Breast Tumor Detection",
-    journal: "IEEE Access Journal, vol. 14, pp. 22503 – 22513",
+    journal: "IEEE Access Journal, vol. 14, pp. 22503 - 22513",
     year: "2026",
     doi: "10.1109/ACCESS.2026.3662507"
   },
