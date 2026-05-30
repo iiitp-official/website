@@ -178,7 +178,7 @@ const InfoCards = () => {
           </h4>
 
           {/* Description */}
-          <p className="text-gray-600 dark:text-gray-400 text-xs leading-relaxed line-clamp-3">
+          <p className="text-gray-600 dark:text-gray-400 text-xs leading-relaxed text-justify line-clamp-3">
             {item.description}
           </p>
 
@@ -219,7 +219,7 @@ const InfoCards = () => {
               <div className="w-full h-40 rounded-md mb-4 overflow-hidden relative shadow-inner">
                 <img src={campusFrontImg} alt="IIIT Pune Campus" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed text-justify mb-4 flex-grow">
                 Indian Institute of Information Technology Pune, established in 2016, is an Institute of National Importance set up by the Ministry of Education, Government of India. We are dedicated to delivering world-class IT education and research.
               </p>
               <Link to="/about" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors">
@@ -273,7 +273,7 @@ const InfoCards = () => {
                   <p className="text-xs text-accent dark:text-accent-dark font-medium">Director, IIIT Pune</p>
                 </div>
               </div>
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow line-clamp-4">
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed text-justify mb-4 flex-grow line-clamp-4">
                 "Prof. Vineet Kansal has assumed charge as the Director of the Indian Institute of Information Technology (IIIT) Pune with effect from the forenoon of April 4, 2026, following his appointment by the Hon'ble President of India in his capacity as the Visitor of the Institute."
               </p>
               <Link to="/about/director-desk" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors mt-auto">
@@ -311,7 +311,7 @@ const InfoCards = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">Competitive Coding Culture</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Strong presence in SIH (winners in 2023, 2024), ACM-ICPC, and high ranking coders on Codeforces (including Grandmaster title) driven by active student coding clubs.
                       </p>
                     </div>
@@ -323,7 +323,7 @@ const InfoCards = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">Outstanding Placements</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Impressive track record with a highest package of 53 LPA for B.Tech in recent placement drives, with recruiters like Microsoft, Amazon, and Atlassian.
                       </p>
                     </div>
@@ -335,7 +335,7 @@ const InfoCards = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">State-of-the-Art Curriculum</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Industry-relevant curriculum tailored for current developments in Artificial Intelligence, Machine Learning, IoT, and Cyber-Physical Systems.
                       </p>
                     </div>
@@ -362,7 +362,7 @@ const InfoCards = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">Rich Research Ecosystem</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Over ₹3 Crores of ongoing and completed external research grants from MeitY, DST-SERB, and various research ministries.
                       </p>
                     </div>
@@ -374,7 +374,7 @@ const InfoCards = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm text-gray-850 dark:text-gray-200">Intellectual Property & Innovation</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Robust support for filing patents, copyrights, and publications in top-tier international journals and research conferences.
                       </p>
                     </div>
@@ -386,7 +386,7 @@ const InfoCards = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">Autonomy & Collaborations</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Academic and research freedom to lead collaborative laboratories, industry consulting projects, and global university partnerships.
                       </p>
                     </div>

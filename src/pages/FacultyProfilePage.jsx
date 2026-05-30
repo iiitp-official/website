@@ -159,14 +159,16 @@ const FacultyProfilePage = () => {
 
           {/* Profile Details */}
           <div className="flex-grow flex flex-col items-center md:items-start text-center md:text-left z-10 w-full">
-            <h1 className="text-3xl md:text-4xl font-bold font-serif text-gray-900 dark:text-white mb-2">
+            <h1 className="text-xl md:text-2xl font-bold font-serif text-gray-900 dark:text-white mb-2">
               {profile.name}
             </h1>
-            <p className="text-xl text-brand-red font-semibold mb-1">
-              {profile.designation}
-            </p>
+            <div className="text-lg text-brand-red font-semibold mb-2 flex flex-col space-y-0.5">
+              {profile.designation.split('\n').map((desig, idx) => (
+                <span key={idx}>{desig.trim()}</span>
+              ))}
+            </div>
             {profile.department !== 'Faculty Member' && (
-              <p className="text-gray-600 dark:text-gray-400 font-medium mb-6 uppercase tracking-wider text-sm">
+              <p className="text-gray-600 dark:text-gray-400 font-medium mb-6 uppercase tracking-wider text-xs">
                 {profile.department}
               </p>
             )}
@@ -201,7 +203,7 @@ const FacultyProfilePage = () => {
                       <LinkIcon className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-2">Research Profiles</h4>
+                      <h4 className="text-xs font-bold text-gray-900 dark:text-white mb-2">Research Profiles</h4>
                       <div className="flex flex-wrap gap-2">
                         {profile.researchLinks.map((link, idx) => {
                           let type = "Profile";
@@ -234,11 +236,11 @@ const FacultyProfilePage = () => {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-gray-900 dark:text-white">Email Address</h4>
+                    <h4 className="text-xs font-bold text-gray-900 dark:text-white">Email Address</h4>
                     {profile.email ? (
-                      <a href={`mailto:${profile.email}`} className="text-sm text-primary hover:underline">{profile.email}</a>
+                      <a href={`mailto:${profile.email}`} className="text-xs text-primary hover:underline">{profile.email}</a>
                     ) : (
-                      <span className="text-sm italic text-gray-500">Not provided</span>
+                      <span className="text-xs italic text-gray-500">Not provided</span>
                     )}
                   </div>
                 </div>
@@ -248,11 +250,11 @@ const FacultyProfilePage = () => {
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-gray-900 dark:text-white">Phone Number</h4>
+                    <h4 className="text-xs font-bold text-gray-900 dark:text-white">Phone Number</h4>
                     {profile.phone ? (
-                      <span className="text-sm">{profile.phone}</span>
+                      <span className="text-xs">{profile.phone}</span>
                     ) : (
-                      <span className="text-sm italic text-gray-500">Not provided</span>
+                      <span className="text-xs italic text-gray-500">Not provided</span>
                     )}
                   </div>
                 </div>
@@ -300,7 +302,7 @@ const FacultyProfilePage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center whitespace-nowrap px-6 py-4 font-medium text-sm transition-colors relative ${
+                  className={`flex items-center whitespace-nowrap px-6 py-4 font-medium text-xs transition-colors relative ${
                     activeTab === tab.id
                       ? 'text-brand-red dark:text-brand-red-dark bg-red-50/50 dark:bg-gray-800/50'
                       : 'text-gray-600 hover:text-brand-red dark:text-gray-400 dark:hover:text-brand-red-dark hover:bg-red-50/30 dark:hover:bg-gray-800/30'
@@ -331,8 +333,8 @@ const FacultyProfilePage = () => {
             
             {activeTab === 'biography' && (
               <div className="animate-fade-in-up">
-                <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">Biography</h2>
-                <p className="whitespace-pre-line text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Biography</h2>
+                <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
                   {profile.bio || "No biography provided."}
                 </p>
               </div>
@@ -340,116 +342,116 @@ const FacultyProfilePage = () => {
 
             {activeTab === 'books' && (
               <div className="animate-fade-in-up">
-                <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">Books & Book Chapters</h2>
+                <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Books & Book Chapters</h2>
                 {profile.books_chapters ? (
-                  <p className="whitespace-pre-line text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                     {profile.books_chapters}
                   </p>
                 ) : (
-                  <p className="text-gray-500 italic">No book or chapter details provided yet.</p>
+                  <p className="text-sm text-gray-500 italic">No book or chapter details provided yet.</p>
                 )}
               </div>
             )}
 
             {activeTab === 'publications' && (
               <div className="animate-fade-in-up">
-                <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">Publications</h2>
+                <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Publications</h2>
                 {profile.publications ? (
                   Array.isArray(profile.publications) ? (
                     <ul className="space-y-6">
                       {profile.publications.map((pub, idx) => (
                         <li key={idx} className="flex flex-col relative pl-6">
-                          <span className="absolute left-0 top-2.5 w-2 h-2 rounded-full bg-brand-red"></span>
+                          <span className="absolute left-0 top-2 w-2 h-2 rounded-full bg-brand-red"></span>
                           {pub.link ? (
-                            <a href={pub.link} target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
+                            <a href={pub.link} target="_blank" rel="noopener noreferrer" className="text-base font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
                               {pub.title}
                             </a>
                           ) : (
-                            <h3 className="text-lg font-bold text-gray-900 dark:text-white">{pub.title}</h3>
+                            <h3 className="text-base font-bold text-gray-900 dark:text-white">{pub.title}</h3>
                           )}
-                          {pub.authors && <span className="text-gray-700 dark:text-gray-300 mt-1">{pub.authors}</span>}
-                          {pub.journal && <span className="text-sm text-gray-500 dark:text-gray-400 mt-1 font-medium">{pub.journal}</span>}
+                          {pub.authors && <span className="text-sm text-gray-700 dark:text-gray-300 mt-1">{pub.authors}</span>}
+                          {pub.journal && <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 font-medium">{pub.journal}</span>}
                         </li>
                       ))}
                     </ul>
                   ) : (
-                    <p className="whitespace-pre-line text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                       {profile.publications}
                     </p>
                   )
                 ) : (
-                  <p className="text-gray-500 italic">No publication details provided yet.</p>
+                  <p className="text-sm text-gray-500 italic">No publication details provided yet.</p>
                 )}
               </div>
             )}
 
             {activeTab === 'patents' && (
               <div className="animate-fade-in-up">
-                <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">Patents</h2>
+                <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Patents</h2>
                 {profile.patents ? (
-                  <p className="whitespace-pre-line text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                     {profile.patents}
                   </p>
                 ) : (
-                  <p className="text-gray-500 italic">No patent details provided yet.</p>
+                  <p className="text-sm text-gray-500 italic">No patent details provided yet.</p>
                 )}
               </div>
             )}
 
             {activeTab === 'seminars' && (
               <div className="animate-fade-in-up">
-                <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">Seminars & Workshops</h2>
+                <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Seminars & Workshops</h2>
                 {profile.seminars ? (
                   Array.isArray(profile.seminars) ? (
                     <ul className="space-y-6">
                       {profile.seminars.map((item, idx) => (
                         <li key={idx} className="flex flex-col relative pl-6">
-                          <span className="absolute left-0 top-2.5 w-2 h-2 rounded-full bg-brand-red"></span>
+                          <span className="absolute left-0 top-2 w-2 h-2 rounded-full bg-brand-red"></span>
                           {item.link ? (
-                            <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
+                            <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-base font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
                               {item.title}
                             </a>
                           ) : (
-                            <h3 className="text-lg font-bold text-gray-900 dark:text-white">{item.title}</h3>
+                            <h3 className="text-base font-bold text-gray-900 dark:text-white">{item.title}</h3>
                           )}
-                          {item.authors && <span className="text-gray-700 dark:text-gray-300 mt-1">{item.authors}</span>}
-                          {item.journal && <span className="text-sm text-gray-500 dark:text-gray-400 mt-1 font-medium">{item.journal}</span>}
+                          {item.authors && <span className="text-sm text-gray-700 dark:text-gray-300 mt-1">{item.authors}</span>}
+                          {item.journal && <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 font-medium">{item.journal}</span>}
                         </li>
                       ))}
                     </ul>
                   ) : (
-                    <p className="whitespace-pre-line text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                       {profile.seminars}
                     </p>
                   )
                 ) : (
-                  <p className="text-gray-500 italic">No seminar or workshop details provided yet.</p>
+                  <p className="text-sm text-gray-500 italic">No seminar or workshop details provided yet.</p>
                 )}
               </div>
             )}
 
             {activeTab === 'projects' && (
               <div className="animate-fade-in-up">
-                <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">Projects</h2>
+                <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Projects</h2>
                 {profile.projects ? (
-                  <p className="whitespace-pre-line text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                     {profile.projects}
                   </p>
                 ) : (
-                  <p className="text-gray-500 italic">No project details provided yet.</p>
+                  <p className="text-sm text-gray-500 italic">No project details provided yet.</p>
                 )}
               </div>
             )}
 
             {activeTab === 'supervisions' && (
               <div className="animate-fade-in-up">
-                <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">Supervisions</h2>
+                <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Supervisions</h2>
                 {profile.supervisions ? (
-                  <p className="whitespace-pre-line text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                     {profile.supervisions}
                   </p>
                 ) : (
-                  <p className="text-gray-500 italic">No supervision details provided yet.</p>
+                  <p className="text-sm text-gray-500 italic">No supervision details provided yet.</p>
                 )}
               </div>
             )}
@@ -477,7 +479,7 @@ const FacultyProfilePage = () => {
                               <BookOpen className="w-5 h-5" />
                             </div>
                             <div className="flex-grow overflow-hidden">
-                              <h4 className="text-gray-900 dark:text-white font-semibold">{type}</h4>
+                              <h4 className="text-sm text-gray-900 dark:text-white font-semibold">{type}</h4>
                               <p className="text-xs text-gray-500 dark:text-gray-400 truncate w-full">{link}</p>
                             </div>
                           </a>
