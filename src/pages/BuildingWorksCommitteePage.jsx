@@ -19,11 +19,6 @@ const BuildingWorksCommitteePage = () => {
       <PageHeader title="Building and Works Committee" />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
-          <div className="bg-primary dark:bg-primary-dark px-6 py-4">
-            <h2 className="text-2xl font-bold text-center text-white">
-              Building and Works Committee
-            </h2>
-          </div>
           <div className="p-6 md:p-8">
             <CommitteeTable data={data} />
           </div>
