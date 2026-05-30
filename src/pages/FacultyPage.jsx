@@ -16,7 +16,7 @@ const FacultyPage = () => {
   }, []);
 
   return (
-    <div className="bg-bg dark:bg-bg-dark min-h-screen">
+    <div className="bg-surface dark:bg-surface-dark min-h-screen">
       <PageHeader 
         title="Faculty Members" 
         subtitle="Meet the distinguished faculty of IIIT Pune"
@@ -33,7 +33,7 @@ const FacultyPage = () => {
               key={index}
               className="bg-white dark:bg-surface-dark rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full group"
             >
-              <div className="w-full aspect-[4/5] bg-gray-100 dark:bg-gray-800 relative overflow-hidden">
+              <div className="w-[60%] aspect-[4/5] mx-auto mt-4 bg-gray-100 dark:bg-gray-800 relative overflow-hidden rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
                 {person.image ? (
                   <img 
                     src={person.image} 
@@ -52,23 +52,30 @@ const FacultyPage = () => {
                 )}
               </div>
               
-              <div className="p-5 flex-grow flex flex-col items-center text-center bg-white dark:bg-surface-dark z-10">
-                <h3 className="text-lg font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors">
+              <div className="p-4 flex-grow flex flex-col items-center text-center bg-white dark:bg-surface-dark z-10 w-full mt-1">
+                <h3 className="text-lg font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors line-clamp-1 w-full">
                   {person.name}
                 </h3>
-                <p className="text-sm text-brand-red font-medium mb-3 whitespace-pre-line">
-                  {person.designation || "Faculty Member"}
-                </p>
-                {person.expertise && (
-                  <>
-                    <div className="w-12 h-px bg-gray-200 dark:bg-gray-700 my-2"></div>
-                    <p className="text-xs text-gray-600 dark:text-gray-400 font-medium leading-relaxed mb-3 line-clamp-3">
-                      <span className="text-gray-400 dark:text-gray-500 font-semibold block mb-1">Expertise:</span>
-                      {person.expertise}
-                    </p>
-                  </>
-                )}
-
+                
+                {/* Fixed height container for designation (up to 2 lines) */}
+                <div className="h-10 flex items-start justify-center w-full mb-1">
+                  <p className="text-sm text-brand-red font-medium whitespace-pre-line line-clamp-2">
+                    {person.designation || "Faculty Member"}
+                  </p>
+                </div>
+                
+                {/* Fixed height container for expertise to ensure consistent sizing */}
+                <div className="h-16 w-full flex flex-col items-center">
+                  {person.expertise ? (
+                    <>
+                      <div className="w-8 h-px bg-gray-200 dark:bg-gray-700 mb-1.5 mt-0.5 shrink-0"></div>
+                      <p className="text-xs text-gray-600 dark:text-gray-400 font-medium leading-relaxed line-clamp-2 w-full">
+                        <span className="text-gray-400 dark:text-gray-500 font-semibold block mb-0.5">Expertise:</span>
+                        {person.expertise}
+                      </p>
+                    </>
+                  ) : null}
+                </div>
               </div>
             </Link>
           )})}

@@ -86,7 +86,52 @@
     "image": "https://www.iiitp.ac.in/sites/default/files/inline-images/DSC_8796-min.JPG",
     "bio": "Dr. Bhupendra Singh is serving as an Assistant Professor in the Department of Computer Science & Engineering, IIIT Pune. He is also heading the CSE department. He is a Computer Hacking Forensic Certificate (CHFIv12) certified professional. His area of interest includes digital forensics, Windows forensics, database forensics, and Cyber Security Technologies. His research contribution involves the development of custom tools for various Operating Systems and metadata forensics in the field of digital forensics for crime investigation.\n\nHe has published several research articles in peer-reviewed journals and book chapters. He serves on the Technical Program Committee member of many international conferences on Digital Forensics and Cyber Security. He has taught Cyber Security and Digital Forensics, Python programming, and Cloud Computing to undergraduate students. Singh holds a Ph.D. in Computer Science & Engineering from Defence Institute of Advanced Technology (DIAT) Pune and M.Tech. from Central University of Rajasthan in Computer Science and Engineering. Dr. Singh has successfully guided one Ph.D. student and has recently secured a research grant of INR 4.2 crore from the Cyber Security Division, MeitY, for a project entitled \"Next Generation Data Carving and Preservation Techniques for Storage Drive Forensics\", in collaboration with NIT Raipur.",
     "education": "Ph.D. (CSE): DIAT (DRDO) Pune\nM.Tech.(CSE): Central University of Rajasthan, Ajmer\nB.E.(CSE): Shri Ram Murti Smarak College of Engineering & Technology (SRMS CET)",
-    "publications": "",
+    "publications": [
+      {
+        "title": "Automatic mango leaf disease detection using different transfer learning models",
+        "authors": "T Varma, P Mate, NA Azeem, S Sharma, B Singh",
+        "journal": "Multimedia Tools and Applications 84 (11), 9185-9218 (2025)",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cKAcqYkAAAAJ&citation_for_view=cKAcqYkAAAAJ:eq2jaN3J8jMC"
+      },
+      {
+        "title": "Program execution analysis in Windows: A study of data sources, their format and comparison of forensic capability",
+        "authors": "B Singh, U Singh",
+        "journal": "Computers & Security 74, 94-114 (2018)",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cKAcqYkAAAAJ&citation_for_view=cKAcqYkAAAAJ:1qzjygNMrQYC"
+      },
+      {
+        "title": "A forensic insight into Windows 10 Jump Lists",
+        "authors": "B Singh, U Singh",
+        "journal": "Digital Investigation 17, 1-13 (2016)",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cKAcqYkAAAAJ&citation_for_view=cKAcqYkAAAAJ:SeFeTyx0c_EC"
+      }
+    ],
+    "books_chapters": "He has published several research articles in peer-reviewed journals and book chapters.",
+    "patents": "",
+    "seminars": [
+      {
+        "title": "Advances in Python Programming and Cyber Security",
+        "authors": "Expert talk in PreExam Training for SEBI Grade A Officers Recruitment 2025 – IT Stream",
+        "journal": "National Institute of Securities Markets (NISM)- Navi Mumbai on 21st Dec 2025"
+      },
+      {
+        "title": "AI in Cyber Secuity: Friend or Foe?",
+        "authors": "Expert talk in Three-day workshop titled Advanced Computing for Industry 4.0",
+        "journal": "Department of Computer Science and Engineering (AI & ML), PCCOE, Akurdi on 18th Sept 2025"
+      },
+      {
+        "title": "File System Analysis using TSK",
+        "authors": "Expert talk in 5-days Online FDP on Cyber Forensics Tools and Techniques",
+        "journal": "Ram Lal Anand College, University of Delhi on 7th Aug 2025"
+      },
+      {
+        "title": "Ethical hacking: Password cracking using Hashcat",
+        "authors": "Expert talk in ITEC Training Program on Crime Research & Intelligence Analysis for Kenya Officers",
+        "journal": "National Forensic Sciences University (NFSU), Gandhinagar on 2nd Jun 2025"
+      }
+    ],
+    "projects": "Recently secured a research grant of INR 4.2 crore from the Cyber Security Division, MeitY, for a project entitled \"Next Generation Data Carving and Preservation Techniques for Storage Drive Forensics\", in collaboration with NIT Raipur.",
+    "supervisions": "Dr. Singh has successfully guided one Ph.D. student.",
     "resume": "https://www.iiitp.ac.in/sites/default/files/2026-01/Dr%20Bhupendra%20Singh.pdf",
     "slug": "dr-bhupendra-singh",
     "raw_data": "Dr. Bhupendra Singh\nDesignation: Assistant Professor\nEducational Qualification Ph.D. (CSE): DIAT (DRDO) Pune\nM.Tech.(CSE): Central University of Rajasthan, Ajmer\nB.E.(CSE): Shri Ram Murti Smarak College of Engineering & Technology (SRMS CET)\nEmail: bhupendra@iiitp.ac.in\nPhone+91 9673095708, +91 9325302119\n \n\nBiography\nDr. Bhupendra Singh is serving as an Assistant Professor in the Department of Computer Science & Engineering, IIIT Pune. He is also heading the CSE department. He is a Computer Hacking Forensic Certificate (CHFIv12) certified professional. His area of interest includes digital forensics, Windows forensics, database forensics, and Cyber Security Technologies. His research contribution involves the development of custom tools for various Operating Systems and metadata forensics in the field of digital forensics for crime investigation..\n\nHe has published several research articles in peer-reviewed journals and book chapters. He serves on the Technical Program Committee member of many international conferences on Digital Forensics and Cyber Security. He has taught Cyber Security and Digital Forensics, Python programming, and Cloud Computing to undergraduate students. Singh holds a Ph.D. in Computer Science & Engineering from Defence Institute of Advanced Technology (DIAT) Pune and M.Tech. from Central University of Rajasthan in Computer Science and Engineering. Dr. Singh has successfully guided one Ph.D. student and has recently secured a research grant of INR 4.2 crore from the Cyber Security Division, MeitY, for a project entitled “Next Generation Data Carving and Preservation Techniques for Storage Drive Forensics”, in collaboration with NIT Raipur.\n\nhttps://scholar.google.com/citations?user=cKAcqYkAAAAJ\nhttps://orcid.org/0000-0003-3357-1398\nhttps://www.scopus.com/authid/detail.uri?authorId=57161552900"
