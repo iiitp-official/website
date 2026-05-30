@@ -19,30 +19,31 @@ const BoardOfStudiesEcePage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200 py-12">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-blue-700 dark:text-blue-400 text-center mb-8">
-          Board of Studies (ECE)
-        </h1>
-        
-        <CommitteeTable data={data} />
-        
-        <div className="mt-8">
-          <p className="font-bold text-gray-900 dark:text-white mb-3">
-            Please click here for the official Memorandum
-          </p>
-          <a 
-            href="/documents/BoS_ECE_IIITP_v1.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block bg-[#2e1a47] text-white px-6 py-2.5 rounded-sm shadow-sm hover:bg-opacity-90 transition-colors font-medium text-sm"
-          >
-            View Document
-          </a>
-        </div>
-        
-        <div className="text-right text-gray-600 dark:text-gray-400 mt-8 text-sm">
-          Last Updated: 25-04-2026
+    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
+      <PageHeader title="Board of Studies (ECE)" />
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
+          <div className="p-6 md:p-8">
+            <CommitteeTable data={data} />
+            
+            <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-800">
+              <p className="font-bold text-gray-900 dark:text-white mb-3">
+                Please click here for the official Memorandum
+              </p>
+              <a 
+                href="/documents/BoS_ECE_IIITP_v1.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-primary text-white px-6 py-2.5 rounded-sm shadow-sm hover:bg-primary/90 transition-colors font-medium text-sm"
+              >
+                View Document
+              </a>
+            </div>
+            
+            <div className="text-right text-gray-600 dark:text-gray-400 mt-8 text-sm">
+              Last Updated: 25-04-2026
+            </div>
+          </div>
         </div>
       </div>
     </div>
