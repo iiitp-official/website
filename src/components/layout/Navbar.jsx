@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 import { Search, Sun, Moon, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -36,9 +36,45 @@ const Navbar = () => {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
   const [showSearch, setShowSearch] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState({});
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Helper to flatten links for search
+  const flattenLinks = (links) => {
+    let result = [];
+    links.forEach(link => {
+      if (link.path && link.path !== "#" && !link.isExternal) {
+        result.push(link);
+      }
+      if (link.subLinks) {
+        result = result.concat(flattenLinks(link.subLinks));
+      }
+    });
+    return result;
+  };
+
+  useEffect(() => {
+    if (!searchQuery.trim()) {
+      setSearchResults([]);
+      return;
+    }
+    const flattened = flattenLinks(primaryLinks);
+    const results = flattened.filter(link => 
+      link.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setSearchResults(results.slice(0, 5)); // Limit to 5 results
+  }, [searchQuery]);
+
+  const handleSearchNavigate = (path) => {
+    navigate(path);
+    setSearchQuery("");
+    setShowSearch(false);
+    setIsMobileMenuOpen(false);
+  };
+
 
   useEffect(() => {
     if (isDark) {
@@ -74,26 +110,35 @@ const Navbar = () => {
     else root.style.fontSize = "16px";
   };
 
+  useEffect(() => {
+    // Reset to English by default for new sessions (if they haven't explicitly set language this session)
+    if (!sessionStorage.getItem('langSet') && document.cookie.includes('googtrans')) {
+      changeLanguage('en');
+    }
+  }, []);
+
   // Language control
   const changeLanguage = (lang) => {
     const host = window.location.hostname;
+    const currentPath = window.location.pathname;
+    const pathsToClear = ['/', currentPath];
 
-    // Always set base path cookie
     if (lang === 'en') {
-      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+      pathsToClear.forEach(p => {
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=${p};`;
+        if (host !== 'localhost' && host !== '127.0.0.1') {
+          document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${host}; path=${p};`;
+          document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.${host}; path=${p};`;
+        }
+      });
+      sessionStorage.removeItem('langSet');
     } else {
       document.cookie = `googtrans=/en/${lang}; path=/`;
-    }
-
-    // Only set domain cookie if it's not localhost
-    if (host !== 'localhost' && host !== '127.0.0.1') {
-      if (lang === 'en') {
-        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${host}; path=/;`;
-        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.${host}; path=/;`;
-      } else {
+      if (host !== 'localhost' && host !== '127.0.0.1') {
         document.cookie = `googtrans=/en/${lang}; domain=${host}; path=/`;
         document.cookie = `googtrans=/en/${lang}; domain=.${host}; path=/`;
       }
+      sessionStorage.setItem('langSet', 'true');
     }
 
     window.location.reload();
@@ -132,7 +177,23 @@ const Navbar = () => {
         { name: "NIRF", path: "/nirf" },
       ]
     },
-    { name: "Administration", path: "/administration", hasDropdown: false },
+    {
+      name: "Administration",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "Chairperson", path: "/administration/chairperson" },
+        { name: "Director", path: "/about/director-desk" },
+        { name: "Registrar", path: "/administration/registrar" },
+        { name: "Board of Governors", path: "/administration/board-of-governors" },
+        { name: "Finance Committee", path: "/administration/finance-committee" },
+        { name: "Building and Works Committee", path: "/administration/building-and-works-committee" },
+        { name: "Senate", path: "/administration/senate" },
+        { name: "Board of Studies - CSE", path: "/administration/board-of-studies-cse" },
+        { name: "Board of Studies - ECE", path: "/administration/board-of-studies-ece" },
+        { name: "Board of Studies - ASH", path: "/administration/board-of-studies-ash" },
+      ]
+    },
     {
       name: "Academics",
       path: "#",
@@ -174,7 +235,7 @@ const Navbar = () => {
      path: "/research",
      hasDropdown: true,
      subLinks: [
-       { name: "Centres", path: "/research/centres" },
+       { name: "Centers", path: "/research/centres" },
        { name: "Internship @IIIT Pune", path: "/research/internships" },
        { name: "Library", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
        {
@@ -264,7 +325,16 @@ const Navbar = () => {
         { name: "Sports & Gymnasium", path: "/#" },
       ]
     },
-    { name: "Notice", path: "/notice", hasDropdown: false },
+    {
+      name: "Notice",
+      path: "/notice",
+      hasDropdown: true,
+      subLinks: [
+        { name: "All Notices", path: "/notice" },
+        { name: "Anti-Ragging", path: "/notice/anti-ragging" },
+        { name: "Late Fee for the even semester", path: "/notice/late-fee" },
+      ]
+    },
     { name: "Careers", path: "/careers", hasDropdown: false },
     { name: "Placement", path: "/placement", hasDropdown: false },
     { name: "Contact Us", path: "/contact", hasDropdown: false },
@@ -343,8 +413,9 @@ const Navbar = () => {
               <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
 
               {/* Language Selector */}
-              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
+              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5 notranslate">
                 <button
+                  onClick={() => changeLanguage('en')}
                   className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
                   title="English"
                 >
@@ -352,6 +423,7 @@ const Navbar = () => {
                 </button>
                 <span className="text-gray-400 dark:text-gray-500 text-xs font-light">|</span>
                 <button
+                  onClick={() => changeLanguage('hi')}
                   className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
                   title="Hindi"
                 >
@@ -426,32 +498,59 @@ const Navbar = () => {
               <div className="h-5 w-px bg-blue-700 dark:bg-gray-600" />
 
               {/* Search */}
-              <button
-                onClick={() => setShowSearch(!showSearch)}
-                className="flex items-center justify-center p-2 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
-                aria-label="Search"
-                title="Search"
-              >
-                <Search className="w-4 h-4" />
-              </button>
+              <div className="relative flex items-center">
+                <button
+                  onClick={() => setShowSearch(!showSearch)}
+                  className="flex items-center justify-center p-2 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
+                  aria-label="Search"
+                  title="Search"
+                >
+                  <Search className="w-4 h-4" />
+                </button>
 
-              <AnimatePresence>
-                {showSearch && (
-                  <motion.input
-                    initial={{ width: 0, opacity: 0 }}
-                    animate={{ width: 160, opacity: 1 }}
-                    exit={{ width: 0, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                    type="text"
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
-                    autoFocus
-                    className="h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 dark:placeholder-gray-500 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm overflow-hidden"
-                  />
-                )}
-              </AnimatePresence>
+                <AnimatePresence>
+                  {showSearch && (
+                    <div className="absolute right-0 top-full mt-2 w-64 bg-white dark:bg-surface-dark rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden z-50">
+                      <div className="p-2">
+                        <input
+                          type="text"
+                          placeholder="Search pages..."
+                          value={searchQuery}
+                          onChange={(e) => setSearchQuery(e.target.value)}
+                          onKeyPress={(e) => {
+                            if (e.key === "Enter" && searchResults.length > 0) {
+                              handleSearchNavigate(searchResults[0].path);
+                            }
+                          }}
+                          autoFocus
+                          className="w-full h-9 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 border border-transparent focus:border-brand-red focus:bg-white dark:focus:bg-gray-900 focus:outline-none text-sm transition-all"
+                        />
+                      </div>
+                      
+                      {searchQuery && (
+                        <div className="max-h-60 overflow-y-auto border-t border-gray-100 dark:border-gray-800">
+                          {searchResults.length > 0 ? (
+                            searchResults.map((result, idx) => (
+                              <button
+                                key={idx}
+                                onClick={() => handleSearchNavigate(result.path)}
+                                className="w-full text-left px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors border-l-2 border-transparent hover:border-brand-red flex items-center"
+                              >
+                                <Search className="w-3.5 h-3.5 mr-2 opacity-50" />
+                                {result.name}
+                              </button>
+                            ))
+                          ) : (
+                            <div className="px-4 py-3 text-sm text-gray-500 dark:text-gray-400 text-center">
+                              No results found for "{searchQuery}"
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </AnimatePresence>
+              </div>
             </div>
           </div>
         </div>
@@ -466,7 +565,7 @@ const Navbar = () => {
                 to={link.path}
                 className={({ isActive }) => {
                   const isLinkActive = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
                     : isActive;
                   return navLinkClass({ isActive: isLinkActive });
                 }}
@@ -474,7 +573,7 @@ const Navbar = () => {
               >
                 {({ isActive }) => {
                   const activeState = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
                     : isActive;
                   return (
                     <>
@@ -569,16 +668,45 @@ const Navbar = () => {
           >
             <div className="px-4 py-4 space-y-4 max-h-[70vh] overflow-y-auto">
               {/* Mobile Search */}
-              <div className="flex items-center gap-2 px-3">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onKeyPress={(e) => e.key === "Enter" && console.log("Search:", searchQuery)}
-                  className="flex-1 h-8 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm"
-                />
-                <Search className="w-4 h-4 text-white opacity-70" />
+              <div className="relative px-3">
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    placeholder="Search pages..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyPress={(e) => {
+                      if (e.key === "Enter" && searchResults.length > 0) {
+                        handleSearchNavigate(searchResults[0].path);
+                      }
+                    }}
+                    className="flex-1 h-10 px-3 py-2 rounded-lg bg-blue-900/30 dark:bg-gray-800/50 text-white placeholder-gray-400 border border-blue-700 dark:border-gray-700 focus:border-accent-dark focus:outline-none text-sm"
+                  />
+                  <Search className="w-5 h-5 text-white opacity-70" />
+                </div>
+                
+                {searchQuery && (
+                  <div className="mt-2 bg-white dark:bg-surface-dark rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+                    <div className="max-h-48 overflow-y-auto">
+                      {searchResults.length > 0 ? (
+                        searchResults.map((result, idx) => (
+                          <button
+                            key={idx}
+                            onClick={() => handleSearchNavigate(result.path)}
+                            className="w-full text-left px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors border-l-2 border-transparent hover:border-brand-red flex items-center"
+                          >
+                            <Search className="w-3.5 h-3.5 mr-2 opacity-50" />
+                            {result.name}
+                          </button>
+                        ))
+                      ) : (
+                        <div className="px-4 py-3 text-sm text-gray-500 dark:text-gray-400 text-center">
+                          No results found
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Mobile Social + Language + Text Size */}
@@ -604,12 +732,12 @@ const Navbar = () => {
                 >
                   <LinkedinIcon size={20} />
                 </a>
-                <div className="ml-auto flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                  <button className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
+                <div className="ml-auto flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5 notranslate">
+                  <button onClick={() => changeLanguage('en')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
                     EN
                   </button>
                   <span className="text-gray-400 text-xs">|</span>
-                  <button className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
+                  <button onClick={() => changeLanguage('hi')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
                     हिं
                   </button>
                 </div>
@@ -656,7 +784,7 @@ const Navbar = () => {
                           }}
                           className={({ isActive }) => {
                             const activeState = link.path === "#"
-                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics"))
+                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration"))
                               : isActive;
                             return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
                               ? "bg-brand-red text-white dark:bg-brand-red-dark/50"

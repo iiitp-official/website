@@ -10,6 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
+    <script>
+      // Monkey patch to fix React crashing with Google Translate
+      if (typeof Node === 'function' && Node.prototype) {
+        const originalRemoveChild = Node.prototype.removeChild;
+        Node.prototype.removeChild = function(child) {
+          if (child.parentNode !== this) {
+            if (console) {
+              console.warn('Cannot remove a child from a different parent', child, this);
+            }
+            return child;
+          }
+          return originalRemoveChild.apply(this, arguments);
+        };
+        
+        const originalInsertBefore = Node.prototype.insertBefore;
+        Node.prototype.insertBefore = function(newNode, referenceNode) {
+          if (referenceNode && referenceNode.parentNode !== this) {
+            if (console) {
+              console.warn('Cannot insert before a reference node from a different parent', referenceNode, this);
+            }
+            return newNode;
+          }
+          return originalInsertBefore.apply(this, arguments);
+        };
+      }
+    </script>
     <div id="google_translate_element" style="position: absolute; left: -9999px; top: -9999px; visibility: hidden;"></div>
     <div id="root"></div>
     <script type="text/javascript">
