@@ -64,7 +64,7 @@ const Testimonials = () => {
               <Quote className="w-16 h-16 text-blue-50 dark:text-gray-800/50 absolute bottom-6 right-6" />
               
               <div className="relative z-10">
-                <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 italic mb-10 font-serif leading-relaxed px-4 md:px-8">
+                <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 italic mb-10 font-serif leading-relaxed text-justify px-4 md:px-8">
                   "{testimonials[current].quote}"
                 </p>
                 <div>

@@ -125,7 +125,7 @@ const LatestNews = () => {
                         <Link to={item.link}>{item.title}</Link>
                       </h3>
 
-                      <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4 flex-grow">
+                      <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4 flex-grow text-justify">
                         {item.excerpt}
                       </p>
                     </div>
