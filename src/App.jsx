@@ -9,6 +9,7 @@ import LoadingFallback from "./components/shared/LoadingFallback";
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const DirectorDeskPage = lazy(() => import("./pages/DirectorDeskPage"));
+const DirectorPage = lazy(() => import("./pages/DirectorPage"));
 const VisionMissionPage = lazy(() => import("./pages/VisionMissionPage"));
 const AboutPlaceholderPage = lazy(() => import("./pages/AboutPlaceholderPage"));
 const AdministrationPage = lazy(() => import("./pages/AdministrationPage"));
@@ -88,6 +89,7 @@ function App() {
               {/* Administration */}
               <Route path="/administration" element={<AdministrationPage />} />
               <Route path="/administration/chairperson" element={<ChairpersonPage />} />
+              <Route path="/administration/director" element={<DirectorPage />} />
               <Route path="/administration/registrar" element={<RegistrarPage />} />
               <Route path="/administration/board-of-governors" element={<BoardOfGovernorsPage />} />
               <Route path="/administration/finance-committee" element={<FinanceCommitteePage />} />

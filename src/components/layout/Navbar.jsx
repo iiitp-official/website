@@ -183,7 +183,7 @@ const Navbar = () => {
       hasDropdown: true,
       subLinks: [
         { name: "Chairperson", path: "/administration/chairperson" },
-        { name: "Director", path: "/about/director-desk" },
+        { name: "Director", path: "/administration/director" },
         { name: "Registrar", path: "/administration/registrar" },
         { name: "Board of Governors", path: "/administration/board-of-governors" },
         { name: "Finance Committee", path: "/administration/finance-committee" },
