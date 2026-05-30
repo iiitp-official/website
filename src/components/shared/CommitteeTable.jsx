@@ -2,9 +2,9 @@ import React from 'react';
 
 const CommitteeTable = ({ data }) => {
   return (
-    <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm mt-8">
+    <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
       <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-        <thead className="bg-[#7c5cdb]">
+        <thead className="bg-primary dark:bg-primary/95">
           <tr>
             <th scope="col" className="px-6 py-4 text-center text-sm font-bold text-white tracking-wider w-24">
               Sr. No
