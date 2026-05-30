@@ -56,7 +56,7 @@ const CLUBS = {
       "Created the official visual branding and media kit for iConclave '26",
       "Conducted campus-wide Figma and Illustrator design bootcamps for 150+ students"
     ],
-    images: ["https://www.iiitp.ac.in/sites/default/files/inline-images/Screenshot%202026-05-19%20180053.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/Screenshot%202026-05-19%20175837.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/aygycs_blue.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/frontpage.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/pngs.png"],
+    images: [],
     leadership: { "heads": [], "email": "blueprint@iiitp.ac.in", "instagram": "@blueprint_iiitp", "website": "" }
   },
   'rang': {
@@ -89,7 +89,7 @@ const CLUBS = {
       "Successfully compiled and published the RANG Annual Art Report 2025-26 showcasing student art collections",
       "Completed multiple collaborative art installations around the college host zones"
     ],
-    images: ["https://www.iiitp.ac.in/sites/default/files/2026-05/rang12.JPG", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang6.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang8.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang5.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang4.jpg.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/rang1.jpg"],
+    images: [],
     leadership: { "heads": [{ "name": "Avani Patil", "role": "Club Head" }, { "name": "Akshad Khune", "role": "Club Co-Head" }], "email": "rang@iiitp.ac.in", "instagram": "@rangiiitp", "website": "" }
   },
   'quantnum': {
@@ -118,7 +118,7 @@ const CLUBS = {
       "Organized the highly successful Quant-Bid Arena with massive participation from engineering students across Pune",
       "Maintained weekly 'Problem of the Week' challenges and 'Did You Know' math series on social media to build curiosity"
     ],
-    images: ["https://www.iiitp.ac.in/sites/default/files/2026-05/download.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/download.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/download%20%281%29.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/download%20%282%29.png"],
+    images: [],
     leadership: { "heads": [{ "name": "Suharsh Kumar", "role": "Club Head (CSE)" }, { "name": "Shreya Khandelwal", "role": "Club Co-Head (ECE)" }], "email": "quantnum@iiitp.ac.in", "instagram": "@quantnum_iiitp", "website": "" }
   },
   'bit-legion': {
@@ -147,7 +147,7 @@ const CLUBS = {
       "Ranked 1st among all IIITs at the Amritapuri ICPC Regionals and qualified for the Asia-West Continental Finals",
       "Conducted InfInITY 2k22 globally, attracting top-rated competitive programmers including masters and grandmasters"
     ],
-    images: ["https://www.iiitp.ac.in/sites/default/files/inline-images/image001.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image003.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image005.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image007.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image009.jpg"],
+    images: [],
     leadership: { "heads": [], "email": "bitlegion@iiitp.ac.in", "instagram": "@bit_legion_iiitp", "website": "" }
   },
   'c-cube': {
@@ -339,7 +339,7 @@ const CLUBS = {
       "Volleyball team won the Bronze Medal and Football team secured 4th position at the national Inter-IIIT Meet (Kancheepuram)",
       "Sent an athletic contingent to represent the institute at the Inter-IIIT Sports Meet at IIITDM Kurnool"
     ],
-    images: ["https://www.iiitp.ac.in/sites/default/files/inline-images/image042.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image043.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image045.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/Frame%20780.png", "https://www.iiitp.ac.in/sites/default/files/inline-images/_THC3794.JPG"],
+    images: [],
     leadership: { "heads": [{ "name": "Shriraj Nilare", "role": "Sports Club Head" }, { "name": "Bhavin Barad", "role": "Sports Club Co-Head" }], "email": "sports@iiitp.ac.in", "instagram": "@sports_iiitp", "website": "" }
   },
   'rofies': {
@@ -372,7 +372,7 @@ const CLUBS = {
       "Represented IIIT Pune at MindSpark (COEP) and Cognizance (IIT Roorkee) with award-winning robotics projects",
       "Successfully cleared Level 1 of TRON 2026 with Project Aura, competing against global universities"
     ],
-    images: ["https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.FI_.E.S_2.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.F.I.E.S_4.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.F.I.E.S_3.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.F.I.E.S_1.jpeg", "https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.F.I.E.S_5.png"],
+    images: [],
     leadership: { "heads": [], "email": "rofies@iiitp.ac.in", "instagram": "@media", "website": "" }
   },
   'localhost': {
@@ -405,7 +405,7 @@ const CLUBS = {
       "Conducted full-scale Hacktoberfest workshops, resulting in over 80 students completing open-source contribution pull requests",
       "Maintained active community dev channels on Telegram to support beginners in web and app development"
     ],
-    images: ["https://www.iiitp.ac.in/sites/default/files/inline-images/image061.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image063.jpg", "https://www.iiitp.ac.in/sites/default/files/inline-images/image066.gif"],
+    images: [],
     leadership: { "heads": [], "email": "localhost@iiitp.ac.in", "instagram": "@localhost_iiitp", "website": "" }
   },
   'horizon': {
@@ -506,7 +506,7 @@ const CLUBS = {
       "Organized Cognition: Seikai Showdown with great success and high participation across Pune colleges",
       "Successfully built a welcoming learning-sharing environment for quiz hosting and framing"
     ],
-    images: ["https://www.iiitp.ac.in/sites/default/files/2026-05/Picture1%20%281%29.png", "https://www.iiitp.ac.in/sites/default/files/2026-05/Picture2.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/Picture3.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/Picture4.jpg", "https://www.iiitp.ac.in/sites/default/files/2026-05/Picture5.png"],
+    images: [],
     leadership: { "heads": [{ "name": "Aditya Apoorva Negi", "role": "Club Head (CSE 3rd Year)" }, { "name": "Aadit Bajaj", "role": "Core Team Member (CSE 2nd Year)" }, { "name": "Amol Raj", "role": "Core Team Member (CSE 2nd Year)" }], "email": "q_riocity@iiitp.ac.in", "instagram": "@q_riocity_", "website": "" }
   },
 };
@@ -684,11 +684,24 @@ const LifePage = () => {
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Sidebar Club Selector */}
             <div className="w-full lg:w-72 shrink-0">
-              <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm sticky top-24 space-y-4">
-                <h3 className="text-gray-800 dark:text-white font-bold font-serif px-2 pb-2 border-b border-gray-100 dark:border-gray-800 text-base">
-                  Student Clubs
-                </h3>
-                <div className="flex flex-col gap-1.5 max-h-[60vh] overflow-y-auto pr-1">
+              <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-24 space-y-4">
+                <div className="flex items-center justify-between border-b border-gray-100 dark:border-gray-800 pb-2">
+                  <h3 className="text-gray-800 dark:text-white font-bold font-serif text-base">
+                    Student Clubs
+                  </h3>
+                  <a
+                    href="https://www.iiitp.ac.in/sites/default/files/2025-09/Club%20Head%20and%20Co%20Head-2025-2026.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="lg:hidden text-xs font-bold text-accent dark:text-accent-dark flex items-center gap-1 hover:underline"
+                  >
+                    <span>Heads</span>
+                    <ExternalLink size={11} />
+                  </a>
+                </div>
+
+                {/* Horizontal scrollable on mobile, vertical list on desktop */}
+                <div className="flex flex-row overflow-x-auto gap-2 no-scrollbar lg:flex-col lg:max-h-[60vh] lg:overflow-y-auto lg:pr-1 pb-2 lg:pb-0">
                   {Object.keys(CLUBS).map((key) => {
                     const c = CLUBS[key];
                     const isSelected = activeClubKey === key;
@@ -696,33 +709,34 @@ const LifePage = () => {
                       <button
                         key={key}
                         onClick={() => setSearchParams({ tab: 'clubs', club: key })}
-                        className={`w-full flex flex-col items-start px-3.5 py-3 rounded-xl text-left transition-all duration-250 border ${isSelected
-                            ? `bg-gradient-to-r ${c.color} text-white border-transparent shadow-lg shadow-blue-500/10 scale-[1.01]`
-                            : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800/80 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700'
+                        className={`shrink-0 lg:shrink lg:w-full flex flex-row lg:flex-col items-center lg:items-start gap-2 lg:gap-0 px-4 py-2 lg:px-3.5 lg:py-3 rounded-full lg:rounded-xl text-left transition-all duration-250 border ${isSelected
+                            ? 'bg-primary text-white border-primary shadow-sm'
+                            : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700'
                           }`}
                       >
                         <div className="flex items-center gap-2 w-full">
-                          <span className={`w-2 h-2 rounded-full shrink-0 ${isSelected ? 'bg-white shadow' : `bg-gradient-to-br ${c.color}`}`} />
-                          <span className="font-bold text-sm truncate">{c.name}</span>
+                          <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isSelected ? 'bg-white' : 'bg-primary'}`} />
+                          <span className="font-bold text-xs lg:text-sm truncate">{c.name}</span>
                         </div>
                         {c.tags && c.tags.length > 0 && (
-                          <span className={`text-[10px] mt-1.5 truncate w-full ${isSelected ? 'text-white/80' : 'text-gray-400 dark:text-gray-500'}`}>
+                          <span className={`hidden lg:block text-[10px] mt-1.5 truncate w-full ${isSelected ? 'text-white/80' : 'text-gray-400 dark:text-gray-500'}`}>
                             {c.tags.slice(0, 2).join(' • ')}
                           </span>
                         )}
                       </button>
                     );
                   })}
-                  <a
-                    href="https://www.iiitp.ac.in/sites/default/files/2025-09/Club%20Head%20and%20Co%20Head-2025-2026.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full flex items-center justify-between gap-3 px-3.5 py-3 rounded-xl text-left text-xs font-bold text-accent dark:text-accent-dark hover:bg-gray-50 dark:hover:bg-gray-850 mt-3 border border-dashed border-gray-200 dark:border-gray-700 transition-colors"
-                  >
-                    <span>View Club Heads</span>
-                    <ExternalLink size={13} />
-                  </a>
                 </div>
+
+                <a
+                  href="https://www.iiitp.ac.in/sites/default/files/2025-09/Club%20Head%20and%20Co%20Head-2025-2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden lg:flex w-full items-center justify-between gap-3 px-3.5 py-3 rounded-xl text-left text-xs font-bold text-accent dark:text-accent-dark hover:bg-gray-50 dark:hover:bg-gray-850 mt-3 border border-dashed border-gray-200 dark:border-gray-700 transition-colors"
+                >
+                  <span>View Club Heads</span>
+                  <ExternalLink size={13} />
+                </a>
               </div>
             </div>
 
@@ -730,7 +744,7 @@ const LifePage = () => {
             <div className="flex-1">
               <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl shadow-sm overflow-hidden transition-all duration-300">
                 {/* Visual Accent Top Bar */}
-                <div className={`h-1.5 bg-gradient-to-r ${club.color}`} />
+                <div className="h-1.5 bg-primary" />
 
                 <div className="p-6 md:p-8">
                   {/* Header */}
@@ -742,7 +756,7 @@ const LifePage = () => {
 
                   {/* About Section */}
                   <div className="mb-8">
-                    <p className="text-gray-655 dark:text-gray-300 text-sm leading-relaxed whitespace-pre-line">
+                    <p className="text-gray-700 dark:text-gray-300 text-sm text-justify leading-relaxed whitespace-pre-line">
                       {club.desc}
                     </p>
                   </div>
@@ -754,20 +768,19 @@ const LifePage = () => {
                       {/* Flagship Initiatives */}
                       {club.flagship && club.flagship.length > 0 && (
                         <div className="space-y-4">
-                          <h3 className="text-base font-bold font-serif text-gray-800 dark:text-white flex items-center gap-2">
-                            <Sparkles size={18} className="text-primary dark:text-blue-400" />
+                          <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b pb-2 border-gray-100 dark:border-gray-800">
                             Flagship Initiatives &amp; Events
                           </h3>
                           <div className="grid grid-cols-1 gap-4">
                             {club.flagship.map((item, idx) => (
-                              <div key={idx} className="relative overflow-hidden bg-gray-50 dark:bg-gray-850/50 p-5 rounded-2xl border-l-4 border-l-primary/60 dark:border-l-blue-500/60 border-y border-r border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-md transition-all duration-200">
-                                <span className="absolute top-4 right-4 text-[9px] font-bold text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-gray-800/80 px-2 py-0.5 rounded uppercase tracking-wider">
+                              <div key={idx} className="relative overflow-hidden bg-gray-50 dark:bg-gray-850/50 p-5 rounded-2xl border-l-4 border-l-primary/60 dark:border-l-primary/60 border-y border-r border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-md transition-all duration-200">
+                                <span className="absolute top-4 right-4 text-[9px] font-bold text-gray-450 dark:text-gray-500 bg-gray-100 dark:bg-gray-800/80 px-2 py-0.5 rounded uppercase tracking-wider">
                                   Flagship Event
                                 </span>
-                                <h4 className="font-bold text-sm text-gray-800 dark:text-white mb-2 flex items-center gap-2 pr-20">
+                                <h4 className="font-bold text-sm text-gray-800 dark:text-white mb-2 pr-20">
                                   {item.title}
                                 </h4>
-                                <p className="text-xs text-gray-600 dark:text-gray-350 leading-relaxed">
+                                <p className="text-xs text-gray-650 dark:text-gray-400 text-justify leading-relaxed">
                                   {item.desc}
                                 </p>
                               </div>
@@ -779,20 +792,14 @@ const LifePage = () => {
                       {/* Workshops & Training */}
                       {club.workshops && club.workshops.length > 0 && (
                         <div className="space-y-4">
-                          <h3 className="text-base font-bold font-serif text-gray-800 dark:text-white flex items-center gap-2">
-                            <BookOpen size={18} className="text-primary dark:text-blue-400" />
+                          <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b pb-2 border-gray-100 dark:border-gray-800">
                             Workshops &amp; Technical Training
                           </h3>
-                          <div className="grid grid-cols-1 gap-3">
+                          <div className="grid grid-cols-1 gap-4">
                             {club.workshops.map((item, idx) => (
-                              <div key={idx} className="flex items-start gap-3 bg-gray-50 dark:bg-gray-850/50 p-4 rounded-xl border border-gray-100/50 dark:border-gray-800/30 hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-sm transition-all duration-200">
-                                <div className="w-6 h-6 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0 text-emerald-500 mt-0.5">
-                                  <CheckCircle2 size={14} />
-                                </div>
-                                <div>
-                                  <h4 className="text-xs font-bold text-gray-800 dark:text-white mb-0.5">{item.title}</h4>
-                                  <p className="text-[11px] text-gray-500 dark:text-gray-400 leading-relaxed">{item.desc}</p>
-                                </div>
+                              <div key={idx} className="pl-4 border-l-2 border-primary/20 py-1">
+                                <h4 className="text-sm font-bold text-gray-850 dark:text-white mb-1">{item.title}</h4>
+                                <p className="text-xs text-gray-650 dark:text-gray-400 text-justify leading-relaxed">{item.desc}</p>
                               </div>
                             ))}
                           </div>
@@ -804,15 +811,14 @@ const LifePage = () => {
                     <div className="space-y-6">
                       {/* Club Leadership */}
                       <div className="bg-gray-50/50 dark:bg-gray-850/40 p-5 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm space-y-4">
-                        <h3 className="text-sm font-bold text-gray-800 dark:text-white pb-2 border-b border-gray-200/60 dark:border-gray-800 flex items-center gap-2">
-                          <Users size={16} className={club.textColor} />
+                        <h3 className="text-sm font-bold text-primary dark:text-white pb-2 border-b border-gray-200/60 dark:border-gray-800">
                           Club Leadership
                         </h3>
                         {club.leadership.heads && club.leadership.heads.length > 0 ? (
                           <div className="space-y-3">
                             {club.leadership.heads.map((head, idx) => (
                               <div key={idx} className="flex items-center gap-3 p-2.5 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800/80 shadow-xs">
-                                <div className={`w-8 h-8 rounded-full bg-gradient-to-br ${club.color} flex items-center justify-center text-white text-[10px] font-bold shrink-0 shadow-xs`}>
+                                <div className={`w-8 h-8 rounded-full bg-primary/10 dark:bg-primary-dark/10 flex items-center justify-center text-primary dark:text-primary-dark text-[10px] font-bold shrink-0 shadow-xs`}>
                                   {head.name.split(' ').map(n => n[0]).join('')}
                                 </div>
                                 <div className="flex flex-col gap-0.5 min-w-0">
@@ -831,8 +837,7 @@ const LifePage = () => {
 
                       {/* Reach Out / Connect */}
                       <div className="bg-gray-50/50 dark:bg-gray-850/40 p-5 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm space-y-4">
-                        <h3 className="text-sm font-bold text-gray-800 dark:text-white pb-2 border-b border-gray-200/60 dark:border-gray-800 flex items-center gap-2">
-                          <Globe size={16} className={club.textColor} />
+                        <h3 className="text-sm font-bold text-primary dark:text-white pb-2 border-b border-gray-200/60 dark:border-gray-800">
                           Reach Out &amp; Connect
                         </h3>
                         <div className="flex flex-col gap-2">
@@ -874,8 +879,7 @@ const LifePage = () => {
 
                   {/* Activities Gallery (Full Width at Bottom) */}
                   <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-8">
-                    <h3 className="text-base font-bold font-serif text-gray-800 dark:text-white mb-4 flex items-center gap-2">
-                      <Image size={18} className="text-primary dark:text-blue-400" />
+                    <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-4">
                       Activities Gallery
                     </h3>
                     {club.images && club.images.length > 0 ? (
@@ -903,7 +907,7 @@ const LifePage = () => {
                       </div>
                     ) : (
                       <div className="border-2 border-dashed border-gray-200 dark:border-gray-800 rounded-2xl p-8 flex flex-col items-center justify-center text-center bg-gray-50/50 dark:bg-gray-900/10">
-                        <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${club.color} opacity-80 flex items-center justify-center text-white mb-3 shadow-sm`}>
+                        <div className={`w-12 h-12 rounded-xl bg-primary/10 text-primary mb-3 shadow-xs`}>
                           <Image size={22} />
                         </div>
                         <h4 className="text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Gallery Updates in Progress</h4>
@@ -925,24 +929,25 @@ const LifePage = () => {
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Sidebar Activity Selector */}
             <div className="w-full lg:w-72 shrink-0">
-              <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm sticky top-24">
-                <h3 className="text-gray-800 dark:text-white font-bold font-serif mb-4 px-2 pb-2 border-b border-gray-100 dark:border-gray-800">
+              <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-24 space-y-4">
+                <h3 className="text-gray-800 dark:text-white font-bold font-serif px-2 pb-2 border-b border-gray-100 dark:border-gray-800 text-base">
                   National Initiatives
                 </h3>
-                <div className="grid grid-cols-1 gap-1 max-h-[60vh] overflow-y-auto pr-1">
+                {/* Horizontal scrollable on mobile, vertical list on desktop */}
+                <div className="flex flex-row overflow-x-auto gap-2 no-scrollbar lg:flex-col lg:max-h-[60vh] lg:overflow-y-auto lg:pr-1 pb-2 lg:pb-0">
                   {ACTIVITIES.map((act) => {
                     const isSelected = activeActKey === act.id;
                     return (
                       <button
                         key={act.id}
                         onClick={() => setSearchParams({ tab: 'activities', act: act.id })}
-                        className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-left text-sm font-semibold transition-all ${isSelected
-                            ? 'bg-primary text-white shadow-md'
-                            : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/40'
+                        className={`shrink-0 lg:shrink lg:w-full flex items-center gap-2 px-4 py-2 lg:px-3.5 lg:py-3 rounded-full lg:rounded-xl text-left transition-all border ${isSelected
+                            ? 'bg-primary text-white border-primary shadow-sm'
+                            : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-855 hover:border-gray-200 dark:hover:border-gray-700'
                           }`}
                       >
-                        <span className="truncate">{act.name}</span>
-                        <ChevronRight size={14} className={isSelected ? 'text-white' : 'text-gray-400'} />
+                        <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isSelected ? 'bg-white' : 'bg-primary'}`} />
+                        <span className="font-bold text-xs lg:text-sm truncate">{act.name}</span>
                       </button>
                     );
                   })}
@@ -1269,18 +1274,18 @@ const LifePage = () => {
             {/* What's Inside */}
             <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 shadow-sm">
               <h3 className="text-base font-bold font-serif text-gray-800 dark:text-white mb-4">What's Inside Eminence</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {[
-                  { label: "Research Articles", icon: "📄" },
-                  { label: "Creative Writing & Poetry", icon: "✍️" },
-                  { label: "Student Artwork", icon: "🎨" },
-                  { label: "Faculty Interviews", icon: "🎤" },
-                  { label: "Club Highlights", icon: "🏆" },
-                  { label: "Campus Photography", icon: "📷" },
-                ].map((item, i) => (
+                  "Research Articles",
+                  "Creative Writing & Poetry",
+                  "Student Artwork",
+                  "Faculty Interviews",
+                  "Club Highlights",
+                  "Campus Photography"
+                ].map((label, i) => (
                   <div key={i} className="flex items-center gap-2.5 p-3 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700">
-                    <span className="text-lg">{item.icon}</span>
-                    <span className="text-xs font-semibold text-gray-700 dark:text-gray-300">{item.label}</span>
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                    <span className="text-xs font-semibold text-gray-700 dark:text-gray-300">{label}</span>
                   </div>
                 ))}
               </div>
@@ -1300,12 +1305,12 @@ const LifePage = () => {
         ];
 
         const FACILITIES = [
-          { icon: "🏫", title: "Smart Classrooms", desc: "Fully equipped smart classrooms and seminar halls with multimedia projection systems, interactive boards, and high-speed internet connectivity for a modern learning experience." },
-          { icon: "🔬", title: "Advanced Laboratories", desc: "State-of-the-art CS, ECE, and IoT laboratories with industry-grade hardware, VLSI design tools, embedded systems rigs, robotics platforms, and high-performance computing clusters." },
-          { icon: "🏠", title: "Student Hostels", desc: "Separate hostel blocks for boys and girls with 24/7 high-speed Wi-Fi, laundry facilities, round-the-clock security, and a hygienic mess serving balanced and nutritious meals." },
-          { icon: "📚", title: "Central Library", desc: "A well-stocked library with thousands of technical books, journals, international e-resources, IEEE and Springer digital subscriptions, and dedicated reading rooms for focused study." },
-          { icon: "⚽", title: "Sports Facilities", desc: "Dedicated grounds for football, cricket, volleyball, basketball, badminton, and a fully-equipped indoor gymnasium to promote physical fitness and wellness among students." },
-          { icon: "🌐", title: "High-Speed Connectivity", desc: "Campus-wide optical fibre network with gigabit internet access in all academic blocks, hostels, and common areas, enabling seamless academic and research activities." },
+          { title: "Smart Classrooms", desc: "Fully equipped smart classrooms and seminar halls with multimedia projection systems, interactive boards, and high-speed internet connectivity for a modern learning experience." },
+          { title: "Advanced Laboratories", desc: "State-of-the-art CS, ECE, and IoT laboratories with industry-grade hardware, VLSI design tools, embedded systems rigs, robotics platforms, and high-performance computing clusters." },
+          { title: "Student Hostels", desc: "Separate hostel blocks for boys and girls with 24/7 high-speed Wi-Fi, laundry facilities, round-the-clock security, and a hygienic mess serving balanced and nutritious meals." },
+          { title: "Central Library", desc: "A well-stocked library with thousands of technical books, journals, international e-resources, IEEE and Springer digital subscriptions, and dedicated reading rooms for focused study." },
+          { title: "Sports Facilities", desc: "Dedicated grounds for football, cricket, volleyball, basketball, badminton, and a fully-equipped indoor gymnasium to promote physical fitness and wellness among students." },
+          { title: "High-Speed Connectivity", desc: "Campus-wide optical fibre network with gigabit internet access in all academic blocks, hostels, and common areas, enabling seamless academic and research activities." },
         ];
 
         return (
@@ -1353,10 +1358,9 @@ const LifePage = () => {
               <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white mb-4">Campus Facilities</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {FACILITIES.map((f, i) => (
-                  <div key={i} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all">
-                    <span className="text-2xl mb-3 block">{f.icon}</span>
+                  <div key={i} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all border-t-4 border-t-primary">
                     <h4 className="text-sm font-bold text-gray-800 dark:text-white mb-2">{f.title}</h4>
-                    <p className="text-[11px] text-gray-500 dark:text-gray-400 leading-relaxed">{f.desc}</p>
+                    <p className="text-[11px] text-gray-500 dark:text-gray-450 text-justify leading-relaxed">{f.desc}</p>
                   </div>
                 ))}
               </div>
@@ -1391,20 +1395,10 @@ const LifePage = () => {
       case 'overview':
         return (
           <div className="space-y-12">
-            {/* Hero Summary */}
-            <div className="text-center max-w-3xl mx-auto">
-              <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-                Life at IIIT Pune is a perfect blend of rigorous academics, cutting-edge research, and vibrant extracurricular activities. Our campus provides an ecosystem that nurtures creativity, leadership, and holistic development.
-              </p>
-            </div>
-
             {/* Quick Links Dashboard Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 p-6 shadow-sm flex flex-col justify-between">
+              <div className="bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 p-6 shadow-sm flex flex-col justify-between border-t-4 border-t-blue-600">
                 <div>
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4">
-                    <Users size={20} />
-                  </div>
                   <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white mb-2">Student Clubs</h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
                     15+ student-run clubs covering competitive programming, design, dramatics, arts, quiz, music, robotics, and astronomy.
@@ -1415,11 +1409,8 @@ const LifePage = () => {
                 </button>
               </div>
 
-              <div className="bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 p-6 shadow-sm flex flex-col justify-between">
+              <div className="bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 p-6 shadow-sm flex flex-col justify-between border-t-4 border-t-emerald-600">
                 <div>
-                  <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-4">
-                    <Sparkles size={20} />
-                  </div>
                   <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white mb-2">National Activities</h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
                     Celebration of national initiatives like EBSB, Fit India, Swachh Bharat, Yoga Day, and annual hackathons.
@@ -1430,11 +1421,8 @@ const LifePage = () => {
                 </button>
               </div>
 
-              <div className="bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 p-6 shadow-sm flex flex-col justify-between">
+              <div className="bg-white dark:bg-surface-dark rounded-2xl border border-gray-100 dark:border-gray-800 p-6 shadow-sm flex flex-col justify-between border-t-4 border-t-indigo-600">
                 <div>
-                  <div className="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-4">
-                    <Building size={20} />
-                  </div>
                   <h3 className="text-lg font-bold font-serif text-gray-800 dark:text-white mb-2">Permanent Campus</h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
                     100-acre modern campus located in Nanoli, Tal. Maval, Pune with advanced labs and comfortable residential blocks.
@@ -1448,34 +1436,25 @@ const LifePage = () => {
 
             {/* Quick overview of hostels / facilities */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
-                <div className="h-44 bg-blue-50 dark:bg-blue-900/10 flex flex-col items-center justify-center text-gray-500 p-4 border-b border-gray-50 dark:border-gray-850">
-                  <Building size={36} className="text-blue-500/70 mb-2" />
-                  <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest">Nanoli Maval</span>
-                </div>
+              <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-md border border-gray-100 dark:border-gray-800 overflow-hidden">
+                <div className="h-1.5 bg-primary" />
                 <div className="p-6">
-                  <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-2">Hostel &amp; Mess</h3>
-                  <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Comfortable housing with high-speed Wi-Fi, common recreational halls, and a mess serving nutritious and hygienic food.</p>
+                  <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-3">Hostel &amp; Mess</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-400 text-justify leading-relaxed">Comfortable housing with high-speed Wi-Fi, common recreational halls, and a mess serving nutritious and hygienic food.</p>
                 </div>
               </div>
-              <div className="bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
-                <div className="h-44 bg-green-50 dark:bg-green-900/10 flex flex-col items-center justify-center text-gray-500 p-4 border-b border-gray-50 dark:border-gray-850">
-                  <Trophy size={36} className="text-green-500/70 mb-2" />
-                  <span className="text-[10px] font-bold text-green-500 uppercase tracking-widest">Healthy Lifestyle</span>
-                </div>
+              <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-md border border-gray-100 dark:border-gray-800 overflow-hidden">
+                <div className="h-1.5 bg-primary" />
                 <div className="p-6">
-                  <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-2">Sports Facilities</h3>
-                  <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Equipped gymnasium, courts for basketball, volleyball, badminton, table-tennis, and open grounds for cricket and football.</p>
+                  <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-3">Sports Facilities</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-400 text-justify leading-relaxed">Equipped gymnasium, courts for basketball, volleyball, badminton, table-tennis, and open grounds for cricket and football.</p>
                 </div>
               </div>
-              <div className="bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
-                <div className="h-44 bg-purple-50 dark:bg-purple-900/10 flex flex-col items-center justify-center text-gray-500 p-4 border-b border-gray-50 dark:border-gray-850">
-                  <Users size={36} className="text-purple-500/70 mb-2" />
-                  <span className="text-[10px] font-bold text-purple-500 uppercase tracking-widest">Student Fests</span>
-                </div>
+              <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-md border border-gray-100 dark:border-gray-800 overflow-hidden">
+                <div className="h-1.5 bg-primary" />
                 <div className="p-6">
-                  <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-2">Clubs &amp; Societies</h3>
-                  <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Various active student clubs representing competitive coding, robotics, cultural fests, dramatics, music, and quiz leagues.</p>
+                  <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-3">Clubs &amp; Societies</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-400 text-justify leading-relaxed">Various active student clubs representing competitive coding, robotics, cultural fests, dramatics, music, and quiz leagues.</p>
                 </div>
               </div>
             </div>
@@ -1493,27 +1472,25 @@ const LifePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 overflow-x-auto py-3 no-scrollbar scroll-smooth">
             {[
-              { key: 'overview', label: 'Overview', icon: BookOpen },
-              { key: 'clubs', label: 'Professional Clubs', icon: Users },
-              { key: 'activities', label: 'Activities', icon: Sparkles },
-              { key: 'gallery', label: 'Photo Gallery', icon: Image },
-              { key: 'events', label: 'College Events', icon: Calendar },
-              { key: 'hr-summit', label: 'HR Summit (2021)', icon: Award },
-              { key: 'magazine', label: 'Magazine', icon: BookMarked },
-              { key: 'campus', label: 'Permanent Campus', icon: Building }
+              { key: 'overview', label: 'Overview' },
+              { key: 'clubs', label: 'Professional Clubs' },
+              { key: 'activities', label: 'Activities' },
+              { key: 'gallery', label: 'Photo Gallery' },
+              { key: 'events', label: 'College Events' },
+              { key: 'hr-summit', label: 'HR Summit (2021)' },
+              { key: 'magazine', label: 'Magazine' },
+              { key: 'campus', label: 'Permanent Campus' }
             ].map((tab) => {
-              const Icon = tab.icon;
               const isActive = activeTab === tab.key;
               return (
                 <button
                   key={tab.key}
                   onClick={() => handleTabChange(tab.key)}
-                  className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold transition-all shrink-0 ${isActive
-                      ? 'bg-primary text-white shadow-md shadow-blue-500/15 scale-105'
-                      : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-850'
+                  className={`px-4 py-2 rounded-full text-xs font-semibold transition-all shrink-0 border ${isActive
+                      ? 'bg-primary text-white border-primary shadow-sm'
+                      : 'text-gray-600 dark:text-gray-350 bg-white dark:bg-surface-dark border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800'
                     }`}
                 >
-                  <Icon size={14} className={isActive ? 'text-white' : 'text-gray-400'} />
                   {tab.label}
                 </button>
               );
