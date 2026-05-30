@@ -48,7 +48,7 @@ const HeroCarousel = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: current === idx ? 1 : 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="absolute inset-0 w-full h-full object-contain"
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
       ))}
