@@ -162,7 +162,7 @@ const FacultyProfilePage = () => {
             <h1 className="text-xl md:text-2xl font-bold font-serif text-gray-900 dark:text-white mb-2">
               {profile.name}
             </h1>
-            <div className="text-lg text-brand-red font-semibold mb-2 flex flex-col space-y-0.5">
+            <div className="text-xs text-brand-red font-semibold mb-2 flex flex-col space-y-0.5">
               {profile.designation.split('\n').map((desig, idx) => (
                 <span key={idx}>{desig.trim()}</span>
               ))}
@@ -236,11 +236,11 @@ const FacultyProfilePage = () => {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-gray-900 dark:text-white">Email Address</h4>
+                    <h4 className="text-sm font-bold text-gray-900 dark:text-white">Email Address</h4>
                     {profile.email ? (
-                      <a href={`mailto:${profile.email}`} className="text-xs text-primary hover:underline">{profile.email}</a>
+                      <a href={`mailto:${profile.email}`} className="text-sm text-primary hover:underline">{profile.email}</a>
                     ) : (
-                      <span className="text-xs italic text-gray-500">Not provided</span>
+                      <span className="text-sm italic text-gray-500">Not provided</span>
                     )}
                   </div>
                 </div>
@@ -250,30 +250,17 @@ const FacultyProfilePage = () => {
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold text-gray-900 dark:text-white">Phone Number</h4>
+                    <h4 className="text-sm font-bold text-gray-900 dark:text-white">Phone Number</h4>
                     {profile.phone ? (
-                      <span className="text-xs">{profile.phone}</span>
+                      <span className="text-sm">{profile.phone}</span>
                     ) : (
-                      <span className="text-xs italic text-gray-500">Not provided</span>
+                      <span className="text-sm italic text-gray-500">Not provided</span>
                     )}
                   </div>
                 </div>
+
               </div>
             </div>
-
-            {profile.resume && (
-              <div className="mt-6 md:mt-8">
-                <a
-                  href={profile.resume}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-2.5 bg-primary text-white rounded-lg hover:bg-blue-800 transition-colors shadow-sm text-sm font-semibold"
-                >
-                  <FileText className="w-4 h-4 mr-2" />
-                  View Detailed Resume
-                </a>
-              </div>
-            )}
           </div>
         </div>
 
@@ -337,6 +324,17 @@ const FacultyProfilePage = () => {
                 <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
                   {profile.bio || "No biography provided."}
                 </p>
+                {profile.resume && (
+                  <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-6">
+                    <h3 className="text-lg font-serif font-bold text-gray-900 dark:text-white mb-2 flex items-center">
+                      <FileText className="w-5 h-5 mr-2 text-brand-red" />
+                      Detailed Resume
+                    </h3>
+                    <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline break-all inline-flex items-center">
+                      {profile.resume}
+                    </a>
+                  </div>
+                )}
               </div>
             )}
 
