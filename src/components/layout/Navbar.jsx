@@ -232,7 +232,7 @@ const Navbar = () => {
       ],
     },
     { name: "Research",
-     path: "/research",
+     path: "#",
      hasDropdown: true,
      subLinks: [
        { name: "Centers", path: "/research/centres" },
