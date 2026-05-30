@@ -7,9 +7,6 @@ const DirectorDeskPage = () => {
       <PageHeader title="Director's Desk" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
-          <div className="bg-primary dark:bg-primary-dark px-6 py-4">
-            <h2 className="text-xl font-bold text-white">Director's Desk</h2>
-          </div>
           <div className="p-8 md:p-12">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 pb-8 border-b border-gray-200 dark:border-gray-800">
               <div className="w-48 h-48 shrink-0 bg-gray-200 dark:bg-gray-700 rounded-2xl overflow-hidden shadow-md">
