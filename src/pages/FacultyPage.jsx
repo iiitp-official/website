@@ -33,13 +33,13 @@ const FacultyPage = () => {
               key={index}
               className="bg-white dark:bg-surface-dark rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full group"
             >
-              <div className="w-[60%] aspect-[4/5] mx-auto mt-4 bg-gray-100 dark:bg-gray-800 relative overflow-hidden rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mt-6 bg-gray-100 dark:bg-gray-800 relative overflow-hidden rounded-full shadow-md border-4 border-white dark:border-gray-800">
                 {person.image ? (
                   <img 
                     src={person.image} 
                     alt={person.name} 
                     loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     onError={(e) => {
                       e.target.onerror = null;
                       e.target.src = "https://ui-avatars.com/api/?name=" + encodeURIComponent(person.name) + "&background=1B3A6B&color=fff&size=512";
