@@ -267,7 +267,14 @@ const Navbar = () => {
       subLinks: [
         { name: "Faculty", path: "/people/faculty" },
         { name: "Visiting Faculty", path: "/people/visiting-faculty" },
-        { name: "Non-Teaching Staff", path: "/people/non-teaching-staff" },
+        {
+          name: "Non-Teaching Staff",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Regular", path: "/people/non-teaching-staff/regular" },
+            { name: "Contract", path: "/people/non-teaching-staff/contract" }
+          ]
+        },
         { name: "Alumni", path: "/people/alumni" },
       ],
     },

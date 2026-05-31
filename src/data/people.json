@@ -20,7 +20,7 @@
       "expertise": "Artificial Intelligence, Machine Learning, Deep Learning"
     },
     {
-      "designation": "Assistant Professor\nHoD ECE",
+      "designation": "Assistant Professor\nHead of Department(ECE)",
       "image": "https://www.iiitp.ac.in/sites/default/files/inline-images/DSC_8789-min%20%281%29.JPG",
       "name": "Nagendra Kushwaha",
       "expertise": "Low-power (SoC) architecture and design, Mixed-signal and analog circuit design, Hardware accelerators and PE array integration"
@@ -32,13 +32,13 @@
       "expertise": "Wireless Communication, Synchronization Parameters Estimation, Modulation"
     },
     {
-      "designation": "Assistant Professor\nLibrary / Digital Library I/C",
+      "designation": "Assistant Professor\nLibrary / Digital Library In-Charge",
       "image": "https://www.iiitp.ac.in/sites/default/files/inline-images/Dr%20Anagha%20Khiste-min.jpg",
       "name": "Anagha Uday Khiste",
       "expertise": "Algebra, Discrete Mathematics, Lattice theory, Order structure, Graph theory"
     },
     {
-      "designation": "Assistant Professor\nHoD ASH",
+      "designation": "Assistant Professor\nHead of Department(ASH)",
       "image": "https://www.iiitp.ac.in/sites/default/files/inline-images/DSC_9056-min.jpg",
       "name": "Jatin Majithia",
       "expertise": "Commutative Algebra, Graph theory, Lattice theory, Fractional Differential equations"
@@ -56,7 +56,7 @@
       "expertise": "Cloud Computing, Machine Learning, AI, Data Mining, Software Engineering and Formal Methods"
     },
     {
-      "designation": "Assistant Professor\nSports I/C",
+      "designation": "Assistant Professor\nSports In-Charge",
       "image": "https://www.iiitp.ac.in/sites/default/files/2025-04/IMG_6797.jpeg",
       "name": "Shrikant Salve",
       "expertise": "Human-Computer Interaction, Usability Engineering, Augmented Reality, User-Centered Deep Learning"
@@ -65,7 +65,7 @@
       "designation": "Assistant Professor",
       "image": "https://iiitp.ac.in/sites/default/files/inline-images/Profile%20Photo_3.jpg",
       "name": "Sonam Maurya",
-      "expertise": "Wireless Sensor Network, (IoT), (VANET), Mobile and Wireless Networks, Machine Learning, Deep Learning and Image Processing"
+      "expertise": "Wireless Sensor Network, IoT, VANET, Mobile and Wireless Networks, Machine Learning, Deep Learning and Image Processing"
     },
     {
       "designation": "Assistant Professor",
@@ -74,7 +74,7 @@
       "expertise": "Data Science, Data Privacy and security, and Machine Learning"
     },
     {
-      "designation": "Assistant Professor\n(Boy's Hostel 1 Warden)",
+      "designation": "Assistant Professor\nBoy's Hostel 1 Warden",
       "image": "https://www.iiitp.ac.in/sites/default/files/inline-images/20240715170959288_0.jpeg",
       "name": "Dheeraj Dubey",
       "expertise": "5G and Beyond, Free Space Optics, Machine Learning, Under Water Communication"
@@ -86,7 +86,7 @@
       "expertise": "Community Detection Algorithms, Graph Algorithms, Social Network Analysis, Data Science, Artificial Intelligence and Machine Learning"
     },
     {
-      "designation": "Assistant Professor\nFaculty In-charge, TPO",
+      "designation": "Assistant Professor\nFaculty In-Charge, TPO",
       "image": "https://www.iiitp.ac.in/sites/default/files/2025-01/Kaptan%20Singh.png",
       "name": "Kaptan Singh",
       "expertise": "Web of Things, Cyber Security, Algorithms, and Theoretical Computer Science"
@@ -104,7 +104,7 @@
       "expertise": "Cognitive Radio, NOMA, IRS, Energy Harvesting, 5G and beyond communications"
     },
     {
-      "designation": "Assistant Professor\nWebsite I/C",
+      "designation": "Assistant Professor\nWebsite In-Charge",
       "image": "https://www.iiitp.ac.in/sites/default/files/2024-07/Shivangi.jpg",
       "name": "Shivangi Shukla",
       "expertise": "Information Security, Privacy, Cloud Computing Security, and Security and Privacy in Internet of Things."
@@ -116,7 +116,7 @@
       "expertise": "SIW-based Cavity-backed Multi-band Antennas with Intrinsically Isolated Ports and Smart Antenna Design with IoT-enabled devices."
     },
     {
-      "designation": "Assistant Professor\nGirls' Hostel Warden",
+      "designation": "Assistant Professor\nGirl's Hostel Warden",
       "image": "https://www.iiitp.ac.in/sites/default/files/2024-08/image%20%281%29%20%282%29.png",
       "name": "Habila Basumatary",
       "expertise": "Cyber Security in IoT, Smart Micro-Grids, EV Charging, and Energy Efficiency in WSN."
@@ -155,7 +155,7 @@
       "designation": "Adjunct Assistant Professor",
       "image": "https://www.iiitp.ac.in/sites/default/files/2025-01/PriyankaJoshi1_0.jpeg",
       "name": "Priyanka Joshi",
-      "expertise": "Hardware security, Cyber security, Internet-of-Things (IoT) security, and Multi-agent security."
+      "expertise": "Hardware security, Cyber security, IoT security, and Multi-agent security."
     },
     {
       "designation": "Adjunct Assistant Professor",
@@ -210,13 +210,6 @@
       "image": "https://www.iiitp.ac.in/sites/default/files/2026-03/Manish_profile_pic.jpeg",
       "name": "Manish Kumar",
       "expertise": "Machine Learning & Deep learning, Autonomous vehicles vision system"
-    },
-    {
-      "designation": "Adjunct Assistant Professor",
-      "name": "Quick Links"
-    },
-    {
-      "name": "Locate us"
     }
   ],
   "visiting_faculty": [

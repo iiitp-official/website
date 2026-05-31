@@ -127,7 +127,8 @@ function App() {
               <Route path="/people/faculty" element={<FacultyPage />} />
               <Route path="/people/faculty/:slug" element={<FacultyProfilePage />} />
               <Route path="/people/visiting-faculty" element={<VisitingFacultyPage />} />
-              <Route path="/people/non-teaching-staff" element={<NonTeachingStaffPage />} />
+              <Route path="/people/non-teaching-staff" element={<Navigate to="/people/non-teaching-staff/regular" replace />} />
+              <Route path="/people/non-teaching-staff/:type" element={<NonTeachingStaffPage />} />
               <Route path="/people/alumni" element={<AlumniPage />} />
               
               {/* Other Pages */}

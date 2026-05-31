@@ -1,0 +1,412 @@
+[
+  {
+    "name": "Dr. Mukesh Nandanwar",
+    "designation": "STO",
+    "department": "Department of Computer Science and Engineering",
+    "departmentShort": "CSE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-11/Mukesh%20PP.JPG",
+    "description": "",
+    "email": "mukesh.nandanwar@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Anand Mohan",
+    "designation": "Jr. Superintendent",
+    "department": "Establishment",
+    "departmentShort": "Establishment",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-10/1693993262393%20%284%29%20-%20Junior%20Superintendent%20Establishment.JPG",
+    "description": "",
+    "email": "js1.estt@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Aman Ankur",
+    "designation": "Jr. Superintendent",
+    "department": "Store &amp; Purchase",
+    "departmentShort": "Store &amp; Purchase",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-10/aman%20ankur01.jpg",
+    "description": "",
+    "email": "js1.procurement@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Prachi Junghare",
+    "designation": "Jr. Technician",
+    "department": "Department of Electronic and Communication Engineering",
+    "departmentShort": "ECE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/WhatsApp%20Image%202024-09-13%20at%2010.48.30%20AM%20-%20Prachi%20Junghare.jpeg",
+    "description": "",
+    "email": "jt1.ece@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Md Monirul Islam Ansari",
+    "designation": "Jr. Technician",
+    "department": "Library",
+    "departmentShort": "Library",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-12/4Y9A4873_1%20%282%29.jpg",
+    "description": "",
+    "email": "jt.library@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Rajat Arvind Khangar",
+    "designation": "Physical Training CUM Yoga Instructor",
+    "department": "Sports",
+    "departmentShort": "Sports",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/rajat%20pass%20-%20Sports%20IIIT%20Pune.jpg",
+    "description": "",
+    "email": "sports@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Harikrishnan S",
+    "designation": "Jr. Assistant",
+    "department": "Examination Cell",
+    "departmentShort": "Examination Cell",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/HARI%20PASS%20PHOTO%20-%20Examination%20Cell%20IIIT%20Pune.jpeg",
+    "description": "",
+    "email": "asstt1.examination@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Sandip Mandal",
+    "designation": "Jr. Assistant",
+    "department": "Academic",
+    "departmentShort": "Academic",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/WhatsApp%20Image%202024-09-06%20at%2017.06.34%20-%20Academics%20IIIT%20Pune.jpeg",
+    "description": "",
+    "email": "asst1.academics@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Rishika Dakhale",
+    "designation": "Jr. Assistant",
+    "department": "Academic",
+    "departmentShort": "Academic",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/WhatsApp%20Image%202024-09-12%20at%2010.00.59%20AM%20-%20Academics%20IIIT%20Pune.jpeg",
+    "description": "",
+    "email": "asst2.academics@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Jai singh",
+    "designation": "Jr. Assistant",
+    "department": "Accounts and Finance",
+    "departmentShort": "Accounts and Finance",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/jai%20singh.jpg",
+    "description": "",
+    "email": "asstt2.accounts@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "Sudarshan Chivate",
+    "designation": "Jr. Assistant",
+    "department": "Establishment",
+    "departmentShort": "Establishment",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/sudarshan_0_0.JPG",
+    "description": "",
+    "email": "asstt1.estt@iiitp.ac.in",
+    "type": "Regular"
+  },
+  {
+    "name": "John Gonsalves",
+    "designation": "AOSD",
+    "department": "Accounts and Finance",
+    "departmentShort": "Accounts and Finance",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/jg%20-%20John%20G.jpg",
+    "description": "",
+    "email": "aosd.aa@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Aditya Sharma",
+    "designation": "Office Executive",
+    "department": "Accounts and Finance",
+    "departmentShort": "Accounts and Finance",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/Aditya%20shaAccounts%20IIIT%20Pune.jpg",
+    "description": "",
+    "email": "asstt1.accounts@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Mr. Suresh Dhunde",
+    "designation": "Advisor",
+    "department": "Department of Civil Engineering",
+    "departmentShort": "Civil",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/Suresh%20Dhunde.jpg",
+    "description": "",
+    "email": "suresh@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Arjun M Survase",
+    "designation": "",
+    "department": "ECE",
+    "departmentShort": "ECE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/IMG_20181031_163621%20-%20Arjun%20Survase.jpg",
+    "description": "",
+    "email": "arjunsurvase@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Phulchand Chavan",
+    "designation": "Sr. Office Executive",
+    "department": "Examination cell",
+    "departmentShort": "Examination Cell",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/Phulchandra.jpg",
+    "description": "",
+    "email": "phulchandchavan@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Rishu Yadav",
+    "designation": "Lab Technician",
+    "department": "Department of Electronic Communication and Engineering",
+    "departmentShort": "ECE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/4b18fd52-d35d-45c8-b2cb-f87ca4f34465.png",
+    "description": "",
+    "email": "rishuyadav21@ece.iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Mr. Ranjit Ashok Tambe",
+    "designation": "",
+    "department": "Civil",
+    "departmentShort": "Civil",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-12/DSC_7074%20%281%29.JPG",
+    "description": "",
+    "email": "jecivil@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Navin Kumar Thakur",
+    "designation": "Hostel Attendant",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/IMG_20240910_113544%20-%20Navin%20Thakur.jpg",
+    "description": "",
+    "email": "navinnavinthakur@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "LAXMAN APPASAHEB SHINDE",
+    "designation": "Sr. Office Executive",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/9881729759.jpg",
+    "description": "",
+    "email": "laxmanshinde@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Bhumika Patankar",
+    "designation": "Lab Technician",
+    "department": "Department of Computer Science and Engineering",
+    "departmentShort": "CSE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/Bhumika%20Patankar.jpg",
+    "description": "",
+    "email": "bhumika.patankar@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Pallavi Ramdas Sane",
+    "designation": "Lab Technician",
+    "department": "Department of Computer Science and Engineering",
+    "departmentShort": "CSE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2026-04/Pallvi%20pic.jpeg",
+    "description": "",
+    "email": "pallavi.sane@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Girish Kumar K",
+    "designation": "HK &amp; Security Supervisor",
+    "department": "Store &amp; Purchase",
+    "departmentShort": "Store &amp; Purchase",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/Photo%20-%20Supervisor%20House%20Keep%20Security.jpg",
+    "description": "",
+    "email": "supervisor.hks@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Vishnu Arjun Rupnawar",
+    "designation": "Electrician",
+    "department": "Maintenance",
+    "departmentShort": "Maintenance",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/Vishnu.jpg",
+    "description": "",
+    "email": "",
+    "type": "Contract"
+  },
+  {
+    "name": "Rajendra Daiya",
+    "designation": "Office Executive",
+    "department": "Establishment",
+    "departmentShort": "Establishment",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/RD%20Potho%20-%20Assistant%20Establishment.jpg",
+    "description": "",
+    "email": "asstt2.estt@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Meenatai Anurag Jadhav",
+    "designation": "Office Executive",
+    "department": "Purchase Department",
+    "departmentShort": "Purchase",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/Photo%20M%20-%20Assistant%20Procurement.jpg",
+    "description": "",
+    "email": "asstt1.procurement@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Sejal Kailas Bhujbal",
+    "designation": "Lab Technician",
+    "department": "Department of Computer Science and Engineering",
+    "departmentShort": "CSE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/WhatsApp%20Image%202025-09-11%20at%2012.50.18%20PM%20-%20Sejal%20Bhujbal.jpeg",
+    "description": "",
+    "email": "sejal.bhujbal@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Shoobhi Mehrotra",
+    "designation": "Library Assistant",
+    "department": "Library",
+    "departmentShort": "Library",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/downloaded_file.pdf%20%281%29%20-%20Library%20Assistant.jpg",
+    "description": "",
+    "email": "asstt1.library@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Viraj Pradip Lohakare",
+    "designation": "Office Executive",
+    "department": "Registrar Office",
+    "departmentShort": "Registrar Office",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/viraj%20pA.jpg",
+    "description": "",
+    "email": "patoreg@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Kanchan Joshi",
+    "designation": "Lab Technician",
+    "department": "Department of Electronic Communication and Engineering",
+    "departmentShort": "ECE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/20250819_224835%20-%20Kanchan%20Joshi.jpg",
+    "description": "",
+    "email": "kanchan.joshi@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Arati Ramesh Kalbande",
+    "designation": "Office Executive",
+    "department": "Academic",
+    "departmentShort": "Academic",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/kalbande%20Arti.jpg",
+    "description": "",
+    "email": "asst3.academics@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Sudhir kumar",
+    "designation": "Office Executive",
+    "department": "Examination Cell",
+    "departmentShort": "Examination Cell",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/IMG_4642%20-%20Sudhir%20Kumar.jpeg",
+    "description": "",
+    "email": "asstt2.examination@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Ajay Siddharth Sirsat",
+    "designation": "Carpenter",
+    "department": "Maintenance",
+    "departmentShort": "Maintenance",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-10/_THC9922%20%282%29.jpg",
+    "description": "",
+    "email": "",
+    "type": "Contract"
+  },
+  {
+    "name": "Borge Angad Chandrakant",
+    "designation": "Office Executive",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/WhatsApp%20Image%202025-06-26%20at%209.09.06%20PM%20-%20Angad%20Borge.jpeg",
+    "description": "",
+    "email": "angadborge691@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Shriram Chandrasen Kharade",
+    "designation": "Office Executive",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/WhatsApp%20Image%202025-06-26%20at%208.33.45%20PM%20-%20shriram%20kharade.jpeg",
+    "description": "",
+    "email": "shriramkharade1999@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Minakshi Maurya",
+    "designation": "Office Executive",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/Minakshi%20Maurya.jpg",
+    "description": "",
+    "email": "minakshimaurya2004@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Krushna Mahadev Survase",
+    "designation": "Office Executive",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2025-09/IMG_20231105_121853%20-%20Krushna%20Survase.jpg",
+    "description": "",
+    "email": "krushnasurvase747421@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Sudhir Kumar Gupta",
+    "designation": "System Administrator",
+    "department": "Department of Computer Science and Engineering",
+    "departmentShort": "CSE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2026-01/my%20photo%20-%20Sudhir%20Kumar%20Gupta.jpg",
+    "description": "",
+    "email": "sudhirkgupta@iiit.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Kedar Bhogshetti",
+    "designation": "Placement Officer",
+    "department": "Training &amp; Placements",
+    "departmentShort": "Training &amp; Placement",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2026-01/Kedar1%20-%20Placement%20IIIT%20Pune.jpg",
+    "description": "",
+    "email": "placements@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
+    "name": "Sumit Shashikant Patil",
+    "designation": "Office Executive",
+    "department": "Store and Purchase Department",
+    "departmentShort": "",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2026-01/sumitpiccc.jpeg",
+    "description": "",
+    "email": "",
+    "type": "Contract"
+  },
+  {
+    "name": "Aditya Raj Gupta",
+    "designation": "Lab Technician",
+    "department": "Department of Computer Science and Engineering",
+    "departmentShort": "CSE",
+    "image": "https://www.iiitp.ac.in/sites/default/files/2024-09/20220810093726_IMG_2174~3%20-%20Aditya%20Raj%20Gupta.jpg",
+    "description": "",
+    "email": "adityagupta@iiitp.ac.in",
+    "type": "Contract"
+  }
+]
