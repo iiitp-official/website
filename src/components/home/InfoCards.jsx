@@ -400,7 +400,7 @@ const InfoCards = () => {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold font-serif text-primary dark:text-white">
-                Institute Achievements
+                Our Achievements
               </h2>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                 Celebrating outstanding milestones achieved by our students and faculty.

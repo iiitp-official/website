@@ -6,17 +6,17 @@ const ImportantLinks = () => {
   const [activeTab, setActiveTab] = useState('links');
 
   return (
-    <section className="py-16 bg-transparent transition-colors duration-200">
+    <section className="py-8 bg-transparent transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Full Width Container */}
-        <div className="w-full bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden flex flex-col lg:flex-row min-h-[480px]">
+        <div className="w-full bg-white dark:bg-surface-dark rounded-xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden flex flex-col lg:flex-row min-h-[300px]">
 
           {/* Sidebar Tabs */}
           <div className="lg:w-[25%] bg-primary dark:bg-gray-900 flex flex-row lg:flex-col overflow-x-auto lg:overflow-visible no-scrollbar border-b lg:border-b-0 lg:border-r border-blue-900/30">
             <button
               onClick={() => setActiveTab('links')}
-              className={`flex-shrink-0 text-left px-6 py-6 font-bold font-serif border-b-4 lg:border-b-0 lg:border-l-4 transition-colors whitespace-nowrap text-lg ${
+              className={`flex-shrink-0 text-left px-5 py-3 font-bold font-serif border-b-4 lg:border-b-0 lg:border-l-4 transition-colors whitespace-nowrap text-base ${
                 activeTab === 'links'
                   ? 'text-white border-accent bg-blue-800/40 dark:bg-gray-800'
                   : 'text-blue-300 border-transparent hover:text-white hover:bg-blue-800/20 dark:hover:bg-gray-800/50'
@@ -29,7 +29,7 @@ const ImportantLinks = () => {
             </button>
             <button
               onClick={() => setActiveTab('downloads')}
-              className={`flex-shrink-0 text-left px-6 py-6 font-bold font-serif border-b-4 lg:border-b-0 lg:border-l-4 transition-colors whitespace-nowrap text-lg ${
+              className={`flex-shrink-0 text-left px-5 py-3 font-bold font-serif border-b-4 lg:border-b-0 lg:border-l-4 transition-colors whitespace-nowrap text-base ${
                 activeTab === 'downloads'
                   ? 'text-white border-accent bg-blue-800/40 dark:bg-gray-800'
                   : 'text-blue-300 border-transparent hover:text-white hover:bg-blue-800/20 dark:hover:bg-gray-800/50'
@@ -43,7 +43,7 @@ const ImportantLinks = () => {
           </div>
 
           {/* Content Area */}
-          <div className="flex-1 p-8 md:p-10 overflow-hidden">
+          <div className="flex-1 p-5 md:p-6 overflow-hidden">
             <AnimatePresence mode="wait">
               {activeTab === 'links' && (
                 <motion.div
@@ -53,11 +53,11 @@ const ImportantLinks = () => {
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="text-xl md:text-2xl font-bold font-serif text-primary dark:text-white mb-8 flex items-center">
+                  <h3 className="text-xl md:text-2xl font-bold font-serif text-primary dark:text-white mb-6 pb-4 border-b border-gray-400 dark:border-gray-700 flex items-center">
                     <ExternalLink className="mr-3 text-accent dark:text-accent-dark" size={24} />
                     Institutional Links
                   </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-12 gap-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
                     {[
                       { name: 'Ministry of Education', url: 'https://www.education.gov.in/' },
                       { name: 'National Informatics Centre (NIC)', url: 'https://www.nic.gov.in/' },
@@ -74,9 +74,9 @@ const ImportantLinks = () => {
                         href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark group font-medium bg-gray-50 dark:bg-gray-800/50 p-4 rounded-xl border border-gray-100 dark:border-gray-700/50 transition-all hover:shadow-md text-sm md:text-base"
+                        className="flex items-center text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark group font-medium border-b border-gray-100 dark:border-gray-800/50 pb-2 transition-colors text-sm"
                       >
-                        <div className="p-2.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 mr-4 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
+                        <div className="p-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 mr-3 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
                           <ExternalLink size={16} />
                         </div>
                         {link.name}
@@ -95,11 +95,11 @@ const ImportantLinks = () => {
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="text-xl md:text-2xl font-bold font-serif text-primary dark:text-white mb-8 flex items-center">
+                  <h3 className="text-xl md:text-2xl font-bold font-serif text-primary dark:text-white mb-6 pb-4 border-b border-gray-400 dark:border-gray-700 flex items-center">
                     <Download className="mr-3 text-accent dark:text-accent-dark" size={24} />
                     Forms &amp; Documents
                   </h3>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-h-[320px] overflow-y-auto pr-2 custom-scrollbar">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 max-h-[240px] overflow-y-auto pr-2 custom-scrollbar">
                     {[
                       { name: 'Medical Reimbursement Claim Form', path: '/downloads/Medical reimbursement CLAIM FORM.pdf' },
                       { name: 'Children Education Allowance Form', path: '/downloads/cea-form-iiitp.pdf' },
@@ -137,7 +137,7 @@ const ImportantLinks = () => {
                     ].map((doc, idx) => (
                       <div
                         key={idx}
-                        className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group"
+                        className="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group"
                       >
                         <span className="text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center pr-3">
                           <span className="w-8 h-8 rounded bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center mr-3 font-bold text-[10px] uppercase shrink-0">
