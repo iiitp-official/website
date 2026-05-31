@@ -1,8 +1,8 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import PageHeader from '../components/shared/PageHeader';
-import { 
-  FileText, ArrowLeft, Mail, Phone, BookOpen, GraduationCap, 
+import {
+  FileText, ArrowLeft, Mail, Phone, BookOpen, GraduationCap,
   Link as LinkIcon, User, Award, Presentation, Briefcase, Users,
   ChevronRight, ChevronLeft
 } from 'lucide-react';
@@ -12,7 +12,7 @@ import peopleData from '../data/people.json';
 const FacultyProfilePage = () => {
   const { slug } = useParams();
   const [activeTab, setActiveTab] = useState('biography');
-  
+
   // Tab Scrolling Logic
   const tabsRef = useRef(null);
   const [showRightScroll, setShowRightScroll] = useState(true);
@@ -117,10 +117,11 @@ const FacultyProfilePage = () => {
 
   return (
     <div className="bg-surface dark:bg-bg-dark min-h-screen pb-20">
-      
+
       <PageHeader
         title="Faculty Profile"
         backgroundImage="/campus-image.jpg"
+        compact={true}
       >
         <Link
           to="/people/faculty"
@@ -132,7 +133,7 @@ const FacultyProfilePage = () => {
       </PageHeader>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        
+
         {/* TOP SECTION: Photo and Info side-by-side on desktop */}
         <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg p-6 md:p-8 mb-8 border border-gray-100 dark:border-gray-800 flex flex-col md:flex-row gap-8 items-center md:items-start relative overflow-hidden">
           {/* Subtle Background Accent */}
@@ -174,7 +175,7 @@ const FacultyProfilePage = () => {
             )}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-gray-700 dark:text-gray-300">
-              
+
               {/* Left Column: Education & Links */}
               <div className="flex flex-col gap-6">
                 {/* Education */}
@@ -266,12 +267,12 @@ const FacultyProfilePage = () => {
 
         {/* BOTTOM SECTION: Sticky Tabs & Content */}
         <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 min-h-[400px] relative">
-          
+
           {/* Sticky Tab Bar */}
           <div className="sticky top-20 z-30 bg-white dark:bg-surface-dark rounded-t-2xl border-b border-gray-200 dark:border-gray-800 shadow-sm relative group overflow-hidden">
-            
+
             {showLeftScroll && (
-              <button 
+              <button
                 onClick={() => scrollTabs('left')}
                 className="absolute left-0 top-0 bottom-0 z-10 w-12 flex items-center justify-start pl-2 bg-gradient-to-r from-white via-white/90 to-transparent dark:from-surface-dark dark:via-surface-dark/90 text-gray-500 hover:text-brand-red transition-colors"
                 aria-label="Scroll left"
@@ -280,7 +281,7 @@ const FacultyProfilePage = () => {
               </button>
             )}
 
-            <div 
+            <div
               ref={tabsRef}
               onScroll={handleScroll}
               className="hide-scrollbar overflow-x-auto flex relative scroll-smooth"
@@ -289,11 +290,10 @@ const FacultyProfilePage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center whitespace-nowrap px-6 py-4 font-medium text-xs transition-colors relative ${
-                    activeTab === tab.id
+                  className={`flex items-center whitespace-nowrap px-6 py-4 font-medium text-xs transition-colors relative ${activeTab === tab.id
                       ? 'text-brand-red dark:text-brand-red-dark bg-red-50/50 dark:bg-gray-800/50'
                       : 'text-gray-600 hover:text-brand-red dark:text-gray-400 dark:hover:text-brand-red-dark hover:bg-red-50/30 dark:hover:bg-gray-800/30'
-                  }`}
+                    }`}
                 >
                   {tab.icon}
                   {tab.label}
@@ -305,7 +305,7 @@ const FacultyProfilePage = () => {
             </div>
 
             {showRightScroll && (
-              <button 
+              <button
                 onClick={() => scrollTabs('right')}
                 className="absolute right-0 top-0 bottom-0 z-10 w-16 flex items-center justify-end pr-3 bg-gradient-to-l from-white via-white/90 to-transparent dark:from-surface-dark dark:via-surface-dark/90 text-gray-500 hover:text-brand-red transition-colors"
                 aria-label="Scroll right"
@@ -317,7 +317,7 @@ const FacultyProfilePage = () => {
 
           {/* Tab Content Area */}
           <div className="p-8">
-            
+
             {activeTab === 'biography' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Biography</h2>
