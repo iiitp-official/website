@@ -13,10 +13,6 @@ const Breadcrumb = () => {
         Home
       </Link>
       {allPaths.map((value, index) => {
-        if (value.toLowerCase() === 'about' || value.toLowerCase() === 'academics' || value.toLowerCase() === 'administration' || value.toLowerCase() === 'research') {
-          return null;
-        }
-
         const last = index === allPaths.length - 1;
         const to = `/${allPaths.slice(0, index + 1).join('/')}`;
         const specialNames = {
@@ -43,7 +39,7 @@ const Breadcrumb = () => {
           label = value.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
         }
 
-        const isUnclickable = ['btech', 'mtech', 'scholar', 'funded-projects', 'notice'].includes(value.toLowerCase());
+        const isUnclickable = ['about', 'academics', 'administration', 'research', 'people', 'btech', 'mtech', 'scholar', 'funded-projects', 'e-tender'].includes(value.toLowerCase());
 
         return (
           <React.Fragment key={to}>

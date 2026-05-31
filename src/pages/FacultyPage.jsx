@@ -16,7 +16,7 @@ const FacultyPage = () => {
   }, []);
 
   return (
-    <div className="bg-surface dark:bg-surface-dark min-h-screen">
+    <div className="min-h-screen">
       <PageHeader 
         title="Faculty Members" 
         subtitle="Meet the distinguished faculty of IIIT Pune"

@@ -212,7 +212,7 @@ const InfoCards = () => {
 
           {/* Card 1: Welcome */}
           <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md overflow-hidden border border-gray-150 dark:border-gray-800 flex flex-col group">
-            <div className="bg-primary dark:bg-gray-800 text-white py-3 px-5 font-bold font-serif text-lg">
+            <div className="bg-primary dark:bg-gray-800 text-white py-3 px-5 font-bold font-serif text-lg md:text-xl">
               Welcome to IIIT Pune
             </div>
             <div className="p-5 flex flex-col flex-grow">
@@ -230,7 +230,7 @@ const InfoCards = () => {
 
           {/* Card 2: Admissions */}
           <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md overflow-hidden border border-gray-150 dark:border-gray-800 flex flex-col">
-            <div className="bg-primary dark:bg-gray-800 text-white py-3 px-5 font-bold font-serif text-lg">
+            <div className="bg-primary dark:bg-gray-800 text-white py-3 px-5 font-bold font-serif text-lg md:text-xl">
               Admissions 2025-26
             </div>
             <div className="p-5 flex flex-col flex-grow">
@@ -252,15 +252,12 @@ const InfoCards = () => {
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">International Admissions (DASA)</span>
                 </li>
               </ul>
-              {/* <Link to="/academics" className="inline-block text-center w-full py-2.5 bg-brand-red hover:bg-red-700 text-white font-medium rounded-md shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 text-sm">
-                Apply Now
-              </Link> */}
             </div>
           </div>
 
           {/* Card 3: Director's Desk */}
           <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md overflow-hidden border border-gray-150 dark:border-gray-800 flex flex-col group">
-            <div className="bg-primary dark:bg-gray-800 text-white py-3 px-5 font-bold font-serif text-lg">
+            <div className="bg-primary dark:bg-gray-800 text-white py-3 px-5 font-bold font-serif text-lg md:text-xl">
               Director's Desk
             </div>
             <div className="p-5 flex flex-col flex-grow">
@@ -274,7 +271,7 @@ const InfoCards = () => {
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed text-justify mb-4 flex-grow line-clamp-4">
-                "Indian Institute of Information Technology Pune, established in 2016, is one of the fastest-growing IIITs among 20 newly established IIITs by the MOE, Government of India, and industry partners as a Not-for-profit Public-Private Partnership (N-PPP) Institution. IIIT Pune is committed to imparting high-quality technical education and instilling a long-term vision among students..."
+                "Prof. Vineet Kansal has assumed charge as the Director of the Indian Institute of Information Technology (IIIT) Pune with effect from the forenoon of April 4, 2026, following his appointment by the Hon’ble President of India in his capacity as the Visitor of the Institute. The appointment order was issued by the Ministry of Education, Government of India. As Director, Prof. Kansal is committed to strengthening the Institute’s academic and research ecosystem, fostering innovation, and guiding IIIT Pune in alignment with its vision and mission, while addressing emerging national priorities in higher education."
               </p>
               <Link to="/about/director-desk" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors mt-auto">
                 Read Director's Message <ChevronRight size={16} className="ml-1" />
@@ -286,9 +283,9 @@ const InfoCards = () => {
 
         {/* Why IIIT Pune Section */}
         {/* <div className="mt-16 p-8 md:p-12 bg-primary/50 dark:bg-primary/20 rounded-3xl border border-primary/10 dark:border-primary/30"> */}
-        <div className="mt-16 pt-12 border-t border-gray-200 dark:border-gray-800/60">
+        <div className="mt-16 pt-12">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold font-serif text-primary dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold font-serif text-primary dark:text-white">
               Why IIIT Pune?
             </h2>
           </div>
@@ -399,10 +396,10 @@ const InfoCards = () => {
         </div>
 
         {/* Row 2: Achievements Section */}
-        <div className="mt-16 pt-12 border-t border-gray-200 dark:border-gray-800/60">
+        <div className="mt-16 pt-12">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold font-serif text-primary dark:text-white">
+              <h2 className="text-3xl md:text-4xl font-bold font-serif text-primary dark:text-white">
                 Institute Achievements
               </h2>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">

@@ -116,7 +116,7 @@ const FacultyProfilePage = () => {
   ];
 
   return (
-    <div className="bg-surface dark:bg-bg-dark min-h-screen pb-20">
+    <div className="min-h-screen pb-20">
 
       <PageHeader
         title="Faculty Profile"

@@ -173,22 +173,22 @@ const BtechEcePage = () => {
               </h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="/academics/btech/cse" className="block text-gray-600 dark:text-gray-400 hover:text-accent-dark dark:hover:text-accent-dark transition-colors font-medium">
+                  <a href="/academics/btech/cse" className="block text-gray-600 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors font-medium">
                     B.Tech CSE
                   </a>
                 </li>
                 <li>
-                  <a href="/academics/btech/honors" className="block text-gray-600 dark:text-gray-400 hover:text-accent-dark dark:hover:text-accent-dark transition-colors font-medium">
+                  <a href="/academics/btech/honors" className="block text-gray-600 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors font-medium">
                     B.Tech Honours
                   </a>
                 </li>
                 <li className="pt-3 mt-3 border-t border-gray-100 dark:border-gray-800">
-                  <a href="/academics/mtech/cse" className="block text-gray-600 dark:text-gray-400 hover:text-accent-dark dark:hover:text-accent-dark transition-colors font-medium">
+                  <a href="/academics/mtech/cse" className="block text-gray-600 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors font-medium">
                     M.Tech CSE
                   </a>
                 </li>
                 <li>
-                  <a href="/academics/mtech/ece" className="block text-gray-600 dark:text-gray-400 hover:text-accent-dark dark:hover:text-accent-dark transition-colors font-medium">
+                  <a href="/academics/mtech/ece" className="block text-gray-600 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors font-medium">
                     M.Tech ECE
                   </a>
                 </li>

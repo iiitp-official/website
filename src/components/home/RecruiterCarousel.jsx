@@ -39,7 +39,7 @@ const RecruiterCarousel = () => {
             <p className="text-accent dark:text-accent-dark text-xs font-semibold uppercase tracking-widest mb-1">
               Our Recruiters
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold font-serif text-primary dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold font-serif text-primary dark:text-white">
               Our Students at Leading Companies
             </h2>
           </div>

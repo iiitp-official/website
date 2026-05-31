@@ -23,7 +23,7 @@ const NonTeachingStaffPage = () => {
   }, [staffType]);
 
   return (
-    <div className="bg-surface dark:bg-bg-dark min-h-screen pb-20">
+    <div className="min-h-screen pb-20">
       <PageHeader 
         title={`${staffType} Non-Teaching Staff`} 
         subtitle="The dedicated team supporting our institution's operations"

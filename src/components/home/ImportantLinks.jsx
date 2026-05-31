@@ -53,7 +53,7 @@ const ImportantLinks = () => {
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="text-2xl font-bold font-serif text-primary dark:text-white mb-8 flex items-center">
+                  <h3 className="text-xl md:text-2xl font-bold font-serif text-primary dark:text-white mb-8 flex items-center">
                     <ExternalLink className="mr-3 text-accent dark:text-accent-dark" size={24} />
                     Institutional Links
                   </h3>
@@ -74,9 +74,11 @@ const ImportantLinks = () => {
                         href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark group font-medium border-b border-gray-100 dark:border-gray-800/50 pb-4 transition-colors text-lg"
+                        className="flex items-center text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark group font-medium bg-gray-50 dark:bg-gray-800/50 p-4 rounded-xl border border-gray-100 dark:border-gray-700/50 transition-all hover:shadow-md text-sm md:text-base"
                       >
-                        <span className="w-2 h-2 rounded-full bg-accent/40 dark:bg-accent-dark/40 mr-4 group-hover:bg-accent dark:group-hover:bg-accent-dark transition-colors shrink-0" />
+                        <div className="p-2.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 mr-4 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
+                          <ExternalLink size={16} />
+                        </div>
                         {link.name}
                         <ExternalLink size={14} className="ml-auto opacity-0 group-hover:opacity-70 transition-opacity shrink-0" />
                       </a>
@@ -93,7 +95,7 @@ const ImportantLinks = () => {
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="text-2xl font-bold font-serif text-primary dark:text-white mb-8 flex items-center">
+                  <h3 className="text-xl md:text-2xl font-bold font-serif text-primary dark:text-white mb-8 flex items-center">
                     <Download className="mr-3 text-accent dark:text-accent-dark" size={24} />
                     Forms &amp; Documents
                   </h3>
