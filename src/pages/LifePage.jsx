@@ -56,7 +56,13 @@ const CLUBS = {
       "Created the official visual branding and media kit for iConclave '26",
       "Conducted campus-wide Figma and Illustrator design bootcamps for 150+ students"
     ],
-    images: [],
+    images: [
+      "/assets/clubs/blueprint_1.png",
+      "/assets/clubs/blueprint_2.png",
+      "/assets/clubs/blueprint_3.png",
+      "/assets/clubs/blueprint_4.png",
+      "/assets/clubs/blueprint_5.png"
+    ],
     leadership: { "heads": [], "email": "blueprint@iiitp.ac.in", "instagram": "@blueprint_iiitp", "website": "" }
   },
   'rang': {
@@ -89,7 +95,13 @@ const CLUBS = {
       "Successfully compiled and published the RANG Annual Art Report 2025-26 showcasing student art collections",
       "Completed multiple collaborative art installations around the college host zones"
     ],
-    images: [],
+    images: [
+      "/assets/clubs/rang_1.jpeg",
+      "/assets/clubs/rang_2.jpeg",
+      "/assets/clubs/rang_3.png",
+      "/assets/clubs/rang_4.png",
+      "/assets/clubs/rang_5.jpg"
+    ],
     leadership: { "heads": [{ "name": "Avani Patil", "role": "Club Head" }, { "name": "Akshad Khune", "role": "Club Co-Head" }], "email": "rang@iiitp.ac.in", "instagram": "@rangiiitp", "website": "" }
   },
   'quantnum': {
