@@ -306,37 +306,37 @@ const InfoCards = () => {
                 </div>
 
                 <div className="space-y-5">
-                  <div className="flex gap-4">
-                    <div className="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-blue-600 dark:text-blue-400 h-10 w-10 flex items-center justify-center shrink-0">
-                      <Code size={18} />
+                  <div className="flex gap-3">
+                    <div className="mt-1.5 shrink-0">
+                      <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 block"></span>
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">Competitive Coding Culture</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
-                        Strong presence in SIH (winners in 2023, 2024), ACM-ICPC, and high ranking coders on Codeforces (including Grandmaster title) driven by active student coding clubs.
+                      <h4 className="font-bold text-base text-gray-800 dark:text-gray-200">Competitive Coding Culture</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed text-justify">
+                        Strong presence in SIH (winners in 2023, 2024), ACM-ICPC, and high ranking coders on Codeforces driven by active student coding clubs.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
-                    <div className="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-blue-600 dark:text-blue-400 h-10 w-10 flex items-center justify-center shrink-0">
-                      <Award size={18} />
+                  <div className="flex gap-3">
+                    <div className="mt-1.5 shrink-0">
+                      <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 block"></span>
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">Outstanding Placements</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
+                      <h4 className="font-bold text-base text-gray-800 dark:text-gray-200">Outstanding Placements</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Impressive track record with a highest package of 53 LPA for B.Tech in recent placement drives, with recruiters like Microsoft, Amazon, and Atlassian.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
-                    <div className="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-blue-600 dark:text-blue-400 h-10 w-10 flex items-center justify-center shrink-0">
-                      <BookOpen size={18} />
+                  <div className="flex gap-3">
+                    <div className="mt-1.5 shrink-0">
+                      <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 block"></span>
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">State-of-the-Art Curriculum</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
+                      <h4 className="font-bold text-base text-gray-800 dark:text-gray-200">State-of-the-Art Curriculum</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Industry-relevant curriculum tailored for current developments in Artificial Intelligence, Machine Learning, IoT, and Cyber-Physical Systems.
                       </p>
                     </div>
@@ -357,37 +357,37 @@ const InfoCards = () => {
                 </div>
 
                 <div className="space-y-5">
-                  <div className="flex gap-4">
-                    <div className="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-brand-red dark:text-brand-red-dark h-10 w-10 flex items-center justify-center shrink-0">
-                      <Microscope size={18} />
+                  <div className="flex gap-3">
+                    <div className="mt-1.5 shrink-0">
+                      <span className="w-2 h-2 rounded-full bg-brand-red dark:bg-brand-red-dark block"></span>
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">Rich Research Ecosystem</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
+                      <h4 className="font-bold text-base text-gray-800 dark:text-gray-200">Rich Research Ecosystem</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Over ₹3 Crores of ongoing and completed external research grants from MeitY, DST-SERB, and various research ministries.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
-                    <div className="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-brand-red dark:text-brand-red-dark h-10 w-10 flex items-center justify-center shrink-0">
-                      <FileText size={18} />
+                  <div className="flex gap-3">
+                    <div className="mt-1.5 shrink-0">
+                      <span className="w-2 h-2 rounded-full bg-brand-red dark:bg-brand-red-dark block"></span>
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-gray-850 dark:text-gray-200">Intellectual Property & Innovation</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
-                        Robust support for filing patents, copyrights, and publications in top-tier international journals and research conferences.
+                      <h4 className="font-bold text-base text-gray-800 dark:text-gray-200">Intellectual Property & Innovation</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed text-justify">
+                        Robust support for filing patents, copyrights, and publications in top-tier international journals and research conferences with strong support from major organisations like the IEEE.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
-                    <div className="p-2 rounded-lg bg-gray-50 dark:bg-gray-800 text-brand-red dark:text-brand-red-dark h-10 w-10 flex items-center justify-center shrink-0">
-                      <Cpu size={18} />
+                  <div className="flex gap-3">
+                    <div className="mt-1.5 shrink-0">
+                      <span className="w-2 h-2 rounded-full bg-brand-red dark:bg-brand-red-dark block"></span>
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-gray-800 dark:text-gray-200">Autonomy & Collaborations</h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed text-justify">
+                      <h4 className="font-bold text-base text-gray-800 dark:text-gray-200">Autonomy & Collaborations</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed text-justify">
                         Academic and research freedom to lead collaborative laboratories, industry consulting projects, and global university partnerships.
                       </p>
                     </div>
