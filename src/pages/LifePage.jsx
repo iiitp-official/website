@@ -1476,7 +1476,7 @@ const LifePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
+    <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="Life @ IIIT Pune" />
 
       {/* Main Tabs Navigation Bar */}

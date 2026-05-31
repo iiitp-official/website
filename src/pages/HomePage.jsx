@@ -8,7 +8,7 @@ import TestimonialsCarousel from '../components/home/TestimonialsCarousel';
 
 const HomePage = () => {
   return (
-    <main className="w-full">
+    <main className="w-full ">
       <NewsTicker />
       <HeroCarousel />
       <InfoCards />

@@ -40,7 +40,7 @@ const VisitingFacultyPage = () => {
   }, []);
 
   return (
-    <div className="bg-bg dark:bg-bg-dark min-h-screen">
+    <div className=" min-h-screen">
       <PageHeader 
         title="Visiting Faculty" 
         subtitle="Eminent scholars and industry experts"

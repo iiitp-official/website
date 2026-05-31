@@ -204,7 +204,7 @@ const InfoCards = () => {
   };
 
   return (
-    <section className="py-12 bg-bg dark:bg-bg-dark transition-colors duration-200">
+    <section className="py-12 bg-transparent transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Row 1: 3-Card Grid */}
@@ -285,6 +285,7 @@ const InfoCards = () => {
         </div>
 
         {/* Why IIIT Pune Section */}
+        {/* <div className="mt-16 p-8 md:p-12 bg-primary/50 dark:bg-primary/20 rounded-3xl border border-primary/10 dark:border-primary/30"> */}
         <div className="mt-16 pt-12 border-t border-gray-200 dark:border-gray-800/60">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-2xl md:text-3xl font-bold font-serif text-primary dark:text-white">

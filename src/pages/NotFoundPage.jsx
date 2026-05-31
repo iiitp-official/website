@@ -4,7 +4,7 @@ import { Home } from 'lucide-react';
 
 const NotFoundPage = () => {
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200 flex items-center justify-center px-4">
+    <div className="min-h-screen transition-colors duration-200 flex items-center justify-center px-4">
       <div className="max-w-md w-full text-center">
         <h1 className="text-9xl font-bold font-serif text-gray-200 dark:text-gray-800 mb-4 select-none">404</h1>
         <div className="w-16 h-1 bg-accent mx-auto rounded-full mb-6"></div>

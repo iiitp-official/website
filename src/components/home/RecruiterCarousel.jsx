@@ -32,7 +32,7 @@ const track = [...recruiters, ...recruiters];
 
 const RecruiterCarousel = () => {
   return (
-    <section className="py-12 bg-surface dark:bg-surface-dark transition-colors duration-200 overflow-hidden">
+    <section className="py-12 bg-transparent transition-colors duration-200 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <div className="flex items-end justify-between">
           <div>

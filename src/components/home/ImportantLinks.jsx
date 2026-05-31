@@ -6,7 +6,7 @@ const ImportantLinks = () => {
   const [activeTab, setActiveTab] = useState('links');
 
   return (
-    <section className="py-16 bg-bg dark:bg-bg-dark transition-colors duration-200">
+    <section className="py-16 bg-transparent transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Full Width Container */}

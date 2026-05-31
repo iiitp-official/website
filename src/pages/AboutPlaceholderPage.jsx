@@ -3,7 +3,7 @@ import PageHeader from '../components/shared/PageHeader';
 
 const AboutPlaceholderPage = ({ title }) => {
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
+    <div className="min-h-screen transition-colors duration-200">
       <PageHeader title={title} />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
         <h2 className="text-3xl font-bold font-serif text-gray-900 dark:text-white mb-4">Coming Soon</h2>

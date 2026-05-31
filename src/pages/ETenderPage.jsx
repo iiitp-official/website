@@ -51,7 +51,7 @@ const ETenderPage = () => {
   }, [allTenders, currentPage]);
 
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200 flex flex-col">
+    <div className="min-h-screen transition-colors duration-200 flex flex-col">
       <PageHeader title={pageTitle} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow w-full">
         <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">

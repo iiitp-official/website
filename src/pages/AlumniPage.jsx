@@ -18,7 +18,7 @@ const AlumniPage = () => {
   );
 
   return (
-    <div className="bg-bg dark:bg-bg-dark min-h-screen">
+    <div className=" min-h-screen">
       <PageHeader 
         title="Our Alumni" 
         subtitle="The pride of IIIT Pune making global impact"

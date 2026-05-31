@@ -18,7 +18,7 @@ const NewsPage = () => {
   );
 
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
+    <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="Latest News & Announcements" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

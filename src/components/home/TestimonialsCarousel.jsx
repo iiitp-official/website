@@ -87,7 +87,7 @@ const TestimonialCard = ({ item }) => (
 
 const TestimonialsCarousel = () => {
   return (
-    <section className="py-12 bg-white dark:bg-bg-dark transition-colors duration-200 overflow-hidden">
+    <section className="py-12 bg-transparent transition-colors duration-200 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <div className="text-center">
           <p className="text-accent dark:text-accent-dark text-xs font-semibold uppercase tracking-widest mb-1">

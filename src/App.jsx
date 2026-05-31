@@ -66,7 +66,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <GlobalLoader />
-      <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-bg dark:bg-bg-dark transition-colors duration-200">
+      <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-bg dark:bg-bg-dark bg-grid-pattern transition-colors duration-200">
         <Navbar />
 
 

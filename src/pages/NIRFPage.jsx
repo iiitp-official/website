@@ -34,7 +34,7 @@ const NIRFPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200 pb-20">
+    <div className="min-h-screen transition-colors duration-200 pb-20">
       <PageHeader title="National Institutional Ranking Framework (NIRF)" />
       
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">

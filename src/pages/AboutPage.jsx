@@ -4,7 +4,7 @@ import campusFrontImg from '../assets/campus_front.jpg';
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
+    <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="Welcome to IIIT Pune" />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden">

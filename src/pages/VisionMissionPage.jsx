@@ -37,7 +37,7 @@ const VisionMissionPage = () => {
 
 
   return (
-    <div className="min-h-screen bg-bg dark:bg-bg-dark transition-colors duration-200">
+    <div className="min-h-screen transition-colors duration-200">
       <PageHeader 
         title="Vision & Mission" 
       />
@@ -67,7 +67,7 @@ const VisionMissionPage = () => {
       </section>
 
       {/* SECTION 2: MISSION (2x2 Minimal Grid) */}
-      <section className="bg-bg dark:bg-bg-dark pt-8 pb-24">
+      <section className=" pt-8 pb-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="space-y-12"
