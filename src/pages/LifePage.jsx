@@ -558,7 +558,11 @@ const ACTIVITIES = [
       'This year, the programme commenced with a painting competition. More than 50 students enthusiastically participated in the various competitions organized in coordination with the Hindi Committee. Shivam Patel secured first place in the painting competition, Saurabh Jaiswal won the poetry writing event, and Sonu Gupta topped the essay writing contest. Additionally, Rohini Maidamwar won the poetry translation event, Satyam Garg and Aryan Sharma won the riddle competition, and Prasad Dalvi emerged victorious in the quiz.',
       'The organization of these diverse competitions has given a new direction to the promotion of the official language. The entire event was successfully conducted under the mentorship and supervision of faculty members from the Hindi Cell — Prof. Ritu Tiwari, Dr. Chandrakant Guled, Dr. Bhupendra Singh, Dr. Rahul Dixit, and Dr. Anagha Khiste.'
     ],
-    images: []
+    images: [
+      { src: '/assets/activities/hindi_pakhwada_prize_distribution.jpg', caption: 'Prize Distribution Ceremony' },
+      { src: '/assets/activities/hindi_pakhwada_day_1.jpg', caption: 'Day 1: Painting Competition' },
+      { src: '/assets/activities/hindi_pakhwada_day_2.jpg', caption: 'Day 2: Poetry & Essay Writing Competitions' }
+    ]
   },
   {
     id: 'swachh',
@@ -590,7 +594,9 @@ const ACTIVITIES = [
       'For the Yoga Day celebrations, Mrs. Neha Parakhe, an experienced instructor from Yoga Vidya Gurukul, was invited to the campus to guide students and staff. She conducted an interactive yoga and pranayama session, demonstrating postures that enhance concentration and relieve stress for academic excellence.'
     ],
     images: [
-      'https://www.iiitp.ac.in/sites/default/files/inline-images/yogaday.png'
+      { src: '/assets/activities/yoga_day_group.jpg', caption: 'Yoga Day Participants Group Photo' },
+      { src: '/assets/activities/yoga_day_pranayama.jpg', caption: 'Pranayama & Breathing Exercises' },
+      { src: '/assets/activities/yoga_day_vrikshasana.jpg', caption: 'Vrikshasana (Tree Pose) Practice' }
     ]
   },
   {
@@ -980,25 +986,31 @@ const LifePage = () => {
                       <div className="border-t border-gray-100 dark:border-gray-800 pt-6">
                         <h4 className="text-sm font-bold text-gray-800 dark:text-white mb-4">Event Gallery</h4>
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                          {act.images.map((imgUrl, idx) => (
-                            <div
-                              key={idx}
-                              onClick={() => setSelectedImage(imgUrl)}
-                              className="group relative aspect-video rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800/80 shadow-sm cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
-                            >
-                              <img
-                                src={imgUrl}
-                                alt={`${act.name} Photo ${idx + 1}`}
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
-                              />
-                              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-[2px]">
-                                <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                  <Image size={18} />
+                          {act.images.map((imgItem, idx) => {
+                            const isObj = typeof imgItem === 'object';
+                            const src = isObj ? imgItem.src : imgItem;
+                            const caption = isObj ? imgItem.caption : `${act.name} Photo ${idx + 1}`;
+                            return (
+                              <div
+                                key={idx}
+                                onClick={() => setSelectedImage(src)}
+                                className="group relative aspect-video rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800/80 shadow-sm cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                              >
+                                <img
+                                  src={src}
+                                  alt={caption}
+                                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                  onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
+                                />
+                                <div className="absolute inset-0 bg-black/45 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 backdrop-blur-[1px]">
+                                  <span className="text-white text-[11px] font-bold tracking-wide line-clamp-2">{caption}</span>
+                                  <div className="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+                                    <Image size={14} />
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          ))}
+                            );
+                          })}
                         </div>
                       </div>
                     )}
