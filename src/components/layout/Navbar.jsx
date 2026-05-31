@@ -391,9 +391,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-blue-800/50 dark:border-gray-800">
         <div className="flex justify-between items-center py-1 md:py-2">
           {/* Logo + Name */}
-          <Link to="/" className="flex items-center space-x-2 md:space-x-3">
-            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center shrink-0">
-              <img src="/iiitp-logo.png" alt="IIIT Pune Logo" className="w-full h-full object-contain" />
+          <Link 
+            to="/" 
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="flex items-center space-x-2 md:space-x-3"
+          >
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center shrink-0 bg-white">
+              <img src="/Logo/iiitp_logo.png" alt="IIIT Pune Logo" className="w-full h-full object-contain mix-blend-multiply scale-[1.6]" />
             </div>
             <div className="text-white dark:text-text-dark leading-tight">
               <h1 className="text-sm md:text-base lg:text-lg font-bold font-serif">
@@ -422,6 +426,33 @@ const Navbar = () => {
               >
                 {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
               </button>
+
+              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
+
+              {/* Social Icons */}
+              <div className="hidden md:flex items-center gap-2">
+                <a
+                  href="https://www.facebook.com/iiitpune"
+                  aria-label="Facebook"
+                  className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
+                >
+                  <FacebookIcon size={18} />
+                </a>
+                <a
+                  href="https://x.com/IIIT_PUNE"
+                  aria-label="Twitter"
+                  className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
+                >
+                  <TwitterIcon size={18} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
+                  aria-label="LinkedIn"
+                  className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
+                >
+                  <LinkedinIcon size={18} />
+                </a>
+              </div>
 
               <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
 
@@ -483,32 +514,14 @@ const Navbar = () => {
 
             {/* Bottom Row: Social Icons + Search (Desktop only) */}
             <div className="hidden md:flex items-center gap-1.5">
-              {/* Social Icons */}
-              <div className="flex items-center gap-2">
-                <a
-                  href="https://www.facebook.com/iiitpune"
-                  aria-label="Facebook"
-                  className="opacity-80 hover:opacity-100 transition-opacity p-1.5"
-                >
-                  <FacebookIcon size={18} />
-                </a>
-                <a
-                  href="https://x.com/IIIT_PUNE"
-                  aria-label="Twitter"
-                  className="opacity-80 hover:opacity-100 transition-opacity p-1.5"
-                >
-                  <TwitterIcon size={18} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
-                  aria-label="LinkedIn"
-                  className="opacity-80 hover:opacity-100 transition-opacity p-1.5"
-                >
-                  <LinkedinIcon size={18} />
-                </a>
-              </div>
-
-              <div className="h-5 w-px bg-blue-700 dark:bg-gray-600" />
+              <a
+                href="https://iiitp.webpointsolutions.in/StudentPortal/index.html#!/Login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-brand-red hover:bg-red-700 text-white px-3 py-1.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide mr-2"
+              >
+                Student Portal
+              </a>
 
               {/* Search */}
               <div className="relative flex items-center">
@@ -779,7 +792,7 @@ const Navbar = () => {
               {/* Primary Links */}
               <div>
                 <h3 className="text-blue-300 dark:text-blue-400 text-xs font-bold uppercase tracking-wider mb-2 px-3">
-                  Primary Links
+                  {/* Primary Links */}
                 </h3>
                 <div className="flex flex-col space-y-1">
                   {primaryLinks.map((link) => (

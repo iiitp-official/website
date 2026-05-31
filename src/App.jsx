@@ -5,6 +5,8 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import LoadingFallback from "./components/shared/LoadingFallback";
 
+import GlobalLoader from "./components/common/GlobalLoader";
+
 // Pages (Lazy Loaded for performance)
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
@@ -63,6 +65,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <GlobalLoader />
       <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-bg dark:bg-bg-dark transition-colors duration-200">
         <Navbar />
 
