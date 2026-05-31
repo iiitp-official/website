@@ -61,16 +61,14 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-4">
               <ul className="space-y-3">
                 <li><Link to="/about" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> About Us</Link></li>
-                <li><Link to="/academics" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Academics</Link></li>
-                <li><Link to="/research" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Research</Link></li>
                 <li><Link to="/placement" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Placement</Link></li>
                 <li><Link to="/careers" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Careers</Link></li>
+                <li><Link to="/notice" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Notice Board</Link></li>
               </ul>
               <ul className="space-y-3">
-                <li><Link to="/notice" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Notice Board</Link></li>
                 <li><Link to="/e-tender" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> E-Tender</Link></li>
-                <li><Link to="/library" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Library</Link></li>
-                <li><Link to="/fees" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Fees Structure</Link></li>
+                <li><a href="https://sites.google.com/iiitp.ac.in/library" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Library</a></li>
+                <li><a href="/docs/Fee_Structure_2025-26.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Fees Structure</a></li>
                 <li><Link to="/contact" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Contact Us</Link></li>
               </ul>
             </div>
