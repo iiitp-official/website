@@ -1,5 +1,6 @@
 import React from 'react';
 import { Quote } from 'lucide-react';
+import FadeInSection from '../shared/FadeInSection';
 
 const testimonials = [
   {
@@ -61,11 +62,16 @@ const testimonials = [
     name: 'Harshita Srivastava',
     details: 'MTech - ECE - (2024-26)',
     quote: 'My placement experience has been a valuable learning journey. It helped me improve my technical knowledge, communication skills, and confidence during interviews. Through the process, I understood the importance of consistency, project work, and preparation. I am grateful to my college, faculty, and placement officer for their guidance and support throughout the journey.'
+  },
+  {
+    name: 'Atharva S. Vairagade',
+    details: 'BTech - CSE - (2022-26)',
+    quote: 'I am extremely thankful for the continuous support provided by IIIT Pune’s placement cell. Despite a challenging start to my placement journey, their guidance and reassurance helped me stay positive and focused. When a great opportunity finally presented itself, they ensured I was fully prepared. The strong foundation I built during my time at IIIT Pune was pivotal in helping me secure this position, and I am grateful for their faith in my potential.'
   }
 ];
 
-// Duplicate for seamless infinite scroll
-const track = [...testimonials, ...testimonials];
+// Triple the array to ensure smooth continuous scrolling
+const track = [...testimonials, ...testimonials, ...testimonials];
 
 const TestimonialCard = ({ item }) => (
   <div className="flex-shrink-0 w-80 md:w-96 bg-[#f8f9fc] dark:bg-gray-800 rounded-xl shadow-sm border border-indigo-100 dark:border-gray-700 p-6 hover:shadow-md transition-shadow flex flex-col mx-3 h-72">
@@ -87,6 +93,7 @@ const TestimonialCard = ({ item }) => (
 
 const TestimonialsCarousel = () => {
   return (
+    <FadeInSection delay={0.1}>
     <section className="py-12 bg-transparent transition-colors duration-200 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <div className="text-center">
@@ -135,6 +142,7 @@ const TestimonialsCarousel = () => {
         }
       `}</style>
     </section>
+    </FadeInSection>
   );
 };
 

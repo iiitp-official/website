@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ExternalLink, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import FadeInSection from '../shared/FadeInSection';
 
 const ImportantLinks = () => {
   const [activeTab, setActiveTab] = useState('links');
@@ -8,7 +9,7 @@ const ImportantLinks = () => {
   return (
     <section className="py-8 bg-transparent transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+        <FadeInSection delay={0.1}>
         {/* Full Width Container */}
         <div className="w-full bg-white dark:bg-surface-dark rounded-xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden flex flex-col lg:flex-row min-h-[300px]">
 
@@ -161,7 +162,7 @@ const ImportantLinks = () => {
             </AnimatePresence>
           </div>
         </div>
-
+        </FadeInSection>
       </div>
     </section>
   );

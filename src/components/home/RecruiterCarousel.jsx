@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { CompanyLogo } from '../shared/CompanyLogo';
+import FadeInSection from '../shared/FadeInSection';
 
 // Recruiter list
 const recruiters = [
@@ -32,6 +33,7 @@ const track = [...recruiters, ...recruiters];
 
 const RecruiterCarousel = () => {
   return (
+    <FadeInSection delay={0.1}>
     <section className="py-12 bg-transparent transition-colors duration-200 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <div className="flex items-end justify-between">
@@ -94,6 +96,7 @@ const RecruiterCarousel = () => {
         }
       `}</style>
     </section>
+    </FadeInSection>
   );
 };
 

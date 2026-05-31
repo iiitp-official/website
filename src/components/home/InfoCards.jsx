@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import campusFrontImg from '../../assets/campus_front.jpg';
+import FadeInSection from '../shared/FadeInSection';
 
 const studentAchievements = [
   {
@@ -208,7 +209,8 @@ const InfoCards = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Row 1: 3-Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <FadeInSection delay={0.1}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* Card 1: Welcome */}
           <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md overflow-hidden border border-gray-150 dark:border-gray-800 flex flex-col group">
@@ -280,9 +282,10 @@ const InfoCards = () => {
           </div>
 
         </div>
+        </FadeInSection>
 
         {/* Why IIIT Pune Section */}
-        {/* <div className="mt-16 p-8 md:p-12 bg-primary/50 dark:bg-primary/20 rounded-3xl border border-primary/10 dark:border-primary/30"> */}
+        <FadeInSection delay={0.1}>
         <div className="mt-16 pt-12">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-3xl md:text-4xl font-bold font-serif text-primary dark:text-white">
@@ -394,8 +397,10 @@ const InfoCards = () => {
             </div>
           </div>
         </div>
+        </FadeInSection>
 
         {/* Row 2: Achievements Section */}
+        <FadeInSection delay={0.1}>
         <div className="mt-16 pt-12">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
             <div>
@@ -478,6 +483,7 @@ const InfoCards = () => {
             </div>
           </div>
         </div>
+        </FadeInSection>
 
       </div>
     </section>
