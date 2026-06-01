@@ -154,10 +154,15 @@ const PlacementPage = () => {
 
         {/* ── Section 1: Key Stats ────────────────────────────────────────── */}
         <section>
-          <div className="mb-8">
-            <p className="text-accent dark:text-accent-dark text-xs font-semibold uppercase tracking-widest mb-1">Overview</p>
-            <h2 className="text-3xl font-bold font-serif text-primary dark:text-white">Placement at a Glance</h2>
-            <div className="w-16 h-1 bg-accent rounded-full mt-3" />
+          <div className="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div>
+              <p className="text-accent dark:text-accent-dark text-xs font-semibold uppercase tracking-widest mb-1">Overview</p>
+              <h2 className="text-3xl font-bold font-serif text-primary dark:text-white">Placement at a Glance</h2>
+              <div className="w-16 h-1 bg-accent rounded-full mt-3" />
+            </div>
+            <a href="https://placements.iiitp.ac.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-red-700 text-white px-6 py-2.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide shrink-0">
+              Visit Placement Portal <ExternalLink size={18} />
+            </a>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             <StatCard icon={Award}        value="55 LPA"  label="Highest Package"      sub="AY 2023–24"            color={{ bg:'bg-yellow-50 dark:bg-yellow-900/20', text:'text-yellow-600 dark:text-yellow-400' }} delay={0} />

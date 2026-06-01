@@ -1577,6 +1577,19 @@ const LifePage = () => {
               { key: 'campus', label: 'Permanent Campus' }
             ].map((tab) => {
               const isActive = activeTab === tab.key;
+              if (tab.key === 'hr-summit') {
+                return (
+                  <a
+                    key={tab.key}
+                    href="https://placements.iiitp.ac.in/HrSummit/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center px-4 py-2 rounded-full text-xs font-semibold transition-all shrink-0 border text-gray-600 dark:text-gray-350 bg-white dark:bg-surface-dark border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800`}
+                  >
+                    {tab.label}
+                  </a>
+                );
+              }
               return (
                 <button
                   key={tab.key}
