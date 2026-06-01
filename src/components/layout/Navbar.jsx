@@ -344,13 +344,14 @@ const Navbar = () => {
         { name: "ANTI-RAGGING COMMITTEE & SQUADS", path: "/notice/anti-ragging" },
         { name: "Late fee for the even semester", path: "/notice/late-fee" },
         {
-          name: "National Overseas Scholarship Scheme for ST students (2025-26)",
-          path: "#",
-          hasDropdown: true,
-          subLinks: [
-            { name: "Letters", path: "/documents/Letter to 265 institutions regarding NSP portal opening for the Year 2025-26.pdf", isExternal: true },
-            { name: "Guidelines NATIONAL FELLOWSHIP & SCHOLARSHIP", path: "/documents/Guidelines Scholarship - Top Class Part - B_compressed_compressed.pdf", isExternal: true },
-          ]
+          name: "National Overseas Scholarship (2025-26) - Letters",
+          path: "/documents/Letter to 265 institutions regarding NSP portal opening for the Year 2025-26.pdf",
+          isExternal: true
+        },
+        {
+          name: "National Overseas Scholarship (2025-26) - Guidelines",
+          path: "/documents/Guidelines Scholarship - Top Class Part - B_compressed_compressed.pdf",
+          isExternal: true
         },
         { name: "Odd Semester B.Tech (3rd, 5th & 7th Semesters) / M.Tech (3rd Semester) for AY (2025-26)", path: "/documents/Odd Sem Registration Instruction for Btech and Mtech_0.pdf", isExternal: true },
         { name: "Rajbhasha Committee", path: "/documents/Rajbhasha committee.pdf", isExternal: true },
@@ -641,7 +642,7 @@ const Navbar = () => {
                 }}
               </NavLink>
               {link.hasDropdown && link.subLinks && (
-                <div className={`absolute top-full left-0 mt-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50 ${isNavigating ? 'hidden' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'}`}>
+                <div className={`absolute top-full left-0 mt-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50 ${isNavigating ? 'hidden' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'} ${!link.subLinks.some(sub => sub.hasDropdown) ? 'max-h-[75vh] overflow-y-auto' : ''}`}>
                   {link.subLinks.map((sub) => (
                     <div key={sub.name} className="relative group/sub">
                       {sub.hasDropdown ? (
@@ -650,7 +651,7 @@ const Navbar = () => {
                             {sub.name}
                             <ChevronDown className="w-3 h-3 -rotate-90 opacity-70" />
                           </div>
-                          <div className={`absolute top-0 left-full ml-0 w-48 bg-white dark:bg-surface-dark rounded-md shadow-lg transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50 ${isNavigating ? 'hidden' : 'opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible'}`}>
+                          <div className={`absolute top-0 left-full ml-0 w-48 max-h-[65vh] overflow-y-auto bg-white dark:bg-surface-dark rounded-md shadow-lg transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50 ${isNavigating ? 'hidden' : 'opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible'}`}>
                             {sub.subLinks.map((nested) =>
                               nested.isExternal ? (
                                 <a
