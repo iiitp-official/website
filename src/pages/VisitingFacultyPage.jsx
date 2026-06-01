@@ -48,28 +48,24 @@ const VisitingFacultyPage = () => {
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Breadcrumb 
-          items={[
-            { label: 'Home', path: '/' },
-            { label: 'People', path: '/people' },
-            { label: 'Visiting Faculty' }
-          ]} 
-        />
         
         {validFaculty.length > 0 ? (
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 h-full">
             {validFaculty.map((person, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-surface-dark rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full group"
+                className="bg-white dark:bg-surface-dark rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full group relative"
               >
-                <div className="w-full aspect-[4/5] bg-gray-100 dark:bg-gray-800 relative overflow-hidden">
+                {/* Subtle Background Accent */}
+                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-blue-50 to-transparent dark:from-gray-800/50 pointer-events-none"></div>
+
+                <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mt-6 bg-gray-100 dark:bg-gray-800 relative z-10 overflow-hidden rounded-full shadow-md border-4 border-white dark:border-gray-800">
                   {person.image ? (
                     <img 
                       src={person.image} 
                       alt={person.name} 
                       loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       onError={(e) => {
                         e.target.onerror = null;
                         e.target.src = "https://ui-avatars.com/api/?name=" + encodeURIComponent(person.name) + "&background=1B3A6B&color=fff&size=512";
@@ -82,13 +78,17 @@ const VisitingFacultyPage = () => {
                   )}
                 </div>
                 
-                <div className="p-5 flex-grow flex flex-col items-center text-center bg-white dark:bg-surface-dark z-10">
-                  <h3 className="text-lg font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors">
+                <div className="p-4 flex-grow flex flex-col items-center text-center bg-white dark:bg-surface-dark z-10 w-full mt-1">
+                  <h3 className="text-lg font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors line-clamp-1 w-full">
                     {person.name}
                   </h3>
-                  <p className="text-sm text-brand-red font-medium mb-3">
-                    {person.designation || "Visiting Faculty"}
-                  </p>
+                  
+                  {/* Fixed height container for designation (up to 2 lines) */}
+                  <div className="h-10 flex items-start justify-center w-full mb-4">
+                    <p className="text-sm text-brand-red font-medium whitespace-pre-line line-clamp-2">
+                      {person.designation || "Visiting Faculty"}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
