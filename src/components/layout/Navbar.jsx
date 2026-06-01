@@ -39,6 +39,7 @@ const Navbar = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [showSearch, setShowSearch] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState({});
+  const [isNavigating, setIsNavigating] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -89,6 +90,9 @@ const Navbar = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setOpenDropdowns({});
+    setIsNavigating(true);
+    const timer = setTimeout(() => setIsNavigating(false), 50);
+    return () => clearTimeout(timer);
   }, [location.pathname]);
 
   const toggleDarkMode = () => setIsDark(!isDark);
@@ -325,11 +329,11 @@ const Navbar = () => {
         },
         { name: "Photo Gallery", path: "/life?tab=gallery" },
         { name: "College Events", path: "/life?tab=events" },
-        { name: "HR Summit (2021)", path: "/life?tab=hr-summit" },
+        { name: "HR Summit (2021)", path: "/life?tab=hr-summit", isExternal: true },
         { name: "Magazine", path: "/life?tab=magazine" },
         { name: "Permanent Campus", path: "/life?tab=campus" },
-        { name: "ACM Chapter", path: "/#" },
-        { name: "Sports & Gymnasium", path: "/#" },
+        // { name: "ACM Chapter", path: "/#" },
+        // { name: "Sports & Gymnasium", path: "/#" },
       ]
     },
     {
@@ -637,7 +641,7 @@ const Navbar = () => {
                 }}
               </NavLink>
               {link.hasDropdown && link.subLinks && (
-                <div className="absolute top-full left-0 mt-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
+                <div className={`absolute top-full left-0 mt-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50 ${isNavigating ? 'hidden' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'}`}>
                   {link.subLinks.map((sub) => (
                     <div key={sub.name} className="relative group/sub">
                       {sub.hasDropdown ? (
@@ -646,7 +650,7 @@ const Navbar = () => {
                             {sub.name}
                             <ChevronDown className="w-3 h-3 -rotate-90 opacity-70" />
                           </div>
-                          <div className="absolute top-0 left-full ml-0 w-48 bg-white dark:bg-surface-dark rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50">
+                          <div className={`absolute top-0 left-full ml-0 w-48 bg-white dark:bg-surface-dark rounded-md shadow-lg transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50 ${isNavigating ? 'hidden' : 'opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible'}`}>
                             {sub.subLinks.map((nested) =>
                               nested.isExternal ? (
                                 <a

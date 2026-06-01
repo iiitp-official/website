@@ -266,7 +266,7 @@ const CLUBS = {
       "Founded the Book Society to promote a reading and critical writing culture inside the institute"
     ],
     images: [],
-    leadership: { "heads": [], "email": "eclectic@iiitp.ac.in", "instagram": "@media", "website": "" }
+    leadership: { "heads": [], "email": "eclectic@iiitp.ac.in", "instagram": "@media", "website": "https://eclectic-iiitp.github.io/eclectic/" }
   },
   'saaz': {
     name: 'SAAZ',
@@ -948,45 +948,59 @@ const LifePage = () => {
                   </div>
 
                   {/* Activities Gallery (Full Width at Bottom) */}
-                  <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-8">
-                    <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-4">
-                      Activities Gallery
-                    </h3>
-                    {club.images && club.images.length > 0 ? (
-                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                        {club.images.map((imgUrl, idx) => (
-                          <div
-                            key={idx}
-                            onClick={() => setSelectedImage(imgUrl)}
-                            className="group relative aspect-video rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800/80 shadow-sm cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
-                          >
-                            <img
-                              src={imgUrl}
-                              alt={`${club.name} Activity ${idx + 1}`}
-                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                              onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
-                            />
-                            {/* Glassmorphic hover overlay */}
-                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-[2px]">
-                              <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                <Image size={18} />
+                  {activeClubKey === 'eclectic' ? (
+                    <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-8 flex items-center justify-center">
+                      <a
+                        href="https://eclectic-iiitp.github.io/eclectic/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-xs shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+                      >
+                        <span>Visit Eclectic Website</span>
+                        <ExternalLink size={14} />
+                      </a>
+                    </div>
+                  ) : (
+                    <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-8">
+                      <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-4">
+                        Activities Gallery
+                      </h3>
+                      {club.images && club.images.length > 0 ? (
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                          {club.images.map((imgUrl, idx) => (
+                            <div
+                              key={idx}
+                              onClick={() => setSelectedImage(imgUrl)}
+                              className="group relative aspect-video rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800/80 shadow-sm cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                            >
+                              <img
+                                src={imgUrl}
+                                alt={`${club.name} Activity ${idx + 1}`}
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
+                              />
+                              {/* Glassmorphic hover overlay */}
+                              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-[2px]">
+                                <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                                  <Image size={18} />
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="border-2 border-dashed border-gray-200 dark:border-gray-800 rounded-2xl p-8 flex flex-col items-center justify-center text-center bg-gray-50/50 dark:bg-gray-900/10">
-                        <div className={`w-12 h-12 rounded-xl bg-primary/10 text-primary mb-3 shadow-xs`}>
-                          <Image size={22} />
+                          ))}
                         </div>
-                        <h4 className="text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Gallery Updates in Progress</h4>
-                        <p className="text-[11px] text-gray-500 dark:text-gray-400 max-w-sm leading-relaxed">
-                          We are currently updating visual highlights for {club.name}. Check back soon to see snapshots of our fests, workshops, and competitions!
-                        </p>
-                      </div>
-                    )}
-                  </div>
+                      ) : (
+                        <div className="border-2 border-dashed border-gray-200 dark:border-gray-800 rounded-2xl p-8 flex flex-col items-center justify-center text-center bg-gray-50/50 dark:bg-gray-900/10">
+                          <div className={`w-12 h-12 rounded-xl bg-primary/10 text-primary mb-3 shadow-xs`}>
+                            <Image size={22} />
+                          </div>
+                          <h4 className="text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Gallery Updates in Progress</h4>
+                          <p className="text-[11px] text-gray-500 dark:text-gray-400 max-w-sm leading-relaxed">
+                            We are currently updating visual highlights for {club.name}. Check back soon to see snapshots of our fests, workshops, and competitions!
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -1563,6 +1577,19 @@ const LifePage = () => {
               { key: 'campus', label: 'Permanent Campus' }
             ].map((tab) => {
               const isActive = activeTab === tab.key;
+              if (tab.key === 'hr-summit') {
+                return (
+                  <a
+                    key={tab.key}
+                    href="https://placements.iiitp.ac.in/HrSummit/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center px-4 py-2 rounded-full text-xs font-semibold transition-all shrink-0 border text-gray-600 dark:text-gray-350 bg-white dark:bg-surface-dark border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800`}
+                  >
+                    {tab.label}
+                  </a>
+                );
+              }
               return (
                 <button
                   key={tab.key}
