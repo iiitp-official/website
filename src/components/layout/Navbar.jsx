@@ -328,8 +328,8 @@ const Navbar = () => {
         { name: "HR Summit (2021)", path: "/life?tab=hr-summit" },
         { name: "Magazine", path: "/life?tab=magazine" },
         { name: "Permanent Campus", path: "/life?tab=campus" },
-        { name: "ACM Chapter", path: "/#" },
-        { name: "Sports & Gymnasium", path: "/#" },
+        // { name: "ACM Chapter", path: "/#" },
+        // { name: "Sports & Gymnasium", path: "/#" },
       ]
     },
     {
