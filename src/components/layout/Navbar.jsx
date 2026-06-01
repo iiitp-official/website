@@ -382,8 +382,7 @@ const Navbar = () => {
   ];
 
   const navLinkClass = ({ isActive }) =>
-    `relative py-1 px-2.5 text-xs md:text-sm font-medium transition-colors duration-200 group flex items-center ${isActive ? "text-brand-red dark:text-brand-red-dark" : "text-white hover:text-brand-red dark:text-gray-200 dark:hover:text-brand-red-dark"
-    }`;
+    `relative py-1 px-2.5 text-xs md:text-sm font-medium transition-colors duration-200 group flex items-center text-white hover:text-brand-red dark:text-gray-200 dark:hover:text-brand-red-dark`;
 
   const navLinkUnderline = ({ isActive }) => (
     <span
@@ -597,17 +596,35 @@ const Navbar = () => {
               <NavLink
                 to={link.path}
                 className={({ isActive }) => {
-                  const isLinkActive = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration")) || (link.name === "Notice" && location.pathname.startsWith("/notice"))
-                    : isActive;
+                  const prefix = {
+                    "About Us": "/about",
+                    "Academics": "/academics",
+                    "Administration": "/administration",
+                    "Notice": "/notice",
+                    "Research": "/research",
+                    "People": "/people",
+                    "E-TENDER": "/e-tender"
+                  }[link.name];
+                  const isLinkActive = link.path === "#" 
+                    ? !!(prefix && location.pathname.startsWith(prefix))
+                    : isActive || !!(prefix && location.pathname.startsWith(prefix));
                   return navLinkClass({ isActive: isLinkActive });
                 }}
                 onClick={link.path === "#" ? (e) => e.preventDefault() : undefined}
               >
                 {({ isActive }) => {
-                  const activeState = link.path === "#"
-                    ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration")) || (link.name === "Notice" && location.pathname.startsWith("/notice"))
-                    : isActive;
+                  const prefix = {
+                    "About Us": "/about",
+                    "Academics": "/academics",
+                    "Administration": "/administration",
+                    "Notice": "/notice",
+                    "Research": "/research",
+                    "People": "/people",
+                    "E-TENDER": "/e-tender"
+                  }[link.name];
+                  const activeState = link.path === "#" 
+                    ? !!(prefix && location.pathname.startsWith(prefix))
+                    : isActive || !!(prefix && location.pathname.startsWith(prefix));
                   return (
                     <>
                       {link.name}

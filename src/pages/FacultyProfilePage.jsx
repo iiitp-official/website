@@ -115,6 +115,36 @@ const FacultyProfilePage = () => {
     { id: 'research', label: 'Research & Links', icon: <LinkIcon className="w-4 h-4 mr-2" /> },
   ];
 
+  const renderListContent = (content) => {
+    if (!content) return null;
+    
+    let items = [];
+    if (Array.isArray(content)) {
+      items = content;
+    } else if (typeof content === 'string') {
+      items = content.split(/\n\n+/).filter(Boolean).map(text => ({ title: text.trim() }));
+    }
+
+    return (
+      <ul className="space-y-6">
+        {items.map((item, idx) => (
+          <li key={idx} className="flex flex-col relative pl-6">
+            <span className="absolute left-0 top-2 w-2 h-2 rounded-full bg-brand-red"></span>
+            {item.link ? (
+              <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-base font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
+                {item.title}
+              </a>
+            ) : (
+              <h3 className="text-base font-bold text-gray-900 dark:text-white leading-relaxed">{item.title}</h3>
+            )}
+            {item.authors && <span className="text-sm text-gray-700 dark:text-gray-300 mt-1">{item.authors}</span>}
+            {item.journal && <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 font-medium">{item.journal}</span>}
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
   return (
     <div className="min-h-screen pb-20">
 
@@ -135,7 +165,7 @@ const FacultyProfilePage = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
         {/* TOP SECTION: Photo and Info side-by-side on desktop */}
-        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg p-6 md:p-8 mb-8 border border-gray-100 dark:border-gray-800 flex flex-col md:flex-row gap-8 items-center md:items-start relative overflow-hidden">
+        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg p-6 md:p-8 mb-8 border border-gray-100 dark:border-gray-800 flex flex-col md:flex-row gap-8 items-center md:items-stretch relative overflow-hidden">
           {/* Subtle Background Accent */}
           <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-blue-50 to-transparent dark:from-gray-800/50 pointer-events-none"></div>
 
@@ -159,7 +189,7 @@ const FacultyProfilePage = () => {
           </div>
 
           {/* Profile Details */}
-          <div className="flex-grow flex flex-col items-center md:items-start text-center md:text-left z-10 w-full">
+          <div className="flex-grow flex flex-col items-center md:items-start text-center md:text-left z-10 w-full md:h-full">
             <h1 className="text-xl md:text-2xl font-bold font-serif text-gray-900 dark:text-white mb-2">
               {profile.name}
             </h1>
@@ -174,93 +204,90 @@ const FacultyProfilePage = () => {
               </p>
             )}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-gray-700 dark:text-gray-300">
-
-              {/* Left Column: Education & Links */}
-              <div className="flex flex-col gap-6">
-                {/* Education */}
-                <div className="flex items-start">
-                  <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
-                    <GraduationCap className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-1">Educational Qualification</h4>
-                    {profile.education ? (
-                      <ul className="space-y-1">
-                        {profile.education.split('\n').filter(line => line.trim() !== '').map((line, idx) => (
-                          <li key={idx} className="text-sm">{line.trim()}</li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <span className="text-sm italic text-gray-500">Not provided</span>
-                    )}
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-gray-700 dark:text-gray-300 mt-auto pt-4">
+              
+              {/* Education */}
+              <div className="flex items-start">
+                <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
+                  <GraduationCap className="w-5 h-5 text-primary" />
                 </div>
-
-                {/* Research Links */}
-                {profile.researchLinks && profile.researchLinks.length > 0 && (
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
-                      <LinkIcon className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="text-xs font-bold text-gray-900 dark:text-white mb-2">Research Profiles</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {profile.researchLinks.map((link, idx) => {
-                          let type = "Profile";
-                          if (link.includes('scholar.google')) type = "Google Scholar";
-                          else if (link.includes('orcid')) type = "ORCID";
-                          else if (link.includes('scopus')) type = "Scopus";
-
-                          return (
-                            <a
-                              key={idx}
-                              href={link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="px-3 py-1.5 bg-gray-50 hover:bg-red-50 dark:bg-gray-800/50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700 hover:border-brand-red rounded-full text-xs font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors inline-flex items-center"
-                            >
-                              {type}
-                            </a>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </div>
-                )}
+                <div>
+                  <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-1">Educational Qualification</h4>
+                  {profile.education ? (
+                    <ul className="space-y-1">
+                      {profile.education.split('\n').filter(line => line.trim() !== '').map((line, idx) => (
+                        <li key={idx} className="text-sm">{line.trim()}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <span className="text-sm italic text-gray-500">Not provided</span>
+                  )}
+                </div>
               </div>
 
-              {/* Right Column: Contact */}
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
-                    <Mail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-gray-900 dark:text-white">Email Address</h4>
-                    {profile.email ? (
-                      <a href={`mailto:${profile.email}`} className="text-sm text-primary hover:underline">{profile.email}</a>
-                    ) : (
-                      <span className="text-sm italic text-gray-500">Not provided</span>
-                    )}
-                  </div>
+              {/* Email Address */}
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
+                  <Mail className="w-5 h-5 text-primary" />
                 </div>
-
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-gray-900 dark:text-white">Phone Number</h4>
-                    {profile.phone ? (
-                      <span className="text-sm">{profile.phone}</span>
-                    ) : (
-                      <span className="text-sm italic text-gray-500">Not provided</span>
-                    )}
-                  </div>
+                <div>
+                  <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-1">Email Address</h4>
+                  {profile.email ? (
+                    <a href={`mailto:${profile.email}`} className="text-sm text-primary hover:underline">{profile.email}</a>
+                  ) : (
+                    <span className="text-sm italic text-gray-500">Not provided</span>
+                  )}
                 </div>
-
               </div>
+
+              {/* Research Profiles */}
+              <div className="flex items-start">
+                <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
+                  <LinkIcon className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-2">Research Profiles</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {['Google Scholar', 'ORCID', 'Scopus'].map((type, idx) => {
+                      let href = '#';
+                      if (profile.researchLinks) {
+                        const found = profile.researchLinks.find(link => 
+                          link.toLowerCase().includes(type.split(' ')[0].toLowerCase())
+                        );
+                        if (found) href = found;
+                      }
+                      
+                      return (
+                        <a
+                          key={idx}
+                          href={href}
+                          target={href !== '#' ? "_blank" : undefined}
+                          rel={href !== '#' ? "noopener noreferrer" : undefined}
+                          className="px-3 py-1.5 bg-gray-50 hover:bg-red-50 dark:bg-gray-800/50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700 hover:border-brand-red rounded-full text-xs font-semibold text-gray-700 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors inline-flex items-center"
+                        >
+                          {type}
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+              
+              {/* Phone Number */}
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
+                  <Phone className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-1">Phone Number</h4>
+                  {profile.phone ? (
+                    <span className="text-sm">{profile.phone}</span>
+                  ) : (
+                    <span className="text-sm italic text-gray-500">Not provided</span>
+                  )}
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -341,11 +368,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'books' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Books & Book Chapters</h2>
-                {profile.books_chapters ? (
-                  <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {profile.books_chapters}
-                  </p>
-                ) : (
+                {profile.books_chapters ? renderListContent(profile.books_chapters) : (
                   <p className="text-sm text-gray-500 italic">No book or chapter details provided yet.</p>
                 )}
               </div>
@@ -354,30 +377,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'publications' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Publications</h2>
-                {profile.publications ? (
-                  Array.isArray(profile.publications) ? (
-                    <ul className="space-y-6">
-                      {profile.publications.map((pub, idx) => (
-                        <li key={idx} className="flex flex-col relative pl-6">
-                          <span className="absolute left-0 top-2 w-2 h-2 rounded-full bg-brand-red"></span>
-                          {pub.link ? (
-                            <a href={pub.link} target="_blank" rel="noopener noreferrer" className="text-base font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
-                              {pub.title}
-                            </a>
-                          ) : (
-                            <h3 className="text-base font-bold text-gray-900 dark:text-white">{pub.title}</h3>
-                          )}
-                          {pub.authors && <span className="text-sm text-gray-700 dark:text-gray-300 mt-1">{pub.authors}</span>}
-                          {pub.journal && <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 font-medium">{pub.journal}</span>}
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                      {profile.publications}
-                    </p>
-                  )
-                ) : (
+                {profile.publications ? renderListContent(profile.publications) : (
                   <p className="text-sm text-gray-500 italic">No publication details provided yet.</p>
                 )}
               </div>
@@ -386,11 +386,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'patents' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Patents</h2>
-                {profile.patents ? (
-                  <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {profile.patents}
-                  </p>
-                ) : (
+                {profile.patents ? renderListContent(profile.patents) : (
                   <p className="text-sm text-gray-500 italic">No patent details provided yet.</p>
                 )}
               </div>
@@ -399,30 +395,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'seminars' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Seminars & Workshops</h2>
-                {profile.seminars ? (
-                  Array.isArray(profile.seminars) ? (
-                    <ul className="space-y-6">
-                      {profile.seminars.map((item, idx) => (
-                        <li key={idx} className="flex flex-col relative pl-6">
-                          <span className="absolute left-0 top-2 w-2 h-2 rounded-full bg-brand-red"></span>
-                          {item.link ? (
-                            <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-base font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
-                              {item.title}
-                            </a>
-                          ) : (
-                            <h3 className="text-base font-bold text-gray-900 dark:text-white">{item.title}</h3>
-                          )}
-                          {item.authors && <span className="text-sm text-gray-700 dark:text-gray-300 mt-1">{item.authors}</span>}
-                          {item.journal && <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 font-medium">{item.journal}</span>}
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                      {profile.seminars}
-                    </p>
-                  )
-                ) : (
+                {profile.seminars ? renderListContent(profile.seminars) : (
                   <p className="text-sm text-gray-500 italic">No seminar or workshop details provided yet.</p>
                 )}
               </div>
@@ -431,11 +404,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'projects' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Projects</h2>
-                {profile.projects ? (
-                  <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {profile.projects}
-                  </p>
-                ) : (
+                {profile.projects ? renderListContent(profile.projects) : (
                   <p className="text-sm text-gray-500 italic">No project details provided yet.</p>
                 )}
               </div>
@@ -444,11 +413,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'supervisions' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Supervisions</h2>
-                {profile.supervisions ? (
-                  <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {profile.supervisions}
-                  </p>
-                ) : (
+                {profile.supervisions ? renderListContent(profile.supervisions) : (
                   <p className="text-sm text-gray-500 italic">No supervision details provided yet.</p>
                 )}
               </div>
