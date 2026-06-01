@@ -130,7 +130,12 @@ const CLUBS = {
       "Organized the highly successful Quant-Bid Arena with massive participation from engineering students across Pune",
       "Maintained weekly 'Problem of the Week' challenges and 'Did You Know' math series on social media to build curiosity"
     ],
-    images: [],
+    images: [
+      "/assets/clubs/quantnum_1.jpg",
+      "/assets/clubs/quantnum_2.png",
+      "/assets/clubs/quantnum_3.png",
+      "/assets/clubs/quantnum_4.png"
+    ],
     leadership: { "heads": [{ "name": "Suharsh Kumar", "role": "Club Head (CSE)" }, { "name": "Shreya Khandelwal", "role": "Club Co-Head (ECE)" }], "email": "quantnum@iiitp.ac.in", "instagram": "@quantnum_iiitp", "website": "" }
   },
   'bit-legion': {
@@ -159,7 +164,13 @@ const CLUBS = {
       "Ranked 1st among all IIITs at the Amritapuri ICPC Regionals and qualified for the Asia-West Continental Finals",
       "Conducted InfInITY 2k22 globally, attracting top-rated competitive programmers including masters and grandmasters"
     ],
-    images: [],
+    images: [
+      "/assets/clubs/bitlegion_1.jpg",
+      "/assets/clubs/bitlegion_2.jpg",
+      "/assets/clubs/bitlegion_3.jpg",
+      "/assets/clubs/bitlegion_4.jpg",
+      "/assets/clubs/bitlegion_5.jpg"
+    ],
     leadership: { "heads": [], "email": "bitlegion@iiitp.ac.in", "instagram": "@bit_legion_iiitp", "website": "" }
   },
   'c-cube': {
@@ -321,7 +332,8 @@ const CLUBS = {
       "/assets/clubs/vanity-crew_2.jpg",
       "/assets/clubs/vanity-crew_3.jpg",
       "/assets/clubs/vanity-crew_4.jpg",
-      "/assets/clubs/vanity-crew_5.jpg"
+      "/assets/clubs/vanity-crew_5.jpg",
+      "/assets/clubs/vanity-crew_6.png"
     ],
     leadership: { "heads": [{ "name": "Avani Yadav", "role": "Club Head" }, { "name": "Arushi Ramesh", "role": "Club Co-Head" }, { "name": "Aaryan Singh", "role": "Club Co-Head" }], "email": "vanitycrew@iiitp.ac.in", "instagram": "@vanity_crew_iiitp", "website": "https://vanitycrew.vercel.app/" }
   },
@@ -351,7 +363,15 @@ const CLUBS = {
       "Volleyball team won the Bronze Medal and Football team secured 4th position at the national Inter-IIIT Meet (Kancheepuram)",
       "Sent an athletic contingent to represent the institute at the Inter-IIIT Sports Meet at IIITDM Kurnool"
     ],
-    images: [],
+    images: [
+      "/assets/clubs/sports_1.png",
+      "/assets/clubs/sports_2.jpg",
+      "/assets/clubs/sports_3.jpg",
+      "/assets/clubs/sports_4.jpeg",
+      "/assets/clubs/sports_5.jpeg",
+      "/assets/clubs/sports_6.jpeg",
+      "/assets/clubs/sports_7.jpeg"
+    ],
     leadership: { "heads": [{ "name": "Shriraj Nilare", "role": "Sports Club Head" }, { "name": "Bhavin Barad", "role": "Sports Club Co-Head" }], "email": "sports@iiitp.ac.in", "instagram": "@sports_iiitp", "website": "" }
   },
   'rofies': {
@@ -384,7 +404,13 @@ const CLUBS = {
       "Represented IIIT Pune at MindSpark (COEP) and Cognizance (IIT Roorkee) with award-winning robotics projects",
       "Successfully cleared Level 1 of TRON 2026 with Project Aura, competing against global universities"
     ],
-    images: [],
+    images: [
+      "/assets/clubs/rofies_1.jpeg",
+      "/assets/clubs/rofies_2.jpeg",
+      "/assets/clubs/rofies_3.jpeg",
+      "/assets/clubs/rofies_4.jpeg",
+      "/assets/clubs/rofies_5.png"
+    ],
     leadership: { "heads": [], "email": "rofies@iiitp.ac.in", "instagram": "@media", "website": "" }
   },
   'localhost': {
@@ -417,7 +443,11 @@ const CLUBS = {
       "Conducted full-scale Hacktoberfest workshops, resulting in over 80 students completing open-source contribution pull requests",
       "Maintained active community dev channels on Telegram to support beginners in web and app development"
     ],
-    images: [],
+    images: [
+      "/assets/clubs/localhost_1.jpg",
+      "/assets/clubs/localhost_2.jpg",
+      "/assets/clubs/localhost_3.gif"
+    ],
     leadership: { "heads": [], "email": "localhost@iiitp.ac.in", "instagram": "@localhost_iiitp", "website": "" }
   },
   'horizon': {
@@ -484,7 +514,10 @@ const CLUBS = {
       "/assets/clubs/abhinay_2.png",
       "/assets/clubs/abhinay_3.png",
       "/assets/clubs/abhinay_4.png",
-      "/assets/clubs/abhinay_5.png"
+      "/assets/clubs/abhinay_5.png",
+      "/assets/clubs/abhinay_6.png",
+      "/assets/clubs/abhinay_7.png",
+      "/assets/clubs/abhinay_8.png"
     ],
     leadership: { "heads": [{ "name": "Swayam Patel", "role": "Club Head (CSE 3rd Year)" }, { "name": "Aashutosh Bharti", "role": "Club Co-Head (CSE 3rd Year)" }], "email": "abhinay@iiitp.ac.in", "instagram": "@abhinay_iiitp", "website": "" }
   },
@@ -518,7 +551,17 @@ const CLUBS = {
       "Organized Cognition: Seikai Showdown with great success and high participation across Pune colleges",
       "Successfully built a welcoming learning-sharing environment for quiz hosting and framing"
     ],
-    images: [],
+    images: [
+      "/assets/clubs/qriocity_1.png",
+      "/assets/clubs/qriocity_2.jpg",
+      "/assets/clubs/qriocity_3.jpg",
+      "/assets/clubs/qriocity_4.jpg",
+      "/assets/clubs/qriocity_5.png",
+      "/assets/clubs/qriocity_6.png",
+      "/assets/clubs/qriocity_7.jpg",
+      "/assets/clubs/qriocity_8.jpg",
+      "/assets/clubs/qriocity_9.jpg"
+    ],
     leadership: { "heads": [{ "name": "Aditya Apoorva Negi", "role": "Club Head (CSE 3rd Year)" }, { "name": "Aadit Bajaj", "role": "Core Team Member (CSE 2nd Year)" }, { "name": "Amol Raj", "role": "Core Team Member (CSE 2nd Year)" }], "email": "q_riocity@iiitp.ac.in", "instagram": "@q_riocity_", "website": "" }
   },
 };
@@ -684,10 +727,13 @@ const LifePage = () => {
   const activeClubKey = searchParams.get('club') || 'blueprint';
   const activeActKey = searchParams.get('act') || 'azadi';
 
-  // Synchronize title on load
+  // Synchronize title on load & redirect for SAAZ
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [activeTab]);
+    if (activeTab === 'clubs' && activeClubKey === 'saaz') {
+      window.location.href = 'https://saaz-iiitp.vercel.app/';
+    }
+  }, [activeTab, activeClubKey]);
 
   const handleTabChange = (tabKey) => {
     setSearchParams({ tab: tabKey });
@@ -726,7 +772,13 @@ const LifePage = () => {
                     return (
                       <button
                         key={key}
-                        onClick={() => setSearchParams({ tab: 'clubs', club: key })}
+                        onClick={() => {
+                          if (key === 'saaz') {
+                            window.location.href = 'https://saaz-iiitp.vercel.app/';
+                          } else {
+                            setSearchParams({ tab: 'clubs', club: key });
+                          }
+                        }}
                         className={`shrink-0 lg:shrink lg:w-full flex flex-row lg:flex-col items-center lg:items-start gap-2 lg:gap-0 px-4 py-2 lg:px-3.5 lg:py-3 rounded-full lg:rounded-xl text-left transition-all duration-250 border ${isSelected
                             ? 'bg-primary text-white border-primary shadow-sm'
                             : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700'
@@ -1320,6 +1372,11 @@ const LifePage = () => {
 
       case 'campus': {
         const CAMPUS_IMAGES = [
+          { src: '/assets/girls_hostel.jpg', caption: 'Girls Hostel' },
+          { src: '/assets/lecture_hall.jpg', caption: 'Academic Building (AC) - Lecture Hall' },
+          { src: '/assets/bh1.jpg', caption: 'Boys Hostel 1 (BH)' },
+          { src: '/assets/bh2.jpg', caption: 'Boys Hostel 2 (BH)' },
+          { src: '/assets/conference_room.jpg', caption: 'Academic Building (AC) - Conference Room' },
           { src: 'https://www.iiitp.ac.in/sites/default/files/inline-images/image042.jpg', caption: 'Campus Sports Ground' },
           { src: 'https://www.iiitp.ac.in/sites/default/files/inline-images/_THC3794.JPG', caption: 'Campus Life' },
           { src: 'https://www.iiitp.ac.in/sites/default/files/inline-images/Frame%20780.png', caption: 'IIIT Pune Events' },
