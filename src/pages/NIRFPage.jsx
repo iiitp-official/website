@@ -7,28 +7,28 @@ const NIRFPage = () => {
     {
       year: '2026',
       docs: [
-        { label: "Institute Data for NIRF'2026' Please click here for ENGINEERING Doc", btnLabel: "ENGINEERING", path: "/NIRF/1.pdf" },
-        { label: "Institute Data for NIRF'2026' Please click here for OVERALL Doc", btnLabel: "OVERALL", path: "/NIRF/2.pdf" },
+        { label: "Institute Data for NIRF '2026' Engineering Document", btnLabel: "ENGINEERING", path: "/NIRF/1.pdf" },
+        { label: "Institute Data for NIRF '2026' Overall Document", btnLabel: "OVERALL", path: "/NIRF/2.pdf" },
       ]
     },
     {
       year: '2025',
       docs: [
-        { label: "Institute Data for NIRF'2025' Please click here for ENGINEERING Doc", btnLabel: "ENGINEERING", path: "/NIRF/3.pdf" },
-        { label: "Institute Data for NIRF'2025' Please click here for OVERALL Doc", btnLabel: "OVERALL", path: "/NIRF/4.pdf" },
+        { label: "Institute Data for NIRF '2025' Engineering Document", btnLabel: "ENGINEERING", path: "/NIRF/3.pdf" },
+        { label: "Institute Data for NIRF '2025' Overall Document", btnLabel: "OVERALL", path: "/NIRF/4.pdf" },
       ]
     },
     {
       year: '2024',
       docs: [
-        { label: "Institute Data for NIRF'2024' Please click here", btnLabel: "2024 Doc", path: "/NIRF/5.pdf" },
+        { label: "Institute Data for NIRF '2024' Document", btnLabel: "2024 Doc", path: "/NIRF/5.pdf" },
       ]
     },
     {
       year: '2023',
       docs: [
-        { label: "Institute Data for NIRF'2023' Please click here for ENGINEERING Doc", btnLabel: "ENGINEERING", path: "/NIRF/6.pdf" },
-        { label: "Institute Data for NIRF'2023' Please click here for OVERALL Doc", btnLabel: "OVERALL", path: "/NIRF/7.pdf" },
+        { label: "Institute Data for NIRF '2023' Engineering Document", btnLabel: "ENGINEERING", path: "/NIRF/6.pdf" },
+        { label: "Institute Data for NIRF '2023' Overall Document", btnLabel: "OVERALL", path: "/NIRF/7.pdf" },
       ]
     }
   ];
