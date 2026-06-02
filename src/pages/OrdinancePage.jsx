@@ -224,8 +224,8 @@ const OrdinancePage = () => {
                 <div className="space-y-3">
                   <a
                     href="/documents/IIIT_Pune_Statute_2017 22.10.2018.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target="_blank" rel="noopener noreferrer"
+                    
                     className="block p-4 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-blue-900/50 hover:bg-blue-100 dark:hover:bg-gray-700 transition-colors"
                   >
                     <p className="font-semibold text-primary dark:text-white">IIIT Pune Statute & Ordinance (PDF)</p>

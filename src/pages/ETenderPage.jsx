@@ -60,8 +60,8 @@ const ETenderPage = () => {
           </h2>
           <a 
             href="https://gem.gov.in/" 
-            target="_blank" 
-            rel="noopener noreferrer"
+            target="_blank" rel="noopener noreferrer" 
+            
             className="inline-flex items-center justify-center gap-2 bg-primary dark:bg-primary-dark text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 dark:hover:bg-blue-900 transition-colors text-sm"
           >
             Visit GeM Portal
@@ -111,8 +111,8 @@ const ETenderPage = () => {
                           {tender.fileUrl ? (
                             <a 
                               href={tender.fileUrl} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
+                              target="_blank" rel="noopener noreferrer" 
+                              
                               className="text-accent hover:text-blue-800 dark:text-accent-dark transition-colors inline-flex p-2 bg-blue-50 dark:bg-gray-800 rounded-full border border-blue-100 dark:border-gray-700"
                               title={tender.fileText || "Download"}
                             >
@@ -126,8 +126,8 @@ const ETenderPage = () => {
                           {tender.corrigendumUrl ? (
                             <a 
                               href={tender.corrigendumUrl} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
+                              target="_blank" rel="noopener noreferrer" 
+                              
                               className="text-orange-600 hover:text-orange-800 dark:text-orange-400 transition-colors inline-flex p-2 bg-orange-50 dark:bg-gray-800 rounded-full border border-orange-100 dark:border-gray-700"
                               title={tender.corrigendumText || "Corrigendum"}
                             >

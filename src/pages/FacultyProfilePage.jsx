@@ -131,7 +131,7 @@ const FacultyProfilePage = () => {
           <li key={idx} className="flex flex-col relative pl-6">
             <span className="absolute left-0 top-2 w-2 h-2 rounded-full bg-brand-red"></span>
             {item.link ? (
-              <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-base font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
+              <a href={item.link} target="_blank" rel="noopener noreferrer"  className="text-base font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
                 {item.title}
               </a>
             ) : (
@@ -357,7 +357,7 @@ const FacultyProfilePage = () => {
                       <FileText className="w-5 h-5 mr-2 text-brand-red" />
                       Detailed Resume
                     </h3>
-                    <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline break-all inline-flex items-center">
+                    <a href={profile.resume} target="_blank" rel="noopener noreferrer"  className="text-sm text-primary hover:underline break-all inline-flex items-center">
                       {profile.resume}
                     </a>
                   </div>
@@ -434,8 +434,8 @@ const FacultyProfilePage = () => {
                         <li key={idx}>
                           <a
                             href={link}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            target="_blank" rel="noopener noreferrer"
+                            
                             className="group flex items-center p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-blue-50 dark:hover:bg-gray-800 transition-all"
                           >
                             <div className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center mr-4 group-hover:bg-primary group-hover:text-white transition-colors shrink-0">

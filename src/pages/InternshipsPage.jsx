@@ -30,7 +30,7 @@ const InternshipsPage = () => {
             <div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Application Process</h3>
               <p>Interested candidates must fill out the registration form using the link provided below:</p>
-              <a href="https://forms.gle/pAtj5PoVyHNfkXD18" target="_blank" rel="noopener noreferrer" className="text-brand-red dark:text-blue-400 hover:underline break-all mt-2 inline-block">
+              <a href="https://forms.gle/pAtj5PoVyHNfkXD18" target="_blank" rel="noopener noreferrer"  className="text-brand-red dark:text-blue-400 hover:underline break-all mt-2 inline-block">
                 https://forms.gle/pAtj5PoVyHNfkXD18
               </a>
             </div>
@@ -128,7 +128,7 @@ const InternshipsPage = () => {
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Internship Fees</h3>
               <p className="mb-3">The internship registration fee is ₹5,000 per student per semester. This fee does not apply to students of IIIT Pune.</p>
               <p className="mb-1">Payment Link:</p>
-              <a href="https://payments.billdesk.com/bdcollect/bd/indianinstituteofinformationtechnologypuneii/16417" target="_blank" rel="noopener noreferrer" className="text-brand-red dark:text-blue-400 hover:underline break-all mb-4 inline-block">
+              <a href="https://payments.billdesk.com/bdcollect/bd/indianinstituteofinformationtechnologypuneii/16417" target="_blank" rel="noopener noreferrer"  className="text-brand-red dark:text-blue-400 hover:underline break-all mb-4 inline-block">
                 https://payments.billdesk.com/bdcollect/bd/indianinstituteofinformationtechnologypuneii/16417
               </a>
               <p>Applicants are advised to email a copy of the application form and payment receipt to <a href="mailto:summerinternship@iiitp.ac.in" className="text-brand-red dark:text-blue-400 hover:underline">summerinternship@iiitp.ac.in</a>.</p>
@@ -152,8 +152,8 @@ const InternshipsPage = () => {
               </p>
               <a 
                 href="/documents/Internship at IIIT Pune_0.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                target="_blank" rel="noopener noreferrer" 
+                
                 className="inline-block bg-[#0052cc] text-white px-6 py-2 rounded-md font-bold hover:bg-blue-800 transition-colors shadow-sm"
               >
                 Document(PDF)

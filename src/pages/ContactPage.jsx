@@ -280,13 +280,13 @@ const ContactPage = () => {
                       <strong>Email:</strong> <a href="mailto:enquiry@iiitp.ac.in" className="hover:text-accent dark:hover:text-accent-dark">enquiry@iiitp.ac.in</a>
                     </p>
                     <div className="pt-4 flex items-center space-x-5">
-                      <a href="https://www.linkedin.com/school/indian-institute-of-information-technology-pune/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
+                      <a href="https://www.linkedin.com/school/indian-institute-of-information-technology-pune/" target="_blank" rel="noopener noreferrer"  className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
                         <LinkedinIcon size={24} />
                       </a>
-                      <a href="https://twitter.com/IIITPune" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="X (Twitter)">
+                      <a href="https://twitter.com/IIITPune" target="_blank" rel="noopener noreferrer"  className="opacity-70 hover:opacity-100 transition-opacity" aria-label="X (Twitter)">
                         <TwitterIcon size={24} />
                       </a>
-                      <a href="https://www.facebook.com/Indian-Institute-of-Information-Technology-Pune-101140938435131/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
+                      <a href="https://www.facebook.com/Indian-Institute-of-Information-Technology-Pune-101140938435131/" target="_blank" rel="noopener noreferrer"  className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
                         <FacebookIcon size={24} />
                       </a>
                     </div>

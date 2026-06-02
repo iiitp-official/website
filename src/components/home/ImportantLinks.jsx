@@ -73,8 +73,8 @@ const ImportantLinks = () => {
                       <a
                         key={idx}
                         href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target="_blank" rel="noopener noreferrer"
+                        
                         className="flex items-center text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark group font-medium border-b border-gray-100 dark:border-gray-800/50 pb-2 transition-colors text-sm"
                       >
                         <div className="p-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 mr-3 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
@@ -148,8 +148,8 @@ const ImportantLinks = () => {
                         </span>
                         <a
                           href={doc.path}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          target="_blank" rel="noopener noreferrer"
+                          
                           className="text-gray-400 hover:text-accent dark:text-gray-500 dark:hover:text-accent-dark p-2 bg-white dark:bg-gray-800 rounded-full shadow-sm group-hover:bg-blue-50 dark:group-hover:bg-gray-700 transition-colors shrink-0"
                         >
                           <Download size={18} />

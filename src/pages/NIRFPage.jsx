@@ -69,8 +69,8 @@ const NIRFPage = () => {
                     <div className="sm:ml-auto">
                       <a 
                         href={doc.path} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
+                        target="_blank" rel="noopener noreferrer" 
+                        
                         className="inline-flex justify-center items-center px-6 py-2.5 bg-[#0d6efd] hover:bg-blue-700 text-white font-bold rounded shadow-sm transition-colors min-w-[140px] uppercase text-sm tracking-wide"
                       >
                         {doc.btnLabel}
