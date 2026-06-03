@@ -1,0 +1,116 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PageHeader from '../components/shared/PageHeader';
+import Slideshow from '../components/shared/InternationalSlideshow';
+
+const InternationalHomePage = () => {
+  return (
+    <div className="w-full flex-grow flex flex-col international-relations-page min-h-screen transition-colors duration-200">
+      <PageHeader 
+        title="Global Academic Excellence" 
+        subtitle="Welcoming scholars, researchers, and students from across the globe to the Indian Institute of Information Technology, Pune. Discover international partnerships, research grants, and exchanges."
+      />
+      
+      {/* Main Landing Section */}
+      <main className="section-padding">
+        <div className="container">
+          
+          {/* Slideshow Component */}
+          <Slideshow />
+
+          {/* Landing Two-Column Layout */}
+          <div className="landing-grid">
+            
+            {/* Primary Feed: What's New */}
+            <section className="main-content-column">
+              <h2 className="section-headline">What's New &amp; Announcements</h2>
+              
+              <div className="news-feed">
+                <div className="news-alert">
+                  <p>Stay tuned for upcoming announcements from the International Relations Office. New updates will be shared here shortly.</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Sidebar Widgets */}
+            <aside className="sidebar-column">
+              
+              <div className="sidebar-widget">
+                <h3 className="widget-title">IR Office Services</h3>
+                <ul className="quick-links-list">
+                  <li><Link to="/international/about">Learn About the IR Office</Link></li>
+                  <li><Link to="/international/academics">Academic Curriculum &amp; Programs</Link></li>
+                  <li><Link to="/international/collaborations">Joint Degrees &amp; Exchanges</Link></li>
+                  <li><Link to="/international/contact">Virtual Office Hours &amp; Advisors</Link></li>
+                </ul>
+              </div>
+
+              <div className="sidebar-widget">
+                <h3 className="widget-title">Important Resources</h3>
+                <ul className="quick-links-list">
+                  <li><a href="https://iiitp.ac.in" target="_blank" rel="noopener noreferrer">Main IIIT Pune Portal ↗</a></li>
+                  <li><a href="https://education.gov.in" target="_blank" rel="noopener noreferrer">Ministry of Education, GoI ↗</a></li>
+                  <li><a href="https://www.maharashtra.gov.in" target="_blank" rel="noopener noreferrer">Govt. of Maharashtra ↗</a></li>
+                  <li><Link to="/international/contact">Campus Direction &amp; Coordinates</Link></li>
+                </ul>
+              </div>
+
+            </aside>
+
+          </div>
+        </div>
+      </main>
+
+      {/* Institutional Stats Strip */}
+      <section className="stats-strip">
+        <div className="container stats-grid">
+          <div className="stat-box">
+            <h3>12+</h3>
+            <p>Global Academic Options</p>
+          </div>
+          <div className="stat-box">
+            <h3>5</h3>
+            <p>Collaboration Pathways</p>
+          </div>
+          <div className="stat-box">
+            <h3>3</h3>
+            <p>Graduate Level Credentials</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Audience Pathways */}
+      <section className="section-padding bg-light">
+        <div className="container">
+          <h2 className="section-headline text-center">Resources for our Community</h2>
+          <div className="audience-cards">
+            
+            <div className="audience-card">
+              <div className="audience-icon">🎓</div>
+              <h3 className="audience-title">For Exchange Students</h3>
+              <p className="audience-desc">Explore B.Tech, M.Tech, and Ph.D. directories, credit structures, and study pathways at IIIT Pune.</p>
+              <Link to="/international/academics" className="audience-link">View Programs →</Link>
+            </div>
+
+            <div className="audience-card">
+              <div className="audience-icon">🔬</div>
+              <h3 className="audience-title">For Scholars &amp; Researchers</h3>
+              <p className="audience-desc">Discover joint research funding, Ph.D. co-mentoring alignments, and dual-degree pathways.</p>
+              <Link to="/international/collaborations" className="audience-link">Explore Opportunities →</Link>
+            </div>
+
+            <div className="audience-card">
+              <div className="audience-icon">🌍</div>
+              <h3 className="audience-title">For Academic Partners</h3>
+              <p className="audience-desc">Establish formal exchange MoUs, joint thesis systems, or technical partnership programs with us.</p>
+              <Link to="/international/contact" className="audience-link">Partner With Us →</Link>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default InternationalHomePage;
