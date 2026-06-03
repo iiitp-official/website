@@ -245,25 +245,53 @@ const FacultyProfilePage = () => {
               </div>
               
               {/* Social Icons */}
-              {(profile.linkedin || profile.facebook || profile.twitter) && (
-                <div className="flex flex-col gap-3 ml-4 shrink-0 mt-1">
-                  {profile.linkedin && (
-                    <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                      <LinkedinIcon className="w-8 h-8" />
-                    </a>
-                  )}
-                  {profile.facebook && (
-                    <a href={profile.facebook} target="_blank" rel="noopener noreferrer" title="Facebook">
-                      <FacebookIcon className="w-8 h-8" />
-                    </a>
-                  )}
-                  {profile.twitter && (
-                    <a href={profile.twitter} target="_blank" rel="noopener noreferrer" title="Twitter">
-                      <TwitterIcon className="w-8 h-8" />
-                    </a>
-                  )}
-                </div>
-              )}
+              <div className="flex flex-col gap-3 ml-4 shrink-0 mt-1">
+                {(profile.linkedin && profile.linkedin !== "#") ? (
+                  <a 
+                    href={profile.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    title="LinkedIn"
+                    className="hover:opacity-80"
+                  >
+                    <LinkedinIcon className="w-8 h-8" />
+                  </a>
+                ) : (
+                  <div title="LinkedIn" className="opacity-40 cursor-not-allowed grayscale">
+                    <LinkedinIcon className="w-8 h-8" />
+                  </div>
+                )}
+                {(profile.facebook && profile.facebook !== "#") ? (
+                  <a 
+                    href={profile.facebook} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    title="Facebook"
+                    className="hover:opacity-80"
+                  >
+                    <FacebookIcon className="w-8 h-8" />
+                  </a>
+                ) : (
+                  <div title="Facebook" className="opacity-40 cursor-not-allowed grayscale">
+                    <FacebookIcon className="w-8 h-8" />
+                  </div>
+                )}
+                {(profile.twitter && profile.twitter !== "#") ? (
+                  <a 
+                    href={profile.twitter} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    title="Twitter"
+                    className="hover:opacity-80"
+                  >
+                    <TwitterIcon className="w-8 h-8" />
+                  </a>
+                ) : (
+                  <div title="Twitter" className="opacity-40 cursor-not-allowed grayscale">
+                    <TwitterIcon className="w-8 h-8" />
+                  </div>
+                )}
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-gray-700 dark:text-gray-300 mt-auto pt-4">
