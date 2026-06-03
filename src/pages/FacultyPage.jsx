@@ -2,17 +2,22 @@ import React, { useMemo } from 'react';
 import PageHeader from '../components/shared/PageHeader';
 import Breadcrumb from '../components/shared/Breadcrumb';
 import { Link } from 'react-router-dom';
-import peopleData from '../data/people.json';
+import facultyDetails from '../data/faculty_details.json';
 
 const FacultyPage = () => {
-  // Filter out the noise from the scraped data
+  // Extract and format valid faculty from faculty_details.json
   const validFaculty = useMemo(() => {
-    return peopleData.faculty.filter(person => {
-      if (!person.name) return false;
-      const invalidNames = ['Language', 'Main navigation', 'Quick Links', 'Locate us'];
-      if (invalidNames.includes(person.name)) return false;
-      return true;
-    });
+    return Object.entries(facultyDetails).map(([slug, details]) => {
+      // Derive name from slug
+      const nameParts = slug.split('-');
+      const formattedName = nameParts.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      
+      return {
+        ...details,
+        name: formattedName,
+        slug: slug
+      };
+    }).sort((a, b) => a.name.localeCompare(b.name));
   }, []);
 
   return (

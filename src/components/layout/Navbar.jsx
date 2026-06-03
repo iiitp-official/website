@@ -361,7 +361,7 @@ const Navbar = () => {
       ]
     },
     { name: "Careers", path: "/careers", hasDropdown: false },
-    { name: "Placement", path: "/placement", hasDropdown: false },
+    { name: "Placement", path: "https://placements.iiitp.ac.in/", hasDropdown: false, isExternal: true },
     { name: "Contact Us", path: "/contact", hasDropdown: false },
     {
       name: "E-TENDER",
@@ -598,8 +598,22 @@ const Navbar = () => {
         <div className="flex flex-wrap justify-center items-center py-1 gap-x-2 gap-y-0.5">
           {primaryLinks.map((link) => (
             <div key={link.name} className="relative group">
-              <NavLink
-                to={link.path}
+              {link.isExternal ? (
+                <a
+                  href={link.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={navLinkClass({ isActive: false })}
+                >
+                  {link.name}
+                  {link.hasDropdown && (
+                    <ChevronDown className="w-4 h-4 ml-1 opacity-70 transition-transform group-hover:rotate-180" />
+                  )}
+                  {navLinkUnderline({ isActive: false })}
+                </a>
+              ) : (
+                <NavLink
+                  to={link.path}
                 className={({ isActive }) => {
                   const prefix = {
                     "About Us": "/about",
@@ -641,6 +655,7 @@ const Navbar = () => {
                   );
                 }}
               </NavLink>
+              )}
               {link.hasDropdown && link.subLinks && (
                 <div className={`absolute top-full left-0 mt-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50 ${isNavigating ? 'hidden' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'} ${!link.subLinks.some(sub => sub.hasDropdown) ? 'max-h-[75vh] overflow-y-auto' : ''}`}>
                   {link.subLinks.map((sub) => (
@@ -827,28 +842,40 @@ const Navbar = () => {
                   {primaryLinks.map((link) => (
                     <div key={link.name} className="flex flex-col">
                       <div className="flex items-center justify-between">
-                        <NavLink
-                          to={link.path}
-                          onClick={(e) => {
-                            if (link.path === "#") {
-                              e.preventDefault();
-                              toggleDropdown(link.name, e);
-                            } else {
-                              setIsMobileMenuOpen(false);
-                            }
-                          }}
-                          className={({ isActive }) => {
-                            const activeState = link.path === "#"
-                              ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration")) || (link.name === "Notice" && location.pathname.startsWith("/notice"))
-                              : isActive;
-                            return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
-                              ? "bg-brand-red text-white dark:bg-brand-red-dark/50"
-                              : "text-white hover:bg-brand-red/50 dark:text-gray-300 dark:hover:bg-brand-red-dark/30"
-                              }`;
-                          }}
-                        >
-                          {link.name}
-                        </NavLink>
+                        {link.isExternal ? (
+                          <a
+                            href={link.path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className={`flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors text-white hover:bg-brand-red/50 dark:text-gray-300 dark:hover:bg-brand-red-dark/30`}
+                          >
+                            {link.name}
+                          </a>
+                        ) : (
+                          <NavLink
+                            to={link.path}
+                            onClick={(e) => {
+                              if (link.path === "#") {
+                                e.preventDefault();
+                                toggleDropdown(link.name, e);
+                              } else {
+                                setIsMobileMenuOpen(false);
+                              }
+                            }}
+                            className={({ isActive }) => {
+                              const activeState = link.path === "#"
+                                ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration")) || (link.name === "Notice" && location.pathname.startsWith("/notice"))
+                                : isActive;
+                              return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
+                                ? "bg-brand-red text-white dark:bg-brand-red-dark/50"
+                                : "text-white hover:bg-brand-red/50 dark:text-gray-300 dark:hover:bg-brand-red-dark/30"
+                                }`;
+                            }}
+                          >
+                            {link.name}
+                          </NavLink>
+                        )}
                         {link.hasDropdown && (
                           <button
                             onClick={(e) => toggleDropdown(link.name, e)}

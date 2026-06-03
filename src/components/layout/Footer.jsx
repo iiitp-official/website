@@ -61,7 +61,7 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-4">
               <ul className="space-y-3">
                 <li><Link to="/about" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> About Us</Link></li>
-                <li><Link to="/placement" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Placement</Link></li>
+                <li><a href="https://placements.iiitp.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Placement</a></li>
                 <li><Link to="/careers" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Careers</Link></li>
                 <li><Link to="/notice" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Notice Board</Link></li>
               </ul>

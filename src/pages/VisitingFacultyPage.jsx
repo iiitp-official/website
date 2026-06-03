@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react';
 import PageHeader from '../components/shared/PageHeader';
 import Breadcrumb from '../components/shared/Breadcrumb';
-import peopleData from '../data/people.json';
 
 const VisitingFacultyPage = () => {
   const validFaculty = useMemo(() => {
@@ -36,7 +35,11 @@ const VisitingFacultyPage = () => {
         designation: "Assistant Professor, IIT Indore",
         image: "https://people.iiti.ac.in/~bodhisatwa/img/bodhi.jpg"
       }
-    ];
+    ].sort((a, b) => {
+      const nameA = a.name.replace(/^(Dr\.|Prof\.)\s*/i, '');
+      const nameB = b.name.replace(/^(Dr\.|Prof\.)\s*/i, '');
+      return nameA.localeCompare(nameB);
+    });
   }, []);
 
   return (

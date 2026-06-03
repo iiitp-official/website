@@ -26,13 +26,6 @@ const AlumniPage = () => {
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Breadcrumb 
-          items={[
-            { label: 'Home', path: '/' },
-            { label: 'People', path: '/people' },
-            { label: 'Alumni' }
-          ]} 
-        />
         
         <div className="mt-8 space-y-16">
           
