@@ -364,6 +364,12 @@ const Navbar = () => {
     { name: "Placement", path: "https://placements.iiitp.ac.in/", hasDropdown: false, isExternal: true },
     { name: "Contact Us", path: "/contact", hasDropdown: false },
     {
+      name: "International Relations",
+      path: "/international",
+      hasDropdown: false,
+      isExternal: true
+    },
+    {
       name: "E-TENDER",
       path: "#",
       hasDropdown: true,
@@ -622,6 +628,7 @@ const Navbar = () => {
                     "Notice": "/notice",
                     "Research": "/research",
                     "People": "/people",
+                    "International Relations": "/international",
                     "E-TENDER": "/e-tender"
                   }[link.name];
                   const isLinkActive = link.path === "#" 
@@ -639,6 +646,7 @@ const Navbar = () => {
                     "Notice": "/notice",
                     "Research": "/research",
                     "People": "/people",
+                    "International Relations": "/international",
                     "E-TENDER": "/e-tender"
                   }[link.name];
                   const activeState = link.path === "#" 
@@ -865,7 +873,7 @@ const Navbar = () => {
                             }}
                             className={({ isActive }) => {
                               const activeState = link.path === "#"
-                                ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration")) || (link.name === "Notice" && location.pathname.startsWith("/notice"))
+                                ? (link.name === "About Us" && location.pathname.startsWith("/about")) || (link.name === "Academics" && location.pathname.startsWith("/academics")) || (link.name === "Administration" && location.pathname.startsWith("/administration")) || (link.name === "Notice" && location.pathname.startsWith("/notice")) || (link.name === "International Relations" && location.pathname.startsWith("/international"))
                                 : isActive;
                               return `flex-1 px-3 py-2 rounded-md text-base font-medium transition-colors ${activeState
                                 ? "bg-brand-red text-white dark:bg-brand-red-dark/50"
