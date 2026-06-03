@@ -160,7 +160,7 @@ const PlacementPage = () => {
               <h2 className="text-3xl font-bold font-serif text-primary dark:text-white">Placement at a Glance</h2>
               <div className="w-16 h-1 bg-accent rounded-full mt-3" />
             </div>
-            <a href="https://placements.iiitp.ac.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-red-700 text-white px-6 py-2.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide shrink-0">
+            <a href="https://placements.iiitp.ac.in/" target="_blank" rel="noopener noreferrer"  className="inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-red-700 text-white px-6 py-2.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide shrink-0">
               Visit Placement Portal <ExternalLink size={18} />
             </a>
           </div>
@@ -404,13 +404,13 @@ const PlacementPage = () => {
                 </div>
                 <div className="flex items-center gap-3 text-blue-100">
                   <Globe size={16} className="text-blue-300 shrink-0" />
-                  <a href="https://placements.iiitp.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-sm">
+                  <a href="https://placements.iiitp.ac.in" target="_blank" rel="noopener noreferrer"  className="hover:text-white transition-colors text-sm">
                     placements.iiitp.ac.in
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-blue-100">
                   <ExternalLink size={16} className="text-blue-300 shrink-0" />
-                  <a href="https://www.linkedin.com/company/cdcrciiitp/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-sm">
+                  <a href="https://www.linkedin.com/company/cdcrciiitp/" target="_blank" rel="noopener noreferrer"  className="hover:text-white transition-colors text-sm">
                     linkedin.com/company/cdcrciiitp
                   </a>
                 </div>

@@ -67,8 +67,8 @@ const Footer = () => {
               </ul>
               <ul className="space-y-3">
                 <li><Link to="/e-tender" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> E-Tender</Link></li>
-                <li><a href="https://sites.google.com/iiitp.ac.in/library" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Library</a></li>
-                <li><a href="/docs/Fee_Structure_2025-26.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Fees Structure</a></li>
+                <li><a href="https://sites.google.com/iiitp.ac.in/library" target="_blank" rel="noopener noreferrer"  className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Library</a></li>
+                <li><a href="/docs/Fee_Structure_2025-26.pdf" target="_blank" rel="noopener noreferrer"  className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Fees Structure</a></li>
                 <li><Link to="/contact" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Contact Us</Link></li>
               </ul>
             </div>
@@ -102,13 +102,13 @@ const Footer = () => {
                 <p>enquiry@iiitp.ac.in</p>
               </div>
                     <div className="pt-4 flex items-center space-x-5">
-                <a href="https://www.linkedin.com/school/indian-institute-of-information-technology-pune/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/school/indian-institute-of-information-technology-pune/" target="_blank" rel="noopener noreferrer"  className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
                   <LinkedinIcon size={24} />
                 </a>
-                <a href="https://twitter.com/IIITPune" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="X (Twitter)">
+                <a href="https://twitter.com/IIITPune" target="_blank" rel="noopener noreferrer"  className="opacity-70 hover:opacity-100 transition-opacity" aria-label="X (Twitter)">
                   <TwitterIcon size={24} />
                 </a>
-                <a href="https://www.facebook.com/Indian-Institute-of-Information-Technology-Pune-101140938435131/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
+                <a href="https://www.facebook.com/Indian-Institute-of-Information-Technology-Pune-101140938435131/" target="_blank" rel="noopener noreferrer"  className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
                   <FacebookIcon size={24} />
                 </a>
               </div>
@@ -120,8 +120,8 @@ const Footer = () => {
             <h3 className="text-brand-red font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Map Location</h3>
             <a 
               href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology+Pune/@18.7531606,73.6877379,14z/data=!4m6!3m5!1s0x3bc2b405ac494d45:0xc302bc70566bb0f8!8m2!3d18.7651235!4d73.6970609!16s%2Fg%2F11c1qzfh2p?hl=en&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank" 
-              rel="noopener noreferrer"
+              target="_blank" rel="noopener noreferrer" 
+              
               className="block h-40 w-full rounded-lg overflow-hidden border border-gray-800 relative group shadow-sm cursor-pointer"
             >
               <iframe 
@@ -154,9 +154,9 @@ const Footer = () => {
             <div>&copy; {new Date().getFullYear()} IIIT Pune. All rights reserved.</div>
             <div className="text-xs text-gray-500">
               Designed & Developed by{' '}
-              <a href="https://www.linkedin.com/in/hardik-jha-a1985b160" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Hardik Jha</a>,{' '}
-              <a href="https://www.linkedin.com/in/abhay-gugale-40875632b/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Abhay Gugale</a> and{' '}
-              <a href="https://www.linkedin.com/in/aanoush-surana-73964a335/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Aanoush Surana</a>
+              <a href="https://www.linkedin.com/in/hardik-jha-a1985b160" target="_blank" rel="noopener noreferrer"  className="hover:text-brand-red transition-colors">Hardik Jha</a>,{' '}
+              <a href="https://www.linkedin.com/in/abhay-gugale-40875632b/" target="_blank" rel="noopener noreferrer"  className="hover:text-brand-red transition-colors">Abhay Gugale</a> and{' '}
+              <a href="https://www.linkedin.com/in/aanoush-surana-73964a335/" target="_blank" rel="noopener noreferrer"  className="hover:text-brand-red transition-colors">Aanoush Surana</a>
             </div>
           </div>
           

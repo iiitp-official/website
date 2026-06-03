@@ -48,7 +48,7 @@ const AntiRaggingPage = () => {
             <div className="mt-12 text-center text-sm md:text-base font-bold text-gray-800 dark:text-gray-200 leading-relaxed uppercase">
               RAGGING IS A CRIMINAL OFFENCE AND THE CULPRITS WILL ATTRACT PUNITIVE ACTION AS MENTIONED IN THE UGC REGULATIONS
               <br />
-              <a href="https://www.antiragging.in/assets/pdf/annexure/Annexure-I.pdf" target="_blank" rel="noopener noreferrer" className="text-[#0056b3] dark:text-blue-400 lowercase font-normal hover:underline mt-2 inline-block">
+              <a href="https://www.antiragging.in/assets/pdf/annexure/Annexure-I.pdf" target="_blank" rel="noopener noreferrer"  className="text-[#0056b3] dark:text-blue-400 lowercase font-normal hover:underline mt-2 inline-block">
                 (www.antiragging.in/assets/pdf/annexure/Annexure-I.pdf)
               </a>
             </div>

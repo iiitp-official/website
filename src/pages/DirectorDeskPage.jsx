@@ -22,13 +22,10 @@ const DirectorDeskPage = () => {
           
             <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed text-base text-justify">
               <p>
-                Indian Institute of Information Technology Pune, established in 2016, is one of the fastest-growing IIITs among 20 newly established IIITs by the MOE, Government of India, and industry partners as a Not-for-profit Public-Private Partnership (N-PPP) Institution. IIIT Pune is committed to imparting high-quality technical education and instilling a long-term vision among students. Our focus lies not just on academic brilliance but also on the knowledge that is pervasive in areas of emerging technologies. Through our learning and research programs, we aim at building applications of Information Technology whose benefits percolate even to the grassroots level.
+                <span className="font-semibold text-gray-900 dark:text-white">Prof. Vineet Kansal</span> has assumed charge as the Director of the <span className="font-semibold text-gray-900 dark:text-white">Indian Institute of Information Technology (IIIT) Pune</span> with effect from the forenoon of <span className="font-semibold text-gray-900 dark:text-white">April 4, 2026</span>, following his appointment by the Hon'ble President of India in his capacity as the Visitor of the Institute. The appointment order was issued by the Ministry of Education, Government of India.
               </p>
               <p>
-                We believe in nurturing graduates as proficient scholars and responsible members of society. Our institute is endowed with state-of-the-art facilities and provides an environment conducive to learning and exploration. Every department in the institute has cutting-edge laboratories. IIIT Pune emphasizes collaboration with leading institutes nationally and internationally through academic exchange programs and fosters industry-academia partnerships, among others.
-              </p>
-              <p>
-                Several Industry-Institute Partnership Programs, Soft-Skill Trainings, competitions, internships, and student projects are organized to enhance communication skills, commitment, and ethics for comprehensive individual growth. The institute promotes innovation and entrepreneurship by encouraging and supporting creative ideas. Transformation requires a plan and a support system. At Indian Institute of Information Technology Pune, students are expected to work hard and develop the right attitude in their chosen fields. As you embark on this exciting and fruitful journey of your life, walk boldly and diligently.
+                As Director, Prof. Kansal is committed to strengthening the Institute's academic and research ecosystem, fostering innovation, and guiding IIIT Pune in alignment with its vision and mission, while addressing emerging national priorities in higher education.
               </p>
               <p className="font-semibold text-gray-800 dark:text-gray-200">
                 All the very best!

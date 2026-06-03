@@ -28,12 +28,12 @@ const BoardOfStudiesEcePage = () => {
             
             <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-800">
               <p className="font-bold text-gray-900 dark:text-white mb-3">
-                Please click here for the official Memorandum
+                View the official Memorandum
               </p>
               <a 
                 href="/documents/BoS_ECE_IIITP_v1.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                target="_blank" rel="noopener noreferrer" 
+                
                 className="inline-block bg-primary text-white px-6 py-2.5 rounded-sm shadow-sm hover:bg-primary/90 transition-colors font-medium text-sm"
               >
                 View Document

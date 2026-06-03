@@ -755,8 +755,8 @@ const LifePage = () => {
                   </h3>
                   <a
                     href="https://www.iiitp.ac.in/sites/default/files/2025-09/Club%20Head%20and%20Co%20Head-2025-2026.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target="_blank" rel="noopener noreferrer"
+                    
                     className="lg:hidden text-xs font-bold text-accent dark:text-accent-dark flex items-center gap-1 hover:underline"
                   >
                     <span>Heads</span>
@@ -800,8 +800,8 @@ const LifePage = () => {
 
                 <a
                   href="https://www.iiitp.ac.in/sites/default/files/2025-09/Club%20Head%20and%20Co%20Head-2025-2026.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target="_blank" rel="noopener noreferrer"
+                  
                   className="hidden lg:flex w-full items-center justify-between gap-3 px-3.5 py-3 rounded-xl text-left text-xs font-bold text-accent dark:text-accent-dark hover:bg-gray-50 dark:hover:bg-gray-850 mt-3 border border-dashed border-gray-200 dark:border-gray-700 transition-colors"
                 >
                   <span>View Club Heads</span>
@@ -923,8 +923,8 @@ const LifePage = () => {
                           {club.leadership.instagram && (
                             <a
                               href={`https://instagram.com/${club.leadership.instagram.replace('@', '')}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
+                              target="_blank" rel="noopener noreferrer"
+                              
                               className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl bg-white dark:bg-surface-dark text-xs text-gray-650 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 hover:shadow-xs transition-all border border-gray-100 dark:border-gray-800/80"
                             >
                               <Instagram size={14} className="text-gray-400 shrink-0" />
@@ -934,8 +934,8 @@ const LifePage = () => {
                           {club.leadership.website && (
                             <a
                               href={club.leadership.website}
-                              target="_blank"
-                              rel="noopener noreferrer"
+                              target="_blank" rel="noopener noreferrer"
+                              
                               className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl bg-white dark:bg-surface-dark text-xs text-gray-655 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 hover:shadow-xs transition-all border border-gray-100 dark:border-gray-800/80 font-bold"
                             >
                               <ExternalLink size={14} className="text-gray-400 shrink-0" />
@@ -952,8 +952,8 @@ const LifePage = () => {
                     <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-8 flex items-center justify-center">
                       <a
                         href="https://eclectic-iiitp.github.io/eclectic/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target="_blank" rel="noopener noreferrer"
+                        
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-xs shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
                       >
                         <span>Visit Eclectic Website</span>
@@ -1261,8 +1261,8 @@ const LifePage = () => {
             </p>
             <a
               href="https://placements.iiitp.ac.in/HrSummit/"
-              target="_blank"
-              rel="noopener noreferrer"
+              target="_blank" rel="noopener noreferrer"
+              
               className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors"
             >
               Open HR Summit Portal <ExternalLink size={14} />
@@ -1334,8 +1334,8 @@ const LifePage = () => {
                     </h3>
                     <a
                       href={ed.embedUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target="_blank" rel="noopener noreferrer"
+                      
                       className="flex items-center gap-1.5 text-xs font-bold text-accent dark:text-accent-dark hover:underline"
                     >
                       Open fullscreen <ExternalLink size={12} />
@@ -1582,8 +1582,8 @@ const LifePage = () => {
                   <a
                     key={tab.key}
                     href="https://placements.iiitp.ac.in/HrSummit/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target="_blank" rel="noopener noreferrer"
+                    
                     className={`flex items-center px-4 py-2 rounded-full text-xs font-semibold transition-all shrink-0 border text-gray-600 dark:text-gray-350 bg-white dark:bg-surface-dark border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800`}
                   >
                     {tab.label}

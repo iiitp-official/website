@@ -225,7 +225,7 @@ const InfoCards = () => {
                 Indian Institute of Information Technology Pune, established in 2016, is an Institute of National Importance set up by the Ministry of Education, Government of India. We are dedicated to delivering world-class IT education and research.
               </p>
               <Link to="/about" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors">
-                Read More <ChevronRight size={16} className="ml-1" />
+                View full profile <ChevronRight size={16} className="ml-1" />
               </Link>
             </div>
           </div>

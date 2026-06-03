@@ -84,8 +84,8 @@ const CareersPage = () => {
                     <a
                       key={bidx}
                       href={`/careers/${btn.file}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target="_blank" rel="noopener noreferrer"
+                      
                       className="bg-[#2C195D] hover:bg-[#1E1140] text-white text-xs px-5 py-2.5 transition-colors inline-block text-center shadow-sm"
                     >
                       {btn.label}

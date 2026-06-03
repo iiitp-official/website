@@ -527,8 +527,8 @@ const Navbar = () => {
             <div className="hidden md:flex items-center gap-1.5">
               <a
                 href="https://iiitp.webpointsolutions.in/StudentPortal/index.html#!/Login"
-                target="_blank"
-                rel="noopener noreferrer"
+                target="_blank" rel="noopener noreferrer"
+                
                 className="bg-brand-red hover:bg-red-700 text-white px-3 py-1.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide mr-2"
               >
                 Student Portal
@@ -672,8 +672,8 @@ const Navbar = () => {
                                 <a
                                   key={nested.name}
                                   href={nested.path}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
+                                  target="_blank" rel="noopener noreferrer"
+                                  
                                   className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
                                 >
                                   {nested.name}
@@ -693,8 +693,8 @@ const Navbar = () => {
                       ) : sub.isExternal ? (
                         <a
                           href={sub.path}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          target="_blank" rel="noopener noreferrer"
+                          
                           className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left"
                         >
                           {sub.name}
@@ -925,8 +925,8 @@ const Navbar = () => {
                                               <a
                                                 key={nested.name}
                                                 href={nested.path}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
+                                                target="_blank" rel="noopener noreferrer"
+                                                
                                                 className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                               >
                                                 {nested.name}
@@ -954,8 +954,8 @@ const Navbar = () => {
                                 ) : sub.isExternal ? (
                                   <a
                                     href={sub.path}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    target="_blank" rel="noopener noreferrer"
+                                    
                                     className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                   >
                                     {sub.name}
