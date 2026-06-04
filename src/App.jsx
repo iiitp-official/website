@@ -1,11 +1,15 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/shared/ScrollToTop";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import LoadingFallback from "./components/shared/LoadingFallback";
 
 import GlobalLoader from "./components/common/GlobalLoader";
+
+// International sub-layout components
+import InternationalHeader from "./components/layout/InternationalHeader";
+import InternationalFooter from "./components/layout/InternationalFooter";
 
 // Pages (Lazy Loaded for performance)
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -61,102 +65,134 @@ const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 const StudentAchievementsPage = lazy(() => import('./pages/StudentAchievementsPage'));
 const FacultyAchievementsPage = lazy(() => import('./pages/FacultyAchievementsPage'));
 
+const InternationalHomePage = lazy(() => import("./pages/InternationalHomePage"));
+const InternationalAboutPage = lazy(() => import("./pages/InternationalAboutPage"));
+const InternationalAcademicsPage = lazy(() => import("./pages/InternationalAcademicsPage"));
+const InternationalCollaborationsPage = lazy(() => import("./pages/InternationalCollaborationsPage"));
+const InternationalContactPage = lazy(() => import("./pages/InternationalContactPage"));
+
+function AppContent() {
+  const location = useLocation();
+  const isInternational = location.pathname.startsWith('/international');
+
+  if (isInternational) {
+    return (
+      <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-slate-200 dark:bg-bg-dark bg-grid-pattern transition-colors duration-200">
+        <InternationalHeader />
+        <main className="flex-grow w-full overflow-x-hidden flex flex-col">
+          <Suspense fallback={<LoadingFallback />}>
+            <Routes>
+              {/* International Relations Routes */}
+              <Route path="/international" element={<InternationalHomePage />} />
+              <Route path="/international/about" element={<InternationalAboutPage />} />
+              <Route path="/international/academics" element={<InternationalAcademicsPage />} />
+              <Route path="/international/collaborations" element={<InternationalCollaborationsPage />} />
+              <Route path="/international/contact" element={<InternationalContactPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Suspense>
+        </main>
+        <InternationalFooter />
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-slate-200 dark:bg-bg-dark bg-grid-pattern transition-colors duration-200">
+      <Navbar />
+      <main className="flex-grow w-full overflow-x-hidden flex flex-col">
+        <Suspense fallback={<LoadingFallback />}>
+          <Routes>
+            {/* Home */}
+            <Route path="/" element={<HomePage />} />
+            
+            {/* About */}
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/about/director-desk" element={<DirectorDeskPage />} />
+            <Route path="/about/vision-mission" element={<VisionMissionPage />} />
+            <Route path="/about/student-achievements" element={<StudentAchievementsPage />} />
+            <Route path="/about/faculty-achievements" element={<FacultyAchievementsPage />} />
+            <Route path="/about/act" element={<AboutPlaceholderPage title="ACT(PPP)" />} />
+            <Route path="/about/statute" element={<AboutPlaceholderPage title="STATUTE" />} />
+            <Route path="/about/overview" element={<AboutPlaceholderPage title="Overview" />} />
+            <Route path="/about/ariia" element={<AboutPlaceholderPage title="ARIIA Ranking" />} />
+            
+            {/* Administration */}
+            <Route path="/administration" element={<AdministrationPage />} />
+            <Route path="/administration/chairperson" element={<ChairpersonPage />} />
+            <Route path="/administration/director" element={<DirectorPage />} />
+            <Route path="/administration/registrar" element={<RegistrarPage />} />
+            <Route path="/administration/board-of-governors" element={<BoardOfGovernorsPage />} />
+            <Route path="/administration/finance-committee" element={<FinanceCommitteePage />} />
+            <Route path="/administration/building-and-works-committee" element={<BuildingWorksCommitteePage />} />
+            <Route path="/administration/senate" element={<SenatePage />} />
+            <Route path="/administration/board-of-studies-cse" element={<BoardOfStudiesCsePage />} />
+            <Route path="/administration/board-of-studies-ece" element={<BoardOfStudiesEcePage />} />
+            <Route path="/administration/board-of-studies-ash" element={<BoardOfStudiesAshPage />} />
+            
+            {/* Academics */}
+            <Route path="/academics/btech/cse" element={<BtechCsePage />} />
+            <Route path="/academics/btech/ece" element={<BtechEcePage />} />
+            <Route path="/academics/btech/honors" element={<BtechHonorsPage />} />
+            <Route path="/academics/mtech/cse" element={<MtechCsePage />} />
+            <Route path="/academics/mtech/ece" element={<MtechEcePage />} />
+            <Route path="/academics/phd" element={<PhdPage />} />
+            <Route path="/academics/calendar" element={<AcademicCalendarPage />} />
+            <Route path="/academics/Calendar" element={<AcademicCalendarPage />} />
+            <Route path="/academics/ordinance" element={<OrdinancePage />} />
+            
+            {/* Research */}
+            <Route path="/research" element={<ResearchPage />} />
+            <Route path="/research/centres" element={<CentresPage />} />
+            <Route path="/research/internships" element={<InternshipsPage />} />
+            <Route path="/research/funded-projects/completed" element={<FundedProjectsCompletedPage />} />
+            <Route path="/research/funded-projects/ongoing" element={<FundedProjectsOngoingPage />} />
+            <Route path="/research/events" element={<EventsPage />} />
+            <Route path="/research/scholar/institute" element={<ResearchScholarInstitutePage />} />
+            <Route path="/research/scholar/visvesvaraya" element={<ResearchScholarVisvesvarayaPage />} />
+            <Route path="/research/scholar/graduated" element={<ResearchScholarGraduatedPage />} />
+            <Route path="/research/postdoc-fellow" element={<PostDocFellowPage />} />
+            
+            {/* People */}
+            <Route path="/people" element={<PeoplePage />} />
+            <Route path="/people/faculty" element={<FacultyPage />} />
+            <Route path="/people/faculty/:slug" element={<FacultyProfilePage />} />
+            <Route path="/people/visiting-faculty" element={<VisitingFacultyPage />} />
+            <Route path="/people/non-teaching-staff" element={<Navigate to="/people/non-teaching-staff/regular" replace />} />
+            <Route path="/people/non-teaching-staff/:type" element={<NonTeachingStaffPage />} />
+            <Route path="/people/alumni" element={<AlumniPage />} />
+            
+            {/* Other Pages */}
+            <Route path="/life" element={<LifePage />} />
+            <Route path="/news" element={<NewsPage />} />
+            <Route path="/notice" element={<NoticePage />} />
+            <Route path="/notice/anti-ragging" element={<AntiRaggingPage />} />
+            <Route path="/notice/late-fee" element={<AboutPlaceholderPage title="Late Fee for the even semester" />} />
+            <Route path="/careers" element={<CareersPage />} />
+            
+            {/* E-Tenders */}
+            <Route path="/e-tender" element={<Navigate to="/e-tender/live" replace />} />
+            <Route path="/e-tender/:type" element={<ETenderPage />} />
+            
+            <Route path="/placement" element={<PlacementPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/nirf" element={<NIRFPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <GlobalLoader />
-      <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-slate-200 dark:bg-bg-dark bg-grid-pattern transition-colors duration-200">
-        <Navbar />
-
-
-
-
-              <main className="flex-grow w-full overflow-x-hidden flex flex-col">
-          <Suspense fallback={<LoadingFallback />}>
-            <Routes>
-              {/* Home */}
-              <Route path="/" element={<HomePage />} />
-              
-              {/* About */}
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/about/director-desk" element={<DirectorDeskPage />} />
-              <Route path="/about/vision-mission" element={<VisionMissionPage />} />
-              <Route path="/about/student-achievements" element={<StudentAchievementsPage />} />
-              <Route path="/about/faculty-achievements" element={<FacultyAchievementsPage />} />
-              <Route path="/about/act" element={<AboutPlaceholderPage title="ACT(PPP)" />} />
-              <Route path="/about/statute" element={<AboutPlaceholderPage title="STATUTE" />} />
-              <Route path="/about/overview" element={<AboutPlaceholderPage title="Overview" />} />
-              <Route path="/about/ariia" element={<AboutPlaceholderPage title="ARIIA Ranking" />} />
-              
-              {/* Administration */}
-              <Route path="/administration" element={<AdministrationPage />} />
-              <Route path="/administration/chairperson" element={<ChairpersonPage />} />
-              <Route path="/administration/director" element={<DirectorPage />} />
-              <Route path="/administration/registrar" element={<RegistrarPage />} />
-              <Route path="/administration/board-of-governors" element={<BoardOfGovernorsPage />} />
-              <Route path="/administration/finance-committee" element={<FinanceCommitteePage />} />
-              <Route path="/administration/building-and-works-committee" element={<BuildingWorksCommitteePage />} />
-              <Route path="/administration/senate" element={<SenatePage />} />
-              <Route path="/administration/board-of-studies-cse" element={<BoardOfStudiesCsePage />} />
-              <Route path="/administration/board-of-studies-ece" element={<BoardOfStudiesEcePage />} />
-              <Route path="/administration/board-of-studies-ash" element={<BoardOfStudiesAshPage />} />
-              
-              {/* Academics */}
-              <Route path="/academics/btech/cse" element={<BtechCsePage />} />
-              <Route path="/academics/btech/ece" element={<BtechEcePage />} />
-              <Route path="/academics/btech/honors" element={<BtechHonorsPage />} />
-              <Route path="/academics/mtech/cse" element={<MtechCsePage />} />
-              <Route path="/academics/mtech/ece" element={<MtechEcePage />} />
-              <Route path="/academics/phd" element={<PhdPage />} />
-              <Route path="/academics/calendar" element={<AcademicCalendarPage />} />
-              <Route path="/academics/Calendar" element={<AcademicCalendarPage />} />
-              <Route path="/academics/ordinance" element={<OrdinancePage />} />
-              
-              {/* Research */}
-              <Route path="/research" element={<ResearchPage />} />
-              <Route path="/research/centres" element={<CentresPage />} />
-              <Route path="/research/internships" element={<InternshipsPage />} />
-              <Route path="/research/funded-projects/completed" element={<FundedProjectsCompletedPage />} />
-              <Route path="/research/funded-projects/ongoing" element={<FundedProjectsOngoingPage />} />
-              <Route path="/research/events" element={<EventsPage />} />
-              <Route path="/research/scholar/institute" element={<ResearchScholarInstitutePage />} />
-              <Route path="/research/scholar/visvesvaraya" element={<ResearchScholarVisvesvarayaPage />} />
-              <Route path="/research/scholar/graduated" element={<ResearchScholarGraduatedPage />} />
-              <Route path="/research/postdoc-fellow" element={<PostDocFellowPage />} />
-              
-              {/* People */}
-              <Route path="/people" element={<PeoplePage />} />
-              <Route path="/people/faculty" element={<FacultyPage />} />
-              <Route path="/people/faculty/:slug" element={<FacultyProfilePage />} />
-              <Route path="/people/visiting-faculty" element={<VisitingFacultyPage />} />
-              <Route path="/people/non-teaching-staff" element={<Navigate to="/people/non-teaching-staff/regular" replace />} />
-              <Route path="/people/non-teaching-staff/:type" element={<NonTeachingStaffPage />} />
-              <Route path="/people/alumni" element={<AlumniPage />} />
-              
-              {/* Other Pages */}
-              <Route path="/life" element={<LifePage />} />
-              <Route path="/news" element={<NewsPage />} />
-              <Route path="/notice" element={<NoticePage />} />
-              <Route path="/notice/anti-ragging" element={<AntiRaggingPage />} />
-              <Route path="/notice/late-fee" element={<AboutPlaceholderPage title="Late Fee for the even semester" />} />
-              <Route path="/careers" element={<CareersPage />} />
-              
-              {/* E-Tenders */}
-              <Route path="/e-tender" element={<Navigate to="/e-tender/live" replace />} />
-              <Route path="/e-tender/:type" element={<ETenderPage />} />
-              
-              <Route path="/placement" element={<PlacementPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/nirf" element={<NIRFPage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-          </Suspense>
-        </main>
-        <Footer />
-      </div>
+      <AppContent />
     </Router>
   );
 }
-
 export default App;
