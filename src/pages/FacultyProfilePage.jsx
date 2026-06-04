@@ -111,11 +111,11 @@ const FacultyProfilePage = () => {
     const nameParts = slug.split('-');
     const formattedName = nameParts.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
-    const extractedLinks = [];
-    if (details.google_scholar) extractedLinks.push(details.google_scholar);
-    if (details.orcid) extractedLinks.push(details.orcid);
-    if (details.scopus) extractedLinks.push(details.scopus);
-    const combinedLinks = [...new Set([...(details.researchLinks || []), ...extractedLinks])];
+    // Filter out Google Scholar, ORCID, and Scopus from researchLinks as they are already displayed in the top section
+    const otherLinks = (details.researchLinks || []).filter(link => {
+      const lower = link.toLowerCase();
+      return !lower.includes('scholar.google') && !lower.includes('orcid') && !lower.includes('scopus');
+    });
 
     return {
       ...details,
@@ -127,7 +127,7 @@ const FacultyProfilePage = () => {
       linkedin: details.linkedin || '',
       facebook: details.facebook || '',
       twitter: details.twitter || '',
-      researchLinks: combinedLinks,
+      researchLinks: [...new Set(otherLinks)],
       books_chapters: details.books_chapters || '',
       publications: details.publications || '',
       patents: details.patents || '',
@@ -340,12 +340,9 @@ const FacultyProfilePage = () => {
                   <div className="flex flex-wrap gap-2">
                     {['Google Scholar', 'ORCID', 'Scopus'].map((type, idx) => {
                       let href = '#';
-                      if (profile.researchLinks) {
-                        const found = profile.researchLinks.find(link => 
-                          link.toLowerCase().includes(type.split(' ')[0].toLowerCase())
-                        );
-                        if (found) href = found;
-                      }
+                      if (type === 'Google Scholar' && profile.google_scholar) href = profile.google_scholar;
+                      if (type === 'ORCID' && profile.orcid) href = profile.orcid;
+                      if (type === 'Scopus' && profile.scopus) href = profile.scopus;
                       
                       return (
                         <a
@@ -471,7 +468,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'books' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Books & Book Chapters</h2>
-                {profile.books_chapters ? renderListContent(profile.books_chapters) : (
+                {profile.books_chapters && profile.books_chapters.length > 0 ? renderListContent(profile.books_chapters) : (
                   <p className="text-sm text-gray-500 italic">No book or chapter details provided yet.</p>
                 )}
               </div>
@@ -480,7 +477,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'publications' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Publications</h2>
-                {profile.publications ? renderListContent(profile.publications) : (
+                {profile.publications && profile.publications.length > 0 ? renderListContent(profile.publications) : (
                   <p className="text-sm text-gray-500 italic">No publication details provided yet.</p>
                 )}
               </div>
@@ -489,7 +486,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'patents' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Patents</h2>
-                {profile.patents ? renderListContent(profile.patents) : (
+                {profile.patents && profile.patents.length > 0 ? renderListContent(profile.patents) : (
                   <p className="text-sm text-gray-500 italic">No patent details provided yet.</p>
                 )}
               </div>
@@ -498,7 +495,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'seminars' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Seminars & Workshops</h2>
-                {profile.seminars ? renderListContent(profile.seminars) : (
+                {profile.seminars && profile.seminars.length > 0 ? renderListContent(profile.seminars) : (
                   <p className="text-sm text-gray-500 italic">No seminar or workshop details provided yet.</p>
                 )}
               </div>
@@ -507,7 +504,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'projects' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Projects</h2>
-                {profile.projects ? renderListContent(profile.projects) : (
+                {profile.projects && profile.projects.length > 0 ? renderListContent(profile.projects) : (
                   <p className="text-sm text-gray-500 italic">No project details provided yet.</p>
                 )}
               </div>
@@ -516,7 +513,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'supervisions' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Supervisions</h2>
-                {profile.supervisions ? renderListContent(profile.supervisions) : (
+                {profile.supervisions && profile.supervisions.length > 0 ? renderListContent(profile.supervisions) : (
                   <p className="text-sm text-gray-500 italic">No supervision details provided yet.</p>
                 )}
               </div>
@@ -527,31 +524,19 @@ const FacultyProfilePage = () => {
                 <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">Research Profiles & Links</h2>
                 {profile.researchLinks && profile.researchLinks.length > 0 ? (
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {profile.researchLinks.map((link, idx) => {
-                      let type = "Research Profile";
-                      if (link.includes('scholar.google')) type = "Google Scholar";
-                      else if (link.includes('orcid')) type = "ORCID";
-                      else if (link.includes('scopus')) type = "Scopus";
-
-                      return (
+                    {profile.researchLinks.map((link, idx) => (
                         <li key={idx}>
                           <a
                             href={link}
                             target="_blank" rel="noopener noreferrer"
-                            
-                            className="group flex items-center p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-blue-50 dark:hover:bg-gray-800 transition-all"
+                            className="group block p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-blue-50 dark:hover:bg-gray-800 transition-all"
                           >
-                            <div className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center mr-4 group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
-                              <BookOpen className="w-5 h-5" />
-                            </div>
-                            <div className="flex-grow overflow-hidden">
-                              <h4 className="text-sm text-gray-900 dark:text-white font-semibold">{type}</h4>
-                              <p className="text-xs text-gray-500 dark:text-gray-400 truncate w-full">{link}</p>
+                            <div className="overflow-hidden">
+                              <p className="text-sm text-gray-900 dark:text-white font-medium truncate w-full group-hover:text-primary transition-colors">{link}</p>
                             </div>
                           </a>
                         </li>
-                      );
-                    })}
+                    ))}
                   </ul>
                 ) : (
                   <p className="text-gray-500 dark:text-gray-400 italic">No external research links available.</p>

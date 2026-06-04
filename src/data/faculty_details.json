@@ -11,7 +11,16 @@
     "expertise": "Hardware security, Cyber security, IoT security, and Multi-agent security.",
     "google_scholar": "https://scholar.google.com/citations?hl=en&user=GLagZTYAAAAJ&view_op=list_works&authuser=2",
     "orcid": "https://orcid.org/0000-0002-1708-8462",
-    "scopus": ""
+    "scopus": "",
+    "patents": "",
+    "seminars": [],
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "mohammad-akhlaqur-rahman": {
     "designation": "Adjunct Assistant Professor",
@@ -23,7 +32,18 @@
     "expertise": "Medical Image Processing.",
     "google_scholar": "https://scholar.google.co.in/citations?user=_Xl6Oy8AAAAJ&hl=en",
     "orcid": "https://orcid.org/my-orcid?orcid=0000-0003-2918-4870",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "mahesh-joshi": {
     "designation": "Assistant Professor\nCoordinator PG/ Ph.D.\nBoys' Hostel 2 Warden",
@@ -38,7 +58,15 @@
     "expertise": "Biometric authentication, Partial fingerprint Identification, Biometric Security, Internet-of-Things (IoT) security.",
     "google_scholar": "https://scholar.google.com/citations?user=bxvHCsYAAAAJ&hl=en",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "patents": "",
+    "projects": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "shamal-kashid": {
     "designation": "Adjunct Assistant Professor",
@@ -50,7 +78,18 @@
     "expertise": "Machine Learning, Deep Learning, Multimedia Security, Multimedia Summarization",
     "google_scholar": "https://scholar.google.com/citations?user=1Hc_cwgAAAAJ&hl=en&oi=ao",
     "orcid": "https://orcid.org/0000-0001-8974-2702",
-    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57946032800"
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57946032800",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "kaptan-singh": {
     "designation": "Assistant Professor\nFaculty In-Charge, TPO",
@@ -63,19 +102,77 @@
     "expertise": "Web of Things, Cyber Security, Algorithms, and Theoretical Computer Science",
     "google_scholar": "https://scholar.google.com/citations?user=-W15f7YAAAAJ&",
     "orcid": "https://orcid.org/0000-0001-6154-6531",
-    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57213994799"
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57213994799",
+    "books_chapters": "",
+    "patents": "",
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "shivangi-shukla": {
     "designation": "Assistant Professor\nWebsite In-Charge",
-    "image": "https://www.iiitp.ac.in/sites/default/files/2024-07/Shivangi.jpg",
-    "bio": "Dr. Shivangi Shukla is currently working as Assistant Professor in the Department of Computer Science and Engineering at the Indian Institute of Information Technology (IIIT) Pune. Dr. Shivangi's has received her Ph.D. in Computer Engineering from Sardar Vallabhbhai National Institute of Technology, Surat in 2024. She completed her M.Tech from Department of Computer Engineering, Sardar Vallabhbhai National Institute of Technology, Surat in 2018 and her B.Tech from Computer Science and Engineering, Dr. A. P. J. Abdul Kalam Technical University, Uttar Pradesh in 2015.\n\nDr. Shivangi's area of specialization includes Information Security and Privacy, Cloud Computing Security and Security and Privacy in Internet of Things. She has published research papers in various international journals and conferences.\n\nORCID: https://orcid.org/0000-0001-8945-2721\nScopus: https://www.scopus.com/authid/detail.uri?authorId=57210528084",
+    "image": "/assets/faculty_photos/shivangishukla.jpg",
+    "bio": "Dr. Shivangi Shukla is currently working as Assistant Professor in the Department of Computer Science and Engineering at the Indian Institute of Information Technology (IIIT) Pune. Dr. Shivangi's has received her Ph.D. in Computer Engineering from Sardar Vallabhbhai National Institute of Technology, Surat in 2024. She completed her M.Tech from Department of Computer Engineering, Sardar Vallabhbhai National Institute of Technology, Surat in 2018 and her B.Tech from Computer Science and Engineering, Dr. A. P. J. Abdul Kalam Technical University, Uttar Pradesh in 2015. Dr. Shivangi's area of specialization includes Information Security and Privacy, Cloud Computing Security and Security and Privacy in Internet of Things. She has published research papers in various international journals and conferences.",
     "education": "Ph.D.(Computer Engineering)",
-    "publications": "• ,S.J.Patel,”Adesignofprovablysecuremulti-factorECC-basedauthentication\n\nS.Shukla\n\nprotocolinmulti-servercloudarchitecture”, ,1-22,2023\n\nClusterComputing,Springer (SCIE)\n\nDOI:https://doi.org/10.1007/s10586-023-04034-6\n\n• , and S. J. Patel, “A novel ECC-based provably secure and privacy-preserving\n\nS. Shukla\n\nmulti-factorauthenticationprotocolforcloudcomputing,” ,1-30,2022\n\nComputing,Springer\n\n(SCIE)\n\nDOI:https://doi.org/10.1007/s00607-021-01041-6\n\n• , and S. J. Patel, “Securing fingerprint templates by enhanced minutiae-based\n\nS. Shukla\n\nencodingschemeinFuzzyCommitment,” ,15(3),256-266,2021\n\nIETInformationSecurity\n\n(SCIE)\n\nDOI:https://doi.org/10.1049/ise2.12024\n\n• K. A. Patel, , S. J. Patel, ”A novel and provably secure mutual authentication\n\nS. Shukla\n\nprotocol for cloud environment using elliptic curve cryptography and fuzzy verifier,”\n\nConcurrencyandComputation:PracticeandExperience,e7889,2024\n\n(SCIE)\n\nDOI:https://doi.org/10.1002/cpe.7889\n\n• , and S. J. Patel, “ A Context-Aware Approach to Enhance Service Utility\n\nS. Shukla\n\nforLocationPrivacyinInternetofThings,”In\n\n,Springer,Singapore,2019\n\nComputingandDataSciences (Scopus)\n\nDOI:https://doi.org/10.1007/978-981-13-9942-8_50\n\nScholastic Achievements\n\n• PhD fellowship grant from Ministry of Human Resource and Development (MHRD),\n\nGovernmentofIndiafor2018-2023.\n\n• M.TechfellowshipgrantfromMinistryofHumanResourceandDevelopment(MHRD),\n\nGovernmentofIndiafor2016-18.\n\n• GateQualifiedintheyear2016.\n\nProfessional Activities\n\n• Participated in 5th International Symposium on “New Trends in Signal Processing”,\n\norganizedbyIEEESignalProcessingSocietyGS,SCET,2022.\n\n• Servedasa in‘SecondInternationalConferenceonSecurity,PrivacyandData\n\nReviewer\n\nAnalytics (ISPDA 2022)” and “International Conference on Security, Privacy and Data\n\nAnalytics(ISPDA2021)”,SVNIT-Surat.\n\n• Servedasa in“InternationalConferenceonInformationSecurity,Privacyand\n\nReviewer\n\nDataForensics(ICISPD2022)”,NSFUGandhinagar,SVNIT-Surat,andBITS,Goa2022.\n\n• Participated in “National Workshop on Privacy and Security in Cyber Physical Systems\n\n(PSCPS2021)”,SVNIT-Surat2021.\n\n• Attendedworkshopon“CyberCrimeandDigitalForensics(CCDF-2019)”,SVNIT-Surat\n\nParticipatedandpresentedresearchpaper\n\ninComputingandDataSciences,2019.",
+    "publications": [
+      {
+        "title": "A design of provably secure multi-factor ECC-based authentication protocol in multi-server cloud architecture",
+        "authors": "S. Shukla, S. J. Patel",
+        "journal": "Cluster Computing, Springer, 1-22, 2023 (SCIE)",
+        "link": "https://doi.org/10.1007/s10586-023-04034-6"
+      },
+      {
+        "title": "A novel ECC-based provably secure and privacy-preserving multi-factor authentication protocol for cloud computing",
+        "authors": "S. Shukla, and S. J. Patel",
+        "journal": "Computing, Springer, 1-30, 2022 (SCIE)",
+        "link": "https://doi.org/10.1007/s00607-021-01041-6"
+      },
+      {
+        "title": "Securing fingerprint templates by enhanced minutiae-based encoding scheme in Fuzzy Commitment",
+        "authors": "S. Shukla, and S. J. Patel",
+        "journal": "IET Information Security, 15(3), 256-266, 2021 (SCIE)",
+        "link": "https://doi.org/10.1049/ise2.12024"
+      },
+      {
+        "title": "A novel and provably secure mutual authentication protocol for cloud environment using elliptic curve cryptography and fuzzy verifier",
+        "authors": "K. A. Patel, S. Shukla, S. J. Patel",
+        "journal": "Concurrency and Computation: Practice and Experience, e7889, 2024 (SCIE)",
+        "link": "https://doi.org/10.1002/cpe.7889"
+      },
+      {
+        "title": "A Novel Pairing-Free ECC-Based Ciphertext-Policy Attribute-Based Proxy Re-Encryption for Secure Cloud Storage",
+        "authors": "S. Shukla, and S. J. Patel",
+        "journal": "In ICISSP, 2025 (1) (pp. 225-233)",
+        "link": "https://doi.org/10.5220/0013138600003899"
+      },
+      {
+        "title": "A Context-Aware Approach to Enhance Service Utility for Location Privacy in Internet of Things",
+        "authors": "S. Shukla, and S. J. Patel",
+        "journal": "In International Conference on Advances in Computing and Data Sciences, Springer, Singapore, 2019 (Scopus)",
+        "link": "https://doi.org/10.1007/978-981-13-9942-8_50"
+      }
+    ],
     "resume": "https://www.iiitp.ac.in/sites/default/files/2024-07/Resume_Shivangi_Shukla.pdf",
     "expertise": "Information Security, Privacy, Cloud Computing Security, and Security and Privacy in Internet of Things.",
-    "google_scholar": "",
+    "google_scholar": "https://scholar.google.com/citations?user=NIXOimIAAAAJ",
     "orcid": "https://orcid.org/0000-0001-8945-2721",
-    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57210528084"
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57210528084",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": "Scholastic Achievements\n\n• PhD fellowship grant from Ministry of Human Resource and Development (MHRD),\n\nGovernmentofIndiafor2018-2023.\n\n• M.TechfellowshipgrantfromMinistryofHumanResourceandDevelopment(MHRD),\n\nGovernmentofIndiafor2016-18.\n\n• GateQualifiedintheyear2016.\n\nProfessional Activities\n\n• Participated in 5th International Symposium on “New Trends in Signal Processing”,\n\norganizedbyIEEESignalProcessingSocietyGS,SCET,2022.\n\n• Servedasa in‘SecondInternationalConferenceonSecurity,PrivacyandData\n\nReviewer\n\nAnalytics (ISPDA 2022)” and “International Conference on Security, Privacy and Data\n\nAnalytics(ISPDA2021)”,SVNIT-Surat.\n\n• Servedasa in“InternationalConferenceonInformationSecurity,Privacyand\n\nReviewer\n\nDataForensics(ICISPD2022)”,NSFUGandhinagar,SVNIT-Surat,andBITS,Goa2022.\n\n• Participated in “National Workshop on Privacy and Security in Cyber Physical Systems\n\n(PSCPS2021)”,SVNIT-Surat2021.\n\n• Attendedworkshopon“CyberCrimeandDigitalForensics(CCDF-2019)”,SVNIT-Surat\n\nParticipatedandpresentedresearchpaper\n\ninComputingandDataSciences,2019.",
+    "projects": "ANRF PAIR project titled 'Design and Implementation of Consent Management Platform (CMP) for DPDP Rules 2025'",
+    "supervisions": "1. Dasharath Waghamare (312415007)\n\n2. Pradnya Dinkar Kad Tapkir (322515004)\n\n3. Jyoti Abhijit Manoorkar (312515002)",
+    "email": "",
+    "phone": "9451180932",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "sanjeev-sharma": {
     "designation": "Assistant Professor\nAssociate Dean (Academics)",
@@ -91,7 +188,14 @@
     "phone": "+91 6260427101",
     "google_scholar": "",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "supervisions": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "sonam-maurya": {
     "designation": "Assistant Professor",
@@ -106,7 +210,15 @@
     "expertise": "Wireless Sensor Network, IoT, VANET, Mobile and Wireless Networks, Machine Learning, Deep Learning and Image Processing",
     "google_scholar": "https://scholar.google.com/citations?user=cfik2ScAAAAJ&hl",
     "orcid": "https://orcid.org/0000-0003-3357-1398",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "projects": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "bhupendra-singh": {
     "designation": "Assistant Professor\nHead of Department(CSE)\nAssociate Dean (Infrastructure, Administration & Finance)",
@@ -166,30 +278,33 @@
     "linkedin": "#",
     "facebook": "#",
     "twitter": "#",
-    "researchLinks": [
-      "https://scholar.google.com/citations?user=cKAcqYkAAAAJ",
-      "https://orcid.org/0000-0003-3357-1398",
-      "https://www.scopus.com/authid/detail.uri?authorId=57161552900"
-    ],
+    "researchLinks": [],
     "google_scholar": "https://scholar.google.com/citations?user=cKAcqYkAAAAJ",
     "orcid": "https://orcid.org/0000-0003-3357-1398",
     "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57161552900"
   },
   "sumit-kumar-gupta": {
     "designation": "Assistant Professor\nAssistant Registrar (Academics)",
-    "image": "https://www.iiitp.ac.in/sites/default/files/inline-images/sumit%20pic.jpg",
-    "bio": "Dr. Sumit Kumar Gupta is an Assistant Professor in the Department of Computer Science and Engineering at the Indian Institute of Information Technology (IIIT) Pune. He received his PhD in Computer Science and Engineering from Maulana Azad National Institute of Technology Bhopal. His areas of specialization encompass various domains, such as Community Detection Algorithms, Graph Algorithms, Social Network Analysis, and String Matching Algorithms. He has contributed significantly to the academic community through his publications in prestigious international conferences, international journals, and national conferences.\n\nDr. Sumit's was qualified GATE 14 times (2011-2024) and UGC NET 2 times (2015 & 2018). He published a book on Data Structures, which was released by an international publisher. Additionally, he has obtained granted patents from Australia.",
-    "education": "Ph.D. (CSE), Ma",
-    "publications": "• Likhar, P., Gupta, S. K., Choudhary, J., & Singh, D. P. (2026). Delving deep: DDoS\n\nattack resilience through deep learning approaches. Knowledge and Information\n\nSystems, 68(1), 19. (Published in SCIE(Q1)).\n\n• Gupta, S. K., Singh, D. P., and Choudhary, J. (2022). A review of clique-based\n\noverlapping community detection algorithms. Knowledge and Information\n\nSystems: vol 64, pp 2023-2058. (Published in SCIE(Q1)).\n\n• Gupta, S.K., Singh, D.P. (2022). Seed Community Identification Framework for\n\nCommunity Detection over Social Media. Arabian Journal for Science and\n\nEngineering: vol 48, pp 1829–1843. (Published in SCIE(Q1)).\n\n• Gupta, S., and Singh, D. P. (2020). Recent trends on community detection\n\nalgorithms: A survey. Modern Physics Letters B, vol 34, 2050408(35), DOI:\n\n10.1142/S0217984920504084. (Published in SCIE).\n\n• Kumar S., Rahangdale S.T., and Gupta S.K. (2026). Efficient Probabilistic\n\nForecasting of Solar and Wind Generation Using a GAT–Adapt–Hybrid Diffusion\n\nModel. Accepted in IEEE International Conference on Interdisciplinary\n\nApproaches in Technology and Management for Social Innovation (IATMSI-2026)\n\n• Gupta, S., and Singh, D. P. (2020). Greedy Graph Coloring Algorithm based on\n\nDepth First Search. International Journal on Emerging Technologies, 11(2): 854–\n\n862. (Published in SCOPUS INDEXED JOURNAL).\n\n• Mansuri, S., Gupta, S. K., Singh, D. P., and Choudhary, J.(2022). Modified DMGC\n\nalgorithm using ReLU-6 with improved learning rate for complex cluster\n\nassociations. International Conference on Intelligent Computing and Control\n\nSystems, IEEE, PP. 634-640(Published in SCOPUS INDEXED CONFERENCE).\n\n• Gupta, S. K., and Singh, D. P. (2023). CBLA: A Clique Based Louvain Algorithm\n\nfor Detecting Overlapping Community. Procedia Computer Science, vol 218, pp\n\n2201-2209 (Published in SCOPUS INDEXED JOURNAL).\n\n• Gupta, S. K., Singh, D. P., and Choudhary, J. (2023). New GPU Sorting Algorithm\n\nUsing Sorted Matrix. Procedia Computer Science, vol 218, pp 1682-\n\n1691(Published in SCOPUS INDEXED JOURNAL).\n\n• Gupta, S., Nandanwar, A.K., and Singh, D. P. (2021). DATA STRUCTURE.\n\nPublisher: LAP LAMBERT Academic Publishing, Paperback: 188 pages, ISBN-\n\n10: 6204715909, ISBN-13: 978-6204715902.\n\n• Gupta, S. K., Yadav, S., Singh, D. P., and Choudhary, J. (2022). Local Roughness\n\nBinary Pattern for Texture Classification. In Lecture Notes in Electrical\n\nEngineering book series (LNEE,volume 907). ISBN 978-981-19-4686-8\n\n• Gupta, S., and Rasool, A. (2014). Bit Parallel String-Matching Algorithms: A\n\nSurvey. International Journal of Computer Application, 95(10).\n\n• Gupta, S., Gupta, N., and Gupta, R. (2014). Objects and Method Calling in Java\n\nVirtual Machine. International Journal of Computer Application, 86(11).\n\n• Bee, S., and Gupta, S. (2016). A Brief Survey of Various Approaches For Feature\n\nof Text Mining. International Journal of Research in Computer Applications and\n\nRobotics, 4(7).\n\n• Bee, S., and Gupta, S. (2016). A Genetic Approach to Classify Text Documents by\n\nUtilizing Term Features. International Journal of Advanced Research in Computer\n\nEngineering & Technology, 5(12): 2762-2768.\n\n• Kaushik, S., and Gupta, S. (2017). Deployment of OpenStack using DevOps.\n\nInternational Journal of Computer Science & Communication Networks, 7(3).",
+    "image": "/assets/faculty_photos/sumitgupta.jpeg",
+    "bio": "Dr. Sumit Kumar Gupta is an Assistant Professor in the Department of Computer Science & Engineering at Indian Institute of Information Technology Pune, where he also serves as Assistant Registrar (Academics). He holds a Ph.D. in Computer Science & Engineering from Maulana Azad National Institute of Technology Bhopal. With over a decade of academic and research experience, Dr. Gupta has made significant contributions to the fields of Graph Mining, Community Detection, Machine Learning Security, and Deep Learning. He has authored several high-impact research publications in reputed SCIE journals, Scopus-indexed journals, and leading international conferences. He is also the author of a book on Data Structures and holds a granted Australian patent in the domain of IoT-based intelligent traffic systems. In addition, he has two Indian patents currently under review for grant, further reflecting his ongoing innovation and research contributions. Dr. Gupta has an outstanding academic track record, having qualified the GATE examination 14 times and UGC-NET examination twice, reflecting his strong foundational knowledge and consistency in academic excellence. A Senior Member of IEEE, he actively contributes to the research community as a reviewer, session chair, and jury member at various prestigious IEEE and international conferences. He has chaired technical sessions at leading conferences and continues to support scholarly activities through peer review and mentorship. He has played a key role in establishing the IEEE Student Branch at IIIT Pune and currently serves as the Branch Counselor, guiding students toward innovation, research excellence, and professional development. Dr. Gupta is deeply committed to teaching and mentorship, currently supervising multiple Ph.D., postgraduate, and undergraduate students working on advanced research problems.",
+    "education": "Ph.D. (CSE), M.Tech. (CSE)",
+    "publications": "Likhar, P., Gupta, S. K., Choudhary, J., & Singh, D. P. (2026). Delving deep: DDoS attack resilience through deep learning approaches. Knowledge and Information Systems, 68(1), 19. (Published in SCIE(Q1)).\n\nGupta, S. K., Singh, D. P., and Choudhary, J. (2022). A review of clique-based overlapping community detection algorithms. Knowledge and Information Systems: vol 64, pp 2023-2058. (Published in SCIE(Q1)).\n\nGupta, S.K., Singh, D.P. (2022). Seed Community Identification Framework for Community Detection over Social Media. Arabian Journal for Science and Engineering: vol 48, pp 1829-1843. (Published in SCIE(Q1)).\n\nGupta, S., and Singh, D. P. (2020). Recent trends on community detection algorithms: A survey. Modern Physics Letters B, vol 34, 2050408(35), DOI: 10.1142/S0217984920504084. (Published in SCIE).\n\nKumar S., Rahangdale S.T., and Gupta S.K. (2026). Efficient Probabilistic Forecasting of Solar and Wind Generation Using a GAT-Adapt-Hybrid Diffusion Model. Accepted in IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI-2026).\n\nGupta, S., and Singh, D. P. (2020). Greedy Graph Coloring Algorithm based on Depth First Search. International Journal on Emerging Technologies, 11(2): 854-862.\n\nMansuri, S., Gupta, S. K., Singh, D. P., and Choudhary, J.(2022). Modified DMGC algorithm using ReLU-6 with improved learning rate for complex cluster associations. International Conference on Intelligent Computing and Control Systems, IEEE, PP. 634-640.\n\nGupta, S. K., and Singh, D. P. (2023). CBLA: A Clique Based Louvain Algorithm for Detecting Overlapping Community. Procedia Computer Science, vol 218, pp 2201-2209.\n\nGupta, S. K., Singh, D. P., and Choudhary, J. (2023). New GPU Sorting Algorithm Using Sorted Matrix. Procedia Computer Science, vol 218, pp 1682-1691",
     "resume": "https://www.iiitp.ac.in/sites/default/files/2026-01/Dr.%20Sumit%20Kumar%20Gupta_Resume_2026.pdf",
-    "patents": "Title: IoT-based system and method for monitoring traffic and controlling traffic\n\nsignals using machine learning",
-    "projects": "• Ricky Kumar (212515019), M.Tech. in Computer Science & Engg. (Dec 2025)\n\nProject: Hybrid Phishing Detection Using Static and Dynamic Behavioral Analysis.\n\n• Samarpita Garai (212515012), M.Tech. in Computer Science & Engg. (Dec 2025)\n\n• Piyush Khanke (222415014), M.Tech. in Computer Science & Engg. (June 2025)\n\n• Vidhi Srivastava (222415022), M.Tech. in Computer Science & Engg. (June 2025)\n\n• Ganesh Kini (222415007), M.Tech. in Computer Science & Engg. (Dec 2024)\n\nProject: Enhance Fairness in Online Exam Proctoring: Reducing false positive with\n\nYOLOv5 and Deep Learning.\n\n• Lomesh Patil (222415010), M.Tech. in Computer Science & Engg. (Dec 2024)\n\nProject: Human Activity Recognition based on LRCN and ConvLSTM.\n\nBachelor’s Students Supervised (Project)\n\n• Soyal Rahangdale (112215175), B.Tech. in Computer Science & Engg. (Dec 2025)\n\nProject: Efficient Probabilistic Forecasting of Solar and Wind Generation Using a\n\nGAT-Adapt-Hybrid Diffusion Model.\n\n• Sripathi Praneeth (112215176), B.Tech. in Computer Science & Engg. (Dec 2025)\n\nProject: GomuNet: The XML-Powered Mind-Reader for Gomoku Moves using\n\nDeep Learning.\n\n• Sudhanshu Kumar(112215178), B.Tech. in Computer Science & Engg. (Dec 2025)\n\nProject: GAT-Adaptive-Hybrid Diffusion Framework for Probabilistic Solar and\n\nWind Forecasting.\n\n• Shweta Gaikwad (112315182), Gandhale Vilas (112315062), Sandhya Samrath\n\n(112316040) & Anamika meena (112316005), B.Tech. in Computer Science &\n\nEngg / Electronics and Communication Engineering . (Dec 2025) Project: Stacked\n\nEnsemble Learning with SMOTE-ENN and K-Means Clustering for Diabetes\n\nPrediction.\n\n• Aman Kumar Shah (112315018), Ayush Tiwari (112315039), Aman (112315017),\n\nBurhanuddin Mohammadi Gulamaliwala (112315044) & Madhur Sunhare\n\n(112316025), B.Tech. in Computer Science & Engg. (Dec 2025) Project: Secure\n\nand Scalable Federated Learning for Multi-Institutional Healthcare Data.\n\n• Archit Gulve (112315026), Akshad Khune (112315086), Atharva Khedekar\n\n(112315035), Avani Patil (112315127) & Swaraj Raskar (112315150), B.Tech. in\n\nComputer Science & Engg. (Dec 2025) Project: Modeling Epidemic Spread In\n\nEvolving Social Graphs Using Temporal GNN.\n\n• Luv Kansal (112315094), Manaswi Rajne (112315101), Bhoomi Gundecha\n\n(112315067), Aryan Gupta (112315033) & Kunj Vipul Goyal (112315091),\n\nB.Tech. in Computer Science & Engg. (Dec 2025) Project: SatyaShield- AI\n\nPowered Misinformation Combatter.\n\n• Subhiksha Manivannan (112315096), Nikhil VGK (112316031), Nikita Prasad\n\n(112315118), Netra (112316030) & Yubhashna Shinde (112315214), B.Tech. in\n\nComputer Science & Engg / Electronics and Communication Engineering . (Dec\n\n2025) Project: Time Fusion Transformers: Integrating Deep sentiment Embedding\n\nfor Probabilistic E-Commerce Sales Forecasting.\n\n• Kedar Ekmode (112115072), Devesh Raghuvanshi (112115042), Aman Garg\n\n(112115019) & Pratham Dhadhiya (112115114), B.Tech. in Computer Science &\n\nEngg. (June 2025) Project: DDOS Attack: Detection and Mitigation.\n\n• Nimesh Mali (112115083), B.Tech. in Computer Science & Engg. (June 2025)\n\nProject: Interactive Sorting Algorithm Visualizer and Comparator.\n\n• Aaroh Maheshwari (112116001), B.Tech. in Computer Science & Engg. (June\n\n2025) Project: Health Non-Fungible Tokens(NFT)- Medmask.\n\n• Arjun Anil Sagar (112215152), Atharva Rajendra Padghan (112216009), Prajwal\n\nYuvraj Khadse (112215140) & Prathmesh Pradip Dode (112215141), B.Tech. in\n\nComputer Science & Engg / Electronics and Communication Engineering. (June\n\n2025) Project: Genetic Disease Detection using Deep Learning.\n\n• Sarvagya Gupta (112115140), B.Tech. in Computer Science & Engg. (June 2025)\n\n• Pratham Dhadhiya (112115114), B.Tech. in Computer Science & Engg. (June\n\n2025) Project: Healthify: AI Powered Medical Laboratory System.\n\n• Devesh Raghuwanshi (112115042), B.Tech. in Computer Science & Engg. (June\n\n2025) Project: Anonymization based Privacy Preservation.\n\n• Dhruv Singla (112115045), B.Tech. in Computer Science & Engg. (June 2025)\n\n• Arjun Anil Sagar (112215152), Atharva Rajendra Padghan (112216009), Prajwal\n\nYuvraj Khadse (112215140), Anushka Raut (112216038) & Prathmesh Pradip\n\nDode (112215141), B.Tech. in Computer Science & Engg. (June 2025) Project:\n\nBreast Cancer Detection using Deep Learning.\n\n• Som Singh Lodhi (112115157), B.Tech. in Computer Science & Engg. (June 2025)\n\n• PhD thesis work title is “EFFICIENT COMMUNITY DETECTION\n\nALGORITHMS FOR LARGE NETWORKS” under which we have\n\nimplemented three different algorithms for finding overlapping communities from\n\nthe given graph.\n\n• Dissertation in M.Tech on “PERFORMANCE IMPROVEMENT OF\n\nVARIOUS BIT PARALLEL ALGORITHMS,” which are the algorithms for\n\nstring matching where we have to find the pattern from the text.\n\n• Major Project on “INTRUDER DETECTION SYSTEM,” is used to prevent\n\nintruders from entering the system and taking advantage of it.\n\n• Minor Project on “STEGNOGRAPHY,” Which is used to hide the message into\n\nthe image and audio with the help of the DES algorithm.\n\nTECHNICAL SKILLS:\n\n• Programming Language: C, C++, PyTorch, TensorFlow & Python.\n\n• Favorite Subjects: TOC, Data Structure & Algorithms, Compiler.\n\n• Research Areas: Graph Mining, Community Detection, ML Security, Deep\n\nLearning\n\n• Comfortable working on the OS environment.",
+    "patents": "Australian Patent (Granted), Patent No.: 2021104850, Title: IoT-based system and method for monitoring traffic and controlling traffic signals using machine learning, Publication & Grant Date: 02 June 2022",
+    "projects": "• Ricky Kumar (212515019), M.Tech. in Computer Science & Engg. (Dec 2025)\n\nProject: Hybrid Phishing Detection Using Static and Dynamic Behavioral Analysis.\n\n• Samarpita Garai (212515012), M.Tech. in Computer Science & Engg. (Dec 2025)\n\n• Piyush Khanke (222415014), M.Tech. in Computer Science & Engg. (June 2025)\n\n• Vidhi Srivastava (222415022), M.Tech. in Computer Science & Engg. (June 2025)\n\n• Ganesh Kini (222415007), M.Tech. in Computer Science & Engg. (Dec 2024)\n\nProject: Enhance Fairness in Online Exam Proctoring: Reducing false positive with\n\nYOLOv5 and Deep Learning.\n\n• Lomesh Patil (222415010), M.Tech. in Computer Science & Engg. (Dec 2024)\n\nProject: Human Activity Recognition based on LRCN and ConvLSTM.\n\nSoyal Rahangdale (112215175), B.Tech. in Computer Science & Engg. (Dec 2025)\n\nProject: Efficient Probabilistic Forecasting of Solar and Wind Generation Using a\n\nGAT-Adapt-Hybrid Diffusion Model.\n\n• Sripathi Praneeth (112215176), B.Tech. in Computer Science & Engg. (Dec 2025)\n\nProject: GomuNet: The XML-Powered Mind-Reader for Gomoku Moves using\n\nDeep Learning.\n\n• Sudhanshu Kumar(112215178), B.Tech. in Computer Science & Engg. (Dec 2025)\n\nProject: GAT-Adaptive-Hybrid Diffusion Framework for Probabilistic Solar and\n\nWind Forecasting.\n\n• Shweta Gaikwad (112315182), Gandhale Vilas (112315062), Sandhya Samrath\n\n(112316040) & Anamika meena (112316005), B.Tech. in Computer Science &\n\nEngg / Electronics and Communication Engineering . (Dec 2025) Project: Stacked\n\nEnsemble Learning with SMOTE-ENN and K-Means Clustering for Diabetes\n\nPrediction.\n\n• Aman Kumar Shah (112315018), Ayush Tiwari (112315039), Aman (112315017),\n\nBurhanuddin Mohammadi Gulamaliwala (112315044) & Madhur Sunhare\n\n(112316025), B.Tech. in Computer Science & Engg. (Dec 2025) Project: Secure\n\nand Scalable Federated Learning for Multi-Institutional Healthcare Data.\n\n• Archit Gulve (112315026), Akshad Khune (112315086), Atharva Khedekar\n\n(112315035), Avani Patil (112315127) & Swaraj Raskar (112315150), B.Tech. in\n\nComputer Science & Engg. (Dec 2025) Project: Modeling Epidemic Spread In\n\nEvolving Social Graphs Using Temporal GNN.\n\n• Luv Kansal (112315094), Manaswi Rajne (112315101), Bhoomi Gundecha\n\n(112315067), Aryan Gupta (112315033) & Kunj Vipul Goyal (112315091),\n\nB.Tech. in Computer Science & Engg. (Dec 2025) Project: SatyaShield- AI\n\nPowered Misinformation Combatter.\n\n• Subhiksha Manivannan (112315096), Nikhil VGK (112316031), Nikita Prasad\n\n(112315118), Netra (112316030) & Yubhashna Shinde (112315214), B.Tech. in\n\nComputer Science & Engg / Electronics and Communication Engineering . (Dec\n\n2025) Project: Time Fusion Transformers: Integrating Deep sentiment Embedding\n\nfor Probabilistic E-Commerce Sales Forecasting.\n\n• Kedar Ekmode (112115072), Devesh Raghuvanshi (112115042), Aman Garg\n\n(112115019) & Pratham Dhadhiya (112115114), B.Tech. in Computer Science &\n\nEngg. (June 2025) Project: DDOS Attack: Detection and Mitigation.\n\n• Nimesh Mali (112115083), B.Tech. in Computer Science & Engg. (June 2025)\n\nProject: Interactive Sorting Algorithm Visualizer and Comparator.\n\n• Aaroh Maheshwari (112116001), B.Tech. in Computer Science & Engg. (June\n\n2025) Project: Health Non-Fungible Tokens(NFT)- Medmask.\n\n• Arjun Anil Sagar (112215152), Atharva Rajendra Padghan (112216009), Prajwal\n\nYuvraj Khadse (112215140) & Prathmesh Pradip Dode (112215141), B.Tech. in\n\nComputer Science & Engg / Electronics and Communication Engineering. (June\n\n2025) Project: Genetic Disease Detection using Deep Learning.\n\n• Sarvagya Gupta (112115140), B.Tech. in Computer Science & Engg. (June 2025)\n\n• Pratham Dhadhiya (112115114), B.Tech. in Computer Science & Engg. (June\n\n2025) Project: Healthify: AI Powered Medical Laboratory System.\n\n• Devesh Raghuwanshi (112115042), B.Tech. in Computer Science & Engg. (June\n\n2025) Project: Anonymization based Privacy Preservation.\n\n• Dhruv Singla (112115045), B.Tech. in Computer Science & Engg. (June 2025)\n\n• Arjun Anil Sagar (112215152), Atharva Rajendra Padghan (112216009), Prajwal\n\nYuvraj Khadse (112215140), Anushka Raut (112216038) & Prathmesh Pradip\n\nDode (112215141), B.Tech. in Computer Science & Engg. (June 2025) Project:\n\nBreast Cancer Detection using Deep Learning.\n\n• Som Singh Lodhi (112115157), B.Tech. in Computer Science & Engg. (June 2025)\n\n• PhD thesis work title is “EFFICIENT COMMUNITY DETECTION\n\nALGORITHMS FOR LARGE NETWORKS” under which we have\n\nimplemented three different algorithms for finding overlapping communities from\n\nthe given graph.\n\n• Dissertation in M.Tech on “PERFORMANCE IMPROVEMENT OF\n\nVARIOUS BIT PARALLEL ALGORITHMS,” which are the algorithms for\n\nstring matching where we have to find the pattern from the text.\n\n• Major Project on “INTRUDER DETECTION SYSTEM,” is used to prevent\n\nintruders from entering the system and taking advantage of it.\n\n• Minor Project on “STEGNOGRAPHY,” Which is used to hide the message into\n\nthe image and audio with the help of the DES algorithm.\n\nTECHNICAL SKILLS:\n\n• Programming Language: C, C++, PyTorch, TensorFlow & Python.\n\n• Favorite Subjects: TOC, Data Structure & Algorithms, Compiler.\n\n• Research Areas: Graph Mining, Community Detection, ML Security, Deep\n\nLearning\n\n• Comfortable working on the OS environment.",
     "seminars": "• One week Faculty Devlopment Programe on Big Data & Hadoop Organized by\n\nDepartment of Information Technology UIT, RGPV Sponsored by TEQIP II and\n\nTechnically associated with CSI and ACM.\n\n• One week Faculty Devlopment Programe on Use of Modern Computing\n\nTechniques for Testing and Web Designing Organized by RGPV under TEQIP III\n\nin association with Lakshmi Narain College of Technology, Bhopal.\n\n• Two-days National Seminar on Digital India Towards Innovation Held at Lakshmi\n\nNarain College of Technology Excellence, Bhopal Sponsored by M.P. Council of\n\nScience and Technology Bhopal, CSI Bhopal Chapter and ACM Bhopal Chapter.\n\n• One week Workshop on Application of Deep Learning and Generative AI in\n\nComputer Vision and NLP Task Organized by Department of Computer Science\n\nand Engineering, Maulana Azad National Institute of Technology Bhopal.\n\n• One week Faculty Devlopment Programe on Natural Language Processing jointly\n\nOrganized by Electronics and ICT Academics held at Maulana Azad National\n\nInstitute of Technology Bhopal.\n\n• One week short term training programme on Soft Computing & Machine Learning\n\nconducted by Department of Computer Science and Engineering, Maulana Azad\n\nNational Institute of Technology Bhopal.\n\n• One week short term training programme on Hands-on Experience in Big Data\n\nAnalysis Using Hadoop Organized by Department of Computer Science and\n\nEngineering, Maulana Azad National Institute of Technology Bhopal.\n\n• Two-days workshop on the Development of Web-based Data Repository\n\nOrganized by the Department of Computer Science and Engineering, Maulana\n\nAzad National Institute of Technology Bhopal Sponsored by TEQUIP II.\n\nREVIEWER AND SESSION CHAIR:\n\n• Chaired a Session in IEEE 1st International Conference on Data Science and\n\nIntelligent Network Computing(ICDSINC 2025) held at National Institute of\n\nTechnology Raipur.\n\n• Chaired a Session in 7th International Conference on Recent Trends in Image\n\nProcessing & Pattern Recognition (RTIP2R) held at Indian Institute of Information\n\nTechnology, Bhopal in collaboration with Maulana Azad National Institute of\n\nTechnology Bhopal, India and 2AI: Applied AI Research Lab - University of South\n\nDakota (USA).\n\n• Jury Member in a Session in 10th IEEE International Students’ Conference on\n\nElectrical, Electronics and Computer Science (SCEECS 2025) held at Maulana\n\nAzad National Institute of Technology Bhopal.\n\n• Participated in Capacity Building on Specific Learning Disabilities (SLD) Cycle 2\n\nwith office of student life or campus life affairs organized by National Institute of\n\nEducational Planning and Administration, Delhi.\n\n• Served as Reviewer at IEEE International Conference on Advanced Computation\n\n& Telecommunication 2018 held at Lakshmi Narain College of Technology,\n\nBhopal.\n\n• Served as Reviewer at IEEE International Conference on Artificial Intelligence and\n\nEmerging Technologies (ICAIET-2025) held at School of Computer Science and\n\nEngineering, XIM University, Bhubaneswar.\n\n• Served as Reviewer at International Conference on Big data, Cloud Computing &\n\nIntelligent System 2019 at Lakshmi Narain College of Technology, Bhopal.\n\n• Served as Reviewer at IEEE Delhi Section International Conference on Integrated\n\nCircuits, Communication, and Computing Systems (ICIC3S-2024), organized by\n\nSchool of Electronics, Indian Institute of Information Technology Una.\n\n• Served as Reviewer at IEEE MP Section International Conference on Engineering\n\nInnovations and Technologies (ICoEIT 2025) held at Lakshmi Narain College of\n\nTechnology, Bhopal.\n\n• Served as Reviewer at IEEE International Conference on Electrical, Electronics and\n\nComputer Science with Advance Power Technologies – A Future Trend (ICE2CPT\n\n2025), organized by the Department of Electrical Engineering, National Institute of\n\nTechnology Jamshedpur, in association with the IEEE Kolkata Section, IEEE\n\nIndustrial Electronics Society and IEEE Student Branch, NIT Jamshedpur.\n\nEXPERT LECTURE DELIVERED / PAPER PRESENTER:\n\n• Delivered a expert lecture on “Significance of Community Detection Algorithms\n\nin Real World Application” at G H Raisoni College of Engineering and\n\nManagement, Pune.\n\n• Delivered a expert lecture on “Approach to Design a PPT for Smart India\n\nHackathon” organized by Department of Computer Science and Engineering, Sagar\n\nInstitute of Science & Technology, Bhopal.\n\n• Delivered a expert lecture on “Mastering Python: Beyond the Basics into Real\n\nWorld Applications” organized by Department of Computer Science and\n\nEngineering, Sagar Institute of Science & Technology, Bhopal.\n\n• Presented paper titled “New GPU sorting algorithm using sorted matrix” in\n\nICMLDE conference held at UPES, Dehradun.\n\n• Presented paper titled “CBLA: A Clique Based Louvain Algorithm for Detecting\n\nOverlapping Community” in ICMLDE conference held at UPES, Dehradun.\n\n• Presented paper titled “New GPU sorting algorithm using sorted matrix” in\n\nICMMIT conference held at Amity University, Jharkhand.\n\n• Presented paper titled “Evolution of new version of internet protocol (IPv6):\n\nReplacement of IPv4” in National Conference on Emerging Trends in Information\n\nTechnology IITM Delhi.\n\n• Presented paper titled “Local roughness binary pattern for texture classification” in\n\n3rd springer international Conference on Data Engineering & Applications held at\n\nState Technical University, Bhopal.\n\nPROFESSIONAL MEMBERSHIP:\n\n• Member of Institute of Electrical and Electronics Engineers (IEEE).\n\n• Member of the Editorial Board for the Journals of Lattice Science Publication\n\n(LSP).\n\n• Member of the Editorial Board for the Journals of Blue Eyes Intelligence\n\nEngineering and Sciences Publication (BEIESP).\n\n• Member of the Editorial Board for the Journals of International Journal of\n\nInnovative Research in Technology and Management.\n\nOTHER ACTIVITIES & ACHIEVEMENTS:\n\n• Topper of M.Tech CSE in the second year and secured second position in overall.\n\n• Secured First Position in Tug of War at the Inter-IIIT Faculty Sports Meet held at\n\nABV-IIITM Gwalior.\n\n• Won Individual Gold Medal in Shot Put at the Inter-IIIT Faculty Sports Meet held\n\nat ABV-IIITM, Gwalior.\n\n• Secured Third Position in Cricket at the Inter-IIIT Faculty Sports Meet held at\n\nABV-IIITM Gwalior.\n\n• Mentor of the winning team at the Smart India Hackathon held at IIT Kharagpur.\n\n• Served as External Examiner for the Ph.D. thesis entitled ‘Random Key Based\n\nImage Cryptographic System with Computational Efficiency in a Dynamic\n\nNetwork’ at Rabindranath Tagore University, Bhopal.\n\n• Served as External Expert (Examiner) for the M.Tech Final Thesis Presentations at\n\nthe Department of CSE, Maulana Azad National Institute of Technology.\n\n• Served as External Examiner for the Project-II End-Term Examination of B.Tech\n\n(Cloud Technology & Information Security) and MCA (Information Security) on\n\n22nd May 2025 at Ajeenkya D.Y. Patil University, Pune.\n\n• Coordinator of Capacity Building for promoting positive mental health, Resilience\n\nand wellbeing in HEI’s under the Malaviya Mission Teacher Training\n\nProgram(MMTTP).\n\n• Served as a Chairman SRC Committee of Ph.D. Scholar Megha Purohit student of\n\nComputer Science and Engineering Department of Indian Institute of Information\n\nTechnology Pune.\n\n• Board of Studies (BOS) Member of Computer Science and Engineering\n\nDepartment of Indian Institute of Information Technology Pune.\n\nPERSONAL PROFILE:\n\n• Father Name : Magan Bihari Gupta\n\n• Occupation : Retd. Deputy ranger in Forest Department Bhopal\n\n• Mother Name : Shashi Gupta\n\n• Category : General\n\n• Marital Status : Married\n\n• Date Of Birth : 01-May-1989\n\nDECLARATION:\n\nI hereby declare that the information mentioned above is correct up to my knowledge, and\n\nI bear the responsibility for the correctness of the particulars mentioned above.\n\nPlace: (Dr. Sumit Kumar Gupta)",
-    "supervisions": "Doctoral Students Supervised as Primary Advisor\n\n• Juhi Agrawal(312415001), Ph.D. in Computer Science & Engineering (2024 –\n\npresent), Indian Institute of Information Technology, Pune, Thesis Topic: A Hybrid\n\nRecommendation System Using SVD, Genre Embeddings, and ANN to Alleviate\n\nData Sparsity.\n\n• Seema Arya(322515002), Ph.D. in Computer Science & Engineering (2025 –\n\npresent), Indian Institute of Information Technology, Pune, Thesis Topic: Deep\n\nLearning.\n\n• Sushil Kumar Mishra(312515008), Ph.D. in Computer Science & Engineering\n\n(2025 – present), Indian Institute of Information Technology, Pune, Thesis Topic:\n\nSecurity using Machine Learning.\n\nMasters Students Supervised (Thesis)\n\n• Sakshi Kaushik, M.Tech. in Computer Science & Engg. (completed: 2017)\n\nThesis: Implementation of Open Stack Through Ansible.\n\n• Sharda Dubey, M.Tech. in Computer Science & Engg. (completed: 2017)\n\nThesis: An Innovative Method for Detecting and Preventing Against ARP and IP\n\nSpoofing.",
+    "supervisions": "Juhi Agrawal(312415001), Ph.D. in Computer Science & Engineering (2024 - present), Indian Institute of Information Technology, Pune, Thesis Topic: A Hybrid Recommendation System Using SVD, Genre Embeddings, and ANN to Alleviate Data Sparsity.\n\nSeema Arya(322515002), Ph.D. in Computer Science & Engineering (2025 - present), Indian Institute of Information Technology, Pune, Thesis Topic: Deep Learning.\n\nSushil Kumar Mishra(312515008), Ph.D. in Computer Science & Engineering (2025 - present), Indian Institute of Information Technology, Pune, Thesis Topic: Security using Machine Learning.\n\nSakshi Kaushik, M.Tech. in Computer Science & Engg. (completed: 2017). Thesis: Implementation of Open Stack Through Ansible.\n\nSharda Dubey, M.Tech. in Computer Science & Engg. (completed: 2017). Thesis: An Innovative Method for Detecting and Preventing Against ARP and IP Spoofing.\n\nRicky Kumar (212515019), M.Tech. in Computer Science & Engg. (Dec 2025). Project: Hybrid Phishing Detection Using Static and Dynamic Behavioral Analysis.\n\nSamarpita Garai (212515012), M.Tech. in Computer Science & Engg. (Dec 2025). Project: Insurance Fraud Detection using Machine Learning.\n\nPiyush Khanke (222415014), M.Tech. in Computer Science & Engg. (June 2025). Project: MediGenius: AI Powered Prescription Guide.\n\nVidhi Srivastava (222415022), M.Tech. in Computer Science & Engg. (June 2025). Project: Automated Software Testing Using Generative AI.\n\nGanesh Kini (222415007), M.Tech. in Computer Science & Engg. (Dec 2024). Project: Enhance Fairness in Online Exam Proctoring: Reducing false positive with YOLOv5 and Deep Learning.\n\nLomesh Patil (222415010), M.Tech. in Computer Science & Engg. (Dec 2024). Project: Human Activity Recognition based on LRCN and ConvLSTM.\n\n**Bachelor's Students Supervised (Project)**\n\nSoyal Rahangdale (112215175), B.Tech. in Computer Science & Engg. (Dec 2025). Project: Efficient Probabilistic Forecasting of Solar and Wind Generation Using a GAT-Adapt-Hybrid Diffusion Model.\n\nSripathi Praneeth (112215176), B.Tech. in Computer Science & Engg. (Dec 2025). Project: GomuNet: The XML-Powered Mind-Reader for Gomoku Moves using Deep Learning.\n\nSudhanshu Kumar(112215178), B.Tech. in Computer Science & Engg. (Dec 2025). Project: GAT-Adaptive-Hybrid Diffusion Framework for Probabilistic Solar and Wind Forecasting.\n\nShweta Gaikwad (112315182), Gandhale Vilas (112315062), Sandhya Samrath (112316040) & Anamika meena (112316005), B.Tech. in Computer Science & Engg / Electronics and Communication Engineering. (Dec 2025). Project: Stacked Ensemble Learning with SMOTE-ENN and K-Means Clustering for Diabetes Prediction.\n\nAman Kumar Shah (112315018), Ayush Tiwari (112315039), Aman (112315017), Burhanuddin Mohammadi Gulamaliwala (112315044) & Madhur Sunhare (112316025), B.Tech. in Computer Science & Engg. (Dec 2025). Project: Secure and Scalable Federated Learning for Multi-Institutional Healthcare Data.\n\nArchit Gulve (112315026), Akshad Khune (112315086), Atharva Khedekar (112315035), Avani Patil (112315127) & Swaraj Raskar (112315150), B.Tech. in Computer Science & Engg. (Dec 2025). Project: Modeling Epidemic Spread In Evolving Social Graphs Using Temporal GNN.\n\nLuv Kansal (112315094), Manaswi Rajne (112315101), Bhoomi Gundecha (112315067), Aryan Gupta (112315033) & Kunj Vipul Goyal (112315091), B.Tech. in Computer Science & Engg. (Dec 2025). Project: SatyaShield- AI Powered Misinformation Combatter.\n\nSubhiksha Manivannan (112315096), Nikhil VGK (112316031), Nikita Prasad (112315118), Netra (112316030) & Yubhashna Shinde (112315214), B.Tech. in Computer Science & Engg / Electronics and Communication Engineering. (Dec 2025). Project: Time Fusion Transformers: Integrating Deep sentiment Embedding for Probabilistic E-Commerce Sales Forecasting.\n\nKedar Ekmode (112115072), Devesh Raghuvanshi (112115042), Aman Garg (112115019) & Pratham Dhadhiya (112115114), B.Tech. in Computer Science & Engg. (June 2025). Project: DDOS Attack: Detection and Mitigation.\n\nNimesh Mali (112115083), B.Tech. in Computer Science & Engg. (June 2025). Project: Interactive Sorting Algorithm Visualizer and Comparator.\n\nAaroh Maheshwari (112116001), B.Tech. in Computer Science & Engg. (June 2025). Project: Health Non-Fungible Tokens(NFT)- Medmask.\n\nArjun Anil Sagar (112215152), Atharva Rajendra Padghan (112216009), Prajwal Yuvraj Khadse (112215140) & Prathmesh Pradip Dode (112215141), B.Tech. in Computer Science & Engg / Electronics and Communication Engineering. (June 2025). Project: Genetic Disease Detection using Deep Learning.\n\nSarvagya Gupta (112115140), B.Tech. in Computer Science & Engg. (June 2025). Project: Loyalty Program Using Blockchain.\n\nPratham Dhadhiya (112115114), B.Tech. in Computer Science & Engg. (June 2025). Project: Healthify: AI Powered Medical Laboratory System.\n\nDevesh Raghuwanshi (112115042), B.Tech. in Computer Science & Engg. (June 2025). Project: Anonymization based Privacy Preservation.\n\nDhruv Singla (112115045), B.Tech. in Computer Science & Engg. (June 2025). Project: Book Hive.\n\nArjun Anil Sagar (112215152), Atharva Rajendra Padghan (112216009), Prajwal Yuvraj Khadse (112215140), Anushka Raut (112216038) & Prathmesh Pradip Dode (112215141), B.Tech. in Computer Science & Engg. (June 2025). Project: Breast Cancer Detection using Deep Learning.\n\nSom Singh Lodhi (112115157), B.Tech. in Computer Science & Engg. (June 2025). Project: A Comparative Analysis of Encryption Methods.",
     "expertise": "Community Detection Algorithms, Graph Algorithms, Social Network Analysis, Data Science, Artificial Intelligence and Machine Learning",
-    "google_scholar": "",
-    "orcid": "",
-    "scopus": ""
+    "google_scholar": "https://scholar.google.com/citations?user=79vGSWoAAAAJ",
+    "orcid": "https://orcid.org/my-orcid?orcid=0000-0002-8550-2194",
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57217374270",
+    "books_chapters": "Gupta, S., Nandanwar, A.K., and Singh, D. P. (2021). DATA STRUCTURE. Publisher: LAP LAMBERT Academic Publishing, Paperback: 188 pages, ISBN-10: 6204715909, ISBN-13: 978-6204715902.\n\nGupta, S. K., Yadav, S., Singh, D. P., and Choudhary, J. (2022). Local Roughness Binary Pattern for Texture Classification. In Lecture Notes in Electrical Engineering book series (LNEE,volume 907). ISBN 978-981-19-4686-8",
+    "email": "",
+    "phone": "9981036049",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "tushar-prakash-gawande": {
     "designation": "Adjunct Assistant Professor",
@@ -203,20 +318,112 @@
     "expertise": "Embedded system design, VLSI Design, Data analysis",
     "google_scholar": "https://scholar.google.com/citations?user=lN8elDgAAAAJ&hl=en",
     "orcid": "https://orcid.org/my-orcid?orcid=0000-0003-0128-9005",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "seminars": [],
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "habila-basumatary": {
     "designation": "Assistant Professor\nGirl's Hostel Warden",
-    "image": "https://www.iiitp.ac.in/sites/default/files/2024-08/image%20%281%29%20%282%29.png",
-    "bio": "Dr. Habila Basumatary is currently working as an Assistant Professor in the Department of Computer Science and Engineering at Indian Institute of Information Technology (IIIT), Pune, Maharashtra. Prior to that she has worked as an Institute Post-Doctoral Fellow (IPDF) in the department of Computer Science and Engineering, Indian Institute of Technology, Guwahati. She received her Ph.D. degree from the Computer Science and Engineering (CSE) Department, National Institute of Technology (NIT), Agartala, India in 2022. Dr. Basumatary completed her M.Tech and B.Tech in Information Technology (IT) from North Eastern Regional Institute of Science and Technology (NERIST), Arunachal Pradesh and Assam University Silchar Assam in 2017 and 2015 respectively.\n\nDr. Habila area of specialization includes Cyber Security in IoT, Smart Micro-Grids, EV Charging and Energy Efficiency in WSN. She has published numerous research papers in various international journals and conferences. She also serves as a reviewer for various reputed international journals.\n\nGoogle Scholar: https://scholar.google.com/citations?user=uUoVLG4AAAAJ&hl=en&oi=ao\nORCID: https://orcid.org/0000-0002-6874-6461\nScopus: https://www.scopus.com/authid/detail.uri?authorId=57207938335",
+    "image": "/assets/faculty_photos/habilabasumatary.jpeg",
+    "bio": "Dr. Habila Basumatary is currently working as an Assistant Professor in the Department of Computer Science and Engineering at Indian Institute of Information Technology (IIIT), Pune, Maharashtra. Prior to that she has worked as an Institute Post-Doctoral Fellow (IPDF) in the department of Computer Science and Engineering, Indian Institute of Technology, Guwahati. She received her Ph.D. degree from the Computer Science and Engineering (CSE) Department, National Institute of Technology (NIT), Agartala, India in 2022. Dr. Basumatary completed her M.Tech and B.Tech in Information Technology (IT) from North Eastern Regional Institute of Science and Technology (NERIST), Arunachal Pradesh and Assam University Silchar Assam in 2017 and 2015 respectively.Dr. Habila's area of specialization includes Machine/Deep Learning, Cyber Security in IoT, Smart Micro-Grids, EV Charging. She has published numerous research papers in various international journals and conferences. She also serves as a reviewer for various reputed international journals.",
     "education": "Post-Doc (CSE), Ph.D. (CSE)",
-    "publications": "H.Basumatary,A.Debnath,M.K.Debbarma,andB.K.Bhattacharyya,“Performanceanalysisof\n\ncentroidbasedroutingprotocolinwirelesssensornetworks,”IETETechnicalReview,2024.\n\n(cid:18)\n\n10.1080/02564602.2023.2230947.\n\nA.Debnath,H.Basumatary,M.Dhar,M.K.Debbarma,andB.K.Bhattacharyya,“Aroutingtechnique\n\nforenhancingthequalityofserviceinvanet,”IETEJournalofResearch,vol.69,2023.\n\n(cid:18)\n\n10.1080/03772063.2021.1886879.\n\nH.BasumataryandM.K.Debbarma,“Comparativestudyondifferentparametersusedforenergy\n\nconservationinwirelesssensornetworks,”IETETechnicalReview,vol.39,2022.\n\n(cid:18)\n\n10.1080/02564602.2021.1882344.\n\nH.Basumatary,A.Debnath,M.K.Debbarma,andB.K.Bhattacharyya,“Centroid-basedrouting\n\nprotocolwithmovingsinknodeforuniformandnon-uniformdistributionofwirelesssensornodes,”\n\n(cid:18)\n\nhttps://doi.org/10.1007/s11227-020-03414-8.\n\nH.Basumatary,A.Debnath,M.K.Debbarma,andB.K.Bhattacharyya,“Clusteringbasedtwo-\n\ndimensionalmotionofsinknodeinwirelesssensornetworks,”WirelessPersonalCommunication,\n\nvol.118,pp.161–183,2021.\n\n(cid:18)\n\nurl:https://doi.org/10.1007/s11277-020-08007-5.\n\nA.Debnath,H.Basumatary,M.Dhar,M.K.Debbarma,andB.K.Bhattacharyya,“Fuzzylogic-based\n\nvanetroutingmethodtoincreasetheqosbyconsideringthedynamicnatureofvehicles,”Computing,\n\nvol.103,pp.1391–1415,2021.\n\n(cid:18)\n\nurl:https://doi.org/10.1007/s00607-020-00890-x.\n\nH.BasumataryandM.K.Debbarma,“Analysisofmobilesinkbasedroutingprotocolsinwireless\n\nsensornetworks,”InternationalJournalofComputationalIntelligenceandIoT,vol.2,no.3,2019.\n\n(cid:18)\n\nhttps://ssrn.com/abstract=3358300.\n\nA.Debnath,H.Basumatary,T.Anirban,M.K.Debbarma,andB.K.Bhattacharyya,“Centerofmassand\n\njunctionbaseddataroutingmethodtoincreasetheqosinvanet,”AEU-InternationalJournalof\n\nElectronicsandCommunications,vol.108,pp.36–44,2019.\n\n(cid:18)\n\nhttps://doi.org/10.1016/j.aeue.2019.05.026.\n\nM.M.SinghandH.Basumatary,“MERAM-R:Multi-clusteredenergyefficientroutingalgorithmwith\n\nrandomlymovingsinknode,”JournalofScientificandIndustrialResearch,pp.15–17,2018.\n\n(cid:18)\n\nhttp://nopr.niscpr.res.in/handle/123456789/43315.\n\nH.Basumatary,R.Chowdhuri,andM.K.Debbarma,“Areviewonrecenttechniquesdevelopedfor\n\nenergyconservationinwirelesssensornetworks,”inProceedingsoftheInternationalConferenceon\n\nIntelligentSystems,AdvancedComputingandCommunication(ISACC-2023),Silchar,India,2023,pp.1–6.\n\n(cid:18)\n\ndoi:10.1109/ISACC56298.2023.10083645.\n\nH.BasumataryandM.M.Singh,“Multiclusteredenergyefficientroutingalgorithmwithmobilesink\n\nnodemovinginclockwisedirection,”inProceedingsoftheInternationalConferenceonRecent\n\nAdvancementinComputerandCommunication(ICRAC-2017),vol.34,Bhopal,India,2018,pp.645–654.\n\n(cid:18)\n\nurl:https://link.springer.com/chapter/10.1007/978-981-10-8198-9_67.\n\nSkills\n\nLanguages ] English,Hindi,Boro,Assamese,Bengali.\n\nCoding ] C,C++,Java,Python,sql,alp,matlab,LATEX\n\nWebDev ] Html,css,JavaScript\n\nInternship Experience\n\n2014 ] 2 Months (June - July, 2014) Internship on Advanced Java Platform at GenX Soft Technologies\n\nPvt.Ltd.,JaipurRajasthanIndia.",
+    "publications": [
+      {
+        "title": "False data injection attack detection in ev charging network using narx neural network",
+        "authors": "H. Basumatary, M. Khatua, and S. Nath",
+        "journal": "IEEE Transactions on Transportation Electrification, vol. 0, p. 0, 2025",
+        "link": "https://doi.org/10.1109/TTE.2025.3553391"
+      },
+      {
+        "title": "Performance analysis of centroid based routing protocol in wireless sensor networks",
+        "authors": "H. Basumatary, A. Debnath, M. K. Debbarma, and B. K. Bhattacharyya",
+        "journal": "IETE Technical Review, 2024",
+        "link": "https://doi.org/10.1080/02564602.2023.2230947"
+      },
+      {
+        "title": "A routing technique for enhancing the quality of service in vanet",
+        "authors": "A. Debnath, H. Basumatary, M. Dhar, M. K. Debbarma, and B. K. Bhattacharyya",
+        "journal": "IETE Journal of Research, vol. 69, 2023",
+        "link": "https://doi.org/10.1080/03772063.2021.1886879"
+      },
+      {
+        "title": "Comparative study on different parameters used for energy conservation in wireless sensor networks",
+        "authors": "H. Basumatary and M. K. Debbarma",
+        "journal": "IETE Technical Review, vol. 39, 2022",
+        "link": "https://doi.org/10.1080/02564602.2021.1882344"
+      },
+      {
+        "title": "Centroid-based routing protocol with moving sink node for uniform and non-uniform distribution of wireless sensor nodes",
+        "authors": "H. Basumatary, A. Debnath, M. K. Debbarma, and B. K. Bhattacharyya",
+        "journal": "Journal of Supercomputing, vol. 77, pp. 3727–3751, 2021",
+        "link": "https://doi.org/10.1007/s11227-020-03414-8"
+      },
+      {
+        "title": "Clustering based twodimensional motion of sink node in wireless sensor networks",
+        "authors": "H. Basumatary, A. Debnath, M. K. Debbarma, and B. K. Bhattacharyya",
+        "journal": "Wireless Personal Communication, vol. 118, pp. 161–183, 2021",
+        "link": "https://doi.org/10.1007/s11277-020-08007-5"
+      },
+      {
+        "title": "Fuzzy logic-based vanet routing method to increase the qos by considering the dynamic nature of vehicles",
+        "authors": "A. Debnath, H. Basumatary, M. Dhar, M. K. Debbarma, and B. K. Bhattacharyya",
+        "journal": "Computing, vol. 103, pp. 1391–1415, 2021",
+        "link": "https://doi.org/10.1007/s00607-020-00890-x"
+      },
+      {
+        "title": "Analysis of mobile sink based routing protocols in wireless sensor networks",
+        "authors": "H. Basumatary and M. K. Debbarma",
+        "journal": "International Journal of Computational Intelligence and IoT, vol. 2, no. 3, 2019",
+        "link": "https://ssrn.com/abstract=3358300"
+      },
+      {
+        "title": "Center of mass and junction based data routing method to increase the qos in vanet",
+        "authors": "A. Debnath, H. Basumatary, T. Anirban, M. K. Debbarma, and B. K. Bhattacharyya",
+        "journal": "AEU - International Journal of Electronics and Communications, vol. 108, pp. 36–44, 2019",
+        "link": "https://doi.org/10.1016/j.aeue.2019.05.026"
+      },
+      {
+        "title": "MERAM-R: Multi-clustered energy efficient routing algorithm with randomly moving sink node",
+        "authors": "M. M. Singh and H. Basumatary",
+        "journal": "Journal of Scientific and Industrial Research, pp. 15–17, 2018",
+        "link": "http://nopr.niscpr.res.in/handle/123456789/43315"
+      },
+      {
+        "title": "A review on recent techniques developed for energy conservation in wireless sensor networks",
+        "authors": "H. Basumatary, R. Chowdhuri, and M. K. Debbarma",
+        "journal": "in Proceedings of the International Conference on Intelligent Systems, Advanced Computing and Communication (ISACC-2023), Silchar, India, 2023, pp. 1–6",
+        "link": "https://doi.org/10.1109/ISACC56298.2023.10083645"
+      },
+      {
+        "title": "Multi clustered energy efficient routing algorithm with mobile sink node moving in clockwise direction",
+        "authors": "H. Basumatary and M. M. Singh",
+        "journal": "in Proceedings of the International Conference on Recent Advancement in Computer and Communication (ICRAC-2017), vol. 34, Bhopal, India, 2018, pp. 645–654",
+        "link": "https://link.springer.com/chapter/10.1007/978-981-10-8198-9_67"
+      }
+    ],
     "resume": "https://www.iiitp.ac.in/sites/default/files/2026-02/Dr.%20Habila_Resume.pdf",
-    "seminars": "2019 ] One-weekAICTETrainingandLearning(ATAL)AcademyWorkshopon“ArtificialIntelligence”\n\natNITAgartalafrom22-02-2019to26-02-2019.\n\n2018 ] One-week National Workshop on Soft Computing and its Application in Real Life Problems\n\norganizedbyDepartmentofMathematics,NIT,Agartalafrom09-04-2018to13-04-2018.\n\n2016 ] 3rd IEEE Workshop on Advanced MATLAB Applications - “ADMAT-2016” organized by IIT\n\nGuwahatifrom01-10-2016to02-10-2016.\n\n] Workshop on Cognitive Radio Networks: Prospects and Challenges organized by Department\n\nofCSE,NERISTunderITRAProject(“MobileBroadbandServiceSupportoverCognitiveRadio\n\nNetworks”incollaborationwithIIT,Delhi,LMNITJaipurandIRPE,Kolkata)on8thApril,2016.\n\n2013 ] WorkshoponAdrodizer(AndroidApplicationMakingWorkshop)andPHPPRO(PHPMYSQL\n\nWebDevelopmentWorkshop)organizedbyDepartmentofInformationTechnologyincollabo-\n\nrationwithIPEGSolutionsfrom26thto28thDecember,2013.\n\n2012 ] WorkshoponAndroidApplicationDevelopmentheldatAssamUniversity,Silchar,India,on10-\n\n11March,2012.\n\n2011 ] HackINworkshoponEthicalHackingandInformationSecurityorganizedbyHorizon(Aunit\n\nofMBSGroup)heldatAssamUniversity,Silcharfrom24thto25thSeptember,2011.\n\nMiscellaneous Experience\n\nAwardsandAchievements\n\n2009 ] AwardedwithAnandaramBoruahSchemeAwardforsecuringfirstdivisioninthe10thstandard\n\nboardexaminationbyStateGovernmentofAssam.\n\nExtra-CurricularActivities\n\n2010 ] NCC‘B’certificatebyunit62Assam(G)Bn,NCCwithNoCSW/11/12267withRank:Sgt\n\nProfessional Responsibilities\n\nReviewer\n\n2023 ] InternationalConferenceonIntelligenceSystems,AdvancedComputingandCommunications\n\n(ISACC),heldatAssamUniversitySilchar,Indiafrom03-04February,2023.\n\n] 4thInternationalConferenceonFrontiersinComputingandSystems(COMSYS2023),heldat\n\nIITMandi,HimachalPradesh,Indiafrom16-17October,2023.\n\nMembership\n\n] AssociateMemberoftheInstitutionofEngineers(IEI),India.\n\n] StudentMemberOFInstituteofElectricalandElectronicsEngineers(IEEE)",
+    "seminars": "A one-day National Workshop titled \"SARAL AI: From Research Papers to Video Presentation using AI\" was conducted on 06 April 2026 at IIIT Pune. The workshop was coordinated by Dr. Habila Basumatary and Dr. Sanjeev Sharma and was sponsored by ANRF PAIR project with IIT Bombay as Hub institute.\n\n2019 One-week AICTE Training and Learning (ATAL) Academy Workshop on “Artificial Intelligence” at NIT Agartala from 22-02-2019 to 26-02-2019.\n\nOne-week National Workshop on Soft Computing and its Application in Real Life Problems organized by Department of Mathematics, NIT Agartala from 09-04-2018 to 13-04-2018.\n\n3rd IEEE Workshop on Advanced MATLAB Applications - “ADMAT-2016” organized by IIT Guwahati from 01-10-2016 to 02-10-2016.\n\nWorkshop on Cognitive Radio Networks: Prospects and Challenges organized by Department of CSE, NERIST under ITRA Project \"Mobile Broadband Service Support over Cognitive Radio Networks\" in collaboration with IIT Delhi, LMNIT Jaipur and IRPE Kolkata on 8thApril, 2016.",
     "expertise": "Cyber Security in IoT, Smart Micro-Grids, EV Charging, and Energy Efficiency in WSN.",
     "google_scholar": "https://scholar.google.com/citations?user=uUoVLG4AAAAJ&hl=en&oi=ao",
     "orcid": "https://orcid.org/0000-0002-6874-6461",
-    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57207938335"
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57207938335",
+    "books_chapters": "",
+    "patents": "",
+    "projects": "ANRF PAIR Project is an externally sponsored research initiative funded by ANRF with a total grant of ₹4.38 Crores for a duration of 5 years, commencing in September 2025. The project is being led by IIT Bombay as the Hub Institute, with IIIT Pune participating as a Spoke Institute. The project team at IIIT Pune comprises Dr. Habila Basumatary, Dr. Sanjeev Sharma, Dr. Bhupendra Singh, Dr. Sushant Kumar, Dr. Shivangi Shukla. Dr. Dheeraj Dubey, and Dr. Dipen Bepari.",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "priya-jadhav": {
     "designation": "Adjunct Assistant Professor",
@@ -228,7 +435,18 @@
     "expertise": "Machine Learning, Mixed Reality- AR,VR and HCI",
     "google_scholar": "",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "sanga-chaki": {
     "designation": "Assistant Professor",
@@ -241,19 +459,65 @@
     "expertise": "Machine Learning, Deep Learning, Affective Computing, Sound and Music Computing, and Trustworthy",
     "google_scholar": "https://scholar.google.co.in/citations?user=OzF5WawAAAAJ&hl=en/a>",
     "orcid": "",
-    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55321929600"
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55321929600",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "sakshi-semwal": {
     "designation": "Adjunct Assistant Professor",
     "image": "https://iiitp.ac.in/sites/default/files/2024-01/IMG_20240116_105326.jpg",
-    "bio": "Dr. Sakshi Semwal is currently working as an Adjunct Assistant Professor in the Department of Applied Sciences and Humanities at the Indian Institute of Information Technology, Pune (IIIT Pune). She holds a Ph.D. from the Indian Institute of Technology Roorkee (IIT Roorkee). She completed her Master’s degree in English from Panjab University and her Bachelor’s degree in English Honors from the University of Delhi. Her academic interests encompass a wide range of fields, including Science Fiction, Ecocriticism, Gender Studies, and Anglophone Literature, highlighting her dedication to interdisciplinary scholarship and critical inquiry\n\nGoogle Scholar: https://scholar.google.co.in/citations?user=IPxJezAAAAAJ&hl=en&oi=sra\nORCID: https://orcid.org/0000-0002-1183-4778\nScopus: https://www.scopus.com/authid/detail.uri?authorId=58306144300",
+    "bio": "Dr Sakshi Semwal is currently working as an Adjunct Assistant Professor in the Department of Applied Sciences and Humanities at the Indian Institute of Information Technology, Pune (IIIT Pune). She holds a PhD from the Indian Institute of Technology Roorkee (IIT Roorkee). She completed her Master’s degree in English from Panjab University and her Bachelor’s degree in English Hons. from the University of Delhi. Her academic interests encompass a wide range of fields, including Science Fiction, Ecocriticism, Gender Studies, and Anglophone Literature, highlighting her dedication to interdisciplinary scholarship and critical inquiry",
     "education": "Ph.D., M.A., B.A.",
-    "publications": "• Presented a paper titled ‘Narratives of One’s Own: Discerning the Feminist\n\nStandpoint in Githa Hariharan’s When Dreams Travel’ in I International Seminar in\n\nEnglish Literature and Linguistics, organized by Department of English and German\n\nStudies at University of Granada, Spain, on 1st Oct 2021.\n\n• Presented a paper titled ‘Confronting Postcolonial Modernities with Magical\n\nRealism: A Probe into O.V. Vijayan’s ‘The Legends of Khasak’ in Graduate Research\n\nMeet 2021, organized by Department of Humanities and Social Sciences, IIT\n\nGuwahati, on 11th and 12th of November 2021.\n\n• Presented a paper titled 'Feminist Storytelling and Magical Realism' in the 53rd\n\nAnnual Northeast Modern Language Association Convention (NeMLA) 2022,\n\norganized by University of Buffalo, US, on 10th to 13th March 2022.\n\n• Presented a paper titled ‘Postcolonial Science Fiction and the Anthropocene: The\n\ncritical Study of Vandana Singh's Indira's Web and Widdam’ in the 2nd Indian\n\nAssociation for South Asian Studies International Conference 2022, organized by\n\nBanaras Hindu University, Varanasi, 15th to 18th of Nov, 2022.\n\nSkills\n\n• Academic Writing and Research\n\n• Educational Leadership\n\n• University Teaching\n\n• Communication skills\n\n• Analytical Skills",
+    "publications": [
+      {
+        "title": "(Accepted, to be published- June, 2026) Magical Realism, Regionalism, and Liminal Spaces: A Chronotope of Indian Postcolonial Village in Vinod Kumar Shukla’s A Window Lived in a Wall",
+        "authors": "",
+        "journal": "Ars Aeterna, (Scopus, Q2)",
+        "link": ""
+      },
+      {
+        "title": "‘To Learn from Nature, not to Exploit Her’: Postcolonial Green Speculations in Vandana Singh’s Indira’s Web and Widdam",
+        "authors": "Sakshi Semwal, Smita Jha",
+        "journal": "Journal of Narrative and Language Studies, 11(21), pp. 57–69 (Scopus, Q2)",
+        "link": "https://doi.org/10.59045/nalans.2023.15"
+      },
+      {
+        "title": "“Many Truths Make the Big Truth.”: Magical Realism in O.V. Vijayan's The Legends of Khasak",
+        "authors": "Sakshi Semwal and Smita Jha",
+        "journal": "Journal of Indian and Asian Studies Vol.4, No. 1 (UGC Care Listed)",
+        "link": "https://doi.org/10.1142/S2717541323500055"
+      },
+      {
+        "title": "Narrative of One’s Own: Discerning Female Standpoint and Magical Realism in Githa Hariharan’s When Dreams Travel",
+        "authors": "",
+        "journal": "Journal of Exclusion Studies (UGC Care Listed)",
+        "link": "https://doi.org/10.5958/2231-4555.2023.00001.3"
+      }
+    ],
     "resume": "https://www.iiitp.ac.in/sites/default/files/2025-01/UPDATED__CV.pdf",
     "expertise": "Magical Realism in South Asian literature. Postcolonial Studies, Gender Studies, Anglophone Literature",
     "google_scholar": "https://scholar.google.co.in/citations?user=IPxJezAAAAAJ&hl=en&oi=sra",
     "orcid": "https://orcid.org/0000-0002-1183-4778",
-    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58306144300"
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58306144300",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": "Presented a paper titled 'Narratives of One's Own: Discerning the Feminist Standpoint in Githa Hariharan's When Dreams Travel' in International Seminar in English Literature and Linguistics, organized by Department of English and German Studies at University of Granada, Spain, on 1st Oct 2021.\n\nPresented a paper titled 'Confronting Postcolonial Modernities with Magical Realism: A Probe into O.V. Vijayan's 'The Legends of Khasak' in Graduate Research Meet 2021, organized by Department of Humanities and Social Sciences, IIT Guwahati, on 11th and 12th of November 2021.\n\nPresented a paper titled 'Feminist Storytelling and Magical Realism' in the 53rd Annual Northeast Modern Language Association Convention (NeMLA) 2022, organized by University of Buffalo, US, on 10th to 13th March 2022.\n\nPresented a paper titled 'Postcolonial Science Fiction and the Anthropocene: The critical Study of Vandana Singh's Indira's Web and Widdam' in the 2nd Indian Association for South Asian Studies International Conference 2022, organized by Banaras Hindu University, Varanasi, 15th to 18th of Nov, 2022.",
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "8586063568",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "manish-kumar": {
     "designation": "Adjunct Assistant Professor",
@@ -265,7 +529,18 @@
     "expertise": "Machine Learning & Deep learning, Autonomous vehicles vision system",
     "google_scholar": "https://scholar.google.com/citations?user=ZfHlgHpD8lIC&hl=en",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "anu-priya": {
     "designation": "Adjunct Assistant Professor",
@@ -278,7 +553,17 @@
     "expertise": "Image Processing, Computer Vision, Deep Learning, Deep Reinforcement Learning, Robot Path Planning.",
     "google_scholar": "https://scholar.google.com/citations?user=86mYpqgAAAAJ",
     "orcid": "https://orcid.org/0000-0003-3357-1398",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "chandrakant-narayan-guled": {
     "designation": "Assistant Professor\nController of Examination",
@@ -292,12 +577,16 @@
     "expertise": "Applied Mathematics, Computational dynamics, Optimization.",
     "email": "chandrakantguled@iiitp.ac.in",
     "phone": "91 9860361146",
-    "researchLinks": [
-      "https://scholar.google.com/citations?user=g92wPIIAAAAJ&hl=en&oi=sra"
-    ],
+    "researchLinks": [],
     "google_scholar": "https://scholar.google.com/citations?user=g92wPIIAAAAJ&hl=en&oi=sra",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "patents": "",
+    "projects": "",
+    "supervisions": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": ""
   },
   "anupama-arun": {
     "designation": "Adjunct Assistant Professor",
@@ -309,7 +598,18 @@
     "expertise": "Machine Learning and Deep Learning",
     "google_scholar": "https://scholar.google.com/citations?user=upEd2xcAAAAJ&hl=en&oi=ao",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "nagendra-kushwaha": {
     "designation": "Assistant Professor\nHead of Department(ECE)",
@@ -324,7 +624,15 @@
     "phone": "+919881457120",
     "google_scholar": "",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "supervisions": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "km-divya-chaturvedi": {
     "designation": "Assistant Professor",
@@ -337,21 +645,61 @@
     "expertise": "SIW-based Cavity-backed Multi-band Antennas with Intrinsically Isolated Ports and Smart Antenna Design with IoT-enabled devices.",
     "google_scholar": "https://scholar.google.com/citations?user=6zj2ccUAAAAJ&hl=en&authuser=1",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "anagha-uday-khiste": {
     "designation": "Assistant Professor\nLibrary / Digital Library In-Charge",
-    "image": "https://www.iiitp.ac.in/sites/default/files/inline-images/Dr%20Anagha%20Khiste-min.jpg",
-    "bio": "Dr Anagha U. Khiste is an assistant professor in department of Applied Science and Humanities at Indian Institute of Information Technology Pune from the year of 2016. She has seven years of teaching experience. Her research area is Lattice Theory, in particular order structures, Discrete Mathematics. She has qualified NET (National Eligibility Test) conducted by CSIR with all India rank 102. She has been awarded by Padmashree Late N. S. Venkatesan Gold Medal\" for \"Best Ph.D. Thesis\" of the year 2014-15\" from SPPU Pune. She has received junior research fellowship during the year 2011-13, Eklavya Scholarship during post graduate program (M.Sc.) from SPPU Pune. She has life membership of Indian Mathematical Society.",
+    "image": "/assets/faculty_photos/anaghakhiste.jpeg",
+    "bio": "Dr. Anagha Khiste is currently working as an assistant professor at Indian Institute of Information and Technology, Pune, she is an academician and researcher with expertise in Mathematics and its applications to engineering and sciences. She is actively involved in teaching, research, student mentoring and academic administration. Her research interests include Discrete Mathematics, Lattice Theory, Graph theory, Algebra, Combinatorics, Optimization Techniques. She has published research articles in reputed journals and regularly contributes to curriculum development, project supervision and scholarly activities. She qualified the CSIR-NET with an All India Rank of 102. She is a recipient of the “Padmashree Late N. S. Venkatesan Gold Medal” for Best Ph.D. Thesis (2014-15) from Savitribai Phule Pune University (SPPU), Pune. She has also been awarded the Junior Research Fellowship (2011-2013) and the Eklavya Scholarship during her postgraduate studies.",
     "education": "Ph.D. (Lattice Theory), M.Sc., B.Sc.",
-    "publications": "Medal” for “Best Ph.D. Thesis of the year 2014-15”.\n\n➢ Awarded by Ph.D. (Lattice Theory) in Sept. 2014 under\n\nthe guidance of Dr Vinayak V. Joshi from SPPU, Pune.\n\n➢ Cleared NET with CSIR (JRF) in Dec.2010\n\n(All India Rank 102)\n\nAcademic Talent ➢ Cleared PhD Entrance Test in Feb. 2010\n\n➢ M.Sc. Passed from Pune University in 2009\n\n(72.35%- Outstanding - ‘O’ grade)\n\n➢ B.Sc. Passed from Pune University in 2007\n\n(84.66%)\n\n➢ H.S.C. passed from Maharashtra State Board in 2004\n\n(64.33%)\n\n➢ S.S.C. Passed from Maharashtra State Board in 2002\n\n(74.80%)\n\n• V. V. Joshi, and A. U. Khiste, “On zero divisor graph of pm-lattices”, Discrete Math. 312 (2012),\n\n2076-2082.\n\n(It was Most downloaded Discrete Mathematics article in the period of April to June 2012 and it was\n\non sixth position in the Top 25 Hottest Articals.)\n\n▪ V. V. Joshi and A. U. Khiste, “On the zero divisor graph of a Boolean poset”, Math. Slovaca, 64\n\n(2) (2014), 511-519.\n\n▪ V. V. Joshi and A. U. Khiste, “Complement of the zero divisor graph of a lattice”, Bull. Aust. Math.\n\nSoc. 89 (2014), 177–190.\n\n▪ A. U. Khiste and V. V. Joshi, “Zero divisor graphs of matrices over lattices”, Discrete\n\nMath. Algorithm, Application 8 (4) (2016), 1650060 (20 pages).\n\nPaper presentation / Attended conference / workshops\n\n1. The paper entitled “On the zero divisor graph of pm-lattices’’ has been presented at 76th Annual\n\nConference of the Indian Mathematical Society held at Surat during 27-30thDec 2010.\n\n2. The workshop on “Effective teaching methodologies for engineering sciences\" held at D.Y.Patil\n\nCOE, Akurdi, Pune on 5th Aug 2011.\n\n3. The workshop on “Combinatorics and Graph Theory\" held at Department of Mathematics,\n\nUniversity of Pune, Pune was attended during 12-17th Dec 2011.\n\n4. The paper entitled “On the zero divisor graph of a Boolean poset’’ has been presented at 77th\n\nAnnual Conference of the Indian Mathematical Society held at Nanded during 27-30th Dec 2011.\n\n5. Attended the National Conference on “Discrete Mathematics” held at Department of Mathematics,\n\nUniversity of Pune, Pune during 22-24th Dec. 2012.\n\n6. The paper entitled “Lattices and their zero divisor graphs\" has been presented at National\n\nConference on Discrete Mathematics, Algebra and Analysis held at Department of Mathematics,\n\nUniversity of Pune, Pune during 21- 24th April 2013.\n\n7. The paper entitled “Zero divisor graphs of matrices over a lattices \" has been presented at 29th\n\nAnnual Conference of Ramanujan Mathematical Society 2014, held at ISSER, Pune during 23- 27th June\n\n8. Attended International conference on “Discrete mathematics ICDM-2016 and Graph Theory day - XII”\n\nheld at SIT, Tumkur, Bangalore during 9 – 11thJune 2016.\n\n9. The paper entitled “Complemented zero divisor graphs of lattices\" has been presented at National\n\nConference on Discrete Mathematics held at Department of Mathematics, Savitribai Phule Pune\n\nUniversity, Pune during 20- 22ndFeb. 2017.\n\n10. Delivered a session talks a Resource person in Faculty development programme on `Data\n\nScience and Machine Learning’ during 20-24 December 2018 at Indian Institute of Information\n\nTechnology Pune.\n\n11. Attended the state level seminar on “Mathematical Software and it’s application for students\" held\n\nat Department of Mathematics, AS&C College, Rahata was attended during 17th – 18th Jan 2020.\n\n12. Attended AICTE Training and Learning (ATAL) Academy FDP on “Robotics” from 07th -11th\n\nDecember 2019 at IIIT Pune.\n\n13. Attended online Faculty Development Programme (FDP) on “E-content Development for 21st\n\nCentury Learners” during 15th -19th June 2020.\n\n14. Attended Ten Days National Workshop on Vedic Mathematics 2021 organized by Department of\n\nMathematics, Chaudhary Bansi Lal University, Bhiwani in collaboration with Shiksha Sanskriti Utthan\n\nNyas, New Delhi from 31st August, 2021 to 09th September, 2021.\n\nAward/Scholarships\n\n• Awarded by “Padmashree Late N. S. Venkatesan Gold Medal” for “Best Ph.D. Thesis of the year 2014-15”.\n\n• Recipient of Junior Research Fellowship during the year 2011-2013.\n\n• Recipient of Eklavya Scholarship during postgraduate program (M.Sc.)\n\nTeaching Experience\n\n• Working as Assistant Professor in Mathematics at Indian Institute of Technology Pune\n\nfrom August 2016 to till date.\n\n• Worked as Assistant Professor in Mathematics at Siddhant College of Engineering Pune from June\n\n2009 to August 2011.\n\nMembership of Professional Bodies\n\nIndian Mathematical Society (Life Member).\n\nPersonal Skill\n\n▪ Problem solving ability\n\n▪ Hardworking\n\n▪ Ability to work in a team and to lead team\n\n▪ liking to wards challenging jobs\n\nPersonal Information\n\nName : Dr Anagha Uday Khiste (Mrs Anagha Ganesh Tarte)\n\nDate of Birth : 2ndApril 1987\n\nLanguages Known : Marathi, Hindi and English.\n\nGender : Female.\n\nNationality : India.\n\nMarital Status : Married.\n\nAddress : Mrs Anagha Ganesh Tarte\n\nc/o. Mr Ganesh N. Tarte\n\nFlat No.:17, C-47,\n\n“Dwarka City” Mahalunge (Ingale),\n\nChakan-Talegaon road,\n\nTal. : Khed, Pune-410501\n\nMobile No.: 8698242522\n\nEmail: avanikhiste@gmail.com",
+    "publications": [
+      {
+        "title": "Counterexample to conjectures on Complemented Zero-Divisor Graphs of Semigroups",
+        "link": "https://doi.org/10.1017/S0004972725100415"
+      },
+      {
+        "title": "Zero-divisor graph of matrices over lattices",
+        "link": "https://www.worldscientific.com/doi/abs/10.1142/S1793830916500609"
+      },
+      {
+        "title": "The zero divisor graphs of Boolean posets",
+        "link": "https://www.degruyter.com/document/doi/10.2478/s12175-014-0221-y/html?lang=en"
+      },
+      {
+        "title": "Complement of the zero divisor graph of a lattice",
+        "link": "https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society/article/complement-of-the-zero-divisor-graph-of-a-lattice/7EA1F45DA958CA16CF9E4956E3BBC87F"
+      },
+      {
+        "title": "On the zero divisor graphs of PM-lattices",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0012365X12001422#section-cited-by"
+      }
+    ],
     "resume": "https://www.iiitp.ac.in/sites/default/files/2021-10/Dr%20Anagha%20Khiste_Resume.pdf",
     "expertise": "Algebra, Discrete Mathematics, Lattice theory, Order structure, Graph theory",
     "email": "anaghakhiste@iiitp.ac.in",
-    "phone": "91 8698242522",
-    "google_scholar": "",
-    "orcid": "",
-    "scopus": ""
+    "phone": "8698242522",
+    "google_scholar": "https://scholar.google.com/citations?hl=en&user=Ax2-jeMAAAAJ",
+    "orcid": "https://orcid.org/0009-0006-4651-9694",
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55178544100",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": "The paper entitled “On the zero divisor graph of pm-lattices has been presented at 76th Annual Conference of the Indian Mathematical Society held at Surat during 27-30th Dec 2010.\n\nThe workshop on “Effective teaching methodologies for engineering sciences held at D.Y.Patil COE, Akurdi, Pune on 5th Aug 2011.\n\nThe workshop on “Combinatorics and Graph Theory held at Department of Mathematics, University of Pune, was attended during 12-17th Dec 2011.\n\nThe paper entitled “On the zero divisor graph of a Boolean poset has been presented at 77th Annual Conference of the Indian Mathematical Society held at Nanded during 27-30th Dec 2011.\n\nAttended the National Conference on “Discrete Mathematics” held at Department of Mathematics, University of Pune, during 22-24th December 2012.\n\nThe paper entitled “Lattices and their zero divisor graphs has been presented at National Conference on Discrete Mathematics, Algebra and Analysis held at Department of Mathematics, University of Pune, during 21- 24th April 2013.\n\nThe paper entitled “Zero divisor graphs of matrices over a lattices has been presented at 29th Annual Conference of Ramanujan Mathematical Society 2014, held at ISSER, Pune during 23- 27th June\n\nAttended International conference on “Discrete mathematics ICDM-2016 and Graph Theory day - XII” held at SIT, Tumkur, Bangalore during 9 - 11thJune 2016.\n\nThe paper entitled “Complemented zero divisor graphs of lattices has been presented at National Conference on Discrete Mathematics held at Department of Mathematics, Savitribai Phule Pune University, Pune during 20-22nd February 2017.\n\nDelivered a session talks a Resource person in Faculty development programme on 'Data Science and Machine Learning' during 20-24 December 2018 at Indian Institute of Information Technology Pune.\n\nAttended the state level seminar on “Mathematical Software and it's application for students held at Department of Mathematics, AS&C College, Rahata was attended during 17-18th Jan 2020.\n\nAttended AICTE Training and Learning (ATAL) Academy FDP on “Robotics” from 07-11th December 2019 at IIIT Pune.\n\nAttended online Faculty Development Programme (FDP) on “E-content Development for 21st Century Learners” during 15-19th June 2020.\n\nAttended Ten Days National Workshop on Vedic Mathematics 2021 organized by Department of Mathematics, Chaudhary Bansi Lal University, Bhiwani in collaboration with Shiksha Sanskriti Utthan Nyas, New Delhi from 31st August, 2021 to 09th September, 2021.Award/Scholarships",
+    "projects": "",
+    "supervisions": "",
+    "linkedin": "https://www.linkedin.com/in/anagha-khiste-61135a413",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "sabah-tazeen": {
     "designation": "Adjunct Assistant Professor",
@@ -363,7 +711,18 @@
     "expertise": "Data Gathering and Recharging in Wireless Sensor Networks",
     "google_scholar": "https://scholar.google.com/citations?hl=en&user=o6ytHb8AAAAJ",
     "orcid": "https://orcid.org/0000-0002-6251-2226",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "dipen-bepari": {
     "designation": "Assistant Professor",
@@ -375,7 +734,18 @@
     "expertise": "Cognitive Radio, NOMA, IRS, Energy Harvesting, 5G and beyond communications",
     "google_scholar": "https://scholar.google.com/citations?user=_lxJQiMAAAAJ&hl=en",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "priyank-jain": {
     "designation": "Assistant Professor",
@@ -389,7 +759,16 @@
     "expertise": "Data Science, Data Privacy and security, and Machine Learning",
     "google_scholar": "",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "sushant-kumar": {
     "designation": "Assistant Professor\nAssociate Dean (R&D and Faculty Welfare)",
@@ -401,12 +780,18 @@
     "projects": " Title: STO estimation for OQPSK modulated signal\n\n Supervisor: Dr. Sudhan Majhi, Associate Professor, Dept of EE, IIT Patna.\n\nExperience:\n\n Assistant Professor, IIIT, Pune Dec 2021 to Present\n\n Assistant Professor (Contract), NIT, Patna Dec 2020 to Dec 2021\n\n Research Associate, IIT Patna August 2020 to Dec 2020\n\n Teaching Assistant, IIT Patna 2016-2019",
     "expertise": "Wireless Communication, Synchronization Parameters Estimation, Modulation",
     "phone": "+91 8292305145",
-    "researchLinks": [
-      "https://scholar.google.com/citations?user=lwTkgu8AAAAJ&hl=en"
-    ],
+    "researchLinks": [],
     "google_scholar": "https://scholar.google.com/citations?user=lwTkgu8AAAAJ&hl=en",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "supervisions": "",
+    "email": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": ""
   },
   "yashdeep-singh": {
     "designation": "Adjunct Assistant Professor",
@@ -418,7 +803,18 @@
     "expertise": "Theoretical Computer Science, Graph Theory, Algorithms",
     "google_scholar": "https://scholar.google.com/citations?user=uT0pRkwAAAAJ&hl=en",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "shrikant-salve": {
     "designation": "Assistant Professor\nSports In-Charge",
@@ -432,7 +828,16 @@
     "expertise": "Human-Computer Interaction, Usability Engineering, Augmented Reality, User-Centered Deep Learning",
     "google_scholar": "",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "patents": "",
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "sohini-gayen": {
     "designation": "Adjunct Assistant Professor",
@@ -444,38 +849,144 @@
     "expertise": "English Literature",
     "google_scholar": "https://scholar.google.com/citations?user=7p9TUWIAAAAJ&hl=en",
     "orcid": "https://orcid.org/0000-0001-8119-3470",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "ashish-singh": {
     "designation": "Adjunct Assistant Professor",
     "image": "https://www.iiitp.ac.in/sites/default/files/2026-01/PHOTOGRAPH_Website.jpg",
-    "bio": "Dr. Ashish Singh is currently working as an Adjunct Assistant Professor in the Department of Electronics and Communication Engineering at the Indian Institute of Information Technology, Pune, Maharashtra. Before joining IIIT Pune, he had worked as a Temporary Faculty at Punjab Engineering College (PEC), Chandigarh. Dr. Ashish hold Ph.D. in Low Power VLSI Interconnects from NIT Hamirpur, H.P. He completed his M.Tech in VLSI Design from Thapar University, Patiala and did his B.Tech in Electronics and Communication Engineering from U.P.T.U., Lucknow, respectively. His research area of interest includes Ultra Low Power and high-speed VLSI interconnects, Carbon nanotube (CNTs), copper-CNT modeling, Through-silicon vias (TSVs), and through-glass via (TGV). He has several research publications in reputed international journals and conferences. He serves as a reviewer for renowned international journals and conferences.\n\nGoogle Scholar: https://scholar.google.com/citations?hl=en&authuser=1&user=uTra3wcAAAAJ\nORCID: https://orcid.org/0000-0002-6057-5362\nResearchGate: https://www.researchgate.net/profile/Ashish-Singh-87",
+    "bio": "Dr. Ashish Singh is currently working as an Adjunct Assistant Professor in the Department of Electronics and Communication Engineering at the Indian Institute of Information Technology, Pune, Maharashtra. Before joining IIIT Pune, he had worked as a Temporary Faculty at Punjab Engineering College (PEC), Chandigarh. Dr. Ashish hold Ph.D. in Low Power VLSI Interconnects from NIT Hamirpur, H.P. He completed his M.Tech in VLSI Design from Thapar University, Patiala and did his B.Tech in Electronics and Communication Engineering from U.P.T.U., Lucknow, respectively. His research area of interest includes Ultra Low Power and high-speed VLSI interconnects, Carbon nanotube (CNTs), copper-CNT modeling, Through-silicon vias (TSVs), and through-glass via (TGV). He has several research publications in reputed international journals and conferences. He serves as a reviewer for renowned international journals and conferences.",
     "education": "Ph.D., M.Tech, B.Tech",
-    "publications": "[1] Ajay Kumar, Ashish Singh and Amit Kumar, “Signal Integrity Analysis of Cu-CNT Based Shield DM-TGV\n\nUsing Temperature and Roughness-Aware EM-RA Technique for 3D Integration,” IEEE Transactions on\n\nComputer-Aided Design of Integrated Circuits and Systems, vol. xx, pp. xx–xx, 26th Dec 2025 (in early\n\naccess). DOI: 10.1109/TCAD.2025.3648614.\n\n[2] Ashish Singh and Rohit Dhiman, “Proposal and Analysis of Mixed CNT Bundle for Sub-Threshold\n\nInterconnects,” IEEE Transactions on Nanotechnology, vol. 18, pp. 584–588, 4th June 2019. DOI:\n\n10.1109/TNANO.2019.2919445.\n\n[3] Ashish Singh, Brajesh Kumar Kaushik and Rohit Dhiman, “Modeling and Analysis of Cu-Carbon Nanotube\n\nComposites for Sub-Threshold Interconnects,” IEEE Open Journal of Nanotechnology, vol. 3, pp. 236–243,\n\n10th November 2022. DOI: 10.1109/OJNANO.2022.3221141.\n\n[4] Ashish Singh, Rajeevan Chandel, and Rohit Dhiman, “Proposal and analysis of relative stability in mixed CNT\n\nbundle for sub-threshold interconnects,” INTEGRATION, the VLSI Journal (Elsevier), vol. 80, pp. 29–40,\n\nSeptember 2021. DOI: https://doi.org/10.1016/j.vlsi.2021.05.004.\n\n[5] Ajay Kumar, Amit Kumar, and Ashish Singh*, “Frequency and Time-Domain Analysis of Shield Differential\n\nMultibit TGV Using EM-RA Technique for 3D ICs,” Micro Electronics Journal (Elsevier), vol. 126, pp. 1–\n\n14, 11th December 2025. DOI: https://doi.org/10.1016/j.mejo.2025.107014.\n\n[6] Ashish Singh, Ajay Kumar and Amit Kumar, “Signal Integrity Analysis in Mixed CNT Bundle Interconnects\n\nusing EM-RA,” Journal of Computational Electronics (Springer), vol. 24, pp. 1–10, 21st June 2025. DOI:\n\nhttps://doi.org/10.1007/s10825-025-02353-y.\n\n[7] Amit Kumar, Ajay Kumar and Ashish Singh*, “Proposal and Analysis of Shield Differential Multibit TGVs for\n\n3D Integration,” IEEE Transactions on Electromagnetic Compatibility. [Status: Communicated on 5th Jan 26].\n\n[1] Ashish Singh, Rohit Dhiman, and Rajeevan Chandel, “Modeling of Mixed CNT bundle for Sub-threshold\n\nInterconnects,” IEEE Electrical Design of Advanced Packaging and Systems Symposium (EDAPS), held at\n\nTaj Chandigarh, India, 16th–18th Dec 2018. DOI: 10.1109/EDAPS.2018.8680870. [Scopus Indexed].\n\n[2] Ashish Singh, et al., “Delay and frequency investigations in coupled MLGNR interconnects,” in Proceedings,\n\n21st International Symposium on VLSI Design and Test (VDAT), held at IIT Roorkee, India, pp. 429–440, 29th\n\nJune–2nd July 2017. DOI: https://doi.org/10.1007/978-981-10-7470-7_43. [Scopus Indexed].\n\nAREA OF RESEARCH\n\n• Modeling of Carbon nanotube (CNT), Graphene-nanoribbon, and Copper-CNT-based VLSI interconnect.\n\n• Through-silicon vias (TSVs), through-glass via (TGV) and, 3D-dimensional IC packaging.\n\n• Ultra-low power and high-speed VLSI interconnects circuit design for different applications.\n\n• Nano-electronics, and semiconductor technology.\n\nCOMPETATIVE EXAMS QUALIFIED\n\n• National Eligibility Test (UGC-NET)–Assistant Professor in Electronic Science in 2016.\n\n• Graduate Aptitude Test in Engineering (GATE) in Electronics & Comm. Eng. in 2014.\n\n• All India Talent Search Examination at National Level and was awarded ‘Certificate of merit’ in 2006.\n\nHONORS AND AWARDS\n\n• Awardee, SERB-DST Fellowship, Govt. of India, New Delhi during Ph.D.\n\n• Awardee, GATE Fellowship, MHRD, Govt. of India, New Delhi during M.Tech.\n\n• Awarded ‘Certificate of Honor’ for scoring Distinction in High School and Intermediate U.P. Board exam.\n\n• Google scholar: (https://scholar.google.com/citations?hl=en&authuser=1&user=uTra3wcAAAAJ)\n\n• ResearchGate: (https://www.researchgate.net/profile/Ashish-Singh-87)\n\n• ORCID Id: 0000-0002-6057-5362\n\nI hereby declare that the information given herein are true & complete to the best of my knowledge and belief.\n\nPlace: Pune, Maharashtra Dr. Ashish Singh",
+    "publications": [
+      {
+        "title": "Signal Integrity Analysis of Cu-CNT Based Shield DM-TGV Using Temperature and Roughness-Aware EM-RA Technique for 3D Integration",
+        "authors": "Ajay Kumar, Ashish Singh and Amit Kumar",
+        "journal": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. xx, pp. xx–xx, 26th Dec 2025 (in early access). [Q1 Indexed]",
+        "link": "https://doi.org/10.1109/TCAD.2025.3648614"
+      },
+      {
+        "title": "Proposal and Analysis of Mixed CNT Bundle for Sub-Threshold Interconnects",
+        "authors": "Ashish Singh and Rohit Dhiman",
+        "journal": "IEEE Transactions on Nanotechnology, vol. 18, pp. 584–588, 4th June 2019. [Q2 Indexed]",
+        "link": "https://doi.org/10.1109/TNANO.2019.2919445"
+      },
+      {
+        "title": "Modeling and Analysis of Cu-Carbon Nanotube Composites for Sub-Threshold Interconnects",
+        "authors": "Ashish Singh, Brajesh Kumar Kaushik and Rohit Dhiman",
+        "journal": "IEEE Open Journal of Nanotechnology, vol. 3, pp. 236–243, 10th November 2022. [Q2 Indexed]",
+        "link": "https://doi.org/10.1109/OJNANO.2022.3221141"
+      },
+      {
+        "title": "Proposal and analysis of relative stability in mixed CNT bundle for sub-threshold interconnects",
+        "authors": "Ashish Singh, Rajeevan Chandel, and Rohit Dhiman",
+        "journal": "INTEGRATION, the VLSI Journal (Elsevier), vol. 80, pp. 29–40, September 2021. [Q2 Indexed]",
+        "link": "https://doi.org/10.1016/j.vlsi.2021.05.004"
+      },
+      {
+        "title": "Frequency and Time-Domain Analysis of Shield Differential Multibit TGV Using EM-RA Technique for 3D ICs",
+        "authors": "Ajay Kumar, Amit Kumar, and Ashish Singh*",
+        "journal": "Micro Electronics Journal (Elsevier), vol. 126, pp. 1–14, 11th December 2025. [Q3 Indexed]",
+        "link": "https://doi.org/10.1016/j.mejo.2025.107014"
+      },
+      {
+        "title": "Signal Integrity Analysis in Mixed CNT Bundle Interconnects using EM-RA",
+        "authors": "Ashish Singh, Ajay Kumar and Amit Kumar",
+        "journal": "Journal of Computational Electronics (Springer), vol. 24, pp. 1–10, 21st June 2025. [Q3 Indexed]",
+        "link": "https://doi.org/10.1007/s10825-025-02353-y"
+      },
+      {
+        "title": "Proposal and Analysis of Shield Differential Multibit TGVs for 3D Integration",
+        "authors": "Amit Kumar, Ajay Kumar and Ashish Singh*",
+        "journal": "IEEE Transactions on Electromagnetic Compatibility. [Status: Communicated on 28th April 26]. [Q1 Indexed]",
+        "link": ""
+      },
+      {
+        "title": "Modeling of Mixed CNT bundle for Sub-threshold Interconnects",
+        "authors": "Ashish Singh, Rohit Dhiman, and Rajeevan Chandel",
+        "journal": "IEEE Electrical Design of Advanced Packaging and Systems Symposium (EDAPS), held at Taj Chandigarh, India, 16th–18th Dec 2018. [Scopus Indexed]",
+        "link": "https://doi.org/10.1109/EDAPS.2018.8680870"
+      },
+      {
+        "title": "Delay and frequency investigations in coupled MLGNR interconnects",
+        "authors": "Ashish Singh, et al.",
+        "journal": "in Proceedings, 21st International Symposium on VLSI Design and Test (VDAT), held at IIT Roorkee, India, pp. 429–440, 29th June–2nd July 2017. [Scopus Indexed]",
+        "link": "https://doi.org/10.1007/978-981-10-7470-7_43"
+      }
+    ],
     "resume": "https://www.iiitp.ac.in/sites/default/files/2026-01/Dr.%20Ashish%20Singh_Resume.pdf",
     "expertise": "VLSI Interconnects",
     "google_scholar": "https://scholar.google.com/citations?hl=en&authuser=1&user=uTra3wcAAAAJ",
     "orcid": "https://orcid.org/0000-0002-6057-5362",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": [
+      "https://www.researchgate.net/profile/Ashish-Singh-87?ev=hdr_xprf"
+    ]
   },
   "jatin-majithia": {
     "designation": "Assistant Professor\nHead of Department(ASH)",
     "image": "/assets/faculty_photos/jatinmajithia.jpg",
-    "bio": "Dr. Jatin Majithia joined IIITP on 14th February 2022 as an Assistant Professor in the Department of Applied Science and Humanities. He was a programmer at TCS for 2 years. He was a research fellow for 2 years at IISER Pune. He was an Assistant Professor for 7+ in the Department of Mathematics, College of Engineering Pune. He has written 2 chapters in a book aimed for Engineering Mathematics students. His area of interest is Commutative algebra. He has started exploring other subjects like Graph theory and Lattice theory because it connects with commutative algebra in a very interesting way. He is also exploring the field of Fractional Differential Equations. Those who are interested in doing Ph.D. in above mentioned fields or want to do summer internship/project in these subjects then they can drop an email to me.\n\nHomepage: https://sites.google.com/site/jatin4math/\nGoogle Scholar: https://scholar.google.com/citations?user=9DE2Bi0AAAAJ&hl=en\nORCID: https://orcid.org/0000-0003-2123-233X",
+    "bio": "Dr. Jatin Majithia joined the Indian Institute of Information Technology Pune (IIIT Pune) as an Assistant Professor in February 2022 and is currently associated with the Department of Applied Science and Humanities.\n\nPrior to joining IIIT Pune, he worked as a Programmer at Tata Consultancy Services (TCS) and later served as a Research Fellow at the Indian Institute of Science Education and Research (IISER) Pune. He also has over seven years of teaching experience as an Assistant Professor in the Department of Mathematics at the College of Engineering Pune (COEP).\n\nDr. Majithia's primary research interests lie in **Commutative Algebra** and its interactions with related areas such as **Graph Theory** and **Lattice Theory**. In recent years, he has also developed research interests in **Fractional Differential Equations** and their applications. His work focuses on exploring algebraic structures and their connections with discrete mathematical frameworks.\n\nHe has contributed chapters to books designed for Engineering Mathematics students and has been actively involved in teaching, curriculum development, and academic outreach. He has delivered invited lectures and conducted workshops at various institutions on topics including Linear Algebra, Differential Equations, Graph Theory, and their applications.\n\nDr. Majithia welcomes motivated students interested in pursuing research projects, internships, or doctoral studies in Commutative Algebra, Graph Theory, Lattice Theory, and Fractional Differential Equations.",
     "education": "Ph.D.",
-    "publications": "",
+    "publications": [
+      {
+        "title": "ML invariant of the symmetric algebra of a projective module over a one dimensional affine domain",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0021869317306269"
+      },
+      {
+        "title": "Class group of the ring of invariants of an exponential map on an affine normal domain",
+        "link": "https://link.springer.com/article/10.1007/s12044-019-0536-2?wt_mc=Internal.Event.1.SEM.ArticleAuthorIncrementalIssue&utm_source=ArticleAuthorIncrementalIssue&utm_medium=email&utm_content=AA_en_06082018&ArticleAuthorIncrementalIssue_20200106"
+      },
+      {
+        "title": "Structure OF THE KERNEL OF A LOCALLY NILPOTENT DERIVATION ON AN AFFINE NORMAL DOMAIN",
+        "link": "https://projecteuclid.org/journals/journal-of-commutative-algebra/volume-15/issue-4/STRUCTURE-OF-THE-KERNEL-OF-A-LOCALLY-NILPOTENT-DERIVATION-ON/10.1216/jca.2023.15.457.short"
+      },
+      {
+        "title": "Solutions of Time-Space Fractional Partial Differential Equations Using Picard's Iterative Method",
+        "link": "https://asmedigitalcollection.asme.org/computationalnonlinear/article/19/3/031006/1194928/Solutions-of-Time-Space-Fractional-Partial?guestAccessKey="
+      },
+      {
+        "title": "Regular sequence graph of Noetherian normal local domain",
+        "link": "https://www.tandfonline.com/doi/pdf/10.1080/00927872.2024.2439487"
+      }
+    ],
     "resume": "",
     "expertise": "Commutative Algebra, Graph theory, Lattice theory, Fractional Differential equations",
     "email": "jatinmajithia@iiitp.ac.in",
     "phone": "9403650522",
     "researchLinks": [
-      "https://sites.google.com/site/jatin4math/",
-      "https://scholar.google.com/citations?user=9DE2Bi0AAAAJ&hl=en",
-      "https://orcid.org/0000-0003-2123-233X"
+      "https://sites.google.com/site/jatin4math/"
     ],
     "google_scholar": "https://scholar.google.com/citations?user=9DE2Bi0AAAAJ&hl=en",
     "orcid": "https://orcid.org/0000-0003-2123-233X",
-    "scopus": ""
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57199329785",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "Dr Shrikant Bhatwadekar (Retd. TIFR Mumbai and INSA Senior Scientist) and Dr Dilip Sheth (former principal, SP College Pune)",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": ""
   },
   "mahendra-pratap-yadav": {
     "designation": "Assistant Professor",
@@ -487,25 +998,41 @@
     "expertise": "Cloud Computing, Machine Learning, AI, Data Mining, Software Engineering and Formal Methods",
     "email": "mahendra@iiitp.ac.in",
     "phone": "+91 9125933765",
-    "researchLinks": [
-      "https://scholar.google.com/citations?user=cfik2ScAAAAJ&hl",
-      "https://orcid.org/0000-0003-3357-1398"
-    ],
+    "researchLinks": [],
     "google_scholar": "https://scholar.google.com/citations?user=cfik2ScAAAAJ&hl",
     "orcid": "https://orcid.org/0000-0003-3357-1398",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": ""
   },
   "dheeraj-dubey": {
     "designation": "Assistant Professor\nBoy's Hostel 1 Warden",
-    "image": "https://www.iiitp.ac.in/sites/default/files/inline-images/20240715170959288_0.jpeg",
-    "bio": "Dr. Dheeraj Dubey earned his doctorate from Motilal Nehru National Institute of Technology (MNNIT) Allahabad, where he developed a passion for cutting-edge communication technologies. He went on to serve at NIT Raipur, where he spent two academic years shaping young minds in the Electronics and Communication Engineering (ECE) and Information Technology (IT) departments.\n\nBefore stepping into his current role as Assistant Professor at IIIT Pune, Dheeraj was a Research Scientist at IIT Bombay, contributing to a groundbreaking MEITY-funded project focused on \"Next Generation Wireless Research and Standardization on 5G and Beyond.\" His work during this time pushed the boundaries of wireless communication.\n\nWith a keen interest in 5G communication and beyond, Dheeraj’s research spans machine learning optimization and the performance enhancement of satellite and terrestrial communication systems through Free Space Optics (FSO). His efforts have consistently aimed at unlocking the future of connectivity, merging innovation with practical solutions that shape the evolution of modern communication networks.\n\nGoogle Scholar: https://scholar.google.com/citations?user=sDJ-hMoAAAAJ&hl=en",
+    "image": "/assets/faculty_photos/dheerajdubey.jpg",
+    "bio": "Dr. Dheeraj Dubey earned his doctorate from Motilal Nehru National Institute of Technology (MNNIT) Allahabad, where he developed a passion for cutting-edge communication technologies. He went on to serve at NIT Raipur, where he spent two academic years shaping young minds in the Electronics and Communication Engineering (ECE) and Information Technology (IT) departments. Before stepping into his current role as Assistant Professor at IIIT Pune, Dheeraj was a Research Scientist at IIT Bombay, contributing to a groundbreaking MEITY-funded project focused on \"Next Generation Wireless Research and Standardization on 5G and Beyond\" His work during this time pushed the boundaries of wireless communication. With a keen interest in 5G communication and beyond, Dheeraj's research spans machine learning optimization and the performance enhancement of satellite and terrestrial communication systems through Free Space Optics (FSO). His efforts have consistently aimed at unlocking the future of connectivity, merging innovation with practical solutions that shape the evolution of modern communication networks.",
     "education": "Ph.D., M.Tech. (ECE), B.Tech. (ECE)",
-    "publications": "",
+    "publications": "Dubey, Dheeraj, et al. \"Reliable cooperative communication in cognitive vehicular networks for intelligent transportation systems.\" International Journal of Communication Systems 37.6 (2024): e5694.\n\nDubey, Dheeraj, et al. \"UAV-Assisted NOMA-Enabled Relay Communication.\" International Journal of Communication Systems, 2026; 39:e70322, https://doi.org/10.1002/dac.70322 \n\nDubey, Dheeraj, Yogendra Kumar Prajapati, and Rajeev Tripathi. \"Error performance analysis of PPM-and FSK based hybrid modulation scheme for FSO satellite downlink.\" Optical and Quantum Electronics 52.6 (2020): 286.\n\nDubey, Dheeraj, Yogendra Kumar Prajapati, and Rajeev Tripathi. \"Performance enhancement of hybrid-SIM for optical wireless downlink communication with aperture averaging and receiver diversity.\" IET Communications 14.18 (2020): 3194-3202.\n\nDubey, Dheeraj, Yogendra Kumar Prajapati, and Rajeev Tripathi. \"Optimization of hybrid high-throughput MIMO system with misaligned FSO link under varied weather.\" Optical Engineering 60.8 (2021): 086106-086106.\n\nDubey, Dheeraj, Rajeev Tripathi, and Yogendra Kumar Prajapati. \"Optimized performance analysis of nonrecursive low-density parity-check-coded Gaussian minimum shift keying in 5G-application.\" Optical Engineering 62.3 (2023): 038101-038101.\n\nTiwari, J., Dubey, D., Prakash, A. and Tripathi, R., 2022, December. A trustworthy and cooperative MAC protocol for cognitive vehicular networks. In 2022 IEEE 9th Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON) (pp. 1-6). IEEE.\n\nYadav, Ajay Kumar, Dheeraj Dubey, and Y. K. Prajapati. \"Minimization of peak-to-average power ratio in DHT precoded OFDM system by A-law companding.\" Advances in VLSI, Communication, and Signal Processing: Select Proceedings of VCAS 2019. Singapore: Springer Singapore, 2020. 623-629.\n\nDubey, Dheeraj, et al. \"BER Efficiency of Outdoor Optics Links Using Hybrid-SIM with Pointing Errors.\" VLSI, Communication and Signal Processing: Select Proceedings of the 5th International Conference, VCAS 2022. Vol. 1024. Springer Nature, 2023.\n\nJ. Tiwari, P. Raj, A. Garg, M. P. Yadav, P. Singh, and D. Dubey, “A MERN Stack Framework for Real Estate Platforms Leveraging Conversational AI and Predictive Analytics,” in Proc. 2025 IEEE 1st International Conference on Recent Trends in Computing and Smart Mobility (RCSM), 2025(Accepted)\n\nS. Sharma, P. Tiwari, D. Dubey, D. Jain, G. Khambra, and N. B. Agarwal, “Machine Learning Techniques for Thermography and Development of an AI-Based Medical Decision Sustenance System for Breast Cancer Diagnosis,” in Proc. 2025 IEEE 1st International Conference on Smart Innovations in Systems, Infrastructure, Mechanical, Power, AI and Computing Technologies (SISIMPACT), 2025. (Accepted)",
     "resume": "",
     "expertise": "5G and Beyond, Free Space Optics, Machine Learning, Under Water Communication",
-    "google_scholar": "https://scholar.google.com/citations?user=sDJ-hMoAAAAJ&hl=en",
-    "orcid": "",
-    "scopus": ""
+    "google_scholar": "https://scholar.google.com/citations?user=sDJ-hMoAAAAJ",
+    "orcid": "https://orcid.org/0000-0003-0338-7186",
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57216898119",
+    "books_chapters": "Dubey, Dheeraj, Yogendra Kumar Prajapati, and Rajeev Tripathi. \"Optimization of LDPC-coded power series MIMO/FSO link with hybrid-SIM based on machine learning in satellite downlink for 5G and beyond applications.\" Telecommunication Systems 87.2 (2024): 385-401. ",
+    "patents": "Novel Photonic Crystal Fiber Biosensor with Integrated Surface Plasmon Resonance for Ultrasensitive Detection of Disease Biomarkers (Granted, July 2025).\n\nIOT-Based Automated Student Attendance System Using Ble Beacons and Facial Recognition, (Published, Feb 2026).\n\nEdge-Assisted UWB Railway Hazard Detection and Response System (Published, April 2026).",
+    "seminars": "AI-Driven Adaptive Optical and Wireless Communication Systems — 7-Day Faculty Development Program (FDP) (Conducted, June 2026).",
+    "projects": "Design and Implementation of Consent Management Platform (CMP) for DPDP Rules 2025 — ANRF, ₹4.35 Crore (Granted, July 2025).\n\n5G-V2X Enabled Cooperative Blind-Spot Detection System with RIS-Assisted Vehicular Networks — ARTPARK (IISc), ₹22 Lakhs (Granted, April 2025).",
+    "supervisions": "Shubham Mishra (PH.D)",
+    "email": "",
+    "phone": "8840677530",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   },
   "shubham-shukla": {
     "designation": "Assistant Professor\nChief Warden",
@@ -517,6 +1044,17 @@
     "expertise": "Robot Path Planning , Nature Inspired Optimisation technique,Microcontrollers and Embedded Systems & Design",
     "google_scholar": "https://scholar.google.com/citations?user=lY3WsHEAAAAJ&hl=en&oi=ao",
     "orcid": "",
-    "scopus": ""
+    "scopus": "",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "",
+    "phone": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "researchLinks": []
   }
 }
