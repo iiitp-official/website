@@ -6,6 +6,7 @@ const PostDocFellowPage = () => {
     {
       sno: 1,
       name: "Dr. Prasad Purnaye",
+      link: "https://sites.google.com/view/prasadpurnaye",
       topic: "Cloud Forensic",
       supervisor: "Dr. Bhupendra Singh",
       email: "prasadpurnaye@iiitp.ac.in",
@@ -45,10 +46,10 @@ const PostDocFellowPage = () => {
                   {data.map((row) => (
                     <tr key={row.sno} className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                       <td className="p-3 text-center">{row.sno}.</td>
-                      <td className="p-3 font-medium text-[#0056b3] dark:text-blue-400">{row.name}</td>
+                      <td className="p-3 font-medium text-[#0056b3] dark:text-blue-400"><a href={row.link}>{row.name}</a></td>
                       <td className="p-3">{row.topic}</td>
                       <td className="p-3 text-[#0056b3] dark:text-blue-400">{row.supervisor}</td>
-                      <td className="p-3 text-[#0056b3] dark:text-blue-400">{row.email}</td>
+                      <td className="p-3 text-[#0056b3] dark:text-blue-400"><a href={"mailto:" + row.email}>{row.email}</a></td>
                       <td className="p-3 text-center">{row.branch}</td>
                       <td className="p-3 text-center">{row.mode}</td>
                     </tr>
