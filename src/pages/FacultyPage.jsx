@@ -17,7 +17,7 @@ const FacultyPage = () => {
         name: formattedName,
         slug: slug
       };
-    }).sort((a, b) => a.name.localeCompare(b.name));
+    });
   }, []);
 
   return (
