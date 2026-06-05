@@ -150,6 +150,12 @@ const Navbar = () => {
 
   const primaryLinks = [
     {
+      name: "Student Portal",
+      path: "https://iiitp.webpointsolutions.in/StudentPortal/index.html#!/Login",
+      hasDropdown: false,
+      isExternal: true
+    },
+    {
       name: "About Us",
       path: "#",
       hasDropdown: true,
@@ -531,6 +537,12 @@ const Navbar = () => {
 
             {/* Bottom Row: Social Icons + Search (Desktop only) */}
             <div className="hidden md:flex items-center gap-1.5">
+              <Link
+                to="/international"
+                className="bg-brand-red hover:bg-red-700 text-white px-3 py-1.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide mr-2"
+              >
+                International Relations
+              </Link>
               <a
                 href="https://iiitp.webpointsolutions.in/StudentPortal/index.html#!/Login"
                 target="_blank" rel="noopener noreferrer"
@@ -601,8 +613,8 @@ const Navbar = () => {
 
       {/* Row 2: Primary Nav Links (Desktop) */}
       <nav className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-center items-center py-1 gap-x-2 gap-y-0.5">
-          {primaryLinks.map((link) => (
+        <div className="flex justify-center items-center py-1 gap-x-2">
+          {primaryLinks.filter(link => link.name !== "International Relations" && link.name !== "Student Portal").map((link) => (
             <div key={link.name} className="relative group">
               {link.isExternal ? (
                 <a
