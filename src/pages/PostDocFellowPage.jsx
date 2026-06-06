@@ -48,7 +48,7 @@ const PostDocFellowPage = () => {
                       <td className="p-3 text-center">{row.sno}.</td>
                       <td className="p-3 font-medium text-[#0056b3] dark:text-blue-400"><a href={row.link}>{row.name}</a></td>
                       <td className="p-3">{row.topic}</td>
-                      <td className="p-3 text-[#0056b3] dark:text-blue-400">{row.supervisor}</td>
+                      <td className="p-3 text-[#0056b3]">{row.supervisor}</td>
                       <td className="p-3 text-[#0056b3] dark:text-blue-400"><a href={"mailto:" + row.email}>{row.email}</a></td>
                       <td className="p-3 text-center">{row.branch}</td>
                       <td className="p-3 text-center">{row.mode}</td>
