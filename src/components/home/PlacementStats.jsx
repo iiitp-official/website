@@ -108,8 +108,10 @@ const PlacementStats = () => {
               Placement Highlights
             </h2>
           </div>
-          <Link
-            to="/placement"
+          <a
+            href="https://placements.iiitp.ac.in/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-blue-300 hover:text-white transition-colors group"
           >
             View Full Report
@@ -117,7 +119,7 @@ const PlacementStats = () => {
               size={16}
               className="group-hover:translate-x-1 transition-transform"
             />
-          </Link>
+          </a>
         </div>
 
         {/* Stats Grid */}
