@@ -45,13 +45,15 @@ const RecruiterCarousel = () => {
               Our Students at Leading Companies
             </h2>
           </div>
-          <Link
-            to="/placement"
+          <a
+            href="https://placements.iiitp.ac.in/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-accent dark:text-accent-dark hover:underline group"
           >
             View Placements
             <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -75,12 +77,14 @@ const RecruiterCarousel = () => {
 
       {/* Mobile CTA */}
       <div className="flex justify-center mt-6 sm:hidden">
-        <Link
-          to="/placement"
+        <a
+          href="https://placements.iiitp.ac.in/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent dark:text-accent-dark hover:underline"
         >
           View All Placements <ArrowRight size={14} />
-        </Link>
+        </a>
       </div>
 
       <style>{`
