@@ -47,10 +47,8 @@ const OrdinancePage = () => {
   return (
     <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="Academic Ordinance" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="space-y-8">
             {/* Overview */}
             <section>
               <h2 className="text-3xl font-bold font-serif text-primary dark:text-white mb-6 border-b pb-4 border-gray-200 dark:border-gray-800">
@@ -234,75 +232,6 @@ const OrdinancePage = () => {
                 </div>
               </div>
             </section>
-          </div>
-
-          {/* Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 sticky top-24">
-              <h3 className="font-bold font-serif text-lg text-primary dark:text-white mb-4 pb-3 border-b border-gray-200 dark:border-gray-700">
-                Quick Links
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="/academics" className="text-accent dark:text-accent-dark font-medium hover:underline">
-                    ← Back to Academics
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/academics/btech"
-                    className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-white transition-colors"
-                  >
-                    B.Tech Programs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/academics/mtech"
-                    className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-white transition-colors"
-                  >
-                    M.Tech Programs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/academics/phd"
-                    className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-white transition-colors"
-                  >
-                    PhD Programs
-                  </a>
-                </li>
-              </ul>
-
-              <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-                <h4 className="font-semibold text-primary dark:text-white mb-3">Key Points</h4>
-                <div className="bg-red-50 dark:bg-gray-800 p-4 rounded-lg border-l-4 border-red-500 text-sm text-gray-700 dark:text-gray-300 space-y-2">
-                  <p>
-                    <strong>75%</strong> minimum attendance required
-                  </p>
-                  <p>
-                    <strong>2.0</strong> minimum CGPA to continue
-                  </p>
-                  <p>
-                    <strong>Honor Code</strong> must be followed
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-4 p-4 bg-amber-50 dark:bg-gray-800 rounded-lg border-l-4 border-amber-400">
-                <h4 className="font-semibold text-primary dark:text-white text-sm mb-2">Need Help?</h4>
-                <p className="text-xs text-gray-600 dark:text-gray-400">
-                  Contact the Academic Office for clarifications on ordinances.
-                </p>
-                <a
-                  href="/contact"
-                  className="text-accent dark:text-accent-dark text-xs font-semibold hover:underline mt-2 inline-block"
-                >
-                  Contact Us →
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

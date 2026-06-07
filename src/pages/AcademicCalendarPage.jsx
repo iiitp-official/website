@@ -5,10 +5,8 @@ const AcademicCalendarPage = () => {
   return (
     <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="Academic Calendar" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="space-y-8">
             {/* Academic Year 2026-2027 */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-6 border-b pb-3 border-gray-200 dark:border-gray-800">
@@ -155,55 +153,6 @@ const AcademicCalendarPage = () => {
                 </ul>
               </div>
             </section>
-          </div>
-
-          {/* Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 sticky top-24">
-              <h3 className="font-bold font-serif text-lg text-primary dark:text-white mb-4 pb-3 border-b border-gray-200 dark:border-gray-700">
-                Quick Links
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="/academics" className="text-accent dark:text-accent-dark font-medium hover:underline">
-                    ← Back to Academics
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/academics/btech"
-                    className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-white transition-colors"
-                  >
-                    B.Tech Programs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/academics/mtech"
-                    className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-white transition-colors"
-                  >
-                    M.Tech Programs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/academics/phd"
-                    className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-white transition-colors"
-                  >
-                    PhD Programs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/academics/ordinance"
-                    className="text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-white transition-colors"
-                  >
-                    Ordinance
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </div>
