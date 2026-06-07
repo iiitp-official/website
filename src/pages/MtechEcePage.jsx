@@ -51,10 +51,7 @@ const MtechEcePage = () => {
     <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="M.Tech. Electronics and Communication Engineering" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          
-          <div className="lg:col-span-3 space-y-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
             
             <section className="relative overflow-hidden bg-gradient-to-br from-gray-800 to-black rounded-2xl shadow-xl text-white p-8 md:p-10 border border-gray-700 h-full">
               <div className="relative z-10">
@@ -99,44 +96,7 @@ const MtechEcePage = () => {
                 </div>
               </div>
             </section>
-          </div>
 
-          <div className="lg:col-span-1">
-            <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 sticky top-24 h-full">
-              <h3 className="font-bold font-serif text-lg text-primary dark:text-white mb-4 pb-3 border-b border-gray-200 dark:border-gray-700">
-                Department Links
-              </h3>
-              <ul className="space-y-3">
-                <li>
-                  <a href="/academics/btech/cse" className="block text-gray-600 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors font-medium">
-                    B.Tech CSE
-                  </a>
-                </li>
-                <li>
-                  <a href="/academics/btech/ece" className="block text-gray-600 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors font-medium">
-                    B.Tech ECE
-                  </a>
-                </li>
-                <li>
-                  <a href="/academics/btech/honors" className="block text-gray-600 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors font-medium">
-                    B.Tech Honors
-                  </a>
-                </li>
-                <li className="pt-3 mt-3 border-t border-gray-100 dark:border-gray-800">
-                  <a href="/academics/mtech/cse" className="block text-gray-600 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors font-medium">
-                    M.Tech CSE
-                  </a>
-                </li>
-                <li>
-                  <a href="/academics/phd" className="block text-gray-600 dark:text-gray-400 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors font-medium">
-                    Ph.D.
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-        </div>
 
         <section className="mt-12 w-full">
           <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
