@@ -128,26 +128,26 @@ const AcademicCalendarPage = () => {
               <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-4 border-b pb-3 border-gray-200 dark:border-gray-800">
                 Important Notes
               </h2>
-              <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-accent-dark p-6 rounded-r-lg">
+              <div className="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
                 <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                   <li className="flex items-start gap-3">
-                    <span className="text-accent-dark font-bold">•</span>
+                    <span className="text-accent dark:text-accent-dark font-bold">•</span>
                     <span>Dates are subject to change at the discretion of the Institute</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-accent-dark font-bold">•</span>
+                    <span className="text-accent dark:text-accent-dark font-bold">•</span>
                     <span>Public holidays may lead to adjustment in the schedule</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-accent-dark font-bold">•</span>
+                    <span className="text-accent dark:text-accent-dark font-bold">•</span>
                     <span>Any changes to the calendar will be communicated well in advance</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-accent-dark font-bold">•</span>
+                    <span className="text-accent dark:text-accent-dark font-bold">•</span>
                     <span>Students must maintain 75% attendance to be eligible for examinations</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-accent-dark font-bold">•</span>
+                    <span className="text-accent dark:text-accent-dark font-bold">•</span>
                     <span>Late registrations will incur additional fees</span>
                   </li>
                 </ul>
