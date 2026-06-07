@@ -694,7 +694,7 @@ const Navbar = () => {
                                   href={nested.path}
                                   target="_blank" rel="noopener noreferrer"
                                   
-                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
+                                  className="block px-4 py-2 text-xs text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
                                 >
                                   {nested.name}
                                 </a>
@@ -702,7 +702,7 @@ const Navbar = () => {
                                 <Link
                                   key={nested.name}
                                   to={nested.path}
-                                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
+                                  className="block px-4 py-2 text-xs text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
                                 >
                                   {nested.name}
                                 </Link>
@@ -947,7 +947,7 @@ const Navbar = () => {
                                                 href={nested.path}
                                                 target="_blank" rel="noopener noreferrer"
                                                 
-                                                className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
+                                                className="block px-3 py-2 text-xs font-medium rounded-md transition-colors text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                               >
                                                 {nested.name}
                                               </a>
@@ -957,7 +957,7 @@ const Navbar = () => {
                                                 to={nested.path}
                                                 onClick={() => setIsMobileMenuOpen(false)}
                                                 className={({ isActive }) =>
-                                                  `block px-3 py-2 text-sm font-medium rounded-md transition-colors ${isActive
+                                                  `block px-3 py-2 text-xs font-medium rounded-md transition-colors ${isActive
                                                     ? "text-accent-dark bg-blue-900/30 dark:bg-gray-800"
                                                     : "text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                                   }`
