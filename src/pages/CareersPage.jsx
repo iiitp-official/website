@@ -69,7 +69,7 @@ const CareersPage = () => {
       <PageHeader title="Careers @ IIIT Pune" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md border border-gray-100 dark:border-gray-800 border-t-4 border-t-brand-red w-full overflow-hidden">
+        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md border border-gray-100 dark:border-gray-800 w-full overflow-hidden">
           <div className="flex flex-col">
             {jobs.map((job, idx) => (
               <div
