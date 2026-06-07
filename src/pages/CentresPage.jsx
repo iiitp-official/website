@@ -49,25 +49,21 @@ const CentresPage = () => {
     <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="Centres" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden mb-8">
-          <div className="bg-primary dark:bg-primary-dark px-6 py-4">
-            <h2 className="text-2xl font-bold text-white">Centres</h2>
-          </div>
-          <div className="p-6 md:p-8">
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              Indian Institute of Information Technology Pune (IIITP) is actively involved in multidisciplinary areas of research and promotes engagement with Industries. The institute has taken initiative in providing a platform for start-ups, coordinate with higher learning Institutes in India and abroad, procuring industry standard tools and equipment for carrying out research. It also involves young minds of graduate/post-graduate/doctoral students to actively participate in all these activities.
-            </p>
-            
-            <h3 className="text-xl font-bold text-primary dark:text-white mb-4">Centres</h3>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-              Established in the year 2016, Indian Institute of Information Technology Pune made a mission to foster the development of research in the diverse area of information and communication technology, to develop human resources with competitive advantages required for meeting the future challenges. Four different research centres are created in the institute, which are as follows:
-            </p>
+        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md border border-gray-100 dark:border-gray-800 p-6 md:p-8">
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+          Indian Institute of Information Technology Pune (IIITP) is actively involved in multidisciplinary areas of research and promotes engagement with Industries. The institute has taken initiative in providing a platform for start-ups, coordinate with higher learning Institutes in India and abroad, procuring industry standard tools and equipment for carrying out research. It also involves young minds of graduate/post-graduate/doctoral students to actively participate in all these activities.
+        </p>
+        
+        <h3 className="text-xl font-bold text-primary dark:text-white mb-4">Centres</h3>
+        <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+          Established in the year 2016, Indian Institute of Information Technology Pune made a mission to foster the development of research in the diverse area of information and communication technology, to develop human resources with competitive advantages required for meeting the future challenges. Four different research centres are created in the institute, which are as follows:
+        </p>
 
-            <div className="space-y-4">
+        <div className="space-y-4">
           <AccordionItem
             title="1. Centre for Robotics and Security in Internet of Things (IoT)"
-            isOpen={openIndex === 1}
-            onClick={() => toggleAccordion(1)}
+            isOpen={openIndex === 0}
+            onClick={() => toggleAccordion(0)}
           >
             <p>
               The vision of the Centre is to provide leadership in establishing a regional presence in the area of Robotics, Internet of Things (IoT) and Cyber security of IoT by fostering state-of-the-art research, and to provide training of manpower in order to improve the posture of information assurance awareness locally, regionally and nationally.
@@ -216,7 +212,6 @@ const CentresPage = () => {
           </AccordionItem>
         </div>
       </div>
-    </div>
     </div>
   </div>
   );
