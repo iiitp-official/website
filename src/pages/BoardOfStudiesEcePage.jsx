@@ -22,28 +22,24 @@ const BoardOfStudiesEcePage = () => {
     <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="Board of Studies (ECE)" />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
-          <div className="p-6 md:p-8">
-            <CommitteeTable data={data} />
+        <CommitteeTable data={data} />
+        
+        <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
+          <p className="font-bold text-gray-900 dark:text-white mb-3">
+            View the official Memorandum
+          </p>
+          <a 
+            href="/documents/BoS_ECE_IIITP_v1.pdf" 
+            target="_blank" rel="noopener noreferrer" 
             
-            <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-800">
-              <p className="font-bold text-gray-900 dark:text-white mb-3">
-                View the official Memorandum
-              </p>
-              <a 
-                href="/documents/BoS_ECE_IIITP_v1.pdf" 
-                target="_blank" rel="noopener noreferrer" 
-                
-                className="inline-block bg-primary text-white px-6 py-2.5 rounded-sm shadow-sm hover:bg-primary/90 transition-colors font-medium text-sm"
-              >
-                View Document
-              </a>
-            </div>
-            
-            <div className="text-right text-gray-600 dark:text-gray-400 mt-8 text-sm">
-              Last Updated: 25-04-2026
-            </div>
-          </div>
+            className="inline-block bg-primary text-white px-6 py-2.5 rounded-sm shadow-sm hover:bg-primary/90 transition-colors font-medium text-sm"
+          >
+            View Document
+          </a>
+        </div>
+        
+        <div className="text-right text-gray-600 dark:text-gray-400 mt-8 text-sm">
+          Last Updated: 25-04-2026
         </div>
       </div>
     </div>
