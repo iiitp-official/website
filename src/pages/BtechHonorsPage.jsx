@@ -76,7 +76,7 @@ const BtechHonorsPage = () => {
                 <h2 className="text-3xl md:text-4xl font-bold font-serif mb-6 text-white">
                   Program Overview
                 </h2>
-                <div className="text-amber-100 text-lg leading-relaxed mb-6 space-y-4">
+                <div className="text-blue-100 text-lg leading-relaxed mb-6 space-y-4">
                   <p>
                     To motivate and attract talented students, the Institute will start awarding the ‘Honors’ degree to bright students in both the branches viz. Computer Science and Engineering and Electronics and Communication Engineering with a ‘Major’ in one of the specialized disciplines.
                   </p>
@@ -161,21 +161,19 @@ const BtechHonorsPage = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2, delay: index * 0.05 }}
-                        className="group border-b border-gray-100 dark:border-gray-800 hover:bg-amber-50/50 dark:hover:bg-amber-900/10 transition-colors"
+                        className="group border-b border-gray-100 dark:border-gray-800 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors"
                       >
                         <td className="py-2.5 px-4 text-gray-500 dark:text-gray-400 font-medium">
                           {index + 1}.
                         </td>
-                        <td className="py-2.5 px-4 font-medium text-gray-800 dark:text-gray-200 group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
+                        <td className="py-2.5 px-4 font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-dark dark:group-hover:text-blue-400 transition-colors">
                           {course.name}
                         </td>
                         <td className="py-2.5 px-4 text-gray-600 dark:text-gray-400 text-center font-medium">
                           {course.hours}
                         </td>
-                        <td className="py-2.5 px-4 text-center">
-                          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 font-bold text-sm">
-                            {course.credits}
-                          </span>
+                        <td className="py-2.5 px-4 text-center text-accent-dark font-bold">
+                          {course.credits}
                         </td>
                       </motion.tr>
                     ))}
@@ -192,12 +190,12 @@ const BtechHonorsPage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="bg-amber-50/80 dark:bg-amber-900/20 border-t-2 border-amber-200 dark:border-amber-800"
+                        className="bg-blue-50/80 dark:bg-blue-900/20 border-t-2 border-blue-200 dark:border-blue-800"
                       >
-                        <td colSpan="2" className="py-2.5 px-4 text-right font-bold text-gray-800 dark:text-gray-200">
+                        <td colSpan="3" className="py-2.5 px-4 text-center font-bold text-gray-800 dark:text-gray-200">
                           Total Credits
                         </td>
-                        <td colSpan="2" className="py-2.5 px-4 text-center text-amber-700 dark:text-amber-500 font-black text-lg">
+                        <td className="py-2.5 px-4 text-center text-accent-dark font-black text-lg">
                           {curriculum.find(c => c.discipline === activeDiscipline).totalCredits}
                         </td>
                       </motion.tr>

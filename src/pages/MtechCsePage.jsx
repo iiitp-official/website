@@ -57,7 +57,7 @@ const MtechCsePage = () => {
                 <h2 className="text-3xl md:text-4xl font-bold font-serif mb-6 text-white">
                   Program Overview
                 </h2>
-                <div className="text-indigo-100 text-lg leading-relaxed mb-6 space-y-4">
+                <div className="text-blue-100 text-lg leading-relaxed mb-6 space-y-4">
                   <p>
                     The M.Tech. CSE in AI programme is designed to impart students with latest aspects in Machine Learning, Data Science and Data Visualization, Deep Learning, Big Data Analytics, Cloud Computing, and other topics related to it. Students are encouraged to participate in research within their field of specialization.
                   </p>
@@ -72,23 +72,23 @@ const MtechCsePage = () => {
                 </div>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md px-5 py-3 rounded-lg border border-white/20">
-                    <Clock className="w-6 h-6 text-indigo-300" />
+                    <Clock className="w-6 h-6 text-blue-300" />
                     <div>
-                      <p className="text-xs text-indigo-200 font-medium uppercase tracking-wider">Duration</p>
+                      <p className="text-xs text-blue-200 font-medium uppercase tracking-wider">Duration</p>
                       <p className="font-bold text-lg">2 Years (4 Semesters)</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md px-5 py-3 rounded-lg border border-white/20">
-                    <Users className="w-6 h-6 text-indigo-300" />
+                    <Users className="w-6 h-6 text-blue-300" />
                     <div>
-                      <p className="text-xs text-indigo-200 font-medium uppercase tracking-wider">Intake</p>
+                      <p className="text-xs text-blue-200 font-medium uppercase tracking-wider">Intake</p>
                       <p className="font-bold text-lg">36 Students</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md px-5 py-3 rounded-lg border border-white/20">
-                    <Award className="w-6 h-6 text-indigo-300" />
+                    <Award className="w-6 h-6 text-blue-300" />
                     <div>
-                      <p className="text-xs text-indigo-200 font-medium uppercase tracking-wider">Specialization</p>
+                      <p className="text-xs text-blue-200 font-medium uppercase tracking-wider">Specialization</p>
                       <p className="font-bold text-lg">Artificial Intelligence</p>
                     </div>
                   </div>
@@ -151,21 +151,19 @@ const MtechCsePage = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.2, delay: index * 0.05 }}
-                        className="group border-b border-gray-100 dark:border-gray-800 hover:bg-indigo-50/50 dark:hover:bg-indigo-900/10 transition-colors"
+                        className="group border-b border-gray-100 dark:border-gray-800 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors"
                       >
                         <td className="py-2.5 px-4 text-gray-500 dark:text-gray-400 font-medium">
                           {index + 1}.
                         </td>
-                        <td className="py-2.5 px-4 font-medium text-gray-800 dark:text-gray-200 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors">
+                        <td className="py-2.5 px-4 font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-dark dark:group-hover:text-blue-400 transition-colors">
                           {course.name}
                         </td>
                         <td className="py-2.5 px-4 text-gray-600 dark:text-gray-400 text-center font-medium">
                           {course.hours}
                         </td>
-                        <td className="py-2.5 px-4 text-center">
-                          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400 font-bold text-sm">
-                            {course.credits}
-                          </span>
+                        <td className="py-2.5 px-4 text-center text-accent-dark font-bold">
+                          {course.credits}
                         </td>
                       </motion.tr>
                     ))}
@@ -182,12 +180,12 @@ const MtechCsePage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="bg-indigo-50/80 dark:bg-indigo-900/20 border-t-2 border-indigo-200 dark:border-indigo-800"
+                        className="bg-blue-50/80 dark:bg-blue-900/20 border-t-2 border-blue-200 dark:border-blue-800"
                       >
-                        <td colSpan="2" className="py-2.5 px-4 text-right font-bold text-gray-800 dark:text-gray-200">
+                        <td colSpan="3" className="py-2.5 px-4 text-center font-bold text-gray-800 dark:text-gray-200">
                           Total Credits
                         </td>
-                        <td colSpan="2" className="py-2.5 px-4 text-center text-indigo-700 dark:text-indigo-500 font-black text-lg">
+                        <td className="py-2.5 px-4 text-center text-accent-dark font-black text-lg">
                           {curriculum.find(c => c.semester === activeSemester).totalCredits}
                         </td>
                       </motion.tr>

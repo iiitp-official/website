@@ -212,7 +212,7 @@ const BtechCsePage = () => {
                             exit={{ opacity: 0 }}
                             className="bg-blue-50/80 dark:bg-blue-900/20 border-t-2 border-blue-200 dark:border-blue-800"
                           >
-                            <td className="py-2.5 px-4 text-right font-bold text-gray-800 dark:text-gray-200" colSpan="2">
+                            <td className="py-2.5 px-4 text-center font-bold text-gray-800 dark:text-gray-200" colSpan="2">
                               Total Credits
                             </td>
                             <td className="py-2.5 px-4 text-center text-accent-dark font-black text-lg">
