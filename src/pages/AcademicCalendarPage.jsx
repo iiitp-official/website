@@ -15,7 +15,7 @@ const AcademicCalendarPage = () => {
                 About the Academic Calendar
               </h2>
               <div className="bg-white dark:bg-surface-dark p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
                   IIIT Pune follows a semester-based academic calendar with two semesters per year, one odd and one
                   even.
                 </p>
@@ -29,49 +29,69 @@ const AcademicCalendarPage = () => {
               </h2>
 
               {/* Odd Semester */}
-              <div className="bg-white dark:bg-surface-dark p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 mb-8">
-                <h3 className="text-xl font-bold text-primary dark:text-white mb-4">
-                  Odd Semester - Academic Calendars
+              <div className="bg-white dark:bg-surface-dark p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 mb-8 transition-shadow hover:shadow-md">
+                
+                {/* Visual Label / Subheading above the main title */}
+                <span className="block text-xs font-bold uppercase tracking-widest text-accent dark:text-accent-dark mb-2">
+                  B.Tech, M.Tech, and Ph.D (Odd Semester AY 2025-26)
+                </span>
+                
+                {/* Main Card Title */}
+                <h3 className="text-2xl font-extrabold text-primary dark:text-white font-serif tracking-tight mb-4">
+                  Odd Semester - Academic Calendar
                 </h3>
-                <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-accent dark:text-accent-dark mb-3">
-                    B.Tech, M.Tech, and Ph.D (Odd Semester AY 2025-26)
-                  </h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-4">
-                    Download the academic calendar for B.Tech 1st, 3rd, 5th, 7th Sem, M.Tech 3rd, and Ph.D (Odd
-                    Semester):
-                  </p>
+                
+                {/* Description Paragraph (Justified & small for contrast) */}
+                <p className="text-gray-600 dark:text-gray-400 text-sm text-justify leading-relaxed mb-6 max-w-2xl">
+                  Download the academic calendar for B.Tech 1st, 3rd, 5th, 7th Sem, M.Tech 3rd, and Ph.D (Odd Semester):
+                </p>
+                
+                {/* Action Row */}
+                <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
                   <a
                     href="#"
-                    className="inline-block bg-accent-dark hover:bg-accent-dark/90 dark:bg-accent-dark dark:hover:bg-accent-dark/80 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                    className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95"
                   >
                     Download Odd Semester Calendar
                   </a>
+                  
+                  <span className="text-xs text-gray-400 dark:text-gray-500 font-medium">
+                    Last Updated: 25-04-2026
+                  </span>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Last Updated: 25-04-2026</p>
               </div>
 
               {/* Even Semester */}
-              <div className="bg-white dark:bg-surface-dark p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
-                <h3 className="text-xl font-bold text-primary dark:text-white mb-4">
-                  Even Semester - Academic Calendars
+              <div className="bg-white dark:bg-surface-dark p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 transition-shadow hover:shadow-md">
+                
+                {/* Visual Label / Subheading above the main title */}
+                <span className="block text-xs font-bold uppercase tracking-widest text-accent dark:text-accent-dark mb-2">
+                  B.Tech, M.Tech, and Ph.D (Even Semester AY 2025-26)
+                </span>
+                
+                {/* Main Card Title */}
+                <h3 className="text-2xl font-extrabold text-primary dark:text-white font-serif tracking-tight mb-4">
+                  Even Semester - Academic Calendar
                 </h3>
-                <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-accent dark:text-accent-dark mb-3">
-                    B.Tech, M.Tech, and Ph.D (Even Semester AY 2025-26)
-                  </h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-4">
-                    Download the academic calendar for B.Tech 2nd, 4th, 6th, 8th Sem, M.Tech 2nd, 4th, and Ph.D (Even
-                    Semester):
-                  </p>
+                
+                {/* Description Paragraph (Justified & small for contrast) */}
+                <p className="text-gray-600 dark:text-gray-400 text-sm text-justify leading-relaxed mb-6 max-w-2xl">
+                  Download the academic calendar for B.Tech 2nd, 4th, 6th, 8th Sem, M.Tech 2nd, 4th, and Ph.D (Even Semester):
+                </p>
+                
+                {/* Action Row */}
+                <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
                   <a
                     href="#"
-                    className="inline-block bg-accent-dark hover:bg-accent-dark/90 dark:bg-accent-dark dark:hover:bg-accent-dark/80 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                    className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95"
                   >
                     Download Even Semester Calendar
                   </a>
+                  
+                  <span className="text-xs text-gray-400 dark:text-gray-500 font-medium">
+                    Last Updated: 25-04-2026
+                  </span>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Last Updated: 25-04-2026</p>
               </div>
             </section>
 
