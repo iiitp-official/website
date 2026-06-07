@@ -9,19 +9,6 @@ const AcademicCalendarPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Overview */}
-            <section>
-              <h2 className="text-3xl font-bold font-serif text-primary dark:text-white mb-6 border-b pb-4 border-gray-200 dark:border-gray-800">
-                About the Academic Calendar
-              </h2>
-              <div className="bg-white dark:bg-surface-dark p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-                  IIIT Pune follows a semester-based academic calendar with two semesters per year, one odd and one
-                  even.
-                </p>
-              </div>
-            </section>
-
             {/* Current Year Calendar */}
             <section>
               <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-6 border-b pb-3 border-gray-200 dark:border-gray-800">
