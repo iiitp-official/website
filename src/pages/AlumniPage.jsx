@@ -2,11 +2,11 @@ import React from 'react';
 import PageHeader from '../components/shared/PageHeader';
 import Breadcrumb from '../components/shared/Breadcrumb';
 import alumniData from '../data/alumni.json';
-import { GraduationCap, Briefcase, Globe, MapPin } from 'lucide-react';
+
 
 const AlumniPage = () => {
   const TableHeader = ({ children }) => (
-    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+    <th className="px-6 py-4 text-left text-sm font-bold text-white tracking-wider bg-primary dark:bg-primary/95">
       {children}
     </th>
   );
@@ -31,8 +31,7 @@ const AlumniPage = () => {
           
           {/* Intro Section */}
           <section className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 p-8">
-            <h2 className="text-2xl font-serif font-bold text-primary dark:text-accent mb-6 flex items-center">
-              <GraduationCap className="w-8 h-8 mr-3" />
+            <h2 className="text-2xl font-serif font-bold text-primary dark:text-accent mb-6">
               Alumni Overview
             </h2>
             <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4 whitespace-pre-line text-lg">
@@ -47,8 +46,7 @@ const AlumniPage = () => {
             <div className="space-y-12">
               {/* Abroad */}
               <div>
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4 flex items-center">
-                  <Globe className="w-6 h-6 mr-2 text-brand-red" />
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
                   Pursuing Higher Studies Abroad
                 </h3>
                 <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm overflow-hidden border border-gray-200 dark:border-gray-800">
@@ -79,8 +77,7 @@ const AlumniPage = () => {
 
               {/* India */}
               <div>
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4 flex items-center">
-                  <MapPin className="w-6 h-6 mr-2 text-green-600" />
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
                   Pursuing Higher Studies in India
                 </h3>
                 <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm overflow-hidden border border-gray-200 dark:border-gray-800">
@@ -118,8 +115,7 @@ const AlumniPage = () => {
             <div className="space-y-12">
               {/* Batch 2017-2021 */}
               <div>
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4 flex items-center">
-                  <Briefcase className="w-6 h-6 mr-2 text-primary" />
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
                   Alumni working in MNCs (Batch 2017-2021)
                 </h3>
                 <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm overflow-hidden border border-gray-200 dark:border-gray-800">
@@ -135,11 +131,7 @@ const AlumniPage = () => {
                         {alumniData.placements.batch2017_2021.map((alumnus, idx) => (
                           <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
                             <TableCell isFirst>{alumnus.name}</TableCell>
-                            <TableCell>
-                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
-                                {alumnus.company}
-                              </span>
-                            </TableCell>
+                            <TableCell>{alumnus.company}</TableCell>
                           </tr>
                         ))}
                       </tbody>
@@ -150,8 +142,7 @@ const AlumniPage = () => {
 
               {/* Batch 2016-2020 */}
               <div>
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4 flex items-center">
-                  <Briefcase className="w-6 h-6 mr-2 text-primary" />
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
                   Alumni working in MNCs (Batch 2016-2020)
                 </h3>
                 <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm overflow-hidden border border-gray-200 dark:border-gray-800">
@@ -167,11 +158,7 @@ const AlumniPage = () => {
                         {alumniData.placements.batch2016_2020.map((alumnus, idx) => (
                           <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
                             <TableCell isFirst>{alumnus.name}</TableCell>
-                            <TableCell>
-                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
-                                {alumnus.company}
-                              </span>
-                            </TableCell>
+                            <TableCell>{alumnus.company}</TableCell>
                           </tr>
                         ))}
                       </tbody>
@@ -182,8 +169,7 @@ const AlumniPage = () => {
 
               {/* M.Tech Batch 2019-2021 */}
               <div>
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4 flex items-center">
-                  <Briefcase className="w-6 h-6 mr-2 text-primary" />
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">
                   Alumni working in MNCs (M.Tech Batch 2019-2021)
                 </h3>
                 <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm overflow-hidden border border-gray-200 dark:border-gray-800">
@@ -199,11 +185,7 @@ const AlumniPage = () => {
                         {alumniData.placements.mtech2019_2021.map((alumnus, idx) => (
                           <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
                             <TableCell isFirst>{alumnus.name}</TableCell>
-                            <TableCell>
-                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
-                                {alumnus.company}
-                              </span>
-                            </TableCell>
+                            <TableCell>{alumnus.company}</TableCell>
                           </tr>
                         ))}
                       </tbody>
