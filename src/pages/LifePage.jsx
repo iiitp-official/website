@@ -25,7 +25,11 @@ const LifePage = () => {
   }, [activeTab, activeClubKey]);
 
   const handleTabChange = (tabKey) => {
-    setSearchParams({ tab: tabKey });
+    if (tabKey === 'overview') {
+      setSearchParams({});
+    } else {
+      setSearchParams({ tab: tabKey });
+    }
   };
 
   const renderTabContent = () => {

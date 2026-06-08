@@ -42,14 +42,21 @@ const ClubsTab = ({ activeClubKey, setSearchParams, setSelectedImage }) => {
                 <button
                   key={key}
                   onClick={() => setSearchParams({ tab: 'clubs', club: key })}
-                  className={`shrink-0 lg:shrink lg:w-full flex items-center justify-between px-4 py-2 lg:px-3.5 lg:py-2.5 rounded-full lg:rounded-xl text-left transition-all border ${
+                  className={`shrink-0 lg:shrink lg:w-full flex flex-row lg:flex-col items-center lg:items-start gap-2 lg:gap-0 px-4 py-2 lg:px-3.5 lg:py-3 rounded-full lg:rounded-xl text-left transition-all duration-250 border ${
                     isSelected
-                      ? `bg-gradient-to-r ${c.color} text-white border-transparent shadow-sm`
+                      ? 'bg-primary text-white border-primary shadow-sm'
                       : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700'
                   }`}
                 >
-                  <span className="font-bold text-xs lg:text-sm">{c.name}</span>
-                  {isSelected && <ChevronRight size={14} className="opacity-70 hidden lg:block" />}
+                  <div className="flex items-center gap-2 w-full">
+                    <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isSelected ? 'bg-white' : 'bg-primary'}`} />
+                    <span className="font-bold text-xs lg:text-sm truncate">{c.name}</span>
+                  </div>
+                  {c.tags && c.tags.length > 0 && (
+                    <span className={`hidden lg:block text-[10px] mt-1.5 truncate w-full ${isSelected ? 'text-white/80' : 'text-gray-400 dark:text-gray-500'}`}>
+                      {c.tags.slice(0, 2).join(' • ')}
+                    </span>
+                  )}
                 </button>
               );
             })}
@@ -59,11 +66,11 @@ const ClubsTab = ({ activeClubKey, setSearchParams, setSelectedImage }) => {
 
       <div className="flex-1 min-w-0">
         <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm">
-          <div className="border-b border-gray-100 dark:border-gray-800 pb-6 mb-6">
-            <h2 className={`text-3xl md:text-4xl font-extrabold font-serif bg-clip-text text-transparent bg-gradient-to-r ${club.color} mb-3`}>
+          <div className="border-b border-gray-100 dark:border-gray-800 pb-5 mb-6">
+            <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white">
               {club.name}
             </h2>
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mt-4 mb-2">
               {club.tags && club.tags.map(tag => (
                 <span key={tag} className="px-2.5 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-[10px] font-bold text-gray-600 dark:text-gray-300 tracking-wide uppercase border border-gray-200 dark:border-gray-700">
                   {tag}
