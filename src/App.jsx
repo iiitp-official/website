@@ -52,7 +52,13 @@ const FacultyProfilePage = lazy(() => import("./pages/FacultyProfilePage"));
 const VisitingFacultyPage = lazy(() => import("./pages/VisitingFacultyPage"));
 const NonTeachingStaffPage = lazy(() => import("./pages/NonTeachingStaffPage"));
 const AlumniPage = lazy(() => import("./pages/AlumniPage"));
-const LifePage = lazy(() => import("./pages/LifePage"));
+const LifeOverviewPage = lazy(() => import("./pages/LifeOverviewPage"));
+const LifeClubsPage = lazy(() => import("./pages/LifeClubsPage"));
+const LifeActivitiesPage = lazy(() => import("./pages/LifeActivitiesPage"));
+const LifeGalleryPage = lazy(() => import("./pages/LifeGalleryPage"));
+const LifeEventsPage = lazy(() => import("./pages/LifeEventsPage"));
+const LifeMagazinePage = lazy(() => import("./pages/LifeMagazinePage"));
+const LifeCampusPage = lazy(() => import("./pages/LifeCampusPage"));
 const NoticePage = lazy(() => import("./pages/NoticePage"));
 const NewsPage = lazy(() => import("./pages/NewsPage"));
 const AntiRaggingPage = lazy(() => import("./pages/AntiRaggingPage"));
@@ -163,7 +169,14 @@ function AppContent() {
             <Route path="/people/alumni" element={<AlumniPage />} />
             
             {/* Other Pages */}
-            <Route path="/life" element={<LifePage />} />
+            <Route path="/life" element={<LifeOverviewPage />} />
+            <Route path="/life/clubs" element={<LifeClubsPage />} />
+            <Route path="/life/activities" element={<LifeActivitiesPage />} />
+            <Route path="/life/gallery" element={<LifeGalleryPage />} />
+            <Route path="/life/events" element={<LifeEventsPage />} />
+            <Route path="/life/magazine" element={<LifeMagazinePage />} />
+            <Route path="/life/campus" element={<LifeCampusPage />} />
+            
             <Route path="/news" element={<NewsPage />} />
             <Route path="/notice" element={<NoticePage />} />
             <Route path="/notice/anti-ragging" element={<AntiRaggingPage />} />
