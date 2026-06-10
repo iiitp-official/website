@@ -527,6 +527,68 @@ html {
   background-color: var(--color-bg-light);
 }
 
+/* Responsive Table (Card Layout for Mobile) */
+@media (max-width: 768px) {
+  .international-relations-page .program-table {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  
+  .international-relations-page .program-table thead {
+    display: none;
+  }
+  
+  .international-relations-page .program-table, 
+  .international-relations-page .program-table tbody, 
+  .international-relations-page .program-table tr, 
+  .international-relations-page .program-table td {
+    display: block;
+    width: 100%;
+  }
+  
+  .international-relations-page .program-table tr {
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background-color: var(--color-bg-white) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+  
+  .international-relations-page .program-table td {
+    padding: 16px;
+    text-align: right;
+    position: relative;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .international-relations-page .program-table td:last-child {
+    border-bottom: none;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .international-relations-page .program-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-sans);
+    flex-shrink: 0;
+  }
+  
+  .international-relations-page .program-table td:last-child::before {
+    margin-bottom: 8px;
+  }
+}
+
 .international-relations-page .badge-degree {
   display: inline-block;
   font-size: 0.75rem;

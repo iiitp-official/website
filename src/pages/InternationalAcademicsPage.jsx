@@ -34,29 +34,29 @@ const InternationalAcademicsPage = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td><span className="badge-degree badge-degree--btech">B.Tech</span></td>
-                      <td><strong>Computer Science &amp; Engineering</strong></td>
-                      <td>Algorithms, software design, distributed computing, database management, and operating systems.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--btech">B.Tech</span></td>
+                      <td data-label="Branch"><strong>Computer Science &amp; Engineering</strong></td>
+                      <td data-label="Core Areas Covered">Algorithms, software design, distributed computing, database management, and operating systems.</td>
                     </tr>
                     <tr>
-                      <td><span className="badge-degree badge-degree--btech">B.Tech</span></td>
-                      <td><strong>Electronics &amp; Communication Engineering</strong></td>
-                      <td>Signal processing, wireless communications, embedded systems, networks, and optical communication.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--btech">B.Tech</span></td>
+                      <td data-label="Branch"><strong>Electronics &amp; Communication Engineering</strong></td>
+                      <td data-label="Core Areas Covered">Signal processing, wireless communications, embedded systems, networks, and optical communication.</td>
                     </tr>
                     <tr>
-                      <td><span className="badge-degree badge-degree--btech">B.Tech</span></td>
-                      <td><strong>Cyber Security</strong></td>
-                      <td>Cryptography, network security protocols, forensic analysis, cyber laws, and ethical hacking.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--btech">B.Tech</span></td>
+                      <td data-label="Branch"><strong>Cyber Security</strong></td>
+                      <td data-label="Core Areas Covered">Cryptography, network security protocols, forensic analysis, cyber laws, and ethical hacking.</td>
                     </tr>
                     <tr>
-                      <td><span className="badge-degree badge-degree--btech">B.Tech</span></td>
-                      <td><strong>Microelectronics &amp; VLSI</strong></td>
-                      <td>Semiconductor devices, analog integrated circuit design, CAD tools, physical design, and testing.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--btech">B.Tech</span></td>
+                      <td data-label="Branch"><strong>Microelectronics &amp; VLSI</strong></td>
+                      <td data-label="Core Areas Covered">Semiconductor devices, analog integrated circuit design, CAD tools, physical design, and testing.</td>
                     </tr>
                     <tr>
-                      <td><span className="badge-degree badge-degree--btech">B.Tech</span></td>
-                      <td><strong>AI &amp; Data Science</strong></td>
-                      <td>Machine learning, data analytics, statistics, deep learning, and natural language processing models.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--btech">B.Tech</span></td>
+                      <td data-label="Branch"><strong>AI &amp; Data Science</strong></td>
+                      <td data-label="Core Areas Covered">Machine learning, data analytics, statistics, deep learning, and natural language processing models.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -79,14 +79,14 @@ const InternationalAcademicsPage = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td><span className="badge-degree badge-degree--mtech">M.Tech</span></td>
-                      <td><strong>Artificial Intelligence</strong></td>
-                      <td>Advanced ML algorithms, robotics, computer vision, optimization models, and AI system design.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--mtech">M.Tech</span></td>
+                      <td data-label="Specialization"><strong>Artificial Intelligence</strong></td>
+                      <td data-label="Core Areas Covered">Advanced ML algorithms, robotics, computer vision, optimization models, and AI system design.</td>
                     </tr>
                     <tr>
-                      <td><span className="badge-degree badge-degree--mtech">M.Tech</span></td>
-                      <td><strong>VLSI Design</strong></td>
-                      <td>ASIC design flow, CAD algorithms, low-power VLSI design, mixed-signal designs, and testing methodology.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--mtech">M.Tech</span></td>
+                      <td data-label="Specialization"><strong>VLSI Design</strong></td>
+                      <td data-label="Core Areas Covered">ASIC design flow, CAD algorithms, low-power VLSI design, mixed-signal designs, and testing methodology.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -109,29 +109,29 @@ const InternationalAcademicsPage = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
-                      <td><strong>Computer Science</strong></td>
-                      <td>Cloud systems, distributed algorithms, data structures, and compiler optimization methods.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
+                      <td data-label="Research Domain"><strong>Computer Science</strong></td>
+                      <td data-label="Key Research Frontiers">Cloud systems, distributed algorithms, data structures, and compiler optimization methods.</td>
                     </tr>
                     <tr>
-                      <td><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
-                      <td><strong>Artificial Intelligence</strong></td>
-                      <td>Deep learning theories, reinforcement learning, computer vision, NLP, and Explainable AI.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
+                      <td data-label="Research Domain"><strong>Artificial Intelligence</strong></td>
+                      <td data-label="Key Research Frontiers">Deep learning theories, reinforcement learning, computer vision, NLP, and Explainable AI.</td>
                     </tr>
                     <tr>
-                      <td><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
-                      <td><strong>Data Science</strong></td>
-                      <td>Large-scale big data engines, statistical inferences, pattern mining, and visual analytics.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
+                      <td data-label="Research Domain"><strong>Data Science</strong></td>
+                      <td data-label="Key Research Frontiers">Large-scale big data engines, statistical inferences, pattern mining, and visual analytics.</td>
                     </tr>
                     <tr>
-                      <td><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
-                      <td><strong>Mathematics</strong></td>
-                      <td>Computational linear algebra, modeling, operations research, optimization theory, and pure algebra.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
+                      <td data-label="Research Domain"><strong>Mathematics</strong></td>
+                      <td data-label="Key Research Frontiers">Computational linear algebra, modeling, operations research, optimization theory, and pure algebra.</td>
                     </tr>
                     <tr>
-                      <td><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
-                      <td><strong>English Literature</strong></td>
-                      <td>Interdisciplinary literature studies, modern digital communications, linguistic structures, and cultural reviews.</td>
+                      <td data-label="Degree"><span className="badge-degree badge-degree--phd">Ph.D.</span></td>
+                      <td data-label="Research Domain"><strong>English Literature</strong></td>
+                      <td data-label="Key Research Frontiers">Interdisciplinary literature studies, modern digital communications, linguistic structures, and cultural reviews.</td>
                     </tr>
                   </tbody>
                 </table>
