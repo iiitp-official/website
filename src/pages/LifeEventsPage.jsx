@@ -45,13 +45,13 @@ const LifeEventsPage = () => {
                       </p>
                     </div>
                     
-                    <div className="mt-6 border-t border-gray-100 dark:border-gray-800 pt-5">
-                      <h4 className="text-xs font-bold text-gray-800 dark:text-white uppercase tracking-wide mb-3">Highlights</h4>
+                    <div className="mt-4">
+                      <h4 className="text-s font-bold text-gray-800 dark:text-white uppercase tracking-wide mb-3">Highlights</h4>
                       <div className="grid grid-cols-2 gap-y-2 gap-x-4">
                         {evt.highlights.map((h, hidx) => (
                           <div key={hidx} className="flex items-center gap-2">
                             <span className={`w-1.5 h-1.5 rounded-full ${evt.typeColor.split(' ')[0]}`} />
-                            <span className="text-xs text-gray-600 dark:text-gray-400">{h}</span>
+                            <span className="text-s dark:text-gray-400">{h}</span>
                           </div>
                         ))}
                       </div>
@@ -83,7 +83,7 @@ const LifeEventsPage = () => {
                 </div>
                 
                 {evt.images && evt.images.length > 0 && (
-                  <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-6">
+                  <div className="mt-6">
                     <div className="grid grid-cols-3 gap-4">
                       {evt.images.map((imgUrl, iidx) => (
                         <div 

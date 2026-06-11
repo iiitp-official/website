@@ -3,8 +3,6 @@
     "blueprint": {
       "name": "Blueprint",
       "desc": "Blueprint is the college’s graphic design and creative media club, bringing together students passionate about visual storytelling, branding, UI/UX, motion graphics, and digital creativity. The club serves as a collaborative space where members explore industry-standard design tools, develop creative thinking, and work on hands-on projects across multiple domains of design. Through regular workshops, design meets, collaborative sessions, and competitions, Blueprint encourages students to learn, experiment, and grow as creators. From graphic design and illustration to video editing, animation, and 3D design, the club provides opportunities for members to gain practical exposure while building a strong creative community on campus. Blueprint also represents the college in various design events and competitions, promoting innovation, teamwork, and artistic expression among students. With a focus on learning by doing, the club aims to nurture both technical skills and creative confidence in aspiring designers.",
-      "color": "from-blue-500 to-indigo-600",
-      "textColor": "text-blue-600 dark:text-blue-400",
       "tags": [
         "Design",
         "UI/UX",
@@ -47,8 +45,6 @@
     "rang": {
       "name": "Rang",
       "desc": "RANG serves as a vibrant platform for students who perceive stories in colors, meaning in patterns, and emotion in every stroke. Rooted in creativity, collaboration, and innovation, the collective nurtures artistic talent while enriching the cultural and visual identity of the campus. Through these initiatives, RANG plays a significant role in shaping the artistic atmosphere of IIIT Pune, ensuring that creativity remains an integral part of campus life. Beyond workshops and events, RANG is a thriving community that values originality, teamwork, and artistic growth.",
-      "color": "from-pink-500 to-rose-600",
-      "textColor": "text-pink-600 dark:text-pink-400",
       "tags": [
         "Fine Arts",
         "Crafts",
@@ -104,8 +100,6 @@
     "quantnum": {
       "name": "QuantNum",
       "desc": "Curious About the Magic Behind Numbers? At QuantNum, we believe that mathematics is more than equations and symbols; it is a powerful language, an intellectual adventure, and a work of art. As the Mathematics Club of IIIT Pune, we are dedicated to illuminating the wonders of math, celebrating its timeless elegance and immense real-world value.",
-      "color": "from-yellow-500 to-amber-600",
-      "textColor": "text-yellow-600 dark:text-yellow-400",
       "tags": [
         "Mathematics",
         "Analytics",
@@ -156,8 +150,6 @@
     "bit-legion": {
       "name": "Bit-Legion",
       "desc": "BiT Legion is the elite coding club of IIIT Pune. It is an active student-driven community of like-minded people striving to reach new heights in the programming field, whether competitive programming, Development, Open Source, interview prep, etc. This year marks the 3rd anniversary of the Bit Legion Coding Club. Throughout these years, the club's primary focus has been to introduce students to the beautiful world of programming and build a strong coding culture in the institute. BitLegion ensures that every individual gets a smooth onboarding, to begin with their programming journey.",
-      "color": "from-red-500 to-rose-600",
-      "textColor": "text-red-600 dark:text-red-400",
       "tags": [
         "Competitive Programming",
         "DSA",
@@ -200,8 +192,6 @@
     "c-cube": {
       "name": "C-CUBE",
       "desc": "Intellectual education influences the head and value-based education influences the heart. In fact, education that does not train the heart can be dangerous. If we want to build character in our offices, homes and society, we must have the wisdom to live a principle-centered life based on honesty, compassion, courage, responsibility etc. Educated persons are those who can choose wisely and courageously under any circumstances between good and bad, between virtuousness and vulgarities regardless of the academic degrees they have.",
-      "color": "from-violet-500 to-purple-600",
-      "textColor": "text-violet-600 dark:text-violet-405",
       "tags": [
         "Personality Development",
         "Life Ethics",
@@ -238,8 +228,6 @@
     "e-cell": {
       "name": "E-Cell",
       "desc": "Innovation and Incubation Cell (IIC) at IIIT Pune was formed to conduct guest lectures, contact industries and other places for startup grants, and engage students in product-based projects. Its major focus is to create a vibrant local innovation ecosystem and startup-supporting mechanisms in the institute.",
-      "color": "from-emerald-500 to-teal-600",
-      "textColor": "text-emerald-600 dark:text-emerald-400",
       "tags": [
         "Entrepreneurship",
         "Ideation",
@@ -280,8 +268,6 @@
     "eclectic": {
       "name": "Eclectic",
       "desc": "A club of like-minded individuals who share a passion for literature and a perennial hunger for fun: At Eclectic, we organise writing activities, conduct open mics and literary quizzes, have book discussions, and much more. However, it isn’t just the activities that define Eclectic — it is our vibrant and welcoming community.",
-      "color": "from-cyan-500 to-blue-600",
-      "textColor": "text-cyan-600 dark:text-cyan-400",
       "tags": [
         "Literature",
         "Debates",
@@ -322,8 +308,6 @@
     "saaz": {
       "name": "SAAZ",
       "desc": "The Music Club of IIIT Pune. SAAZ nurtures vocalists and instrumentalists, setting up jamming sessions, acoustic events, and representing the institute at cultural fests.",
-      "color": "from-fuchsia-500 to-pink-600",
-      "textColor": "text-fuchsia-600 dark:text-fuchsia-400",
       "tags": [
         "Music",
         "Vocals",
@@ -360,8 +344,6 @@
     "vanity-crew": {
       "name": "Vanity Crew",
       "desc": "Vanity Crew is the official dance club of IIIT Pune, established with the objective of fostering creativity, expression, discipline, and community through the art of dance. The club welcomes dancers from diverse backgrounds and styles, including contemporary, hip-hop, fusion, folk, and classical dance forms such as Bharatnatyam. Vanity Crew believes in creating an inclusive environment where both experienced performers and beginners can learn, collaborate, and grow together.",
-      "color": "from-orange-500 to-red-600",
-      "textColor": "text-orange-600 dark:text-orange-400",
       "tags": [
         "Dance",
         "Choreography",
@@ -422,8 +404,6 @@
     "sports": {
       "name": "Sports",
       "desc": "Sports are a great way to make friends, learn new skills and have fun. Apart from providing a social outlet for people sharing a common interest in a particular sport, they act as a platform to meet new people from different backgrounds and experiences. Sports and fitness go hand in hand and are essential for good mental and physical health. We at IIIT Pune Sports Club are here to build a community and create a sense of belonging to inspire people to reach their full potential and to help people improve their physical fitness and health.",
-      "color": "from-green-500 to-emerald-600",
-      "textColor": "text-green-600 dark:text-green-400",
       "tags": [
         "Athletics",
         "Football",
@@ -477,8 +457,6 @@
     "rofies": {
       "name": "ROFIES",
       "desc": "R.O.F.I.E.S. (Robotics Oriented Futuristic & Innovative Engineers Society) is the official robotics and embedded systems club of IIIT Pune, focused on promoting practical learning, innovation, and technical development in the fields of robotics, embedded systems, IoT, and automation.",
-      "color": "from-sky-500 to-indigo-600",
-      "textColor": "text-sky-600 dark:text-sky-400",
       "tags": [
         "Robotics",
         "Embedded Systems",
@@ -525,8 +503,6 @@
     "localhost": {
       "name": "localhost",
       "desc": "“Better developers, better humans and together” To be a place for developers to hang out, realise exciting ideas and become a strong network of builders who will leave their mark on the world. From weekly sprints of Web Development and Flutter Development to contributing at Hacktoberfest and GSoC, localhost is marching on many fronts to bring development to the students of IIIT Pune.",
-      "color": "from-indigo-500 to-purple-600",
-      "textColor": "text-indigo-600 dark:text-indigo-400",
       "tags": [
         "Web Dev",
         "App Dev",
@@ -571,8 +547,6 @@
     "horizon": {
       "name": "Horizon",
       "desc": "Horizon, established in January 2022 with the ideology of \"capture imagination,\" continues to steadfastly pursue and expand upon this captivating concept. As the photography and videography club of IIIT Pune, Horizon has swiftly emerged as one of the institute's most dynamic and youthful clubs. Its ubiquitous presence is felt throughout campus events, where it skillfully encapsulates cherished memories, earning Horizon the designation of being IIIT Pune's dedicated media house.",
-      "color": "from-blue-600 to-violet-700",
-      "textColor": "text-blue-600 dark:text-blue-400",
       "tags": [
         "Photography",
         "Videography",
@@ -609,8 +583,6 @@
     "abhinay": {
       "name": "Abhinay",
       "desc": "Abhinay isn't just a club; it's where stories come alive. Step into our world and unleash your inner performer. From thrilling performances to lifelong friendships, Abhinay is the stage where your journey begins. Abhinay is a tradition of artistic excellence that continues to evolve, from street plays to finishing top 5 nationwide in IIT Kharagpur's Springfest and performing street play prelims in MIT-WPU Mood Indigo.",
-      "color": "from-amber-600 to-orange-700",
-      "textColor": "text-amber-600 dark:text-amber-400",
       "tags": [
         "Street Play",
         "Acting",
@@ -669,8 +641,6 @@
     "q-riocity": {
       "name": "Q-riocity",
       "desc": "The club brings together students who enjoy exploring the world through quizzes, discussions, games, and interactive activities across a wide range of topics including history, geography, current affairs, global culture, pop-culture, sports, literature, cinema, anime, defence, science, technology, space, languages, flags, maps, internet culture, and more. Q-Riocity is more than a quiz club. It is a close-knit community where students can learn, host, participate, and have fun with any topic they are passionate about.",
-      "color": "from-teal-500 to-cyan-600",
-      "textColor": "text-teal-600 dark:text-teal-400",
       "tags": [
         "Quizzes",
         "Trivia",

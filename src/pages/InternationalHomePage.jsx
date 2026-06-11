@@ -5,12 +5,13 @@ import Slideshow from '../components/shared/InternationalSlideshow';
 
 const InternationalHomePage = () => {
   return (
-    <div className="w-full flex-grow flex flex-col international-relations-page min-h-screen transition-colors duration-200">
+    <div className="w-full flex-grow flex flex-col min-h-screen transition-colors duration-200">
       <PageHeader 
         title="Global Academic Excellence" 
         subtitle="Welcoming scholars, researchers, and students from across the globe to the Indian Institute of Information Technology, Pune. Discover international partnerships, research grants, and exchanges."
       />
       
+      <div className="international-relations-page flex-grow flex flex-col">
       {/* Main Landing Section */}
       <main className="section-padding">
         <div className="container">
@@ -109,6 +110,7 @@ const InternationalHomePage = () => {
           </div>
         </div>
       </section>
+      </div>
     </div>
   );
 };
