@@ -73,6 +73,7 @@ const NIRFPage = lazy(() => import("./pages/NIRFPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 const StudentAchievementsPage = lazy(() => import('./pages/StudentAchievementsPage'));
 const FacultyAchievementsPage = lazy(() => import('./pages/FacultyAchievementsPage'));
+const AdmissionsPage = lazy(() => import("./pages/AdmissionsPage"));
 
 const InternationalHomePage = lazy(() => import("./pages/InternationalHomePage"));
 const InternationalAboutPage = lazy(() => import("./pages/InternationalAboutPage"));
@@ -114,6 +115,9 @@ function AppContent() {
           <Routes>
             {/* Home */}
             <Route path="/" element={<HomePage />} />
+            
+            {/* Admissions */}
+            <Route path="/admissions" element={<AdmissionsPage />} />
             
             {/* About */}
             <Route path="/about" element={<AboutPage />} />

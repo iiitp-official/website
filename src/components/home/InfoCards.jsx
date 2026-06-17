@@ -231,9 +231,9 @@ const InfoCards = () => {
           </div>
 
           {/* Card 2: Admissions */}
-          <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md overflow-hidden border border-gray-150 dark:border-gray-800 flex flex-col">
+          <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md overflow-hidden border border-gray-150 dark:border-gray-800 flex flex-col group">
             <div className="bg-primary dark:bg-gray-800 text-white py-3 px-5 font-bold font-serif text-lg md:text-xl">
-              Admissions 2025-26
+              Admissions 2026-27
             </div>
             <div className="p-5 flex flex-col flex-grow">
               <ul className="space-y-4 mb-6 flex-grow mt-2">
@@ -254,6 +254,9 @@ const InfoCards = () => {
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">International Admissions (DASA)</span>
                 </li>
               </ul>
+              <Link to="/admissions" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors mt-auto">
+                View Admissions details <ChevronRight size={16} className="ml-1" />
+              </Link>
             </div>
           </div>
 
