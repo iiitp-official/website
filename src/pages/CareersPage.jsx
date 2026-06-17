@@ -4,6 +4,12 @@ import PageHeader from '../components/shared/PageHeader';
 const CareersPage = () => {
   const jobs = [
     {
+      title: "RECRUITMENT NOTICE FOR THE POST OF ASSISTANT PROFESSOR (TEMPORARY)",
+      buttons: [
+        { label: "Details", file: "16.06.2026 ASSISTANT PROFESSOR TEMPORARY FINAL VERSION.pdf" }
+      ]
+    },
+    {
       title: "Cancellation of Advertisement for the Post of Assistant Registrar",
       buttons: [
         { label: "Application", file: "1.pdf" },
