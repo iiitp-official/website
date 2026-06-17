@@ -453,6 +453,7 @@ const Navbar = () => {
               <div className="hidden md:flex items-center gap-2">
                 <a
                   href="https://www.facebook.com/share/14dmnHML9Tm/"
+                  target="_blank" rel="noopener noreferrer"
                   aria-label="Facebook"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
                 >
@@ -460,6 +461,7 @@ const Navbar = () => {
                 </a>
                 <a
                   href="https://x.com/IIIT_Pune"
+                  target="_blank" rel="noopener noreferrer"
                   aria-label="Twitter"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
                 >
@@ -467,6 +469,7 @@ const Navbar = () => {
                 </a>
                 <a
                   href="https://www.linkedin.com/school/iiitpune/"
+                  target="_blank" rel="noopener noreferrer"
                   aria-label="LinkedIn"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
                 >
@@ -802,6 +805,8 @@ const Navbar = () => {
               <div className="flex items-center gap-4 px-3">
                 <a
                   href="https://www.facebook.com/share/14dmnHML9Tm/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Facebook"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
