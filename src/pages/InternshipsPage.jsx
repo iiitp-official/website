@@ -45,7 +45,7 @@ const InternshipsPage = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 mt-1">➭</span>
-                  <span>Applicants are requested to contact the individual faculties of the respective departments. Faculty details are available at <a href="/people" className="text-brand-red dark:text-blue-400 hover:underline">www.iiitp.ac.in/page/faculty- members</a>. After obtaining consent, students may apply for the internship.</span>
+                  <span>Applicants are requested to contact the individual faculties of the respective departments. Faculty details are available <a href="/people/faculty" className="text-brand-red dark:text-blue-400 hover:underline">here</a>. After obtaining consent, students may apply for the internship.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 mt-1">➭</span>
