@@ -26,10 +26,7 @@ const LinkedinIcon = ({ size }) => (
 const Navbar = () => {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== "undefined") {
-      return (
-        localStorage.getItem("darkMode") === "true" ||
-        (!("darkMode" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-      );
+      return localStorage.getItem("darkMode") === "true";
     }
     return false;
   });
