@@ -350,6 +350,11 @@ const Navbar = () => {
         { name: "ANTI-RAGGING COMMITTEE & SQUADS", path: "/notice/anti-ragging" },
         { name: "Late fee for the even semester", path: "/notice/late-fee" },
         {
+          name: "Extension of Deadline for PhD Applications (July 2026)",
+          path: "/documents/Extension of Deadline 2026.pdf",
+          isExternal: true
+        },
+        {
           name: "National Overseas Scholarship (2025-26) - Letters",
           path: "/documents/Letter to 265 institutions regarding NSP portal opening for the Year 2025-26.pdf",
           isExternal: true
