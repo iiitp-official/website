@@ -27,10 +27,7 @@ const LinkedinIcon = ({ size }) => (
 const InternationalHeader = () => {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== "undefined") {
-      return (
-        localStorage.getItem("darkMode") === "true" ||
-        (!("darkMode" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-      );
+      return localStorage.getItem("darkMode") === "true";
     }
     return false;
   });
@@ -136,21 +133,24 @@ const InternationalHeader = () => {
               {/* Social Icons */}
               <div className="hidden md:flex items-center gap-2">
                 <a
-                  href="https://www.facebook.com/iiitpune"
+                  href="https://www.facebook.com/share/14dmnHML9Tm/"
+                  target="_blank" rel="noopener noreferrer"
                   aria-label="Facebook"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
                 >
                   <FacebookIcon size={18} />
                 </a>
                 <a
-                  href="https://x.com/IIIT_PUNE"
+                  href="https://x.com/IIIT_Pune"
+                  target="_blank" rel="noopener noreferrer"
                   aria-label="Twitter"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
                 >
                   <TwitterIcon size={18} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
+                  href="https://www.linkedin.com/school/iiitpune/"
+                  target="_blank" rel="noopener noreferrer"
                   aria-label="LinkedIn"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
                 >
@@ -230,9 +230,9 @@ const InternationalHeader = () => {
           >
             <div className="px-4 py-4 space-y-4 max-h-[70vh] overflow-y-auto">
               <div className="flex items-center gap-4 px-3">
-                <a href="https://www.facebook.com/iiitpune" className="opacity-80 hover:opacity-100 text-white"><FacebookIcon size={20} /></a>
-                <a href="https://x.com/IIIT_PUNE" className="opacity-80 hover:opacity-100 text-white"><TwitterIcon size={20} /></a>
-                <a href="https://www.linkedin.com/school/iiitpune/" className="opacity-80 hover:opacity-100 text-white"><LinkedinIcon size={20} /></a>
+                <a href="https://www.facebook.com/share/14dmnHML9Tm/" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 text-white"><FacebookIcon size={20} /></a>
+                <a href="https://x.com/IIIT_Pune" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 text-white"><TwitterIcon size={20} /></a>
+                <a href="https://www.linkedin.com/school/iiitpune/" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 text-white"><LinkedinIcon size={20} /></a>
               </div>
 
               <div className="flex flex-col space-y-2">

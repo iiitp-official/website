@@ -23,6 +23,21 @@ const LinkedinIcon = ({ size }) => (
   </svg>
 );
 
+const InstagramIcon = ({ size }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>
+);
+
+const YoutubeIcon = ({ size }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+  </svg>
+);
+
 const InternationalFooter = () => {
   const [hits, setHits] = useState(0);
   const [visitors, setVisitors] = useState(0);
@@ -137,16 +152,27 @@ const InternationalFooter = () => {
                 <Mail className="w-5 h-5 text-brand-red mr-3 shrink-0" />
                 <a href="mailto:ir@iiitp.ac.in" className="hover:text-brand-red transition-colors">ir@iiitp.ac.in</a>
               </div>
-              <div className="pt-4 flex items-center space-x-5">
-                <a href="https://www.linkedin.com/school/indian-institute-of-information-technology-pune/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
-                  <LinkedinIcon size={24} />
-                </a>
-                <a href="https://twitter.com/IIITPune" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="X (Twitter)">
-                  <TwitterIcon size={24} />
-                </a>
-                <a href="https://www.facebook.com/Indian-Institute-of-Information-Technology-Pune-101140938435131/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
-                  <FacebookIcon size={24} />
-                </a>
+              <div className="pt-4 pb-2">
+                {/* <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center p-1 mb-4 shadow-sm">
+                  <img src="/Logo/iiitp_logo.png" alt="IIIT Pune Logo" className="w-full h-full object-contain mix-blend-multiply" />
+                </div> */}
+                <div className="flex items-center space-x-4">
+                  <a href="https://www.linkedin.com/school/iiitpune/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
+                    <LinkedinIcon size={24} />
+                  </a>
+                  <a href="https://x.com/IIIT_Pune" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="X (Twitter)">
+                    <TwitterIcon size={24} />
+                  </a>
+                  <a href="https://www.facebook.com/share/14dmnHML9Tm/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
+                    <FacebookIcon size={24} />
+                  </a>
+                  <a href="https://www.instagram.com/iiit_pune_official/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
+                    <InstagramIcon size={24} />
+                  </a>
+                  <a href="https://www.youtube.com/@IIIT_Pune_Official" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="YouTube">
+                    <YoutubeIcon size={24} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
