@@ -20,11 +20,6 @@ const PostDocFellowPage = () => {
       <PageHeader title="PostDoc Fellow" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
-          <div className="bg-primary dark:bg-primary-dark px-6 py-4">
-            <h2 className="text-2xl font-bold text-center text-white">
-              Postdoctoral Under the Visvesvaraya Scheme
-            </h2>
-          </div>
           <div className="p-6 md:p-8">
             <h3 className="text-xl font-bold text-center text-primary dark:text-blue-400 mb-8">
               List of Postdoctoral Students - 2025

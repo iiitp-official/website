@@ -18,6 +18,8 @@ const Breadcrumb = () => {
         const specialNames = {
           'cse': 'CSE',
           'ece': 'ECE',
+          'aids': 'AI&DS',
+          'vlsi': 'VLSI',
           'ash': 'AS&H',
           'btech': 'B.Tech.',
           'mtech': 'M.Tech.',

@@ -46,12 +46,12 @@ const LifeEventsPage = () => {
                     </div>
                     
                     <div className="mt-4">
-                      <h4 className="text-s font-bold text-gray-800 dark:text-white uppercase tracking-wide mb-3">Highlights</h4>
+                      <h4 className="text-sm font-bold text-gray-800 dark:text-white uppercase tracking-wide mb-3">Highlights</h4>
                       <div className="grid grid-cols-2 gap-y-2 gap-x-4">
                         {evt.highlights.map((h, hidx) => (
                           <div key={hidx} className="flex items-center gap-2">
                             <span className={`w-1.5 h-1.5 rounded-full ${evt.typeColor.split(' ')[0]}`} />
-                            <span className="text-s dark:text-gray-400">{h}</span>
+                            <span className="text-sm dark:text-gray-400">{h}</span>
                           </div>
                         ))}
                       </div>

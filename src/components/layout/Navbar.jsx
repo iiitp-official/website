@@ -216,6 +216,9 @@ const Navbar = () => {
           subLinks: [
             { name: "Computer Science and Engineering", path: "/academics/btech/cse" },
             { name: "Electronics and Communication Engineering", path: "/academics/btech/ece" },
+            { name: "AI & DS", path: "/academics/btech/aids" },
+            { name: "Cybersecurity", path: "/academics/btech/cybersecurity" },
+            { name: "VLSI", path: "/academics/btech/vlsi" },
             { name: "B.Tech. Honours", path: "/academics/btech/honors" },
           ]
         },

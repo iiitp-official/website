@@ -30,6 +30,9 @@ const BoardOfStudiesEcePage = lazy(() => import("./pages/BoardOfStudiesEcePage")
 const BoardOfStudiesAshPage = lazy(() => import("./pages/BoardOfStudiesAshPage"));
 const BtechCsePage = lazy(() => import("./pages/BtechCsePage"));
 const BtechEcePage = lazy(() => import("./pages/BtechEcePage"));
+const BtechAiDsPage = lazy(() => import("./pages/BtechAiDsPage"));
+const BtechCybersecurityPage = lazy(() => import("./pages/BtechCybersecurityPage"));
+const BtechVlsiPage = lazy(() => import("./pages/BtechVlsiPage"));
 const BtechHonorsPage = lazy(() => import("./pages/BtechHonorsPage"));
 const MtechCsePage = lazy(() => import("./pages/MtechCsePage"));
 const MtechEcePage = lazy(() => import("./pages/MtechEcePage"));
@@ -139,6 +142,9 @@ function AppContent() {
             {/* Academics */}
             <Route path="/academics/btech/cse" element={<BtechCsePage />} />
             <Route path="/academics/btech/ece" element={<BtechEcePage />} />
+            <Route path="/academics/btech/aids" element={<BtechAiDsPage />} />
+            <Route path="/academics/btech/cybersecurity" element={<BtechCybersecurityPage />} />
+            <Route path="/academics/btech/vlsi" element={<BtechVlsiPage />} />
             <Route path="/academics/btech/honors" element={<BtechHonorsPage />} />
             <Route path="/academics/mtech/cse" element={<MtechCsePage />} />
             <Route path="/academics/mtech/ece" element={<MtechEcePage />} />

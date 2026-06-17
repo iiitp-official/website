@@ -943,12 +943,14 @@
   "EDITIONS": [
     {
       "year": "2024–25",
+      "title": "Annual Magazine 2024-25",
       "embedUrl": "https://online.fliphtml5.com/jpsva/pmdk/",
       "cover": "https://www.iiitp.ac.in/sites/default/files/inline-images/frontpage.png",
       "desc": "The latest edition captures research breakthroughs, creative writing, student artwork, faculty interviews, club highlights, and the vibrant spirit of campus life at IIIT Pune."
     },
     {
       "year": "2023–24",
+      "title": "Annual Magazine 2023-24",
       "embedUrl": "https://online.fliphtml5.com/wscmc/peim/",
       "cover": "https://www.iiitp.ac.in/sites/default/files/inline-images/aygycs_blue.png",
       "desc": "Celebrated IIIT Pune's growing research culture with features on funded projects, PhD scholar spotlights, club achievements, and an artistic tribute to campus life."

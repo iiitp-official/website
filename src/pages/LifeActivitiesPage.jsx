@@ -25,7 +25,7 @@ const LifeActivitiesPage = () => {
       setSelectedImage={setSelectedImage}
     >
       <div className="flex flex-col lg:flex-row gap-8">
-        <div className="w-full lg:w-72 shrink-0">
+        <div className="w-full lg:w-64 shrink-0">
           <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-24 space-y-4">
             <h3 className="text-gray-800 dark:text-white font-bold font-serif px-2 pb-2 border-b border-gray-100 dark:border-gray-800 text-base">
               National Initiatives

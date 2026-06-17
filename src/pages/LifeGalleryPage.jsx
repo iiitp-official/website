@@ -26,7 +26,7 @@ const LifeGalleryPage = () => {
           <p className="text-xs text-gray-500 dark:text-gray-400">A visual look into campus infrastructure, academic life, and student activities at IIIT Pune.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {GALLERY_ITEMS.map((item, idx) => (
             <div
               key={idx}

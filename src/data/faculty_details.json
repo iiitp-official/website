@@ -430,22 +430,196 @@
   },
   "dipen-bepari": {
     "designation": "Assistant Professor",
-    "image": "https://www.iiitp.ac.in/sites/default/files/2024-07/Dipen%20Bepari.jpg",
-    "bio": "Dr. Dipen Bepari is currently working as an Assistant Professor in the Department of Electronics and Communication Engineering at the Indian Institute of Information Technology, Pune, Maharashtra. He received his B.Tech degree in Electronics and Communication Engineering from Jalpaiguri Government Engineering College, West Bengal, and his M.Tech from the National Institute of Technology, Durgapur, in 2008 and 2010, respectively. He earned his Ph.D. in Wireless Communication from the Department of Electronics Engineering, IIT (ISM), Dhanbad, in 2017.\n\nDr. Bepari's areas of expertise include Cognitive Radio, Non-Orthogonal Multiple Access (NOMA), Intelligent Reflective Surfaces (IRS), Energy Harvesting, and 5G and beyond communications. He has made significant contributions to the academic and research communities, publishing in prestigious SCI journals such as IEEE Communications Surveys & Tutorials and international conferences. Dr. Bepari has collaborated with globally recognized researchers and served as a reviewer for esteemed journals, including the IEEE Internet of Things Journal, IEEE Transactions on Vehicular Technology, and IEEE Communications Letters.\n\nGoogle Scholar: https://scholar.google.com/citations?user=_lxJQiMAAAAJ&hl=en",
+    "image": "/assets/faculty_photos/dipenbepari.png",
+    "bio": "Dr. Dipen Bepari is currently working as an Assistant Professor in the Department of Electronics and Communication Engineering at the Indian Institute of Information Technology, Pune, Maharashtra. He received his B.Tech degree in Electronics and Communication Engineering from Jalpaiguri Government Engineering College, West Bengal, and his M.Tech from the National Institute of Technology, Durgapur, in 2008 and 2010, respectively. He earned his Ph.D. in Wireless Communication from the Department of Electronics Engineering, IIT (ISM), Dhanbad, in 2017.\n\nDr. Bepari's areas of expertise include Cognitive Radio, Non-Orthogonal Multiple Access (NOMA), Intelligent Reflective Surfaces (IRS), Energy Harvesting, and 5G and beyond communications. He has made significant contributions to the academic and research communities, publishing in prestigious SCI journals such as IEEE Communications Surveys & Tutorials and international conferences. Dr. Bepari has collaborated with globally recognized researchers and served as a reviewer for esteemed journals, including the IEEE Internet of Things Journal, IEEE Transactions on Vehicular Technology, and IEEE Communications Letters.",
     "education": "PhD, me",
-    "publications": "",
+    "publications": [
+      {
+        "title": "UAV-assisted NOMA-enabled relay communication",
+        "authors": "D. Bepari, S. Mondal, B. Acharya, and D. Dubey",
+        "journal": "International Journal of Communication Systems, vol. 39, no. 1, e70322, Jan. 2026.",
+        "link": ""
+      },
+      {
+        "title": "Fluid antennas: Pioneering a new era in next-generation wireless communications",
+        "authors": "D. Bepari et al.",
+        "journal": "IEEE Communications Surveys & Tutorials, pp. 1–36, Mar. 2026.",
+        "link": ""
+      },
+      {
+        "title": "A comprehensive survey on NOMA-based backscatter communication for IoT applications",
+        "authors": "S. Mondal, D. Bepari, A. Chandra, K. Singh, C.-P. Li, and Z. Ding",
+        "journal": "IEEE Internet of Things Journal, vol. 12, no. 12, pp. 18 929–18 953, Jun. 2025.",
+        "link": ""
+      },
+      {
+        "title": "Outage analysis of a content-based user pairing in NOMA",
+        "authors": "S. Mondal, S. K. Choudhary, U. Biswas, A. Misra, and D. Bepari",
+        "journal": "Int. J. Electron. Lett, vol. 0, no. 0, pp. 1–8, 2025.",
+        "link": ""
+      },
+      {
+        "title": "Partial cooperative NOMA for improving outage performance of edge users",
+        "authors": "D. Bepari, A. Misra, S. Mondal, and I. Bala",
+        "journal": "Int. J. Electron. Lett, vol. 12, no. 1, pp. 69–86, 2024.",
+        "link": ""
+      },
+      {
+        "title": "Performance analysis of CSI independent cache-aided NOMA ordering",
+        "authors": "D. Bepari, S. Mondal, M. A, and M. Guizani",
+        "journal": "Computers and Electrical Engineering, vol. 119, pp. 1–16, 2024.",
+        "link": ""
+      },
+      {
+        "title": "Uplink performance analysis of wireless energy harvesting-enabled NOMA-based networks",
+        "authors": "D. Bepari, S. Mondal, P. Pareek, and N. Gupta",
+        "journal": "Mobile Networks and Applications, pp. 1–11, 2024.",
+        "link": ""
+      },
+      {
+        "title": "Outage analysis of an IRS-assisted relaying NOMA network",
+        "authors": "N. Gupta, D. Bepari, K. Yadav, and S. Mondal",
+        "journal": "Iranian Journal of Science and Technology, Transactions of Electrical Engineering, vol. 48, no. 1, pp. 93–102, 2024.",
+        "link": ""
+      },
+      {
+        "title": "A finite HARQ-based non-orthogonal multiple access for reliable communications",
+        "authors": "A. Misra, I. Bala, D. Bepari, and S. Mondal",
+        "journal": "Int. J. Electron. Lett, vol. 12, no. 2, pp. 178–192, 2024.",
+        "link": ""
+      },
+      {
+        "title": "A survey on applications of cache-aided NOMA",
+        "authors": "D. Bepari et al.",
+        "journal": "IEEE Communications Surveys & Tutorials, vol. 25, no. 3, pp. 1571–1603, 2023.",
+        "link": ""
+      },
+      {
+        "title": "Performance of a multihop cognitive radio network with diversity under imperfect CSI",
+        "authors": "S. Mondal, D. Bepari, and S. Biswas",
+        "journal": "Int. J. Electron. Lett, vol. 11, no. 1, pp. 41–54, 2023.",
+        "link": ""
+      },
+      {
+        "title": "Relay selection and performance analysis of wireless energy harvesting networks",
+        "authors": "S. Biswas, D. Bepari, and S. Mondal",
+        "journal": "Wireless Personal Communications, vol. 114, pp. 3157–3171, 2020.",
+        "link": ""
+      },
+      {
+        "title": "Empirical validation and performance of duty cycle–based DTMC model in channel estimation",
+        "authors": "D. Bepari, S. Koley, and D. Mitra",
+        "journal": "Annals of Telecommunications, vol. 75, pp. 229–240, 2020.",
+        "link": ""
+      },
+      {
+        "title": "Performance of GA in power allocation for underlay cognitive radio systems",
+        "authors": "D. Bepari, and D. Mitra",
+        "journal": "Journal of Communications Technology and Electronics, vol. 63, pp. 1250–1258, 2018.",
+        "link": ""
+      },
+      {
+        "title": "Predictive multi-user dynamic spectrum allocation using hidden semi-markov model",
+        "authors": "S. Koley, D. Bepari, and D. Mitra",
+        "journal": "Journal of Communications Technology and Electronics, vol. 63, pp. 1393–1405, 2018.",
+        "link": ""
+      },
+      {
+        "title": "Compact coplanar waveguide-fed ultra wide band and band switchable slot antenna for cognitive radio front-end system",
+        "authors": "S. Koley, D. Bepari, and L. Murmu",
+        "journal": "Journal of Communications Technology and Electronics, vol. 63, pp. 1373–1378, 2018.",
+        "link": ""
+      },
+      {
+        "title": "A spectral distance based power control scheme for capacity enhancement of OFDM cognitive radio",
+        "authors": "D. Bepari, A. K. Bojja, B. S. Kumar, and D. Mitra",
+        "journal": "Wireless Personal Communications, vol. 90, pp. 157–173, 2016.",
+        "link": ""
+      },
+      {
+        "title": "Improved power loading scheme for orthogonal frequency division multiplexing based cognitive radio",
+        "authors": "D. Bepari and D. Mitra",
+        "journal": "IET communications, vol. 9, no. 16, pp. 2033–2040, 2015.",
+        "link": ""
+      },
+      {
+        "title": "Band-reconfigurable monopole antenna for cognitive radio applications",
+        "authors": "S. Koley, D. Bepari, and D. Mitra",
+        "journal": "IETE Journal of Research, vol. 61, no. 4, pp. 411–416, 2015.",
+        "link": ""
+      },
+      {
+        "title": "Genetic algorithm based finite state markov channel modeling",
+        "authors": "R. Ranjan, D. Bepari, and D. Mitra",
+        "journal": "International Journal of Wireless Communications and Mobile Computing, vol. 1, no. 4, pp. 96–102, 2013.",
+        "link": ""
+      },
+      {
+        "title": "RIS-assisted transmit antenna selection-spatial modulation network with manifold optimization",
+        "authors": "S. Mondal, D. Bepari, S. Maurya, K. Singh, and A. Kaushik",
+        "journal": "in Proceedings of the IEEE Global Communications Conference (GLOBECOM) Workshops, Accepted, Taipei, Taiwan, 2025.",
+        "link": ""
+      },
+      {
+        "title": "Ergodic capacity of hard-switching in hybrid FSO/IRS-assisted rf transmission",
+        "authors": "S. Mondal, D. Bepari, K. Singh, and A. Kaushik",
+        "journal": "in 2025 International Symposium on Multimedia and Communications Technology (ISMAC), IEEE, 2025, pp. 1–6.",
+        "link": ""
+      },
+      {
+        "title": "Optimal time splitting in wireless energy harvesting-enabled sensor networks",
+        "authors": "D. Bepari, S. Mondal, P. Pareek, and N. Gupta",
+        "journal": "in International Conference on Cognitive Computing and Cyber Physical Systems, Springer Nature Switzerland Cham, 2023, pp. 241–252.",
+        "link": ""
+      },
+      {
+        "title": "Throughput maximization in wireless powered energy harvesting based sensor networks",
+        "authors": "A. Chennamadhava, S. Nagamalla, M. Nirati, Y. Vĳayalata, and D. Bepari",
+        "journal": "in 2020 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IEEE, 2020, pp. 1–6.",
+        "link": ""
+      },
+      {
+        "title": "Power allocation in wireless energy harvesting based relaying sensor networks",
+        "authors": "M. Nirati, A. Oruganti, and D. Bepari",
+        "journal": "in 2019 4th International conference on recent trends on electronics, information, communication & technology (RTEICT), IEEE, 2019, pp. 491–495.",
+        "link": ""
+      },
+      {
+        "title": "Impact of primary users duty cycle on optimum secondary users in cognitive radio systems",
+        "authors": "D. Bepari, P. Kumar, and S. K. Choudhary",
+        "journal": "in 2018 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IEEE, 2018, pp. 1–5.",
+        "link": ""
+      },
+      {
+        "title": "GA based optimal power allocation for underlay cognitive radio networks",
+        "authors": "D. Bepari and D. Mitra",
+        "journal": "in 2014 International Conference on Electronics and Communication Systems (ICECS), IEEE, 2014, pp. 1–6.",
+        "link": ""
+      },
+      {
+        "title": "Optimal transmit power in wireless sensor networks using MRC space diversity in presence of shadow fading",
+        "authors": "A. Nandi, D. Bepari, and S. Kundu",
+        "journal": "in 2010 International Conference on Computer and Communication Technology (ICCCT), IEEE, 2010, pp. 28–34.",
+        "link": ""
+      }
+    ],
     "resume": "https://www.iiitp.ac.in/sites/default/files/2026-04/Awarde%20Tender.pdf",
     "expertise": "Cognitive Radio, NOMA, IRS, Energy Harvesting, 5G and beyond communications",
     "google_scholar": "https://scholar.google.com/citations?user=_lxJQiMAAAAJ&hl=en",
-    "orcid": "",
-    "scopus": "",
-    "books_chapters": "",
+    "orcid": "https://orcid.org/0000-0002-3249-5891",
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=36699316700",
+    "books_chapters": [
+      {
+        "title": "Digital Twins Industry 4.0 & 5.0 (Chapter 19)",
+        "link": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003496410-19/digital-twins-industry-4-0-5-0-indu-bala-soumen-mondal-dipen-bepar"
+      }
+    ],
     "patents": "",
     "seminars": [],
-    "projects": "",
+    "projects": "Co-Principal Investigator (Co-PI), ANRF-PAIR Funded Project, Anusandhan National Research Foundation (ANRF), Grant No.: ANRF/PAIR/2025/000017/PAIR, Funding: 4.38 Crore, Duration: 5 Years.",
     "supervisions": "",
-    "email": "",
-    "phone": "",
+    "email": "dipen@iiitp.ac.in",
+    "phone": "8240750687",
     "linkedin": "",
     "facebook": "",
     "twitter": "",
