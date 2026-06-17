@@ -30,29 +30,16 @@ const AdmissionsPage = () => {
     }
   ];
 
-  const importantDocuments = [
+  const specialPrograms = [
     {
-      title: "M.Tech Application form 2026",
-      link: "/documents/Application form Jul 2026-M.Tech.pdf"
+      title: "MTech (Without Scholarship)",
+      applicationLink: "/documents/Application form Jul 2026-M.Tech.pdf",
+      brochureLink: "/documents/IIITP M.Tech.Without Scholarship Admission Brochure Jul-2026.pdf"
     },
     {
-      title: "PhD Application Form 2026",
-      link: "/documents/Application_Form_PhD_July_2026.pdf"
-    },
-    {
-      title: "M.Tech without Scholarship Admission Brochure 2026",
-      link: "/documents/IIITP M.Tech.Without Scholarship Admission Brochure Jul-2026.pdf"
-    },
-    {
-      title: "PhD Brochure July 2026",
-      link: "/documents/PhD_Brochure_July_2026.pdf"
-    }
-  ];
-
-  const announcements = [
-    {
-      title: "Extension of Deadline 2026",
-      link: "/documents/Extension of Deadline 2026.pdf"
+      title: "PhD (Institute Scheme)",
+      applicationLink: "/documents/Application_Form_PhD_July_2026.pdf",
+      brochureLink: "/documents/PhD_Brochure_July_2026.pdf"
     }
   ];
 
@@ -65,9 +52,42 @@ const AdmissionsPage = () => {
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="space-y-8">
-          
-          {/* Main Programs Section */}
+          {/* Main Container */}
           <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 md:p-8">
+            
+            {/* Special Programs Section */}
+            <div className="space-y-8 mb-10">
+              {specialPrograms.map((prog, idx) => (
+                <div key={idx} className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-gray-100 dark:border-gray-800 last:border-b-0 last:pb-0">
+                  <h3 className="text-2xl font-bold font-serif text-primary dark:text-white">
+                    {prog.title}
+                  </h3>
+                  <div className="flex flex-row flex-wrap gap-4 shrink-0">
+                    <a 
+                      href={prog.applicationLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-medium py-2.5 px-6 rounded-lg transition-colors"
+                    >
+                      <FileText size={18} />
+                      Application
+                    </a>
+                    <a 
+                      href={prog.brochureLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 bg-brand-red hover:bg-red-700 text-white font-medium py-2.5 px-6 rounded-lg transition-colors"
+                    >
+                      <FileText size={18} />
+                      Brochure
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Programs Offered Section */}
+            <div>
               <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-6 border-b border-gray-100 dark:border-gray-800 pb-4">
                 Programs Offered
               </h2>
@@ -96,30 +116,8 @@ const AdmissionsPage = () => {
                   </div>
                 ))}
               </div>
-          </div>
-          
-          {/* Important Documents Section */}
-          <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 md:p-8 mt-8">
-              <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-6 border-b border-gray-100 dark:border-gray-800 pb-4 flex items-center gap-2">
-                <FileText size={24} className="text-brand-red" />
-                Important Documents
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {importantDocuments.map((doc, idx) => (
-                  <a 
-                    key={idx}
-                    href={doc.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-4 rounded-xl border border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-800/30 hover:border-brand-red hover:bg-red-50 dark:hover:bg-red-900/20 transition-all duration-200 group"
-                  >
-                    <FileText size={20} className="text-gray-400 group-hover:text-brand-red transition-colors shrink-0" />
-                    <span className="font-semibold text-sm text-gray-800 dark:text-gray-200 group-hover:text-brand-red dark:group-hover:text-red-400 transition-colors line-clamp-2">
-                      {doc.title}
-                    </span>
-                  </a>
-                ))}
-              </div>
+            </div>
+
           </div>
         </div>
       </div>
