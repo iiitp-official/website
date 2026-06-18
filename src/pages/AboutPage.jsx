@@ -24,13 +24,52 @@ const AboutPage = () => {
           <div className="p-8 md:p-12">
             <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed text-lg text-justify">
               <p>
-                Indian Institute of Information Technology Pune, established in 2016, is one of the fastest-growing IIITs among 20 newly established IIITs by the MOE, Government of India, and industry partners as a Not-for-profit Public-Private Partnership (N-PPP) Institution. IIIT Pune is committed to imparting high-quality technical education and instilling a long-term vision among students. Our focus lies not just on academic brilliance but also on the knowledge that is pervasive in areas of emerging technologies. Through our learning and research programs, we aim at building applications of Information Technology whose benefits percolate even to the grassroots level.
+                Recognized as an Institute of National Importance (INI), the Indian Institute of Information Technology Pune (IIIT Pune) is one of the fastest growing IIITs among the 20 newly established IIITs by the Ministry of Education (MoE), Government of India, in partnership with industry, under the Not-for-profit Public-Private Partnership (N-PPP) model. Established in 2016 and located in Pune, Maharashtra, IIIT Pune is dedicated to excellence in education, research, innovation, and entrepreneurship in Information Technology and allied disciplines.
               </p>
               <p>
-                We believe in nurturing graduates as proficient scholars and responsible members of society. Our institute is endowed with state-of-the-art facilities and provides an environment conducive to learning and exploration. Every department in the institute has cutting-edge laboratories. IIIT Pune emphasizes collaboration with leading institutes nationally and internationally through academic exchange programs and fosters industry-academia partnerships, among others.
+                The institute offers undergraduate, postgraduate, and doctoral programmes designed to meet the evolving demands of academia, industry, and society.
               </p>
+              
+              <div className="mt-8 mb-8">
+                <h3 className="text-2xl font-bold font-serif text-[#164e63] dark:text-blue-400 mb-6 border-b-2 border-brand-red pb-2 inline-block">Academic Programmes</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-base">
+                  <div className="bg-blue-50 dark:bg-gray-800/50 border-l-4 border-[#164e63] p-4 rounded-r-lg hover:shadow-md transition-shadow">
+                    <strong className="block text-[#164e63] dark:text-blue-400 mb-1">B.Tech Programmes</strong>
+                    Computer Science and Engineering (CSE)
+                  </div>
+                  <div className="bg-blue-50 dark:bg-gray-800/50 border-l-4 border-[#164e63] p-4 rounded-r-lg hover:shadow-md transition-shadow">
+                    <strong className="block text-[#164e63] dark:text-blue-400 mb-1">B.Tech Programmes</strong>
+                    Electronics and Communication Engineering (ECE)
+                  </div>
+                  <div className="bg-blue-50 dark:bg-gray-800/50 border-l-4 border-[#164e63] p-4 rounded-r-lg hover:shadow-md transition-shadow">
+                    <strong className="block text-[#164e63] dark:text-blue-400 mb-1">B.Tech Programmes</strong>
+                    Artificial Intelligence & Data Science (AI & DS)
+                  </div>
+                  <div className="bg-blue-50 dark:bg-gray-800/50 border-l-4 border-[#164e63] p-4 rounded-r-lg hover:shadow-md transition-shadow">
+                    <strong className="block text-[#164e63] dark:text-blue-400 mb-1">B.Tech Programmes</strong>
+                    Microelectronics and VLSI Design
+                  </div>
+                  <div className="bg-blue-50 dark:bg-gray-800/50 border-l-4 border-[#164e63] p-4 rounded-r-lg hover:shadow-md transition-shadow">
+                    <strong className="block text-[#164e63] dark:text-blue-400 mb-1">B.Tech Programmes</strong>
+                    Cybersecurity
+                  </div>
+                  <div className="bg-blue-50 dark:bg-gray-800/50 border-l-4 border-[#164e63] p-4 rounded-r-lg hover:shadow-md transition-shadow">
+                    <strong className="block text-[#164e63] dark:text-blue-400 mb-1">M.Tech Programmes</strong>
+                    Artificial Intelligence (AI)
+                  </div>
+                  <div className="bg-blue-50 dark:bg-gray-800/50 border-l-4 border-[#164e63] p-4 rounded-r-lg hover:shadow-md transition-shadow">
+                    <strong className="block text-[#164e63] dark:text-blue-400 mb-1">M.Tech Programmes</strong>
+                    Internet of Things (IoT)
+                  </div>
+                  <div className="bg-blue-50 dark:bg-gray-800/50 border-l-4 border-[#164e63] p-4 rounded-r-lg hover:shadow-md transition-shadow">
+                    <strong className="block text-[#164e63] dark:text-blue-400 mb-1">Doctoral Programmes</strong>
+                    Ph.D. in Emerging Areas of Technology and Research
+                  </div>
+                </div>
+              </div>
+
               <p>
-                Several Industry-Institute Partnership Programs, Soft-Skill Trainings, competitions, internships, and student projects are organized to enhance communication skills, commitment, and ethics for comprehensive individual growth. The institute promotes innovation and entrepreneurship by encouraging and supporting creative ideas. Transformation requires a plan and a support system. At Indian Institute of Information Technology Pune, students are expected to work hard and develop the right attitude in their chosen fields. As you embark on this exciting and fruitful journey of your life, walk boldly and diligently.
+                With a strong emphasis on value-based education, interdisciplinary learning, and industry collaboration, IIIT Pune is committed to developing skilled professionals, researchers, and innovators capable of addressing real-world challenges through technology. The institute also promotes responsible innovation and sustainable development, aligning its academic and research initiatives with the United Nations Sustainable Development Goals (SDGs) to create meaningful societal and environmental impact.
               </p>
             </div>
           </div>
