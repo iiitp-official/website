@@ -114,9 +114,9 @@ const LifeClubsPage = () => {
     });
   };
 
-  const openFullScreenFlyer = (c) => {
+  const openFullScreenFlyer = (key, c) => {
     setFlyerPopover({
-      key: 'blueprint',
+      key,
       name: c.name,
       flyer: c.flyer,
       isFullScreen: true,
@@ -254,11 +254,11 @@ const LifeClubsPage = () => {
                 <h2 className="text-2xl md:text-3xl font-extrabold font-serif text-primary dark:text-white">
                   {club.name}
                 </h2>
-                {activeClubKey === 'blueprint' && (
+                {club.flyer && (
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
-                      openFullScreenFlyer(club);
+                      openFullScreenFlyer(activeClubKey, club);
                     }}
                     className="flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-primary-dark dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-xl font-bold transition-all shadow-sm text-xs shrink-0"
                   >
