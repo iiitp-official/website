@@ -317,7 +317,7 @@ const Navbar = () => {
       subLinks: [
         { name: "Overview", path: "/life" },
         {
-          name: "Professional Clubs",
+          name: "Student Clubs",
           hasDropdown: false,
           path: "/life/clubs"
         },
