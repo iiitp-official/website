@@ -58,15 +58,27 @@ const ETenderPage = () => {
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white font-serif">
             {pageTitle}
           </h2>
-          <a 
-            href="https://gem.gov.in/" 
-            target="_blank" rel="noopener noreferrer" 
-            
-            className="inline-flex items-center justify-center gap-2 bg-primary dark:bg-primary-dark text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 dark:hover:bg-blue-900 transition-colors text-sm"
-          >
-            Visit GeM Portal
-            <ExternalLink size={16} />
-          </a>
+          <div className="flex gap-2 items-center">
+            {/* Fees Button */}
+            <a
+              href="https://payments.billdesk.com/bdcollect/bd/indianinstituteofinformationtechnologypuneii/16417"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-primary dark:bg-primary-dark text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 dark:hover:bg-blue-900 transition-colors text-sm"
+            >
+              Fees Payment
+              <ExternalLink size={16} />
+            </a>
+            {/* Visit GeM Portal Button */}
+            <a
+              href="https://gem.gov.in/"
+              target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-primary dark:bg-primary-dark text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 dark:hover:bg-blue-900 transition-colors text-sm"
+            >
+              Visit GeM Portal
+              <ExternalLink size={16} />
+            </a>
+          </div>
         </div>
         
         <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 w-full overflow-hidden flex flex-col">
