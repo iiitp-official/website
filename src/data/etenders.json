@@ -1,13 +1,13 @@
 {
   "live": [
     {
-      "title": "Allotment of Shops in the Institute Shopping Complex",
-      "tenderNumber": "भा.सू.प्रौ.सं.पु/क्रय/शॉपिंग काम्प्लेक्स /2026/2473 dated 25.03.2026",
-      "fileUrl": "/assets/etenders/Notice2 - Shops.pdf",
+      "title": "GeM Bid For Empanelment of Service Providers for Hiring of Bus Services",
+      "tenderNumber": "GEM/2026/B/7678945 dated 18.06.2026",
+      "fileUrl": "/assets/etenders/GeM bid For Empanelment of Service Providers for Hiring of Bus Services.pdf",
       "fileText": "Document",
       "corrigendumUrl": "",
       "corrigendumText": "",
-      "submissionDate": "May 29, 2026 - 16:00"
+      "submissionDate": "July 7, 2026 - 11:30"
     },
     {
       "title": "GEM bid for Supply, Installation, Testing &amp; Commissioning of 50 KLD Sewage Treatment Plant (STP)",
@@ -27,14 +27,62 @@
       "corrigendumText": "",
       "submissionDate": "June 6, 2026 - 17:00"
     },
+    
     {
-      "title": "Allotment of Shops in the Institute Shopping Complex",
-      "tenderNumber": "भा.सू.प्रौ.सं.पु/क्रय/शॉपिंग काम्प्लेक्स /2026/2473 dated 25.03.2026",
-      "fileUrl": "/assets/etenders/2026-05/Notice_Shops_.pdf",
+      "title": "GeM bid for Supply and Installation of MS Grills in Balconies",
+      "tenderNumber": "GEM/2026/B/7515930 dated  08-05-2026",
+      "fileUrl": "/assets/etenders/GeM bid for Supply and Installation of MS Grills.pdf",
       "fileText": "Document",
       "corrigendumUrl": "",
       "corrigendumText": "",
-      "submissionDate": "May 28, 2026 - 16:00"
+      "submissionDate": "May 29, 2026 - 16:30"
+    },
+    {
+      "title": "GeM bid for hiring of Security Manpower on outsourced basis",
+      "tenderNumber": "GEM/2025/B/6893862 dated 14.11.2025",
+      "fileUrl": "/assets/etenders/GeM bid for Security Manpower.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "December 11, 2025 - 11:30"
+    },
+    {
+      "title": "GeM bid for hiring of Office Manpower on Outsourced basis",
+      "tenderNumber": "GEM/2025/B/6884983 dated 13.11.2025",
+      "fileUrl": "/assets/etenders/GeM bid for Hiring of Office Manpower on outsourced basis.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "/assets/etenders/Corrigendum-Office Manpower.pdf",
+      "corrigendumText": "Document",
+      "submissionDate": "December 11, 2025 - 11:30"
+    }
+  ],
+  "archive": [
+      {
+      "title": "Tender for Allotment of Shops in the Institute Shopping Complex",
+      "tenderNumber": "भा.सू.प्रौ.सं.पु/क्रय/शॉपिंग काम्प्लेक्स /2026/2473 dated 25.03.2026",
+      "fileUrl": "/assets/etenders/Tender for Shop Allotment in the Shopping Complex.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "/assets/etenders/Corigendum to Shop Tender.pdf",
+      "corrigendumText": "Document",
+      "submissionDate": "April 22, 2026 - 17:00"
+    },
+    {
+      "title": "GeM bid for Purchase of All In One System",
+      "tenderNumber": "GEM/2026/B/7211922 dated 10.02.2026",
+      "fileUrl": "/assets/etenders/GeM bid for All In One Systems.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "/assets/etenders/Corri_AIO.pdf",
+      "corrigendumText": "Document",
+      "submissionDate": "March 9, 2026 - 15:30"
+    },
+    {
+      "title": "Cancellation of Tenders",
+      "tenderNumber": "GeM Bid No.: GEM/2026/B/7396100 dated 27.03.2026, GeM Bid No.: GEM/2026/B/7393916 dated 27.03.2026,  GeM Bid No.: GEM/2026/B/7343247 dated 12.03.2026, GeM Bid No.: GEM/2026/B/7349782 dated 12.03.2026 and GeM Bid No.: GEM/2026/B/7349476 dated 12.03.2026",
+      "fileUrl": "/assets/etenders/Cancellation of Tender_08.05.2026.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "May 9, 2026 - 14:45"
     },
     {
       "title": "GeM bid For Empanelment of Service Providers for Hiring of Buses",
@@ -53,6 +101,15 @@
       "corrigendumUrl": "",
       "corrigendumText": "",
       "submissionDate": "May 30, 2026 - 20:30"
+    },
+    {
+      "title": "Allotment of Shops in the Institute Shopping Complex",
+      "tenderNumber": "भा.सू.प्रौ.सं.पु/क्रय/शॉपिंग काम्प्लेक्स /2026/2473 dated 25.03.2026",
+      "fileUrl": "/assets/etenders/Notice2 - Shops.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "May 29, 2026 - 16:00"
     },
     {
       "title": "GeM bid for Provisioning of 2 lacs liter capacity of underground water tank at IIIT Pune Campus",
@@ -81,62 +138,6 @@
       "corrigendumText": "",
       "submissionDate": "May 29, 2026 - 16:30"
     },
-    {
-      "title": "GeM bid for Supply and Installation of MS Grills in Balconies",
-      "tenderNumber": "GEM/2026/B/7515930 dated  08-05-2026",
-      "fileUrl": "/assets/etenders/GeM bid for Supply and Installation of MS Grills.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "May 29, 2026 - 16:30"
-    },
-    {
-      "title": "Cancellation of Tenders",
-      "tenderNumber": "GeM Bid No.: GEM/2026/B/7396100 dated 27.03.2026, GeM Bid No.: GEM/2026/B/7393916 dated 27.03.2026,  GeM Bid No.: GEM/2026/B/7343247 dated 12.03.2026, GeM Bid No.: GEM/2026/B/7349782 dated 12.03.2026 and GeM Bid No.: GEM/2026/B/7349476 dated 12.03.2026",
-      "fileUrl": "/assets/etenders/Cancellation of Tender_08.05.2026.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "May 9, 2026 - 14:45"
-    },
-    {
-      "title": "Tender for Allotment of Shops in the Institute Shopping Complex",
-      "tenderNumber": "भा.सू.प्रौ.सं.पु/क्रय/शॉपिंग काम्प्लेक्स /2026/2473 dated 25.03.2026",
-      "fileUrl": "/assets/etenders/Tender for Shop Allotment in the Shopping Complex.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "/assets/etenders/Corigendum to Shop Tender.pdf",
-      "corrigendumText": "Document",
-      "submissionDate": "April 22, 2026 - 17:00"
-    },
-    {
-      "title": "GeM bid for Purchase of All In One System",
-      "tenderNumber": "GEM/2026/B/7211922 dated 10.02.2026",
-      "fileUrl": "/assets/etenders/GeM bid for All In One Systems.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "/assets/etenders/Corri_AIO.pdf",
-      "corrigendumText": "Document",
-      "submissionDate": "March 9, 2026 - 15:30"
-    },
-    {
-      "title": "GeM bid for hiring of Security Manpower on outsourced basis",
-      "tenderNumber": "GEM/2025/B/6893862 dated 14.11.2025",
-      "fileUrl": "/assets/etenders/GeM bid for Security Manpower.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "December 11, 2025 - 11:30"
-    },
-    {
-      "title": "GeM bid for hiring of Office Manpower on Outsourced basis",
-      "tenderNumber": "GEM/2025/B/6884983 dated 13.11.2025",
-      "fileUrl": "/assets/etenders/GeM bid for Hiring of Office Manpower on outsourced basis.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "/assets/etenders/Corrigendum-Office Manpower.pdf",
-      "corrigendumText": "Document",
-      "submissionDate": "December 11, 2025 - 11:30"
-    }
-  ],
-  "archive": [
     {
       "title": "Result of Financial Evalution_EOI for Laundry Services",
       "tenderNumber": "IIITP/HMC/Laundry Services/ 2025/1",
