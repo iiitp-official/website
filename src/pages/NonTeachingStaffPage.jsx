@@ -56,7 +56,7 @@ const NonTeachingStaffPage = () => {
                   <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mt-6 bg-gray-100 dark:bg-gray-800 relative overflow-hidden rounded-full shadow-md border-4 border-white dark:border-gray-800 shrink-0">
                     {staff.image ? (
                       <img 
-                        src={staff.image.startsWith('http') ? staff.image : `https://www.iiitp.ac.in${staff.image}`}
+                        src={staff.image}
                         alt={staff.name}
                         loading="lazy"
                         className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
