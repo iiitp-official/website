@@ -31,10 +31,22 @@ const DirectorPage = () => {
 
                 <div className="space-y-4 text-sm text-gray-700 dark:text-gray-300 leading-relaxed text-justify mt-6">
                   <p>
-                    <span className="font-semibold text-gray-900 dark:text-white">Prof. Vineet Kansal</span> has assumed charge as the Director of the <span className="font-semibold text-gray-900 dark:text-white">Indian Institute of Information Technology (IIIT) Pune</span> with effect from the forenoon of <span className="font-semibold text-gray-900 dark:text-white">April 4, 2026</span>, following his appointment by the Hon'ble President of India in his capacity as the Visitor of the Institute. The appointment order was issued by the Ministry of Education, Government of India.
+                    Welcome to the Indian Institute of Information Technology Pune (IIIT Pune), an Institute of National Importance. As a part of the prestigious IIIT ecosystem established by the Government of India, IIITs have played a significant role in developing highly skilled professionals, researchers, and innovators in Information Technology. Building on this legacy, IIIT Pune is committed to excellence in education, research, innovation, and entrepreneurship while fostering a culture of academic rigor, creativity, and lifelong learning. 
                   </p>
                   <p>
-                    As Director, Prof. Kansal is committed to strengthening the Institute's academic and research ecosystem, fostering innovation, and guiding IIIT Pune in alignment with its vision and mission, while addressing emerging national priorities in higher education.
+                    We live in an era where technology is transforming every aspect of human life. The opportunities and challenges of this rapidly evolving world demand professionals who possess not only technical expertise but also the ability to think critically, innovate responsibly, and contribute meaningfully to society. To prepare students for these opportunities and challenges, our academic philosophy is centred on focusing on fundamentals and value-based learning. We believe that true learning extends beyond the classroom. Through experiential learning, project-based learning, hands-on laboratory work, and interdisciplinary engagement, we empower students to apply their knowledge to real-world challenges. Alongside technical competence, we place equal emphasis on ethics, creativity, teamwork, communication, and leadership, ensuring the holistic development of every student.
+                  </p>
+                  <p>
+                    As a young and dynamic institution, we place research, innovation, and knowledge creation at the core of our vision. Through collaborative research initiatives and partnerships with leading national and international academic institutions, and industry leaders, we seek to advance knowledge and develop impactful solutions to contemporary challenges. Our industry-academia collaborations enable practitioners and domain experts to work closely with faculty through teaching, mentoring, workshops, and joint projects, enriching both learning and research. These engagements provide students and faculties with valuable exposure to emerging technologies and real-world problem-solving, helping them bridge the gap between theory and practice. 
+                  </p>
+                  <p>
+                    The institute is also committed to contributing to national priorities and developmental goals. We seek to support initiatives such as the IndiaAI Mission, the National Semiconductor Mission, and the vision of Viksit Bharat 2047. We believe that technology should serve as a force for inclusive growth, sustainable development, and societal well-being, and we encourage our students to develop solutions that create positive impact at local, national, and global levels.
+                  </p>
+                  <p>
+                    As we move forward, our aspiration is to build IIIT Pune into a globally recognized centre of excellence in Information Technology, Computer Science, Artificial Intelligence, Semiconductors, Electronics, and emerging digital technologies. Together, with the collective efforts of our students, faculty, staff, alumni, industry partners, and society, we will continue to create knowledge, nurture talent, and contribute to a technology-driven and sustainable future.
+                  </p>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200">
+                    I invite aspiring minds to join us in this journey of learning, discovery, innovation, and service to society. 
                   </p>
                 </div>
               </div>
