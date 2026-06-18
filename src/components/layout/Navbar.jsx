@@ -223,6 +223,15 @@ const Navbar = () => {
       subLinks: [
         { name: "Academic Calendar", path: "/academics/Calendar" },
         {
+          name: "Departments",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Computer Science and Engineering (CSE)", path: "/departments/cse" },
+            { name: "Electronics and Communication Engineering (ECE)", path: "/departments/ece" },
+            { name: "Applied Sciences & Humanities (AS & H)", path: "/departments/ash" },
+          ]
+        },
+        {
           name: "B.Tech.",
           hasDropdown: true,
           subLinks: [
@@ -674,7 +683,9 @@ const Navbar = () => {
                     "E-TENDER": "/e-tender"
                   }[link.name];
                   const isLinkActive = link.path === "#" 
-                    ? !!(prefix && location.pathname.startsWith(prefix))
+                    ? (link.name === "Academics" 
+                        ? location.pathname.startsWith("/academics") || location.pathname.startsWith("/departments")
+                        : !!(prefix && location.pathname.startsWith(prefix)))
                     : isActive || !!(prefix && location.pathname.startsWith(prefix));
                   return navLinkClass({ isActive: isLinkActive });
                 }}
@@ -692,7 +703,9 @@ const Navbar = () => {
                     "E-TENDER": "/e-tender"
                   }[link.name];
                   const activeState = link.path === "#" 
-                    ? !!(prefix && location.pathname.startsWith(prefix))
+                    ? (link.name === "Academics"
+                        ? location.pathname.startsWith("/academics") || location.pathname.startsWith("/departments")
+                        : !!(prefix && location.pathname.startsWith(prefix)))
                     : isActive || !!(prefix && location.pathname.startsWith(prefix));
                   return (
                     <>
