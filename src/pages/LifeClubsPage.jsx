@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ExternalLink, Image, Mail } from 'lucide-react';
+import { ExternalLink, Image, Mail, X } from 'lucide-react';
 import LifePageLayout from '../components/life/LifePageLayout';
 import lifePageData from '../data/lifePageData.json';
 
@@ -29,20 +29,162 @@ const LifeClubsPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedImage, setSelectedImage] = useState(null);
   const activeClubKey = searchParams.get('club') || 'blueprint';
+  const [flyerPopover, setFlyerPopover] = useState(null);
+  const [imageError, setImageError] = useState(false);
+
+  const openTimeoutRef = useRef(null);
+  const closeTimeoutRef = useRef(null);
+
+  useEffect(() => {
+    setImageError(false);
+  }, [flyerPopover?.key]);
+
+  useEffect(() => {
+    const handleClose = () => {
+      setFlyerPopover(null);
+    };
+
+    if (flyerPopover) {
+      window.addEventListener('scroll', handleClose, { passive: true });
+      window.addEventListener('click', handleClose);
+    }
+
+    return () => {
+      window.removeEventListener('scroll', handleClose);
+      window.removeEventListener('click', handleClose);
+    };
+  }, [flyerPopover]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setFlyerPopover(null);
+      }
+    };
+    if (flyerPopover) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [flyerPopover]);
+
+  const showFlyerPopover = (target, key, c, toggleOnMatch = false) => {
+    if (toggleOnMatch && flyerPopover?.key === key) {
+      setFlyerPopover(null);
+      return;
+    }
+    
+    const rect = target.getBoundingClientRect();
+    const isMobile = window.innerWidth < 1024;
+    const popoverWidth = isMobile ? 320 : 520;
+    
+    let leftPos = rect.right + 12;
+    if (!isMobile && leftPos + popoverWidth > window.innerWidth) {
+      leftPos = Math.max(16, rect.left - popoverWidth - 12);
+    } else if (isMobile) {
+      leftPos = (window.innerWidth - popoverWidth) / 2;
+    }
+    
+    // Position vertically centered relative to the clicked button/link with safety margins
+    const popoverHeight = isMobile ? 480 : 660;
+    const buttonCenter = rect.top + rect.height / 2;
+    let topPos = buttonCenter - popoverHeight / 2;
+    topPos = Math.max(16, Math.min(window.innerHeight - popoverHeight - 16, topPos));
+    
+    setFlyerPopover({
+      key,
+      name: c.name,
+      flyer: c.flyer,
+      top: topPos,
+      left: leftPos,
+      width: popoverWidth,
+      isMobile,
+    });
+  };
+
+  const handleMouseEnterButton = (e, key, c) => {
+    const isMobile = window.innerWidth < 1024;
+    if (isMobile) return;
+
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+
+    const currentTarget = e.currentTarget;
+    if (openTimeoutRef.current) {
+      clearTimeout(openTimeoutRef.current);
+    }
+    openTimeoutRef.current = setTimeout(() => {
+      showFlyerPopover(currentTarget, key, c);
+    }, 150);
+  };
+
+  const handleMouseLeaveButton = () => {
+    const isMobile = window.innerWidth < 1024;
+    if (isMobile) return;
+
+    if (openTimeoutRef.current) {
+      clearTimeout(openTimeoutRef.current);
+      openTimeoutRef.current = null;
+    }
+
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
+    closeTimeoutRef.current = setTimeout(() => {
+      setFlyerPopover(null);
+    }, 250);
+  };
+
+  const handleMouseEnterPopover = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+  };
+
+  const handleMouseLeavePopover = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
+    closeTimeoutRef.current = setTimeout(() => {
+      setFlyerPopover(null);
+    }, 200);
+  };
+
+  const handleButtonClick = (e, key, c) => {
+    const isMobile = window.innerWidth < 1024;
+    if (isMobile) {
+      showFlyerPopover(e.currentTarget, key, c, true);
+    } else {
+      if (openTimeoutRef.current) {
+        clearTimeout(openTimeoutRef.current);
+        openTimeoutRef.current = null;
+      }
+      setSearchParams({ club: key });
+      setFlyerPopover(null);
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      if (openTimeoutRef.current) clearTimeout(openTimeoutRef.current);
+      if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (activeClubKey === 'saaz') {
-      window.location.href = 'https://saaz-iiitp.vercel.app/';
-    }
   }, [activeClubKey]);
 
   const clubKeys = Object.keys(CLUBS);
   const club = CLUBS[activeClubKey] || CLUBS[clubKeys[0]];
 
   return (
-    <LifePageLayout 
-      title="Student Life" 
+    <LifePageLayout
+      title="Student Life"
       subtitle="Discover the vibrant clubs, events, campus facilities, and extracurricular opportunities at IIIT Pune."
       breadcrumb="Life"
       selectedImage={selectedImage}
@@ -61,12 +203,13 @@ const LifeClubsPage = () => {
                 return (
                   <button
                     key={key}
-                    onClick={() => setSearchParams({ club: key })}
-                    className={`shrink-0 lg:shrink lg:w-full flex flex-row lg:flex-col items-center lg:items-start gap-2 lg:gap-0 px-4 py-2 lg:px-3.5 lg:py-3 rounded-full lg:rounded-xl text-left transition-all duration-250 border ${
-                      isSelected
+                    onClick={(e) => handleButtonClick(e, key, c)}
+                    onMouseEnter={(e) => handleMouseEnterButton(e, key, c)}
+                    onMouseLeave={handleMouseLeaveButton}
+                    className={`shrink-0 lg:shrink lg:w-full flex flex-row lg:flex-col items-center lg:items-start gap-2 lg:gap-0 px-4 py-2 lg:px-3.5 lg:py-3 rounded-full lg:rounded-xl text-left transition-all duration-250 border ${isSelected
                         ? 'bg-primary text-white border-primary shadow-sm'
                         : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700'
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center gap-2 w-full">
                       <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isSelected ? 'bg-white' : 'bg-primary'}`} />
@@ -206,60 +349,158 @@ const LifeClubsPage = () => {
               </div>
             </div>
 
-            {activeClubKey === 'eclectic' ? (
-              <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-8 flex items-center justify-center">
-                <a
-                  href="https://eclectic-iiitp.github.io/eclectic/"
-                  target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-xs shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
-                >
-                  <span>Visit Eclectic Website</span>
-                  <ExternalLink size={14} />
-                </a>
-              </div>
-            ) : (
-              <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-8">
-                <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-4">
-                  Activities Gallery
-                </h3>
-                {club.images && club.images.length > 0 ? (
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                    {club.images.map((imgUrl, idx) => (
-                      <div
-                        key={idx}
-                        onClick={() => setSelectedImage(imgUrl)}
-                        className="group relative aspect-video rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800/80 shadow-sm cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
-                      >
-                        <img
-                          src={imgUrl}
-                          alt={`${club.name} Activity ${idx + 1}`}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                          onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
-                        />
-                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-[2px]">
-                          <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                            <Image size={18} />
-                          </div>
+            <div className="mt-8 border-t border-gray-100 dark:border-gray-800 pt-8">
+              <h3 className="text-lg font-bold font-serif text-primary dark:text-white mb-4">
+                Activities Gallery
+              </h3>
+              {club.images && club.images.length > 0 ? (
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                  {club.images.map((imgUrl, idx) => (
+                    <div
+                      key={idx}
+                      onClick={() => setSelectedImage(imgUrl)}
+                      className="group relative aspect-video rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800/80 shadow-sm cursor-pointer hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                    >
+                      <img
+                        src={imgUrl}
+                        alt={`${club.name} Activity ${idx + 1}`}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
+                      />
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-[2px]">
+                        <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                          <Image size={18} />
                         </div>
                       </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="border-2 border-dashed border-gray-200 dark:border-gray-800 rounded-2xl p-8 flex flex-col items-center justify-center text-center bg-gray-50/50 dark:bg-gray-900/10">
-                    <div className={`w-12 h-12 rounded-xl bg-primary/10 text-primary mb-3 shadow-xs`}>
-                      <Image size={22} />
                     </div>
-                    <h4 className="text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">Gallery Updates in Progress</h4>
-                    <p className="text-[11px] text-gray-500 dark:text-gray-400 max-w-sm leading-relaxed">
-                      We are currently updating visual highlights for {club.name}. Check back soon to see snapshots of our fests, workshops, and competitions!
-                    </p>
+                  ))}
+                </div>
+              ) : (
+                <div className="border-2 border-dashed border-gray-200 dark:border-gray-800 rounded-2xl p-8 flex flex-col items-center justify-center text-center bg-gray-50/50 dark:bg-gray-900/10">
+                  <div className={`w-12 h-12 rounded-xl bg-primary/10 text-primary mb-3 shadow-xs`}>
+                    <Image size={22} />
                   </div>
-                )}
-              </div>
-            )}
+                  <h4 className="text-xs font-bold text-gray-750 dark:text-gray-300 mb-1">Gallery Updates in Progress</h4>
+                  <p className="text-[11px] text-gray-500 dark:text-gray-400 max-w-sm leading-relaxed">
+                    We are currently updating visual highlights for {club.name}. Check back soon to see snapshots of our fests, workshops, and competitions!
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
+
+      {/* Leadership Structure Table Section */}
+      <div className="mt-12 bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm">
+        <h2 className="text-xl md:text-2xl font-extrabold font-serif text-primary dark:text-white mb-6 text-center">
+          Professional Clubs Leadership Structure
+        </h2>
+        
+        <div className="overflow-x-auto rounded-2xl border border-gray-100 dark:border-gray-800">
+          <table className="w-full text-left border-collapse bg-white dark:bg-surface-dark">
+            <thead>
+              <tr className="bg-primary text-white border-b border-primary/20">
+                <th className="px-6 py-4 font-bold text-sm">Club Name</th>
+                <th className="px-6 py-4 font-bold text-sm">Club Head</th>
+                <th className="px-6 py-4 font-bold text-sm">Club Co-Head</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100 dark:divide-gray-800 text-sm">
+              {clubKeys
+                .filter(key => key !== 'c-cube') // Exclude C-CUBE to match allclub.html
+                .map((key) => {
+                  const c = CLUBS[key];
+                  const headObj = c.leadership?.heads?.find(h => {
+                    const r = h.role.toLowerCase();
+                    return r.includes('head') && !r.includes('co-head') && !r.includes('co head');
+                  });
+                  const coHeadObj = c.leadership?.heads?.find(h => {
+                    const r = h.role.toLowerCase();
+                    return r.includes('co-head') || r.includes('co head');
+                  });
+                  
+                  const head = headObj ? headObj.name : "-";
+                  const coHead = coHeadObj ? coHeadObj.name : "-";
+                  
+                  return (
+                    <tr 
+                      key={key} 
+                      className="hover:bg-gray-50/50 dark:hover:bg-gray-850/30 transition-colors"
+                    >
+                      <td className="px-6 py-4 font-bold text-primary dark:text-blue-400">
+                        <button
+                          onClick={(e) => handleButtonClick(e, key, c)}
+                          onMouseEnter={(e) => handleMouseEnterButton(e, key, c)}
+                          onMouseLeave={handleMouseLeaveButton}
+                          className="hover:underline text-left focus:outline-none"
+                        >
+                          {c.name}
+                        </button>
+                      </td>
+                      <td className="px-6 py-4 text-gray-700 dark:text-gray-300">{head}</td>
+                      <td className="px-6 py-4 text-gray-700 dark:text-gray-300">{coHead}</td>
+                    </tr>
+                  );
+                })}
+            </tbody>
+          </table>
+        </div>
+      </div>      {/* Flyer Popover (Hovor) */}
+      {flyerPopover && (
+        <div
+          onClick={(e) => e.stopPropagation()}
+          onMouseEnter={handleMouseEnterPopover}
+          onMouseLeave={handleMouseLeavePopover}
+          style={{
+            position: 'fixed',
+            top: `${flyerPopover.top}px`,
+            left: `${flyerPopover.left}px`,
+            width: `${flyerPopover.width}px`,
+          }}
+          className="z-[9999] bg-white/95 dark:bg-surface-dark/95 backdrop-blur-md border border-gray-200 dark:border-gray-800 rounded-2xl p-4 shadow-xl flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-150 max-h-[85vh] overflow-y-auto no-scrollbar"
+        >
+          <div className="flex justify-between items-center w-full mb-3 pb-2 border-b border-gray-100 dark:border-gray-855 shrink-0">
+            <h4 className="text-sm font-bold font-serif text-primary dark:text-white truncate pr-4">
+              {flyerPopover.name} Flyer
+            </h4>
+            <button
+              onClick={() => setFlyerPopover(null)}
+              className="p-1 text-gray-400 hover:text-gray-655 dark:hover:text-gray-255 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
+              aria-label="Close flyer"
+            >
+              <X size={16} />
+            </button>
+          </div>
+          
+          {flyerPopover.flyer && !imageError ? (
+            <div className="w-full max-h-[65vh] overflow-hidden rounded-lg border border-gray-100 dark:border-gray-855 flex items-center justify-center bg-gray-50 dark:bg-gray-900/50">
+              <img
+                src={flyerPopover.flyer}
+                alt={`${flyerPopover.name} Flyer`}
+                className="max-h-[65vh] w-full object-contain"
+                onError={() => setImageError(true)}
+              />
+            </div>
+          ) : (
+            <div className="w-full h-64 rounded-xl bg-gradient-to-br from-blue-500/10 to-indigo-500/10 flex flex-col items-center justify-center border border-blue-100 dark:border-blue-900/20 text-center p-4">
+              <Image size={32} className="text-primary dark:text-blue-400 mb-2 opacity-70" />
+              <span className="text-xs font-bold text-gray-750 dark:text-gray-300 mb-0.5">{flyerPopover.name}</span>
+              <span className="text-[10px] text-gray-500 dark:text-gray-455">Flyer details loading or unavailable</span>
+            </div>
+          )}
+          
+          <button
+            onClick={() => {
+              setSearchParams({ club: flyerPopover.key });
+              setFlyerPopover(null);
+            }}
+            className="mt-3.5 w-full flex items-center justify-center gap-1.5 px-4 py-2 bg-primary hover:bg-primary-dark dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-xl font-bold transition-all shadow-md text-xs animate-none shrink-0"
+          >
+            <span>Know More</span>
+          </button>
+        </div>
+      )}
     </LifePageLayout>
   );
 };
