@@ -243,7 +243,14 @@ const Navbar = () => {
           ]
         },
         { name: "Ph.D.", path: "/academics/phd" },
-        { name: "Fee Structure", path: "/docs/Fee_Structure_2025-26.pdf", isExternal: true },
+        { 
+          name: "Fees", 
+          hasDropdown: true, 
+          subLinks: [
+            { name: "Fees Structure", path: "/docs/Fee_Structure_2026-27.pdf", isExternal: true },
+            { name: "Fees Payment", path: "https://www.onlinesbi.sbi/sbicollect/icollecthome.htm", isExternal: true },
+          ]
+        },
         { name: "Ordinance", path: "/academics/ordinance" },
         {
           name: "Library",
