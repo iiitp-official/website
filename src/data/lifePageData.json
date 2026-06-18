@@ -712,9 +712,9 @@
         "During the event, Prof. R. Gururaj from the Department of Humanities and Social Sciences at NIT Trichy addressed the gathering on the topic of \"Unity of Purpose\" via Google Meet, encouraging the participants to convert small local improvements into significant national gains."
       ],
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/azadikamohotsav.png",
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/1.png",
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/2_0.png"
+        "/assets/lifepage/azadikamohotsav.png",
+        "/assets/lifepage/1.png",
+        "/assets/lifepage/2_0.png"
       ]
     },
     {
@@ -726,7 +726,7 @@
         "The institute has also raised awareness among students through patriotic song presentations, a special guest lecture on e-waste management during Swachh Bharat Pakhwada 2021, and an Integrity Pledge-taking ceremony — all contributing to building a socially responsible and self-reliant student community."
       ],
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/ebbs.png"
+        "/assets/lifepage/ebbs.png"
       ]
     },
     {
@@ -737,7 +737,7 @@
         "In support of this movement, IIIT Pune organized the \"Fit India Freedom Run\" on August 13, 2021. The event witnessed enthusiastic participation from students and faculty members who ran to promote a physically active lifestyle, keeping in view all necessary health and safety guidelines. The campus continues to encourage sports and regular physical exercises to maintain sound mental and physical well-being."
       ],
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/fit%20india.png"
+        "/assets/lifepage/fit india.png"
       ]
     },
     {
@@ -771,7 +771,7 @@
         "As directed by the Ministry of Education, IIIT Pune organized a special guest lecture during Swachh Pakhwada 2021 to identify and promote innovative cleanliness practices. The session, held on 14th September 2021, saw Ms. Shipra Bhalla Chaudhary guide students and staff on modern and effective methods of e-waste management, raising awareness about responsible disposal and sustainable practices."
       ],
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/swachbharat.png"
+        "/assets/lifepage/swachbharat.png"
       ]
     },
     {
@@ -782,7 +782,7 @@
         "The ceremony was held on 2nd October 2021 via Google Meet, bringing together faculty members, administrative staff, and students. By taking the integrity pledge, participants committed themselves to support transparency, moral principles, and a corruption-free society, contributing collectively toward a self-reliant and strong India."
       ],
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/unityPledge.png"
+        "/assets/lifepage/unityPledge.png"
       ]
     },
     {
@@ -815,10 +815,10 @@
         "The celebration at IIIT Pune was organized under the theme \"Channelizing Youth Power for Nation Building\". The institute hosted motivational speech contests, lectures, and group discussions aimed at sharing the vital and empowering thoughts of Swami Vivekananda among the student community, inspiring them to lead purposeful lives."
       ],
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/y1.png",
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/y2.png",
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/3.png",
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/4.png"
+        "/assets/lifepage/y1.png",
+        "/assets/lifepage/y2.png",
+        "/assets/lifepage/3.png",
+        "/assets/lifepage/4.png"
       ]
     },
     {
@@ -830,11 +830,11 @@
         "After highly competitive rounds, Team Bit Misfit from VIT secured 1st Place. Cypherforce from MMCOE, Mumbai and Dev Sters from IIIT Pune were jointly awarded 2nd Place, while Team Weights of Sin from DJSCE, Mumbai secured 3rd Place out of the prize pool of over ₹20,000."
       ],
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/2026-02/1_0.jpg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-02/2.jpg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-02/3.jpg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-02/4.jpg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-02/5_0.jpg"
+        "/assets/lifepage/1_0.jpg",
+        "/assets/lifepage/2.jpg",
+        "/assets/lifepage/3.jpg",
+        "/assets/lifepage/4.jpg",
+        "/assets/lifepage/5_0.jpg"
       ]
     }
   ],
@@ -842,32 +842,32 @@
     {
       "title": "Traditional Day Celebration",
       "category": "Cultural",
-      "imgUrl": "https://iiitp.ac.in/sites/default/files/2023-03/DSC_0845%20%281%29%20%281%29.jpg"
+      "imgUrl": "/assets/lifepage/DSC_0845 (1) (1).jpg"
     },
     {
       "title": "Mridangam Performance & Fest",
       "category": "Cultural",
-      "imgUrl": "https://iiitp.ac.in/sites/default/files/2023-03/DSC_3082%20%281%29%20%281%29.jpg"
+      "imgUrl": "/assets/lifepage/DSC_3082 (1) (1).jpg"
     },
     {
       "title": "Republic Day Celebration Flag Hoisting",
       "category": "National Day",
-      "imgUrl": "https://www.iiitp.ac.in/sites/default/files/inline-images/1.jpg"
+      "imgUrl": "/assets/lifepage/1.jpg"
     },
     {
       "title": "IIIT Pune Campus Life Highlights",
       "category": "Campus Life",
-      "imgUrl": "https://www.iiitp.ac.in/sites/default/files/inline-images/1_2.jpg"
+      "imgUrl": "/assets/lifepage/1_2.jpg"
     },
     {
       "title": "Fit India Movement Athletic Drive",
       "category": "Sports",
-      "imgUrl": "https://www.iiitp.ac.in/sites/default/files/inline-images/Picture%20%281%29.jpeg"
+      "imgUrl": "/assets/lifepage/Picture (1).jpeg"
     },
     {
       "title": "Republic Day March & Gatherings",
       "category": "National Day",
-      "imgUrl": "https://www.iiitp.ac.in/sites/default/files/inline-images/repub.jpg"
+      "imgUrl": "/assets/lifepage/repub.jpg"
     }
   ],
   "EVENTS": [
@@ -877,9 +877,9 @@
       "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
       "desc": "iConclave is IIIT Pune's flagship annual fest — a seamless blend of technology, culture, and community. The 2026 edition featured the Thinking Machine AI Hackathon, the Hashiriya Bot Racing Championship by ROFIES, the Zokei Poster Design Contest by Blueprint, Nritya Nova dance battles by Vanity Crew, and more. Thousands of students from colleges across Pune and India participated, making it the biggest edition yet.",
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/2026-05/R.O.FI_.E.S_2.jpeg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-05/rang12.JPG",
-        "https://www.iiitp.ac.in/sites/default/files/2026-02/1.jpg"
+        "/assets/lifepage/R.O.FI_.E.S_2.jpeg",
+        "/assets/lifepage/rang12.JPG",
+        "/assets/lifepage/1.jpg"
       ],
       "highlights": [
         "AI Hackathon — 330+ teams",
@@ -894,9 +894,9 @@
       "typeColor": "bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300",
       "desc": "Ananta is the annual socio-cultural festival of IIIT Pune. Spanning three vibrant days, it features group dance battles, fashion pageants (like Halo Runway by RANG), vocal showcases by SAAZ, nukkad natak street plays by Abhinay, quiz nights by Q-riocity, acoustic unplugged evenings, rangoli installations, and a grand closing concert with star performances. It draws participants from top colleges across Maharashtra.",
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/2026-05/rang6.jpg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-05/rang8.jpeg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-05/Picture2.jpg"
+        "/assets/lifepage/rang6.jpg",
+        "/assets/lifepage/rang8.jpeg",
+        "/assets/lifepage/Picture2.jpg"
       ],
       "highlights": [
         "Dance Battles",
@@ -911,9 +911,9 @@
       "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
       "desc": "Eklavya is the annual three-day sports festival organized by the IIIT Pune Sports Club. It features competitive tournaments in football, cricket, volleyball, basketball, badminton, kabaddi, chess, and carrom. The 2024 edition also added an Esports tournament featuring FIFA, Valorant, Clash Royale, and Fall Guys with live screenings on campus. Eklavya is a celebration of sportsmanship, fitness, and team spirit.",
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/image042.jpg",
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/image043.jpg",
-        "https://iiitp.ac.in/sites/default/files/2023-03/DSC_3082%20%281%29%20%281%29.jpg"
+        "/assets/lifepage/image042.jpg",
+        "/assets/lifepage/image043.jpg",
+        "/assets/lifepage/DSC_3082 (1) (1).jpg"
       ],
       "highlights": [
         "Football, Cricket, Volleyball",
@@ -928,9 +928,9 @@
       "typeColor": "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300",
       "desc": "InfInITy is the flagship competitive programming contest organized by Bit Legion in collaboration with CodeChef. Rated as a 6-star global event, it attracted 1,28,000+ submissions and 25,000+ participants worldwide. The contest featured algorithmic challenges across multiple difficulty levels, drawing top-rated competitive programmers including grandmasters and masters from around the globe.",
       "images": [
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/image001.jpg",
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/image003.jpg",
-        "https://www.iiitp.ac.in/sites/default/files/inline-images/image005.jpg"
+        "/assets/lifepage/image001.jpg",
+        "/assets/lifepage/image003.jpg",
+        "/assets/lifepage/image005.jpg"
       ],
       "highlights": [
         "1,28,000+ Submissions",
@@ -945,14 +945,14 @@
       "year": "2024–25",
       "title": "Annual Magazine 2024-25",
       "embedUrl": "https://online.fliphtml5.com/jpsva/pmdk/",
-      "cover": "https://www.iiitp.ac.in/sites/default/files/inline-images/frontpage.png",
+      "cover": "/assets/lifepage/frontpage.png",
       "desc": "The latest edition captures research breakthroughs, creative writing, student artwork, faculty interviews, club highlights, and the vibrant spirit of campus life at IIIT Pune."
     },
     {
       "year": "2023–24",
       "title": "Annual Magazine 2023-24",
       "embedUrl": "https://online.fliphtml5.com/wscmc/peim/",
-      "cover": "https://www.iiitp.ac.in/sites/default/files/inline-images/aygycs_blue.png",
+      "cover": "/assets/lifepage/aygycs_blue.png",
       "desc": "Celebrated IIIT Pune's growing research culture with features on funded projects, PhD scholar spotlights, club achievements, and an artistic tribute to campus life."
     }
   ],
@@ -978,27 +978,27 @@
       "caption": "Academic Building (AC) - Conference Room"
     },
     {
-      "src": "https://www.iiitp.ac.in/sites/default/files/inline-images/image042.jpg",
+      "src": "/assets/lifepage/image042.jpg",
       "caption": "Campus Sports Ground"
     },
     {
-      "src": "https://www.iiitp.ac.in/sites/default/files/inline-images/_THC3794.JPG",
+      "src": "/assets/lifepage/_THC3794.JPG",
       "caption": "Campus Life"
     },
     {
-      "src": "https://www.iiitp.ac.in/sites/default/files/inline-images/Frame%20780.png",
+      "src": "/assets/lifepage/Frame 780.png",
       "caption": "IIIT Pune Events"
     },
     {
-      "src": "https://www.iiitp.ac.in/sites/default/files/2026-02/2.jpg",
+      "src": "/assets/lifepage/2.jpg",
       "caption": "Thinking Machine Hackathon"
     },
     {
-      "src": "https://www.iiitp.ac.in/sites/default/files/2026-02/3.jpg",
+      "src": "/assets/lifepage/3.jpg",
       "caption": "Innovation at IIIT Pune"
     },
     {
-      "src": "https://iiitp.ac.in/sites/default/files/2023-03/DSC_0845%20%281%29%20%281%29.jpg",
+      "src": "/assets/lifepage/DSC_0845 (1) (1).jpg",
       "caption": "Campus Cultural Day"
     }
   ],

@@ -300,7 +300,7 @@ const Navbar = () => {
           path: "/life/clubs",
           subLinks: [
             { name: "Blueprint", path: "/life/clubs?club=blueprint" },
-            { name: "Club Heads (2025-26)", path: "https://www.iiitp.ac.in/sites/default/files/2025-09/Club%20Head%20and%20Co%20Head-2025-2026.pdf", isExternal: true },
+            { name: "Club Heads (2025-26)", path: "/assets/Club Head and Co Head-2025-2026.pdf", isExternal: true },
             { name: "Rang", path: "/life/clubs?club=rang" },
             { name: "QuantNum", path: "/life/clubs?club=quantnum" },
             { name: "Bit-Legion", path: "/life/clubs?club=bit-legion" },
@@ -387,7 +387,7 @@ const Navbar = () => {
       subLinks: [
         { name: "Live E-Tender", path: "/e-tender/live" },
         { name: "Archive E-Tender", path: "/e-tender/archive" },
-        { name: "Awarded Tender", path: "https://www.iiitp.ac.in/sites/default/files/2026-04/Awarde%20Tender.pdf", isExternal: true },
+        { name: "Awarded Tender", path: "/documents/Awarde Tender.pdf", isExternal: true },
       ]
     },
   ];
