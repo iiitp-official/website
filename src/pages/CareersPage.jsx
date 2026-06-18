@@ -6,6 +6,7 @@ const CareersPage = () => {
     {
       title: "RECRUITMENT NOTICE FOR THE POST OF ASSISTANT PROFESSOR (TEMPORARY)",
       buttons: [
+        { label: "Apply Now", link: "https://iiitprec.samarth.edu.in/", isExternalLink: true },
         { label: "Details", file: "16.06.2026 ASSISTANT PROFESSOR TEMPORARY FINAL VERSION.pdf" }
       ]
     },
@@ -89,7 +90,7 @@ const CareersPage = () => {
                   {job.buttons.map((btn, bidx) => (
                     <a
                       key={bidx}
-                      href={`/careers/${btn.file}`}
+                      href={btn.isExternalLink ? btn.link : `/careers/${btn.file}`}
                       target="_blank" rel="noopener noreferrer"
 
                       className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-xs font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95 text-center"
