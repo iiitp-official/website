@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import PageHeader from '../components/shared/PageHeader';
-import { Search, Calendar, ChevronRight } from 'lucide-react';
+import { Calendar, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const NewsPage = () => {
   const [news, setNews] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     import('../data/news.json')
@@ -13,36 +12,15 @@ const NewsPage = () => {
       .catch(() => console.log('Error loading news'));
   }, []);
 
-  const filteredNews = news.filter((item) =>
-    item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    item.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
   return (
     <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="Latest News & Announcements" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Search Bar */}
-        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 mb-8 flex justify-between items-center">
-          <div className="relative w-full md:w-96">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
-            <input 
-              type="text" 
-              placeholder="Search news articles..." 
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-accent outline-none transition-all"
-            />
-          </div>
-          <div className="hidden md:block text-sm text-gray-500 dark:text-gray-400 font-medium">
-            Showing {filteredNews.length} of {news.length} articles
-          </div>
-        </div>
 
         {/* News Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredNews.map((item) => {
+          {news.map((item) => {
             const isExternal = item.link && (item.link.startsWith('http') || item.link.endsWith('.pdf'));
             const LinkWrapper = isExternal ? 'a' : Link;
             const linkProps = isExternal 
@@ -87,7 +65,7 @@ const NewsPage = () => {
         </div>
 
         {/* Empty State */}
-        {filteredNews.length === 0 && (
+        {news.length === 0 && (
           <div className="text-center py-16 bg-white dark:bg-surface-dark rounded-2xl border border-dashed border-gray-200 dark:border-gray-800">
             <Calendar size={48} className="mx-auto text-gray-400 dark:text-gray-600 mb-4" />
             <h3 className="text-lg font-bold text-gray-700 dark:text-gray-300">No news articles found</h3>
