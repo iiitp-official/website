@@ -120,14 +120,14 @@ function AppContent() {
             <Route path="/admissions" element={<AdmissionsPage />} />
             
             {/* About */}
-            <Route path="/about" element={<AboutPage />} />
+            <Route path="/about" element={<Navigate to="/about/overview" replace />} />
             <Route path="/about/director-desk" element={<DirectorDeskPage />} />
             <Route path="/about/vision-mission" element={<VisionMissionPage />} />
             <Route path="/about/student-achievements" element={<StudentAchievementsPage />} />
             <Route path="/about/faculty-achievements" element={<FacultyAchievementsPage />} />
             <Route path="/about/act" element={<AboutPlaceholderPage title="ACT(PPP)" />} />
             <Route path="/about/statute" element={<AboutPlaceholderPage title="STATUTE" />} />
-            <Route path="/about/overview" element={<AboutPlaceholderPage title="Overview" />} />
+            <Route path="/about/overview" element={<AboutPage />} />
             <Route path="/about/ariia" element={<AboutPlaceholderPage title="ARIIA Ranking" />} />
             
             {/* Administration */}

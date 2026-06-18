@@ -172,7 +172,7 @@ const Navbar = () => {
       path: "#",
       hasDropdown: true,
       subLinks: [
-        { name: "Overview", path: "/documents/INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, PUNE20240315-_0.pdf", isExternal: true },
+        { name: "Overview", path: "/about/overview" },
         {
           name: "ACT(PPP)",
           path: "#",
