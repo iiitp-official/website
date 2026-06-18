@@ -829,8 +829,8 @@ const Navbar = () => {
                 )}
               </div>
 
-              {/* Mobile Social + Language + Text Size */}
-              <div className="flex items-center gap-4 px-3">
+              {/* Mobile Social Icons - Line 1 */}
+              <div className="flex items-center justify-center gap-6 px-3 py-3 border-b border-white/10">
                 <a
                   href="https://www.facebook.com/share/14dmnHML9Tm/"
                   target="_blank"
@@ -842,6 +842,8 @@ const Navbar = () => {
                 </a>
                 <a
                   href="https://x.com/IIIT_PUNE"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Twitter"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
@@ -849,12 +851,36 @@ const Navbar = () => {
                 </a>
                 <a
                   href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="LinkedIn"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
                   <LinkedinIcon size={20} />
                 </a>
-                <div className="ml-auto flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5 notranslate">
+                <a
+                  href="https://www.instagram.com/iiit.pune/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
+                  <InstagramIcon size={20} />
+                </a>
+                <a
+                  href="https://youtube.com/@iiitpune25"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
+                  <YoutubeIcon size={20} />
+                </a>
+              </div>
+
+              {/* Language & Text Size - Line 2 */}
+              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10">
+                <div className="flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5 notranslate">
                   <button onClick={() => changeLanguage('en')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
                     EN
                   </button>
