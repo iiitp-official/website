@@ -239,11 +239,11 @@ const InfoCards = () => {
               <ul className="space-y-4 mb-6 flex-grow mt-2">
                 <li className="flex items-start">
                   <span className="w-2 h-2 rounded-full bg-accent dark:bg-accent-dark mt-1.5 mr-3 shrink-0"></span>
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">B.Tech via JoSAA/CSAB (JEE Main)</span>
+                  <a href="https://josaa.nic.in/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">B.Tech via JoSAA/CSAB (JEE Main)</a>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 rounded-full bg-accent dark:bg-accent-dark mt-1.5 mr-3 shrink-0"></span>
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">M.Tech (CSE & ECE) via CCMT (GATE)</span>
+                  <a href="https://ccmt.admissions.nic.in/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">M.Tech (CSE & ECE) via CCMT (GATE)</a>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 rounded-full bg-accent dark:bg-accent-dark mt-1.5 mr-3 shrink-0"></span>
@@ -251,7 +251,7 @@ const InfoCards = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 rounded-full bg-accent dark:bg-accent-dark mt-1.5 mr-3 shrink-0"></span>
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">International Admissions (DASA)</span>
+                  <a href="https://dasanit.org/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">International Admissions (DASA)</a>
                 </li>
               </ul>
               <Link to="/admissions" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors mt-auto">
