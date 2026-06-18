@@ -166,10 +166,10 @@ const InternationalFooter = () => {
                   <a href="https://www.facebook.com/share/14dmnHML9Tm/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
                     <FacebookIcon size={24} />
                   </a>
-                  <a href="https://www.instagram.com/iiit_pune_official/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
+                  <a href="https://www.instagram.com/iiit.pune/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
                     <InstagramIcon size={24} />
                   </a>
-                  <a href="https://www.youtube.com/@IIIT_Pune_Official" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="YouTube">
+                  <a href="https://youtube.com/@iiitpune25" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="YouTube">
                     <YoutubeIcon size={24} />
                   </a>
                 </div>
