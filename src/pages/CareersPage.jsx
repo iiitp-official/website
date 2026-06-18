@@ -90,7 +90,7 @@ const CareersPage = () => {
                   {job.buttons.map((btn, bidx) => (
                     <a
                       key={bidx}
-                      href={btn.isExternalLink ? btn.link : `/careers/${btn.file}`}
+                      href={btn.isExternalLink ? btn.link : `/careers-documents/${btn.file}`}
                       target="_blank" rel="noopener noreferrer"
 
                       className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-xs font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95 text-center"
