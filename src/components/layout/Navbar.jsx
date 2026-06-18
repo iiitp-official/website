@@ -311,26 +311,8 @@ const Navbar = () => {
         { name: "Overview", path: "/life" },
         {
           name: "Professional Clubs",
-          hasDropdown: true,
-          path: "/life/clubs",
-          subLinks: [
-            { name: "Blueprint", path: "/life/clubs?club=blueprint" },
-            { name: "Club Heads (2025-26)", path: "/assets/Club Head and Co Head-2025-2026.pdf", isExternal: true },
-            { name: "Rang", path: "/life/clubs?club=rang" },
-            { name: "QuantNum", path: "/life/clubs?club=quantnum" },
-            { name: "Bit-Legion", path: "/life/clubs?club=bit-legion" },
-            { name: "C-CUBE", path: "/life/clubs?club=c-cube" },
-            { name: "E-Cell", path: "/life/clubs?club=e-cell" },
-            { name: "Eclectic", path: "/life/clubs?club=eclectic" },
-            { name: "SAAZ", path: "https://saaz-iiitp.vercel.app/", isExternal: true },
-            { name: "Vanity Crew", path: "/life/clubs?club=vanity-crew" },
-            { name: "Sports", path: "/life/clubs?club=sports" },
-            { name: "ROFIES", path: "/life/clubs?club=rofies" },
-            { name: "localhost", path: "/life/clubs?club=localhost" },
-            { name: "Horizon", path: "/life/clubs?club=horizon" },
-            { name: "Abhinay", path: "/life/clubs?club=abhinay" },
-            { name: "Q-riocity", path: "/life/clubs?club=q-riocity" },
-          ]
+          hasDropdown: false,
+          path: "/life/clubs"
         },
         {
           name: "Activities",

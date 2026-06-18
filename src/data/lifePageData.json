@@ -36,11 +36,17 @@
         "/assets/clubs/blueprint_5.png"
       ],
       "leadership": {
-        "heads": [],
+        "heads": [
+          {
+            "name": "Utsav Verma",
+            "role": "Club Head"
+          }
+        ],
         "email": "blueprint@iiitp.ac.in",
         "instagram": "@blueprint_iiitp",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/blueprint"
+      },
+      "flyer": "/assets/clubs/blueprint_flyer.jpg"
     },
     "rang": {
       "name": "Rang",
@@ -88,14 +94,15 @@
             "role": "Club Head"
           },
           {
-            "name": "Akshad Khune",
+            "name": "Akshad Nitin Khune",
             "role": "Club Co-Head"
           }
         ],
         "email": "rang@iiitp.ac.in",
         "instagram": "@rangiiitp",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/rang-0"
+      },
+      "flyer": "/assets/clubs/rang_flyer.jpg"
     },
     "quantnum": {
       "name": "QuantNum",
@@ -135,17 +142,18 @@
         "heads": [
           {
             "name": "Suharsh Kumar",
-            "role": "Club Head (CSE)"
+            "role": "Club Head"
           },
           {
             "name": "Shreya Khandelwal",
-            "role": "Club Co-Head (ECE)"
+            "role": "Club Co-Head"
           }
         ],
         "email": "quantnum@iiitp.ac.in",
         "instagram": "@quantnum_iiitp",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/quantnum-club"
+      },
+      "flyer": "/assets/clubs/quantnum_flyer.jpg"
     },
     "bit-legion": {
       "name": "Bit-Legion",
@@ -183,11 +191,21 @@
         "/assets/clubs/bitlegion_5.jpg"
       ],
       "leadership": {
-        "heads": [],
+        "heads": [
+          {
+            "name": "Siddhanth Ganesh Senthil Kumar",
+            "role": "Club Head"
+          },
+          {
+            "name": "Luv Kansal",
+            "role": "Club Co-Head"
+          }
+        ],
         "email": "bitlegion@iiitp.ac.in",
         "instagram": "@bit_legion_iiitp",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/bit-legion"
+      },
+      "flyer": "/assets/clubs/bitlegion_flyer.jpg"
     },
     "c-cube": {
       "name": "C-CUBE",
@@ -259,11 +277,17 @@
       ],
       "images": [],
       "leadership": {
-        "heads": [],
+        "heads": [
+          {
+            "name": "Tanmay Khaitan",
+            "role": "Club Head"
+          }
+        ],
         "email": "ecell@iiitp.ac.in",
         "instagram": "@e-celliiitpune4629",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/life/professional/e-cell"
+      },
+      "flyer": "/assets/clubs/ecell_flyer.jpg"
     },
     "eclectic": {
       "name": "Eclectic",
@@ -299,11 +323,21 @@
       ],
       "images": [],
       "leadership": {
-        "heads": [],
+        "heads": [
+          {
+            "name": "Om Thombre",
+            "role": "Club Head"
+          },
+          {
+            "name": "Prisha Gupta",
+            "role": "Club Co-Head"
+          }
+        ],
         "email": "eclectic@iiitp.ac.in",
         "instagram": "@media",
         "website": "https://eclectic-iiitp.github.io/eclectic/"
-      }
+      },
+      "flyer": "/assets/clubs/eclectic_flyer.jpg"
     },
     "saaz": {
       "name": "SAAZ",
@@ -335,11 +369,21 @@
       ],
       "images": [],
       "leadership": {
-        "heads": [],
+        "heads": [
+          {
+            "name": "Aditi Manikantan",
+            "role": "Club Head"
+          },
+          {
+            "name": "Devesh Modi",
+            "role": "Club Co-Head"
+          }
+        ],
         "email": "saaz@iiitp.ac.in",
         "instagram": "@saaz_iiitp",
         "website": "https://saaz-iiitp.vercel.app/"
-      }
+      },
+      "flyer": "/assets/clubs/saaz_flyer.jpg"
     },
     "vanity-crew": {
       "name": "Vanity Crew",
@@ -390,16 +434,13 @@
           {
             "name": "Arushi Ramesh",
             "role": "Club Co-Head"
-          },
-          {
-            "name": "Aaryan Singh",
-            "role": "Club Co-Head"
           }
         ],
         "email": "vanitycrew@iiitp.ac.in",
         "instagram": "@vanity_crew_iiitp",
-        "website": "https://vanitycrew.vercel.app/"
-      }
+        "website": "https://www.iiitp.ac.in/page/vanity-crew"
+      },
+      "flyer": "/assets/clubs/vanity_crew_flyer.jpg"
     },
     "sports": {
       "name": "Sports",
@@ -442,17 +483,18 @@
         "heads": [
           {
             "name": "Shriraj Nilare",
-            "role": "Sports Club Head"
+            "role": "Club Head"
           },
           {
             "name": "Bhavin Barad",
-            "role": "Sports Club Co-Head"
+            "role": "Club Co-Head"
           }
         ],
         "email": "sports@iiitp.ac.in",
         "instagram": "@sports_iiitp",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/sports"
+      },
+      "flyer": "/assets/clubs/sports_flyer.jpg"
     },
     "rofies": {
       "name": "ROFIES",
@@ -494,11 +536,21 @@
         "/assets/clubs/rofies_5.png"
       ],
       "leadership": {
-        "heads": [],
+        "heads": [
+          {
+            "name": "Mokshada",
+            "role": "Club Head"
+          },
+          {
+            "name": "Harshit Dudhani",
+            "role": "Club Co-Head"
+          }
+        ],
         "email": "rofies@iiitp.ac.in",
         "instagram": "@media",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/rofies"
+      },
+      "flyer": "/assets/clubs/rofies_flyer.jpg"
     },
     "localhost": {
       "name": "localhost",
@@ -538,11 +590,21 @@
         "/assets/clubs/localhost_3.gif"
       ],
       "leadership": {
-        "heads": [],
+        "heads": [
+          {
+            "name": "Shivansh Kandpal",
+            "role": "Club Head"
+          },
+          {
+            "name": "Kulkarni Piyush Prafulla",
+            "role": "Club Co-Head"
+          }
+        ],
         "email": "localhost@iiitp.ac.in",
         "instagram": "@localhost_iiitp",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/localhost"
+      },
+      "flyer": "/assets/clubs/localhost_flyer.jpg"
     },
     "horizon": {
       "name": "Horizon",
@@ -574,11 +636,21 @@
       ],
       "images": [],
       "leadership": {
-        "heads": [],
+        "heads": [
+          {
+            "name": "Harsh Arora",
+            "role": "Club Head"
+          },
+          {
+            "name": "Aman",
+            "role": "Club Co-Head"
+          }
+        ],
         "email": "horizon@iiitp.ac.in",
         "instagram": "@horizon_iiitp",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/horizon"
+      },
+      "flyer": "/assets/clubs/horizon_flyer.jpg"
     },
     "abhinay": {
       "name": "Abhinay",
@@ -625,18 +697,19 @@
       "leadership": {
         "heads": [
           {
-            "name": "Swayam Patel",
-            "role": "Club Head (CSE 3rd Year)"
+            "name": "Swayam Shailesh Patel",
+            "role": "Club Head"
           },
           {
             "name": "Aashutosh Bharti",
-            "role": "Club Co-Head (CSE 3rd Year)"
+            "role": "Club Co-Head"
           }
         ],
         "email": "abhinay@iiitp.ac.in",
         "instagram": "@abhinay_iiitp",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/abhinay"
+      },
+      "flyer": "/assets/clubs/abhinay_flyer.jpg"
     },
     "q-riocity": {
       "name": "Q-riocity",
@@ -685,21 +758,14 @@
         "heads": [
           {
             "name": "Aditya Apoorva Negi",
-            "role": "Club Head (CSE 3rd Year)"
-          },
-          {
-            "name": "Aadit Bajaj",
-            "role": "Core Team Member (CSE 2nd Year)"
-          },
-          {
-            "name": "Amol Raj",
-            "role": "Core Team Member (CSE 2nd Year)"
+            "role": "Club Head"
           }
         ],
         "email": "q_riocity@iiitp.ac.in",
         "instagram": "@q_riocity_",
-        "website": ""
-      }
+        "website": "https://www.iiitp.ac.in/page/q-riocity"
+      },
+      "flyer": "/assets/clubs/qriocity_flyer.jpg"
     }
   },
   "ACTIVITIES": [
