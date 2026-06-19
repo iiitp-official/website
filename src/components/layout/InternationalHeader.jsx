@@ -116,17 +116,20 @@ const InternationalHeader = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center space-x-2 md:space-x-3"
           >
-            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center shrink-0 bg-white">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden flex items-center justify-center shrink-0 bg-white">
               <img src="/Logo/iiitp_logo.png" alt="IIIT Pune Logo" className="w-full h-full object-contain mix-blend-multiply scale-[1.6]" />
             </div>
             <div className="text-white dark:text-text-dark leading-tight">
-              <h1 className="text-sm md:text-base lg:text-lg font-bold font-serif">
-                Indian Institute of Information Technology Pune
+              <h1 className="text-center text-xl md:text-xl lg:text-2xl font-bold font-serif">
+                भारतीय सूचना प्रौद्योगिकी संस्थान, पुणे
               </h1>
-              <h2 className="text-xs md:text-sm lg:text-base font-medium opacity-90 font-serif mt-0.5">
-                International Relations Office
+              <h2 className="text-center text-xs md:text-sm lg:text-base font-medium opacity-90 font-serif mt-0.5">
+                Indian Institute of Information Technology Pune
               </h2>
-              <p className="text-[9px] md:text-[11px] opacity-80 mt-0.5">(An Institute of National Importance)</p>
+              <p className="text-center text-[9px] md:text-[13px] opacity-80 mt-0.5">(An Institute of National Importance by an Act of Parliament)</p>
+              <p className="text-center text-[6px] md:text-[8px] opacity-70 mt-0.5">
+                Gat No. 5 &amp; 6, Vill - Nanoli-Tarf Chakan, PO - Talegaon, Tah - Maval, Dist - Pune, Maharashtra - 410507
+              </p>
             </div>
           </Link>
 
