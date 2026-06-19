@@ -14,7 +14,7 @@ const FundedProjectsOngoingPage = () => {
       status: "Ongoing",
       duration: "1 year",
       completionDate: "April 2026-27",
-      grant: "22 lakh (approx)"
+      grant: "22 (approx)"
     },
     {
       sno: 2,
@@ -27,7 +27,7 @@ const FundedProjectsOngoingPage = () => {
       status: "Ongoing",
       duration: "3 years",
       completionDate: "16.07. 2025 - 15.7.2028",
-      grant: "30 Lakhs"
+      grant: "30"
     },
     {
       sno: 3,
@@ -40,7 +40,7 @@ const FundedProjectsOngoingPage = () => {
       status: "Ongoing",
       duration: "2 Years",
       completionDate: "From Aug 2025",
-      grant: "1.93Cr"
+      grant: "193"
     },
     {
       sno: 4,
@@ -53,7 +53,7 @@ const FundedProjectsOngoingPage = () => {
       status: "Ongoing",
       duration: "5 Years",
       completionDate: "From Sept 2025",
-      grant: "4.38 Crores"
+      grant: "438"
     },
     {
       sno: 5,
@@ -65,34 +65,8 @@ const FundedProjectsOngoingPage = () => {
       startDate: "Oct-23",
       status: "Ongoing",
       duration: "5 Years",
-      completionDate: "-",
-      grant: "-"
-    },
-    {
-      sno: 6,
-      faculty: "Dr. Divya Chaturvedi",
-      category: "Externally Sponsored",
-      agency: "CSIR",
-      pi: "PI",
-      title: "Design and Development of Substrate Integrated Waveguide (SIW) based Millimeter Wave Beam-Steerable Antenna Array Systems for 5Getwork",
-      startDate: "-",
-      status: "Ongoing",
-      duration: "3 Years",
-      completionDate: "-",
-      grant: "-"
-    },
-    {
-      sno: 7,
-      faculty: "Dr. Nagendra Kushwaha",
-      category: "Externally Sponsored",
-      agency: "Ministry of Electronics & Information Technology, Govt. of India",
-      pi: "PI",
-      title: "Power and Space optimization in Internet of Things (IoT) System-on-Chip (SoC)",
-      startDate: "Oct-23",
-      status: "Ongoing",
-      duration: "5 Years",
-      completionDate: "-",
-      grant: "81.5 Lakhs"
+      completionDate: "",
+      grant: "81.5"
     }
   ];
 
@@ -115,7 +89,7 @@ const FundedProjectsOngoingPage = () => {
                   <th className="p-3.5 font-semibold text-center">Status</th>
                   <th className="p-3.5 font-semibold text-center">Duration</th>
                   <th className="p-3.5 font-semibold text-center">Completion Date</th>
-                  <th className="p-3.5 font-semibold min-w-[80px]">Grant Amount</th>
+                  <th className="p-3.5 font-semibold min-w-[80px]">Grant Amount (in Lakhs)</th>
                 </tr>
               </thead>
               <tbody className="text-gray-700 dark:text-gray-300">

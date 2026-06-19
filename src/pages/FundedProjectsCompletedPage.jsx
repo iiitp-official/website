@@ -5,7 +5,7 @@ const FundedProjectsCompletedPage = () => {
   const data = [
     {
       sno: 1,
-      faculty: "Dr. Bhupendra Singh",
+      faculty: "Dr. Bhupendra Singh & Dr. Nitesh K Bharadwaj",
       category: "Sponsored Research",
       agency: "NCoE-DSCI, MeitY",
       pi: "Co-PI",
@@ -16,32 +16,6 @@ const FundedProjectsCompletedPage = () => {
       completionDate: "15-Dec-23",
       grant: "5.6 Lakh"
     },
-    {
-      sno: 2,
-      faculty: "Dr. Nitesh K Bharadwaj",
-      category: "Sponsored Research Project",
-      agency: "NCoE-DSCI, MeitY",
-      pi: "CO-PI",
-      title: "Unified Drone Forensics Tool (UDFT) for Fly Path for Drone",
-      startDate: "-",
-      status: "Completed",
-      duration: "-",
-      completionDate: "-",
-      grant: "-"
-    },
-    {
-      sno: 3,
-      faculty: "Dr. Ranjith Ravindranatahan Nair",
-      category: "Externally Sponsored",
-      agency: "DST-SERB",
-      pi: "Dr. Ranjith Ravindranatahan Nair",
-      title: "Anamoly detection and its countermeasures in a cyber-physical system using advanced control and estimation techniques",
-      startDate: "-",
-      status: "Completed",
-      duration: "-",
-      completionDate: "-",
-      grant: "-"
-    }
   ];
 
   return (
