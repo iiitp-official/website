@@ -269,6 +269,7 @@ const Navbar = () => {
             { name: "IDP", path: "https://idp.iiitp.ac.in/", isExternal: true },
           ]
         },
+        { name: "International relations", path: "/international" },
       ],
     },
     { name: "Research",
@@ -303,7 +304,6 @@ const Navbar = () => {
       path: "#",
       hasDropdown: true,
       subLinks: [
-        { name: "International relations", path: "/international" },
         { name: "Faculty", path: "/people/faculty" },
         { name: "Visiting Faculty", path: "/people/visiting-faculty" },
         {
