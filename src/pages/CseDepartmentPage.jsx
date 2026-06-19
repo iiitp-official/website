@@ -182,11 +182,10 @@ const CseDepartmentPage = () => {
             <button
               key={sem}
               onClick={() => setActiveSemester(sem)}
-              className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all duration-200 ${
-                activeSemester === sem
+              className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all duration-200 ${activeSemester === sem
                   ? "bg-primary text-white shadow-sm"
                   : "bg-gray-100 dark:bg-gray-800 text-gray-650 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
-              }`}
+                }`}
             >
               Semester {sem}
             </button>
@@ -240,15 +239,15 @@ const CseDepartmentPage = () => {
 
   return (
     <div className="min-h-screen transition-colors duration-200 pb-16">
-      <PageHeader 
-        title="Department of Computer Science & Engineering" 
+      <PageHeader
+        title="Department of Computer Science & Engineering"
         subtitle="Striving for computing excellence through learning, research, and innovation"
         backgroundImage="/campus-image.jpg"
         compact={true}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
-        
+
         {/* Intro Block */}
         <section className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm">
           <p className="text-gray-650 dark:text-gray-350 leading-relaxed text-justify text-base md:text-md">
@@ -258,7 +257,7 @@ const CseDepartmentPage = () => {
 
         {/* 3-Column Layout: Sidebar (Programs), Main Content, HOD Welcome */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          
+
           {/* Column 1: Sidebar Directory (Degrees) */}
           <div className="lg:col-span-2">
             <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-24 space-y-4">
@@ -276,11 +275,10 @@ const CseDepartmentPage = () => {
                     <button
                       key={p.id}
                       onClick={() => setActiveProgram(p.id)}
-                      className={`shrink-0 lg:shrink lg:w-full flex flex-row lg:flex-col items-center lg:items-start gap-2 lg:gap-0 px-4 py-2 lg:px-3.5 lg:py-2.5 rounded-full lg:rounded-xl text-left transition-all duration-200 border ${
-                        isSelected
+                      className={`shrink-0 lg:shrink lg:w-full flex flex-row lg:flex-col items-center lg:items-start gap-2 lg:gap-0 px-4 py-2 lg:px-3.5 lg:py-2.5 rounded-full lg:rounded-xl text-left transition-all duration-200 border ${isSelected
                           ? "bg-primary text-white border-primary shadow-sm"
                           : "text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-center gap-2 w-full">
                         <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isSelected ? "bg-white" : "bg-primary"}`} />
@@ -299,7 +297,7 @@ const CseDepartmentPage = () => {
           {/* Column 2: Main Area (Dynamic based on selected program) */}
           <div className="lg:col-span-7">
             <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm h-full flex flex-col justify-between">
-              
+
               <AnimatePresence mode="wait">
                 {activeProgram === "btech" && (
                   <motion.div
@@ -361,7 +359,7 @@ const CseDepartmentPage = () => {
                       <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
                         The M.Tech. CSE program with specialization in Artificial Intelligence is designed to impart advanced-level education and research guidance. The curriculum is tailored to cover state-of-the-art topics including Machine Learning, Deep Learning, Big Data Analytics, Cloud Computing, and Swarm Intelligence.
                       </p>
-                      
+
                       <div className="mt-4 p-4 bg-gray-50 dark:bg-gray-800/30 border border-gray-100 dark:border-gray-800 rounded-xl space-y-2">
                         <strong className="text-xs text-primary dark:text-accent font-bold uppercase tracking-wider">Admissions Path</strong>
                         <ul className="list-disc list-inside text-xs text-gray-650 dark:text-gray-400 space-y-1 pl-1">
@@ -428,7 +426,7 @@ const CseDepartmentPage = () => {
                           IIIT Pune plans to develop world class research facilities in areas of Mobile Computing, Information Security, IoT, Robotics, Machine Learning, Speech & Image Processing, Medical Informatics, Cyber Physical Systems, Wireless Networks, VLSI Design and Nanotechnology.
                         </p>
                       </div>
-                      
+
                       <div className="mt-6 bg-teal-50/20 dark:bg-teal-900/10 border border-teal-100 dark:border-teal-900/30 p-4 rounded-xl flex items-start gap-3">
                         <div className="bg-teal-500/10 dark:bg-teal-400/10 p-1.5 rounded-full text-teal-600 dark:text-teal-400">
                           <GraduationCap className="w-5 h-5" />
@@ -471,7 +469,7 @@ const CseDepartmentPage = () => {
           {/* Column 3: HOD Welcome Message Card (Permanent) */}
           <div className="lg:col-span-3">
             <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-5 shadow-sm space-y-6 lg:sticky lg:top-24 max-h-[85vh] overflow-y-auto no-scrollbar">
-              
+
               <div className="text-center pb-4 border-b border-gray-100 dark:border-gray-850">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white dark:border-gray-750 shadow-md mx-auto mb-4 bg-gray-50 dark:bg-gray-800 relative">
                   {hodProfile.image ? (
@@ -490,7 +488,7 @@ const CseDepartmentPage = () => {
                     </div>
                   )}
                 </div>
-                
+
                 <h3 className="text-base font-bold font-serif text-gray-900 dark:text-white mb-0.5">
                   {hodProfile.name}
                 </h3>
@@ -506,17 +504,17 @@ const CseDepartmentPage = () => {
                 <h4 className="text-xs font-bold uppercase tracking-wider text-primary dark:text-accent font-serif mb-2 border-l-2 border-brand-red pl-2">
                   HOD Message
                 </h4>
-                
+
                 <div className="text-xs text-gray-650 dark:text-gray-350 leading-relaxed space-y-3 text-justify">
                   <p>
-                    The Department of Computer Science and Engineering serves as a hub for innovation, 
-                    computing excellence, and technological advancement at IIIT Pune. Our academic programmes 
-                    are designed with a strong emphasis on focusing on fundamentals while integrating experiential 
+                    The Department of Computer Science and Engineering serves as a hub for innovation,
+                    computing excellence, and technological advancement at IIIT Pune. Our academic programmes
+                    are designed with a strong emphasis on focusing on fundamentals while integrating experiential
                     learning, project-based learning, and hands-on exposure to contemporary technologies.
                   </p>
                   <p>
-                    The department actively promotes collaborative research and industry engagement, providing 
-                    opportunities for internships, technical mentoring, and participation in real-world problem-solving 
+                    The department actively promotes collaborative research and industry engagement, providing
+                    opportunities for internships, technical mentoring, and participation in real-world problem-solving
                     initiatives.
                   </p>
                 </div>
@@ -538,7 +536,7 @@ const CseDepartmentPage = () => {
                   </div>
                 )}
                 <div className="pt-2">
-                  <Link 
+                  <Link
                     to={`/people/faculty/${hodProfile.slug}`}
                     className="w-full inline-flex items-center justify-center px-4 py-2 bg-primary hover:bg-primary-dark text-white rounded-xl text-xs font-bold transition-all shadow-xs"
                   >
@@ -595,7 +593,7 @@ const CseDepartmentPage = () => {
                   <h3 className="text-base font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors line-clamp-1 w-full">
                     {faculty.name}
                   </h3>
-                  
+
                   {/* Fixed height container for designation (up to 2 lines) */}
                   <div className="h-10 flex items-start justify-center w-full mb-1">
                     <p className="text-xs text-brand-red font-medium whitespace-pre-line line-clamp-2">

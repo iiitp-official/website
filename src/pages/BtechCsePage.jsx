@@ -155,7 +155,7 @@ const BtechCsePage = () => {
                   <Users className="w-6 h-6 text-blue-300" />
                   <div>
                     <p className="text-xs text-blue-200 font-medium uppercase tracking-wider">Intake Capacity</p>
-                    <p className="font-bold text-lg">---</p>
+                    <p className="font-bold text-lg">120 Students</p>
                   </div>
                 </div>
               </div>
