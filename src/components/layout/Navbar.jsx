@@ -239,7 +239,7 @@ const Navbar = () => {
             { name: "Electronics and Communication Engineering", path: "/academics/btech/ece" },
             { name: "AI & DS", path: "/academics/btech/aids" },
             { name: "Cybersecurity", path: "/academics/btech/cybersecurity" },
-            { name: "VLSI", path: "/academics/btech/vlsi" },
+            { name: "Microelectronics and VLSI", path: "/academics/btech/vlsi" },
             { name: "B.Tech. Honours", path: "/academics/btech/honors" },
           ]
         },
@@ -276,7 +276,6 @@ const Navbar = () => {
      path: "#",
      hasDropdown: true,
      subLinks: [
-       { name: "Centers", path: "/research/centres" },
        { name: "Internship @IIIT Pune", path: "/research/internships" },
        {
           name: "Funded Projects",
