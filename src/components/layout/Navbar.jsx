@@ -278,7 +278,6 @@ const Navbar = () => {
      subLinks: [
        { name: "Centers", path: "/research/centres" },
        { name: "Internship @IIIT Pune", path: "/research/internships" },
-       { name: "Library", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
        {
           name: "Funded Projects",
           hasDropdown: true,
