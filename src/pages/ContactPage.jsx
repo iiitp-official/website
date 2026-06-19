@@ -275,7 +275,7 @@ const ContactPage = () => {
                   <div>
                     <h4 className="font-bold text-gray-900 dark:text-white text-lg">General Enquiry</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed">
-                      <strong>Hours:</strong> Monday - Saturday: 10:00 AM – 5:00 PM<br />
+                      <strong>Hours:</strong> Monday - Saturday: 09:30 AM - 5:30 PM<br />
                       <strong>Phone:</strong> <a href="tel:02114224510" className="hover:text-accent dark:hover:text-accent-dark">02114-224510</a><br />
                       <strong>Email:</strong> <a href="mailto:enquiry@iiitp.ac.in" className="hover:text-accent dark:hover:text-accent-dark">enquiry@iiitp.ac.in</a>
                     </p>
