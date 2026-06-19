@@ -129,7 +129,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/#"
+                    to="/minutes-of-meetings"
                     className="hover:text-brand-red transition-colors flex items-center group"
                   >
                     <ExternalLink
@@ -139,11 +139,23 @@ const Footer = () => {
                     Minutes of Meetings
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/rajbhasha"
+                    className="hover:text-brand-red transition-colors flex items-center group"
+                  >
+                    <ExternalLink
+                      size={14}
+                      className="mr-2 text-[#0d6efd]"
+                    />{" "}
+                    राजभाषा अनुभाग
+                  </Link>
+                </li>
               </ul>
               <ul className="space-y-3">
                 <li>
                   <Link
-                    to="/#"
+                    to="/suo-moto"
                     className="hover:text-brand-red transition-colors flex items-center group"
                   >
                     <ExternalLink
@@ -155,7 +167,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/#"
+                    to="/rti"
                     className="hover:text-brand-red transition-colors flex items-center group"
                   >
                     <ExternalLink

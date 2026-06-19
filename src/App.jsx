@@ -1,5 +1,11 @@
-import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import React, { Suspense, lazy } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
 import ScrollToTop from "./components/shared/ScrollToTop";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -23,15 +29,25 @@ const ChairpersonPage = lazy(() => import("./pages/ChairpersonPage"));
 const RegistrarPage = lazy(() => import("./pages/RegistrarPage"));
 const BoardOfGovernorsPage = lazy(() => import("./pages/BoardOfGovernorsPage"));
 const FinanceCommitteePage = lazy(() => import("./pages/FinanceCommitteePage"));
-const BuildingWorksCommitteePage = lazy(() => import("./pages/BuildingWorksCommitteePage"));
+const BuildingWorksCommitteePage = lazy(
+  () => import("./pages/BuildingWorksCommitteePage"),
+);
 const SenatePage = lazy(() => import("./pages/SenatePage"));
-const BoardOfStudiesCsePage = lazy(() => import("./pages/BoardOfStudiesCsePage"));
-const BoardOfStudiesEcePage = lazy(() => import("./pages/BoardOfStudiesEcePage"));
-const BoardOfStudiesAshPage = lazy(() => import("./pages/BoardOfStudiesAshPage"));
+const BoardOfStudiesCsePage = lazy(
+  () => import("./pages/BoardOfStudiesCsePage"),
+);
+const BoardOfStudiesEcePage = lazy(
+  () => import("./pages/BoardOfStudiesEcePage"),
+);
+const BoardOfStudiesAshPage = lazy(
+  () => import("./pages/BoardOfStudiesAshPage"),
+);
 const BtechCsePage = lazy(() => import("./pages/BtechCsePage"));
 const BtechEcePage = lazy(() => import("./pages/BtechEcePage"));
 const BtechAiDsPage = lazy(() => import("./pages/BtechAiDsPage"));
-const BtechCybersecurityPage = lazy(() => import("./pages/BtechCybersecurityPage"));
+const BtechCybersecurityPage = lazy(
+  () => import("./pages/BtechCybersecurityPage"),
+);
 const BtechVlsiPage = lazy(() => import("./pages/BtechVlsiPage"));
 const BtechHonorsPage = lazy(() => import("./pages/BtechHonorsPage"));
 const MtechCsePage = lazy(() => import("./pages/MtechCsePage"));
@@ -41,13 +57,23 @@ const AcademicCalendarPage = lazy(() => import("./pages/AcademicCalendarPage"));
 const OrdinancePage = lazy(() => import("./pages/OrdinancePage"));
 const CentresPage = lazy(() => import("./pages/CentresPage"));
 const InternshipsPage = lazy(() => import("./pages/InternshipsPage"));
-const FundedProjectsCompletedPage = lazy(() => import("./pages/FundedProjectsCompletedPage"));
-const FundedProjectsOngoingPage = lazy(() => import("./pages/FundedProjectsOngoingPage"));
+const FundedProjectsCompletedPage = lazy(
+  () => import("./pages/FundedProjectsCompletedPage"),
+);
+const FundedProjectsOngoingPage = lazy(
+  () => import("./pages/FundedProjectsOngoingPage"),
+);
 const EventsPage = lazy(() => import("./pages/EventsPage"));
 const PostDocFellowPage = lazy(() => import("./pages/PostDocFellowPage"));
-const ResearchScholarInstitutePage = lazy(() => import("./pages/ResearchScholarInstitutePage"));
-const ResearchScholarVisvesvarayaPage = lazy(() => import("./pages/ResearchScholarVisvesvarayaPage"));
-const ResearchScholarGraduatedPage = lazy(() => import("./pages/ResearchScholarGraduatedPage"));
+const ResearchScholarInstitutePage = lazy(
+  () => import("./pages/ResearchScholarInstitutePage"),
+);
+const ResearchScholarVisvesvarayaPage = lazy(
+  () => import("./pages/ResearchScholarVisvesvarayaPage"),
+);
+const ResearchScholarGraduatedPage = lazy(
+  () => import("./pages/ResearchScholarGraduatedPage"),
+);
 const ResearchPage = lazy(() => import("./pages/ResearchPage"));
 const PeoplePage = lazy(() => import("./pages/PeoplePage"));
 const FacultyPage = lazy(() => import("./pages/FacultyPage"));
@@ -70,23 +96,41 @@ const ETenderPage = lazy(() => import("./pages/ETenderPage"));
 const PlacementPage = lazy(() => import("./pages/PlacementPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const NIRFPage = lazy(() => import("./pages/NIRFPage"));
+const SuoMotoPage = lazy(() => import("./pages/SuoMotoPage"));
+const RTIPage = lazy(() => import("./pages/RTIPage"));
+const RajbhashaPage = lazy(() => import("./pages/RajbhashaPage"));
+const MinutesPage = lazy(() => import("./pages/MinutesPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
-const StudentAchievementsPage = lazy(() => import('./pages/StudentAchievementsPage'));
-const FacultyAchievementsPage = lazy(() => import('./pages/FacultyAchievementsPage'));
+const StudentAchievementsPage = lazy(
+  () => import("./pages/StudentAchievementsPage"),
+);
+const FacultyAchievementsPage = lazy(
+  () => import("./pages/FacultyAchievementsPage"),
+);
 const AdmissionsPage = lazy(() => import("./pages/AdmissionsPage"));
 const CseDepartmentPage = lazy(() => import("./pages/CseDepartmentPage"));
 const EceDepartmentPage = lazy(() => import("./pages/EceDepartmentPage"));
 const AshDepartmentPage = lazy(() => import("./pages/AshDepartmentPage"));
 
-const InternationalHomePage = lazy(() => import("./pages/InternationalHomePage"));
-const InternationalAboutPage = lazy(() => import("./pages/InternationalAboutPage"));
-const InternationalAcademicsPage = lazy(() => import("./pages/InternationalAcademicsPage"));
-const InternationalCollaborationsPage = lazy(() => import("./pages/InternationalCollaborationsPage"));
-const InternationalContactPage = lazy(() => import("./pages/InternationalContactPage"));
+const InternationalHomePage = lazy(
+  () => import("./pages/InternationalHomePage"),
+);
+const InternationalAboutPage = lazy(
+  () => import("./pages/InternationalAboutPage"),
+);
+const InternationalAcademicsPage = lazy(
+  () => import("./pages/InternationalAcademicsPage"),
+);
+const InternationalCollaborationsPage = lazy(
+  () => import("./pages/InternationalCollaborationsPage"),
+);
+const InternationalContactPage = lazy(
+  () => import("./pages/InternationalContactPage"),
+);
 
 function AppContent() {
   const location = useLocation();
-  const isInternational = location.pathname.startsWith('/international');
+  const isInternational = location.pathname.startsWith("/international");
 
   if (isInternational) {
     return (
@@ -96,11 +140,26 @@ function AppContent() {
           <Suspense fallback={<LoadingFallback />}>
             <Routes>
               {/* International Relations Routes */}
-              <Route path="/international" element={<InternationalHomePage />} />
-              <Route path="/international/about" element={<InternationalAboutPage />} />
-              <Route path="/international/academics" element={<InternationalAcademicsPage />} />
-              <Route path="/international/collaborations" element={<InternationalCollaborationsPage />} />
-              <Route path="/international/contact" element={<InternationalContactPage />} />
+              <Route
+                path="/international"
+                element={<InternationalHomePage />}
+              />
+              <Route
+                path="/international/about"
+                element={<InternationalAboutPage />}
+              />
+              <Route
+                path="/international/academics"
+                element={<InternationalAcademicsPage />}
+              />
+              <Route
+                path="/international/collaborations"
+                element={<InternationalCollaborationsPage />}
+              />
+              <Route
+                path="/international/contact"
+                element={<InternationalContactPage />}
+              />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>
@@ -118,74 +177,163 @@ function AppContent() {
           <Routes>
             {/* Home */}
             <Route path="/" element={<HomePage />} />
-            
+
             {/* Admissions */}
             <Route path="/admissions" element={<AdmissionsPage />} />
-            
+
             {/* About */}
-            <Route path="/about" element={<Navigate to="/about/overview" replace />} />
+            <Route
+              path="/about"
+              element={<Navigate to="/about/overview" replace />}
+            />
             <Route path="/about/director-desk" element={<DirectorDeskPage />} />
-            <Route path="/about/vision-mission" element={<VisionMissionPage />} />
-            <Route path="/about/student-achievements" element={<StudentAchievementsPage />} />
-            <Route path="/about/faculty-achievements" element={<FacultyAchievementsPage />} />
-            <Route path="/about/act" element={<AboutPlaceholderPage title="ACT(PPP)" />} />
-            <Route path="/about/statute" element={<AboutPlaceholderPage title="STATUTE" />} />
+            <Route
+              path="/about/vision-mission"
+              element={<VisionMissionPage />}
+            />
+            <Route
+              path="/about/student-achievements"
+              element={<StudentAchievementsPage />}
+            />
+            <Route
+              path="/about/faculty-achievements"
+              element={<FacultyAchievementsPage />}
+            />
+            <Route
+              path="/about/act"
+              element={<AboutPlaceholderPage title="ACT(PPP)" />}
+            />
+            <Route
+              path="/about/statute"
+              element={<AboutPlaceholderPage title="STATUTE" />}
+            />
             <Route path="/about/overview" element={<AboutPage />} />
-            <Route path="/about/ariia" element={<AboutPlaceholderPage title="ARIIA Ranking" />} />
-            
+            <Route
+              path="/about/ariia"
+              element={<AboutPlaceholderPage title="ARIIA Ranking" />}
+            />
+
             {/* Administration */}
             <Route path="/administration" element={<AdministrationPage />} />
-            <Route path="/administration/chairperson" element={<ChairpersonPage />} />
+            <Route
+              path="/administration/chairperson"
+              element={<ChairpersonPage />}
+            />
             <Route path="/administration/director" element={<DirectorPage />} />
-            <Route path="/administration/registrar" element={<RegistrarPage />} />
-            <Route path="/administration/board-of-governors" element={<BoardOfGovernorsPage />} />
-            <Route path="/administration/finance-committee" element={<FinanceCommitteePage />} />
-            <Route path="/administration/building-and-works-committee" element={<BuildingWorksCommitteePage />} />
+            <Route
+              path="/administration/registrar"
+              element={<RegistrarPage />}
+            />
+            <Route
+              path="/administration/board-of-governors"
+              element={<BoardOfGovernorsPage />}
+            />
+            <Route
+              path="/administration/finance-committee"
+              element={<FinanceCommitteePage />}
+            />
+            <Route
+              path="/administration/building-and-works-committee"
+              element={<BuildingWorksCommitteePage />}
+            />
             <Route path="/administration/senate" element={<SenatePage />} />
-            <Route path="/administration/board-of-studies-cse" element={<BoardOfStudiesCsePage />} />
-            <Route path="/administration/board-of-studies-ece" element={<BoardOfStudiesEcePage />} />
-            <Route path="/administration/board-of-studies-ash" element={<BoardOfStudiesAshPage />} />
-            
+            <Route
+              path="/administration/board-of-studies-cse"
+              element={<BoardOfStudiesCsePage />}
+            />
+            <Route
+              path="/administration/board-of-studies-ece"
+              element={<BoardOfStudiesEcePage />}
+            />
+            <Route
+              path="/administration/board-of-studies-ash"
+              element={<BoardOfStudiesAshPage />}
+            />
+
             {/* Academics */}
             <Route path="/academics/btech/cse" element={<BtechCsePage />} />
             <Route path="/academics/btech/ece" element={<BtechEcePage />} />
             <Route path="/academics/btech/aids" element={<BtechAiDsPage />} />
-            <Route path="/academics/btech/cybersecurity" element={<BtechCybersecurityPage />} />
+            <Route
+              path="/academics/btech/cybersecurity"
+              element={<BtechCybersecurityPage />}
+            />
             <Route path="/academics/btech/vlsi" element={<BtechVlsiPage />} />
-            <Route path="/academics/btech/honors" element={<BtechHonorsPage />} />
+            <Route
+              path="/academics/btech/honors"
+              element={<BtechHonorsPage />}
+            />
             <Route path="/academics/mtech/cse" element={<MtechCsePage />} />
             <Route path="/academics/mtech/ece" element={<MtechEcePage />} />
             <Route path="/academics/phd" element={<PhdPage />} />
-            <Route path="/academics/calendar" element={<AcademicCalendarPage />} />
-            <Route path="/academics/Calendar" element={<AcademicCalendarPage />} />
+            <Route
+              path="/academics/calendar"
+              element={<AcademicCalendarPage />}
+            />
+            <Route
+              path="/academics/Calendar"
+              element={<AcademicCalendarPage />}
+            />
             <Route path="/academics/ordinance" element={<OrdinancePage />} />
-            
+
             {/* Research */}
             <Route path="/research" element={<ResearchPage />} />
             <Route path="/research/centres" element={<CentresPage />} />
             <Route path="/research/internships" element={<InternshipsPage />} />
-            <Route path="/research/funded-projects/completed" element={<FundedProjectsCompletedPage />} />
-            <Route path="/research/funded-projects/ongoing" element={<FundedProjectsOngoingPage />} />
+            <Route
+              path="/research/funded-projects/completed"
+              element={<FundedProjectsCompletedPage />}
+            />
+            <Route
+              path="/research/funded-projects/ongoing"
+              element={<FundedProjectsOngoingPage />}
+            />
             <Route path="/research/events" element={<EventsPage />} />
-            <Route path="/research/scholar/institute" element={<ResearchScholarInstitutePage />} />
-            <Route path="/research/scholar/visvesvaraya" element={<ResearchScholarVisvesvarayaPage />} />
-            <Route path="/research/scholar/graduated" element={<ResearchScholarGraduatedPage />} />
-            <Route path="/research/postdoc-fellow" element={<PostDocFellowPage />} />
-            
+            <Route
+              path="/research/scholar/institute"
+              element={<ResearchScholarInstitutePage />}
+            />
+            <Route
+              path="/research/scholar/visvesvaraya"
+              element={<ResearchScholarVisvesvarayaPage />}
+            />
+            <Route
+              path="/research/scholar/graduated"
+              element={<ResearchScholarGraduatedPage />}
+            />
+            <Route
+              path="/research/postdoc-fellow"
+              element={<PostDocFellowPage />}
+            />
+
             {/* People */}
             <Route path="/people" element={<PeoplePage />} />
             <Route path="/people/faculty" element={<FacultyPage />} />
-            <Route path="/people/faculty/:slug" element={<FacultyProfilePage />} />
-            <Route path="/people/visiting-faculty" element={<VisitingFacultyPage />} />
-            <Route path="/people/non-teaching-staff" element={<Navigate to="/people/non-teaching-staff/regular" replace />} />
-            <Route path="/people/non-teaching-staff/:type" element={<NonTeachingStaffPage />} />
+            <Route
+              path="/people/faculty/:slug"
+              element={<FacultyProfilePage />}
+            />
+            <Route
+              path="/people/visiting-faculty"
+              element={<VisitingFacultyPage />}
+            />
+            <Route
+              path="/people/non-teaching-staff"
+              element={
+                <Navigate to="/people/non-teaching-staff/regular" replace />
+              }
+            />
+            <Route
+              path="/people/non-teaching-staff/:type"
+              element={<NonTeachingStaffPage />}
+            />
             <Route path="/people/alumni" element={<AlumniPage />} />
-            
+
             {/* Departments */}
             <Route path="/departments/cse" element={<CseDepartmentPage />} />
             <Route path="/departments/ece" element={<EceDepartmentPage />} />
             <Route path="/departments/ash" element={<AshDepartmentPage />} />
-            
+
             {/* Other Pages */}
             <Route path="/life" element={<LifeOverviewPage />} />
             <Route path="/life/clubs" element={<LifeClubsPage />} />
@@ -194,20 +342,32 @@ function AppContent() {
             <Route path="/life/events" element={<LifeEventsPage />} />
             <Route path="/life/magazine" element={<LifeMagazinePage />} />
             <Route path="/life/campus" element={<LifeCampusPage />} />
-            
+
             <Route path="/news" element={<NewsPage />} />
             <Route path="/notice" element={<NoticePage />} />
             <Route path="/notice/anti-ragging" element={<AntiRaggingPage />} />
-            <Route path="/notice/late-fee" element={<AboutPlaceholderPage title="Late Fee for the even semester" />} />
+            <Route
+              path="/notice/late-fee"
+              element={
+                <AboutPlaceholderPage title="Late Fee for the even semester" />
+              }
+            />
             <Route path="/careers" element={<CareersPage />} />
-            
+
             {/* E-Tenders */}
-            <Route path="/e-tender" element={<Navigate to="/e-tender/live" replace />} />
+            <Route
+              path="/e-tender"
+              element={<Navigate to="/e-tender/live" replace />}
+            />
             <Route path="/e-tender/:type" element={<ETenderPage />} />
-            
+
             <Route path="/placement" element={<PlacementPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/nirf" element={<NIRFPage />} />
+            <Route path="/suo-moto" element={<SuoMotoPage />} />
+            <Route path="/rti" element={<RTIPage />} />
+            <Route path="/rajbhasha" element={<RajbhashaPage />} />
+            <Route path="/minutes-of-meetings" element={<MinutesPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>
