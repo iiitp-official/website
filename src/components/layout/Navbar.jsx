@@ -572,14 +572,12 @@ const Navbar = () => {
 
             {/* Bottom Row: Social Icons + Search (Desktop only) */}
             <div className="hidden md:flex items-center gap-1.5">
-              <a
-                href="/international"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/international"
                 className="bg-brand-red hover:bg-red-700 text-white px-3 py-1.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide mr-2"
               >
                 International Relations
-              </a>
+              </Link>
               <a
                 href="https://iiitp.webpointsolutions.in/StudentPortal/index.html#!/Login"
                 target="_blank" rel="noopener noreferrer"
