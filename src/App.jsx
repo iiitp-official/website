@@ -74,6 +74,9 @@ const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 const StudentAchievementsPage = lazy(() => import('./pages/StudentAchievementsPage'));
 const FacultyAchievementsPage = lazy(() => import('./pages/FacultyAchievementsPage'));
 const AdmissionsPage = lazy(() => import("./pages/AdmissionsPage"));
+const CseDepartmentPage = lazy(() => import("./pages/CseDepartmentPage"));
+const EceDepartmentPage = lazy(() => import("./pages/EceDepartmentPage"));
+const AshDepartmentPage = lazy(() => import("./pages/AshDepartmentPage"));
 
 const InternationalHomePage = lazy(() => import("./pages/InternationalHomePage"));
 const InternationalAboutPage = lazy(() => import("./pages/InternationalAboutPage"));
@@ -177,6 +180,11 @@ function AppContent() {
             <Route path="/people/non-teaching-staff" element={<Navigate to="/people/non-teaching-staff/regular" replace />} />
             <Route path="/people/non-teaching-staff/:type" element={<NonTeachingStaffPage />} />
             <Route path="/people/alumni" element={<AlumniPage />} />
+            
+            {/* Departments */}
+            <Route path="/departments/cse" element={<CseDepartmentPage />} />
+            <Route path="/departments/ece" element={<EceDepartmentPage />} />
+            <Route path="/departments/ash" element={<AshDepartmentPage />} />
             
             {/* Other Pages */}
             <Route path="/life" element={<LifeOverviewPage />} />

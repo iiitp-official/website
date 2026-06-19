@@ -8,48 +8,48 @@ import {
 } from 'lucide-react';
 
 const LinkedinIcon = ({ className }) => (
-  <svg 
-    className={className} 
-    version="1.1" 
-    id="Layer_1" 
-    xmlns="http://www.w3.org/2000/svg" 
-    xmlnsXlink="http://www.w3.org/1999/xlink" 
-    viewBox="0 0 382.00 382.00" 
-    xmlSpace="preserve" 
+  <svg
+    className={className}
+    version="1.1"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 382.00 382.00"
+    xmlSpace="preserve"
     fill="#000000"
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0" transform="translate(0,0), scale(1)"></g>
     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="3.056"></g>
-    <g id="SVGRepo_iconCarrier"> 
-      <path style={{fill: '#0077B7'}} d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> 
+    <g id="SVGRepo_iconCarrier">
+      <path style={{ fill: '#0077B7' }} d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path>
     </g>
   </svg>
 );
 
 const FacebookIcon = ({ className }) => (
-  <svg 
-    className={className} 
-    version="1.1" 
-    id="Layer_1" 
-    xmlns="http://www.w3.org/2000/svg" 
-    xmlnsXlink="http://www.w3.org/1999/xlink" 
-    viewBox="0 0 408.788 408.788" 
-    xmlSpace="preserve" 
+  <svg
+    className={className}
+    version="1.1"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 408.788 408.788"
+    xmlSpace="preserve"
     fill="#000000"
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-    <g id="SVGRepo_iconCarrier"> 
-      <path style={{fill: '#475993'}} d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085 h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882 v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955 l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087 c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085 C408.786,24.662,384.124,0,353.701,0z"></path> 
+    <g id="SVGRepo_iconCarrier">
+      <path style={{ fill: '#475993' }} d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085 h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882 v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955 l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087 c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085 C408.786,24.662,384.124,0,353.701,0z"></path>
     </g>
   </svg>
 );
 
 const TwitterIcon = ({ className }) => (
-  <svg 
+  <svg
     className={className}
-    viewBox="-166.42 -166.42 1442.34 1442.34" 
-    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="-166.42 -166.42 1442.34 1442.34"
+    xmlns="http://www.w3.org/2000/svg"
     fill="#000000"
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0" transform="translate(0,0), scale(1)"></g>
@@ -154,7 +154,7 @@ const FacultyProfilePage = () => {
 
   const renderListContent = (content) => {
     if (!content) return null;
-    
+
     let items = [];
     if (Array.isArray(content)) {
       items = content;
@@ -168,7 +168,7 @@ const FacultyProfilePage = () => {
           <li key={idx} className="flex flex-col relative pl-6">
             <span className="absolute left-0 top-2 w-2 h-2 rounded-full bg-brand-red"></span>
             {item.link ? (
-              <a href={item.link} target="_blank" rel="noopener noreferrer"  className="text-base font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
+              <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-base font-bold text-gray-900 dark:text-white hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">
                 {item.title}
               </a>
             ) : (
@@ -243,14 +243,14 @@ const FacultyProfilePage = () => {
                   </p>
                 )}
               </div>
-              
+
               {/* Social Icons */}
               <div className="flex flex-col gap-3 ml-4 shrink-0 mt-1">
                 {(profile.linkedin && profile.linkedin !== "#") ? (
-                  <a 
-                    href={profile.linkedin} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={profile.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     title="LinkedIn"
                     className="hover:opacity-80"
                   >
@@ -262,10 +262,10 @@ const FacultyProfilePage = () => {
                   </div>
                 )}
                 {(profile.facebook && profile.facebook !== "#") ? (
-                  <a 
-                    href={profile.facebook} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={profile.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     title="Facebook"
                     className="hover:opacity-80"
                   >
@@ -277,10 +277,10 @@ const FacultyProfilePage = () => {
                   </div>
                 )}
                 {(profile.twitter && profile.twitter !== "#") ? (
-                  <a 
-                    href={profile.twitter} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={profile.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     title="Twitter"
                     className="hover:opacity-80"
                   >
@@ -295,7 +295,7 @@ const FacultyProfilePage = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full text-gray-700 dark:text-gray-300 mt-auto pt-4">
-              
+
               {/* Education */}
               <div className="flex items-start">
                 <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
@@ -343,7 +343,7 @@ const FacultyProfilePage = () => {
                       if (type === 'Google Scholar' && profile.google_scholar) href = profile.google_scholar;
                       if (type === 'ORCID' && profile.orcid) href = profile.orcid;
                       if (type === 'Scopus' && profile.scopus) href = profile.scopus;
-                      
+
                       return (
                         <a
                           key={idx}
@@ -359,7 +359,7 @@ const FacultyProfilePage = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Phone Number */}
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-blue-50 dark:bg-gray-800 flex items-center justify-center mr-3 shrink-0">
@@ -369,7 +369,7 @@ const FacultyProfilePage = () => {
                   <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-1">Phone Number</h4>
                   {profile.phone ? (
                     <div className="flex items-center">
-                      <span 
+                      <span
                         onClick={() => {
                           navigator.clipboard.writeText(profile.phone);
                           setCopiedPhone(true);
@@ -418,8 +418,8 @@ const FacultyProfilePage = () => {
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
                   className={`flex items-center whitespace-nowrap px-6 py-4 font-medium text-xs transition-colors relative ${activeTab === tab.id
-                      ? 'text-brand-red dark:text-brand-red-dark bg-red-50/50 dark:bg-gray-800/50'
-                      : 'text-gray-600 hover:text-brand-red dark:text-gray-400 dark:hover:text-brand-red-dark hover:bg-red-50/30 dark:hover:bg-gray-800/30'
+                    ? 'text-brand-red dark:text-brand-red-dark bg-red-50/50 dark:bg-gray-800/50'
+                    : 'text-gray-600 hover:text-brand-red dark:text-gray-400 dark:hover:text-brand-red-dark hover:bg-red-50/30 dark:hover:bg-gray-800/30'
                     }`}
                 >
                   {tab.icon}
@@ -457,7 +457,7 @@ const FacultyProfilePage = () => {
                       <FileText className="w-5 h-5 mr-2 text-brand-red" />
                       Detailed Resume
                     </h3>
-                    <a href={profile.resume} target="_blank" rel="noopener noreferrer"  className="text-sm text-primary hover:underline break-all inline-flex items-center">
+                    <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline break-all inline-flex items-center">
                       {profile.resume}
                     </a>
                   </div>
@@ -525,17 +525,17 @@ const FacultyProfilePage = () => {
                 {profile.researchLinks && profile.researchLinks.length > 0 ? (
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {profile.researchLinks.map((link, idx) => (
-                        <li key={idx}>
-                          <a
-                            href={link}
-                            target="_blank" rel="noopener noreferrer"
-                            className="group block p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-blue-50 dark:hover:bg-gray-800 transition-all"
-                          >
-                            <div className="overflow-hidden">
-                              <p className="text-sm text-gray-900 dark:text-white font-medium truncate w-full group-hover:text-primary transition-colors">{link}</p>
-                            </div>
-                          </a>
-                        </li>
+                      <li key={idx}>
+                        <a
+                          href={link}
+                          target="_blank" rel="noopener noreferrer"
+                          className="group block p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-blue-50 dark:hover:bg-gray-800 transition-all"
+                        >
+                          <div className="overflow-hidden">
+                            <p className="text-sm text-gray-900 dark:text-white font-medium truncate w-full group-hover:text-primary transition-colors">{link}</p>
+                          </div>
+                        </a>
+                      </li>
                     ))}
                   </ul>
                 ) : (
