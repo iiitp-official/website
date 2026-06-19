@@ -79,6 +79,7 @@ const Footer = () => {
                 <li><a href="https://placements.iiitp.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Placement</a></li>
                 <li><Link to="/careers" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Careers</Link></li>
                 <li><Link to="/notice" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> Notice Board</Link></li>
+                <li><Link to="/nirf" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> NIRF</Link></li>
               </ul>
               <ul className="space-y-3">
                 <li><Link to="/e-tender" className="hover:text-brand-red transition-colors flex items-center group"><ExternalLink size={14} className="mr-2 text-gray-500 group-hover:text-brand-red" /> E-Tender</Link></li>

@@ -196,7 +196,6 @@ const Navbar = () => {
         { name: "Student Achievements", path: "/about/student-achievements" },
         { name: "Faculty Achievements", path: "/about/faculty-achievements" },
         { name: "ARIIA Ranking", path: "/documents/ARI-U-0804-1-3.pdf", isExternal: true },
-        { name: "NIRF", path: "/nirf" },
       ]
     },
     {
