@@ -346,6 +346,7 @@ function AppContent() {
             <Route path="/life/events" element={<LifeEventsPage />} />
             <Route path="/life/magazine" element={<LifeMagazinePage />} />
             <Route path="/life/newsletter" element={<LifeNewsletterPage />} />
+            <Route path="/life/press" element={<AboutPlaceholderPage title="Press & Media" />} />
             <Route path="/life/campus" element={<LifeCampusPage />} />
 
             <Route path="/news" element={<NewsPage />} />

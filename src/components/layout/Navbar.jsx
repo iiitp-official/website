@@ -354,7 +354,7 @@ const Navbar = () => {
           subLinks: [
             { name: "Magazine", path: "/life/magazine" },
             { name: "Newsletter", path: "/life/newsletter" },
-            { name: "Press", path: "/#" },
+            { name: "Press", path: "/life/press" },
           ]
         },
         // { name: "Magazine", path: "/life/magazine" },
