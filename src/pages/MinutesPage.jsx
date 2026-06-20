@@ -3,63 +3,63 @@ import PageHeader from '../components/shared/PageHeader';
 import { Download, FileText, BookOpen } from 'lucide-react';
 
 const bogData = [
-  { name: '1st GB', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/GB-1%20MoM%2016.02.2016.pdf' },
-  { name: '2nd GB', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/GB-2%20MoM%2002.05.2017.pdf' },
-  { name: '3rd GB', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/GB-3%20MoM%2026.02.2019.pdf' },
-  { name: '4th GB', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/GB-4%20MoM%2018.12.2019.pdf' },
-  { name: '1st BoG', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BoG-1%20MoM%2020.01.2022_0.pdf' },
-  { name: '2nd BoG', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BoG-2%20MoM%2019.09.2022_0.pdf' },
-  { name: '3rd BoG', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BoG-3%20MoM%2027.07.2023_0.pdf' },
-  { name: '4th BoG', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BoG-4%20MoM%2009.01.2024.pdf' },
-  { name: '5th BoG', link: 'https://www.iiitp.ac.in/sites/default/files/2025-02/BoG-5%20MoM%2021.08.2024.pdf' },
+  { name: '1st GB', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/GB-1%20MoM%2016.02.2016.pdf' },
+  { name: '2nd GB', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/GB-2%20MoM%2002.05.2017.pdf' },
+  { name: '3rd GB', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/GB-3%20MoM%2026.02.2019.pdf' },
+  { name: '4th GB', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/GB-4%20MoM%2018.12.2019.pdf' },
+  { name: '1st BoG', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BoG-1%20MoM%2020.01.2022_0.pdf' },
+  { name: '2nd BoG', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BoG-2%20MoM%2019.09.2022_0.pdf' },
+  { name: '3rd BoG', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BoG-3%20MoM%2027.07.2023_0.pdf' },
+  { name: '4th BoG', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BoG-4%20MoM%2009.01.2024.pdf' },
+  { name: '5th BoG', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BoG-5%20MoM%2021.08.2024.pdf' },
 ];
 
 const senateData = [
-  { name: '1st Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-1%20MoM%2019.04.2019.pdf' },
-  { name: '2nd Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-2%20MoM%2011.11.2019.pdf' },
-  { name: '3rd Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-3%20MoM%2026.07.2020.pdf' },
-  { name: '4th Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-4%20MoM%2005.11.2020.pdf' },
-  { name: '5th Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-5%20MoM%2006.02.2021.pdf' },
-  { name: '6th Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-6%20MoM%2004.09.2021.pdf' },
-  { name: '7th Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-7%20MoM%2014.11.2021.pdf' },
-  { name: '8th Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-8%20MoM%2010.04.2022.pdf' },
-  { name: '9th Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-9%20MoM%2026.12.2022.pdf' },
-  { name: '10th Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/Senate-10%20MoM%2009.02.2024.pdf' },
-  { name: '11th Senate', link: 'https://www.iiitp.ac.in/sites/default/files/2025-02/Senate-11%20MoM%2029.07.2024.pdf' },
+  { name: '1st Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-1%20MoM%2019.04.2019.pdf' },
+  { name: '2nd Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-2%20MoM%2011.11.2019.pdf' },
+  { name: '3rd Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-3%20MoM%2026.07.2020.pdf' },
+  { name: '4th Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-4%20MoM%2005.11.2020.pdf' },
+  { name: '5th Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-5%20MoM%2006.02.2021.pdf' },
+  { name: '6th Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-6%20MoM%2004.09.2021.pdf' },
+  { name: '7th Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-7%20MoM%2014.11.2021.pdf' },
+  { name: '8th Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-8%20MoM%2010.04.2022.pdf' },
+  { name: '9th Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-9%20MoM%2026.12.2022.pdf' },
+  { name: '10th Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-10%20MoM%2009.02.2024.pdf' },
+  { name: '11th Senate', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/Senate-11%20MoM%2029.07.2024.pdf' },
 ];
 
 const fcData = [
-  { name: '1st FC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/FC-1%20MoM%2020.01.2022.pdf' },
-  { name: '2nd FC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/FC-2%20MoM%2019.09.2022.pdf' },
-  { name: '3rd FC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/FC-3%20MoM%2002.08.2023.pdf' },
-  { name: '4th FC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/FC-4%20MoM%2009.01.2024.pdf' },
-  { name: '5th FC', link: 'https://www.iiitp.ac.in/sites/default/files/2025-02/FC-5%20MoM%2021.08.2024.pdf' },
+  { name: '1st FC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/FC-1%20MoM%2020.01.2022.pdf' },
+  { name: '2nd FC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/FC-2%20MoM%2019.09.2022.pdf' },
+  { name: '3rd FC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/FC-3%20MoM%2002.08.2023.pdf' },
+  { name: '4th FC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/FC-4%20MoM%2009.01.2024.pdf' },
+  { name: '5th FC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/FC-5%20MoM%2021.08.2024.pdf' },
 ];
 
 const bwcData = [
-  { name: '1st BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-1%20MoM%2010.08.2019.pdf' },
-  { name: '2nd BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-2%20MoM%2022.08.2020.pdf' },
-  { name: '3rd BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-3%20MoM%2009.01.2021.pdf' },
-  { name: '4th BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-4%20MoM%2019.06.2021.pdf' },
-  { name: '5th BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-5%20MoM%2005.12.2021.pdf' },
-  { name: '6th BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-6%20MoM%2012.12.2021.pdf' },
-  { name: '7th BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-7%20MoM%2015.04.2022.pdf' },
-  { name: '8th BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-8%20MoM%2007.02.2023.pdf' },
-  { name: '9th BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-9%20MoM%2026.09.2023.pdf' },
-  { name: '10th BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2024-09/BWC-10%20MoM%2010.11.2023.pdf' },
-  { name: '11th BWC', link: 'https://www.iiitp.ac.in/sites/default/files/2025-02/BWC-11%20MoM%2012.08.2024.pdf' },
+  { name: '1st BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-1%20MoM%2010.08.2019.pdf' },
+  { name: '2nd BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-2%20MoM%2022.08.2020.pdf' },
+  { name: '3rd BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-3%20MoM%2009.01.2021.pdf' },
+  { name: '4th BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-4%20MoM%2019.06.2021.pdf' },
+  { name: '5th BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-5%20MoM%2005.12.2021.pdf' },
+  { name: '6th BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-6%20MoM%2012.12.2021.pdf' },
+  { name: '7th BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-7%20MoM%2015.04.2022.pdf' },
+  { name: '8th BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-8%20MoM%2007.02.2023.pdf' },
+  { name: '9th BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-9%20MoM%2026.09.2023.pdf' },
+  { name: '10th BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-10%20MoM%2010.11.2023.pdf' },
+  { name: '11th BWC', link: '/Reports-and-minutes-docs/Minutes-of-meetings-docs/BWC-11%20MoM%2012.08.2024.pdf' },
 ];
 
 const annualData = [
-  { year: '2024-2025', repEng: '/Reports-and-minutes-docs/Annual%20Report_2024-25%20Engg.pdf', repHin: '/Reports-and-minutes-docs/Annual%20Report_2024-25%20Hindi.pdf', accEng: '/Reports-and-minutes-docs/Annual%20Account%20Report_2024-25%20Engg.pdf', accHin: '/Reports-and-minutes-docs/Annual%20Account%20Report_2024-25%20Hindi.pdf' },
+  { year: '2024-2025', repEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2024-25%20Engg.pdf', repHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2024-25%20Hindi.pdf', accEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account%20Report_2024-25%20Engg.pdf', accHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account%20Report_2024-25%20Hindi.pdf' },
   { year: '2023-2024', repEng: '#', repHin: '#', accEng: '#', accHin: '#' },
-  { year: '2022-2023', repEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2022-23%20%28Eng%29_compressed.pdf', repHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2022-23%20%28Hindi%29_compressed.pdf', accEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2022-23%20%28Eng%29_compressed.pdf', accHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2022-23%20%28Hindi%29_compressed.pdf' },
-  { year: '2021-2022', repEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2021-22%20%28Eng%29_compressed.pdf', repHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2021-22%20%28Hindi%29_compressed.pdf', accEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2021-22%20%28Eng%29_compressed.pdf', accHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2021-22%20%28Hindi%29_compressed.pdf' },
-  { year: '2020-2021', repEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2020-21%20%28Eng%29_compressed.pdf', repHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/ANNUAL%20REPORT_2020-21%20%28Hindi%29_compressed.pdf', accEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2020-21%20%28Eng%29_compressed.pdf', accHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/ANNUAL%20Account_2020-21%20%28Hindi%29_compressed.pdf' },
-  { year: '2019-2020', repEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2019-20%20%28Eng%29_Final_compressed.pdf', repHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2019-20%20%28Hindi%29%20Final_compressed.pdf', accEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2019-20%20%28Eng%29_Final_compressed.pdf', accHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2019-20%20%28Hindi%29%20Final_compressed.pdf' },
-  { year: '2018-2019', repEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2018-19%20%28Eng%29_compressed.pdf', repHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2018-19%20%28Hindi%29_compressed.pdf', accEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2018-19%20%28Eng%29_compressed.pdf', accHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2018-19%20%28Hindi%29_compressed.pdf' },
-  { year: '2017-2018', repEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20report%202017-18%20%28Eng%29%20Final_compressed.pdf', repHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report%202017-18%20%28Hindi%29%20Final_compressed.pdf', accEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account%202017-18%20%28Eng%29%20Final_compressed.pdf', accHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account%202017-18%20%28Hindi%29%20Final_compressed.pdf' },
-  { year: '2016-2017', repEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report%202016-17%20%28Eng%29%20Final_compressed.pdf', repHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report%202016-17%20%28Hindi%29%20Final_compressed.pdf', accEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account%202016-17%20%28Eng%29%20Final_compressed.pdf', accHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account%202016-17%20%28Hindi%29%20Final_compressed.pdf' },
+  { year: '2022-2023', repEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2022-23%20(Eng)_compressed.pdf', repHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2022-23%20(Hindi)_compressed.pdf', accEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account_2022-23%20(Eng)_compressed.pdf', accHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account_2022-23%20(Hindi)_compressed.pdf' },
+  { year: '2021-2022', repEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2021-22%20(Eng)_compressed.pdf', repHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2021-22%20(Hindi)_compressed.pdf', accEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account_2021-22%20(Eng)_compressed.pdf', accHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account_2021-22%20(Hindi)_compressed.pdf' },
+  { year: '2020-2021', repEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2020-21%20(Eng)_compressed.pdf', repHin: '/Reports-and-minutes-docs/Annual-reports-docs/ANNUAL%20REPORT_2020-21%20(Hindi)_compressed.pdf', accEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account_2020-21%20(Eng)_compressed.pdf', accHin: '/Reports-and-minutes-docs/Annual-reports-docs/ANNUAL%20Account_2020-21%20(Hindi)_compressed.pdf' },
+  { year: '2019-2020', repEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2019-20%20(Eng)_Final_compressed.pdf', repHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2019-20%20(Hindi)%20Final_compressed.pdf', accEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account_2019-20%20(Eng)_Final_compressed.pdf', accHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account_2019-20%20(Hindi)%20Final_compressed.pdf' },
+  { year: '2018-2019', repEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2018-19%20(Eng)_compressed.pdf', repHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report_2018-19%20(Hindi)_compressed.pdf', accEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account_2018-19%20(Eng)_compressed.pdf', accHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account_2018-19%20(Hindi)_compressed.pdf' },
+  { year: '2017-2018', repEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20report%202017-18%20(Eng)%20Final_compressed.pdf', repHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report%202017-18%20(Hindi)%20Final_compressed.pdf', accEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account%202017-18%20(Eng)%20Final_compressed.pdf', accHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account%202017-18%20(Hindi)%20Final_compressed.pdf' },
+  { year: '2016-2017', repEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report%202016-17%20(Eng)%20Final_compressed.pdf', repHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Report%202016-17%20(Hindi)%20Final_compressed.pdf', accEng: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account%202016-17%20(Eng)%20Final_compressed.pdf', accHin: '/Reports-and-minutes-docs/Annual-reports-docs/Annual%20Account%202016-17%20(Hindi)%20Final_compressed.pdf' },
 ];
 
 const SimpleTable = ({ title, data }) => (
@@ -70,7 +70,7 @@ const SimpleTable = ({ title, data }) => (
         {title}
       </h3>
     </div>
-    <div className="p-0 overflow-y-auto max-h-[300px] custom-scrollbar flex-grow">
+    <div className="p-0 overflow-y-auto max-h-[300px] minutes-scrollbar flex-grow">
       <table className="w-full text-left border-collapse">
         <tbody>
           {data.map((item, index) => (
@@ -96,7 +96,7 @@ const SimpleTable = ({ title, data }) => (
   </div>
 );
 
-const MinutesPage = () => {
+const ReportsAndMinutes = () => {
   const [activeTab, setActiveTab] = useState('minutes');
 
   return (
@@ -213,8 +213,35 @@ const MinutesPage = () => {
         </div>
         </div>
       </div>
+      <style>{`
+        .minutes-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.05);
+        }
+        .dark .minutes-scrollbar {
+          scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
+        }
+        .minutes-scrollbar::-webkit-scrollbar {
+          display: block !important;
+          width: 6px !important;
+        }
+        .minutes-scrollbar::-webkit-scrollbar-track {
+          background: rgba(0, 0, 0, 0.05);
+          border-radius: 10px;
+        }
+        .minutes-scrollbar::-webkit-scrollbar-thumb {
+          background-color: rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+        }
+        .dark .minutes-scrollbar::-webkit-scrollbar-track {
+          background: rgba(255, 255, 255, 0.05);
+        }
+        .dark .minutes-scrollbar::-webkit-scrollbar-thumb {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      `}</style>
     </div>
   );
 };
 
-export default MinutesPage;
+export default ReportsAndMinutes;
