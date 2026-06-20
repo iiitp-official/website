@@ -113,72 +113,68 @@ const Footer = () => {
             <h3 className="text-brand-red font-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">
               Quick Links
             </h3>
-            <div className="grid grid-cols-2 gap-4 text-left">
-              <ul className="space-y-3">
-                <li>
-                  <Link
-                    to="/nirf"
-                    className="hover:text-brand-red transition-colors flex items-center group"
-                  >
-                    <ExternalLink
-                      size={14}
-                      className="mr-2 text-[#0d6efd]"
-                    />{" "}
-                    NIRF
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/reports-and-minutes"
-                    className="hover:text-brand-red transition-colors flex items-center group"
-                  >
-                    <ExternalLink
-                      size={14}
-                      className="mr-2 text-[#0d6efd]"
-                    />{" "}
-                    Reports and Minutes
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/rajbhasha"
-                    className="hover:text-brand-red transition-colors flex items-center group"
-                  >
-                    <ExternalLink
-                      size={14}
-                      className="mr-2 text-[#0d6efd]"
-                    />{" "}
-                    राजभाषा अनुभाग
-                  </Link>
-                </li>
-              </ul>
-              <ul className="space-y-3">
-                <li>
-                  <Link
-                    to="/suo-motu"
-                    className="hover:text-brand-red transition-colors flex items-center group"
-                  >
-                    <ExternalLink
-                      size={14}
-                      className="mr-2 text-[#0d6efd]"
-                    />{" "}
-                    Suo Motu Disclosure
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/rti"
-                    className="hover:text-brand-red transition-colors flex items-center group"
-                  >
-                    <ExternalLink
-                      size={14}
-                      className="mr-2 text-[#0d6efd]"
-                    />{" "}
-                    RTI
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-3 text-left">
+              <li>
+                <Link to="/nirf" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">NIRF</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/suo-motu" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">Suo Motu Disclosure</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/reports-and-minutes" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">Reports and Minutes</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/rti" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">RTI</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/rajbhasha" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">राजभाषा अनुभाग</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/#" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">Internal Complaints Committee (ICC)</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/#" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">Student Grievance Redressal</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/#" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">Equal Opportunity Cell (EOC)</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/#" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">Committee (SGRC)</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-brand-red transition-colors flex items-start group">
+                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">Contact US</span>
+                </Link>
+              </li>
+            </ul>
             <div className="mt-6 pt-4 border-t border-gray-800 flex items-center text-sm">
               <span className="text-gray-400 uppercase tracking-wider text-xs font-semibold mr-2">
                 GST No:
