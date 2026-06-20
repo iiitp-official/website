@@ -32,7 +32,8 @@ const Breadcrumb = () => {
           'visvesvaraya': 'Visvesvaraya Scheme',
           'institute': 'Institute Scheme',
           'graduated': 'Graduated PhD Students',
-          'anti-ragging': 'Anti-Ragging Committee'
+          'anti-ragging': 'Anti-Ragging Committee',
+          'minutes-of-meetings': 'Reports and Minutes'
         };
 
         // Capitalize and format text, handling special acronyms

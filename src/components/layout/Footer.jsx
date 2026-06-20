@@ -136,7 +136,7 @@ const Footer = () => {
                       size={14}
                       className="mr-2 text-[#0d6efd]"
                     />{" "}
-                    Minutes of Meetings
+                    Reports and Minutes
                   </Link>
                 </li>
                 <li>
