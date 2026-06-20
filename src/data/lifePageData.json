@@ -1025,14 +1025,16 @@
   "CAMPUS_TOUR_BOXES": [
     {
       "title": "Academic Building",
-      "image": "/assets/campus_tour/Academic1.jpg",
+      "image": "/assets/campus_tour/Acad1.jpeg",
       "description": "The campus features a state-of-the-art Academic Building equipped with smart classrooms, advanced laboratories, collaborative learning spaces, and facilities. Classrooms are equipped with projectors, audio-visual systems, and digital learning tools to enhance the teaching-learning experience.",
       "images": [
-        "/assets/campus_tour/Academic1.jpg",
-        "/assets/campus_tour/Academic2.jpg",
-        "/assets/campus_tour/Academic3.jpg",
-        "/assets/campus_tour/Academic4.jpg",
-        "/assets/campus_tour/Academic5.jpg"
+        "/assets/campus_tour/Acad1.jpeg",
+        "/assets/campus_tour/Acad2.jpeg",
+        "/assets/campus_tour/Acad3.jpeg",
+        "/assets/campus_tour/Acad4.jpeg",
+        "/assets/campus_tour/Acad5.jpeg",
+        "/assets/campus_tour/Acad6.jpeg",
+        "/assets/campus_tour/Acad7.jpeg"
       ]
     },
     {
@@ -1047,12 +1049,14 @@
     },
     {
       "title": "Hostel Facilities",
-      "image": "/assets/campus_tour/Hostel1.jpg",
+      "image": "/assets/campus_tour/Hostel1.jpeg",
       "description": "IIIT Pune offers comfortable and secure hostel facilities for both boys and girls, fostering a vibrant residential community that encourages collaboration, cultural exchange, and lifelong friendships.",
       "images": [
-        "/assets/campus_tour/Hostel1.jpg",
-        "/assets/campus_tour/Hostel2.jpg",
-        "/assets/campus_tour/Hostel3.jpg"
+        "/assets/campus_tour/Hostel1.jpeg",
+        "/assets/campus_tour/Hostel2.jpeg",
+        "/assets/campus_tour/Hostel3.jpeg",
+        "/assets/campus_tour/Hostel4.jpeg",
+        "/assets/campus_tour/Hostel5.jpeg"
       ]
     },
     {
