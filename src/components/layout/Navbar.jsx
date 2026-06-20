@@ -353,7 +353,7 @@ const Navbar = () => {
           path: "/#",
           subLinks: [
             { name: "Magazine", path: "/life/magazine" },
-            { name: "Newsletter", path: "/#" },
+            { name: "Newsletter", path: "/life/newsletter" },
             { name: "Press", path: "/#" },
           ]
         },

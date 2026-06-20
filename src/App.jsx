@@ -87,6 +87,7 @@ const LifeActivitiesPage = lazy(() => import("./pages/LifeActivitiesPage"));
 const LifeGalleryPage = lazy(() => import("./pages/LifeGalleryPage"));
 const LifeEventsPage = lazy(() => import("./pages/LifeEventsPage"));
 const LifeMagazinePage = lazy(() => import("./pages/LifeMagazinePage"));
+const LifeNewsletterPage = lazy(() => import("./pages/LifeNewsletterPage"));
 const LifeCampusPage = lazy(() => import("./pages/LifeCampusPage"));
 const NoticePage = lazy(() => import("./pages/NoticePage"));
 const NewsPage = lazy(() => import("./pages/NewsPage"));
@@ -344,6 +345,7 @@ function AppContent() {
             <Route path="/life/gallery" element={<LifeGalleryPage />} />
             <Route path="/life/events" element={<LifeEventsPage />} />
             <Route path="/life/magazine" element={<LifeMagazinePage />} />
+            <Route path="/life/newsletter" element={<LifeNewsletterPage />} />
             <Route path="/life/campus" element={<LifeCampusPage />} />
 
             <Route path="/news" element={<NewsPage />} />
