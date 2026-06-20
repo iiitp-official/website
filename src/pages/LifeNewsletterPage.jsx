@@ -97,14 +97,20 @@ const LifeNewsletterPage = () => {
                 </div>
               </div>
               
-              <div className="w-full md:w-2/5 lg:w-1/3 bg-[#f3f1e9] dark:bg-gray-800 flex shrink-0 border-b md:border-b-0 md:border-l border-gray-100 dark:border-gray-800 order-1 md:order-2 overflow-hidden relative">
+              <a 
+                href={nl.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full md:w-2/5 lg:w-1/3 bg-[#f3f1e9] dark:bg-gray-800 flex shrink-0 border-b md:border-b-0 md:border-l border-gray-100 dark:border-gray-800 order-1 md:order-2 overflow-hidden relative cursor-pointer group"
+                aria-label={`View ${nl.title} PDF`}
+              >
                 <img 
                   src={nl.img} 
                   alt={`${nl.title} Cover`} 
-                  className="w-full h-full object-contain" 
+                  className="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-90" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              </a>
             </div>
           ))}
         </div>
