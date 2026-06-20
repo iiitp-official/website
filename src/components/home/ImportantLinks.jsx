@@ -58,7 +58,7 @@ const ImportantLinks = () => {
                 >
                   <h3 className="text-xl md:text-2xl font-bold font-serif text-primary dark:text-white mb-6 pb-4 border-b border-gray-400 dark:border-gray-700 flex items-center">
                     <ExternalLink className="mr-3 text-accent dark:text-accent-dark" size={24} />
-                    Institutional Links
+                    Important Links
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
                     {[

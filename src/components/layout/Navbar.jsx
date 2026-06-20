@@ -355,7 +355,16 @@ const Navbar = () => {
             { name: "HR Summit 2026", path: "#" }
           ]
         },
-        { name: "Magazine", path: "/life/magazine" },
+        {
+          name: "Media Center",
+          hasDropdown: true,
+          path: "/#",
+          subLinks: [
+            { name: "Magazine", path: "/life/magazine" },
+            { name: "Newsletter", path: "/life/newsletter" },
+            { name: "Press", path: "/life/press" },
+          ]
+        },
         { name: "Campus Tour", path: "/life/campus" },
         {
           name: "Student Chapters",
