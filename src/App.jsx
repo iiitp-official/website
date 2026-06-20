@@ -99,7 +99,7 @@ const NIRFPage = lazy(() => import("./pages/NIRFPage"));
 const SuoMotuPage = lazy(() => import("./pages/SuoMotuPage"));
 const RTIPage = lazy(() => import("./pages/RTIPage"));
 const RajbhashaPage = lazy(() => import("./pages/RajbhashaPage"));
-const MinutesPage = lazy(() => import("./pages/MinutesPage"));
+const MinutesPage = lazy(() => import("./pages/ReportsAndMinutes"));
 const ScholarshipPage = lazy(() => import("./pages/ScholarshipPage"));
 const IEEEPage = lazy(() => import("./pages/IEEEPage"));
 const ACMPage = lazy(() => import("./pages/ACMPage"));
