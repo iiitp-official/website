@@ -370,7 +370,7 @@ function AppContent() {
             <Route path="/suo-motu" element={<SuoMotuPage />} />
             <Route path="/rti" element={<RTIPage />} />
             <Route path="/rajbhasha" element={<RajbhashaPage />} />
-            <Route path="/minutes-of-meetings" element={<MinutesPage />} />
+            <Route path="/reports-and-minutes" element={<MinutesPage />} />
             <Route path="/scholarships" element={<ScholarshipPage />} />
             <Route path="/ieee" element={<IEEEPage />} />
             <Route path="/acm" element={<ACMPage />} />

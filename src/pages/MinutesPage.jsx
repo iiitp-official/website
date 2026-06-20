@@ -51,7 +51,7 @@ const bwcData = [
 ];
 
 const annualData = [
-  { year: '2024-2025', repEng: '#', repHin: '#', accEng: '#', accHin: '#' },
+  { year: '2024-2025', repEng: '/Reports-and-minutes-docs/Annual%20Report_2024-25%20Engg.pdf', repHin: '/Reports-and-minutes-docs/Annual%20Report_2024-25%20Hindi.pdf', accEng: '/Reports-and-minutes-docs/Annual%20Account%20Report_2024-25%20Engg.pdf', accHin: '/Reports-and-minutes-docs/Annual%20Account%20Report_2024-25%20Hindi.pdf' },
   { year: '2023-2024', repEng: '#', repHin: '#', accEng: '#', accHin: '#' },
   { year: '2022-2023', repEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2022-23%20%28Eng%29_compressed.pdf', repHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2022-23%20%28Hindi%29_compressed.pdf', accEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2022-23%20%28Eng%29_compressed.pdf', accHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2022-23%20%28Hindi%29_compressed.pdf' },
   { year: '2021-2022', repEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2021-22%20%28Eng%29_compressed.pdf', repHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Report_2021-22%20%28Hindi%29_compressed.pdf', accEng: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2021-22%20%28Eng%29_compressed.pdf', accHin: 'https://www.iiitp.ac.in/sites/default/files/2024-08/Annual%20Account_2021-22%20%28Hindi%29_compressed.pdf' },

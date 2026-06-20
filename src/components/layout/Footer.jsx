@@ -129,7 +129,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/minutes-of-meetings"
+                    to="/reports-and-minutes"
                     className="hover:text-brand-red transition-colors flex items-center group"
                   >
                     <ExternalLink
