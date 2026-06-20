@@ -69,15 +69,15 @@ const transportModes = [
 
 const importantContacts = [
   {
-    name: "Director's PA",
-    designation: "Personal Assistant to Director",
+    name: "Mr. Sandeep Mandal",
+    designation: "Director PA",
     department: "Administration",
-    email: "",
-    phone: "02114-224501"
+    email: "patodirector@iiitp.ac.in",
+    phone: ""
   },
   {
-    name: "Viraj Pradip Lohakare",
-    designation: "Personal Assistant to Registrar",
+    name: "Mr. Rajender",
+    designation: "Registrar PA",
     department: "Administration",
     email: "patoreg@iiitp.ac.in",
     phone: "02114-224503"

@@ -310,6 +310,16 @@
     "type": "Contract"
   },
   {
+    "name": "Sudhir kumar",
+    "designation": "Office Executive",
+    "department": "Examination Cell",
+    "departmentShort": "Examination Cell",
+    "image": "/assets/nonteachingstaff_photos/sudhirkumar.jpeg",
+    "description": "",
+    "email": "asstt2.examination@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
     "name": "Ajay Siddharth Sirsat",
     "designation": "Carpenter",
     "department": "Maintenance",
@@ -367,16 +377,6 @@
     "image": "/assets/nonteachingstaff_photos/kedarbhogshetti.jpg",
     "description": "",
     "email": "placements@iiitp.ac.in",
-    "type": "Contract"
-  },
-  {
-    "name": "Sumit Shashikant Patil",
-    "designation": "Office Executive",
-    "department": "Store and Purchase Department",
-    "departmentShort": "",
-    "image": "/assets/nonteachingstaff_photos/sumitpatil.jpeg",
-    "description": "",
-    "email": "",
     "type": "Contract"
   },
   {
