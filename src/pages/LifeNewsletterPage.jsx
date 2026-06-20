@@ -16,9 +16,9 @@ const newsletters = [
         international conference participation, and inspiring stories from the IIIT Pune community.
       </>
     ),
-    link: "https://drive.google.com/file/d/1TgfBaCHEfXg411l9qzN7w0XvPGjwhOIT/view?usp=sharing",
-    downloadLink: "https://drive.google.com/uc?export=download&id=1TgfBaCHEfXg411l9qzN7w0XvPGjwhOIT",
-    img: "/assets/newsletter-images/2.jpeg"
+    link: "/newsletter-docs-images/Newsletter Edition II.pdf",
+    downloadLink: "/newsletter-docs-images/Newsletter Edition II.pdf",
+    img: "/newsletter-docs-images/2.jpeg"
   },
   {
     meta: "Volume 1 | Edition I | November 2025",
@@ -31,9 +31,9 @@ const newsletters = [
         developments, and cultural highlights in one publication.
       </>
     ),
-    link: "https://drive.google.com/file/d/1hXJlo0Bp_QLw4gotR46K25JnUJZtjeqU/view?usp=sharing",
-    downloadLink: "https://drive.google.com/uc?export=download&id=1hXJlo0Bp_QLw4gotR46K25JnUJZtjeqU",
-    img: "/assets/newsletter-images/1.jpeg"
+    link: "/newsletter-docs-images/Eclectic Times Vol.1.pdf",
+    downloadLink: "/newsletter-docs-images/Eclectic Times Vol.1.pdf",
+    img: "/newsletter-docs-images/1.jpeg"
   }
 ];
 
@@ -86,6 +86,7 @@ const LifeNewsletterPage = () => {
                   </a>
                   <a 
                     href={nl.downloadLink} 
+                    download
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="flex items-center gap-2 px-6 py-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-xl text-sm font-bold transition-all shadow-sm hover:-translate-y-0.5"
