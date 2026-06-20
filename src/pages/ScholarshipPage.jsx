@@ -26,8 +26,8 @@ const ScholarshipPage = () => {
                 <thead className="bg-gray-50 dark:bg-gray-800/50">
                   <tr>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white tracking-wider">Sr.</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white tracking-wider">Category</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white tracking-wider">Scheme</th>
+                    <th className="pl-6 pr-2 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white tracking-wider">Category</th>
+                    <th className="pl-2 pr-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white tracking-wider">Scheme</th>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white tracking-wider">Governed By</th>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white tracking-wider">Website</th>
                   </tr>
@@ -40,12 +40,10 @@ const ScholarshipPage = () => {
                       className="hover:bg-blue-50/50 dark:hover:bg-gray-800/50 transition-colors"
                     >
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 font-medium">{item.sr}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 dark:text-gray-300">
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
-                          {item.category}
-                        </span>
+                      <td className="pl-6 pr-2 py-4 whitespace-nowrap text-md text-gray-700 dark:text-gray-300">
+                        {item.category}
                       </td>
-                      <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">{item.scheme}</td>
+                      <td className="pl-2 pr-6 py-4 text-sm text-gray-900 dark:text-white font-medium">{item.scheme}</td>
                       <td className="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">{item.governedBy}</td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm">
                         <a

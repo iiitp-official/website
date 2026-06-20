@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ExternalLink, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import FadeInSection from '../shared/FadeInSection';
@@ -73,22 +74,32 @@ const ImportantLinks = () => {
                       { name: 'National Digital Library', url: 'https://www.ndl.gov.in/' },
                     ].map((link, idx) => {
                       const isInternal = link.url.startsWith('/');
-                      return (
-                      <a
-                        key={idx}
-                        href={link.url}
-                        target={isInternal ? "_self" : "_blank"} 
-                        rel={isInternal ? "" : "noopener noreferrer"}
-
-                        
-                        className="flex items-center text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark group font-medium border-b border-gray-100 dark:border-gray-800/50 pb-2 transition-colors text-sm"
-                      >
-                        <div className="p-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 mr-3 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
-                          <ExternalLink size={16} />
-                        </div>
-                        {link.name}
-                        <ExternalLink size={14} className="ml-auto opacity-0 group-hover:opacity-70 transition-opacity shrink-0" />
-                      </a>
+                      return isInternal ? (
+                        <Link
+                          key={idx}
+                          to={link.url}
+                          className="flex items-center text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark group font-medium border-b border-gray-100 dark:border-gray-800/50 pb-2 transition-colors text-sm"
+                        >
+                          <div className="p-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 mr-3 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
+                            <ExternalLink size={16} />
+                          </div>
+                          {link.name}
+                          <ExternalLink size={14} className="ml-auto opacity-0 group-hover:opacity-70 transition-opacity shrink-0" />
+                        </Link>
+                      ) : (
+                        <a
+                          key={idx}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark group font-medium border-b border-gray-100 dark:border-gray-800/50 pb-2 transition-colors text-sm"
+                        >
+                          <div className="p-1.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 mr-3 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
+                            <ExternalLink size={16} />
+                          </div>
+                          {link.name}
+                          <ExternalLink size={14} className="ml-auto opacity-0 group-hover:opacity-70 transition-opacity shrink-0" />
+                        </a>
                       );
                     })}
                   </div>
