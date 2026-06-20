@@ -96,7 +96,7 @@ const ETenderPage = lazy(() => import("./pages/ETenderPage"));
 const PlacementPage = lazy(() => import("./pages/PlacementPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const NIRFPage = lazy(() => import("./pages/NIRFPage"));
-const SuoMotoPage = lazy(() => import("./pages/SuoMotoPage"));
+const SuoMotuPage = lazy(() => import("./pages/SuoMotuPage"));
 const RTIPage = lazy(() => import("./pages/RTIPage"));
 const RajbhashaPage = lazy(() => import("./pages/RajbhashaPage"));
 const MinutesPage = lazy(() => import("./pages/MinutesPage"));
@@ -367,7 +367,7 @@ function AppContent() {
             <Route path="/placement" element={<PlacementPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/nirf" element={<NIRFPage />} />
-            <Route path="/suo-moto" element={<SuoMotoPage />} />
+            <Route path="/suo-motu" element={<SuoMotuPage />} />
             <Route path="/rti" element={<RTIPage />} />
             <Route path="/rajbhasha" element={<RajbhashaPage />} />
             <Route path="/minutes-of-meetings" element={<MinutesPage />} />

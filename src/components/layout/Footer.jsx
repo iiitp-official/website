@@ -155,14 +155,14 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    to="/suo-moto"
+                    to="/suo-motu"
                     className="hover:text-brand-red transition-colors flex items-center group"
                   >
                     <ExternalLink
                       size={14}
                       className="mr-2 text-[#0d6efd]"
                     />{" "}
-                    Suo Moto
+                    Suo Motu Disclosure
                   </Link>
                 </li>
                 <li>
