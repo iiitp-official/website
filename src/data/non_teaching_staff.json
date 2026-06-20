@@ -310,16 +310,6 @@
     "type": "Contract"
   },
   {
-    "name": "Sudhir kumar",
-    "designation": "Office Executive",
-    "department": "Examination Cell",
-    "departmentShort": "Examination Cell",
-    "image": "/assets/nonteachingstaff_photos/sudhirkumar.jpeg",
-    "description": "",
-    "email": "asstt2.examination@iiitp.ac.in",
-    "type": "Contract"
-  },
-  {
     "name": "Ajay Siddharth Sirsat",
     "designation": "Carpenter",
     "department": "Maintenance",
@@ -367,16 +357,6 @@
     "image": "/assets/nonteachingstaff_photos/krushnasurvase.jpg",
     "description": "",
     "email": "krushnasurvase747421@gmail.com",
-    "type": "Contract"
-  },
-  {
-    "name": "Sudhir Kumar Gupta",
-    "designation": "System Administrator",
-    "department": "Department of Computer Science and Engineering",
-    "departmentShort": "CSE",
-    "image": "/assets/nonteachingstaff_photos/sudhirgupta.jpg",
-    "description": "",
-    "email": "sudhirkgupta@iiit.ac.in",
     "type": "Contract"
   },
   {
