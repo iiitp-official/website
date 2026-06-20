@@ -68,13 +68,18 @@ const ImportantLinks = () => {
                       { name: 'CSAB', url: 'https://csab.nic.in/' },
                       { name: 'AICTE', url: 'https://www.aicte.gov.in/' },
                       { name: 'National Scholarship Portal', url: 'https://scholarships.gov.in/' },
+                      { name: 'Scholarships', url: '/scholarships' },
                       { name: 'Swayam Portal', url: 'https://swayam.gov.in/' },
                       { name: 'National Digital Library', url: 'https://www.ndl.gov.in/' },
-                    ].map((link, idx) => (
+                    ].map((link, idx) => {
+                      const isInternal = link.url.startsWith('/');
+                      return (
                       <a
                         key={idx}
                         href={link.url}
-                        target="_blank" rel="noopener noreferrer"
+                        target={isInternal ? "_self" : "_blank"} 
+                        rel={isInternal ? "" : "noopener noreferrer"}
+
                         
                         className="flex items-center text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark group font-medium border-b border-gray-100 dark:border-gray-800/50 pb-2 transition-colors text-sm"
                       >
@@ -84,7 +89,8 @@ const ImportantLinks = () => {
                         {link.name}
                         <ExternalLink size={14} className="ml-auto opacity-0 group-hover:opacity-70 transition-opacity shrink-0" />
                       </a>
-                    ))}
+                      );
+                    })}
                   </div>
                 </motion.div>
               )}

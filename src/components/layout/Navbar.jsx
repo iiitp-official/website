@@ -349,7 +349,15 @@ const Navbar = () => {
         { name: "HR Summit (2021)", path: "https://placements.iiitp.ac.in/HrSummit/", isExternal: true },
         { name: "Magazine", path: "/life/magazine" },
         { name: "Permanent Campus", path: "/life/campus" },
-        // { name: "ACM Chapter", path: "/#" },
+        {
+          name: "Student Chapters",
+          hasDropdown: true,
+          path: "/#",
+          subLinks: [
+            { name: "ACM Chapter", path: "/acm" },
+            { name: "IEEE Student Branch", path: "/ieee" },
+          ]
+        },
         // { name: "Sports & Gymnasium", path: "/#" },
       ]
     },
@@ -411,7 +419,7 @@ const Navbar = () => {
     // { name: "Sports & Gymnasium", path: "/#" },
     // { name: "Suo-Motu Disclosure", path: "/#" },
     // { name: "राजभाषा अनुभाग", path: "/#" },
-    // { name: "ACM Chapter", path: "/#" },
+
   ];
 
   const navLinkClass = ({ isActive }) =>

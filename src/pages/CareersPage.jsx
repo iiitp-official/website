@@ -8,7 +8,7 @@ const CareersPage = () => {
       buttons: [
         { label: "Apply Now", link: "https://iiitprec.samarth.edu.in/", isExternalLink: true },
         { label: "Details", file: "16.06.2026 ASSISTANT PROFESSOR TEMPORARY FINAL VERSION.pdf" },
-        { label: "Corrigendum", file: "CORRIGENDUM (Recruitment to the post of Assistant Professor) temporary on contractual basis.pdf" }
+        { label: "Corrigendum", file: "CORRIGENDUM (Recruitment to the post of Assistant Proffesor) temporary on contractual basis. .pdf" }
       ]
     },
     {
