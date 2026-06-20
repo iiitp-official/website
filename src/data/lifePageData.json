@@ -1022,76 +1022,89 @@
       "desc": "Celebrated IIIT Pune's growing research culture with features on funded projects, PhD scholar spotlights, club achievements, and an artistic tribute to campus life."
     }
   ],
-  "CAMPUS_IMAGES": [
+  "CAMPUS_TOUR_BOXES": [
     {
-      "src": "/assets/girls_hostel.jpg",
-      "caption": "Girls Hostel"
+      "title": "Academic Building",
+      "image": "/assets/campus_tour/Academic1.jpg",
+      "description": "The campus features a state-of-the-art Academic Building equipped with smart classrooms, advanced laboratories, collaborative learning spaces, and facilities. Classrooms are equipped with projectors, audio-visual systems, and digital learning tools to enhance the teaching-learning experience.",
+      "images": [
+        "/assets/campus_tour/Academic1.jpg",
+        "/assets/campus_tour/Academic2.jpg",
+        "/assets/campus_tour/Academic3.jpg",
+        "/assets/campus_tour/Academic4.jpg",
+        "/assets/campus_tour/Academic5.jpg"
+      ]
     },
     {
-      "src": "/assets/lecture_hall.jpg",
-      "caption": "Academic Building (AC) - Lecture Hall"
+      "title": "Library & Auditorium",
+      "image": "/assets/campus_tour/Audi1.jpeg",
+      "description": "Students also have access to a well-stocked library with ample reading and study space. The building also houses seminar halls and a spacious auditorium that facilitates technical learning, workshops, conferences, cultural events, and industry interactions, contributing to the holistic development of students.",
+      "images": [
+        "/assets/campus_tour/Audi1.jpeg",
+        "/assets/campus_tour/Audi2.jpeg",
+        "/assets/campus_tour/Audi3.jpeg"
+      ]
     },
     {
-      "src": "/assets/bh1.jpg",
-      "caption": "Boys Hostel 1 (BH)"
+      "title": "Hostel Facilities",
+      "image": "/assets/campus_tour/Hostel1.jpg",
+      "description": "IIIT Pune offers comfortable and secure hostel facilities for both boys and girls, fostering a vibrant residential community that encourages collaboration, cultural exchange, and lifelong friendships.",
+      "images": [
+        "/assets/campus_tour/Hostel1.jpg",
+        "/assets/campus_tour/Hostel2.jpg",
+        "/assets/campus_tour/Hostel3.jpg"
+      ]
     },
     {
-      "src": "/assets/bh2.jpg",
-      "caption": "Boys Hostel 2 (BH)"
+      "title": "Dining Facilities",
+      "image": "/assets/campus_tour/Mess1.jpeg",
+      "description": "The institute provides spacious dining facilities through two independent messes on campus, serving nutritious and hygienically prepared meals. High standards of cleanliness, food safety, and quality ensure a comfortable and healthy dining experience for students.",
+      "images": [
+        "/assets/campus_tour/Mess1.jpeg",
+        "/assets/campus_tour/Mess2.jpeg",
+        "/assets/campus_tour/Mess3.jpeg",
+        "/assets/campus_tour/Mess4.jpeg",
+        "/assets/campus_tour/Mess5.jpeg",
+        "/assets/campus_tour/Mess6.jpeg",
+        "/assets/campus_tour/Mess7.jpeg",
+        "/assets/campus_tour/Mess8.jpeg"
+      ]
     },
     {
-      "src": "/assets/conference_room.jpg",
-      "caption": "Academic Building (AC) - Conference Room"
+      "title": "Sports & Fitness Centre",
+      "image": "/assets/campus_tour/Sports1.jpeg",
+      "description": "IIIT Pune provides dedicated gym facilities for both boys and girls, encouraging students to maintain an active and healthy lifestyle. The campus also features well-maintained sports grounds and a dedicated coaching and training instructor for sports and yoga. Equipped with modern fitness equipment, these spaces promote physical well-being, discipline, and overall physical fitness, mental well-being, teamwork, and a balanced lifestyle.",
+      "images": [
+        "/assets/campus_tour/Sports1.jpeg",
+        "/assets/campus_tour/Sports2.jpeg",
+        "/assets/campus_tour/Sports3.jpeg",
+        "/assets/campus_tour/Sports4.jpeg",
+        "/assets/campus_tour/Sports5.jpeg",
+        "/assets/campus_tour/Sports6.jpeg",
+        "/assets/campus_tour/Sports7.jpeg",
+        "/assets/campus_tour/Sports8.jpeg",
+        "/assets/campus_tour/Sports9.jpeg"
+      ]
     },
     {
-      "src": "/assets/lifepage/image042.jpg",
-      "caption": "Campus Sports Ground"
+      "title": "Medical Facility",
+      "image": "/assets/campus_tour/Medical1.jpeg",
+      "description": "IIIT Pune provides an on-campus medical room to address the immediate healthcare needs of students and staff. The institute also has tie-ups with reputed hospitals to ensure timely access to professional medical consultation and emergency care.",
+      "images": [
+        "/assets/campus_tour/Medical1.jpeg",
+        "https://www.iiitp.ac.in/sites/default/files/2026-06/medical%20room.jpeg"
+      ]
     },
     {
-      "src": "/assets/lifepage/_THC3794.JPG",
-      "caption": "Campus Life"
-    },
-    {
-      "src": "/assets/lifepage/Frame 780.png",
-      "caption": "IIIT Pune Events"
-    },
-    {
-      "src": "/assets/lifepage/2.jpg",
-      "caption": "Thinking Machine Hackathon"
-    },
-    {
-      "src": "/assets/lifepage/3.jpg",
-      "caption": "Innovation at IIIT Pune"
-    },
-    {
-      "src": "/assets/lifepage/DSC_0845 (1) (1).jpg",
-      "caption": "Campus Cultural Day"
-    }
-  ],
-  "FACILITIES": [
-    {
-      "title": "Smart Classrooms",
-      "desc": "Fully equipped smart classrooms and seminar halls with multimedia projection systems, interactive boards, and high-speed internet connectivity for a modern learning experience."
-    },
-    {
-      "title": "Advanced Laboratories",
-      "desc": "State-of-the-art CS, ECE, and IoT laboratories with industry-grade hardware, VLSI design tools, embedded systems rigs, robotics platforms, and high-performance computing clusters."
-    },
-    {
-      "title": "Student Hostels",
-      "desc": "Separate hostel blocks for boys and girls with 24/7 high-speed Wi-Fi, laundry facilities, round-the-clock security, and a hygienic mess serving balanced and nutritious meals."
-    },
-    {
-      "title": "Central Library",
-      "desc": "A well-stocked library with thousands of technical books, journals, international e-resources, IEEE and Springer digital subscriptions, and dedicated reading rooms for focused study."
-    },
-    {
-      "title": "Sports Facilities",
-      "desc": "Dedicated grounds for football, cricket, volleyball, basketball, badminton, and a fully-equipped indoor gymnasium to promote physical fitness and wellness among students."
-    },
-    {
-      "title": "High-Speed Connectivity",
-      "desc": "Campus-wide optical fibre network with gigabit internet access in all academic blocks, hostels, and common areas, enabling seamless academic and research activities."
+      "title": "Transportation Services",
+      "image": "/assets/campus_tour/Transport1.jpeg",
+      "description": "The Institute provides a dedicated bus service operating multiple times throughout the week between IIIT Pune and Talegaon Railway Station, ensuring convenient connectivity for students and staff. In addition, the PMPML bus service connecting IIIT Pune to Nigdi Bus Stand via Talegaon Railway Station offers a reliable and accessible public transportation option for daily commuting.",
+      "images": [
+        "/assets/campus_tour/Transport1.jpeg",
+        "/assets/campus_tour/Transport2.jpeg",
+        "https://www.iiitp.ac.in/sites/default/files/2026-06/bus%20pics%20.jpeg",
+        "https://www.iiitp.ac.in/sites/default/files/2026-06/bus.jpeg"
+      ]
     }
   ]
 }

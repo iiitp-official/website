@@ -346,9 +346,17 @@ const Navbar = () => {
         },
         { name: "Photo Gallery", path: "/life/gallery" },
         { name: "College Events", path: "/life/events" },
-        { name: "HR Summit (2021)", path: "https://placements.iiitp.ac.in/HrSummit/", isExternal: true },
+        {
+          name: "HR Summit",
+          path: "#",
+          hasDropdown: true,
+          subLinks: [
+            { name: "HR Summit 2021", path: "https://placements.iiitp.ac.in/HrSummit/", isExternal: true },
+            { name: "HR Summit 2026", path: "#" }
+          ]
+        },
         { name: "Magazine", path: "/life/magazine" },
-        { name: "Permanent Campus", path: "/life/campus" },
+        { name: "Campus Tour", path: "/life/campus" },
         {
           name: "Student Chapters",
           hasDropdown: true,
