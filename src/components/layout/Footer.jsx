@@ -153,19 +153,13 @@ const Footer = () => {
               <li>
                 <Link to="/#" className="hover:text-brand-red transition-colors flex items-start group">
                   <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
-                  <span className="leading-tight">Student Grievance Redressal</span>
+                  <span className="leading-tight">Student Grievance Redressal Committee (SGRC)</span>
                 </Link>
               </li>
               <li>
                 <Link to="/#" className="hover:text-brand-red transition-colors flex items-start group">
                   <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
                   <span className="leading-tight">Equal Opportunity Cell (EOC)</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/#" className="hover:text-brand-red transition-colors flex items-start group">
-                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
-                  <span className="leading-tight">Committee (SGRC)</span>
                 </Link>
               </li>
               <li>
