@@ -43,8 +43,7 @@
           }
         ],
         "email": "blueprint@iiitp.ac.in",
-        "instagram": "@blueprint_iiitp",
-        "website": "https://www.iiitp.ac.in/page/blueprint"
+        "instagram": "@blueprint_iiitp"
       },
       "flyer": "/assets/clubs/blueprint_flyer.jpg"
     },
@@ -1034,7 +1033,14 @@
         "/assets/campus_tour/Acad4.jpeg",
         "/assets/campus_tour/Acad5.jpeg",
         "/assets/campus_tour/Acad6.jpeg",
-        "/assets/campus_tour/Acad7.jpeg"
+        "/assets/campus_tour/Acad7.jpeg",
+        "/assets/campus_tour/Acad8.JPG",
+        "/assets/campus_tour/Acad9.JPG",
+        "/assets/campus_tour/Acad10.JPG",
+        "/assets/campus_tour/Acad11.JPG",
+        "/assets/campus_tour/Acad12.JPG",
+        "/assets/campus_tour/Acad13.JPG",
+        "/assets/campus_tour/Acad14.JPG"
       ]
     },
     {
@@ -1095,8 +1101,7 @@
       "image": "/assets/campus_tour/Medical1.jpeg",
       "description": "IIIT Pune provides an on-campus medical room to address the immediate healthcare needs of students and staff. The institute also has tie-ups with reputed hospitals to ensure timely access to professional medical consultation and emergency care.",
       "images": [
-        "/assets/campus_tour/Medical1.jpeg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-06/medical%20room.jpeg"
+        "/assets/campus_tour/Medical1.jpeg"
       ]
     },
     {
@@ -1105,9 +1110,7 @@
       "description": "The Institute provides a dedicated bus service operating multiple times throughout the week between IIIT Pune and Talegaon Railway Station, ensuring convenient connectivity for students and staff. In addition, the PMPML bus service connecting IIIT Pune to Nigdi Bus Stand via Talegaon Railway Station offers a reliable and accessible public transportation option for daily commuting.",
       "images": [
         "/assets/campus_tour/Transport1.jpeg",
-        "/assets/campus_tour/Transport2.jpeg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-06/bus%20pics%20.jpeg",
-        "https://www.iiitp.ac.in/sites/default/files/2026-06/bus.jpeg"
+        "/assets/campus_tour/Transport2.jpeg"
       ]
     }
   ]

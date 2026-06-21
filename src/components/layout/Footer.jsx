@@ -145,7 +145,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/#" className="hover:text-brand-red transition-colors flex items-start group">
+                <Link to="/icc" className="hover:text-brand-red transition-colors flex items-start group">
                   <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
                   <span className="leading-tight">Internal Complaints Committee (ICC)</span>
                 </Link>
