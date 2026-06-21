@@ -6,7 +6,7 @@ const ICCPage = () => {
     { sno: 1, name: <a href="/people/faculty/sonam-maurya" className="hover:underline text-[#0056b3] dark:text-blue-400 font-medium">Dr. Sonam Maurya</a>, designation: "Chairperson", contact: "+91-8989172018", email: "sonam.m@iiitp.ac.in" },
     { sno: 2, name: <a href="/people/faculty/sushant-kumar" className="hover:underline text-[#0056b3] dark:text-blue-400 font-medium">Dr. Sushant Kumar</a>, designation: "Member", contact: "+91-8292305145", email: "sushant@iiitp.ac.in" },
     { sno: 3, name: <a href="/people/faculty/habila-basumatary" className="text-[#0056b3] dark:text-blue-400 font-medium">Dr. Habila Basumatary</a>, designation: "Member", contact: "+91-8133911040", email: "habila@iiitp.ac.in" },
-    { sno: 4, name: <span className="text-[#0056b3] dark:text-blue-400 font-medium">Ms. Rishika Dakhle</span>, designation: "Staff Representative", contact: "+91----", email: "" },
+    { sno: 4, name: <span className="text-[#0056b3] dark:text-blue-400 font-medium">Ms. Rishika Dakhle</span>, designation: "Staff Representative", contact: "+91----", email: "asst2.academics@iiitp.ac.in" },
     { sno: 5, name: <span className="text-[#0056b3] dark:text-blue-400 font-medium">External Member</span>, designation: "External Member", contact: "+91----", email: "" },
     { sno: 6, name: <span className="text-[#0056b3] dark:text-blue-400 font-medium">Ms. Rachna Jambhalikar</span>, designation: "Student Representative", contact: "+91-8956654210", email: "rachnajambhalikar36@gmail.com" },
     { sno: 7, name: <span className="text-[#0056b3] dark:text-blue-400 font-medium">Representative from Establishment Section</span>, designation: "Member-Secretary", contact: "", email: "" },
