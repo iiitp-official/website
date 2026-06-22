@@ -1,49 +1,49 @@
 [
   {
     "sr": 1,
-    "name": "Dr. Sanjeev Sharma – Chairperson",
+    "name": "Dr. Sanjeev Sharma",
     "designation": "Chairperson",
     "email": "sanjeevsharma@iiitp.ac.in"
   },
   {
     "sr": 2,
-    "name": "Dr. Bhupendra Singh (Member)",
+    "name": "Dr. Bhupendra Singh",
     "designation": "Member",
     "email": "bhupendra@iiitp.ac.in"
   },
   {
     "sr": 3,
-    "name": "Dr. Nagendra Kushwaha (Member)",
+    "name": "Dr. Nagendra Kushwaha",
     "designation": "Member",
     "email": "nagendra@iiitp.ac.in"
   },
   {
     "sr": 4,
-    "name": "Dr. Chandrakant Narayan Guled (Member)",
+    "name": "Dr. Chandrakant Narayan Guled",
     "designation": "Member",
     "email": "chandrakantguled@iiitp.ac.in"
   },
   {
     "sr": 5,
-    "name": "Dr. Habila Basumatary (Member)",
+    "name": "Dr. Habila Basumatary",
     "designation": "Member",
     "email": "habila@iiitp.ac.in"
   },
   {
     "sr": 6,
-    "name": "Dr. Sumit Kumar Gupta (Member)",
+    "name": "Dr. Sumit Kumar Gupta",
     "designation": "Member",
     "email": "sumitgupta@iiitp.ac.in"
   },
   {
     "sr": 7,
-    "name": "Grandhi Lakshmikanth (112416027) (Special Invitee)",
+    "name": "Grandhi Lakshmikanth (112416027)",
     "designation": "Special Invitee",
     "email": "112416027@ece.iiitp.ac.in"
   },
   {
     "sr": 8,
-    "name": "Jadhav Sampada Baban (112415086) (Special Invitee)",
+    "name": "Jadhav Sampada Baban (112415086)",
     "designation": "Special Invitee",
     "email": "112415086@cse.iiitp.ac.in"
   }
