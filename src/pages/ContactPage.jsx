@@ -231,7 +231,7 @@ const ContactPage = () => {
     return matchesSearch && matchesTab;
   });
 
-  const categories = ['All', 'Administration', 'Hostels & Wardens', 'Placements', 'Procurement & Audits'];
+  const categories = ['All', 'Administration', 'Hostels & Wardens', 'Placements', 'Procurement', 'Procurement & Store'];
 
   return (
     <div className="min-h-screen transition-colors duration-200">
