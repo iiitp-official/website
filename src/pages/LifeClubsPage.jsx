@@ -75,13 +75,13 @@ const LifeClubsPage = () => {
       setFlyerPopover(null);
       return;
     }
-    
+
     const rect = target.getBoundingClientRect();
     const isMobile = window.innerWidth < 1024;
-    
+
     const navbarHeight = isMobile ? 80 : 130;
     const maxTargetHeight = isMobile ? 540 : 760;
-    
+
     let topPos;
     if (isMobile) {
       topPos = Math.max(navbarHeight + 12, (window.innerHeight - maxTargetHeight) / 2);
@@ -90,17 +90,17 @@ const LifeClubsPage = () => {
       topPos = buttonCenter - maxTargetHeight / 2;
       topPos = Math.max(navbarHeight + 12, Math.min(window.innerHeight - maxTargetHeight - 12, topPos));
     }
-    
+
     const height = Math.min(maxTargetHeight, window.innerHeight - topPos - 24);
     const popoverWidth = isMobile ? Math.min(window.innerWidth - 32, 420) : Math.round((height - 70) * 0.7);
-    
+
     let leftPos = rect.right + 12;
     if (!isMobile && leftPos + popoverWidth > window.innerWidth) {
       leftPos = Math.max(16, rect.left - popoverWidth - 12);
     } else if (isMobile) {
       leftPos = (window.innerWidth - popoverWidth) / 2;
     }
-    
+
     setFlyerPopover({
       key,
       name: c.name,
@@ -175,17 +175,12 @@ const LifeClubsPage = () => {
   };
 
   const handleButtonClick = (e, key, c) => {
-    const isMobile = window.innerWidth < 1024;
-    if (isMobile) {
-      showFlyerPopover(e.currentTarget, key, c, true);
-    } else {
-      if (openTimeoutRef.current) {
-        clearTimeout(openTimeoutRef.current);
-        openTimeoutRef.current = null;
-      }
-      setSearchParams({ club: key });
-      setFlyerPopover(null);
+    if (openTimeoutRef.current) {
+      clearTimeout(openTimeoutRef.current);
+      openTimeoutRef.current = null;
     }
+    setSearchParams({ club: key });
+    setFlyerPopover(null);
   };
 
   useEffect(() => {
@@ -227,8 +222,8 @@ const LifeClubsPage = () => {
                     onMouseEnter={(e) => handleMouseEnterButton(e, key, c)}
                     onMouseLeave={handleMouseLeaveButton}
                     className={`shrink-0 lg:shrink lg:w-full flex flex-row lg:flex-col items-center lg:items-start gap-2 lg:gap-0 px-4 py-2 lg:px-3.5 lg:py-3 rounded-full lg:rounded-xl text-left transition-all duration-250 border ${isSelected
-                        ? 'bg-primary text-white border-primary shadow-sm'
-                        : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700'
+                      ? 'bg-primary text-white border-primary shadow-sm'
+                      : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700'
                       }`}
                   >
                     <div className="flex items-center gap-2 w-full">
@@ -439,7 +434,7 @@ const LifeClubsPage = () => {
             >
               <X size={24} />
             </button>
-            
+
             {flyerPopover.flyer && !imageError ? (
               <div className="w-[95vw] h-[95vh] flex items-center justify-center">
                 <img
@@ -479,7 +474,7 @@ const LifeClubsPage = () => {
             >
               <X size={16} />
             </button>
-            
+
             {flyerPopover.flyer && !imageError ? (
               <div className="w-full flex-1 min-h-0 overflow-hidden rounded-xl flex items-center justify-center bg-gray-50 dark:bg-gray-900/50">
                 <img
@@ -496,7 +491,7 @@ const LifeClubsPage = () => {
                 <span className="text-[10px] text-gray-500 dark:text-gray-455">Flyer details loading or unavailable</span>
               </div>
             )}
-            
+
             <button
               onClick={() => {
                 setSearchParams({ club: flyerPopover.key });
