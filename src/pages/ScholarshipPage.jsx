@@ -12,13 +12,26 @@ const ScholarshipPage = () => {
           
           <div className="p-8 md:p-12">
             
-            <div className="mb-10">
-              <h3 className="text-3xl font-bold text-primary dark:text-white mb-4">
-                Available Scholarships
-              </h3>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl">
-                Explore the diverse range of national and state-level scholarship opportunities available to IIIT Pune students to support their academic journey.
-              </p>
+            <div className="mb-10 flex flex-col md:flex-row md:items-start justify-between gap-6">
+              <div>
+                <h3 className="text-3xl font-bold text-primary dark:text-white mb-4">
+                  Available Scholarships
+                </h3>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl">
+                  Explore the diverse range of national and state-level scholarship opportunities available to IIIT Pune students to support their academic journey.
+                </p>
+              </div>
+              <a 
+                href="https://scholarships.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 bg-brand-red text-white font-medium rounded-xl hover:bg-red-700 transition-all shadow-md hover:shadow-lg shrink-0 group"
+              >
+                View NSP Portal
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </div>
 
             <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">

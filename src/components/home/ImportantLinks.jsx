@@ -68,7 +68,6 @@ const ImportantLinks = () => {
                       { name: 'JoSAA', url: 'https://josaa.nic.in/' },
                       { name: 'CSAB', url: 'https://csab.nic.in/' },
                       { name: 'AICTE', url: 'https://www.aicte.gov.in/' },
-                      { name: 'National Scholarship Portal', url: 'https://scholarships.gov.in/' },
                       { name: 'Scholarships', url: '/scholarships' },
                       { name: 'Swayam Portal', url: 'https://swayam.gov.in/' },
                       { name: 'National Digital Library', url: 'https://www.ndl.gov.in/' },
