@@ -66,7 +66,7 @@ const ETenderPage = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-primary dark:bg-primary-dark text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 dark:hover:bg-blue-900 transition-colors text-sm"
             >
-              Fees Payment
+              EMD / BG Payment
               <ExternalLink size={16} />
             </a>
             {/* Visit GeM Portal Button */}
