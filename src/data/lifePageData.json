@@ -1034,8 +1034,6 @@
         "/assets/campus_tour/Acad5.jpeg",
         "/assets/campus_tour/Acad6.jpeg",
         "/assets/campus_tour/Acad7.jpeg",
-        "/assets/campus_tour/Acad9.JPG",
-        "/assets/campus_tour/Acad10.JPG",
         "/assets/campus_tour/Acad11.JPG",
         "/assets/campus_tour/Acad12.JPG",
         "/assets/campus_tour/Acad13.JPG",
@@ -1049,7 +1047,9 @@
       "images": [
         "/assets/campus_tour/Audi1.jpeg",
         "/assets/campus_tour/Audi2.jpeg",
-        "/assets/campus_tour/Audi3.jpeg"
+        "/assets/campus_tour/Audi3.jpeg",
+        "/assets/campus_tour/Acad9.JPG",
+        "/assets/campus_tour/Acad10.JPG"
       ]
     },
     {
