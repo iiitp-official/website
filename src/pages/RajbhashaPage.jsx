@@ -17,7 +17,7 @@ const RajbhashaPage = () => {
     {
       title: "कार्यान्वयन समिति की बैठक",
       desc: "संस्थान नगर राजभाषा कार्यान्वयन समिति के सदस्य हैं। वरिष्ठ/नामित पदाधिकारी नियमित रूप से बैठकों में भाग लेते हैं।",
-      link: "/rajbhasha/baithak"
+      link: "#"
     },
     {
       title: "प्रमुख लिंक",
@@ -34,23 +34,23 @@ const RajbhashaPage = () => {
   return (
     <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="राजभाषा अनुभाग" />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
         {/* Introduction Section */}
         <section className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 p-8 md:p-12">
           <h2 className="text-3xl font-bold font-serif text-primary dark:text-blue-400 mb-6">परिचय</h2>
-          
+
           <div className="flex flex-col lg:flex-row gap-8 items-start mb-6">
             <div className="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed text-justify flex-1">
               <p>
                 भारत के संविधान के भाग 17 में अनुच्छेद 343 से 351 तक राजभाषा संबंधी प्रावधान किए गए हैंI संविधान के अनुच्छेद 343 के खंड (1) में हिंदी को संघ की राजभाषा के रूप में मान्यता प्रदान की गयी है, जिसकी लिपि देवनागरी होगी । संघ के शासकीय प्रयोजनों के लिए होने वाले अंकों का रूप भारतीय अंकों का अंतरराष्ट्रीय रूप होगा । अनुच्छेद 351 में उल्लेख किया गया हैं कि संघ का यह कर्तव्य होगा कि वह हिंदी भाषा का प्रसार बढाए, उसका विकास करे, जिससे वह भारत की सामासिक संस्कृति के सभी तत्वों की अभिव्यक्ति का माध्यम बन सके । राजभाषा हिन्दी को संघ के शासकीय कार्यो में प्रभावी रूप से क्रियान्वित करने के लिए राजभाषा अधिनियम, 1963 (समय-समय पर यथा संशोधित) को प्रख्यापित किया गया हैं तथा तत्संबंधी राजभाषा (संघ के शासकीय प्रयोजनों के लिए प्रयोग) नियम, 1976 (समय-समय पर यथा संशोधित) को भी प्रख्यापित किया गया हैं । उपर्युक्त के अतिरिक्त राजभाषा हिन्दी प्रभावी रूप से क्रियान्वयन के लिए राष्ट्रपति के आदेश, 1960 तथा संसद के दोनों सदनों (राज्यसभा और लोकसभा) द्वारा 1968 में राजभाषा संकल्प पारित किया गया हैं ।
               </p>
             </div>
-            
+
             <div className="w-full lg:w-1/3 shrink-0">
-              <img 
-                src="/rajbhasha/RajbhashaImage.jpeg" 
-                alt="Rajbhasha Anubhag" 
+              <img
+                src="/rajbhasha/RajbhashaImage.jpeg"
+                alt="Rajbhasha Anubhag"
                 className="w-full h-auto rounded-xl shadow-md border border-gray-100 dark:border-gray-700 object-cover"
               />
             </div>
@@ -66,8 +66,8 @@ const RajbhashaPage = () => {
         {/* Cards Grid Section */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow flex flex-col h-full group"
             >
               <div className="flex items-center gap-4 mb-6">
@@ -78,11 +78,11 @@ const RajbhashaPage = () => {
               <p className="text-gray-600 dark:text-gray-400 mb-8 flex-grow leading-relaxed">
                 {card.desc}
               </p>
-              <Link 
+              <Link
                 to={card.link}
                 className="mt-auto inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
               >
-                अधिक जानें 
+                अधिक जानें
                 <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
