@@ -162,12 +162,6 @@ const Footer = () => {
                   <span className="leading-tight">Equal Opportunity Cell (EOC)</span>
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" className="hover:text-brand-red transition-colors flex items-start group">
-                  <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
-                  <span className="leading-tight">Contact Us</span>
-                </Link>
-              </li>
             </ul>
             <div className="mt-6 pt-4 border-t border-gray-800 flex items-center text-sm">
               <span className="text-gray-400 uppercase tracking-wider text-xs font-semibold mr-2">
