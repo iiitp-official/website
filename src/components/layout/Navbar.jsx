@@ -352,7 +352,7 @@ const Navbar = () => {
           hasDropdown: true,
           subLinks: [
             { name: "HR Summit 2021", path: "https://placements.iiitp.ac.in/HrSummit/", isExternal: true },
-            { name: "HR Summit 2026", path: "#" }
+            { name: "HR Summit 2026", path: "https://www.youtube.com/watch?v=mFjN-mZoT7A", isExternal: true }
           ]
         },
         {
@@ -418,8 +418,7 @@ const Navbar = () => {
     {
       name: "International Relations",
       path: "/international",
-      hasDropdown: false,
-      isExternal: true
+      hasDropdown: false
     },
     {
       name: "E-TENDER",
