@@ -193,7 +193,7 @@ const importantContacts = [
   {
     name: "Mr. Aman Ankur",
     designation: "Purchase Section",
-    department: "Store & Purchase",
+    department: "Procurement & Store",
     email: "js1.procurement@iiitp.ac.in",
     phone: "02114-224509"
   },
