@@ -165,7 +165,7 @@ const Footer = () => {
               <li>
                 <Link to="/contact" className="hover:text-brand-red transition-colors flex items-start group">
                   <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
-                  <span className="leading-tight">Contact US</span>
+                  <span className="leading-tight">Contact Us</span>
                 </Link>
               </li>
             </ul>
