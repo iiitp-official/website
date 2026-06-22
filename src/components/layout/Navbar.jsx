@@ -178,7 +178,7 @@ const Navbar = () => {
           path: "#",
           hasDropdown: true,
           subLinks: [
-            { name: "Act", path: "/documents/IIIT_PPP_Act.pdf", isExternal: true },
+            { name: "Act", path: "/documents/IIIT-PPP-Act-2017.pdf", isExternal: true },
             { name: "Amendment Act", path: "/documents/iiit_ppp_amendment_act.pdf", isExternal: true },
           ],
         },

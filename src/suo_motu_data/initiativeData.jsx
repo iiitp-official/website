@@ -11,14 +11,26 @@ export const initiativeData = [
   },
   {
     sno: "6.1.1",
-    item: "Item/information disclosed so that the public have minimum resort to use of the RTI Act to obtain information",
+    item: (
+      <>
+        Item/information disclosed so that the public have minimum resort to use of the RTI Act to obtain information
+        <p className="mt-2 text-xs font-normal text-gray-500 dark:text-gray-400">
+          The Official Website of the Institute viz. <a href="/" className="link inline">www.IIITP.ac.in</a>, provides all the relevant information regarding admissions, recruitment, events, annual reports, annual accounts etc.
+        </p>
+      </>
+    ),
     details: (
       <>
-        <p style={{ marginBottom: "8px" }}>
-          The Official Website of the Institute viz. www.iiitp.ac.in provides all the relevant information regarding admissions, recruitment, events, annual reports, annual accounts, etc.
-        </p>
-        <a href="/" target="_blank" rel="noopener noreferrer" className="link">IIIT Pune Official Website</a>
+        Please click on the following links to view the details:
+        <br />
+        <a href="/" className="link">https://iiitp.ac.in</a>
         <a href="/people/faculty" className="link">Faculty Portfolios</a>
+        <a href="/people/non-teaching-staff/regular" className="link">Non-Teaching Staff Directory</a>
+        <a href="/admissions" className="link">Admission Procedure & Details</a>
+        <a href="/academics/calendar" className="link">Academic Calendar</a>
+        <a href="/scholarships" className="link">Scholarship Schemes</a>
+        <a href="/e-tender/live" className="link">E-Tenders (Live & Archives)</a>
+        <a href="/rti" className="link">RTI Portal</a>
         <a href="https://sites.google.com/iiitp.ac.in/library" target="_blank" rel="noopener noreferrer" className="link">Central Library</a>
       </>
     ),

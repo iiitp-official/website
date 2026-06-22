@@ -42,13 +42,21 @@ export const organizationData = [
       <>
         Chairman – Board of Governors
         <br />
-        Shri Vishad Mafatlal, Padmanabh Mafatlal Group, Mumbai
+        <a
+          href="/administration/chairperson"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link"
+        >
+          Shri Vishad Mafatlal
+        </a>
+        , Padmanabh Mafatlal Group, Mumbai
         <br />
         Email: director@iiitp.ac.in
         <br />
         Director, IIIT Pune{" "}
         <a
-          href="/people"
+          href="/administration/director"
           target="_blank"
           rel="noopener noreferrer"
           className="link"
@@ -108,9 +116,13 @@ export const organizationData = [
           Importance.
         </p>
         <p>
-          The institute offers B.Tech, M.Tech and Ph.D. programmes in Computer
-          Science & Engineering, Electronics & Communication Engineering and
-          Applied Sciences & Humanities.
+          The institute offers{" "}
+          <a href="/academics/btech/cse" className="link">B.Tech</a>,{" "}
+          <a href="/academics/mtech/cse" className="link">M.Tech</a>, and{" "}
+          <a href="/academics/phd" className="link">Ph.D.</a> programmes in{" "}
+          <a href="/departments/cse" className="link">Computer Science & Engineering</a>,{" "}
+          <a href="/departments/ece" className="link">Electronics & Communication Engineering</a>, and{" "}
+          <a href="/departments/ash" className="link">Applied Sciences & Humanities</a>.
         </p>
       </>
     ),
@@ -141,14 +153,25 @@ export const organizationData = [
         </p>
 
         <p>
-          Admissions are conducted through JEE Main, JoSAA, CSAB, GATE, CCMT,
-          Institute Written Tests and Interviews depending on the programme.
+          <strong>Admissions:</strong> Admissions are conducted through JEE Main, JoSAA, CSAB, GATE, CCMT,
+          Institute Written Tests and Interviews depending on the programme. See the{" "}
+          <a href="/admissions" className="link">Admissions Page</a> for more details.
         </p>
 
         <p>
-          The institute offers Undergraduate, Postgraduate and Doctoral
-          programmes while maintaining strong focus on research, innovation,
-          entrepreneurship and industry collaboration.
+          <strong>Campus Tour:</strong> Situated in Nanoli village, Taluka Maval, the campus is surrounded by the serene Sahyadri ranges. See the{" "}
+          <a href="/life/campus" className="link">Campus Tour Page</a> for more details.
+        </p>
+
+        <p>
+          <strong>Academic Programmes:</strong> The institute offers Undergraduate, Postgraduate and Doctoral
+          programmes while maintaining a strong focus on research, innovation,
+          entrepreneurship and industry collaboration. See{" "}
+          <a href="/academics/btech/cse" className="link">B.Tech CSE</a>,{" "}
+          <a href="/academics/btech/ece" className="link">B.Tech ECE</a>,{" "}
+          <a href="/academics/mtech/cse" className="link">M.Tech CSE</a>,{" "}
+          <a href="/academics/mtech/ece" className="link">M.Tech ECE</a>, and{" "}
+          <a href="/academics/phd" className="link">PhD Programmes</a>.
         </p>
       </>
     ),
@@ -181,26 +204,70 @@ export const organizationData = [
   {
     sno: "1.2.2",
     item: "Power and Duties of Other Employees",
-    details:
-      "As per the IIIT (PPP) Act, 2017 and Statutes of the Indian Institute of Information Technology, Pune.",
+    details: (
+      <>
+        As per the{" "}
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP)
+        </a>{" "}
+        Act, 2017 and the{" "}
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes
+        </a>{" "}
+        of the Indian Institute of Information Technology, Pune.
+      </>
+    ),
   },
   {
     sno: "1.2.3",
     item: "Rules/Orders under which powers and duties are derived",
-    details:
-      "As per the IIIT (PPP) Act, 2017 and Statutes of the Indian Institute of Information Technology, Pune.",
+    details: (
+      <>
+        As per the{" "}
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP)
+        </a>{" "}
+        Act, 2017 and the{" "}
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes
+        </a>{" "}
+        of the Indian Institute of Information Technology, Pune.
+      </>
+    ),
   },
   {
     sno: "1.2.4",
     item: "Exercised",
-    details:
-      "As per the IIIT (PPP) Act, 2017 and Statutes of the Indian Institute of Information Technology, Pune.",
+    details: (
+      <>
+        As per the{" "}
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP)
+        </a>{" "}
+        Act, 2017 and the{" "}
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes
+        </a>{" "}
+        of the Indian Institute of Information Technology, Pune.
+      </>
+    ),
   },
   {
     sno: "1.2.5",
     item: "Work Allocation",
-    details:
-      "As per the IIIT (PPP) Act, 2017 and Statutes of the Indian Institute of Information Technology, Pune.",
+    details: (
+      <>
+        As per the{" "}
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP)
+        </a>{" "}
+        Act, 2017 and the{" "}
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes
+        </a>{" "}
+        of the Indian Institute of Information Technology, Pune.
+      </>
+    ),
   },
   {
     sno: "1.3",
@@ -211,17 +278,29 @@ export const organizationData = [
   {
     sno: "1.3.1",
     item: "Process of Decision Making",
-    details:
-      "Major policy and financial decisions are approved through Building Works Committee, Finance Committee and Board of Governors.",
+    details: (
+      <>
+        Major policy and financial decisions are approved through{" "}
+        <a href="/administration/building-and-works-committee" className="link">Building and Works Committee</a>,{" "}
+        <a href="/administration/finance-committee" className="link">Finance Committee</a>, and{" "}
+        <a href="/administration/board-of-governors" className="link">Board of Governors</a>.
+        <br /><br />
+        Established decision-making processes like open discussions in Scrutiny / Selection Committees,{" "}
+        <a href="/administration/senate" className="link">Senate</a>, and Board of Studies (
+        <a href="/administration/board-of-studies-cse" className="link">CSE</a>,{" "}
+        <a href="/administration/board-of-studies-ece" className="link">ECE</a> &{" "}
+        <a href="/administration/board-of-studies-ash" className="link">ASH</a>) are followed by Note for Approvals and final approval from the Competent Authority.
+      </>
+    ),
   },
   {
     sno: "1.3.2",
     item: "Final Decision Making Authority",
     details: (
       <>
-        Director and{" "}
+        <a href="/administration/director" target="_blank" rel="noopener noreferrer" className="link">Director</a> and{" "}
         <a
-          href="/people/board-of-governors"
+          href="/administration/board-of-governors"
           target="_blank"
           rel="noopener noreferrer"
           className="link"
@@ -234,8 +313,19 @@ export const organizationData = [
   {
     sno: "1.3.3",
     item: "Related Provisions, Acts, Rules etc.",
-    details:
-      "As per the IIIT (PPP) Act, 2017 and Statutes of the Indian Institute of Information Technology, Pune.",
+    details: (
+      <>
+        As per the{" "}
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP)
+        </a>{" "}
+        Act, 2017 and the{" "}
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes
+        </a>{" "}
+        of the Indian Institute of Information Technology, Pune.
+      </>
+    ),
   },
   {
     sno: "1.3.4",
@@ -263,8 +353,13 @@ export const organizationData = [
   {
     sno: "1.4.2",
     item: "Norms / Standards for Service Delivery",
-    details:
-      "As per IIIT (PPP) Act, Statutes, Ordinances and Academic Rule Book.",
+    details: (
+      <>
+        As per IIIT (PPP) Act, Statutes, Ordinances (
+        <a href="/documents/MTech_Ordinances_Updated_till_11th_Senate.docx.pdf" target="_blank" rel="noopener noreferrer" className="link">M.Tech Ordinance</a>,{" "}
+        <a href="/documents/IIIT Pune_PhD Ordinances and Regulations_updatedd_260622_192254.pdf" target="_blank" rel="noopener noreferrer" className="link">PhD Ordinance</a>) and Academic Rule Book.
+      </>
+    ),
   },
   {
     sno: "1.4.3",
@@ -310,14 +405,28 @@ export const organizationData = [
   {
     sno: "1.5.2",
     item: "List of Rules, Regulations, Instructions, Manuals and Records",
-    details:
-      "IIIT (PPP) Act 2017, Statutes of IIIT Pune and Academic Rule Book.",
+    details: (
+      <>
+        a) <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">IIIT (PPP) Act, 2017</a>
+        <br />
+        b) <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">Statutes of IIIT-Pune</a>
+        <br />
+        c) Academic Rule Book
+      </>
+    ),
   },
   {
     sno: "1.5.3",
     item: "Acts / Rules Manuals etc.",
-    details:
-      "IIIT (PPP) Act 2017, Statutes of IIIT Pune and Academic Rule Book.",
+    details: (
+      <>
+        a) <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">IIIT (PPP) Act, 2017</a>
+        <br />
+        b) <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">Statutes of IIIT-Pune</a>
+        <br />
+        c) Academic Rule Book
+      </>
+    ),
   },
   {
     sno: "1.5.4",
@@ -339,7 +448,7 @@ export const organizationData = [
     sno: "1.6.2",
     item: "Custodian of documents/categories",
     details: "Registrar, IIIT Pune",
-    link: "/people/non-teaching-staff/registrar",
+    link: "/administration/registrar",
   },
 
   {
@@ -353,45 +462,92 @@ export const organizationData = [
     details: [
       {
         text: "Board of Governors",
-        link: "/people/board-of-governors",
+        link: "/administration/board-of-governors",
       },
       {
         text: "Finance Committee",
-        link: "/people/finance-committee",
+        link: "/administration/finance-committee",
       },
       {
         text: "Building and Works Committee",
-        link: "/people/building-and-works-committee",
+        link: "/administration/building-and-works-committee",
       },
       {
         text: "Senate",
-        link: "/people/senate",
+        link: "/administration/senate",
       },
     ],
   },
   {
     sno: "1.7.2",
     item: "Composition",
-    details:
-      "The details are provided on the official website of the Institute under the RTI section as per the IIIT (PPP) Act, 2017 and Statutes of IIIT Pune.",
+    details: (
+      <>
+        The details are provided on the official website of the Institute under the{" "}
+        <a href="/rti" className="link">RTI Section</a> as per the{" "}
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP) Act,
+        </a>{" "}
+        2017 and the{" "}
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes
+        </a>{" "}
+        of IIIT Pune.
+      </>
+    ),
   },
   {
     sno: "1.7.3",
     item: "Dates from which constituted",
-    details:
-      "The details are provided on the official website of the Institute under the RTI section.",
+    details: (
+      <>
+        The details are provided on the official website of the Institute under the{" "}
+        <a href="/rti" className="link">RTI Section</a> as per the{" "}
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP) Act,
+        </a>{" "}
+        2017 and the{" "}
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes
+        </a>{" "}
+        of IIIT Pune.
+      </>
+    ),
   },
   {
     sno: "1.7.4",
     item: "Term / Tenure",
-    details:
-      "The details are provided on the official website of the Institute under the RTI section.",
+    details: (
+      <>
+        The details are provided on the official website of the Institute under the{" "}
+        <a href="/rti" className="link">RTI Section</a> as per the{" "}
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP) Act,
+        </a>{" "}
+        2017 and the{" "}
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes
+        </a>{" "}
+        of IIIT Pune.
+      </>
+    ),
   },
   {
     sno: "1.7.5",
     item: "Powers and Functions",
-    details:
-      "As per the IIIT (PPP) Act, 2017 and Statutes of IIIT Pune.",
+    details: (
+      <>
+        As per the{" "}
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP)
+        </a>{" "}
+        Act, 2017 and the{" "}
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes
+        </a>{" "}
+        of the Indian Institute of Information Technology, Pune.
+      </>
+    ),
   },
   {
     sno: "1.7.6",
@@ -407,7 +563,7 @@ export const organizationData = [
     sno: "1.7.8",
     item: "Place where the minutes if open to the public are available?",
     details: "Please click here for details",
-    link: "/minutes-of-meetings",
+    link: "/reports-and-minutes",
   },
 
   {

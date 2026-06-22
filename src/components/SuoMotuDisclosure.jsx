@@ -50,8 +50,8 @@ export default function SuoMotuDisclosure() {
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
                   className={`shrink-0 lg:shrink lg:w-full flex flex-col lg:flex-row items-center lg:items-center gap-3 px-4 py-3 lg:px-4 lg:py-3.5 rounded-xl text-left transition-all duration-250 border ${isSelected
-                      ? 'bg-primary text-white border-primary shadow-md'
-                      : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-750 hover:border-gray-200 dark:hover:border-gray-600'
+                    ? 'bg-primary text-white border-primary shadow-md'
+                    : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-750 hover:border-gray-200 dark:hover:border-gray-600'
                     }`}
                 >
                   <div className="flex items-center gap-3 w-full">
@@ -93,8 +93,8 @@ export default function SuoMotuDisclosure() {
                 {data.map((row, index) => (
                   <tr
                     key={index}
-                    className={row.isHeading 
-                      ? "bg-gray-50 dark:bg-gray-800/50 border-b border-gray-100 dark:border-gray-700" 
+                    className={row.isHeading
+                      ? "bg-gray-50 dark:bg-gray-800/50 border-b border-gray-100 dark:border-gray-700"
                       : "border-b border-gray-50 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-700/30 transition-colors"}
                   >
                     <td className="py-4 px-6 text-sm text-center text-gray-500 dark:text-gray-400 font-medium align-top">

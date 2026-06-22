@@ -38,58 +38,64 @@ export const egovData = [
   {
     sno: "4.3.1",
     item: "Details of information available in electronic form",
-    details: [
-      {
-        text: "IIIT (PPP) Act, 2017",
-        link: "/assets/suo_motu/IIIT_PPP_Act.pdf",
-      },
-      {
-        text: "Statutes of IIITP, 2017",
-        link: "/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf",
-      },
-      { text: "Academic Rule Book for UG Courses" },
-      { text: "Academic Rule Book for PhD Courses" },
-      {
-        text: "Balance Sheets (2024-25)",
-        link: "/assets/suo_motu/Balance%20Sheet%202024-25.pdf",
-      },
-      {
-        text: "Annual Reports (2024-25)",
-        link: "https://drive.google.com/file/d/1XVOemlouW4DJwlXwJbv9skBTP8v4ttcT/view",
-      },
-      {
-        text: "Audit Reports (2024-25)",
-        link: "/assets/suo_motu/CAG%20audit%20report%20FY_2024-25.pdf",
-      },
-    ],
+    details: (
+      <>
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP) Act, 2017
+        </a>
+        <br />
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes of IIITP, 2017
+        </a>
+        <br />
+        Academic Rule Book for UG Courses
+        <br />
+        Academic Rule Book for PhD Courses
+        <br />
+        <a href="/assets/suo_motu/Balance%20Sheet%202024-25.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Balance Sheets (2024-25)
+        </a>
+        <br />
+        <a href="https://drive.google.com/file/d/1XVOemlouW4DJwlXwJbv9skBTP8v4ttcT/view" target="_blank" rel="noopener noreferrer" className="link">
+          Annual Reports (2024-25)
+        </a>
+        <br />
+        <a href="/assets/suo_motu/CAG%20audit%20report%20FY_2024-25.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Audit Reports (2024-25)
+        </a>
+      </>
+    ),
   },
   {
     sno: "4.3.2",
     item: "Name/ title of the document/record/ other information",
-    details: [
-      {
-        text: "IIIT (PPP) Act, 2017",
-        link: "/assets/suo_motu/IIIT_PPP_Act.pdf",
-      },
-      {
-        text: "Statutes of IIITP, 2017",
-        link: "/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf",
-      },
-      { text: "Academic Rule Book for UG Courses" },
-      { text: "Academic Rule Book for PhD Courses" },
-      {
-        text: "Balance Sheets (2024-25)",
-        link: "/assets/suo_motu/Balance%20Sheet%202024-25.pdf",
-      },
-      {
-        text: "Annual Reports (2024-25)",
-        link: "https://drive.google.com/file/d/1XVOemlouW4DJwlXwJbv9skBTP8v4ttcT/view",
-      },
-      {
-        text: "Audit Reports (2024-25)",
-        link: "/assets/suo_motu/CAG%20audit%20report%20FY_2024-25.pdf",
-      },
-    ],
+    details: (
+      <>
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP) Act, 2017
+        </a>
+        <br />
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes of IIITP, 2017
+        </a>
+        <br />
+        Academic Rule Book for UG Courses
+        <br />
+        Academic Rule Book for PhD Courses
+        <br />
+        <a href="/assets/suo_motu/Balance%20Sheet%202024-25.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Balance Sheets (2024-25)
+        </a>
+        <br />
+        <a href="https://drive.google.com/file/d/1XVOemlouW4DJwlXwJbv9skBTP8v4ttcT/view" target="_blank" rel="noopener noreferrer" className="link">
+          Annual Reports (2024-25)
+        </a>
+        <br />
+        <a href="/assets/suo_motu/CAG%20audit%20report%20FY_2024-25.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Audit Reports (2024-25)
+        </a>
+      </>
+    ),
   },
   {
     sno: "4.3.3",
@@ -104,35 +110,38 @@ export const egovData = [
   {
     sno: "4.4.1",
     item: "Name & location of the facilities",
-    details: "On the Official Website of the Institute viz. www.iiitp.ac.in",
+    details: "On the Official Website of the Institute viz. www.IIITP.ac.in.",
   },
   {
     sno: "4.4.2",
     item: "Details of information made available",
-    details: [
-      {
-        text: "IIIT (PPP) Act, 2017",
-        link: "/assets/suo_motu/IIIT_PPP_Act.pdf",
-      },
-      {
-        text: "Statutes of IIITP, 2017",
-        link: "/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf",
-      },
-      { text: "Academic Rule Book for UG Courses" },
-      { text: "Academic Rule Book for PhD Courses" },
-      {
-        text: "Balance Sheets (2024-25)",
-        link: "/assets/suo_motu/Balance%20Sheet%202024-25.pdf",
-      },
-      {
-        text: "Annual Reports (2024-25)",
-        link: "https://drive.google.com/file/d/1XVOemlouW4DJwlXwJbv9skBTP8v4ttcT/view",
-      },
-      {
-        text: "Audit Reports (2024-25)",
-        link: "/assets/suo_motu/CAG%20audit%20report%20FY_2024-25.pdf",
-      },
-    ],
+    details: (
+      <>
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          IIIT (PPP) Act, 2017
+        </a>
+        <br />
+        <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Statutes of IIITP, 2017
+        </a>
+        <br />
+        Academic Rule Book for UG Courses
+        <br />
+        Academic Rule Book for PhD Courses
+        <br />
+        <a href="/assets/suo_motu/Balance%20Sheet%202024-25.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Balance Sheets (2024-25)
+        </a>
+        <br />
+        <a href="https://drive.google.com/file/d/1XVOemlouW4DJwlXwJbv9skBTP8v4ttcT/view" target="_blank" rel="noopener noreferrer" className="link">
+          Annual Reports (2024-25)
+        </a>
+        <br />
+        <a href="/assets/suo_motu/CAG%20audit%20report%20FY_2024-25.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Audit Reports (2024-25)
+        </a>
+      </>
+    ),
   },
   {
     sno: "4.4.3",
@@ -142,16 +151,13 @@ export const egovData = [
   {
     sno: "4.4.4",
     item: "Contact person & contact details (Phone, fax, email)",
-    details: [
-      {
-        text: "View Faculty",
-        link: "/people/faculty",
-      },
-      {
-        text: "View Non-Teaching Staff",
-        link: "/people/non-teaching-staff/regular",
-      },
-    ],
+    details: (
+      <>
+        <a href="/people/faculty" className="link">Please click here to view Faculty</a>
+        {" "}
+        <a href="/people/non-teaching-staff/regular" className="link">Please click here to view Non-Teaching Staff</a>
+      </>
+    ),
   },
   {
     sno: "4.5",
@@ -188,8 +194,11 @@ export const egovData = [
   {
     sno: "4.5.6",
     item: "Annual Report",
-    details: "Annual Report (2024-25)",
-    link: "https://drive.google.com/file/d/1XVOemlouW4DJwlXwJbv9skBTP8v4ttcT/view",
+    details: (
+      <a href="https://drive.google.com/file/d/1XVOemlouW4DJwlXwJbv9skBTP8v4ttcT/view" target="_blank" rel="noopener noreferrer" className="link">
+        Annual Report (2024-25)
+      </a>
+    ),
   },
   {
     sno: "4.5.7",
@@ -198,7 +207,7 @@ export const egovData = [
   },
   {
     sno: "4.5.8",
-    item: "Any other information such as Citizen's Charter, RFD, six monthly reports etc.",
+    item: "Any other information such as (a) Citizen’s Charter, (b) Result Framework Document (RFD), (c) Six monthly reports on the (d) Performance against the benchmarks set in the Citizen’s Charter",
     details: "Not Applicable",
   },
   {
@@ -209,14 +218,32 @@ export const egovData = [
   {
     sno: "4.6.1",
     item: "Details of applications received and disposed",
-    details: "RTI Report for Year 2025-26",
-    link: "/assets/suo_motu/RTI%20REPORT%20FOR%20YEAR%202025-26.pdf",
+    details: (
+      <>
+        The details of the applications received under RTI, Information Provided and
+        <br />
+        The Quarterly Returns submitted to CIC are available in the Office of the Registrar & PIO of the Institute.
+        <br />
+        <a href="/assets/suo_motu/RTI%20REPORT%20FOR%20YEAR%202025-26.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          RTI Report for Year 2025-26
+        </a>
+      </>
+    ),
   },
   {
     sno: "4.6.2",
     item: "Details of appeals received, and orders issued",
-    details: "RTI Report for Year 2025-26",
-    link: "/assets/suo_motu/RTI%20REPORT%20FOR%20YEAR%202025-26.pdf",
+    details: (
+      <>
+        The details of the Appeals received and orders issued under RTI, Information Provided and
+        <br />
+        The Quarterly Returns submitted to CIC are available in the Office of the Registrar & PIO of the Institute.
+        <br />
+        <a href="/assets/suo_motu/RTI%20REPORT%20FOR%20YEAR%202025-26.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          RTI Report for Year 2025-26
+        </a>
+      </>
+    ),
   },
   {
     sno: "4.7",
@@ -226,7 +253,13 @@ export const egovData = [
   {
     sno: "4.7.1",
     item: "Details of questions asked and replies given",
-    details: "Click here for more details",
-    link: "/assets/suo_motu/LOKSABHA%20RAJASABHA_QUESTIONNARIE.pdf",
+    details: (
+      <>
+        The details of questions asked and replies given under RTI, Information Provided and the Quarterly Returns submitted to CIC are available in the Office of the Registrar & PIO of the Institute.{" "}
+        <a href="/assets/suo_motu/LOKSABHA%20RAJASABHA_QUESTIONNARIE.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Click here for more details
+        </a>
+      </>
+    ),
   },
 ];
