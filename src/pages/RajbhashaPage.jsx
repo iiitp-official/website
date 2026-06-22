@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageHeader from '../components/shared/PageHeader';
 
 const RajbhashaPage = () => {
@@ -11,12 +12,12 @@ const RajbhashaPage = () => {
     {
       title: "प्रशिक्षण कार्यक्रम",
       desc: "संस्थान के कर्मचारियों को राजभाषा में कार्य करने में निपुणता को प्राप्त करने के लिए, राजभाषा विभाग, गृह मंत्रालय, भारत सरकार द्वारा संचालित प्रशिक्षण कार्यक्रमों में भेजा जाता है।",
-      link: "#"
+      link: "/rajbhasha/prashikshan"
     },
     {
       title: "कार्यान्वयन समिति की बैठक",
       desc: "संस्थान नगर राजभाषा कार्यान्वयन समिति के सदस्य हैं। वरिष्ठ/नामित पदाधिकारी नियमित रूप से बैठकों में भाग लेते हैं।",
-      link: "#"
+      link: "/rajbhasha/baithak"
     },
     {
       title: "प्रमुख लिंक",
@@ -77,15 +78,15 @@ const RajbhashaPage = () => {
               <p className="text-gray-600 dark:text-gray-400 mb-8 flex-grow leading-relaxed">
                 {card.desc}
               </p>
-              <a 
-                href={card.link}
+              <Link 
+                to={card.link}
                 className="mt-auto inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
               >
                 अधिक जानें 
                 <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
-              </a>
+              </Link>
             </div>
           ))}
         </section>

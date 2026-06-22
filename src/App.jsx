@@ -100,6 +100,8 @@ const NIRFPage = lazy(() => import("./pages/NIRFPage"));
 const SuoMotuPage = lazy(() => import("./pages/SuoMotuPage"));
 const RTIPage = lazy(() => import("./pages/RTIPage"));
 const RajbhashaPage = lazy(() => import("./pages/RajbhashaPage"));
+const RajbhashaDetailPage = lazy(() => import("./pages/RajbhashaDetailPage"));
+const RajbhashaBaithakPage = lazy(() => import("./pages/RajbhashaBaithakPage"));
 const ICCPage = lazy(() => import("./pages/ICCPage"));
 const MinutesPage = lazy(() => import("./pages/ReportsAndMinutes"));
 const ScholarshipPage = lazy(() => import("./pages/ScholarshipPage"));
@@ -374,6 +376,8 @@ function AppContent() {
             <Route path="/suo-motu" element={<SuoMotuPage />} />
             <Route path="/rti" element={<RTIPage />} />
             <Route path="/rajbhasha" element={<RajbhashaPage />} />
+            <Route path="/rajbhasha/prashikshan" element={<RajbhashaDetailPage />} />
+            <Route path="/rajbhasha/baithak" element={<RajbhashaBaithakPage />} />
             <Route path="/icc" element={<ICCPage />} />
             <Route path="/reports-and-minutes" element={<MinutesPage />} />
             <Route path="/scholarships" element={<ScholarshipPage />} />
