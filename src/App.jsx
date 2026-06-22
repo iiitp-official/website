@@ -33,6 +33,7 @@ const BuildingWorksCommitteePage = lazy(
   () => import("./pages/BuildingWorksCommitteePage"),
 );
 const SenatePage = lazy(() => import("./pages/SenatePage"));
+const SgrcPage = lazy(() => import("./pages/SgrcPage"));
 const BoardOfStudiesCsePage = lazy(
   () => import("./pages/BoardOfStudiesCsePage"),
 );
@@ -242,6 +243,7 @@ function AppContent() {
               element={<BuildingWorksCommitteePage />}
             />
             <Route path="/administration/senate" element={<SenatePage />} />
+            <Route path="/sgrc" element={<SgrcPage />} />
             <Route
               path="/administration/board-of-studies-cse"
               element={<BoardOfStudiesCsePage />}
