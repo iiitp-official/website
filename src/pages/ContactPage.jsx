@@ -72,11 +72,11 @@ const importantContacts = [
     name: "Mr. Sandeep Mandal",
     designation: "Director PA",
     department: "Administration",
-    email: "patodirector@iiitp.ac.in",
-    phone: ""
+    email: "pa.director@iiitp.ac.in",
+    phone: "02114-224501"
   },
   {
-    name: "Mr. Rajender",
+    name: "Mr. Rajendra Daiya",
     designation: "Registrar PA",
     department: "Administration",
     email: "patoreg@iiitp.ac.in",
@@ -193,21 +193,21 @@ const importantContacts = [
   {
     name: "Mr. Aman Ankur",
     designation: "Purchase Section",
-    department: "Procurement & Audits",
+    department: "Store & Purchase",
     email: "js1.procurement@iiitp.ac.in",
     phone: "02114-224509"
   },
   {
     name: "Shri Lalit Chandra Trivedi",
     designation: "Independent External Monitor - Purchase matters",
-    department: "Procurement & Audits",
+    department: "Procurement",
     email: "lctrivedi61@gmail.com",
     phone: "+91 9967567679"
   },
   {
     name: "Ashok Kumar Tripathy, IAS (Retd.)",
     designation: "Independent External Monitor - Purchase matters",
-    department: "Procurement & Audits",
+    department: "Procurement",
     email: "tripathyak@yahoo.com",
     phone: "+91-9437040285"
   }
