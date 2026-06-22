@@ -24,19 +24,22 @@
     "sr": 4,
     "name": "Dr. Chandrakant Narayan Guled",
     "designation": "Member",
-    "email": "chandrakantguled@iiitp.ac.in"
+    "email": "chandrakantguled@iiitp.ac.in",
+    "slug": "chandrakant-narayan-guled"
   },
   {
     "sr": 5,
     "name": "Dr. Habila Basumatary",
     "designation": "Member",
-    "email": "habila@iiitp.ac.in"
+    "email": "habila@iiitp.ac.in",
+    "slug": "habila-basumatary"
   },
   {
     "sr": 6,
     "name": "Dr. Sumit Kumar Gupta",
     "designation": "Member",
-    "email": "sumitgupta@iiitp.ac.in"
+    "email": "sumitgupta@iiitp.ac.in",
+    "slug": "sumit-kumar-gupta"
   },
   {
     "sr": 7,
