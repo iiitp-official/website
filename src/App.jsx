@@ -54,7 +54,6 @@ const MtechCsePage = lazy(() => import("./pages/MtechCsePage"));
 const MtechEcePage = lazy(() => import("./pages/MtechEcePage"));
 const PhdPage = lazy(() => import("./pages/PhdPage"));
 const AcademicCalendarPage = lazy(() => import("./pages/AcademicCalendarPage"));
-const OrdinancePage = lazy(() => import("./pages/OrdinancePage"));
 const CentresPage = lazy(() => import("./pages/CentresPage"));
 const InternshipsPage = lazy(() => import("./pages/InternshipsPage"));
 const FundedProjectsCompletedPage = lazy(
@@ -281,7 +280,6 @@ function AppContent() {
               path="/academics/Calendar"
               element={<AcademicCalendarPage />}
             />
-            <Route path="/academics/ordinance" element={<OrdinancePage />} />
 
             {/* Research */}
             <Route path="/research" element={<ResearchPage />} />

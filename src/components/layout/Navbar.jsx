@@ -258,7 +258,16 @@ const Navbar = () => {
             { name: "Fees Payment", path: "https://www.onlinesbi.sbi/sbicollect/icollecthome.htm", isExternal: true },
           ]
         },
-        { name: "Ordinance", path: "/academics/ordinance" },
+        {
+          name: "Ordinance",
+          path: "#",
+          hasDropdown: true,
+          subLinks: [
+            { name: "B.Tech.", path: "#"},
+            { name: "M.Tech.", path: "documents/MTech_Ordinances_Updated_till_11th_Senate.docx.pdf", isExternal: true },
+            { name: "Ph.D.", path: "#"}
+          ]
+        },
         {
           name: "Library",
           hasDropdown: true,
