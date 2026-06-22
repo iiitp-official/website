@@ -3,19 +3,22 @@
     "sr": 1,
     "name": "Dr. Sanjeev Sharma",
     "designation": "Chairperson",
-    "email": "sanjeevsharma@iiitp.ac.in"
+    "email": "sanjeevsharma@iiitp.ac.in",
+    "slug": "sanjeev-sharma"
   },
   {
     "sr": 2,
     "name": "Dr. Bhupendra Singh",
     "designation": "Member",
-    "email": "bhupendra@iiitp.ac.in"
+    "email": "bhupendra@iiitp.ac.in",
+    "slug": "bhupendra-singh"
   },
   {
     "sr": 3,
     "name": "Dr. Nagendra Kushwaha",
     "designation": "Member",
-    "email": "nagendra@iiitp.ac.in"
+    "email": "nagendra@iiitp.ac.in",
+    "slug": "nagendra-kushwaha"
   },
   {
     "sr": 4,

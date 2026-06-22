@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PageHeader from "../components/shared/PageHeader";
 import sgrcData from "../data/sgrc.json";
 
@@ -36,7 +37,13 @@ const SgrcPage = () => {
                     >
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 font-medium">{item.sr}</td>
                       <td className="px-6 py-4 text-md text-gray-900 dark:text-white font-medium">
-                        {item.name}
+                        {item.slug ? (
+                          <Link to={`/people/faculty/${item.slug}`} className="hover:text-brand-red hover:underline transition-colors">
+                            {item.name}
+                          </Link>
+                        ) : (
+                          item.name
+                        )}
                       </td>
                       <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">{item.designation}</td>
                       <td className="px-6 py-4 text-sm text-brand-red dark:text-blue-400 font-medium whitespace-nowrap">
