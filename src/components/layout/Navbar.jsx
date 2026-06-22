@@ -383,6 +383,11 @@ const Navbar = () => {
       path: "#",
       hasDropdown: true,
       subLinks: [
+        {
+          name: "Odd Semester B.tech(3rd, 5th, 7th sem) and M.tech(3th sem) 2026-27 Late Fees",
+          path: "/documents/NOTICE (Registration & late Fine)- Odd Sem.pdf",
+          isExternal: true
+        },
         { name: "ANTI-RAGGING COMMITTEE & SQUADS", path: "/notice/anti-ragging" },
         { name: "Late fee for the even semester", path: "/notice/late-fee" },
         {

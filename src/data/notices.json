@@ -1,37 +1,79 @@
 [
   {
     "id": 1,
-    "title": "Notice regarding Mid-Semester Examination Schedule for Even Semester 2024-25",
-    "date": "2025-05-20",
+    "title": "Odd Semester B.tech(3rd, 5th, 7th sem) and M.tech(3th sem) 2026-27 Late Fees",
+    "date": "2026-06-22",
     "category": "Academic",
-    "link": "#"
+    "link": "/documents/NOTICE (Registration & late Fine)- Odd Sem.pdf"
   },
   {
     "id": 2,
-    "title": "Extension of last date for fee payment (B.Tech 3rd Year)",
-    "date": "2025-05-18",
-    "category": "Administrative",
-    "link": "#"
+    "title": "ANTI-RAGGING COMMITTEE & SQUADS",
+    "date": "2026-06-01",
+    "category": "General",
+    "link": "/notice/anti-ragging"
   },
   {
     "id": 3,
-    "title": "List of shortlisted candidates for PhD Interview (CSE Dept)",
-    "date": "2025-05-15",
-    "category": "Admissions",
-    "link": "#"
+    "title": "Late fee for the even semester",
+    "date": "2026-06-01",
+    "category": "Academic",
+    "link": "/notice/late-fee"
   },
   {
     "id": 4,
-    "title": "Invitation for Quotations: Purchase of Lab Equipment (Networking Lab)",
-    "date": "2025-05-10",
-    "category": "Tender",
-    "link": "/e-tender"
+    "title": "Extension of Deadline for PhD Applications (July 2026)",
+    "date": "2026-06-01",
+    "category": "Admissions",
+    "link": "/documents/Extension of Deadline 2026.pdf"
   },
   {
     "id": 5,
-    "title": "Circular: Observance of Anti-Terrorism Day on 21st May",
-    "date": "2025-05-08",
+    "title": "National Overseas Scholarship (2025-26) - Letters",
+    "date": "2026-06-01",
     "category": "General",
-    "link": "#"
+    "link": "/documents/Letter to 265 institutions regarding NSP portal opening for the Year 2025-26.pdf"
+  },
+  {
+    "id": 6,
+    "title": "National Overseas Scholarship (2025-26) - Guidelines",
+    "date": "2026-06-01",
+    "category": "General",
+    "link": "/documents/Guidelines Scholarship - Top Class Part - B_compressed_compressed.pdf"
+  },
+  {
+    "id": 7,
+    "title": "Odd Semester B.Tech (3rd, 5th & 7th Semesters) / M.Tech (3rd Semester) for AY (2025-26)",
+    "date": "2026-06-01",
+    "category": "Academic",
+    "link": "/documents/Odd Sem Registration Instruction for Btech and Mtech_0.pdf"
+  },
+  {
+    "id": 8,
+    "title": "Rajbhasha Committee",
+    "date": "2026-06-01",
+    "category": "General",
+    "link": "/documents/Rajbhasha committee.pdf"
+  },
+  {
+    "id": 9,
+    "title": "List of Faculty Advisor for B.Tech M.Tech & PhD (Odd Semester) AY 2025-26",
+    "date": "2026-06-01",
+    "category": "Academic",
+    "link": "/documents/List of Faculty Advisor for Odd Sem Registration.pdf"
+  },
+  {
+    "id": 10,
+    "title": "Notice in respect to the registration for B.Tech M.Tech & PhD",
+    "date": "2026-06-01",
+    "category": "Academic",
+    "link": "/documents/Notice in respect to the regstration for B.Tech, M.Tech & Ph.D programmes.pdf"
+  },
+  {
+    "id": 11,
+    "title": "List of Holidays",
+    "date": "2026-06-01",
+    "category": "General",
+    "link": "/documents/office order (Holidays).pdf"
   }
 ]

@@ -4,6 +4,12 @@ import PageHeader from '../components/shared/PageHeader';
 const CareersPage = () => {
   const jobs = [
     {
+      title: "Advertisement for various research positions under Anusandhan National Research Foundation - Partnerships for Accelerated Innovation and Research (ANRF-PAIR) Initiative",
+      buttons: [
+        { label: "Details", file: "ANRF-PAIR_Manpower_Advertisement June 2026.pdf" },
+      ]
+    },
+    {
       title: "RECRUITMENT NOTICE FOR THE POST OF ASSISTANT PROFESSOR (TEMPORARY)",
       buttons: [
         { label: "Apply Now", link: "https://iiitprec.samarth.edu.in/", isExternalLink: true },
