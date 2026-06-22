@@ -139,8 +139,9 @@ const InternationalFooter = () => {
                 <p className="leading-relaxed text-sm">
                   International Relations Office<br />
                   Indian Institute of Information Technology, Pune<br />
-                  Gate No - 5 &amp; 6, Vill - Nanoli-Tarf Chakan,<br />
-                  PO - Talegaon, Tah - Maval, Dist - Pune,<br />
+                  {/* Gate No - 5 &amp; 6, Vill - Nanoli-Tarf Chakan,<br />
+                  PO - Talegaon, Tah - Maval, Dist - Pune,<br /> */}
+                  Talegaon, Pune,<br />
                   Maharashtra - 410507
                 </p>
               </div>

@@ -258,10 +258,11 @@ const ContactPage = () => {
                     <h4 className="font-bold text-gray-900 dark:text-white text-lg">Address</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed">
                       <strong>Indian Institute of Information Technology (IIIT) Pune</strong><br />
-                      Gate No - 5 & 6,<br />
+                      {/* Gate No - 5 & 6,<br />
                       Vill - Nanoli-Tarf Chakan,<br />
                       PO - Talegaon,<br />
-                      Tah - Maval, Dist-Pune,<br />
+                      Tah - Maval, Dist-Pune,<br /> */}
+                      Talegaon, Pune,<br />
                       Maharashtra-410507
                     </p>
                   </div>

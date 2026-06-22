@@ -43,9 +43,10 @@ const InternationalContactPage = () => {
                   <div className="contact-item-icon">📍</div>
                   <div className="contact-item-text">
                     <h4>Office Location</h4>
-                    <p>International Relations Office, IIIT Pune Permanent Campus<br />
-                    Gat No - 5 &amp; 6, Vill - Nanoli-Tarf Chakan,<br />
-                    PO - Talegaon, Tah, Dist, Maval, Maharashtra 410507</p>
+                    <p>International Relations Office, IIIT Pune Campus<br />
+                    {/* Gat No - 5 &amp; 6, Vill - Nanoli-Tarf Chakan,<br />
+                    PO - Talegaon, Tah, Dist, Maval, */}
+                    Talegaon, Pune, Maharashtra 410507</p>
                   </div>
                 </li>
 

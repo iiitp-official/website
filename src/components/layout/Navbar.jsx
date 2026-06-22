@@ -471,8 +471,9 @@ const Navbar = () => {
                 Indian Institute of Information Technology Pune
               </h2>
               <p className="text-center text-[9px] md:text-[13px] opacity-80 mt-0.5">(An Institute of National Importance by an Act of Parliament)</p>
-              <p className="text-center text-[6px] md:text-[8px] opacity-70 mt-0.5">
-                Gat No. 5 &amp; 6, Vill - Nanoli-Tarf Chakan, PO - Talegaon, Tah - Maval, Dist - Pune, Maharashtra - 410507
+              <p className="text-center text-[10px] md:text-[14px] opacity-70 mt-0.5">
+                {/*Gat No. 5 &amp; 6, Vill - Nanoli-Tarf Chakan, PO - Talegaon, Tah - Maval, Dist - Pune, Maharashtra - 410507*/}
+                Talegaon, Pune, Maharashtra - 410507
               </p>
             </div>
           </Link>

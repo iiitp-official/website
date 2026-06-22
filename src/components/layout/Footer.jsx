@@ -190,14 +190,15 @@ const Footer = () => {
                 <p className="leading-relaxed text-sm">
                   Indian Institute of Information Technology (IIIT) Pune
                   <br />
-                  Gate No - 5 & 6,
+                  {/* Gate No - 5 & 6, */}
+                  Talegaon, Pune
                   <br />
-                  Vill - Nanoli-Tarf Chakan,
+                  {/* Vill - Nanoli-Tarf Chakan,
                   <br />
                   PO - Talegaon,
                   <br />
                   Tah - Maval, Dist-Pune,
-                  <br />
+                  <br /> */}
                   Maharashtra-410507
                 </p>
               </div>

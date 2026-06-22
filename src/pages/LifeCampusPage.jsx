@@ -66,7 +66,10 @@ const LifeCampusPage = () => {
                 </p>
                 <div className="inline-flex flex-wrap items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-primary dark:text-blue-400 rounded-xl border border-blue-100 dark:border-blue-900/40 text-xs font-bold">
                   <MapPin size={14} className="shrink-0" />
-                  <span>Gat No. 5 & 6, Vill - Nanoli-Tarf Chakan, PO - Talegaon, Tah - Maval, Dist - Pune, Maharashtra - 410507</span>
+                  <span>
+                    {/* Gat No. 5 & 6, Vill - Nanoli-Tarf Chakan, PO - Talegaon, Tah - Maval, Dist - Pune, Maharashtra - 410507 */}
+                    Talegaon, Pune, Maharashtra - 410507
+                  </span>
                 </div>
               </div>
             </div>
