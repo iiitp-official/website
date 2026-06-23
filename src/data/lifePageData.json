@@ -244,47 +244,74 @@
     },
     "e-cell": {
       "name": "E-Cell",
-      "desc": "Innovation and Incubation Cell (IIC) at IIIT Pune was formed to conduct guest lectures, contact industries and other places for startup grants, and engage students in product-based projects. Its major focus is to create a vibrant local innovation ecosystem and startup-supporting mechanisms in the institute.",
+      "desc": "Entrepreneurship and Incubation Cell at IIIT Pune was established as the first-ever student club of IIIT Pune in the year 2020 to create a startup-supporting ecosystem and establish a functional mechanism for scouting innovative ideas, pre-incubation activities, rewarding innovations, and sharing entrepreneurial success stories.\n\nFor implementation of NISP 2019 at the Institute level, IIIT Pune developed a roadmap that includes:\n1. Formation of Entrepreneurship, Innovation, and Incubation Cell.\n2. Formation of E-Cell and I-Cell.\n3. Faculty nomination for NISP implementation.\n4. Creation of a Section-8 company at the Institute level.\n\nTo foster a collaborative environment that inspires students to think creatively and develop strong business acumen. Ultimately, our goal is to evolve into a fully resourced ecosystem that connects with E-Cells across IITs, NITs, IIITs, and colleges across the nation.\n\nBy building this network, we aim to provide the support needed to turn student ideas into reality and drive startup culture as a nationwide movement.",
       "tags": [
         "Entrepreneurship",
-        "Ideation",
+        "Incubation",
         "Startups"
       ],
       "flagship": [
         {
-          "title": "Ideathon & Hackathon 2k21",
-          "desc": "Flagship ideation events focusing on product prototyping, business plan drafting, and pitch presentations to potential investors."
-        }
-      ],
-      "workshops": [
-        {
-          "title": "National Innovation & Startup Policy Guidelines",
-          "desc": "Seminars outlining startup frameworks, incubator grants, MoE Innovation Cell (MIC) updates, and Section-8 company guidelines."
+          "title": "E-Summit IIIT Pune",
+          "desc": "The Entrepreneurship Summit (E-summit) is IIIT Pune’s flagship annual entrepreneurial fest that aims to promote the spirit of entrepreneurship and involve students from all over the country to participate in various fun-infused activities upholding the motive of promoting entrepreneurship. E-Cell IIIT Pune has successfully conducted four editions of E-Summit beginning in 2022, with the latest edition held in 2026. E-Summit IIIT Pune has witnessed: 15000+ Registrations, 1100+ Colleges, 15+ Countries."
         },
         {
-          "title": "Applied Machine Learning Workshop",
-          "desc": "A 5-hour hands-on development boot camp on ML models and Python packages, hosted in association with the Internity Foundation."
+          "title": "iConclave × E-Summit 2026",
+          "desc": "E-Summit 2026 was conducted along with the annual techno-cultural fest of IIIT Pune - iConclave. The combined event was an extremely successful attempt in bringing the student community of IIIT Pune and several other colleges across India together. Three flagship events were organized: IPL Auction, Startup Hunt, No Way Out. All three events were extremely successful with over 1200+ registrations combined."
         },
         {
-          "title": "Silk Route Quiz",
-          "desc": "A business, trade, and economic quiz event analyzing commercial history and global market structures."
+          "title": "No Way Out",
+          "desc": "No Way Out, one of the flagship events of Iconclave × E-Summit 2026, attracted over 400 participants and tested their problem-solving, teamwork, and decision-making abilities through multiple challenging rounds. The journey culminated in Round 2: The Finale, an immersive escape-room experience where participants had to investigate a crime scene, uncover critical hints, and piece together information to progress toward the final solution."
+        },
+        {
+          "title": "IPL Auction / Stadium Showdown",
+          "desc": "I-Conclave X E-Summit turned into a high-stakes cricketing battlefield for the highly anticipated IPL Auction 2026, bringing infectious energy and fierce competition to the room. Drawing an impressive participation of over 200 attendees, the event witnessed enthusiastic bidding wars and strategic team-building throughout the evening."
+        },
+        {
+          "title": "Startup Hunt",
+          "desc": "Startup Hunt is E-Cell IIIT Pune’s premier national-level startup pitching competition that invites ambitious student entrepreneurs from colleges nationwide to present their most innovative business ideas. Participating teams pitch their visions, business models, and solutions directly to a distinguished panel of expert judges. This year's edition saw over 900 participants."
+        },
+        {
+          "title": "Breaking Conventions",
+          "desc": "Breaking Conventions is one of the legacy events of E-Summit IIIT Pune. It is an insightful speaker series featuring industry leaders, entrepreneurs and startup founders. Notable speakers include Mr. Arjun Malhotra (Co-Founder, HCL) and Mr. Aman Dhattarwal (Founder, Apni Kaksha)."
+        },
+        {
+          "title": "E-Cell Networking Events",
+          "desc": "E-Cell IIIT Pune actively participates in networking events across Pune and beyond. These events help students connect with entrepreneurs, innovators and startup enthusiasts. Recent achievements include participation at MAGNATE'26 hosted by PICT and securing Runner-Up position at IGNITE."
         }
       ],
       "achievements": [
-        "Nominated key faculty representatives for NISP implementation and successfully registered the IIC on the MIC portal",
-        "Created a comprehensive local startup-supporting mechanism and student mentor pool on campus"
+        "Secured Runner-Up position at IGNITE, Cummins College, Pune",
+        "Participated and networked actively at events like MAGNATE'26 hosted by PICT",
+        "Organized 4 editions of E-Summit, including E-Summit × iConclave 2026 with over 1200+ registrations"
       ],
-      "images": [],
+      "images": [
+        "/assets/lifepage/ecell1.png",
+        "/assets/lifepage/ecell3.png",
+        "/assets/lifepage/ecell4.png"
+      ],
       "leadership": {
         "heads": [
           {
-            "name": "Tanmay Khaitan",
+            "name": "Dr. Habila Basumatary",
+            "role": "Faculty Mentor",
+            "link": "/people/faculty/habila-basumatary"
+          },
+          {
+            "name": "Mayank Fulzele",
             "role": "Club Head"
+          },
+          {
+            "name": "Harshit Nagpal",
+            "role": "Club Co-Head"
+          },
+          {
+            "name": "Rayhan",
+            "role": "Club Co-Head"
           }
         ],
         "email": "ecell@iiitp.ac.in",
-        "instagram": "@e-celliiitpune4629",
-        "website": "https://www.iiitp.ac.in/life/professional/e-cell"
+        "instagram": "@ecell_iiitp"
       },
       "flyer": "/assets/clubs/ecell_flyer.jpg"
     },

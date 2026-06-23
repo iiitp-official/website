@@ -326,8 +326,14 @@ const LifeClubsPage = () => {
                             {head.name.split(' ').map(n => n[0]).join('')}
                           </div>
                           <div className="flex flex-col gap-0.5 min-w-0">
-                            <span className="text-xs font-bold text-gray-850 dark:text-gray-300 truncate">{head.name}</span>
-                            <span className="text-[9px] text-gray-500 dark:text-gray-450 truncate">{head.role}</span>
+                            {head.link ? (
+                              <a href={head.link} className="text-xs font-bold text-gray-850 dark:text-gray-300 truncate hover:text-primary dark:hover:text-blue-400 hover:underline">
+                                {head.name}
+                              </a>
+                            ) : (
+                              <span className="text-xs font-bold text-gray-850 dark:text-gray-300 truncate">{head.name}</span>
+                            )}
+                            <span className="text-[9px] text-gray-500 dark:text-gray-455 truncate">{head.role}</span>
                           </div>
                         </div>
                       ))}
