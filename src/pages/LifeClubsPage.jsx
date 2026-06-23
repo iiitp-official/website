@@ -269,9 +269,19 @@ const LifeClubsPage = () => {
                   </span>
                 ))}
               </div>
-              <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
+              <div className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify whitespace-pre-line">
                 {club.desc}
-              </p>
+              </div>
+              {club.vision && (
+                <div className="mt-6 mb-2">
+                  <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b pb-2 border-gray-100 dark:border-gray-800 flex items-center gap-2 mb-4">
+                    Our Vision
+                  </h3>
+                  <div className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify whitespace-pre-line">
+                    {club.vision}
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="flex flex-col lg:flex-row gap-8">
