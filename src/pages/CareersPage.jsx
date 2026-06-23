@@ -4,6 +4,12 @@ import PageHeader from '../components/shared/PageHeader';
 const CareersPage = () => {
   const jobs = [
     {
+      title: "Advertisement for the Post of Project Associate-I under the Project SMDP-Chips to Startup (C2S)",
+      buttons: [
+        { label: "Details", file: "IIIT_Pune_Project_Associate_Advertisement.pdf" },
+      ]
+    },
+    {
       title: "Advertisement for various research positions under Anusandhan National Research Foundation - Partnerships for Accelerated Innovation and Research (ANRF-PAIR) Initiative",
       buttons: [
         { label: "Details", file: "ANRF-PAIR_Manpower_Advertisement June 2026.pdf" },
