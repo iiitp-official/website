@@ -1,0 +1,169 @@
+{
+  "live": [
+    {
+      "title": "Advertisement for the Post of Project Associate-I under the Project SMDP-Chips to Startup (C2S)",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "IIIT_Pune_Project_Associate_Advertisement.pdf"
+        }
+      ],
+      "date": "23-06-2026"
+    },
+    {
+      "title": "Advertisement for various research positions under Anusandhan National Research Foundation - Partnerships for Accelerated Innovation and Research (ANRF-PAIR) Initiative",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "ANRF-PAIR_Manpower_Advertisement June 2026.pdf"
+        }
+      ],
+      "date": "20-06-2026"
+    },
+    {
+      "title": "RECRUITMENT NOTICE FOR THE POST OF ASSISTANT PROFESSOR (TEMPORARY)",
+      "buttons": [
+        {
+          "label": "Apply Now",
+          "link": "https://iiitprec.samarth.edu.in/",
+          "isExternalLink": true
+        },
+        {
+          "label": "Details",
+          "file": "16.06.2026 ASSISTANT PROFESSOR TEMPORARY FINAL VERSION.pdf"
+        },
+        {
+          "label": "Corrigendum",
+          "file": "CORRIGENDUM (Recruitment to the post of Assistant Proffesor) temporary on contractual basis. .pdf"
+        }
+      ],
+      "date": "16-06-2026"
+    },
+    {
+      "title": "Cancellation of Advertisement for the Post of Assistant Registrar",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "1.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "2.pdf"
+        }
+      ],
+      "date": "10-06-2026"
+    }
+  ],
+  "archive": [
+    {
+      "title": "Advertisement for various research positions under Anusandhan National Research Foundation -Partnerships for Accelerated Innovation and Research (ANRF-PAIR) initiative",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "3.docx"
+        },
+        {
+          "label": "Details",
+          "file": "4.pdf"
+        },
+        {
+          "label": "Corrigendum",
+          "file": "5.pdf"
+        }
+      ],
+      "date": "--"
+    },
+    {
+      "title": "Advertisement for the Post of Project Associate-I under the Project SMDP-Chips to Startup (C2S)",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "6.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "7.pdf"
+        }
+      ],
+      "date": "--"
+    },
+    {
+      "title": "Advertisement for the Post of Junior Research Fellow (JRF) in Sponsored Project",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "8.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "9.pdf"
+        }
+      ],
+      "date": "--"
+    },
+    {
+      "title": "RECRUITMENT NOTICE FOR THE POST OF ADJUNCT ASSISTANT PROFESSOR (AAP) (ON TEMPORARY BASIS)",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "10.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "11.pdf"
+        },
+        {
+          "label": "Corrigendum",
+          "file": "12.pdf"
+        }
+      ],
+      "date": "--"
+    },
+    {
+      "title": "WALK-IN-INTERVIEW FOR THE POST OF ADVISOR (CIVIL) ON CONTRACT BASIS – THROUGH OUTSOURCING AGENCY",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "13.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "14.pdf"
+        },
+        {
+          "label": "Corrigendum",
+          "file": "15.pdf"
+        }
+      ],
+      "date": "--"
+    },
+    {
+      "title": "Advertisement for the Post of Research Associate-I in Sponsored Project",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "16.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "17.pdf"
+        }
+      ],
+      "date": "--"
+    },
+    {
+      "title": "Advertisement for the Post of Intern in Sponsored Project",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "18.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "19.pdf"
+        }
+      ],
+      "date": "--"
+    }
+  ]
+}
