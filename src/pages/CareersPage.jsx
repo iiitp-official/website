@@ -11,11 +11,11 @@ const CareersPage = () => {
     <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="Careers @ IIIT Pune" />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
         
         {/* Tab Selection */}
-        <div className="flex justify-center mb-8">
-          <div className="inline-flex bg-gray-100 dark:bg-gray-800 rounded-lg p-1">
+        <div className="flex justify-center mb-8 w-full overflow-x-auto pb-2 custom-scrollbar">
+          <div className="inline-flex bg-gray-100 dark:bg-gray-800 rounded-lg p-1 min-w-max">
             <button
               onClick={() => setActiveTab('live')}
               className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -39,8 +39,8 @@ const CareersPage = () => {
           </div>
         </div>
 
-        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md border border-gray-100 dark:border-gray-800 w-full overflow-hidden">
-          <div className="flex flex-col">
+        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md border border-gray-100 dark:border-gray-800 w-full overflow-x-auto custom-scrollbar">
+          <div className="flex flex-col min-w-[600px] md:min-w-0">
             {jobs.length > 0 ? (
               jobs.map((job, idx) => (
                 <div
