@@ -52,6 +52,17 @@ const LifeEventsPage = () => {
                             <ExternalLink size={12} />
                           </a>
                         )}
+                        {evt.name.includes("Thinking Machine") && (
+                          <a
+                            href="/assets/lifepage/Thinking_Machine_Hackathon_Event_Report.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 bg-indigo-200 text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400 text-xs font-semibold rounded-full border border-indigo-100 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors"
+                          >
+                            View Report
+                            <ExternalLink size={12} />
+                          </a>
+                        )}
                       </div>
                       <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
                         {evt.desc}

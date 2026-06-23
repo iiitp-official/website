@@ -954,6 +954,23 @@
       ]
     },
     {
+      "name": "Thinking Machine",
+      "type": "National-Level AI Hackathon",
+      "typeColor": "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300",
+      "desc": "Thinking Machine was a national-level AI hackathon hosted by IIIT Pune, challenging participants to develop impactful AI-powered solutions through an intensive four-day competition. Conducted in two stages, the event featured an online submission round followed by an offline grand finale at the campus. It attracted enthusiastic participation from students representing premier engineering institutions across India, including NITs, COEP, PICT, and VIT. With a total of 333 registrations, 82 complete team registrations, and 43 project submissions, the event demonstrated a strong enthusiasm for applied Artificial Intelligence. Following a rigorous evaluation, the top six performing teams were shortlisted to compete in the offline finale, where they presented their solutions before an expert jury panel. The hackathon successfully provided a platform for students to showcase technical creativity, collaborate, and address real-world challenges using cutting-edge AI technologies.",
+      "images": [
+        "/assets/lifepage/thinkingMachine1.png",
+        "/assets/lifepage/thinkingMachine2.png",
+        "/assets/lifepage/thinkingMachine3.png"
+      ],
+      "highlights": [
+        "333 Registrations",
+        "82 Complete Team Registrations",
+        "43 Project Submissions",
+        "Top 6 Teams in Offline Finale"
+      ]
+    },
+    {
       "name": "Ananta Cultural Fest",
       "type": "Cultural Extravaganza",
       "typeColor": "bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300",
