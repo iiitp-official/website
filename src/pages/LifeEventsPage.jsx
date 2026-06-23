@@ -37,9 +37,22 @@ const LifeEventsPage = () => {
                       <span className={`inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide mb-3 ${evt.typeColor}`}>
                         {evt.type}
                       </span>
-                      <h3 className="text-2xl font-bold font-serif text-gray-800 dark:text-white mb-3">
-                        {evt.name}
-                      </h3>
+                      <div className="flex items-center gap-4 mb-3">
+                        <h3 className="text-2xl font-bold font-serif text-gray-800 dark:text-white">
+                          {evt.name}
+                        </h3>
+                        {evt.name.includes("iConclave") && (
+                          <a
+                            href="/assets/lifepage/Conclave × E-Summit 2026 Event Report (1).pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-200 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 text-xs font-semibold rounded-full border border-blue-100 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors"
+                          >
+                            View Report
+                            <ExternalLink size={12} />
+                          </a>
+                        )}
+                      </div>
                       <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
                         {evt.desc}
                       </p>
