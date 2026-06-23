@@ -25,7 +25,7 @@ const HeroCarousel = () => {
   const prevSlide = () => setCurrent(current === 0 ? slides.length - 1 : current - 1);
 
   return (
-    <div className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] overflow-hidden bg-gray-900">
+    <div className="relative w-full h-[31vh] sm:h-[60vh] md:h-[72vh] overflow-hidden bg-gray-900"> {/* changed to h-31 for fixing carousel on mobile*/}
       {slides.map((slide, idx) => (
         <div
           key={slide.id}
