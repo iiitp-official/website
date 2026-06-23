@@ -100,6 +100,11 @@ const NIRFPage = lazy(() => import("./pages/NIRFPage"));
 const SuoMotuPage = lazy(() => import("./pages/SuoMotuPage"));
 const RTIPage = lazy(() => import("./pages/RTIPage"));
 const RajbhashaPage = lazy(() => import("./pages/RajbhashaPage"));
+const RajbhashaDetailPage = lazy(() => import("./pages/RajbhashaDetailPage"));
+const RajbhashaGalleryPage = lazy(() => import("./pages/RajbhashaGalleryPage"));
+const RajbhashaBaithakPage = lazy(() => import("./pages/RajbhashaBaithakPage"));
+const RajbhashaNitiPage = lazy(() => import("./pages/RajbhashaNitiPage"));
+const RajbhashaLinksPage = lazy(() => import("./pages/RajbhashaLinksPage"));
 const FeesPage = lazy(() => import("./pages/FeesPage"));
 const ICCPage = lazy(() => import("./pages/ICCPage"));
 const MinutesPage = lazy(() => import("./pages/ReportsAndMinutes"));
@@ -375,6 +380,11 @@ function AppContent() {
             <Route path="/suo-motu" element={<SuoMotuPage />} />
             <Route path="/rti" element={<RTIPage />} />
             <Route path="/rajbhasha" element={<RajbhashaPage />} />
+            <Route path="/rajbhasha/prashikshan" element={<RajbhashaDetailPage />} />
+            <Route path="/rajbhasha/chitra-dirgha" element={<RajbhashaGalleryPage />} />
+            <Route path="/rajbhasha/samiti-baithak" element={<RajbhashaBaithakPage />} />
+            <Route path="/rajbhasha/niti" element={<RajbhashaNitiPage />} />
+            <Route path="/rajbhasha/links" element={<RajbhashaLinksPage />} />
             <Route path="/fees" element={<FeesPage />} />
             <Route path="/icc" element={<ICCPage />} />
             <Route path="/reports-and-minutes" element={<MinutesPage />} />

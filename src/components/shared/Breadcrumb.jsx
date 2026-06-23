@@ -33,7 +33,13 @@ const Breadcrumb = () => {
           'institute': 'Institute Scheme',
           'graduated': 'Graduated PhD Students',
           'anti-ragging': 'Anti-Ragging Committee',
-          'reports-and-minutes': 'Reports and Minutes'
+          'reports-and-minutes': 'Reports and Minutes',
+          'rajbhasha': 'राजभाषा अनुभाग',
+          'niti': 'राजभाषा नीति',
+          'samiti-baithak': 'समिति बैठक',
+          'links': 'प्रमुख लिंक',
+          'prashikshan': 'प्रशिक्षण कार्यक्रम',
+          'chitra-dirgha': 'चित्र दीर्घा'
         };
 
         // Capitalize and format text, handling special acronyms
