@@ -34,7 +34,7 @@ const AdmissionsPage = () => {
     {
       title: "MTech (Without Scholarship)",
       applicationLink: "/documents/Application form Jul 2026-M.Tech.pdf",
-      brochureLink: "/documents/IIITP M.Tech.Without Scholarship Admission Brochure Jul-2026.pdf"
+      brochureLink: "/documents/M.Tech. Brochure July-2026.pdf"
     },
     {
       title: "PhD (Institute Scheme)",
