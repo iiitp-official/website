@@ -6,7 +6,7 @@ export const publicityData = [
   },
   {
     sno: "3.1",
-    item: "Particulars for any arrangement for consultation with or representation by the members of the public in relation to the formulation of policy or implementation thereof [Section 4(1)(b)(vii)]",
+    item: "Particulars for any arrangement for consultation with or representation by the members of the public in relation to the formulation of policy or implementation thereof [Section 4(1)(b)(vii)] [F No 1/6/2011-IR dt. 15.04.2013]",
     isHeading: true,
   },
   {
@@ -17,41 +17,51 @@ export const publicityData = [
   },
   {
     sno: "3.1.2",
-    item: "Arrangements for consultation with or representation by",
+    item: (
+      <>
+        Arrangements for consultation with or representation by –
+        <br />
+        (a) Members of the public in policy formulation/ policy implementation
+        <br />
+        (b) Day & time allotted for visitors
+        <br />
+        (c) Contact details of Information & Facilitation Counter (IFC)
+      </>
+    ),
     details: (
       <>
-        Consultation with the Parents or other Members of the Public is taken as and when required.
-        <br /><br />
-        The Members of the Public can visit any time during working hours of the Institute.
-        <br /><br />
+        Consultation with the Parents or other Members of the Public is taken as and when required. The concerned stakeholders are encouraged to ask queries, questions and collect information personally or through the website.
+        <p>The Members of the Public can visit any time during working hours of the Institute.</p>
 
-        <a
-          href="/people/faculty/nagendra-kushwaha"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          Dr. Nagendra Kushwaha
-        </a>
-        <br />
-        Registrar IIIT Pune
-        <br />
-        Public Information Officer (PIO)
+        <p>
+          <a
+            href="/people/faculty/nagendra-kushwaha"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            Dr. Nagendra Kushwaha
+          </a>
+          <br />
+          Registrar IIIT Pune
+          <br />
+          Public Information Officer (PIO)
+        </p>
 
-        <br /><br />
-
-        <a
-          href="/people/faculty/jatin-majithia"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          Dr. Jatin Majithia
-        </a>
-        <br />
-        Assistant Professor (Gr.I)
-        <br />
-        First Appellate Authority
+        <p>
+          <a
+            href="/people/faculty/jatin-majithia"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            Dr. Jatin Majithia
+          </a>
+          <br />
+          Assistant Professor (Gr.I),
+          <br />
+          First Appellate Authority
+        </p>
       </>
     ),
   },
@@ -59,7 +69,7 @@ export const publicityData = [
     sno: "3.1.3",
     item: "Public-private partnerships (PPP) – Details of Special Purpose Vehicle (SPV), if any",
     details:
-      "Indian Institute of Information Technology, Pune (IIITP) is one of the 20 IIITs established under the PPP Scheme by the Ministry of Education, Government of India.",
+      "Indian Institute of Information Technology, Pune (IIITP) is one of the 20 Indian Institutes of Information Technology established under the Public-Private Partnership Scheme by the Ministry of Human Resource Development, Government of India. The MHRD Scheme for the setting up of 20 new IIITs on a PPP Model is available on the Ministry of Education Website.",
   },
   {
     sno: "3.1.4",
@@ -94,8 +104,12 @@ export const publicityData = [
   {
     sno: "3.1.10",
     item: "PPP – The process of selection of private sector party",
-    details:
-      "Maha IT has been selected as an Industry Partner by the State Government of Maharashtra. The process is governed under the provisions of the IIIT (PPP) Act, 2017.",
+    details: (
+      <>
+        Maha IT has been selected as an Industry Partner by the State Government of Maharashtra.
+        <p>The process of the selection of the Industry Partners is under the purview of the State Government of Maharashtra / Central Government as per the provisions of the IIIT (PPP) Act, 2017.</p>
+      </>
+    ),
   },
   {
     sno: "3.1.11",
@@ -111,19 +125,19 @@ export const publicityData = [
     sno: "3.2.1",
     item: "Policy decisions/legislations in previous year",
     details:
-      "Policies or decisions which affect public / students are published on the Institute website.",
+      "Policies or decisions which affect public / students are published on the Website of the Institute.",
   },
   {
     sno: "3.2.2",
     item: "Outline the Public consultation process",
     details:
-      "Consultation with Parents and stakeholders is taken whenever required.",
+      "Consultation with the Parents or other Members of the Public is taken as and when required. The concerned stakeholders are encouraged to ask queries, questions and collect information personally or through website.",
   },
   {
     sno: "3.2.3",
     item: "Consultation before formulation of policy",
     details:
-      "Consultation with Parents and stakeholders is taken whenever required.",
+      "Consultation with the Parents or other Members of the Public is taken as and when required. The concerned stakeholders are encouraged to ask queries, questions and collect information personally or through website.",
   },
   {
     sno: "3.3",
@@ -134,7 +148,7 @@ export const publicityData = [
     sno: "3.3.1",
     item: "List of channels of dissemination",
     details:
-      "Official Website, Twitter Handle, Facebook Page and other social media platforms.",
+      "Official Website of the Institute www.iiitp.ac.in; Official Twitter Handle, Facebook Page and other available means of Social Media",
   },
   {
     sno: "3.4",
@@ -162,23 +176,31 @@ export const publicityData = [
     item: "List of materials – Free of cost",
     details: (
       <>
-        <a href="/assets/suo_motu/IIIT_PPP_Act.pdf" target="_blank" rel="noopener noreferrer" className="link">
+        All the information manuals and handbooks are available free of cost on:
+        <br />
+        <a href="/assets/suo_motu/IIIT-PPP-Act-2017.pdf" target="_blank" rel="noopener noreferrer" className="link">
           IIIT (PPP) Act, 2017
         </a>
         <br />
         <a href="/assets/suo_motu/IIIT_Pune_Statute_2017%2022.10.2018.pdf" target="_blank" rel="noopener noreferrer" className="link">
-          Statutes of IIIT Pune
+          Statutes of IIITP, 2017
         </a>
         <br />
         Academic Rule Book for UG Courses
         <br />
         Academic Rule Book for PhD Courses
         <br />
-        Balance Sheet (2024-25)
+        <a href="/assets/suo_motu/Balance%20Sheet%202024-25.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Balance Sheets (2024-25)
+        </a>
         <br />
-        Annual Report (2024-25)
+        <a href="https://drive.google.com/file/d/1XVOemlouW4DJwlXwJbv9skBTP8v4ttcT/view" target="_blank" rel="noopener noreferrer" className="link">
+          Annual Reports (2024-25)
+        </a>
         <br />
-        Audit Report (2024-25)
+        <a href="/assets/suo_motu/CAG%20audit%20report%20FY_2024-25.pdf" target="_blank" rel="noopener noreferrer" className="link">
+          Audit Reports (2024-25)
+        </a>
       </>
     ),
   },
