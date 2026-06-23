@@ -43,13 +43,13 @@ const RajbhashaBaithakPage = () => {
               <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-800 text-left">
                 <thead className="bg-gray-50 dark:bg-slate-900/50">
                   <tr>
-                    <th scope="col" className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider w-24">
+                    <th scope="col" className="px-6 py-4 text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider w-24">
                       क्रम संख्या
                     </th>
-                    <th scope="col" className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider">
+                    <th scope="col" className="px-6 py-4 text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider">
                       नाम एवं पदनाम
                     </th>
-                    <th scope="col" className="px-6 py-4 text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider">
+                    <th scope="col" className="px-6 py-4 text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wider">
                       समिति में भूमिका
                     </th>
                   </tr>
@@ -57,7 +57,7 @@ const RajbhashaBaithakPage = () => {
                 <tbody className="bg-white dark:bg-surface-dark divide-y divide-gray-200 dark:divide-gray-800 text-gray-700 dark:text-gray-300 text-base">
                   <tr className="hover:bg-gray-50 dark:hover:bg-slate-900/30">
                     <td className="px-6 py-4 whitespace-nowrap font-medium">1</td>
-                    <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">कुलसचिव</td>
+                    <td className="px-6 py-4">कुलसचिव</td>
                     <td className="px-6 py-4 whitespace-nowrap">अध्यक्ष</td>
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-slate-900/30">
@@ -87,13 +87,13 @@ const RajbhashaBaithakPage = () => {
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-slate-900/30">
                     <td className="px-6 py-4 whitespace-nowrap font-medium">7</td>
-                    <td className="px-6 py-4 font-semibold text-primary dark:text-blue-400">डॉ. महेंद्र प्रताप यादव, संकाय प्रभारी (राजभाषा कार्यान्वयन)</td>
-                    <td className="px-6 py-4 whitespace-nowrap font-semibold">सदस्य</td>
+                    <td className="px-6 py-4">डॉ. महेंद्र प्रताप यादव, संकाय प्रभारी (राजभाषा कार्यान्वयन)</td>
+                    <td className="px-6 py-4 whitespace-nowrap">सदस्य</td>
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-slate-900/30">
                     <td className="px-6 py-4 whitespace-nowrap font-medium">8</td>
-                    <td className="px-6 py-4 font-semibold text-primary dark:text-blue-400">श्री आनंद मोहन, कनिष्ठ अधीक्षक, स्थापना अनुभाग</td>
-                    <td className="px-6 py-4 whitespace-nowrap font-semibold">सदस्य-सचिव</td>
+                    <td className="px-6 py-4">श्री आनंद मोहन, कनिष्ठ अधीक्षक, स्थापना अनुभाग</td>
+                    <td className="px-6 py-4 whitespace-nowrap">सदस्य-सचिव</td>
                   </tr>
                 </tbody>
               </table>

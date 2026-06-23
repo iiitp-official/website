@@ -67,7 +67,21 @@ const FundedProjectsOngoingPage = () => {
       duration: "5 Years",
       completionDate: "",
       grant: "81.5"
+    },
+    {
+      sno: 6,
+      faculty: "Dr. Dheeraj Dubey",
+      category: "Externally Sponsored",
+      agency: "ISRO",
+      pi: "PI: Dr. Dheeraj Dubey Co-PI: Dr. Jahnvi Tiwari",
+      title: "High Data Rate Channel Codec Architecture for Free Space Classical RF and Optical Communication",
+      startDate: "June 2026",
+      status: "Ongoing",
+      duration: "2 Years",
+      completionDate: "June 2028",
+      grant: "19"
     }
+
   ];
 
   return (
