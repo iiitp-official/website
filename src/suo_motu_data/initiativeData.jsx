@@ -22,16 +22,17 @@ export const initiativeData = [
     details: (
       <>
         Please click on the following links to view the details:
-        <br />
-        <a href="/" className="link">https://iiitp.ac.in</a>
-        <a href="/people/faculty" className="link">Faculty Portfolios</a>
-        <a href="/people/non-teaching-staff/regular" className="link">Non-Teaching Staff Directory</a>
-        <a href="/admissions" className="link">Admission Procedure & Details</a>
-        <a href="/academics/calendar" className="link">Academic Calendar</a>
-        <a href="/scholarships" className="link">Scholarship Schemes</a>
-        <a href="/e-tender/live" className="link">E-Tenders (Live & Archives)</a>
-        <a href="/rti" className="link">RTI Portal</a>
-        <a href="https://sites.google.com/iiitp.ac.in/library" target="_blank" rel="noopener noreferrer" className="link">Central Library</a>
+        <div className="flex flex-col gap-1 mt-1.5">
+          <a href="/" className="link">https://iiitp.ac.in</a>
+          <a href="/people/faculty" className="link">Faculty Portfolios</a>
+          <a href="/people/non-teaching-staff/regular" className="link">Non-Teaching Staff Directory</a>
+          <a href="/admissions" className="link">Admission Procedure & Details</a>
+          <a href="/academics/calendar" className="link">Academic Calendar</a>
+          <a href="/scholarships" className="link">Scholarship Schemes</a>
+          <a href="/e-tender/live" className="link">E-Tenders (Live & Archives)</a>
+          <a href="/rti" className="link">RTI Portal</a>
+          <a href="https://sites.google.com/iiitp.ac.in/library" target="_blank" rel="noopener noreferrer" className="link">Central Library</a>
+        </div>
       </>
     ),
   },

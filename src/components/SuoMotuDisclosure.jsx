@@ -107,7 +107,7 @@ export default function SuoMotuDisclosure() {
                       </td>
                     ) : (
                       <>
-                        <td className="py-4 px-6 text-sm text-gray-700 dark:text-gray-300 font-medium align-top">
+                        <td className="py-4 px-6 text-sm text-gray-700 dark:text-gray-300 font-medium align-top [&_a]:text-accent [&_a]:hover:text-brand-red dark:[&_a]:text-accent-dark [&_a]:transition-colors [&_a]:underline [&_p]:mt-2 [&_p:first-child]:mt-0">
                           {row.item}
                         </td>
                         <td className="py-4 px-6 text-sm text-gray-600 dark:text-gray-400 align-top">
@@ -136,8 +136,12 @@ export default function SuoMotuDisclosure() {
                               {row.details}
                               <ExternalLink size={14} className="shrink-0" />
                             </a>
-                          ) : (
+                          ) : typeof row.details === 'string' ? (
                             <span className="whitespace-pre-line leading-relaxed block">{row.details}</span>
+                          ) : (
+                            <div className="leading-relaxed [&_a]:text-accent [&_a]:hover:text-brand-red dark:[&_a]:text-accent-dark [&_a]:transition-colors [&_a]:underline [&_p]:mt-2 [&_p:first-child]:mt-0 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mt-1.5 [&_li:first-child]:mt-0 [&_strong]:text-gray-900 dark:[&_strong]:text-white">
+                              {row.details}
+                            </div>
                           )}
                         </td>
                       </>
@@ -147,6 +151,10 @@ export default function SuoMotuDisclosure() {
               </tbody>
             </table>
           </div>
+
+          <p className="text-sm text-gray-500 dark:text-gray-400 text-right mt-4">
+            Last Updated: 25-04-2026
+          </p>
         </div>
       </div>
     </div>
