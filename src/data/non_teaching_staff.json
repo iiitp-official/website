@@ -73,10 +73,10 @@
     "name": "Sandip Mandal",
     "designation": "Jr. Assistant",
     "department": "Academic",
-    "departmentShort": "Academic",
+    "departmentShort": "Director Office",
     "image": "/assets/nonteachingstaff_photos/sandipmandal.jpeg",
     "description": "",
-    "email": "asst1.academics@iiitp.ac.in",
+    "email": "pa.director@iiitp.ac.in",
     "type": "Regular"
   },
   {
@@ -283,10 +283,10 @@
     "name": "Viraj Pradip Lohakare",
     "designation": "Office Executive",
     "department": "Registrar Office",
-    "departmentShort": "Registrar Office",
+    "departmentShort": "Academic",
     "image": "/assets/nonteachingstaff_photos/virajlohakare.jpg",
     "description": "",
-    "email": "patoreg@iiitp.ac.in",
+    "email": "asst1.academics@iiitp.ac.in",
     "type": "Contract"
   },
   {
