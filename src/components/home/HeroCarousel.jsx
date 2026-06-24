@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 const slides = [
   { id: 1, image: '/carousel/slide_1.jpeg' },
-  { id: 2, image: '/carousel/slide_2.jpeg' },
-  { id: 3, image: '/carousel/slide_3.jpeg' },
-  { id: 4, image: '/carousel/slide_4.jpeg' },
-  { id: 5, image: '/carousel/slide_5.jpeg' },
-  { id: 6, image: '/carousel/InternationalYogaDay.jpeg' },
+  { id: 2, image: '/carousel/InternationalYogaDay.jpeg' },
+  { id: 3, image: '/carousel/slide_2.jpeg' },
+  { id: 4, image: '/carousel/slide_3.jpeg' },
+  { id: 5, image: '/carousel/slide_4.jpeg' },
+  { id: 6, image: '/carousel/slide_5.jpeg' },
 ];
 
 const HeroCarousel = () => {

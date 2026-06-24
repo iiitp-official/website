@@ -933,34 +933,41 @@
   ],
   "GALLERY_ITEMS": [
     {
-      "title": "Traditional Day Celebration",
-      "category": "Cultural",
-      "imgUrl": "/assets/lifepage/DSC_0845 (1) (1).jpg"
-    },
-    {
-      "title": "Mridangam Performance & Fest",
-      "category": "Cultural",
-      "imgUrl": "/assets/lifepage/DSC_3082 (1) (1).jpg"
-    },
-    {
-      "title": "Republic Day Celebration Flag Hoisting",
-      "category": "National Day",
-      "imgUrl": "/assets/lifepage/1.jpg"
-    },
-    {
-      "title": "IIIT Pune Campus Life Highlights",
-      "category": "Campus Life",
-      "imgUrl": "/assets/lifepage/1_2.jpg"
-    },
-    {
-      "title": "Fit India Movement Athletic Drive",
+      "title": "Eklavya Medal Ceremony 2026",
       "category": "Sports",
-      "imgUrl": "/assets/lifepage/Picture (1).jpeg"
+      "image": "/assets/lifepage/MedalCeremony1.JPG",
+      "description": "Highlights moments from the Eklavya Medal Ceremony 2026.",
+      "images": [
+        "/assets/lifepage/MedalCeremony1.JPG",
+        "/assets/lifepage/MedalCeremony2.JPG",
+        "/assets/lifepage/MedalCeremony3.JPG",
+        "/assets/lifepage/MedalCeremony4.JPG",
+        "/assets/lifepage/MedalCeremony5.JPG",
+        "/assets/lifepage/MedalCeremony6.JPG",
+        "/assets/lifepage/MedalCeremony7.JPG",
+        "/assets/lifepage/MedalCeremony8.JPG",
+        "/assets/lifepage/MedalCeremony9.JPG"
+      ]
     },
     {
-      "title": "Republic Day March & Gatherings",
-      "category": "National Day",
-      "imgUrl": "/assets/lifepage/repub.jpg"
+      "title": "I-Conclave 2026 Day 1",
+      "category": "Fest",
+      "image": "/assets/lifepage/IconclaveDay1_1.JPG",
+      "description": "Highlights from Day 1 of the I-Conclave 2026 festival.",
+      "images": [
+        "/assets/lifepage/IconclaveDay1_1.JPG",
+        "/assets/lifepage/IconclaveDay1_2.JPG",
+        "/assets/lifepage/IconclaveDay1_3.JPG",
+        "/assets/lifepage/IconclaveDay1_4.JPG",
+        "/assets/lifepage/IconclaveDay1_5.JPG",
+        "/assets/lifepage/IconclaveDay1_6.JPG",
+        "/assets/lifepage/IconclaveDay1_7.JPG",
+        "/assets/lifepage/IconclaveDay1_8.JPG",
+        "/assets/lifepage/IconclaveDay1_9.JPG",
+        "/assets/lifepage/IconclaveDay1_10.JPG",
+        "/assets/lifepage/IconclaveDay1_11.JPG",
+        "/assets/lifepage/IconclaveDay1_12.JPG"
+      ]
     }
   ],
   "EVENTS": [
