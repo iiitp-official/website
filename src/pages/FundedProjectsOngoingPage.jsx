@@ -7,6 +7,19 @@ const FundedProjectsOngoingPage = () => {
       sno: 1,
       faculty: "Dr. Dheeraj Dubey",
       category: "Externally Sponsored",
+      agency: "ISRO",
+      pi: "PI: Dr. Dheeraj Dubey Co-PI: Dr. Jahnvi Tiwari",
+      title: "High Data Rate Channel Codec Architecture for Free Space Classical RF and Optical Communication",
+      startDate: "June 2026",
+      status: "Ongoing",
+      duration: "2 Years",
+      completionDate: "June 2028",
+      grant: "19"
+    },
+    {
+      sno: 2,
+      faculty: "Dr. Dheeraj Dubey",
+      category: "Externally Sponsored",
       agency: "ART PARK (IISC) KARNATAKA",
       pi: "Jahnvi Tiwari (PI) & Dheeraj Dubey (Co-PI)",
       title: "5G-V2X Enabled Cooperative Blind-Spot Detection System with RIS-Assisted VANETs",
@@ -17,7 +30,7 @@ const FundedProjectsOngoingPage = () => {
       grant: "22 (approx)"
     },
     {
-      sno: 2,
+      sno: 3,
       faculty: "Divya Chaturvedi",
       category: "Externally Sponsored",
       agency: "CSIR",
@@ -30,7 +43,7 @@ const FundedProjectsOngoingPage = () => {
       grant: "30"
     },
     {
-      sno: 3,
+      sno: 4,
       faculty: "Dr. Bhupendra Sing & Dr Sanjeev Sharma",
       category: "Externally Sponsored",
       agency: "MeitY",
@@ -43,7 +56,7 @@ const FundedProjectsOngoingPage = () => {
       grant: "193"
     },
     {
-      sno: 4,
+      sno: 5,
       faculty: "Dr. Habila Basumatary, Dr. Sanjeev Sharma, Dr. Bhupendra Singh Dr. Sushant Kumar, Co-PI: Dr. Dheeraj Dubey, Dr. Dipen Bepari, Dr. Shivangi Shukla",
       category: "Externally Sponsored",
       agency: "ANRF",
@@ -56,7 +69,7 @@ const FundedProjectsOngoingPage = () => {
       grant: "438"
     },
     {
-      sno: 5,
+      sno: 6,
       faculty: "Dr. Nagendra Kushwaha",
       category: "Externally Sponsored",
       agency: "Ministry of Electronics & Information Technology, Govt. of India",
@@ -68,19 +81,7 @@ const FundedProjectsOngoingPage = () => {
       completionDate: "",
       grant: "81.5"
     },
-    {
-      sno: 6,
-      faculty: "Dr. Dheeraj Dubey",
-      category: "Externally Sponsored",
-      agency: "ISRO",
-      pi: "PI: Dr. Dheeraj Dubey Co-PI: Dr. Jahnvi Tiwari",
-      title: "High Data Rate Channel Codec Architecture for Free Space Classical RF and Optical Communication",
-      startDate: "June 2026",
-      status: "Ongoing",
-      duration: "2 Years",
-      completionDate: "June 2028",
-      grant: "19"
-    }
+    
 
   ];
 
