@@ -44,7 +44,7 @@ const FundedProjectsOngoingPage = () => {
     },
     {
       sno: 4,
-      faculty: "Dr. Bhupendra Sing",
+      faculty: "Dr. Bhupendra Singh",
       category: "Externally Sponsored",
       agency: "MeitY",
       pi: "Dr. Sanjeev Sharma",
@@ -61,7 +61,7 @@ const FundedProjectsOngoingPage = () => {
       category: "Externally Sponsored",
       agency: "ANRF",
       pi: "Dr. Sanjeev Sharma, Dr. Bhupendra Singh Dr. Sushant Kumar, Dr. Dheeraj Dubey, Dr. Dipen Bepari, Dr. Shivangi Shukla",
-      title: "Technologies for implementation of DPDPA Rules 2025",
+      title: "Technologies for implementation of DPDP Rules 2025",
       startDate: "26.09.25",
       status: "Ongoing",
       duration: "5 Years",
