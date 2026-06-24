@@ -1,11 +1,64 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import PageHeader from '../components/shared/PageHeader';
+import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 
 const RajbhashaGalleryPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   // Update document title for SEO purposes
   useEffect(() => {
     document.title = "चित्र दीर्घा | राजभाषा अनुभाग - IIIT Pune";
   }, []);
+
+  const galleryImages = [
+    { src: '/rajbhasha/rajbhasha_img_1.jpeg', title: 'राजभाषा कार्यान्वयन समिति की बैठक' },
+    { src: '/rajbhasha/rajbhasha_img_2.jpeg', title: 'हिंदी पखवाड़ा उद्घाटन समारोह' },
+    { src: '/rajbhasha/rajbhasha_img_3.jpeg', title: 'राजभाषा हिंदी कार्यशाला' },
+    { src: '/rajbhasha/rajbhasha_img_4.jpeg', title: 'हिंदी निबंध एवं वाद-विवाद प्रतियोगिता' },
+    { src: '/rajbhasha/rajbhasha_img_5.jpeg', title: 'विजेता प्रतिभागियों का पुरस्कार वितरण' },
+    { src: '/rajbhasha/rajbhasha_img_6.jpeg', title: 'विश्व हिंदी दिवस का आयोजन' },
+    { src: '/rajbhasha/rajbhasha_img_7.jpeg', title: 'हिंदी दिवस समारोह एवं सांस्कृतिक कार्यक्रम' },
+    { src: '/rajbhasha/rajbhasha_img_8.jpeg', title: 'संस्थान के राजभाषा अनुभाग की गतिविधियाँ' },
+    { src: '/rajbhasha/rajbhasha_img_9.jpeg', title: 'राजभाषा संगोष्ठी एवं व्याख्यान' },
+  ];
+
+  // Close lightbox on Escape, navigate on Arrow keys
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!isOpen) return;
+      if (e.key === 'ArrowRight') {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
+      } else if (e.key === 'ArrowLeft') {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + galleryImages.length) % galleryImages.length);
+      } else if (e.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen]);
+
+  const openLightbox = (index) => {
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setIsOpen(false);
+  };
+
+  const nextImage = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
+  };
+
+  const prevImage = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + galleryImages.length) % galleryImages.length);
+  };
 
   return (
     <div className="min-h-screen transition-colors duration-200">
@@ -39,64 +92,94 @@ const RajbhashaGalleryPage = () => {
             </p>
           </div>
 
-          {/* Google Photos Galleries Section */}
+          {/* Local Image Gallery Section */}
           <div className="mt-10 border-t border-gray-100 dark:border-gray-800 pt-8">
             <h3 className="text-2xl font-bold font-serif text-primary dark:text-blue-400 mb-6">
-              कार्यक्रमों की झलकियाँ (Photo Galleries)
+              कार्यक्रमों की झलकियाँ (Photo Gallery)
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <a
-                href="https://photos.google.com/share/AF1QipMHwRCWOH1lEduerOV_G7Kv-GRgZcXk9FrBklTuVslyuoHXcPiOmoS6ERPbG0qecw?key=eWswZUo1QmthaDhQbWRSNUhrbDducGVUVWw1NVR3"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col justify-between p-6 bg-gradient-to-br from-blue-50 to-white hover:from-blue-100/50 hover:to-white dark:from-slate-900/50 dark:to-surface-dark rounded-xl border border-gray-200 dark:border-gray-800 hover:border-blue-300 dark:hover:border-blue-900 transition-all hover:shadow-md"
-              >
-                <div>
-                  <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center text-blue-600 dark:text-blue-400 mb-4 group-hover:scale-110 transition-transform">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {galleryImages.map((image, index) => (
+                <div
+                  key={index}
+                  onClick={() => openLightbox(index)}
+                  className="group relative overflow-hidden bg-gray-50 dark:bg-slate-900/50 rounded-xl border border-gray-200 dark:border-gray-850 shadow-sm hover:shadow-xl hover:-translate-y-1 cursor-pointer transition-all duration-300"
+                >
+                  <div className="aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800 relative">
+                    <img
+                      src={image.src}
+                      alt={image.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-[1px]">
+                      <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                        <ZoomIn size={20} />
+                      </div>
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 font-serif">
-                    राजभाषा गतिविधियाँ चित्र दीर्घा (एल्बम - १)
-                  </h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                    संस्थान में आयोजित राजभाषा कार्यक्रमों, प्रतियोगिताओं एवं हिंदी दिवस समारोहों के चित्रों का संग्रह।
-                  </p>
                 </div>
-                <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 flex items-center group-hover:translate-x-1 transition-transform">
-                  एल्बम देखें <span className="ml-1">&rarr;</span>
-                </div>
-              </a>
-
-              <a
-                href="https://photos.google.com/share/AF1QipNn4esXGNTrx5ytF93jN7AbJvsoCreFi-U2ilLVM9ZttmpVPwTVmEciHbw3BLp3rw?key=M2xIckVoLVBaR3FoSW5mcGltY1dWS21tWmlJNFdn"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col justify-between p-6 bg-gradient-to-br from-blue-50 to-white hover:from-blue-100/50 hover:to-white dark:from-slate-900/50 dark:to-surface-dark rounded-xl border border-gray-200 dark:border-gray-800 hover:border-blue-300 dark:hover:border-blue-900 transition-all hover:shadow-md"
-              >
-                <div>
-                  <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center text-blue-600 dark:text-blue-400 mb-4 group-hover:scale-110 transition-transform">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 font-serif">
-                    राजभाषा गतिविधियाँ चित्र दीर्घा (एल्बम - २)
-                  </h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                    संस्थान में हिंदी पखवाड़ा एवं राजभाषा कार्यान्वयन समिति से जुड़े आयोजनों के चित्रों का संग्रह।
-                  </p>
-                </div>
-                <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 flex items-center group-hover:translate-x-1 transition-transform">
-                  एल्बम देखें <span className="ml-1">&rarr;</span>
-                </div>
-              </a>
+              ))}
             </div>
           </div>
         </section>
       </div>
+
+      {/* Lightbox Modal */}
+      {isOpen && createPortal(
+        <div 
+          className="fixed inset-0 z-[9999] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={closeLightbox}
+        >
+          {/* Close button */}
+          <button 
+            onClick={closeLightbox}
+            className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors z-50 shadow-lg"
+            aria-label="Close lightbox"
+          >
+            <X size={24} />
+          </button>
+
+          {/* Navigation Arrows */}
+          <button 
+            onClick={prevImage} 
+            className="fixed left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors z-[10000] shadow-lg"
+            aria-label="Previous image"
+          >
+            <ChevronLeft size={28} />
+          </button>
+          
+          <button 
+            onClick={nextImage} 
+            className="fixed right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors z-[10000] shadow-lg"
+            aria-label="Next image"
+          >
+            <ChevronRight size={28} />
+          </button>
+
+          {/* Image and Caption Container */}
+          <div 
+            className="relative flex flex-col items-center justify-center max-w-5xl w-full max-h-[85vh] p-2"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img 
+              src={galleryImages[currentIndex].src} 
+              alt={galleryImages[currentIndex].title} 
+              className="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl"
+            />
+            
+            {/* Caption */}
+            <div className="mt-4 text-center">
+              <p className="text-white text-lg font-medium px-6 py-2 bg-black/40 rounded-full inline-block backdrop-blur-sm">
+                {galleryImages[currentIndex].title}
+              </p>
+              <p className="text-gray-400 text-sm mt-1">
+                {currentIndex + 1} / {galleryImages.length}
+              </p>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
     </div>
   );
 };
