@@ -9,6 +9,7 @@ const slides = [
   { id: 3, image: '/carousel/slide_3.jpeg' },
   { id: 4, image: '/carousel/slide_4.jpeg' },
   { id: 5, image: '/carousel/slide_5.jpeg' },
+  { id: 6, image: '/carousel/InternationalYogaDay.jpeg' },
 ];
 
 const HeroCarousel = () => {
