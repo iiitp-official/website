@@ -75,7 +75,7 @@ const Navbar = () => {
       return;
     }
     const flattened = flattenLinks(primaryLinks);
-    const results = flattened.filter(link => 
+    const results = flattened.filter(link =>
       link.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setSearchResults(results.slice(0, 5)); // Limit to 5 results
@@ -256,9 +256,9 @@ const Navbar = () => {
           path: "#",
           hasDropdown: true,
           subLinks: [
-            { name: "B.Tech.", path: "#"},
+            { name: "B.Tech.", path: "#" },
             { name: "M.Tech.", path: "documents/MTech_Ordinances_Updated_till_11th_Senate.docx.pdf", isExternal: true },
-            { name: "Ph.D.", path: "documents/IIIT Pune_PhD Ordinances and Regulations_updatedd_260622_192254.pdf", isExternal: true}
+            { name: "Ph.D.", path: "documents/IIIT Pune_PhD Ordinances and Regulations_updatedd_260622_192254.pdf", isExternal: true }
           ]
         },
         {
@@ -272,12 +272,13 @@ const Navbar = () => {
         },
       ],
     },
-    { name: "Research",
-     path: "#",
-     hasDropdown: true,
-     subLinks: [
-       { name: "Internship @IIIT Pune", path: "/research/internships" },
-       {
+    {
+      name: "Research",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "Internship @IIIT Pune", path: "/research/internships" },
+        {
           name: "Funded Projects",
           hasDropdown: true,
           subLinks: [
@@ -297,7 +298,7 @@ const Navbar = () => {
         },
         { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
       ]
-     
+
     },
     {
       name: "People",
@@ -459,8 +460,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-blue-800/50 dark:border-gray-800">
         <div className="flex justify-between items-center py-1 md:py-2">
           {/* Logo + Name */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center space-x-2 md:space-x-3"
           >
@@ -611,7 +612,7 @@ const Navbar = () => {
               <a
                 href="https://iiitp.webpointsolutions.in/StudentPortal/index.html#!/Login"
                 target="_blank" rel="noopener noreferrer"
-                
+
                 className="bg-brand-red hover:bg-red-700 text-white px-3 py-1.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide mr-2"
               >
                 Student Portal
@@ -646,7 +647,7 @@ const Navbar = () => {
                           className="w-full h-9 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 border border-transparent focus:border-brand-red focus:bg-white dark:focus:bg-gray-900 focus:outline-none text-sm transition-all"
                         />
                       </div>
-                      
+
                       {searchQuery && (
                         <div className="max-h-60 overflow-y-auto border-t border-gray-100 dark:border-gray-800">
                           {searchResults.length > 0 ? (
@@ -697,53 +698,53 @@ const Navbar = () => {
               ) : (
                 <NavLink
                   to={link.path}
-                className={({ isActive }) => {
-                  const prefix = {
-                    "About Us": "/about",
-                    "Academics": "/academics",
-                    "Administration": "/administration",
-                    "Notice": "/notice",
-                    "Research": "/research",
-                    "People": "/people",
-                    "International Relations": "/international",
-                    "E-TENDER": "/e-tender"
-                  }[link.name];
-                  const isLinkActive = link.path === "#" 
-                    ? (link.name === "Academics" 
+                  className={({ isActive }) => {
+                    const prefix = {
+                      "About Us": "/about",
+                      "Academics": "/academics",
+                      "Administration": "/administration",
+                      "Notice": "/notice",
+                      "Research": "/research",
+                      "People": "/people",
+                      "International Relations": "/international",
+                      "E-TENDER": "/e-tender"
+                    }[link.name];
+                    const isLinkActive = link.path === "#"
+                      ? (link.name === "Academics"
                         ? location.pathname.startsWith("/academics") || location.pathname.startsWith("/departments")
                         : !!(prefix && location.pathname.startsWith(prefix)))
-                    : isActive || !!(prefix && location.pathname.startsWith(prefix));
-                  return navLinkClass({ isActive: isLinkActive });
-                }}
-                onClick={link.path === "#" ? (e) => e.preventDefault() : undefined}
-              >
-                {({ isActive }) => {
-                  const prefix = {
-                    "About Us": "/about",
-                    "Academics": "/academics",
-                    "Administration": "/administration",
-                    "Notice": "/notice",
-                    "Research": "/research",
-                    "People": "/people",
-                    "International Relations": "/international",
-                    "E-TENDER": "/e-tender"
-                  }[link.name];
-                  const activeState = link.path === "#" 
-                    ? (link.name === "Academics"
+                      : isActive || !!(prefix && location.pathname.startsWith(prefix));
+                    return navLinkClass({ isActive: isLinkActive });
+                  }}
+                  onClick={link.path === "#" ? (e) => e.preventDefault() : undefined}
+                >
+                  {({ isActive }) => {
+                    const prefix = {
+                      "About Us": "/about",
+                      "Academics": "/academics",
+                      "Administration": "/administration",
+                      "Notice": "/notice",
+                      "Research": "/research",
+                      "People": "/people",
+                      "International Relations": "/international",
+                      "E-TENDER": "/e-tender"
+                    }[link.name];
+                    const activeState = link.path === "#"
+                      ? (link.name === "Academics"
                         ? location.pathname.startsWith("/academics") || location.pathname.startsWith("/departments")
                         : !!(prefix && location.pathname.startsWith(prefix)))
-                    : isActive || !!(prefix && location.pathname.startsWith(prefix));
-                  return (
-                    <>
-                      {link.name}
-                      {link.hasDropdown && (
-                        <ChevronDown className="w-4 h-4 ml-1 opacity-70 transition-transform group-hover:rotate-180" />
-                      )}
-                      {navLinkUnderline({ isActive: activeState })}
-                    </>
-                  );
-                }}
-              </NavLink>
+                      : isActive || !!(prefix && location.pathname.startsWith(prefix));
+                    return (
+                      <>
+                        {link.name}
+                        {link.hasDropdown && (
+                          <ChevronDown className="w-4 h-4 ml-1 opacity-70 transition-transform group-hover:rotate-180" />
+                        )}
+                        {navLinkUnderline({ isActive: activeState })}
+                      </>
+                    );
+                  }}
+                </NavLink>
               )}
               {link.hasDropdown && link.subLinks && (
                 <div className={`absolute top-full left-0 mt-0 w-56 bg-white dark:bg-surface-dark rounded-md shadow-lg transition-all duration-200 border border-gray-100 dark:border-gray-800 flex flex-col z-50 ${isNavigating ? 'hidden' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'} ${!link.subLinks.some(sub => sub.hasDropdown) ? 'max-h-[75vh] overflow-y-auto' : ''}`}>
@@ -762,7 +763,7 @@ const Navbar = () => {
                                   key={nested.name}
                                   href={nested.path}
                                   target="_blank" rel="noopener noreferrer"
-                                  
+
                                   className="block px-4 py-2 text-xs text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark first:rounded-t-md last:rounded-b-md transition-colors text-left"
                                 >
                                   {nested.name}
@@ -783,7 +784,7 @@ const Navbar = () => {
                         <a
                           href={sub.path}
                           target="_blank" rel="noopener noreferrer"
-                          
+
                           className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 dark:hover:bg-brand-red-dark/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors text-left"
                         >
                           {sub.name}
@@ -843,7 +844,7 @@ const Navbar = () => {
                   />
                   <Search className="w-5 h-5 text-white opacity-70" />
                 </div>
-                
+
                 {searchQuery && (
                   <div className="mt-2 bg-white dark:bg-surface-dark rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
                     <div className="max-h-48 overflow-y-auto">
@@ -1043,7 +1044,7 @@ const Navbar = () => {
                                                 key={nested.name}
                                                 href={nested.path}
                                                 target="_blank" rel="noopener noreferrer"
-                                                
+
                                                 className="block px-3 py-2 text-xs font-medium rounded-md transition-colors text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                               >
                                                 {nested.name}
@@ -1072,7 +1073,7 @@ const Navbar = () => {
                                   <a
                                     href={sub.path}
                                     target="_blank" rel="noopener noreferrer"
-                                    
+
                                     className="block px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-300 hover:text-brand-red hover:bg-brand-red/10 dark:text-gray-400 dark:hover:text-brand-red-dark dark:hover:bg-brand-red-dark/10"
                                   >
                                     {sub.name}
