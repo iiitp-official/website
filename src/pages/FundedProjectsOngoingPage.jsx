@@ -8,9 +8,9 @@ const FundedProjectsOngoingPage = () => {
       faculty: "Dr. Dheeraj Dubey",
       category: "Externally Sponsored",
       agency: "ISRO",
-      pi: "PI: Dr. Dheeraj Dubey Co-PI: Dr. Jahnvi Tiwari",
+      pi: "Dr. Jahnvi Tiwari",
       title: "High Data Rate Channel Codec Architecture for Free Space Classical RF and Optical Communication",
-      startDate: "June 2026",
+      startDate: "June-26",
       status: "Ongoing",
       duration: "2 Years",
       completionDate: "June 2028",
@@ -18,10 +18,10 @@ const FundedProjectsOngoingPage = () => {
     },
     {
       sno: 2,
-      faculty: "Dr. Dheeraj Dubey",
+      faculty: "Dr. Jahnvi Tiwari",
       category: "Externally Sponsored",
       agency: "ART PARK (IISC) KARNATAKA",
-      pi: "Jahnvi Tiwari (PI) & Dheeraj Dubey (Co-PI)",
+      pi: "Dr. Dheeraj Dubey",
       title: "5G-V2X Enabled Cooperative Blind-Spot Detection System with RIS-Assisted VANETs",
       startDate: "Feb-23",
       status: "Ongoing",
@@ -34,9 +34,9 @@ const FundedProjectsOngoingPage = () => {
       faculty: "Divya Chaturvedi",
       category: "Externally Sponsored",
       agency: "CSIR",
-      pi: "PI: Dr. Divya Chaturvedi, Co-PI: DR. Shiv Narayan, Principal Scientist, CSIR NAL, Bangalore",
+      pi: "DR. Shiv Narayan, Principal Scientist, CSIR NAL, Bangalore",
       title: "Design and Development of Substrate Integrated Waveguide (SIW) based Millimeter Wave Beam-Steerable Antenna Array Systems for 5G Networks",
-      startDate: "-",
+      startDate: "16.07.2025",
       status: "Ongoing",
       duration: "3 years",
       completionDate: "16.07. 2025 - 15.7.2028",
@@ -44,12 +44,12 @@ const FundedProjectsOngoingPage = () => {
     },
     {
       sno: 4,
-      faculty: "Dr. Bhupendra Sing & Dr Sanjeev Sharma",
+      faculty: "Dr. Bhupendra Sing",
       category: "Externally Sponsored",
       agency: "MeitY",
-      pi: "PI Dr. Bhupendra Singh, Co-PI Dr. Sanjeev Sharma",
+      pi: "Dr. Sanjeev Sharma",
       title: "Next Generation Data Carving and Preservation Techniques for Storage Drive Forensics",
-      startDate: "-",
+      startDate: "Sept-25",
       status: "Ongoing",
       duration: "2 Years",
       completionDate: "From Aug 2025",
@@ -57,12 +57,12 @@ const FundedProjectsOngoingPage = () => {
     },
     {
       sno: 5,
-      faculty: "Dr. Habila Basumatary, Dr. Sanjeev Sharma, Dr. Bhupendra Singh Dr. Sushant Kumar, Co-PI: Dr. Dheeraj Dubey, Dr. Dipen Bepari, Dr. Shivangi Shukla",
+      faculty: "Dr. Habila Basumatary",
       category: "Externally Sponsored",
       agency: "ANRF",
-      pi: "Dr. Habila Basumatary, Dr. Sanjeev Sharma, Dr. Bhupendra Singh Dr. Sushant Kumar, Co-PI: Dr. Dheeraj Dubey, Dr. Dipen Bepari, Dr. Shivangi Shukla",
+      pi: "Dr. Sanjeev Sharma, Dr. Bhupendra Singh Dr. Sushant Kumar, Dr. Dheeraj Dubey, Dr. Dipen Bepari, Dr. Shivangi Shukla",
       title: "Technologies for implementation of DPDPA Rules 2025",
-      startDate: "-",
+      startDate: "26.09.25",
       status: "Ongoing",
       duration: "5 Years",
       completionDate: "From Sept 2025",
@@ -73,9 +73,9 @@ const FundedProjectsOngoingPage = () => {
       faculty: "Dr. Nagendra Kushwaha",
       category: "Externally Sponsored",
       agency: "Ministry of Electronics & Information Technology, Govt. of India",
-      pi: "PI",
+      pi: "Chief Investigator (CI): Dr. Nagendra Kushwaha",
       title: "Power and Space optimization in Internet of Things (IoT) System-on-Chip (SoC)",
-      startDate: "Oct-23",
+      startDate: "03.08.23",
       status: "Ongoing",
       duration: "5 Years",
       completionDate: "",
@@ -95,15 +95,15 @@ const FundedProjectsOngoingPage = () => {
               <thead className="bg-primary text-white dark:bg-gray-800">
                 <tr>
                   <th className="p-3.5 font-semibold text-center w-16">S.No.</th>
-                  <th className="p-3.5 font-semibold min-w-[120px]">Name of the IIIT Pune Faculty</th>
+                  <th className="p-3.5 font-semibold min-w-[120px]">Name of the IIIT Pune Faculty / PI</th>
                   <th className="p-3.5 font-semibold min-w-[120px]">Project Category</th>
                   <th className="p-3.5 font-semibold min-w-[100px]">Funding Agency</th>
-                  <th className="p-3.5 font-semibold min-w-[180px]">PI/Co-PI</th>
+                  <th className="p-3.5 font-semibold min-w-[180px]">Co-PI</th>
                   <th className="p-3.5 font-semibold min-w-[200px]">Title of the Project</th>
                   <th className="p-3.5 font-semibold text-center">Start Date</th>
                   <th className="p-3.5 font-semibold text-center">Status</th>
                   <th className="p-3.5 font-semibold text-center">Duration</th>
-                  <th className="p-3.5 font-semibold text-center">Completion Date</th>
+                  {/* <th className="p-3.5 font-semibold text-center">Completion Date</th> */}
                   <th className="p-3.5 font-semibold min-w-[80px]">Grant Amount (in Lakhs)</th>
                 </tr>
               </thead>
@@ -119,7 +119,7 @@ const FundedProjectsOngoingPage = () => {
                     <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.startDate}</td>
                     <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.status}</td>
                     <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.duration}</td>
-                    <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.completionDate}</td>
+                    {/* <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.completionDate}</td> */}
                     <td className="p-3.5 text-center font-semibold text-emerald-600 dark:text-emerald-400">{row.grant}</td>
                   </tr>
                 ))}
