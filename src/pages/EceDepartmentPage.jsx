@@ -334,7 +334,7 @@ const EceDepartmentPage = () => {
                         <Users className="w-5 h-5 text-primary shrink-0" />
                         <div>
                           <p className="text-[10px] text-gray-400 dark:text-gray-550 font-bold uppercase tracking-wider">Department Intake</p>
-                          <p className="font-bold text-sm text-gray-800 dark:text-gray-250">60 Students</p>
+                          <p className="font-bold text-sm text-gray-800 dark:text-gray-250">119 Students</p>
                         </div>
                       </div>
                       <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
