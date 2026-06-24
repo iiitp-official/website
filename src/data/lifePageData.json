@@ -968,6 +968,52 @@
         "/assets/lifepage/IconclaveDay1_11.JPG",
         "/assets/lifepage/IconclaveDay1_12.JPG"
       ]
+    },
+    {
+      "title": "I-Conclave 2026 Day 2",
+      "category": "Fest",
+      "image": "/assets/lifepage/IconclaveDay2_1.JPG",
+      "description": "Highlights from Day 2 of the I-Conclave 2026 festival.",
+      "images": [
+        "/assets/lifepage/IconclaveDay2_1.JPG",
+        "/assets/lifepage/IconclaveDay2_2.JPG"
+      ]
+    },
+    {
+      "title": "I-Conclave 2026 Day 3",
+      "category": "Fest",
+      "image": "/assets/lifepage/IconclaveDay3_1.JPG",
+      "description": "Highlights from Day 3 of the I-Conclave 2026 festival.",
+      "images": [
+        "/assets/lifepage/IconclaveDay3_1.JPG",
+        "/assets/lifepage/IconclaveDay3_2.jpeg"
+      ]
+    },
+    {
+      "title": "Cybersecurity at Mahakumbh 2025 Seminar",
+      "category": "Seminar",
+      "image": "/assets/lifepage/Cyber1.jpeg",
+      "description": "Photos from the semiar held about the cybersecurity challenges faced at Mahakumbh 2025.",
+      "images": [
+        "/assets/lifepage/Cyber1.jpeg",
+        "/assets/lifepage/Cyber2.jpeg",
+        "/assets/lifepage/Cyber3.jpeg",
+        "/assets/lifepage/Cyber4.jpeg"
+      ]
+    },
+    {
+      "title": "Arbitrum Builder Labs Seminar",
+      "category": "Seminar",
+      "image": "/assets/lifepage/Arbitrum1.jpeg",
+      "description": "Photos from the semiar held about the cybersecurity challenges faced at Mahakumbh 2025.",
+      "images": [
+        "/assets/lifepage/Arbitrum1.jpeg",
+        "/assets/lifepage/Arbitrum2.jpeg",
+        "/assets/lifepage/Arbitrum3.jpeg",
+        "/assets/lifepage/Arbitrum4.jpeg",
+        "/assets/lifepage/Arbitrum6.jpeg",
+        "/assets/lifepage/Arbitrum5.jpeg"
+      ]
     }
   ],
   "EVENTS": [

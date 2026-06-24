@@ -61,6 +61,7 @@ const LifeGalleryPage = () => {
                 <img
                   src={item.image}
                   alt={item.title}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   onError={(e) => { e.target.closest('.group').style.display = 'none'; }}
                 />
@@ -115,6 +116,7 @@ const LifeGalleryPage = () => {
             <img 
               src={selectedGallery.images[currentImageIndex]} 
               alt={`${selectedGallery.title} - ${currentImageIndex + 1}`} 
+              loading="lazy"
               className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
             />
           </div>
