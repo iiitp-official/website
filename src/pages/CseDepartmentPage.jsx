@@ -329,7 +329,7 @@ const CseDepartmentPage = () => {
                         <Users className="w-5 h-5 text-primary" />
                         <div>
                           <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">Department Intake</p>
-                          <p className="font-bold text-sm text-gray-800 dark:text-gray-250">120 Students</p>
+                          <p className="font-bold text-sm text-gray-800 dark:text-gray-250">326 Students</p>
                         </div>
                       </div>
                     </div>
