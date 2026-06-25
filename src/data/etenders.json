@@ -1,6 +1,15 @@
 {
   "live": [
     {
+      "title": "CPPP bid for Development of Temporary Ground behind Academic Building and Near Shopping Complex IIIT Pune Campus",
+      "tenderNumber": "2026_IIITP_914727_1",
+      "fileUrl": "/assets/etenders/Development of Ground.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "03-07-2026 - 17:00"
+    },
+    {
       "title": "GeM Bid for Empanelment of Service Providers for Hiring of Cars",
       "tenderNumber": "GEM/2026/B/7651954 dated 11.06.2026",
       "fileUrl": "/assets/etenders/Empanelment of Service Providers for Hiring of Cars New.pdf",
@@ -10,33 +19,6 @@
       "submissionDate": "25-06-2026 - 17:00"
     },
     {
-      "title": "Development of Temporary Sports Ground behind Academic Building IIIT Pune Campus",
-      "tenderNumber": "IIIT Pune/Works/Tender//2026/2576 dated 18.06.26",
-      "fileUrl": "/assets/etenders/Final NIT Development of Temporary Ground behind Academic Building IIIT Pune Campus.docx.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "18-06-2026 - 17:00"
-    },
-    {
-      "title": "Request for Quotation for Cabling, Installation, Configuration, Testing and Commissioning of Wi-Fi Network at Staff Quarters",
-      "tenderNumber": "IIITP/Purchase/WiFi_Girls_Hostel/2026/2594 dated 18.06.26",
-      "fileUrl": "/assets/etenders/RFQ - Wifi.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "20-06-2026 - 17:00"
-    },
-    {
-      "title": "Request for Quotation for Drilling of One Bore at IIIT Pune Campus",
-      "tenderNumber": "IIIT/Purchase/Trail Borewell/2026/2595 dated 18.06.26",
-      "fileUrl": "/assets/etenders/RFQ - Borewell.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "20-06-2026 - 17:00"
-    },
-    {
       "title": "GeM Bid For Empanelment of Service Providers for Hiring of Bus Services",
       "tenderNumber": "GEM/2026/B/7678945 dated 18.06.2026",
       "fileUrl": "/assets/etenders/GeM bid For Empanelment of Service Providers for Hiring of Bus Services.pdf",
@@ -44,33 +26,6 @@
       "corrigendumUrl": "",
       "corrigendumText": "",
       "submissionDate": "02-07-2026 - 11:30"
-    },
-    {
-      "title": "GEM bid for Supply, Installation, Testing & Commissioning of 50 KLD Sewage Treatment Plant (STP)",
-      "tenderNumber": "GEM/2026/B/7576493 dated 23.05.2026",
-      "fileUrl": "/assets/etenders/GeM bid for SITC of 50 KLD STP.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "06-06-2026 - 13:30"
-    },
-    {
-      "title": "Tender for Providing Off Campus Accommodation Arrangement for IIIT Pune Students",
-      "tenderNumber": "भा.सू.प्रौ.सं.पु/क्रय/ऑफ-कैंपस छात्रावास/2026/2557 dated 23.05.2026",
-      "fileUrl": "/assets/etenders/RFQ - Off Campus Hostel.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "06-06-2026 - 17:00"
-    },
-    {
-      "title": "GeM bid for Supply and Installation of MS Grills in Balconies",
-      "tenderNumber": "GEM/2026/B/7515930 dated  08-05-2026",
-      "fileUrl": "/assets/etenders/GeM bid for Supply and Installation of MS Grills.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "29-05-2026 - 16:30"
     },
     {
       "title": "GeM bid for hiring of Security Manpower on outsourced basis",
@@ -92,6 +47,60 @@
     }
   ],
   "archive": [
+    {
+      "title": "GeM bid for Supply and Installation of MS Grills in Balconies",
+      "tenderNumber": "GEM/2026/B/7515930 dated  08-05-2026",
+      "fileUrl": "/assets/etenders/GeM bid for Supply and Installation of MS Grills.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "29-05-2026 - 16:30"
+    },
+    {
+      "title": "Tender for Providing Off Campus Accommodation Arrangement for IIIT Pune Students",
+      "tenderNumber": "भा.सू.प्रौ.सं.पु/क्रय/ऑफ-कैंपस छात्रावास/2026/2557 dated 23.05.2026",
+      "fileUrl": "/assets/etenders/RFQ - Off Campus Hostel.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "06-06-2026 - 17:00"
+    },
+    {
+      "title": "GEM bid for Supply, Installation, Testing & Commissioning of 50 KLD Sewage Treatment Plant (STP)",
+      "tenderNumber": "GEM/2026/B/7576493 dated 23.05.2026",
+      "fileUrl": "/assets/etenders/GeM bid for SITC of 50 KLD STP.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "06-06-2026 - 13:30"
+    },
+    {
+      "title": "Request for Quotation for Drilling of One Bore at IIIT Pune Campus",
+      "tenderNumber": "IIIT/Purchase/Trail Borewell/2026/2595 dated 18.06.26",
+      "fileUrl": "/assets/etenders/RFQ - Borewell.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "20-06-2026 - 17:00"
+    },
+    {
+      "title": "Request for Quotation for Cabling, Installation, Configuration, Testing and Commissioning of Wi-Fi Network at Staff Quarters",
+      "tenderNumber": "IIITP/Purchase/WiFi_Girls_Hostel/2026/2594 dated 18.06.26",
+      "fileUrl": "/assets/etenders/RFQ - Wifi.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "20-06-2026 - 17:00"
+    },
+    {
+      "title": "Development of Temporary Sports Ground behind Academic Building IIIT Pune Campus",
+      "tenderNumber": "IIIT Pune/Works/Tender//2026/2576 dated 18.06.26",
+      "fileUrl": "/assets/etenders/Final NIT Development of Temporary Ground behind Academic Building IIIT Pune Campus.docx.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "18-06-2026 - 17:00"
+    },
     {
       "title": "Tender for Allotment of Shops in the Institute Shopping Complex",
       "tenderNumber": "भा.सू.प्रौ.सं.पु/क्रय/शॉपिंग काम्प्लेक्स /2026/2473 dated 25.03.2026",
