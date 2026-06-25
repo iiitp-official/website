@@ -384,7 +384,7 @@ const FacultyProfilePage = () => {
             {activeTab === 'biography' && (
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Biography</h2>
-                <p className="whitespace-pre-line text-sm text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                <p className="whitespace-pre-line text-base text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
                   {profile.bio || "No biography provided."}
                 </p>
                 {profile.resume && (
@@ -393,7 +393,7 @@ const FacultyProfilePage = () => {
                       <FileText className="w-5 h-5 mr-2 text-brand-red" />
                       Detailed Resume
                     </h3>
-                    <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline break-all inline-flex items-center">
+                    <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="text-base text-primary hover:underline break-all inline-flex items-center">
                       {profile.resume}
                     </a>
                   </div>
@@ -405,7 +405,7 @@ const FacultyProfilePage = () => {
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Books & Book Chapters</h2>
                 {profile.books_chapters && profile.books_chapters.length > 0 ? renderListContent(profile.books_chapters) : (
-                  <p className="text-sm text-gray-500 italic">No book or chapter details provided yet.</p>
+                  <p className="text-base text-gray-500 italic">No book or chapter details provided yet.</p>
                 )}
               </div>
             )}
@@ -414,7 +414,7 @@ const FacultyProfilePage = () => {
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Publications</h2>
                 {profile.publications && profile.publications.length > 0 ? renderListContent(profile.publications) : (
-                  <p className="text-sm text-gray-500 italic">No publication details provided yet.</p>
+                  <p className="text-base text-gray-500 italic">No publication details provided yet.</p>
                 )}
               </div>
             )}
@@ -423,7 +423,7 @@ const FacultyProfilePage = () => {
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Patents</h2>
                 {profile.patents && profile.patents.length > 0 ? renderListContent(profile.patents) : (
-                  <p className="text-sm text-gray-500 italic">No patent details provided yet.</p>
+                  <p className="text-base text-gray-500 italic">No patent details provided yet.</p>
                 )}
               </div>
             )}
@@ -432,7 +432,7 @@ const FacultyProfilePage = () => {
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Seminars & Workshops</h2>
                 {profile.seminars && profile.seminars.length > 0 ? renderListContent(profile.seminars) : (
-                  <p className="text-sm text-gray-500 italic">No seminar or workshop details provided yet.</p>
+                  <p className="text-base text-gray-500 italic">No seminar or workshop details provided yet.</p>
                 )}
               </div>
             )}
@@ -441,7 +441,7 @@ const FacultyProfilePage = () => {
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Projects</h2>
                 {profile.projects && profile.projects.length > 0 ? renderListContent(profile.projects) : (
-                  <p className="text-sm text-gray-500 italic">No project details provided yet.</p>
+                  <p className="text-base text-gray-500 italic">No project details provided yet.</p>
                 )}
               </div>
             )}
@@ -450,14 +450,14 @@ const FacultyProfilePage = () => {
               <div className="animate-fade-in-up">
                 <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Supervisions</h2>
                 {profile.supervisions && profile.supervisions.length > 0 ? renderListContent(profile.supervisions) : (
-                  <p className="text-sm text-gray-500 italic">No supervision details provided yet.</p>
+                  <p className="text-base text-gray-500 italic">No supervision details provided yet.</p>
                 )}
               </div>
             )}
 
             {activeTab === 'research' && (
               <div className="animate-fade-in-up">
-                <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">Research Profiles & Links</h2>
+                <h2 className="text-xl font-serif font-bold text-gray-900 dark:text-white mb-6">Research Profiles & Links</h2>
                 {profile.researchLinks && profile.researchLinks.length > 0 ? (
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {profile.researchLinks.map((link, idx) => (
@@ -468,14 +468,14 @@ const FacultyProfilePage = () => {
                           className="group block p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-blue-50 dark:hover:bg-gray-800 transition-all"
                         >
                           <div className="overflow-hidden">
-                            <p className="text-sm text-gray-900 dark:text-white font-medium truncate w-full group-hover:text-primary transition-colors">{link}</p>
+                            <p className="text-base text-gray-900 dark:text-white font-medium truncate w-full group-hover:text-primary transition-colors">{link}</p>
                           </div>
                         </a>
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-gray-500 dark:text-gray-400 italic">No external research links available.</p>
+                  <p className="text-gray-500 dark:text-gray-400 italic text-base">No external research links available.</p>
                 )}
               </div>
             )}
