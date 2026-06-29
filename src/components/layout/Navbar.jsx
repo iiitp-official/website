@@ -250,6 +250,7 @@ const Navbar = () => {
           ]
         },
         { name: "Ph.D.", path: "/academics/phd" },
+        { name: "Academic Calendar", path: "/academics/calendar" },
         { name: "Fees", path: "/fees" },
         {
           name: "Ordinance",
