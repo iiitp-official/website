@@ -6,8 +6,7 @@ const BoardOfStudiesCsePage = () => {
   const data = [
     { srNo: 1, name: "Dr. Bhupendra Singh", affiliation: "HoD CSE, IIIT Pune", designation: "Chairperson" },
     { srNo: 2, name: "Dr Kumar Rajamani", affiliation: "Associate Director, Cropin Technology", designation: "Expert Member" },
-    { srNo: 3, name: "Mr. Shripad Pandit", affiliation: "Program Manager, TCS", designation: "Expert Member" },
-    { srNo: 4, name: "Prof. Somitra Kumar Sanadhya", affiliation: "IIT Jodhpur", designation: "Expert Member" },
+    { srNo: 4, name: "Prof. Somitra Kumar Sanadhya", affiliation: "IIT Kanpur", designation: "Expert Member" },
     { srNo: 5, name: "Dr. Sushant Kumar", affiliation: "HoD ECE, IIIT Pune", designation: "Special Invitee" },
     { srNo: 6, name: "Dr. Jatin Majithia", affiliation: "HoD AS&H, IIIT Pune", designation: "Special Invitee" },
     { srNo: 7, name: "Dr. Sanjeev Sharma", affiliation: "Assistant professor, IIIT Pune", designation: "Member" },
