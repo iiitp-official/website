@@ -27,7 +27,7 @@ const FundedProjectsOngoingPage = () => {
       status: "Ongoing",
       duration: "1 year",
       completionDate: "April 2026-27",
-      grant: "22 (approx)"
+      grant: "22.3"
     },
     {
       sno: 3,
@@ -36,7 +36,8 @@ const FundedProjectsOngoingPage = () => {
       agency: "CSIR",
       pi: "DR. Shiv Narayan, Principal Scientist, CSIR NAL, Bangalore",
       title: "Design and Development of Substrate Integrated Waveguide (SIW) based Millimeter Wave Beam-Steerable Antenna Array Systems for 5G Networks",
-      startDate: "16.07.2025",
+      // startDate: "16.07.2025",
+      startDate: "July-25",
       status: "Ongoing",
       duration: "3 years",
       completionDate: "16.07. 2025 - 15.7.2028",
@@ -62,7 +63,8 @@ const FundedProjectsOngoingPage = () => {
       agency: "ANRF",
       pi: "Dr. Sanjeev Sharma, Dr. Bhupendra Singh Dr. Sushant Kumar, Dr. Dheeraj Dubey, Dr. Dipen Bepari, Dr. Shivangi Shukla",
       title: "Technologies for implementation of DPDP Rules 2025",
-      startDate: "26.09.25",
+      // startDate: "26.09.25",
+      startDate: "Sept-25",
       status: "Ongoing",
       duration: "5 Years",
       completionDate: "From Sept 2025",
@@ -75,7 +77,8 @@ const FundedProjectsOngoingPage = () => {
       agency: "Ministry of Electronics & Information Technology, Govt. of India",
       pi: "Chief Investigator (CI): Dr. Nagendra Kushwaha",
       title: "Power and Space optimization in Internet of Things (IoT) System-on-Chip (SoC)",
-      startDate: "03.08.23",
+      // startDate: "03.08.23",
+      startDate: "Aug-23",
       status: "Ongoing",
       duration: "5 Years",
       completionDate: "",
@@ -100,8 +103,8 @@ const FundedProjectsOngoingPage = () => {
                   <th className="p-3.5 font-semibold min-w-[100px]">Funding Agency</th>
                   <th className="p-3.5 font-semibold min-w-[180px]">Co-PI</th>
                   <th className="p-3.5 font-semibold min-w-[200px]">Title of the Project</th>
-                  <th className="p-3.5 font-semibold text-center">Start Date</th>
-                  <th className="p-3.5 font-semibold text-center">Status</th>
+                  <th className="p-3.5 font-semibold text-center whitespace-nowrap">Start Date</th>
+                  {/* <th className="p-3.5 font-semibold text-center">Status</th> */}
                   <th className="p-3.5 font-semibold text-center">Duration</th>
                   {/* <th className="p-3.5 font-semibold text-center">Completion Date</th> */}
                   <th className="p-3.5 font-semibold min-w-[80px]">Grant Amount (in Lakhs)</th>
@@ -117,7 +120,7 @@ const FundedProjectsOngoingPage = () => {
                     <td className="p-3.5 border-r border-gray-100 dark:border-gray-800">{row.pi}</td>
                     <td className="p-3.5 border-r border-gray-100 dark:border-gray-800">{row.title}</td>
                     <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.startDate}</td>
-                    <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.status}</td>
+                    {/* <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.status}</td> */}
                     <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.duration}</td>
                     {/* <td className="p-3.5 border-r border-gray-100 dark:border-gray-800 text-center">{row.completionDate}</td> */}
                     <td className="p-3.5 text-center font-semibold text-emerald-600 dark:text-emerald-400">{row.grant}</td>
