@@ -93,7 +93,7 @@ const FundedProjectsOngoingPage = () => {
       <PageHeader title="Funded Projects (Ongoing)" />
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md border border-gray-100 dark:border-gray-800 overflow-hidden">
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto custom-scrollbar">
             <table className="w-full text-sm text-left border-collapse">
               <thead className="bg-primary text-white dark:bg-gray-800">
                 <tr>
