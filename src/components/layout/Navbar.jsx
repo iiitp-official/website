@@ -210,9 +210,7 @@ const Navbar = () => {
         { name: "Finance Committee", path: "/administration/finance-committee" },
         { name: "Building and Works Committee", path: "/administration/building-and-works-committee" },
         { name: "Senate", path: "/administration/senate" },
-        { name: "Board of Studies - CSE", path: "/administration/board-of-studies-cse" },
-        { name: "Board of Studies - ECE", path: "/administration/board-of-studies-ece" },
-        { name: "Board of Studies - ASH", path: "/administration/board-of-studies-ash" },
+        { name: "Board of Studies", path: "/administration/board-of-studies" },
       ]
     },
     {

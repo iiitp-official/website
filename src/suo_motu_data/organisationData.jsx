@@ -329,15 +329,15 @@ export const organizationData = [
           Senate
         </a>
         , Board of Studies (
-        <a href="/administration/board-of-studies-cse" className="link inline">
+        <a href="/administration/board-of-studies?dept=cse" className="link inline">
           CSE
         </a>
         ,{" "}
-        <a href="/administration/board-of-studies-ece" className="link inline">
+        <a href="/administration/board-of-studies?dept=ece" className="link inline">
           ECE
         </a>{" "}
         &{" "}
-        <a href="/administration/board-of-studies-ash" className="link inline">
+        <a href="/administration/board-of-studies?dept=ash" className="link inline">
           ASH
         </a>
         ), etc., followed by a Note for Approvals and final approval from the Competent Authority.
