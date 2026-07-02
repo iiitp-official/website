@@ -68,11 +68,11 @@ const AlumniPage = () => {
         </section>
 
         {/* Directory & Content Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           
           {/* Left Column: Sidebar Selection Directory */}
           <div className="lg:col-span-3">
-            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-24 space-y-4">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-44 self-start w-full space-y-4">
               <h3 className="text-gray-800 dark:text-white font-bold font-serif px-2 pb-2 border-b border-gray-200 dark:border-gray-800 text-sm">
                 Alumni Directory
               </h3>

@@ -264,7 +264,7 @@ const EceDepartmentPage = () => {
 
           {/* Column 1: Sidebar Directory (Degrees) */}
           <div className="lg:col-span-2">
-            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-24 space-y-4">
+            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-44 self-start w-full space-y-4">
               <h3 className="text-gray-800 dark:text-white font-bold font-serif px-2 pb-2 border-b border-gray-100 dark:border-gray-800 text-sm">
                 Academic Offerings
               </h3>
@@ -480,7 +480,7 @@ const EceDepartmentPage = () => {
 
           {/* Column 3: HOD Welcome Message Card (Permanent) */}
           <div className="lg:col-span-3">
-            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-5 shadow-sm space-y-6 lg:sticky lg:top-24 max-h-[85vh] overflow-y-auto no-scrollbar">
+            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-5 shadow-sm space-y-6 lg:sticky lg:top-44 self-start w-full max-h-[85vh] overflow-y-auto no-scrollbar">
 
               <div className="text-center pb-4 border-b border-gray-100 dark:border-gray-850">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white dark:border-gray-750 shadow-md mx-auto mb-4 bg-gray-50 dark:bg-gray-800 relative">

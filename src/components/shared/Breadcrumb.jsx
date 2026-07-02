@@ -25,6 +25,7 @@ const Breadcrumb = () => {
           'mtech': 'M.Tech.',
           'phd': 'Ph.D.',
           'honors': 'Honours',
+          'board-of-studies': 'Board of Studies',
           'board-of-studies-cse': 'Board of Studies (CSE)',
           'board-of-studies-ece': 'Board of Studies (ECE)',
           'board-of-studies-ash': 'Board of Studies (AS&H)',

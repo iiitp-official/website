@@ -34,15 +34,7 @@ const BuildingWorksCommitteePage = lazy(
 );
 const SenatePage = lazy(() => import("./pages/SenatePage"));
 const SgrcPage = lazy(() => import("./pages/SgrcPage"));
-const BoardOfStudiesCsePage = lazy(
-  () => import("./pages/BoardOfStudiesCsePage"),
-);
-const BoardOfStudiesEcePage = lazy(
-  () => import("./pages/BoardOfStudiesEcePage"),
-);
-const BoardOfStudiesAshPage = lazy(
-  () => import("./pages/BoardOfStudiesAshPage"),
-);
+const BoardOfStudiesPage = lazy(() => import("./pages/BoardOfStudiesPage"));
 const BtechCsePage = lazy(() => import("./pages/BtechCsePage"));
 const BtechEcePage = lazy(() => import("./pages/BtechEcePage"));
 const BtechAiDsPage = lazy(() => import("./pages/BtechAiDsPage"));
@@ -148,7 +140,7 @@ function AppContent() {
     return (
       <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-slate-200 dark:bg-bg-dark bg-grid-pattern transition-colors duration-200">
         <InternationalHeader />
-        <main className="flex-grow w-full overflow-x-hidden flex flex-col">
+        <main className="flex-grow w-full overflow-x-clip flex flex-col">
           <Suspense fallback={<LoadingFallback />}>
             <Routes>
               {/* International Relations Routes */}
@@ -184,7 +176,7 @@ function AppContent() {
   return (
     <div className="w-full min-h-screen flex flex-col font-sans text-gray-900 dark:text-gray-100 bg-slate-200 dark:bg-bg-dark bg-grid-pattern transition-colors duration-200">
       <Navbar />
-      <main className="flex-grow w-full overflow-x-hidden flex flex-col">
+      <main className="flex-grow w-full overflow-x-clip flex flex-col">
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
             {/* Home */}
@@ -251,16 +243,8 @@ function AppContent() {
             <Route path="/administration/senate" element={<SenatePage />} />
             <Route path="/sgrc" element={<SgrcPage />} />
             <Route
-              path="/administration/board-of-studies-cse"
-              element={<BoardOfStudiesCsePage />}
-            />
-            <Route
-              path="/administration/board-of-studies-ece"
-              element={<BoardOfStudiesEcePage />}
-            />
-            <Route
-              path="/administration/board-of-studies-ash"
-              element={<BoardOfStudiesAshPage />}
+              path="/administration/board-of-studies"
+              element={<BoardOfStudiesPage />}
             />
 
             {/* Academics */}
