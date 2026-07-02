@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import PageHeader from '../components/shared/PageHeader';
 import { Link } from 'react-router-dom';
+import { ExternalLink } from 'lucide-react';
 import facultyDetails from '../data/faculty_details.json';
 
 const FacultyPage = () => {
@@ -95,19 +96,46 @@ const FacultyPage = () => {
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-8 border-b pb-4 dark:border-gray-800">
-          Computer Science and Engineering
-        </h2>
+        <div className="flex items-center justify-between mb-8 border-b pb-4 dark:border-gray-800">
+          <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mr-4">
+            Computer Science and Engineering
+          </h2>
+          <Link 
+            to="/departments/cse" 
+            className="shrink-0 inline-flex items-center justify-center px-4 py-2 bg-blue-50 dark:bg-gray-800 text-primary dark:text-accent rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 font-medium text-sm group"
+          >
+            View CSE Department
+            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </Link>
+        </div>
         {renderFacultyGrid(cseFaculty)}
 
-        <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-8 border-b pb-4 dark:border-gray-800">
-          Electronics and Communication Engineering
-        </h2>
+        <div className="flex items-center justify-between mb-8 border-b pb-4 dark:border-gray-800">
+          <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mr-4">
+            Electronics and Communication Engineering
+          </h2>
+          <Link 
+            to="/departments/ece" 
+            className="shrink-0 inline-flex items-center justify-center px-4 py-2 bg-blue-50 dark:bg-gray-800 text-primary dark:text-accent rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 font-medium text-sm group"
+          >
+            View ECE Department
+            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </Link>
+        </div>
         {renderFacultyGrid(eceFaculty)}
 
-        <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-8 border-b pb-4 dark:border-gray-800">
-          Applied Sciences and Humanities
-        </h2>
+        <div className="flex items-center justify-between mb-8 border-b pb-4 dark:border-gray-800">
+          <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mr-4">
+            Applied Sciences and Humanities
+          </h2>
+          <Link 
+            to="/departments/ash" 
+            className="shrink-0 inline-flex items-center justify-center px-4 py-2 bg-blue-50 dark:bg-gray-800 text-primary dark:text-accent rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 font-medium text-sm group"
+          >
+            View ASH Department
+            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </Link>
+        </div>
         {renderFacultyGrid(ashFaculty)}
       </div>
     </div>
