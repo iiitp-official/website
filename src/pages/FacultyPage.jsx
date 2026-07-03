@@ -1,7 +1,7 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import PageHeader from '../components/shared/PageHeader';
 import { Link } from 'react-router-dom';
-import { ExternalLink } from 'lucide-react';
+import { Search } from 'lucide-react';
 import facultyDetails from '../data/faculty_details.json';
 
 const FacultyPage = () => {
@@ -24,8 +24,17 @@ const FacultyPage = () => {
   const eceFaculty = validFaculty.filter(f => f.department === 'ECE');
   const ashFaculty = validFaculty.filter(f => f.department === 'ASH');
 
-  const renderFacultyGrid = (facultyList) => (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16 h-full">
+  const renderFacultyGrid = (facultyList) => {
+    if (facultyList.length === 0) {
+      return (
+        <div className="text-center py-16 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-100 dark:border-gray-700 mb-16">
+          <p className="text-gray-500 dark:text-gray-400 text-lg">No faculty found matching your search.</p>
+        </div>
+      );
+    }
+    
+    return (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16 h-full">
       {facultyList.map((person, index) => {
         const slug = person.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
         return (
@@ -84,10 +93,14 @@ const FacultyPage = () => {
         </Link>
       )})}
     </div>
-  );
+    );
+  };
+
+  const [activeTab, setActiveTab] = useState('CSE');
+  const [searchQuery, setSearchQuery] = useState('');
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen transition-colors duration-200">
       <PageHeader 
         title="Faculty Members" 
         subtitle="Meet the distinguished faculty of IIIT Pune"
@@ -95,48 +108,83 @@ const FacultyPage = () => {
         compact={true}
       />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex items-center justify-between mb-8 border-b pb-4 dark:border-gray-800">
-          <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mr-4">
-            Computer Science and Engineering
-          </h2>
-          <Link 
-            to="/departments/cse" 
-            className="shrink-0 inline-flex items-center justify-center px-4 py-2 bg-blue-50 dark:bg-gray-800 text-primary dark:text-accent rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 font-medium text-sm group"
-          >
-            View CSE Department
-            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </Link>
-        </div>
-        {renderFacultyGrid(cseFaculty)}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-10 border border-gray-100 dark:border-gray-700">
+          
+          {/* Controls: Search and Tabs */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 pb-6 border-b border-gray-200 dark:border-gray-700">
+            <div className="relative w-full sm:w-56 md:w-64">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <Search className="h-4 w-4 text-gray-400" />
+              </div>
+              <input
+                type="text"
+                placeholder="Search faculty..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="block w-full pl-9 pr-3 py-2 border border-gray-200 dark:border-gray-700 rounded-full leading-5 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm transition-all shadow-sm hover:border-gray-300 dark:hover:border-gray-600"
+              />
+            </div>
 
-        <div className="flex items-center justify-between mb-8 border-b pb-4 dark:border-gray-800">
-          <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mr-4">
-            Electronics and Communication Engineering
-          </h2>
-          <Link 
-            to="/departments/ece" 
-            className="shrink-0 inline-flex items-center justify-center px-4 py-2 bg-blue-50 dark:bg-gray-800 text-primary dark:text-accent rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 font-medium text-sm group"
-          >
-            View ECE Department
-            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </Link>
-        </div>
-        {renderFacultyGrid(eceFaculty)}
+            <div className="flex flex-wrap bg-gray-100 dark:bg-gray-800 p-1.5 rounded-full w-fit shrink-0 shadow-inner gap-1">
+              <button
+                onClick={() => setActiveTab('CSE')}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  activeTab === 'CSE' 
+                    ? 'bg-brand-red text-white shadow-md' 
+                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+                }`}
+              >
+                CSE
+              </button>
+              <button
+                onClick={() => setActiveTab('ECE')}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  activeTab === 'ECE' 
+                    ? 'bg-brand-red text-white shadow-md' 
+                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+                }`}
+              >
+                ECE
+              </button>
+              <button
+                onClick={() => setActiveTab('ASH')}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  activeTab === 'ASH' 
+                    ? 'bg-brand-red text-white shadow-md' 
+                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+                }`}
+              >
+                ASH
+              </button>
+            </div>
+          </div>
 
-        <div className="flex items-center justify-between mb-8 border-b pb-4 dark:border-gray-800">
-          <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mr-4">
-            Applied Sciences and Humanities
-          </h2>
-          <Link 
-            to="/departments/ash" 
-            className="shrink-0 inline-flex items-center justify-center px-4 py-2 bg-blue-50 dark:bg-gray-800 text-primary dark:text-accent rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 font-medium text-sm group"
-          >
-            View ASH Department
-            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </Link>
+          {/* Main Heading */}
+          <div className="mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold font-serif text-primary dark:text-white flex items-center shrink-0">
+              {activeTab === 'CSE' ? 'Computer Science & Engineering' :
+               activeTab === 'ECE' ? 'Electronics & Communication Engineering' :
+               'Applied Sciences & Humanities'}
+            </h2>
+          </div>
+
+          {/* <div className="flex justify-end mb-6">
+            <Link 
+              to={`/departments/${activeTab.toLowerCase()}`} 
+              className="inline-flex items-center justify-center px-4 py-2 bg-blue-50 dark:bg-gray-800 text-primary dark:text-accent rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 font-medium text-sm group shrink-0"
+            >
+              View {activeTab} Department
+              <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </Link>
+          </div> */}
+
+          <div className="animate-fade-in-up">
+            {activeTab === 'CSE' && renderFacultyGrid(cseFaculty.filter(f => f.name.toLowerCase().includes(searchQuery.toLowerCase())))}
+            {activeTab === 'ECE' && renderFacultyGrid(eceFaculty.filter(f => f.name.toLowerCase().includes(searchQuery.toLowerCase())))}
+            {activeTab === 'ASH' && renderFacultyGrid(ashFaculty.filter(f => f.name.toLowerCase().includes(searchQuery.toLowerCase())))}
+          </div>
         </div>
-        {renderFacultyGrid(ashFaculty)}
       </div>
     </div>
   );

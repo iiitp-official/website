@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import PageHeader from '../components/shared/PageHeader';
 import Breadcrumb from '../components/shared/Breadcrumb';
@@ -17,10 +17,30 @@ const NonTeachingStaffPage = () => {
   // If the URL parameter was missing or invalid, we redirect (or we can just render the default)
   // App.jsx handles the redirect from `/people/non-teaching-staff` to `/people/non-teaching-staff/regular`
   
+  const [selectedDepartment, setSelectedDepartment] = useState('All');
+
   // Filter staff by Type
-  const displayedStaff = useMemo(() => {
+  const typeFilteredStaff = useMemo(() => {
     return nonTeachingStaffData.filter(staff => staff.type === staffType);
   }, [staffType]);
+
+  const departments = useMemo(() => {
+    const deps = typeFilteredStaff.map(staff => staff.departmentShort).filter(Boolean);
+    return ['All', ...new Set(deps)].sort((a, b) => {
+        if (a === 'All') return -1;
+        if (b === 'All') return 1;
+        return a.localeCompare(b);
+    });
+  }, [typeFilteredStaff]);
+
+  useEffect(() => {
+    setSelectedDepartment('All');
+  }, [staffType]);
+
+  const displayedStaff = useMemo(() => {
+    if (selectedDepartment === 'All') return typeFilteredStaff;
+    return typeFilteredStaff.filter(staff => staff.departmentShort === selectedDepartment);
+  }, [typeFilteredStaff, selectedDepartment]);
 
   return (
     <div className="min-h-screen pb-20">
@@ -33,6 +53,24 @@ const NonTeachingStaffPage = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
+        {/* Department Filters */}
+        {departments.length > 2 && (
+          <div className="flex flex-wrap justify-center gap-3 mt-6 mb-10">
+            {departments.map((dept) => (
+              <button
+                key={dept}
+                onClick={() => setSelectedDepartment(dept)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  selectedDepartment === dept
+                    ? 'bg-primary text-white shadow-md'
+                    : 'bg-white dark:bg-surface-dark text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700'
+                }`}
+              >
+                {dept}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Staff Grid */}
         {displayedStaff.length > 0 ? (
