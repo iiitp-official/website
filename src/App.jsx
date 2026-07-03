@@ -85,6 +85,7 @@ const NoticePage = lazy(() => import("./pages/NoticePage"));
 const NewsPage = lazy(() => import("./pages/NewsPage"));
 const AntiRaggingPage = lazy(() => import("./pages/AntiRaggingPage"));
 const CareersPage = lazy(() => import("./pages/CareersPage"));
+const ShortlistingsPage = lazy(() => import("./pages/ShortlistingsPage"));
 const ETenderPage = lazy(() => import("./pages/ETenderPage"));
 const PlacementPage = lazy(() => import("./pages/PlacementPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
@@ -351,6 +352,7 @@ function AppContent() {
               }
             />
             <Route path="/careers" element={<CareersPage />} />
+            <Route path="/careers/shortlistings/:slug" element={<ShortlistingsPage />} />
 
             {/* E-Tenders */}
             <Route
