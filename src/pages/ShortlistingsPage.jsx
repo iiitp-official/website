@@ -169,7 +169,7 @@ const ShortlistingsPage = () => {
                   <div className="space-y-8">
                     {/* Math */}
                     <TableView 
-                      title="ASH Department" 
+                      title="Mathematics" 
                       list={deptData.math[activeTab]} 
                       pdfLink={activeTab === 'shortlisted' ? deptData.math.shortlistedPdf : deptData.math.nonShortlistedPdf} 
                     />
