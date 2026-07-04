@@ -1018,6 +1018,19 @@
   ],
   "EVENTS": [
     {
+      "name": "Faculty Development Program on AI-Driven Adaptive Optical and Wireless Communication Systems (05–12 June 2026)",
+      "type": "Faculty Development Program",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "A 7-day Faculty Development Program (FDP) titled \"AI-Driven Adaptive Optical and Wireless Communication Systems\" was conducted from 05 June 2026 to 12 June 2026 in collaboration with the Electronics and ICT (E&ICT) Academy, IIIT Jabalpur, and IIIT Pune.\n\nThe FDP focused on recent advancements in Artificial Intelligence-enabled adaptive communication technologies, intelligent optical and wireless networks, machine learning applications in communication systems, next-generation communication architectures, and emerging research challenges and opportunities in the field.\n\nThe program brought together experts from academia and industry to share their knowledge and research insights, thereby enhancing the technical expertise and research capabilities of participants in the rapidly evolving domain of AI-driven communication systems.\n\nThe program was coordinated by the organizing team at IIIT Pune under the guidance of the designated FDP Coordinator, Dr. Dheeraj Dubey, IIIT Pune.",
+      "images": [],
+      "highlights": [
+        "7-day FDP (05–12 June 2026)",
+        "Collaboration with E&ICT Academy",
+        "Focus on AI & Wireless Communication",
+        "Expert Insights from Academia & Industry"
+      ]
+    },
+    {
       "name": "iConclave 2026",
       "type": "Tech-Cultural Extravaganza",
       "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",

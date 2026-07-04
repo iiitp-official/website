@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PageHeader from '../components/shared/PageHeader';
 import careersData from '../data/careers.json';
 
@@ -57,14 +58,24 @@ const CareersPage = () => {
                   </div>
                   <div className="flex flex-wrap items-center gap-2 shrink-0">
                     {job.buttons.map((btn, bidx) => (
-                      <a
-                        key={bidx}
-                        href={btn.isExternalLink ? btn.link : `/careers-documents/${btn.file}`}
-                        target="_blank" rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-xs font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95 text-center"
-                      >
-                        {btn.label}
-                      </a>
+                      btn.isInternalRoute ? (
+                        <Link
+                          key={bidx}
+                          to={btn.link}
+                          className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-xs font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95 text-center"
+                        >
+                          {btn.label}
+                        </Link>
+                      ) : (
+                        <a
+                          key={bidx}
+                          href={`/careers-documents/${btn.file}`}
+                          target="_blank" rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-xs font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95 text-center"
+                        >
+                          {btn.label}
+                        </a>
+                      )
                     ))}
                   </div>
                 </div>
