@@ -248,6 +248,7 @@ const Navbar = () => {
           ]
         },
         { name: "Ph.D.", path: "/academics/phd" },
+        { name: "UG and PG Schemes", path: "/academics/ug-pg-schemes" },
         { name: "Academic Calendar", path: "/academics/calendar" },
         { name: "Fees", path: "/fees" },
         {

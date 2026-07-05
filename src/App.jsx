@@ -36,6 +36,7 @@ const SenatePage = lazy(() => import("./pages/SenatePage"));
 const SgrcPage = lazy(() => import("./pages/SgrcPage"));
 const BoardOfStudiesPage = lazy(() => import("./pages/BoardOfStudiesPage"));
 const BtechCsePage = lazy(() => import("./pages/BtechCsePage"));
+const UgPgSchemesPage = lazy(() => import("./pages/UgPgSchemesPage"));
 const BtechEcePage = lazy(() => import("./pages/BtechEcePage"));
 const BtechAiDsPage = lazy(() => import("./pages/BtechAiDsPage"));
 const BtechCybersecurityPage = lazy(
@@ -250,6 +251,7 @@ function AppContent() {
 
             {/* Academics */}
             <Route path="/academics/btech/cse" element={<BtechCsePage />} />
+            <Route path="/academics/ug-pg-schemes" element={<UgPgSchemesPage />} />
             <Route path="/academics/btech/ece" element={<BtechEcePage />} />
             <Route path="/academics/btech/aids" element={<BtechAiDsPage />} />
             <Route
