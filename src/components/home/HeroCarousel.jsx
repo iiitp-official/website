@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 
 const slides = [
   { id: 1, image: '/carousel/slide_1.jpeg' },
-  { id: 2, image: '/carousel/InternationalYogaDay.jpeg' },
-  { id: 3, image: '/carousel/slide_2.jpeg' },
-  { id: 4, image: '/carousel/slide_3.jpeg' },
-  { id: 5, image: '/carousel/slide_4.jpeg' },
-  { id: 6, image: '/carousel/slide_5.jpeg' },
+  { id: 2, image: '/carousel/image.jpeg' },
+  { id: 3, image: '/carousel/InternationalYogaDay.jpeg' },
+  { id: 4, image: '/carousel/slide_2.jpeg' },
+  { id: 5, image: '/carousel/slide_3.jpeg' },
+  { id: 6, image: '/carousel/slide_4.jpeg' },
+  { id: 7, image: '/carousel/slide_5.jpeg' },
 ];
 
 const HeroCarousel = () => {
@@ -57,7 +58,7 @@ const HeroCarousel = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10 z-10" />
 
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-end text-center px-4 pb-20">
-        <motion.h1 
+        <motion.h1
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
@@ -65,8 +66,8 @@ const HeroCarousel = () => {
         >
           {/* Indian Institute of Information Technology Pune */}
         </motion.h1>
-        
-        <motion.p 
+
+        <motion.p
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
@@ -74,8 +75,8 @@ const HeroCarousel = () => {
         >
           {/* Empowering Innovation, Shaping Tomorrow */}
         </motion.p>
-        
-        <motion.div 
+
+        <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
