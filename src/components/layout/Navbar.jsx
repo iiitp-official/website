@@ -211,6 +211,8 @@ const Navbar = () => {
         { name: "Building and Works Committee", path: "/administration/building-and-works-committee" },
         { name: "Senate", path: "/administration/senate" },
         { name: "Board of Studies", path: "/administration/board-of-studies" },
+        { name: "Chief Vigilance Officcer", path: "#" },
+        { name: "Associate Deans", path: "#" },
       ]
     },
     {
@@ -287,16 +289,19 @@ const Navbar = () => {
           ]
         },
         { name: "Events", path: "/research/events" },
-        {
-          name: "Research Scholar",
-          hasDropdown: true,
-          subLinks: [
-            { name: "Institute Scheme", path: "/research/scholar/institute" },
-            { name: "Visvesvaraya Scheme", path: "/research/scholar/visvesvaraya" },
-            { name: "Graduated PhD Students", path: "/research/scholar/graduated" }
-          ]
-        },
-        { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
+        { name: "MOUs", path: "#" },
+        { name: "Patents", path: "#" },
+        { name: "Publications", path: "#" },
+        // {
+        //   name: "Research Scholar",
+        //   hasDropdown: true,
+        //   subLinks: [
+        //     { name: "Institute Scheme", path: "/research/scholar/institute" },
+        //     { name: "Visvesvaraya Scheme", path: "/research/scholar/visvesvaraya" },
+        //     { name: "Graduated PhD Students", path: "/research/scholar/graduated" }
+        //   ]
+        // },
+        // { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
       ]
 
     },
@@ -308,13 +313,23 @@ const Navbar = () => {
         { name: "Faculty", path: "/people/faculty" },
         { name: "Visiting Faculty", path: "/people/visiting-faculty" },
         {
-          name: "Non-Teaching Staff",
+          name: "Administrative Staff",
           hasDropdown: true,
           subLinks: [
             { name: "Regular", path: "/people/non-teaching-staff/regular" },
             { name: "Contract", path: "/people/non-teaching-staff/contract" }
           ]
         },
+        {
+          name: "Research Scholar",
+          hasDropdown: true,
+          subLinks: [
+            { name: "Institute Scheme", path: "/research/scholar/institute" },
+            { name: "Visvesvaraya Scheme", path: "/research/scholar/visvesvaraya" },
+            { name: "Graduated PhD Students", path: "/research/scholar/graduated" }
+          ]
+        },
+        { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
         { name: "Alumni", path: "/people/alumni" },
       ],
     },

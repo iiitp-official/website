@@ -8,7 +8,9 @@ import facultyDetails from "../data/faculty_details.json";
 const UgPgSchemesPage = () => {
   const [activeSemester, setActiveSemester] = useState(1);
 
-    const cseCurriculum = [
+    /*
+  Previous Data:
+  const cseCurriculum = [
     {
       semester: 1,
       totalCredits: 19,
@@ -96,6 +98,104 @@ const UgPgSchemesPage = () => {
         { name: "Elective 2 (OE)", hours: "3-0-0", credits: 3 },
         { name: "Major Project-I", hours: "0-0-6", credits: 3 },
         { name: "Internship", hours: "0-0-4", credits: 2 },
+      ]
+    },
+    {
+      semester: 8,
+      totalCredits: 16,
+      courses: [
+        { name: "Major Project-II", hours: "0-0-32", credits: 16 },
+      ]
+    }
+  ];
+  */
+
+  const cseCurriculum = [
+    {
+      semester: 1,
+      totalCredits: 20,
+      courses: [
+        { name: "Basic Electronics Engineering", hours: "3-0-2", credits: 4 },
+        { name: "Introduction to Emerging Technologies", hours: "3-0-0", credits: 3 },
+        { name: "Computer Programming Concept and Practices", hours: "3-0-2", credits: 4 },
+        { name: "Calculus and Differential Equations", hours: "3-1-0", credits: 4 },
+        { name: "Language and Writing Skills", hours: "2-0-0", credits: 2 },
+        { name: "Indian Knowledge System (IKS)", hours: "1-0-0", credits: 1 },
+        { name: "Environmental Science", hours: "2-0-0", credits: 2 },
+      ]
+    },
+    {
+      semester: 2,
+      totalCredits: 20,
+      courses: [
+        { name: "Digital Logic and Design", hours: "3-0-2", credits: 4 },
+        { name: "Data Structures", hours: "3-0-2", credits: 4 },
+        { name: "Object Oriented Programming using Java", hours: "3-0-2", credits: 4 },
+        { name: "Linear Algebra and Discrete Structure", hours: "3-1-0", credits: 4 },
+        { name: "Humanities and Social Ethics", hours: "2-0-0", credits: 2 },
+        { name: "Innovation and Entrepreneurship Studies", hours: "2-0-0", credits: 2 },
+      ]
+    },
+    {
+      semester: 3,
+      totalCredits: 22,
+      courses: [
+        { name: "Artificial Intelligence", hours: "3-0-2", credits: 4 },
+        { name: "Design and Analysis of Algorithms", hours: "3-0-2", credits: 4 },
+        { name: "Database Management System", hours: "3-0-2", credits: 4 },
+        { name: "Python Programming", hours: "3-0-2", credits: 4 },
+        { name: "Computer Organization and Architecture", hours: "3-0-0", credits: 3 },
+        { name: "Probability and Random Process", hours: "3-0-0", credits: 3 },
+      ]
+    },
+    {
+      semester: 4,
+      totalCredits: 21,
+      courses: [
+        { name: "Computer Network", hours: "3-0-2", credits: 4 },
+        { name: "Machine Learning", hours: "3-0-2", credits: 4 },
+        { name: "Operating System", hours: "3-0-2", credits: 4 },
+        { name: "Theory of Computation", hours: "3-0-0", credits: 3 },
+        { name: "Linear and Non-Linear Optimization", hours: "3-0-0", credits: 3 },
+        { name: "Software Engineering and System Design", hours: "3-0-0", credits: 3 },
+      ]
+    },
+    {
+      semester: 5,
+      totalCredits: 24,
+      courses: [
+        { name: "Deep Learning", hours: "3-0-2", credits: 4 },
+        { name: "Compiler Design", hours: "3-0-2", credits: 4 },
+        { name: "Cryptography and Network Security", hours: "3-0-2", credits: 4 },
+        { name: "Advanced Data Structures", hours: "3-0-2", credits: 4 },
+        { name: "Elective 1", hours: "3-0-0", credits: 3 },
+        { name: "Elective 2", hours: "3-0-0", credits: 3 },
+        { name: "Minor Project-I", hours: "0-0-4", credits: 2 },
+      ]
+    },
+    {
+      semester: 6,
+      totalCredits: 23,
+      courses: [
+        { name: "Generative Artificial Intelligence", hours: "3-0-2", credits: 4 },
+        { name: "Artificial Intelligence and Big Data Analytics", hours: "3-0-2", credits: 4 },
+        { name: "Internet of Things", hours: "3-0-0", credits: 3 },
+        { name: "Elective 1", hours: "3-0-0", credits: 3 },
+        { name: "Elective 2", hours: "3-0-0", credits: 3 },
+        { name: "Elective 3", hours: "3-0-0", credits: 3 },
+        { name: "Minor Project-II", hours: "0-0-6", credits: 3 },
+      ]
+    },
+    {
+      semester: 7,
+      totalCredits: 17,
+      courses: [
+        { name: "Elective 1 / MOOC", hours: "3-0-0", credits: 3 },
+        { name: "Elective 2 / MOOC", hours: "3-0-0", credits: 3 },
+        { name: "Elective 3 / MOOC", hours: "3-0-0", credits: 3 },
+        { name: "Elective 4 / MOOC", hours: "3-0-0", credits: 3 },
+        { name: "Major Project-I", hours: "0-0-6", credits: 3 },
+        { name: "Internship-I", hours: "0-0-4", credits: 2 },
       ]
     },
     {
@@ -503,7 +603,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
             <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-8 md:p-10 overflow-hidden">
               <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
-                  <h4 className="text-3xl font-bold font-serif text-primary dark:text-white">
+                  <h4 className="text-2xl font-bold font-serif text-primary dark:text-white">
                     B. Tech. (Computer Science & Engineering)
                   </h4>
                   
@@ -587,7 +687,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
             <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-8 md:p-10 overflow-hidden">
               <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
-                  <h4 className="text-3xl font-bold font-serif text-primary dark:text-white">
+                  <h4 className="text-2xl font-bold font-serif text-primary dark:text-white">
                     B. Tech. (Artificial Intelligence and Data Science)
                   </h4>
                   
@@ -673,7 +773,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
             <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-8 md:p-10 overflow-hidden">
               <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
-                  <h4 className="text-3xl font-bold font-serif text-primary dark:text-white">
+                  <h4 className="text-2xl font-bold font-serif text-primary dark:text-white">
                     B. Tech. (Cybersecurity)
                   </h4>
                   
@@ -759,7 +859,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
             <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-8 md:p-10 overflow-hidden">
               <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
-                  <h2 className="text-3xl font-bold font-serif text-primary dark:text-white">
+                  <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
                     B. Tech. (Electronics & Communication Engineering)
                   </h2>
                   
@@ -843,7 +943,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
           <section className="mt-12 w-full">
                     <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                       <div>
-                         <h2 className="text-3xl font-bold font-serif text-primary dark:text-white">
+                         <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
                           M.Tech (Computer Science & Engineering)
                         </h2>
                         
@@ -943,7 +1043,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                   <section className="mt-12 w-full">
                     <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                       <div>
-                         <h2 className="text-3xl font-bold font-serif text-primary dark:text-white">
+                         <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
                           M.Tech (Electronics and Communication Engineering)
                         </h2>
                         
