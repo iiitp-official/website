@@ -35,8 +35,17 @@ const BuildingWorksCommitteePage = lazy(
 const SenatePage = lazy(() => import("./pages/SenatePage"));
 const SgrcPage = lazy(() => import("./pages/SgrcPage"));
 const BoardOfStudiesPage = lazy(() => import("./pages/BoardOfStudiesPage"));
+const ChiefVigilanceOfficerPage = lazy(() => import("./pages/ChiefVigilanceOfficerPage"));
+const AssociateDeansPage = lazy(() => import("./pages/AssociateDeansPage"));
+const MousPage = lazy(() => import("./pages/MousPage"));
+const PatentsPage = lazy(() => import("./pages/PatentsPage"));
+const PublicationsPage = lazy(() => import("./pages/PublicationsPage"));
 const BtechCsePage = lazy(() => import("./pages/BtechCsePage"));
 const UgPgSchemesPage = lazy(() => import("./pages/UgPgSchemesPage"));
+const UgProgramsPage = lazy(() => import("./pages/UgProgramsPage"));
+const PgProgramsPage = lazy(() => import("./pages/PgProgramsPage"));
+const PhdProgramsPage = lazy(() => import("./pages/PhdProgramsPage"));
+const ExaminationSectionPage = lazy(() => import("./pages/ExaminationSectionPage"));
 const BtechEcePage = lazy(() => import("./pages/BtechEcePage"));
 const BtechAiDsPage = lazy(() => import("./pages/BtechAiDsPage"));
 const BtechCybersecurityPage = lazy(
@@ -248,10 +257,22 @@ function AppContent() {
               path="/administration/board-of-studies"
               element={<BoardOfStudiesPage />}
             />
+            <Route
+              path="/administration/chief-vigilance-officer"
+              element={<ChiefVigilanceOfficerPage />}
+            />
+            <Route
+              path="/administration/associate-deans"
+              element={<AssociateDeansPage />}
+            />
 
             {/* Academics */}
             <Route path="/academics/btech/cse" element={<BtechCsePage />} />
             <Route path="/academics/ug-pg-schemes" element={<UgPgSchemesPage />} />
+            <Route path="/academics/ug-programs" element={<UgProgramsPage />} />
+            <Route path="/academics/pg-programs" element={<PgProgramsPage />} />
+            <Route path="/academics/phd-programs" element={<PhdProgramsPage />} />
+            <Route path="/academics/examination-section" element={<ExaminationSectionPage />} />
             <Route path="/academics/btech/ece" element={<BtechEcePage />} />
             <Route path="/academics/btech/aids" element={<BtechAiDsPage />} />
             <Route
@@ -288,6 +309,9 @@ function AppContent() {
               element={<FundedProjectsOngoingPage />}
             />
             <Route path="/research/events" element={<EventsPage />} />
+            <Route path="/research/mous" element={<MousPage />} />
+            <Route path="/research/patents" element={<PatentsPage />} />
+            <Route path="/research/publications" element={<PublicationsPage />} />
             <Route
               path="/research/scholar/institute"
               element={<ResearchScholarInstitutePage />}
