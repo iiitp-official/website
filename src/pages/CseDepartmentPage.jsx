@@ -6,9 +6,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import facultyDetails from "../data/faculty_details.json";
 
 const CseDepartmentPage = () => {
+  const [activeTab, setActiveTab] = useState("about");
   const [activeProgram, setActiveProgram] = useState("btech");
   const [activeBtechSemester, setActiveBtechSemester] = useState(1);
   const [activeMtechSemester, setActiveMtechSemester] = useState(1);
+
+  const tabs = [
+    { id: "about", label: "About the Department", icon: Building },
+    { id: "hod", label: "Hod Message", icon: Users },
+    { id: "vision", label: "Vision", icon: Award },
+    { id: "mission", label: "Mission", icon: GraduationCap },
+    { id: "courses", label: "Courses", icon: BookOpen },
+    { id: "people", label: "People", icon: Users },
+    { id: "labs", label: "Labs", icon: Cpu },
+    { id: "projects", label: "Projects/patent/consultant", icon: Network },
+    { id: "events", label: "Event/News", icon: FileText }
+  ];
 
   // Extract CSE Faculty
   const cseFaculty = useMemo(() => {
@@ -220,7 +233,7 @@ const CseDepartmentPage = () => {
                   ))}
                 </AnimatePresence>
                 {curriculum.find(c => c.semester === activeSemester)?.totalCredits && (
-                  <tr className="bg-blue-50/20 dark:bg-blue-900/5 border-t border-gray-150 dark:border-gray-850 font-bold">
+                  <tr className="bg-blue-50/20 dark:bg-blue-900/5 border-t border-gray-150 dark:border-gray-855 font-bold">
                     <td className="py-3 px-4 text-sm text-gray-800 dark:text-gray-200 text-right pr-6" colSpan="2">
                       Total Semester Credits
                     </td>
@@ -237,240 +250,46 @@ const CseDepartmentPage = () => {
     );
   };
 
-  return (
-    <div className="min-h-screen transition-colors duration-200 pb-16">
-      <PageHeader
-        title="Department of Computer Science & Engineering"
-        subtitle="Striving for computing excellence through learning, research, and innovation"
-        backgroundImage="/campus-image.jpg"
-        compact={true}
-      />
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case "about":
+        return (
+          <div className="space-y-6">
+            <div>
+              <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
+                About the Department
+              </h2>
+              <p className="text-gray-650 dark:text-gray-350 leading-relaxed text-justify text-sm sm:text-base">
+                The Computer Science & Engineering (CSE) department was established in 2016. In the modern era, computer science plays an important role in the field of technology. The CSE Department provides world-class infrastructure and a great learning and research environment. It also adopts industry practices through collaboration with various industries. The department comprises a perfect combination of experienced and vibrant faculty members from various research backgrounds, including Machine Learning, Deep Learning, Cyber Security, Artificial Intelligence, and Image Processing. The department offers three programmes: B.Tech., M.Tech., and Ph.D., respectively.
+              </p>
+            </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
-
-        {/* Intro Block */}
-        <section className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm">
-          <p className="text-gray-650 dark:text-gray-350 leading-relaxed text-justify text-base md:text-md">
-            The CSE department was established in 2016. In the modern era, computer science plays an important role in the field of technology. The CSE Department provides world-class infrastructure and a great learning and research environment. It also adopts industry practices through collaboration with various industries. The department comprises a perfect combination of experienced and vibrant faculty members from various research backgrounds, including Machine Learning, Deep Learning, Cyber Security, Artificial Intelligence, and Image Processing. The department offers three programmes: B.Tech., M.Tech., and Ph.D., respectively.
-          </p>
-        </section>
-
-        {/* 3-Column Layout: Sidebar (Programs), Main Content, HOD Welcome */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-
-          {/* Column 1: Sidebar Directory (Degrees) */}
-          <div className="lg:col-span-2">
-            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-44 self-start w-full space-y-4">
-              <h3 className="text-gray-800 dark:text-white font-bold font-serif px-2 pb-2 border-b border-gray-100 dark:border-gray-800 text-sm">
-                Degree Programs
-              </h3>
-              <div className="flex flex-row overflow-x-auto gap-2 no-scrollbar lg:flex-col pb-1 lg:pb-0">
-                {[
-                  { id: "btech", name: "B.Tech. Program", tag: "Undergraduate" },
-                  { id: "mtech", name: "M.Tech. Program", tag: "Postgraduate" },
-                  { id: "phd", name: "Ph.D. Program", tag: "Doctoral" }
-                ].map((p) => {
-                  const isSelected = activeProgram === p.id;
-                  return (
-                    <button
-                      key={p.id}
-                      onClick={() => setActiveProgram(p.id)}
-                      className={`shrink-0 lg:shrink lg:w-full flex flex-row lg:flex-col items-center lg:items-start gap-2 lg:gap-0 px-4 py-2 lg:px-3.5 lg:py-2.5 rounded-full lg:rounded-xl text-left transition-all duration-200 border ${isSelected
-                          ? "bg-primary text-white border-primary shadow-sm"
-                          : "text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700"
-                        }`}
-                    >
-                      <div className="flex items-center gap-2 w-full">
-                        <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isSelected ? "bg-white" : "bg-primary"}`} />
-                        <span className="font-bold text-xs lg:text-sm">{p.name}</span>
-                      </div>
-                      <span className={`hidden lg:block text-[10px] mt-0.5 ${isSelected ? "text-white/80" : "text-gray-400 dark:text-gray-500"}`}>
-                        {p.tag}
-                      </span>
-                    </button>
-                  );
-                })}
+            {/* Quick Stats Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+              <div className="bg-slate-50 dark:bg-gray-850 p-5 rounded-2xl border border-gray-100 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+                <span className="text-3xl font-extrabold text-primary dark:text-accent font-serif mb-1">2016</span>
+                <span className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-wider">Established Year</span>
+              </div>
+              <div className="bg-slate-50 dark:bg-gray-850 p-5 rounded-2xl border border-gray-100 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+                <span className="text-3xl font-extrabold text-primary dark:text-accent font-serif mb-1">3</span>
+                <span className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-wider">Academic Programs</span>
+              </div>
+              <div className="bg-slate-50 dark:bg-gray-850 p-5 rounded-2xl border border-gray-100 dark:border-gray-800 flex flex-col items-center justify-center text-center">
+                <span className="text-3xl font-extrabold text-primary dark:text-accent font-serif mb-1">15+</span>
+                <span className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-wider">Faculty & Researchers</span>
               </div>
             </div>
           </div>
+        );
 
-          {/* Column 2: Main Area (Dynamic based on selected program) */}
-          <div className="lg:col-span-7">
-            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm h-full flex flex-col justify-between">
-
-              <AnimatePresence mode="wait">
-                {activeProgram === "btech" && (
-                  <motion.div
-                    key="btech"
-                    initial={{ opacity: 0, y: 15 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -15 }}
-                    transition={{ duration: 0.2 }}
-                    className="space-y-8"
-                  >
-                    <div>
-                      <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
-                        Bachelor of Technology (B.Tech.)
-                      </h2>
-                      <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
-                        The Bachelor of Technology (B.Tech.) program in Computer Science and Engineering at IIIT Pune provides students with a strong foundation in computer science along with practical and analytical skills essential for modern engineering. The curriculum emphasizes problem-solving, critical thinking, innovation, and hands-on learning to prepare students for real-world technological challenges.
-                      </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
-                        <Clock className="w-5 h-5 text-primary" />
-                        <div>
-                          <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">Duration</p>
-                          <p className="font-bold text-sm text-gray-800 dark:text-gray-250">4 Years (8 Semesters)</p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
-                        <Users className="w-5 h-5 text-primary" />
-                        <div>
-                          <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">Department Intake</p>
-                          <p className="font-bold text-sm text-gray-800 dark:text-gray-250">326 Students</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2 mb-4">
-                        Curriculum &amp; Course Syllabus
-                      </h3>
-                      {renderCurriculumTable(btechCurriculum, activeBtechSemester, setActiveBtechSemester, 8)}
-                    </div>
-                  </motion.div>
-                )}
-
-                {activeProgram === "mtech" && (
-                  <motion.div
-                    key="mtech"
-                    initial={{ opacity: 0, y: 15 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -15 }}
-                    transition={{ duration: 0.2 }}
-                    className="space-y-8"
-                  >
-                    <div>
-                      <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
-                        Master of Technology (M.Tech.)
-                      </h2>
-                      <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
-                        The M.Tech. CSE program with specialization in Artificial Intelligence is designed to impart advanced-level education and research guidance. The curriculum is tailored to cover state-of-the-art topics including Machine Learning, Deep Learning, Big Data Analytics, Cloud Computing, and Swarm Intelligence.
-                      </p>
-
-                      <div className="mt-4 p-4 bg-gray-50 dark:bg-gray-800/30 border border-gray-100 dark:border-gray-800 rounded-xl space-y-2">
-                        <strong className="text-xs text-primary dark:text-accent font-bold uppercase tracking-wider">Admissions Path</strong>
-                        <ul className="list-disc list-inside text-xs text-gray-650 dark:text-gray-400 space-y-1 pl-1">
-                          <li>GATE Mode: Through Centralized Counseling for M.Tech./M.Arch./M.Plan. (CCMT)</li>
-                          <li>Non-GATE Mode: Written test followed by research assessment interview at IIIT Pune</li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                      <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
-                        <Clock className="w-5 h-5 text-primary" />
-                        <div>
-                          <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">Duration</p>
-                          <p className="font-bold text-sm text-gray-800 dark:text-gray-250">2 Years (4 Semesters)</p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
-                        <Users className="w-5 h-5 text-primary" />
-                        <div>
-                          <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">Intake</p>
-                          <p className="font-bold text-sm text-gray-800 dark:text-gray-250">36 Students</p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
-                        <Award className="w-5 h-5 text-primary" />
-                        <div>
-                          <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">Specialization</p>
-                          <p className="font-bold text-sm text-gray-800 dark:text-gray-250">Artificial Intelligence</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2 mb-4">
-                        Curriculum &amp; Course Syllabus (54 Credits)
-                      </h3>
-                      {renderCurriculumTable(mtechCurriculum, activeMtechSemester, setActiveMtechSemester, 4)}
-                    </div>
-                  </motion.div>
-                )}
-
-                {activeProgram === "phd" && (
-                  <motion.div
-                    key="phd"
-                    initial={{ opacity: 0, y: 15 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -15 }}
-                    transition={{ duration: 0.2 }}
-                    className="space-y-6"
-                  >
-                    <div>
-                      <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
-                        Doctor of Philosophy (Ph.D.)
-                      </h2>
-                      <div className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify space-y-4">
-                        <p>
-                          The Doctor of Philosophy (Ph.D.) Programme is aimed at assisting students in acquiring proficiency in their chosen area of research. The academic Programme leading to the Ph.D. degree is broad-based and involves a course credit requirement and a research thesis submission.
-                        </p>
-                        <p>
-                          The Institute encourages research in interdisciplinary areas through a system of joint supervision and interdepartmental group activities. With an aim to develop new knowledge in all aspects of teaching and research, IIIT Pune offers admission to the Ph.D. Programme.
-                        </p>
-                        <p>
-                          IIIT Pune plans to develop world class research facilities in areas of Mobile Computing, Information Security, IoT, Robotics, Machine Learning, Speech & Image Processing, Medical Informatics, Cyber Physical Systems, Wireless Networks, VLSI Design and Nanotechnology.
-                        </p>
-                      </div>
-
-                      <div className="mt-6 bg-teal-50/20 dark:bg-teal-900/10 border border-teal-100 dark:border-teal-900/30 p-4 rounded-xl flex items-start gap-3">
-                        <div className="bg-teal-500/10 dark:bg-teal-400/10 p-1.5 rounded-full text-teal-600 dark:text-teal-400">
-                          <GraduationCap className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <strong className="text-xs text-teal-800 dark:text-teal-400 font-bold uppercase tracking-wider block mb-0.5">Admissions</strong>
-                          <p className="text-xs text-gray-650 dark:text-teal-200/70">
-                            The admission to Ph.D. programme is conducted periodically through institutional announcements and advertisements.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="space-y-4">
-                      <h3 className="text-base font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2">
-                        Collaborative Research Centres
-                      </h3>
-                      <div className="grid grid-cols-1 gap-3 text-xs">
-                        <div className="flex items-center gap-3 bg-gray-50 dark:bg-gray-800/30 p-3 rounded-lg border border-gray-100 dark:border-gray-800">
-                          <span className="w-5 h-5 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 flex items-center justify-center font-bold">A</span>
-                          <span className="font-semibold text-gray-750 dark:text-gray-300">Centre of Robotics and Security in IoT Space</span>
-                        </div>
-                        <div className="flex items-center gap-3 bg-gray-50 dark:bg-gray-800/30 p-3 rounded-lg border border-gray-100 dark:border-gray-800">
-                          <span className="w-5 h-5 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 flex items-center justify-center font-bold">B</span>
-                          <span className="font-semibold text-gray-750 dark:text-gray-300">Centre of Indian Languages and Computational Intelligence</span>
-                        </div>
-                        <div className="flex items-center gap-3 bg-gray-50 dark:bg-gray-800/30 p-3 rounded-lg border border-gray-100 dark:border-gray-800">
-                          <span className="w-5 h-5 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 flex items-center justify-center font-bold">C</span>
-                          <span className="font-semibold text-gray-750 dark:text-gray-300">Centre of VLSI and Nanotechnology</span>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-            </div>
-          </div>
-
-          {/* Column 3: HOD Welcome Message Card (Permanent) */}
-          <div className="lg:col-span-3">
-            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-5 shadow-sm space-y-6 lg:sticky lg:top-44 self-start w-full max-h-[85vh] overflow-y-auto no-scrollbar">
-
-              <div className="text-center pb-4 border-b border-gray-100 dark:border-gray-850">
+      case "hod":
+        return (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
+              HOD Message
+            </h2>
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="w-full md:w-56 shrink-0 bg-slate-50 dark:bg-gray-850 border border-gray-100 dark:border-gray-800 rounded-2xl p-4 text-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white dark:border-gray-750 shadow-md mx-auto mb-4 bg-gray-50 dark:bg-gray-800 relative">
                   {hodProfile.image ? (
                     <img
@@ -495,133 +314,403 @@ const CseDepartmentPage = () => {
                 <p className="text-[11px] text-brand-red font-bold uppercase tracking-wide">
                   Head of Department (CSE)
                 </p>
-                <p className="text-[10px] text-gray-400 dark:text-gray-500 font-medium">
+                <p className="text-[10px] text-gray-450 dark:text-gray-500 font-medium">
                   {hodProfile.education || "Ph.D., M.Tech., B.Tech."}
                 </p>
-              </div>
-
-              <div className="space-y-4">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-primary dark:text-accent font-serif mb-2 border-l-2 border-brand-red pl-2">
-                  HOD Message
-                </h4>
-
-                <div className="text-xs text-gray-650 dark:text-gray-350 leading-relaxed space-y-3 text-justify">
-                  <p>
-                    The Department of Computer Science and Engineering serves as a hub for innovation,
-                    computing excellence, and technological advancement at IIIT Pune. Our academic programmes
-                    are designed with a strong emphasis on focusing on fundamentals while integrating experiential
-                    learning, project-based learning, and hands-on exposure to contemporary technologies.
-                  </p>
-                  <p>
-                    The department actively promotes collaborative research and industry engagement, providing
-                    opportunities for internships, technical mentoring, and participation in real-world problem-solving
-                    initiatives.
-                  </p>
-                </div>
-              </div>
-
-              <div className="pt-4 border-t border-gray-100 dark:border-gray-850 space-y-2">
-                <div className="flex items-center gap-2 text-xs text-gray-700 dark:text-gray-300">
-                  <Mail className="w-4 h-4 text-primary shrink-0" />
-                  <a href={`mailto:${hodProfile.email}`} className="hover:text-brand-red transition-colors truncate">
-                    {hodProfile.email}
-                  </a>
-                </div>
-                {hodProfile.phone && (
-                  <div className="flex items-start gap-2 text-xs text-gray-700 dark:text-gray-300">
-                    <Phone className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                    <span className="leading-tight">
-                      {hodProfile.phone}
-                    </span>
+                
+                <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800 text-left space-y-2 text-xs text-gray-700 dark:text-gray-300">
+                  <div className="flex items-center gap-2">
+                    <Mail className="w-3.5 h-3.5 text-primary shrink-0" />
+                    <a href={`mailto:${hodProfile.email}`} className="hover:text-brand-red transition-colors truncate">
+                      {hodProfile.email}
+                    </a>
                   </div>
-                )}
+                  {hodProfile.phone && (
+                    <div className="flex items-start gap-2">
+                      <Phone className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                      <span className="leading-tight">{hodProfile.phone}</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-650 dark:text-gray-350 leading-relaxed text-justify text-sm sm:text-base">
+                <p>
+                  The Department of Computer Science and Engineering serves as a hub for innovation,
+                  computing excellence, and technological advancement at IIIT Pune. Our academic programmes
+                  are designed with a strong emphasis on focusing on fundamentals while integrating experiential
+                  learning, project-based learning, and hands-on exposure to contemporary technologies.
+                </p>
+                <p>
+                  The department actively promotes collaborative research and industry engagement, providing
+                  opportunities for internships, technical mentoring, and participation in real-world problem-solving
+                  initiatives. We welcome you to explore our department, connect with our faculty, and engage in our academic and research activities.
+                </p>
                 <div className="pt-2">
                   <Link
                     to={`/people/faculty/${hodProfile.slug}`}
-                    className="w-full inline-flex items-center justify-center px-4 py-2 bg-primary hover:bg-primary-dark text-white rounded-xl text-xs font-bold transition-all shadow-xs"
+                    className="inline-flex items-center px-4 py-2 bg-primary hover:bg-primary-dark text-white rounded-xl text-xs font-bold transition-all shadow-xs"
                   >
                     View HOD Profile <ExternalLink className="w-3.5 h-3.5 ml-1.5" />
                   </Link>
                 </div>
               </div>
+            </div>
+          </div>
+        );
+
+      case "vision":
+        return (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
+              Vision
+            </h2>
+            <div className="bg-gradient-to-br from-blue-50/40 to-indigo-50/20 dark:from-gray-850 dark:to-gray-800 rounded-2xl border border-gray-100 dark:border-gray-800 p-8 md:p-12 relative overflow-hidden">
+              <span className="absolute -top-6 left-4 text-8xl font-serif text-primary/10 dark:text-blue-400/10 pointer-events-none">&ldquo;</span>
+              <p className="text-gray-750 dark:text-gray-250 text-base md:text-lg leading-relaxed text-justify italic font-medium relative z-10">
+                To be a premier center of excellence in Computer Science and Engineering education and research, fostering innovation and developing ethical, globally competent professionals to address societal challenges.
+              </p>
+            </div>
+          </div>
+        );
+
+      case "mission":
+        return (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
+              Mission
+            </h2>
+            <div className="grid grid-cols-1 gap-6">
+              {[
+                { number: "01", text: "To impart high-quality education through a modern curriculum and hands-on learning in Computer Science and Engineering." },
+                { number: "02", text: "To encourage research and innovation in cutting-edge computing technologies (AI, ML, Cyber Security, Cloud Computing)." },
+                { number: "03", text: "To promote industry collaboration, internships, and entrepreneurship among students." },
+                { number: "04", text: "To instill ethical values, leadership qualities, and social responsibility in future IT leaders." }
+              ].map((m) => (
+                <div key={m.number} className="flex gap-4 items-start bg-slate-50 dark:bg-gray-855 p-5 rounded-xl border border-gray-100 dark:border-gray-800">
+                  <span className="text-lg font-bold text-accent dark:text-accent-dark font-mono leading-none mt-0.5">
+                    {m.number}.
+                  </span>
+                  <p className="text-gray-650 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+                    {m.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+
+      case "courses":
+        return (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
+              Degree Programs &amp; Courses
+            </h2>
+
+            {/* Sub-tabs for Course selection */}
+            <div className="flex gap-2 border-b border-gray-100 dark:border-gray-800 pb-4">
+              {[
+                { id: "btech", label: "B.Tech. Program" },
+                { id: "mtech", label: "M.Tech. Program" },
+                { id: "phd", label: "Ph.D. Program" }
+              ].map((p) => (
+                <button
+                  key={p.id}
+                  onClick={() => setActiveProgram(p.id)}
+                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-200 ${
+                    activeProgram === p.id
+                      ? "bg-primary text-white shadow-xs"
+                      : "bg-gray-50 dark:bg-gray-850 text-gray-650 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  }`}
+                >
+                  {p.label}
+                </button>
+              ))}
+            </div>
+
+            {activeProgram === "btech" && (
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
+                    <Clock className="w-5 h-5 text-primary" />
+                    <div>
+                      <p className="text-[10px] text-gray-450 dark:text-gray-550 font-bold uppercase tracking-wider">Duration</p>
+                      <p className="font-bold text-sm text-gray-850 dark:text-gray-250">4 Years (8 Semesters)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
+                    <Users className="w-5 h-5 text-primary" />
+                    <div>
+                      <p className="text-[10px] text-gray-450 dark:text-gray-550 font-bold uppercase tracking-wider">Intake</p>
+                      <p className="font-bold text-sm text-gray-855 dark:text-gray-250">180 Students (B.Tech CSE)</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2">
+                    Curriculum &amp; Course Syllabus
+                  </h3>
+                  {renderCurriculumTable(btechCurriculum, activeBtechSemester, setActiveBtechSemester, 8)}
+                </div>
+              </div>
+            )}
+
+            {activeProgram === "mtech" && (
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
+                    <Clock className="w-5 h-5 text-primary" />
+                    <div>
+                      <p className="text-[10px] text-gray-450 dark:text-gray-550 font-bold uppercase tracking-wider">Duration</p>
+                      <p className="font-bold text-sm text-gray-855 dark:text-gray-250">2 Years (4 Semesters)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
+                    <Users className="w-5 h-5 text-primary" />
+                    <div>
+                      <p className="text-[10px] text-gray-450 dark:text-gray-550 font-bold uppercase tracking-wider">Intake</p>
+                      <p className="font-bold text-sm text-gray-855 dark:text-gray-250">36 Students</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
+                    <Award className="w-5 h-5 text-primary" />
+                    <div>
+                      <p className="text-[10px] text-gray-450 dark:text-gray-550 font-bold uppercase tracking-wider">Specialization</p>
+                      <p className="font-bold text-sm text-gray-855 dark:text-gray-250">Artificial Intelligence</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4 bg-gray-50 dark:bg-gray-800/35 border border-gray-150 dark:border-gray-800 rounded-xl space-y-2">
+                  <strong className="text-xs text-primary dark:text-accent font-bold uppercase tracking-wider">Admissions Path</strong>
+                  <ul className="list-disc list-inside text-xs text-gray-650 dark:text-gray-450 space-y-1 pl-1">
+                    <li>GATE Mode: Through Centralized Counseling for M.Tech./M.Arch./M.Plan. (CCMT)</li>
+                    <li>Non-GATE Mode: Written test followed by research assessment interview at IIIT Pune</li>
+                  </ul>
+                </div>
+                <div className="space-y-4">
+                  <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2">
+                    Curriculum &amp; Course Syllabus
+                  </h3>
+                  {renderCurriculumTable(mtechCurriculum, activeMtechSemester, setActiveMtechSemester, 4)}
+                </div>
+              </div>
+            )}
+
+            {activeProgram === "phd" && (
+              <div className="space-y-6">
+                <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
+                  The Doctor of Philosophy (Ph.D.) Programme is aimed at assisting students in acquiring proficiency in their chosen area of research. The academic Programme leading to the Ph.D. degree is broad-based and involves a course credit requirement and a research thesis submission.
+                </p>
+                <div className="bg-teal-50/20 dark:bg-teal-900/10 border border-teal-100 dark:border-teal-900/30 p-4 rounded-xl flex items-start gap-3">
+                  <div className="bg-teal-500/10 dark:bg-teal-400/10 p-1.5 rounded-full text-teal-600 dark:text-teal-400">
+                    <GraduationCap className="w-5 h-5 shrink-0" />
+                  </div>
+                  <div>
+                    <strong className="text-xs text-teal-800 dark:text-teal-450 font-bold uppercase tracking-wider block mb-0.5">Admissions</strong>
+                    <p className="text-xs text-gray-650 dark:text-teal-200/70">
+                      The admission to Ph.D. programme is conducted periodically through institutional announcements and advertisements.
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <h3 className="text-base font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2">
+                    Collaborative Research Centres
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="flex items-center gap-3 bg-gray-50 dark:bg-gray-855 p-4 rounded-xl border border-gray-100 dark:border-gray-800">
+                      <span className="w-6 h-6 shrink-0 rounded-full bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-400 flex items-center justify-center font-bold text-xs">1</span>
+                      <span className="font-semibold text-xs text-gray-750 dark:text-gray-300">Centre of Robotics and Security in IoT Space</span>
+                    </div>
+                    <div className="flex items-center gap-3 bg-gray-50 dark:bg-gray-855 p-4 rounded-xl border border-gray-100 dark:border-gray-800">
+                      <span className="w-6 h-6 shrink-0 rounded-full bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-400 flex items-center justify-center font-bold text-xs">2</span>
+                      <span className="font-semibold text-xs text-gray-750 dark:text-gray-300">Centre of Indian Languages and Computational Intelligence</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+
+      case "people":
+        return (
+          <div className="space-y-6">
+            <div>
+              <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-2">
+                Department Faculty &amp; Staff
+              </h2>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                Meet our distinguished team of professors, researchers, and instructors in Computer Science and Engineering.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {cseFaculty.map((faculty) => (
+                <Link
+                  to={`/people/faculty/${faculty.slug}`}
+                  key={faculty.slug}
+                  className="group bg-white dark:bg-surface-dark rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full relative"
+                >
+                  <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-blue-50/50 to-transparent dark:from-gray-855/50 pointer-events-none"></div>
+
+                  <div className="w-24 h-24 mx-auto mt-6 bg-gray-100 dark:bg-gray-800 relative z-10 overflow-hidden rounded-full shadow-xs border-4 border-white dark:border-gray-800 shrink-0">
+                    {faculty.image ? (
+                      <img
+                        src={faculty.image}
+                        alt={faculty.name}
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(faculty.name)}&background=1B3A6B&color=fff&size=512`;
+                        }}
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-3xl text-primary font-serif font-bold bg-blue-50 dark:bg-gray-800">
+                        {faculty.name.charAt(0)}
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="p-4 flex-grow flex flex-col items-center text-center z-10 w-full mt-1">
+                    <h3 className="text-sm font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors line-clamp-1 w-full">
+                      {faculty.name}
+                    </h3>
+                    <div className="h-8 flex items-start justify-center w-full mb-1">
+                      <p className="text-[11px] text-brand-red font-semibold leading-normal line-clamp-2">
+                        {faculty.designation.split('\n')[0]}
+                      </p>
+                    </div>
+                    <div className="w-8 h-px bg-gray-200 dark:bg-gray-800 mb-2 mt-1 shrink-0" />
+                    <div className="h-10 w-full flex items-center justify-center">
+                      <p className="text-[10px] text-gray-500 dark:text-gray-400 font-medium leading-normal line-clamp-2 w-full">
+                        {faculty.expertise || "Specialist in Computer Science"}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        );
+
+      case "labs":
+        return (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
+              Department Laboratories
+            </h2>
+          </div>
+        );
+
+      case "projects":
+        return (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
+              Projects, Patents &amp; Consultancy
+            </h2>
+          </div>
+        );
+
+      case "events":
+        return (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-extrabold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-3 mb-4">
+              Department Events &amp; News
+            </h2>
+          </div>
+        );
+
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="min-h-screen transition-colors duration-200 pb-16">
+      <PageHeader
+        title="Department of Computer Science & Engineering"
+        subtitle="Striving for computing excellence through learning, research, and innovation"
+        backgroundImage="/campus-image.jpg"
+        compact={true}
+      />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          {/* Sidebar Menu (3 Columns on Large Screens) */}
+          <div className="lg:col-span-3">
+            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-44 self-start w-full space-y-4">
+              <h3 className="text-gray-800 dark:text-white font-extrabold font-serif px-2 pb-2 border-b border-gray-100 dark:border-gray-800 text-sm tracking-wide uppercase">
+                CSE Navigation
+              </h3>
+              
+              {/* Desktop vertical sidebar */}
+              <div className="hidden lg:flex flex-col space-y-1">
+                {tabs.map((tab) => {
+                  const isActive = activeTab === tab.id;
+                  return (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left transition-all duration-200 group ${
+                        isActive
+                          ? "bg-primary text-white shadow-xs font-bold"
+                          : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-855 hover:text-primary dark:hover:text-accent"
+                      }`}
+                    >
+                      <span className="text-xs font-semibold tracking-wide flex-grow">{tab.label}</span>
+                      
+                      {/* Active indicator dot */}
+                      {isActive && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Mobile horizontal scroll bar */}
+              <div className="lg:hidden flex overflow-x-auto gap-2 pb-2 no-scrollbar">
+                {tabs.map((tab) => {
+                  const isActive = activeTab === tab.id;
+                  return (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      className={`shrink-0 flex items-center gap-2 px-4 py-2 rounded-full border text-xs font-bold transition-all duration-200 ${
+                        isActive
+                          ? "bg-primary text-white border-primary shadow-xs"
+                          : "bg-transparent text-gray-755 dark:text-gray-300 border-gray-150 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850"
+                      }`}
+                    >
+                      {tab.label}
+                    </button>
+                  );
+                })}
+              </div>
 
             </div>
           </div>
 
+          {/* Main Content Area (9 Columns on Large Screens) */}
+          <div className="lg:col-span-9">
+            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm min-h-[500px]">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeTab}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -15 }}
+                  transition={{ duration: 0.2 }}
+                  className="space-y-6"
+                >
+                  {renderTabContent()}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          </div>
+
         </div>
-
-        {/* Bottom Section: Faculty List Grid */}
-        <section className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl p-6 md:p-8 shadow-sm">
-          <div className="border-b border-gray-100 dark:border-gray-850 pb-4 mb-6">
-            <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
-              CSE Faculty Members
-            </h2>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-              Meet our team of distinguished professors, instructors, and researchers in Computer Science and Engineering.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-            {cseFaculty.map((faculty) => (
-              <Link
-                to={`/people/faculty/${faculty.slug}`}
-                key={faculty.slug}
-                className="group bg-white dark:bg-surface-dark rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full relative"
-              >
-                {/* Subtle Background Accent */}
-                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-blue-50 to-transparent dark:from-gray-800/50 pointer-events-none"></div>
-
-                <div className="w-28 h-28 mx-auto mt-6 bg-gray-100 dark:bg-gray-800 relative z-10 overflow-hidden rounded-full shadow-sm border-4 border-white dark:border-gray-800 shrink-0">
-                  {faculty.image ? (
-                    <img
-                      src={faculty.image}
-                      alt={faculty.name}
-                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(faculty.name)}&background=1B3A6B&color=fff&size=512`;
-                      }}
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-4xl text-primary font-serif font-bold bg-blue-50 dark:bg-gray-800">
-                      {faculty.name.charAt(0)}
-                    </div>
-                  )}
-                </div>
-
-                <div className="p-4 flex-grow flex flex-col items-center text-center bg-white dark:bg-surface-dark z-10 w-full mt-1">
-                  <h3 className="text-base font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors line-clamp-1 w-full">
-                    {faculty.name}
-                  </h3>
-
-                  {/* Fixed height container for designation (up to 2 lines) */}
-                  <div className="h-10 flex items-start justify-center w-full mb-1">
-                    <p className="text-xs text-brand-red font-medium whitespace-pre-line line-clamp-2">
-                      {faculty.designation.split('\n')[0]}
-                    </p>
-                  </div>
-
-                  {/* Divider */}
-                  <div className="w-8 h-px bg-gray-250 dark:bg-gray-800 mb-1.5 mt-0.5 shrink-0" />
-
-                  {/* Fixed height container for expertise */}
-                  <div className="h-12 w-full flex flex-col items-center justify-start">
-                    {faculty.expertise ? (
-                      <p className="text-[10px] text-gray-500 dark:text-gray-400 font-medium leading-normal line-clamp-2 w-full">
-                        {faculty.expertise}
-                      </p>
-                    ) : (
-                      <p className="text-[10px] text-gray-450 dark:text-gray-550 italic">
-                        Specialist in Computer Science
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
       </div>
     </div>
   );
