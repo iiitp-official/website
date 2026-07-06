@@ -211,8 +211,8 @@ const Navbar = () => {
         { name: "Building and Works Committee", path: "/administration/building-and-works-committee" },
         { name: "Senate", path: "/administration/senate" },
         { name: "Board of Studies", path: "/administration/board-of-studies" },
-        { name: "Chief Vigilance Officcer", path: "#" },
-        { name: "Associate Deans", path: "#" },
+        { name: "Chief Vigilance Officer", path: "/administration/chief-vigilance-officer" },
+        { name: "Associate Deans", path: "/administration/associate-deans" },
       ]
     },
     {
@@ -229,30 +229,42 @@ const Navbar = () => {
             { name: "Applied Sciences & Humanities (AS & H)", path: "/departments/ash" },
           ]
         },
+        // {
+        //   name: "B.Tech.",
+        //   hasDropdown: true,
+        //   subLinks: [
+        //     { name: "Computer Science and Engineering", path: "/academics/btech/cse" },
+        //     { name: "Electronics and Communication Engineering", path: "/academics/btech/ece" },
+        //     { name: "AI & DS", path: "/academics/btech/aids" },
+        //     { name: "Cybersecurity", path: "/academics/btech/cybersecurity" },
+        //     { name: "Microelectronics and VLSI", path: "/academics/btech/vlsi" },
+        //     { name: "B.Tech. Honours", path: "/academics/btech/honors" },
+        //   ]
+        // },
+        // {
+        //   name: "M.Tech.",
+        //   hasDropdown: true,
+        //   subLinks: [
+        //     { name: "Computer Science and Engineering", path: "/academics/mtech/cse" },
+        //     { name: "Electronics and Communication Engineering", path: "/academics/mtech/ece" },
+        //   ]
+        // },
+        // { name: "Ph.D.", path: "/academics/phd" },
         {
-          name: "B.Tech.",
+          name:"Academic Programs",
+          path:"#",
           hasDropdown: true,
           subLinks: [
-            { name: "Computer Science and Engineering", path: "/academics/btech/cse" },
-            { name: "Electronics and Communication Engineering", path: "/academics/btech/ece" },
-            { name: "AI & DS", path: "/academics/btech/aids" },
-            { name: "Cybersecurity", path: "/academics/btech/cybersecurity" },
-            { name: "Microelectronics and VLSI", path: "/academics/btech/vlsi" },
-            { name: "B.Tech. Honours", path: "/academics/btech/honors" },
+            { name: "UG Programs", path: "/academics/ug-programs" },
+            { name: "PG Programs", path: "/academics/pg-programs" },
+            { name: "Ph.D Programs", path: "/academics/phd-programs" },
           ]
         },
-        {
-          name: "M.Tech.",
-          hasDropdown: true,
-          subLinks: [
-            { name: "Computer Science and Engineering", path: "/academics/mtech/cse" },
-            { name: "Electronics and Communication Engineering", path: "/academics/mtech/ece" },
-          ]
-        },
-        { name: "Ph.D.", path: "/academics/phd" },
         { name: "UG and PG Schemes", path: "/academics/ug-pg-schemes" },
         { name: "Academic Calendar", path: "/academics/calendar" },
+        { name: "Examination Section", path: "/academics/examination-section"},
         { name: "Fees", path: "/fees" },
+        { name: "Time Table", path: "#" },
         {
           name: "Ordinance",
           path: "#",
@@ -289,9 +301,9 @@ const Navbar = () => {
           ]
         },
         { name: "Events", path: "/research/events" },
-        { name: "MOUs", path: "#" },
-        { name: "Patents", path: "#" },
-        { name: "Publications", path: "#" },
+        { name: "MOUs", path: "/research/mous" },
+        { name: "Patents", path: "/research/patents" },
+        { name: "Publications", path: "/research/publications" },
         // {
         //   name: "Research Scholar",
         //   hasDropdown: true,
