@@ -261,7 +261,7 @@ const EceDepartmentPage = () => {
                 About the Department
               </h2>
               <p className="text-gray-650 dark:text-gray-350 leading-relaxed text-justify text-sm sm:text-base">
-                [Content to be added]
+                The mission of the Department of Electronics and Communication Engineering is to train and empower young minds at undergraduate and postgraduate levels. The department nurtures students with outstanding abilities to become innovators and leaders. It also promotes advanced and interdisciplinary research in Electronics, Communication Engineering, and Information Technology. The department offers three programmes: B.Tech., M.Tech., and Ph.D., respectively.
               </p>
             </div>
 
@@ -339,7 +339,10 @@ const EceDepartmentPage = () => {
 
               <div className="space-y-4 text-gray-650 dark:text-gray-350 leading-relaxed text-justify text-sm sm:text-base">
                 <p>
-                  [Content to be added]
+                  At the forefront of emerging electronic and communication technologies, the department nurtures skilled engineers and innovators for the digital age. The department strives to provide a strong foundation in electronics, communication systems, semiconductor technologies, embedded systems, and emerging areas of engineering through a balanced approach to teaching, research, and innovation.
+                </p>
+                <p>
+                  We emphasize experiential learning, project-based education, and hands-on laboratory training to help students develop both theoretical understanding and practical expertise. Our mission is to prepare skilled engineers, researchers, and innovators who can contribute to technological advancement in an increasingly connected world.
                 </p>
                 <div className="pt-2">
                   <Link
@@ -363,7 +366,7 @@ const EceDepartmentPage = () => {
             <div className="bg-gradient-to-br from-blue-50/40 to-indigo-50/20 dark:from-gray-850 dark:to-gray-800 rounded-2xl border border-gray-100 dark:border-gray-800 p-8 md:p-12 relative overflow-hidden">
               <span className="absolute -top-6 left-4 text-8xl font-serif text-primary/10 dark:text-blue-400/10 pointer-events-none">&ldquo;</span>
               <p className="text-gray-750 dark:text-gray-250 text-base md:text-lg leading-relaxed text-justify italic font-medium relative z-10">
-                [Vision statement to be added]
+                To be a premier center of excellence in Electronics and Communication Engineering education and research, fostering innovation and developing ethical, globally competent professionals to address societal challenges.
               </p>
             </div>
           </div>
@@ -377,7 +380,10 @@ const EceDepartmentPage = () => {
             </h2>
             <div className="grid grid-cols-1 gap-6">
               {[
-                { number: "01", text: "[Mission statement to be added]" }
+                { number: "01", text: "To impart high-quality education through a modern curriculum and hands-on learning in Electronics and Communication Engineering." },
+                { number: "02", text: "To encourage research and innovation in cutting-edge communication technologies (VLSI, IoT, RF systems, and wireless communications)." },
+                { number: "03", text: "To promote industry collaboration, internships, and entrepreneurship among students." },
+                { number: "04", text: "To instill ethical values, leadership qualities, and social responsibility in future electronics engineers." }
               ].map((m) => (
                 <div key={m.number} className="flex gap-4 items-start bg-slate-50 dark:bg-gray-855 p-5 rounded-xl border border-gray-100 dark:border-gray-800">
                   <span className="text-lg font-bold text-accent dark:text-accent-dark font-mono leading-none mt-0.5">
