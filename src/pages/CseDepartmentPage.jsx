@@ -438,6 +438,7 @@ const CseDepartmentPage = () => {
                       <p className="font-bold text-sm text-gray-850 dark:text-gray-250">4 Years (8 Semesters)</p>
                     </div>
                   </div>
+                  {/* 
                   <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
                     <Users className="w-5 h-5 text-primary" />
                     <div>
@@ -445,12 +446,29 @@ const CseDepartmentPage = () => {
                       <p className="font-bold text-sm text-gray-855 dark:text-gray-250">180 Students (B.Tech CSE)</p>
                     </div>
                   </div>
+                  */}
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2">
-                    Curriculum &amp; Course Syllabus
+                    Degree Programs
                   </h3>
-                  {renderCurriculumTable(btechCurriculum, activeBtechSemester, setActiveBtechSemester, 8)}
+                  <ul className="list-decimal list-inside text-sm space-y-2 font-medium text-gray-750 dark:text-gray-300">
+                    <li>
+                      <Link to="/academics/ug-pg-schemes#btech-cse" className="hover:text-primary dark:hover:text-accent transition-colors">
+                        B.Tech Computer Science and Engineering
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/academics/ug-pg-schemes#btech-aids" className="hover:text-primary dark:hover:text-accent transition-colors">
+                        B.Tech Artificial Intelligence and Data Science
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/academics/ug-pg-schemes#btech-cybersecurity" className="hover:text-primary dark:hover:text-accent transition-colors">
+                        B.Tech Cybersecurity
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </div>
             )}
@@ -465,6 +483,7 @@ const CseDepartmentPage = () => {
                       <p className="font-bold text-sm text-gray-855 dark:text-gray-250">2 Years (4 Semesters)</p>
                     </div>
                   </div>
+                  {/*
                   <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
                     <Users className="w-5 h-5 text-primary" />
                     <div>
@@ -472,6 +491,7 @@ const CseDepartmentPage = () => {
                       <p className="font-bold text-sm text-gray-855 dark:text-gray-250">36 Students</p>
                     </div>
                   </div>
+                  */}
                   <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
                     <Award className="w-5 h-5 text-primary" />
                     <div>
@@ -489,9 +509,15 @@ const CseDepartmentPage = () => {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2">
-                    Curriculum &amp; Course Syllabus
+                    Degree Programs
                   </h3>
-                  {renderCurriculumTable(mtechCurriculum, activeMtechSemester, setActiveMtechSemester, 4)}
+                  <ul className="list-decimal list-inside text-sm space-y-2 font-medium text-gray-750 dark:text-gray-300">
+                    <li>
+                      <Link to="/academics/ug-pg-schemes#mtech-cse" className="hover:text-primary dark:hover:text-accent transition-colors">
+                        M.Tech Computer Science and Engineering
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </div>
             )}
