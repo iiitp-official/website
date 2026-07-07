@@ -330,6 +330,7 @@ const EceDepartmentPage = () => {
                           <p className="font-bold text-sm text-gray-800 dark:text-gray-250">4 Years (8 Semesters)</p>
                         </div>
                       </div>
+                      {/*
                       <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
                         <Users className="w-5 h-5 text-primary shrink-0" />
                         <div>
@@ -337,6 +338,7 @@ const EceDepartmentPage = () => {
                           <p className="font-bold text-sm text-gray-800 dark:text-gray-250">119 Students</p>
                         </div>
                       </div>
+                      */}
                       <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
                         <Building className="w-5 h-5 text-primary shrink-0" />
                         <div>
@@ -355,9 +357,15 @@ const EceDepartmentPage = () => {
 
                     <div>
                       <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2 mb-4">
-                        Curriculum &amp; Course Syllabus
+                        Degree Programs
                       </h3>
-                      {renderCurriculumTable(btechCurriculum, activeBtechSemester, setActiveBtechSemester, 8)}
+                      <ul className="list-decimal list-inside text-sm space-y-2 font-medium text-gray-750 dark:text-gray-300">
+                        <li>
+                          <Link to="/academics/ug-pg-schemes#btech-ece" className="hover:text-primary dark:hover:text-accent transition-colors">
+                            B.Tech Electronics and Communication Engineering
+                          </Link>
+                        </li>
+                      </ul>
                     </div>
                   </motion.div>
                 )}
@@ -385,6 +393,7 @@ const EceDepartmentPage = () => {
                           <p className="font-bold text-sm text-gray-800 dark:text-gray-250">2 Years</p>
                         </div>
                       </div>
+                      {/*
                       <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
                         <Users className="w-5 h-5 text-primary shrink-0" />
                         <div>
@@ -392,6 +401,7 @@ const EceDepartmentPage = () => {
                           <p className="font-bold text-sm text-gray-800 dark:text-gray-250">22 Students</p>
                         </div>
                       </div>
+                      */}
                       <div className="flex items-center gap-3 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-gray-800/50 dark:to-gray-800/30 p-4 rounded-xl border border-blue-50/50 dark:border-gray-800">
                         <Award className="w-5 h-5 text-primary shrink-0" />
                         <div>
@@ -403,9 +413,15 @@ const EceDepartmentPage = () => {
 
                     <div>
                       <h3 className="text-lg font-bold font-serif text-primary dark:text-white border-b border-gray-100 dark:border-gray-800 pb-2 mb-4">
-                        Curriculum &amp; Course Syllabus (67 Credits)
+                        Degree Programs
                       </h3>
-                      {renderCurriculumTable(mtechCurriculum, activeMtechSemester, setActiveMtechSemester, 4)}
+                      <ul className="list-decimal list-inside text-sm space-y-2 font-medium text-gray-750 dark:text-gray-300">
+                        <li>
+                          <Link to="/academics/ug-pg-schemes#mtech-ece" className="hover:text-primary dark:hover:text-accent transition-colors">
+                            M.Tech Electronics and Communication Engineering
+                          </Link>
+                        </li>
+                      </ul>
                     </div>
                   </motion.div>
                 )}

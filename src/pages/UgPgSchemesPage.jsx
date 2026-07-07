@@ -1,5 +1,5 @@
-import { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
+import { useState, useMemo, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import PageHeader from "../components/shared/PageHeader";
 import { Clock, Users, Mail, Phone, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -7,6 +7,18 @@ import facultyDetails from "../data/faculty_details.json";
 
 const UgPgSchemesPage = () => {
   const [activeSemester, setActiveSemester] = useState(1);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [location.hash]);
 
     /*
   Previous Data:
@@ -599,7 +611,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                   </h2>
 
           {/* Curriculum & Syllabus */}
-          <section className="w-full">
+          <section id="btech-cse" className="w-full">
             <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-8 md:p-10 overflow-hidden">
               <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
@@ -683,7 +695,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
               </div>
             </div>
           </section>
-          <section className="w-full">
+          <section id="btech-aids" className="w-full">
             <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-8 md:p-10 overflow-hidden">
               <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
@@ -769,7 +781,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
           </section>
 
           {/* Cybersecurity Curriculum & Syllabus */}
-          <section className="w-full">
+          <section id="btech-cybersecurity" className="w-full">
             <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-8 md:p-10 overflow-hidden">
               <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
@@ -855,7 +867,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
           </section>
 
           {/* ECE Curriculum & Syllabus */}
-          <section className="mt-12 w-full">
+          <section id="btech-ece" className="mt-12 w-full">
             <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-8 md:p-10 overflow-hidden">
               <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
@@ -940,7 +952,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
               </div>
             </div>
           </section>
-          <section className="mt-12 w-full">
+          <section id="mtech-cse" className="mt-12 w-full">
                     <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                       <div>
                          <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
@@ -1040,7 +1052,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                       </div>
                     </div>
                   </section>
-                  <section className="mt-12 w-full">
+                  <section id="mtech-ece" className="mt-12 w-full">
                     <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                       <div>
                          <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
