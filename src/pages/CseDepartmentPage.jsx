@@ -598,17 +598,17 @@ const CseDepartmentPage = () => {
                   </div>
 
                   <div className="p-4 flex-grow flex flex-col items-center text-center z-10 w-full mt-1">
-                    <h3 className="text-sm font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors line-clamp-1 w-full">
+                    <h3 className="text-base font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors line-clamp-1 w-full">
                       {faculty.name}
                     </h3>
                     <div className="h-8 flex items-start justify-center w-full mb-1">
-                      <p className="text-[11px] text-brand-red font-semibold leading-normal line-clamp-2">
+                      <p className="text-xs text-brand-red font-semibold leading-normal line-clamp-2">
                         {faculty.designation.split('\n')[0]}
                       </p>
                     </div>
                     <div className="w-8 h-px bg-gray-200 dark:bg-gray-800 mb-2 mt-1 shrink-0" />
                     <div className="h-10 w-full flex items-center justify-center">
-                      <p className="text-[10px] text-gray-500 dark:text-gray-400 font-medium leading-normal line-clamp-2 w-full">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 font-medium leading-normal line-clamp-2 w-full">
                         {faculty.expertise || "Specialist in Computer Science"}
                       </p>
                     </div>
@@ -684,7 +684,7 @@ const CseDepartmentPage = () => {
                           : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-855 hover:text-primary dark:hover:text-accent"
                       }`}
                     >
-                      <span className="text-xs font-semibold tracking-wide flex-grow">{tab.label}</span>
+                      <span className="text-sm font-semibold tracking-wide flex-grow">{tab.label}</span>
                       
                       {/* Active indicator dot */}
                       {isActive && (
@@ -703,7 +703,7 @@ const CseDepartmentPage = () => {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`shrink-0 flex items-center gap-2 px-4 py-2 rounded-full border text-xs font-bold transition-all duration-200 ${
+                      className={`shrink-0 flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-bold transition-all duration-200 ${
                         isActive
                           ? "bg-primary text-white border-primary shadow-xs"
                           : "bg-transparent text-gray-755 dark:text-gray-300 border-gray-150 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-850"
