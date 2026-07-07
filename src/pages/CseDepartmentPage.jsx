@@ -295,6 +295,8 @@ const CseDepartmentPage = () => {
                     <img
                       src={hodProfile.image}
                       alt={hodProfile.name}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover object-top"
                       onError={(e) => {
                         e.target.onerror = null;
@@ -584,6 +586,8 @@ const CseDepartmentPage = () => {
                       <img
                         src={faculty.image}
                         alt={faculty.name}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                         onError={(e) => {
                           e.target.onerror = null;

@@ -68,6 +68,7 @@ const VisitingFacultyPage = () => {
                       src={person.image} 
                       alt={person.name} 
                       loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       onError={(e) => {
                         e.target.onerror = null;
