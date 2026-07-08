@@ -1488,6 +1488,11 @@
     "education": "Ph.D. (CSE), M.Tech. (CSE)",
     "publications": [
       {
+        "title": "Privacy-preserving federated analytics for digital marketing using adaptive weighted aggregation",
+        "authors": "Haripriya, Rahul, Nilay Khare, Manish Pandey, Gurleen Kaur Bhatia, Ruchi Nandurkar, Meghavi Hada, Sreemoyee Biswas, Jaytrilok Choudhary, Dhirendra Pratap Singh, and Sumit Gupta.",
+        "journal": "Cluster Computing 29, no. 6 (2026): 380. (Published in SCIE(Q1))"
+      },
+      {
         "title": "Delving deep: DDoS attack resilience through deep learning approaches",
         "authors": "Likhar, P., Gupta, S. K., Choudhary, J., & Singh, D. P.",
         "journal": "Knowledge and Information Systems, 68(1), 19. (Published in SCIE(Q1)) (2026)"
@@ -1536,6 +1541,15 @@
     ],
     "resume": "/assets/resume/sumitgupta_resume.pdf",
     "patents": [
+      {
+        "title": "Indian Patent (Published), Patent No.: 202621034175, Title: Wearable Device for Environmental Sensing-Based Detection of Airborne Infection Risk, Publication & Grant Date: 15 May 2026"
+      },
+      {
+        "title": "Indian Patent (Published), Patent No.: 202521132064, Title: IOT-BASED AUTOMATED STUDENT ATTENDANCE SYSTEM USING BLE BEACONS AND FACIAL RECOGNITION, Publication & Grant Date: 06 February 2026"
+      },
+      {
+        "title": "Indian Design Patent (Published), Patent No.: 488573-001, Title: Computing Device for Android Security Threat Detection, Publication & Grant Date: 27 January 2026"
+      },
       {
         "title": "Australian Patent (Granted), Patent No.: 2021104850, Title: IoT-based system and method for monitoring traffic and controlling traffic signals using machine learning, Publication & Grant Date: 02 June 2022"
       }
