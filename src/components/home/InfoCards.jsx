@@ -69,6 +69,12 @@ const studentAchievements = [
 
 const facultyAchievements = [
   {
+    category: "Recognition",
+    title: "Stanford Top 2% Scientist",
+    description: "Dr. Divya Chaturvedi recognized among the Top 2% Scientists worldwide by Stanford University for three consecutive years (2023-2025).",
+    detail: "Prestigious recognition based on her global impact, 38+ journal articles, 1,320+ citations, h-index of 22, and i10-index of 32."
+  },
+  {
     category: "Research",
     title: "MeitY Research Grant (₹1.93 Cr)",
     description: "Dr. Bhupendra Singh & Dr. Sanjeev Sharma awarded 1.93 Crore for Next Generation Data Carving & Storage Drive Forensics.",

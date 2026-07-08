@@ -368,6 +368,12 @@ const bookChapters = [
   }
 ];
 
+const recognitions = [
+  {
+    text: "Dr. Divya Chaturvedi has been recognized among the Top 2% Scientists worldwide in the annual list published by Stanford University for three consecutive years (2023, 2024, and 2025). This prestigious recognition is based on the global impact of a researcher's scientific publications and citation metrics. Dr. Chaturvedi has authored more than 38 journal articles in IEEE and SCI-indexed journals, along with 25 papers presented at reputed international and Indian flagship conferences. Her research contributions have received over 1,320 citations, with a h-index of 22 and an i10-index of 32, reflecting the significant impact and quality of her scholarly work."
+  }
+];
+
 const FacultyAchievementsPage = () => {
   const [pubQuery, setPubQuery] = useState('');
 
@@ -383,6 +389,22 @@ const FacultyAchievementsPage = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
         
+        {/* Awards & Recognitions */}
+        <section id="recognitions" className="scroll-mt-24">
+          <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-150 dark:border-gray-800 p-6 md:p-10 space-y-6">
+            <h2 className="text-3xl font-bold font-serif text-primary dark:text-white leading-tight">
+              Awards & Recognitions
+            </h2>
+            <div className="grid grid-cols-1 gap-6">
+              {recognitions.map((rec, index) => (
+                <div key={index} className="p-6 bg-gray-50 dark:bg-gray-800/30 rounded-xl border border-gray-150 dark:border-gray-800 text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed flex items-start shadow-sm">
+                  <p className="text-justify">{rec.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Section 1: Research Projects & Grants */}
         <section id="grants" className="scroll-mt-24">
           <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-150 dark:border-gray-800 overflow-hidden mb-12">
