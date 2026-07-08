@@ -11,9 +11,9 @@ const SenatePage = () => {
     { srNo: 5, name: "Prof. Ravi Prakash Tewari", affiliation: "Professor, MNNIT Allahabad", designation: "Member" },
     { srNo: 6, name: "Prof. Avinash G. Keskar", affiliation: "Professor, VNIT Nagpur", designation: "Member" },
     { srNo: 7, name: "Prof. Aparajita Ojha", affiliation: "Professor, PDPM-IIITDM Jabalpur", designation: "Member" },
-    { srNo: 8, name: "Dr. Nagendra Kushwaha", affiliation: "HoD (ECE), IIIT Pune", designation: "Member" },
-    { srNo: 9, name: "Dr. Sanjeev Sharma", affiliation: "Associate Dean, IIIT Pune", designation: "Member" },
-    { srNo: 10, name: "Dr. Bhupendra Singh", affiliation: "HoD (CSE), IIIT Pune", designation: "Member" },
+    { srNo: 8, name: "Dr. Sanjeev Sharma", affiliation: "Associate Dean, IIIT Pune", designation: "Member" },
+    { srNo: 9, name: "Dr. Bhupendra Singh", affiliation: "HoD (CSE), IIIT Pune", designation: "Member" },
+    { srNo: 10, name: "Dr. Nagendra Kushwaha", affiliation: "HoD (ECE), IIIT Pune", designation: "Member" },
     { srNo: 11, name: "Dr. Jatin Majithia", affiliation: "HoD (AS&H), IIIT Pune", designation: "Member" },
     { srNo: 12, name: "Dr. Nagendra Kushwaha", affiliation: "Registrar(I/C), IIIT Pune", designation: "Secretary" },
   ];
