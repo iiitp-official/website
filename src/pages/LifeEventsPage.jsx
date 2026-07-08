@@ -63,6 +63,17 @@ const LifeEventsPage = () => {
                             <ExternalLink size={12} />
                           </a>
                         )}
+                        {evt.reportUrl && (
+                          <a
+                            href={evt.reportUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 bg-teal-200 text-teal-800 dark:bg-teal-900/30 dark:text-teal-400 text-xs font-semibold rounded-full border border-teal-100 dark:border-teal-800 hover:bg-teal-100 dark:hover:bg-teal-900/50 transition-colors"
+                          >
+                            View Report
+                            <ExternalLink size={12} />
+                          </a>
+                        )}
                       </div>
                       <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
                         {evt.desc}

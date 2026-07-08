@@ -1018,6 +1018,25 @@
   ],
   "EVENTS": [
     {
+      "name": "Workshop on \"IIIT Pune's Vision\" (04 June 2026)",
+      "type": "Interactive Workshop",
+      "typeColor": "bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300",
+      "desc": "A day-long workshop on \"IIIT Pune's Vision\" was organized on 4th June 2026, featuring Padma Shri Prof. Dr. Sanjay Govind Dhande, an internationally acclaimed technologist, researcher, and institution builder.\n\nProf. Dhande's day-long engagement covered a rich agenda. He met one-on-one with the Director, Dr. Vineet Kansal, to review academic and administrative progress, followed by a focused interaction with Heads of Departments and Associate Deans on curriculum, research, faculty growth, and the transition road to the permanent campus at Nanoli, Talegaon Dabhade, Maval, Pune.\n\nHe delivered a special lecture titled 'Vision for IIIT Pune', attended by 60+ faculty and staff, addressing the imperative to forge a bold, differentiated identity, the centrality of research, innovation, and entrepreneurship, lessons from IIT Kanpur's transformation, and the role of faculty. He also toured academic blocks and laboratories, offering observations on infrastructure priorities ahead of the permanent campus transition.\n\nThis engagement contributes to the institute's commitment towards SDG 4 (Quality Education) by fostering visionary academic leadership and institutional development, with secondary alignment to SDG 9 (Industry, Innovation and Infrastructure) and SDG 17 (Partnerships for the Goals).",
+      "images": [
+        "/assets/lifepage/vision_workshop1.png",
+        "/assets/lifepage/vision_workshop2.jpg",
+        "/assets/lifepage/vision_workshop3.jpg",
+        "/assets/lifepage/vision_workshop4.jpg",
+        "/assets/lifepage/vision_workshop5.jpg"
+      ],
+      "highlights": [
+        "Keynote by Padma Shri Prof. Dr. Sanjay Govind Dhande",
+        "Strategic Roadmapping for the Nanoli Permanent Campus",
+        "Special Lecture 'Vision for IIIT Pune' for 60+ Faculty & Staff",
+        "Laboratory Tours & Individualized Research Dialogue"
+      ]
+    },
+    {
       "name": "Faculty Development Program on AI-Driven Adaptive Optical and Wireless Communication Systems (05–12 June 2026)",
       "type": "Faculty Development Program",
       "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
