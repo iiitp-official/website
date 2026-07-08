@@ -271,8 +271,8 @@ const Navbar = () => {
           hasDropdown: true,
           subLinks: [
             { name: "B.Tech.", path: "#" },
-            { name: "M.Tech.", path: "documents/MTech_Ordinances_Updated_till_11th_Senate.docx.pdf", isExternal: true },
-            { name: "Ph.D.", path: "documents/IIIT Pune_PhD Ordinances and Regulations_updatedd_260622_192254.pdf", isExternal: true }
+            { name: "M.Tech.", path: "/documents/MTech_Ordinances_Updated_till_11th_Senate.docx.pdf", isExternal: true },
+            { name: "Ph.D.", path: "/documents/IIIT Pune_PhD Ordinances and Regulations_updatedd_260622_192254.pdf", isExternal: true }
           ]
         },
         {
