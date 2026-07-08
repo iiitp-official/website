@@ -81,36 +81,17 @@ const ChiefVigilanceOfficerPage = () => {
 
                 <div className="space-y-4 text-gray-650 dark:text-gray-350 text-sm sm:text-base leading-relaxed text-justify">
                   <p>
-                    The Office of Vigilance at the Indian Institute of Information Technology, Pune (IIIT Pune) works towards ensuring transparency, objectivity, and accountability in all administrative, financial, and academic functions.
-                  </p>
-                  
-                  <h3 className="text-lg font-bold font-serif text-gray-900 dark:text-white mt-6 mb-2">
-                    Role of the Chief Vigilance Officer
-                  </h3>
-                  <p>
-                    The Chief Vigilance Officers function as extended arms of the Central Vigilance Commission (CVC). The Chief Vigilance Officer is appointed to advise the Director and administrative heads of the Institute in all vigilance matters.
+                    The Chief Vigilance Officers are extended arms of the CVC. The Chief Vigilance Officers are considerably higher level officers who are appointed in each and every Department/Organisation to advice the Head of the Department/Organisation in all vigilance matters.
                   </p>
                   <p>
-                    While the Central Vigilance Commission's direct jurisdiction is confined to Group 'A' officers and above, there is no such restriction on the CVO's role within the Institute. The CVO plays a crucial role in maintaining effective vigilance administration and represents the principles of the Commission locally.
+                    The Chief Vigilance Officer has an important role in effective vigilance administration and functions as an representative of the Commission. While the Commission's jurisdiction is confined to Group 'A' officers and other officials, of and above the level notified, and the Commission's advice is only to the Disciplinary Authority, there is no such restriction on the CVOs role.
                   </p>
-
-                  <h3 className="text-lg font-bold font-serif text-gray-900 dark:text-white mt-6 mb-2">
-                    Key Functions & Guidelines
-                  </h3>
-                  <ul className="list-disc pl-5 space-y-2 mt-2">
-                    <li>
-                      <strong>Consultation:</strong> The CVO is consulted by the Disciplinary Authority / Appellate Authority in administrative matters and misconduct inquiries, irrespective of the level of officers involved.
-                    </li>
-                    <li>
-                      <strong>Review Mechanism:</strong> Wherever the Appellate Authority disagrees with advice accepted by the Disciplinary Authority, the CVO is responsible for scrutinizing the matter carefully to present it to review authorities.
-                    </li>
-                    <li>
-                      <strong>Preventive Vigilance:</strong> The CVO is consulted by the Institute's management in formulating policies to ensure necessary checks and balances are built into administrative procedures.
-                    </li>
-                    <li>
-                      <strong>Objectivity & Independence:</strong> To ensure complete impartiality, the CVO does not participate in direct decision-making in individual cases involving financial implications, works, or procurement.
-                    </li>
-                  </ul>
+                  <p>
+                    The CVOs are required to be consulted by the Disciplinary Authority/Appellate Authority, irrespective of the level of officers involved. Wherever the Appellate Authority has disagreed with the Commission's advice, which was accepted by the Disciplinary Authority, the CVOs should scrutinize the matter carefully to take up the matter with the reviewing authority and also report such cases to the Commission. In respect of officials not under the jurisdiction of the Commission, where the Disciplinary Authority has disagreed with the CVO's advice, such cases should be specifically brought to the notice of the Board.
+                  </p>
+                  <p>
+                    While CVOs may be consulted by the management in formulating a policy, to provide for necessary checks and balances as a preventive vigilance measure, they should not get involved in decisions in individual cases like works/procurement, etc, having financial implications.
+                  </p>
                 </div>
               </section>
             )}
@@ -308,7 +289,7 @@ const ChiefVigilanceOfficerPage = () => {
                       </div>
                     </a>
 
-                    <Link 
+                    {/* <Link 
                       to="/suo-motu"
                       className="flex items-start gap-4 p-5 rounded-2xl border border-gray-150 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/20 hover:border-accent hover:shadow-xs transition-all group"
                     >
@@ -340,7 +321,7 @@ const ChiefVigilanceOfficerPage = () => {
                           Check officers and links regarding Right to Information (RTI) at IIIT Pune.
                         </p>
                       </div>
-                    </Link>
+                    </Link> */}
 
                   </div>
                 </div>
