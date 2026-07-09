@@ -284,7 +284,7 @@ const InfoCards = () => {
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed text-justify mb-4 flex-grow line-clamp-4">
                 "Welcome to the Indian Institute of Information Technology Pune (IIIT Pune), an Institute of National Importance. As a part of the prestigious IIIT ecosystem established by the Government of India, IIITs have played a significant role in developing highly skilled professionals, researchers, and innovators in Information Technology. Building on this legacy, IIIT Pune is committed to excellence in education, research, innovation, and entrepreneurship while fostering a culture of academic rigor, creativity, and lifelong learning."
               </p>
-              <Link to="/about/director-desk" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors mt-auto">
+              <Link to="/administration/director" className="text-brand-red dark:text-brand-red-dark font-semibold text-sm flex items-center hover:underline group-hover:text-red-700 dark:group-hover:text-red-400 transition-colors mt-auto">
                 Read Director's Message <ChevronRight size={16} className="ml-1" />
               </Link>
             </div>
