@@ -274,7 +274,7 @@ const Navbar = () => {
         { name: "Academic Calendar", path: "/academics/calendar" },
         { name: "Examination Section", path: "/academics/examination-section"},
         { name: "Fees", path: "/fees" },
-        { name: "Time Table", path: "#" },
+        { name: "Time Table", path: "/timetable/Examination schedule- Re-and-Backlog Examination July-Aug 2026.pdf", isExternal: true },
         {
           name: "Ordinance",
           path: "#",
