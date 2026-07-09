@@ -202,7 +202,7 @@ const Navbar = () => {
           ],
         },
         { name: "Vision & Mission", path: "/about/vision-mission" },
-        { name: "Director Desk", path: "/about/director-desk" },
+        // { name: "Director Desk", path: "/about/director-desk" },
         { name: "Student Achievements", path: "/about/student-achievements" },
         { name: "Faculty Achievements", path: "/about/faculty-achievements" },
         { name: "ARIIA Ranking", path: "/documents/ARI-U-0804-1-3.pdf", isExternal: true },
