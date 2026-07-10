@@ -55,6 +55,38 @@ const AdmissionsPage = () => {
           {/* Main Container */}
           <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 p-6 md:p-8">
             
+            {/* Registration Instructions Section */}
+            <div className="mb-10">
+              <h2 className="text-2xl font-bold font-serif text-primary dark:text-white mb-6 border-b border-gray-100 dark:border-gray-800 pb-4">
+                Registration Instructions
+              </h2>
+              <div className="space-y-4">
+                {[
+                  {
+                    title: "Odd Sem Registration Instruction for Btech and Mtech",
+                    link: "/documents/Odd Sem Registration Instruction for Btech and Mtech (3).pdf"
+                  },
+                  {
+                    title: "Odd Sem Registration Instruction for PhD 2026-27",
+                    link: "/documents/Odd Sem Registration Instruction for PhD 2026-27 (1).pdf"
+                  }
+                ].map((item, idx) => (
+                  <a 
+                    key={idx}
+                    href={item.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-4 rounded-xl border border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-800/30 hover:border-primary hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-200 group"
+                  >
+                    <span className="font-semibold text-gray-800 dark:text-gray-200 group-hover:text-primary dark:group-hover:text-blue-400 transition-colors">
+                      {item.title}
+                    </span>
+                    <ExternalLink size={18} className="text-gray-400 group-hover:text-primary dark:group-hover:text-blue-400 transition-colors" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
             {/* Special Programs Section */}
             <div className="space-y-8 mb-10">
               {specialPrograms.map((prog, idx) => (
