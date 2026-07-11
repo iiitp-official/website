@@ -2,22 +2,7 @@ import { useEffect } from 'react';
 import { ExternalLink } from 'lucide-react';
 import LifePageLayout from '../components/life/LifePageLayout';
 
-const pressArticles = [
-  {
-    date: "6th June 2026",
-    title: "IIIT Pune Hosts First Alumni Meet, Showcases Growth in Research, Placements and Infrastructure",
-    desc: "The Indian Institute of Information Technology Pune (IIIT Pune), an Institute of National Importance established by the Government of India under the Ministry of Education, successfully organised its First Alumni Meet – Pune Chapter at its campus in Nanoli Tarf Chakan, Talegaon, Maval, on Saturday.",
-    link: "https://www.punekarnews.in/iiit-pune-hosts-first-alumni-meet-showcases-growth-in-research-placements-and-infrastructure/",
-    publisher: "Punekar News"
-  },
-  {
-    date: "26th August 2025",
-    title: "IIIT Pune and NIT Raipur professors to be part of Rs4cr centrally-funded project to build next-gen digital forensic tools",
-    desc: "Pune: Professors from the Indian Institute of Information Technology (IIIT) Pune, along with the National Institute of Technology (NIT) Raipur, will be part of a Rs4.2 crore project commissioned by the cyber security division of the Union Ministry of Electronics and Information Technology (MeitY) to develop next-generation digital forensics tools over the next two years.",
-    link: "http://timesofindia.indiatimes.com/articleshow/123511899.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst",
-    publisher: "The Times of India"
-  }
-];
+import pressArticles from '../data/press.json';
 
 const LifePressPage = () => {
   useEffect(() => {
