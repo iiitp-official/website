@@ -1029,7 +1029,7 @@
   "sonam-maurya": {
     "designation": "Assistant Professor",
     "image": "/assets/faculty_photos/sonammaurya.jpg",
-    "bio": "Dr. Sonam Maurya is working as an Assistant Professor in the Department of Computer Science & Engineering, IIIT Pune. Her research area of interest includes Wireless Sensor Network (WSN), Internet of Things (IoT), Vehicular Adhoc Network (VANET), Mobile and Wireless Networks, Machine Learning, Deep Learning and Image Processing. Dr. Sonam hold Ph.D. in Computer Science & Engineering from PDPM- Indian Institute of Information Technology, Design & Manufacturing (IIITDM), Jabalpur in 2019. She completed M.Tech in Computer Science and Engineering from Madan Mohan Malviya University of Technology, Gorakhpur (2014) and did her B.Tech in Computer Science & Engineering from United Institute of Technology, Allahabad (2011). Based on her Ph.D. research, she got the opportunity to visit Japan under “JENESYS-2018 Science and Technology Exchange” program. She also received “Fellowship for Training of Young Scientist” award by M.P. Council of Science and Technology for presenting her PhD research contribution in the field of Precision Agriculture. Dr. Sonam has published 15+ research papers in various reputed SCIE Journals and International Conferences. She also published 2 Indian Patents for her contributions in the domain of IoT and 4 Indian Design Patents for designing a “Vykunthapalli” Digital Board Game. She worked on an International Collaborative Project entitled “AMICA- Activity Monitoring Healthcare Android App development” with Digiotouch Estonia.\n\nGoogle Scholar: https://scholar.google.com/citations?user=cfik2ScAAAAJ&hl\nORCID: https://orcid.org/0000-0003-3357-1398",
+    "bio": "Dr. Sonam Maurya is working as an Assistant Professor in the Department of Computer Science & Engineering, IIIT Pune. Her research area of interest includes Wireless Sensor Network (WSN), Internet of Things (IoT), Vehicular Adhoc Network (VANET), Mobile and Wireless Networks, Machine Learning, Deep Learning and Image Processing. Dr. Sonam hold Ph.D. in Computer Science & Engineering from PDPM- Indian Institute of Information Technology, Design & Manufacturing (IIITDM), Jabalpur in 2019. She completed M.Tech in Computer Science and Engineering from Madan Mohan Malviya University of Technology, Gorakhpur (2014) and did her B.Tech in Computer Science & Engineering from United Institute of Technology, Allahabad (2011). Based on her Ph.D. research, she got the opportunity to visit Japan under “JENESYS-2018 Science and Technology Exchange” program. She also received “Fellowship for Training of Young Scientist” award by M.P. Council of Science and Technology for presenting her PhD research contribution in the field of Precision Agriculture. Dr. Sonam has published 15+ research papers in various reputed SCIE Journals and International Conferences. She also published 2 Indian Patents for her contributions in the domain of IoT and 4 Indian Design Patents for designing a “Vykunthapalli” Digital Board Game. She worked on an International Collaborative Project entitled “AMICA- Activity Monitoring Healthcare Android App development” with Digiotouch Estonia.",
     "education": "Ph.D. (CSE), M.Tech. (CSE), B.Tech. (CSE)",
     "publications": [
       {
@@ -1211,8 +1211,8 @@
       }
     ],
     "expertise": "Wireless Sensor Network, IoT, VANET, Mobile and Wireless Networks, Machine Learning, Deep Learning and Image Processing",
-    "google_scholar": "https://scholar.google.com/citations?user=cfik2ScAAAAJ&hl",
-    "orcid": "https://orcid.org/0000-0003-3357-1398",
+    "google_scholar": "",
+    "orcid": "",
     "scopus": "",
     "books_chapters": "",
     "projects": "",
