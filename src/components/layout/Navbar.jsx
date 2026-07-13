@@ -918,7 +918,7 @@ const Navbar = () => {
                   <FacebookIcon size={20} />
                 </a>
                 <a
-                  href="https://x.com/IIIT_PUNE"
+                  href="https://x.com/IIIT_Pune"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter"
@@ -927,7 +927,7 @@ const Navbar = () => {
                   <TwitterIcon size={20} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
+                  href="https://www.linkedin.com/school/iiitpune/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -936,7 +936,7 @@ const Navbar = () => {
                   <LinkedinIcon size={20} />
                 </a>
                 <a
-                  href="https://www.instagram.com/iiit.pune/"
+                  href="https://www.instagram.com/iiit_pune_official/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -945,7 +945,7 @@ const Navbar = () => {
                   <InstagramIcon size={20} />
                 </a>
                 <a
-                  href="https://youtube.com/@iiitpune25"
+                  href="https://www.youtube.com/@IIIT_Pune_Official"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="YouTube"

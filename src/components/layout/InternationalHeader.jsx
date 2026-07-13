@@ -186,7 +186,7 @@ const InternationalHeader = () => {
                   <LinkedinIcon size={18} />
                 </a>
                 <a
-                  href="https://www.instagram.com/iiit.pune/"
+                  href="https://www.instagram.com/iiit_pune_official/"
                   target="_blank" rel="noopener noreferrer"
                   aria-label="Instagram"
                   className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"
@@ -279,7 +279,7 @@ const InternationalHeader = () => {
                 <a href="https://www.facebook.com/share/14dmnHML9Tm/" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity text-white"><FacebookIcon size={20} /></a>
                 <a href="https://x.com/IIIT_Pune" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity text-white"><TwitterIcon size={20} /></a>
                 <a href="https://www.linkedin.com/school/iiitpune/" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity text-white"><LinkedinIcon size={20} /></a>
-                <a href="https://www.instagram.com/iiit.pune/" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity text-white"><InstagramIcon size={20} /></a>
+                <a href="https://www.instagram.com/iiit_pune_official/" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity text-white"><InstagramIcon size={20} /></a>
                 <a href="https://youtube.com/@iiitpune25" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity text-white"><YoutubeIcon size={20} /></a>
               </div>
 

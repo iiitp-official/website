@@ -177,7 +177,7 @@ const InternationalFooter = () => {
                   <a href="https://www.linkedin.com/school/iiitpune/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
                     <LinkedinIcon size={24} />
                   </a>
-                  <a href="https://www.instagram.com/iiit.pune/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
+                  <a href="https://www.instagram.com/iiit_pune_official/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
                     <InstagramIcon size={24} />
                   </a>
                   <a href="https://youtube.com/@iiitpune25" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="YouTube">
