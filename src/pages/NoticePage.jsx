@@ -61,7 +61,7 @@ const NoticePage = () => {
                 <tr key={notice.id} className="border-b border-gray-100 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
                   <td className="p-4 text-sm text-gray-600 dark:text-gray-400 font-medium whitespace-nowrap">{notice.date}</td>
                   <td className="p-4 text-sm">
-                    <span className="bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 px-2.5 py-1 rounded-md text-xs font-semibold">
+                    <span className="px-2.5 py-1 rounded-md text-sm font-semibold">
                       {notice.category}
                     </span>
                   </td>
