@@ -200,14 +200,14 @@ const importantContacts = [
   {
     name: "Shri Lalit Chandra Trivedi",
     designation: "Independent External Monitor - Purchase matters",
-    department: "Procurement",
+    department: "IEM",
     email: "lctrivedi61@gmail.com",
     phone: "+91 9967567679"
   },
   {
     name: "Ashok Kumar Tripathy, IAS (Retd.)",
     designation: "Independent External Monitor - Purchase matters",
-    department: "Procurement",
+    department: "IEM",
     email: "tripathyak@yahoo.com",
     phone: "+91-9437040285"
   }
@@ -231,7 +231,7 @@ const ContactPage = () => {
     return matchesSearch && matchesTab;
   });
 
-  const categories = ['All', 'Administration', 'Hostels & Wardens', 'Placements', 'Procurement', 'Procurement & Store'];
+  const categories = ['All', 'Administration', 'Hostels & Wardens', 'Placements', 'IEM', 'Procurement & Store'];
 
   return (
     <div className="min-h-screen transition-colors duration-200">
