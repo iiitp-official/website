@@ -52,6 +52,10 @@
       "title": "RECRUITMENT NOTICE FOR THE POST OF ASSISTANT PROFESSOR (TEMPORARY)",
       "buttons": [
         {
+          "label": "Result",
+          "file": "/careers-documents/Result nofication.pdf"
+        },
+        {
           "label": "Shortlistings",
           "link": "/careers/shortlistings/assistant-professor",
           "isInternalRoute": true

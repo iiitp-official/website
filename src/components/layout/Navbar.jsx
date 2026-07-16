@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 import { Search, Sun, Moon, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import noticesData from "../../data/notices.json";
 
 // Social Icons
 const FacebookIcon = ({ size }) => (
@@ -282,13 +283,14 @@ const Navbar = () => {
           subLinks: [
             { name: "B.Tech.", path: "#" },
             { name: "M.Tech.", path: "/documents/MTech_Ordinances_Updated_till_11th_Senate.docx.pdf", isExternal: true },
-            { name: "Ph.D.", path: "/documents/IIIT Pune_PhD Ordinances and Regulations_updatedd_260622_192254.pdf", isExternal: true }
+            { name: "Ph.D.", path: "/documents/IIIT Pune_PhD Ordinances and Regulations_Revised.pdf", isExternal: true }
           ]
         },
         {
           name: "Library",
           hasDropdown: true,
           subLinks: [
+            { name: "Library OPAC (Campus Network Only)", path: "http://10.10.15.90:8001/", isExternal: true },
             { name: "Library Website", path: "https://sites.google.com/iiitp.ac.in/library", isExternal: true },
             { name: "IRINS", path: "https://iiitp.irins.org/", isExternal: true },
             { name: "IDP", path: "https://idp.iiitp.ac.in/", isExternal: true },
@@ -418,37 +420,13 @@ const Navbar = () => {
     },
     {
       name: "Notice",
-      path: "#",
+      path: "/notice",
       hasDropdown: true,
-      subLinks: [
-        {
-          name: "Odd Semester B.tech(3rd, 5th, 7th sem) and M.tech(3th sem) 2026-27 Late Fees",
-          path: "/documents/NOTICE (Registration & late Fine)- Odd Sem.pdf",
-          isExternal: true
-        },
-        { name: "ANTI-RAGGING COMMITTEE & SQUADS", path: "/notice/anti-ragging" },
-        { name: "Late fee for the even semester", path: "/notice/late-fee" },
-        {
-          name: "Extension of Deadline for PhD Applications (July 2026)",
-          path: "/documents/Extension of Deadline 2026.pdf",
-          isExternal: true
-        },
-        {
-          name: "National Overseas Scholarship (2025-26) - Letters",
-          path: "/documents/Letter to 265 institutions regarding NSP portal opening for the Year 2025-26.pdf",
-          isExternal: true
-        },
-        {
-          name: "National Overseas Scholarship (2025-26) - Guidelines",
-          path: "/documents/Guidelines Scholarship - Top Class Part - B_compressed_compressed.pdf",
-          isExternal: true
-        },
-        { name: "Odd Semester B.Tech (3rd, 5th & 7th Semesters) / M.Tech (3rd Semester) for AY (2025-26)", path: "/documents/Odd Sem Registration Instruction for Btech and Mtech_0.pdf", isExternal: true },
-        { name: "Rajbhasha Committee", path: "/documents/Rajbhasha committee.pdf", isExternal: true },
-        { name: "List of Faculty Advisor for B.Tech M.Tech & PhD (Odd Semester) AY 2025-26", path: "/documents/List of Faculty Advisor for Odd Sem Registration.pdf", isExternal: true },
-        { name: "Notice in respect to the registration for B.Tech M.Tech & PhD", path: "/documents/Notice in respect to the regstration for B.Tech, M.Tech & Ph.D programmes.pdf", isExternal: true },
-        { name: "List of Holidays", path: "/documents/office order (Holidays).pdf", isExternal: true }
-      ]
+      subLinks: noticesData.map(notice => ({
+        name: notice.title,
+        path: notice.link,
+        isExternal: notice.link.endsWith(".pdf") || notice.link.startsWith("http")
+      }))
     },
     { name: "Careers", path: "/careers", hasDropdown: false },
     { name: "Placement", path: "https://placements.iiitp.ac.in/", hasDropdown: false, isExternal: true },
@@ -918,7 +896,7 @@ const Navbar = () => {
                   <FacebookIcon size={20} />
                 </a>
                 <a
-                  href="https://x.com/IIIT_PUNE"
+                  href="https://x.com/IIIT_Pune"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter"
@@ -927,7 +905,7 @@ const Navbar = () => {
                   <TwitterIcon size={20} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/school/iiitpune/posts/?feedView=all"
+                  href="https://www.linkedin.com/school/iiitpune/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -936,7 +914,7 @@ const Navbar = () => {
                   <LinkedinIcon size={20} />
                 </a>
                 <a
-                  href="https://www.instagram.com/iiit.pune/"
+                  href="https://www.instagram.com/iiit_pune_official/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -945,7 +923,7 @@ const Navbar = () => {
                   <InstagramIcon size={20} />
                 </a>
                 <a
-                  href="https://youtube.com/@iiitpune25"
+                  href="https://www.youtube.com/@IIIT_Pune_Official"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="YouTube"
