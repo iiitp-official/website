@@ -1018,6 +1018,28 @@
   ],
   "EVENTS": [
     {
+      "name": "Visit of South Korean Delegates — Indo-Korean Center, Pune (14 July 2026)",
+      "type": "International Visit",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "A delegation from the Indo-Korean Center, Pune, comprising Dr. Lim Eunjoo and Mr. Sanjib Ghatak, visited the Indian Institute of Information Technology, Pune (IIIT Pune) on 14th July 2026. The visit was organised by the International Relations Office, IIIT Pune, with the objective of introducing both institutions to each other and exploring avenues for academic, research, and cultural collaboration between India and South Korea. During the interaction sessions, both delegations presented an overview of their respective institutions. Dr. Jatin Majithia presented IIIT Pune's academic programmes, research areas, active funded projects, and student activities. The discussions were wide-ranging and productive, identifying priorities for possible collaboration including student and faculty exchange programs, joint research projects (in AI, Cybersecurity, VLSI, IoT, and Signal Processing), structured pathways for student employability in Korea, and cultural exchange programs.",
+      "reportUrl": "/assets/lifepage/IIIT_Pune_Korean_Visit_Report_Brief.pdf",
+      "images": [
+        "/assets/lifepage/indo-korean-1.jpeg",
+        "/assets/lifepage/indo-korean-2.jpeg",
+        "/assets/lifepage/indo-korean-3.jpeg",
+        "/assets/lifepage/indo-korean-4.jpeg",
+        "/assets/lifepage/indo-korean-5.jpeg",
+        "/assets/lifepage/indo-korean-6.jpeg",
+        "/assets/lifepage/indo-korean-7.jpeg"
+      ],
+      "highlights": [
+        "Visit by Dr. Lim Eunjoo & Mr. Sanjib Ghatak",
+        "Discussion on Student & Faculty Exchange Programs",
+        "Collaboration on AI, Cybersecurity, and Semiconductor Research",
+        "Avenues for Student Placement & Internship in Korea"
+      ]
+    },
+    {
       "name": "Workshop on \"IIIT Pune's Vision\" (04 June 2026)",
       "type": "Interactive Workshop",
       "typeColor": "bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300",
