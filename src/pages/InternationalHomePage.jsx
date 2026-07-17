@@ -27,9 +27,18 @@ const InternationalHomePage = () => {
               <h2 className="section-headline">What's New &amp; Announcements</h2>
               
               <div className="news-feed">
-                <div className="news-alert">
-                  <p>Stay tuned for upcoming announcements from the International Relations Office. New updates will be shared here shortly.</p>
-                </div>
+                <article className="news-item bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-l-4 border-blue-600 mb-6 transition-shadow hover:shadow-md">
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+                    Visit of South Korean Delegates — Indo-Korean Center, Pune
+                  </h3>
+                  <div className="text-xs font-semibold text-blue-600 mb-3 uppercase tracking-wider">14 July 2026</div>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
+                    A delegation from the Indo-Korean Center, Pune, comprising Dr. Lim Eunjoo and Mr. Sanjib Ghatak, visited IIIT Pune to explore avenues for academic, research, and cultural collaboration between India and South Korea. Discussions identified priorities including student and faculty exchange programs, joint research projects, and structured pathways for student employability in Korea.
+                  </p>
+                  <a href="/assets/lifepage/IIIT_Pune_Korean_Visit_Report_Brief.pdf" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium transition-colors">
+                    Read Full Report →
+                  </a>
+                </article>
               </div>
             </section>
 
