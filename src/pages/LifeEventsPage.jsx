@@ -63,17 +63,27 @@ const LifeEventsPage = () => {
                             <ExternalLink size={12} />
                           </a>
                         )}
-                        {evt.reportUrl && (
-                          <a
-                            href={evt.reportUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 px-3 py-1 bg-teal-200 text-teal-800 dark:bg-teal-900/30 dark:text-teal-400 text-xs font-semibold rounded-full border border-teal-100 dark:border-teal-800 hover:bg-teal-100 dark:hover:bg-teal-900/50 transition-colors"
-                          >
-                            View Report
-                            <ExternalLink size={12} />
-                          </a>
-                        )}
+                        {evt.reportUrl && (() => {
+                          const colorMatch = evt.typeColor.match(/bg-(\w+)-/);
+                          const color = colorMatch ? colorMatch[1] : 'teal';
+                          const buttonStyles = {
+                            blue: "bg-blue-200 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 border-blue-100 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/50",
+                            indigo: "bg-indigo-200 text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400 border-indigo-100 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/50",
+                            teal: "bg-teal-200 text-teal-800 dark:bg-teal-900/30 dark:text-teal-400 border-teal-100 dark:border-teal-800 hover:bg-teal-100 dark:hover:bg-teal-900/50"
+                          };
+                          const buttonClass = buttonStyles[color] || buttonStyles.teal;
+                          return (
+                            <a
+                              href={evt.reportUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={`inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full border transition-colors ${buttonClass}`}
+                            >
+                              View Report
+                              <ExternalLink size={12} />
+                            </a>
+                          );
+                        })()}
                       </div>
                       <p className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
                         {evt.desc}
