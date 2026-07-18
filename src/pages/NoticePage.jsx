@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PageHeader from '../components/shared/PageHeader';
 import { Search, Filter, Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const NoticePage = () => {
   const [notices, setNotices] = useState([]);
@@ -57,24 +58,49 @@ const NoticePage = () => {
               </tr>
             </thead>
             <tbody>
-              {filteredNotices.map((notice) => (
-                <tr key={notice.id} className="border-b border-gray-100 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
-                  <td className="p-4 text-sm text-gray-600 dark:text-gray-400 font-medium whitespace-nowrap">{notice.date}</td>
-                  <td className="p-4 text-sm">
-                    <span className="px-2.5 py-1 rounded-md text-sm font-semibold">
-                      {notice.category}
-                    </span>
-                  </td>
-                  <td className="p-4 text-sm text-gray-800 dark:text-gray-200 hover:text-accent dark:hover:text-accent-dark font-medium transition-colors cursor-pointer">
-                    {notice.title}
-                  </td>
-                  <td className="p-4 text-center">
-                    <button className="text-gray-400 hover:text-accent dark:hover:text-accent-dark transition-colors inline-flex p-2 bg-white dark:bg-gray-800 shadow-sm rounded-full border border-gray-200 dark:border-gray-700">
-                      <Download size={16} />
-                    </button>
-                  </td>
-                </tr>
-              ))}
+              {filteredNotices.map((notice) => {
+                const isExternal = notice.link && (notice.link.endsWith('.pdf') || notice.link.startsWith('http'));
+                return (
+                  <tr key={notice.id} className="border-b border-gray-100 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                    <td className="p-4 text-sm text-gray-600 dark:text-gray-400 font-medium whitespace-nowrap">{notice.date}</td>
+                    <td className="p-4 text-sm">
+                      <span className="px-2.5 py-1 rounded-md text-sm font-semibold">
+                        {notice.category}
+                      </span>
+                    </td>
+                    <td className="p-4 text-sm text-gray-800 dark:text-gray-200 hover:text-accent dark:hover:text-accent-dark font-medium transition-colors cursor-pointer">
+                      {isExternal ? (
+                        <a href={notice.link} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
+                          {notice.title}
+                        </a>
+                      ) : (
+                        <Link to={notice.link} className="hover:underline flex items-center">
+                          {notice.title}
+                        </Link>
+                      )}
+                    </td>
+                    <td className="p-4 text-center">
+                      {isExternal ? (
+                        <a 
+                          href={notice.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-gray-400 hover:text-accent dark:hover:text-accent-dark transition-colors inline-flex p-2 bg-white dark:bg-gray-800 shadow-sm rounded-full border border-gray-200 dark:border-gray-700"
+                        >
+                          <Download size={16} />
+                        </a>
+                      ) : (
+                        <Link 
+                          to={notice.link} 
+                          className="text-gray-400 hover:text-accent dark:hover:text-accent-dark transition-colors inline-flex p-2 bg-white dark:bg-gray-800 shadow-sm rounded-full border border-gray-200 dark:border-gray-700"
+                        >
+                          <Download size={16} />
+                        </Link>
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
               {filteredNotices.length === 0 && (
                 <tr>
                   <td colSpan="4" className="p-8 text-center text-gray-500 dark:text-gray-400">

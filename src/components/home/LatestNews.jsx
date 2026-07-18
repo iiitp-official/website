@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const LatestNews = () => {
   const [news, setNews] = useState([]);
+  const [notices, setNotices] = useState([]);
 
   useEffect(() => {
     import("../../data/news.json")
@@ -40,6 +41,16 @@ const LatestNews = () => {
           },
         ]);
       });
+
+    import("../../data/notices.json")
+      .then((module) => {
+        if (module.default && module.default.length > 0) {
+          setNotices(module.default.slice(0, 8));
+        }
+      })
+      .catch(() => {
+        setNotices([]);
+      });
   }, []);
 
   return (
@@ -58,19 +69,37 @@ const LatestNews = () => {
               <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white dark:from-surface-dark to-transparent z-10 pointer-events-none" />
 
               <div className="animate-marquee group-hover:[animation-play-state:paused] flex flex-col space-y-4 pt-4 absolute w-[calc(100%-2rem)]">
-                {[1, 2, 3, 4, 5, 6, 7].map((item) => (
-                  <Link
-                    key={item}
-                    to="/notice"
-                    className="text-sm font-medium text-text dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark border-b border-gray-100 dark:border-gray-800 pb-3 block transition-colors"
-                  >
-                    <span className="text-accent dark:text-accent-dark font-bold mr-2 text-xs uppercase bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded">
-                      New
-                    </span>
-                    Important announcement regarding upcoming events and
-                    academic schedule (Update {item}).
-                  </Link>
-                ))}
+                {notices.map((notice) => {
+                  const isExternal = notice.link && (notice.link.endsWith('.pdf') || notice.link.startsWith('http'));
+                  return isExternal ? (
+                    <a
+                      key={notice.id}
+                      href={notice.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium text-text dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark border-b border-gray-100 dark:border-gray-800 pb-3 block transition-colors"
+                    >
+                      <span className="text-accent dark:text-accent-dark font-bold mr-2 text-xs uppercase bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded">
+                        New
+                      </span>
+                      {notice.title}
+                    </a>
+                  ) : (
+                    <Link
+                      key={notice.id}
+                      to={notice.link || "/notice"}
+                      className="text-sm font-medium text-text dark:text-gray-300 hover:text-accent dark:hover:text-accent-dark border-b border-gray-100 dark:border-gray-800 pb-3 block transition-colors"
+                    >
+                      <span className="text-accent dark:text-accent-dark font-bold mr-2 text-xs uppercase bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded">
+                        New
+                      </span>
+                      {notice.title}
+                    </Link>
+                  );
+                })}
+                {notices.length === 0 && (
+                  <p className="text-sm text-gray-500 dark:text-gray-400">No recent announcements.</p>
+                )}
               </div>
             </div>
 
@@ -122,7 +151,11 @@ const LatestNews = () => {
                       </div>
 
                       <h3 className="font-bold text-text dark:text-gray-100 mb-2 line-clamp-2 hover:text-accent dark:hover:text-accent-dark transition-colors text-lg">
-                        <Link to={item.link}>{item.title}</Link>
+                        {item.link && (item.link.endsWith('.pdf') || item.link.startsWith('http')) ? (
+                          <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
+                        ) : (
+                          <Link to={item.link || "/news"}>{item.title}</Link>
+                        )}
                       </h3>
 
                       <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4 flex-grow text-justify">
