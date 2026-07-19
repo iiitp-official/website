@@ -108,7 +108,19 @@ const PgProgramsPage = () => {
                 Admissions to the M.Tech. programs are offered through two primary categories:
               </p>
               <ul className="list-disc list-inside space-y-1.5 pl-2 font-medium">
-                <li><span className="text-primary dark:text-accent font-bold">GATE Candidates (CCMT)</span>: Selection is based strictly on candidate performance in the Graduate Aptitude Test in Engineering (GATE) and managed centrally through CCMT counseling rounds.</li>
+                <li>
+                  <span className="text-primary dark:text-accent font-bold">GATE Candidates (CCMT)</span>: Selection is based strictly on candidate performance in the Graduate Aptitude Test in Engineering (GATE) and managed centrally through CCMT counseling rounds.
+                  <div className="mt-2 pl-4">
+                    <a 
+                      href="/documents/PHYSICAL_REPORTING_DETAILS_OF_ADMISSION_PROCESS_FOR_MTECH_THROUGH_CCMT_FIRST_SEMESTER_2026-27.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-red dark:text-brand-red-dark hover:underline font-bold inline-flex items-center gap-1 text-xs"
+                    >
+                      Physical Reporting Details (AY 2026-27) [PDF]
+                    </a>
+                  </div>
+                </li>
                 <li><span className="text-primary dark:text-accent font-bold">Non-GATE Candidates</span>: Vacant seats remaining after CCMT rounds are filled directly by the institute through a written test and technical interview process.</li>
               </ul>
             </div>

@@ -247,9 +247,16 @@ const InfoCards = () => {
                   <span className="w-2 h-2 rounded-full bg-accent dark:bg-accent-dark mt-1.5 mr-3 shrink-0"></span>
                   <a href="https://josaa.nic.in/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">B.Tech via JoSAA/CSAB (JEE Main)</a>
                 </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 rounded-full bg-accent dark:bg-accent-dark mt-1.5 mr-3 shrink-0"></span>
-                  <a href="https://ccmt.admissions.nic.in/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">M.Tech (CSE & ECE) via CCMT (GATE)</a>
+                <li className="flex flex-col">
+                  <div className="flex items-start">
+                    <span className="w-2 h-2 rounded-full bg-accent dark:bg-accent-dark mt-1.5 mr-3 shrink-0"></span>
+                    <a href="https://ccmt.admissions.nic.in/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">M.Tech (CSE & ECE) via CCMT (GATE)</a>
+                  </div>
+                  <div className="pl-5 mt-1">
+                    <a href="/documents/PHYSICAL_REPORTING_DETAILS_OF_ADMISSION_PROCESS_FOR_MTECH_THROUGH_CCMT_FIRST_SEMESTER_2026-27.pdf" target="_blank" rel="noopener noreferrer" className="text-xs text-brand-red dark:text-brand-red-dark hover:underline flex items-center gap-1 font-semibold">
+                      <span>• Physical Reporting Details (AY 2026-27)</span>
+                    </a>
+                  </div>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 rounded-full bg-accent dark:bg-accent-dark mt-1.5 mr-3 shrink-0"></span>

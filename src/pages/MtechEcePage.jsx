@@ -66,7 +66,18 @@ const MtechEcePage = () => {
                     <strong>Admissions:</strong>
                     <p>Admission is based on two modes:</p>
                     <ul className="list-disc list-inside mt-2 ml-4">
-                      <li>GATE through CCMT</li>
+                      <li>
+                        GATE through CCMT (
+                        <a 
+                          href="/documents/PHYSICAL_REPORTING_DETAILS_OF_ADMISSION_PROCESS_FOR_MTECH_THROUGH_CCMT_FIRST_SEMESTER_2026-27.pdf" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-blue-300 hover:text-white underline font-semibold"
+                        >
+                          Physical Reporting Details AY 2026-27
+                        </a>
+                        )
+                      </li>
                       <li>Non-GATE through written test and interview</li>
                     </ul>
                   </div>
