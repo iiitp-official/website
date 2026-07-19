@@ -421,12 +421,12 @@ const Navbar = () => {
     {
       name: "Notice",
       path: "/notice",
-      hasDropdown: true,
-      subLinks: noticesData.map(notice => ({
-        name: notice.title,
-        path: notice.link,
-        isExternal: notice.link.endsWith(".pdf") || notice.link.startsWith("http")
-      }))
+      // hasDropdown: true,
+      // subLinks: noticesData.map(notice => ({
+      //   name: notice.title,
+      //   path: notice.link,
+      //   isExternal: notice.link.endsWith(".pdf") || notice.link.startsWith("http")
+      // }))
     },
     { name: "Careers", path: "/careers", hasDropdown: false },
     { name: "Placement", path: "https://placements.iiitp.ac.in/", hasDropdown: false, isExternal: true },
