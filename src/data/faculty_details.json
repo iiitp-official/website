@@ -3391,48 +3391,6 @@
     "researchLinks": [],
     "department": "CSE"
   },
-  "priya-jadhav": {
-    "designation": "Adjunct Assistant Professor",
-    "image": "/assets/faculty_photos/priyajadhav.jpeg",
-    "bio": "Ms. Priya, currently working as an Adjunct Assistant Professor in the Department of Computer Science and Engineering at the Indian Institute of Information Technology Pune, India. She is also pursuing PhD from IIIT Pune. She has completed M.E in Computer Science & Technology and B.E in Information Technology from Solapur University. She has been contributing in academics since 2019. Her research Interests include Machine Learning, Mixed Reality- AR,VR and HCI.",
-    "education": "Ph.D. (CSE), M.E.(CSE), B.E.(CSE)",
-    "publications": [
-      {
-        "title": "Key Point Detection in Yoga Pose Detection and Correction using PoseNet"
-      },
-      {
-        "title": "Usability Evaluation of Student Project Management System Implemented at IIITP"
-      },
-      {
-        "title": "AR Integrated Intelligent Network Intrusion Detection System"
-      }
-    ],
-    "resume": "/assets/resume/priyajadhav_resume.pdf",
-    "expertise": "Machine Learning, Mixed Reality- AR,VR and HCI",
-    "google_scholar": "",
-    "orcid": "https://orcid.org/0009-0009-2721-3077",
-    "scopus": "",
-    "books_chapters": "",
-    "patents": "",
-    "seminars": [
-      {
-        "title": "Organised Seminar on 'Higher Studies' for TE, BE Students in Sinhgad Institutes, Kondhawa, Pune."
-      },
-      {
-        "title": "Organised National Level Project Competition for Final Year Students in Army Institute of Technology, Pune, April 2025."
-      },
-      {
-        "title": "Conducted Session on 'Foundation of Programming Language' for First Year Students Orientation Program in AIT, Pune, June 2025."
-      }
-    ],
-    "projects": "",
-    "supervisions": "",
-    "email": "priya@iiitp.ac.in",
-    "phone": "",
-    "linkedin": "",
-    "researchLinks": [],
-    "department": "CSE"
-  },
   "sabah-tazeen": {
     "designation": "Adjunct Assistant Professor",
     "image": "/assets/faculty_photos/sabahtazeen.jpg",
