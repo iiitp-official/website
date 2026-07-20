@@ -7,7 +7,7 @@ import facultyDetails from "../data/faculty_details.json";
 
 const SchemeToggle = ({ activeScheme, onChange, layoutIdPrefix }) => (
   <div className="flex bg-gray-100 dark:bg-gray-800/50 p-1 rounded-xl items-center border border-gray-200 dark:border-gray-700 w-fit">
-    {['2026 Onwards', 'Before 2026'].map((scheme) => (
+    {['AY(2026-2027)', 'AY(2025-2026)'].map((scheme) => (
       <button
         key={scheme}
         onClick={() => onChange(scheme)}
@@ -31,9 +31,9 @@ const SchemeToggle = ({ activeScheme, onChange, layoutIdPrefix }) => (
 );
 
 const UgPgSchemesPage = () => {
-  const [btechCseScheme, setBtechCseScheme] = useState("2026 Onwards");
-  const [btechEceScheme, setBtechEceScheme] = useState("2026 Onwards");
-  const [mtechCseScheme, setMtechCseScheme] = useState("2026 Onwards");
+  const [btechCseScheme, setBtechCseScheme] = useState("AY(2026-2027)");
+  const [btechEceScheme, setBtechEceScheme] = useState("AY(2026-2027)");
+  const [mtechCseScheme, setMtechCseScheme] = useState("AY(2026-2027)");
   const [activeSemester, setActiveSemester] = useState(1);
   const location = useLocation();
 
@@ -278,7 +278,7 @@ const UgPgSchemesPage = () => {
       semester: 3,
       totalCredits: 21,
       courses: [
-        { name: "Analysis & Design of Algorithm", hours: "3-0-2", credits: 4 },
+        { name: "Design and Analysis of Algorithms", hours: "3-0-2", credits: 4 },
         { name: "Computer Organization and Architecture", hours: "3-0-0", credits: 3 },
         { name: "Theory of Computation", hours: "3-0-0", credits: 3 },
         { name: "Database Management System", hours: "3-0-2", credits: 4 },
@@ -607,7 +607,7 @@ const UgPgSchemesPage = () => {
       semester: 3,
       totalCredits: 21,
       courses: [
-        { name: "Analysis & Design of Algorithm", hours: "3-0-2", credits: 4 },
+        { name: "Design and Analysis of Algorithms", hours: "3-0-2", credits: 4 },
         { name: "Computer Organization and Architecture", hours: "3-0-0", credits: 3 },
         { name: "Network Analysis and Theory", hours: "3-0-0", credits: 3 },
         { name: "Database Management System", hours: "3-0-2", credits: 4 },
@@ -681,39 +681,66 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
       semester: 1,
       totalCredits: 16,
       courses: [
-        { name: "IoT and Sensor Data Visualization", hours: "3-0-0", credits: 3 },
-        { name: "Artificial Intelligence (Program Elective)", hours: "3-0-0", credits: 3 },
-        { name: "Linear and Nonlinear Optimization (Institute Core)", hours: "3-0-0", credits: 3 },
-        { name: "Machine Learning (Open Elective)", hours: "3-0-2", credits: 4 },
-        { name: "Research Methodology (Institute Core)", hours: "1-0-0", credits: 1 },
-        { name: "Minor Project", hours: "0-0-4", credits: 2 }
+        { name: "Artificial Intelligence", hours: "3-0-0", credits: 3 },
+        { name: "Machine Learning", hours: "3-0-2", credits: 4 },
+        { name: "Elective-I", hours: "3-0-0", credits: 3 },
+        { name: "Elective-II", hours: "3-0-0", credits: 3 },
+        { name: "Research Methodology", hours: "1-0-0", credits: 1 },
+        { name: "Minor Project-I", hours: "0-0-4", credits: 2 }
       ]
     },
     {
       semester: 2,
-      totalCredits: 14,
+      totalCredits: 15,
       courses: [
-        { name: "Big Data Analytics", hours: "3-0-0", credits: 3 },
-        { name: "Cloud Architecture and Computing", hours: "3-0-0", credits: 3 },
-        { name: "Swarm Intelligence (Program Elective)", hours: "3-0-0", credits: 3 },
+        { name: "Generative Artificial Intelligence", hours: "3-0-2", credits: 4 },
         { name: "Deep Learning", hours: "3-0-0", credits: 3 },
-        { name: "Minor Project", hours: "0-0-4", credits: 2 }
+        { name: "Elective-III", hours: "3-0-0", credits: 3 },
+        { name: "Elective-IV", hours: "3-0-0", credits: 3 },
+        { name: "Minor Project-II", hours: "0-0-4", credits: 2 }
       ]
     },
     {
       semester: 3,
       totalCredits: 12,
       courses: [
-        { name: "Major Project-I / Internship-I", hours: "0-0-24", credits: 12 }
+        { name: "Major Project-I/Internship-I", hours: "0-0-24", credits: 12 }
       ]
     },
     {
       semester: 4,
       totalCredits: 12,
       courses: [
-        { name: "Major Project-II / Internship-II", hours: "0-0-24", credits: 12 }
+        { name: "Major Project-II/Internship-II", hours: "0-0-24", credits: 12 }
       ]
     }
+  ];
+
+  const mcseElectives = [
+    "Computational Intelligence",
+    "Pattern Recognition",
+    "Cognitive Science",
+    "Human-Computer Interaction",
+    "Foundation of Data Visualization",
+    "Information Retrieval",
+    "Computational Complexity",
+    "Data Science",
+    "Big Data and Analytics",
+    "Cyber Physical Systems",
+    "Computer Vision",
+    "Speech and Language Processing",
+    "Multimedia System and Applications",
+    "Parallel Computing",
+    "Image Processing",
+    "Quantum computing and information",
+    "Bioinformatics",
+    "Applied Graph Theory",
+    "Cryptocurrency and Blockchain Technologies",
+    "Super Computing",
+    "Linear and Non-linear Optimization",
+    "Cyber Security for Artificial Intelligence",
+    "Advanced Data Structures",
+    "Natural Language Processing"
   ];
   const [activeSemestermec, setActiveSemestermec] = useState(1);
   
@@ -782,7 +809,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                 <SchemeToggle activeScheme={btechCseScheme} onChange={setBtechCseScheme} layoutIdPrefix="btech-cse" />
               </div>
 
-              {btechCseScheme === "2026 Onwards" ? (
+              {btechCseScheme === "AY(2026-2027)" ? (
                 <>
                   {/* Semester Tabs */}
                   <div className="flex overflow-x-auto gap-2 mb-6 pb-4">
@@ -873,7 +900,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                 </>
               ) : (
                 <>
-                  {/* Semester Tabs for Before 2026 */}
+                  {/* Semester Tabs for AY(2025-2026) */}
                   <div className="flex overflow-x-auto gap-2 mb-6 pb-4">
                     {[1, 2, 3, 4, 5, 6, 7, 8, "Electives"].map((sem) => (
                       <button
@@ -889,7 +916,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                     ))}
                   </div>
 
-                  {/* Course Table for Before 2026 */}
+                  {/* Course Table for AY(2025-2026) */}
                   <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden">
                     {activeSemester === "Electives" ? (
                       <div className="p-6 md:p-8">
@@ -1140,14 +1167,15 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                 <div>
                   <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
                     B. Tech. (Electronics & Communication Engineering)
+                    {/* B. Tech. (Electronics & <br /> Communication Engineering) */}
                   </h2>
                   
                   <p className="text-gray-600 dark:text-gray-400 mt-2">Explore the semester-wise course structure.</p>
                 </div>
-                <SchemeToggle activeScheme={btechEceScheme} onChange={setBtechEceScheme} layoutIdPrefix="btech-ece" />
+                {/* <SchemeToggle activeScheme={btechEceScheme} onChange={setBtechEceScheme} layoutIdPrefix="btech-ece" /> */}
               </div>
 
-              {btechEceScheme === "2026 Onwards" ? (
+              {btechEceScheme === "AY(2026-2027)" ? (
                 <>
                   {/* Semester Tabs */}
                   <div className="flex overflow-x-auto gap-2 mb-6 pb-4">
@@ -1223,120 +1251,126 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                 </>
               ) : (
                 <div className="py-12 text-center text-gray-500 dark:text-gray-400 italic bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
-                  Data for syllabus before 2026 will be updated soon.
+                  Data for syllabus AY(2025-2026) will be updated soon.
                 </div>
               )}
             </div>
           </section>
           <section id="mtech-cse" className="mt-12 w-full">
-                    <div className="flex flex-col md:flex-row justify-between md:items-end gap-4 mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
-                      <div>
-                         <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
-                          M.Tech (Computer Science & Engineering)
-                        </h2>
-                        
-                        <p className="text-gray-600 dark:text-gray-400 mt-2">Explore the semester-wise course structure (Total Credits: 54).</p>
+            <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
+              <div>
+                 <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
+                  M.Tech (Computer Science & Engineering)
+                </h2>
+                
+                <p className="text-gray-600 dark:text-gray-400 mt-2">Explore the semester-wise course structure (Total Credits: 55).</p>
+              </div>
+            </div>
+  
+            <div className="flex overflow-x-auto gap-2 mb-6 pb-4">
+              {[1, 2, 3, 4, "Electives"].map((sem) => (
+                <button
+                  key={sem}
+                  onClick={() => setActiveSemestermcse(sem)}
+                  className={`px-5 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all duration-200 ${
+                    activeSemestermcse === sem
+                      ? "bg-brand-red text-white shadow-md dark:bg-brand-red-dark"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+                  }`}
+                >
+                  {typeof sem === "number" ? `Semester ${sem}` : sem}
+                </button>
+              ))}
+            </div>
+  
+            <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800 overflow-hidden relative min-h-[300px]">
+              {activeSemestermcse === "Electives" ? (
+                <div className="p-6 md:p-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {mcseElectives.map((elective, idx) => (
+                      <div key={idx} className="flex items-start bg-gray-50 dark:bg-gray-800/50 p-3 rounded-lg border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow">
+                        <span className="flex-shrink-0 text-accent-dark dark:text-blue-300 text-sm font-bold w-6 mr-2">
+                          {idx + 1}.
+                        </span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm font-medium">{elective}</span>
                       </div>
-                      <SchemeToggle activeScheme={mtechCseScheme} onChange={setMtechCseScheme} layoutIdPrefix="mtech-cse" />
-                    </div>
-          
-                    {mtechCseScheme === "2026 Onwards" ? (
-                      <>
-                        <div className="flex overflow-x-auto gap-2 mb-6 pb-4">
-                      {[1, 2, 3, 4].map((sem) => (
-                        <button
-                          key={sem}
-                          onClick={() => setActiveSemestermcse(sem)}
-                          className={`px-5 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all duration-200 ${
-                            activeSemestermcse === sem
-                              ? "bg-brand-red text-white shadow-md dark:bg-brand-red-dark"
-                              : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-                          }`}
-                        >
-                          Semester {sem}
-                        </button>
-                      ))}
-                    </div>
-          
-                    <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800 overflow-hidden relative min-h-[300px]">
-                      <div className="overflow-x-auto">
-                        <table className="w-full text-left border-collapse">
-                          <thead>
-                            <tr className="bg-gray-50 dark:bg-gray-800/50">
-                              <th className="py-2.5 px-4 font-bold text-gray-700 dark:text-gray-300 border-b dark:border-gray-700 w-16">
-                                S.No
-                              </th>
-                              <th className="py-2.5 px-4 font-bold text-gray-700 dark:text-gray-300 border-b dark:border-gray-700 w-[60%]">
-                                Course Title
-                              </th>
-                              <th className="py-2.5 px-4 font-bold text-gray-700 dark:text-gray-300 border-b dark:border-gray-700 w-[25%] text-center">
-                                Hours/Week(L-T-P)
-                              </th>
-                              <th className="py-2.5 px-4 font-bold text-gray-700 dark:text-gray-300 border-b dark:border-gray-700 w-[15%] text-center">
-                                Credits
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <AnimatePresence mode="wait">
-                              {mcsecurriculum.find(c => c.semester === activeSemestermcse)?.courses.map((course, index) => (
-                                <motion.tr
-                                  key={`${activeSemestermcse}-${course.name}`}
-                                  initial={{ opacity: 0, y: 10 }}
-                                  animate={{ opacity: 1, y: 0 }}
-                                  exit={{ opacity: 0, y: -10 }}
-                                  transition={{ duration: 0.2, delay: index * 0.05 }}
-                                  className="group border-b border-gray-100 dark:border-gray-800 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors"
-                                >
-                                  <td className="py-2.5 px-4 text-gray-500 dark:text-gray-400 font-medium">
-                                    {index + 1}.
-                                  </td>
-                                  <td className="py-2.5 px-4 font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-dark dark:group-hover:text-blue-400 transition-colors">
-                                    {course.name}
-                                  </td>
-                                  <td className="py-2.5 px-4 text-gray-600 dark:text-gray-400 text-center font-medium">
-                                    {course.hours}
-                                  </td>
-                                  <td className="py-2.5 px-4 text-center text-accent-dark font-bold">
-                                    {course.credits}
-                                  </td>
-                                </motion.tr>
-                              ))}
-                              {!mcsecurriculum.find(c => c.semester === activeSemestermcse)?.courses && (
-                                <tr>
-                                  <td colSpan="4" className="py-12 text-center text-gray-500 dark:text-gray-400 italic">
-                                    Curriculum details for Semester {activeSemestermcse} will be updated soon.
-                                  </td>
-                                </tr>
-                              )}
-                              {mcsecurriculum.find(c => c.semester === activeSemestermcse)?.totalCredits && (
-                                <motion.tr
-                                  key="total"
-                                  initial={{ opacity: 0 }}
-                                  animate={{ opacity: 1 }}
-                                  exit={{ opacity: 0 }}
-                                  className="bg-blue-50/80 dark:bg-blue-900/20 border-t-2 border-blue-200 dark:border-blue-800"
-                                >
-                                  <td colSpan="3" className="py-2.5 px-4 text-center font-bold text-gray-800 dark:text-gray-200">
-                                    Total Credits
-                                  </td>
-                                  <td className="py-2.5 px-4 text-center text-accent-dark font-black text-lg">
-                                    {mcsecurriculum.find(c => c.semester === activeSemestermcse).totalCredits}
-                                  </td>
-                                </motion.tr>
-                              )}
-                            </AnimatePresence>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                      </>
-                    ) : (
-                      <div className="py-12 text-center text-gray-500 dark:text-gray-400 italic bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
-                        Data for syllabus before 2026 will be updated soon.
-                      </div>
-                    )}
-                  </section>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="bg-gray-50 dark:bg-gray-800/50">
+                        <th className="py-2.5 px-4 font-bold text-gray-700 dark:text-gray-300 border-b dark:border-gray-700 w-16">
+                          S.No
+                        </th>
+                        <th className="py-2.5 px-4 font-bold text-gray-700 dark:text-gray-300 border-b dark:border-gray-700 w-[60%]">
+                          Course Title
+                        </th>
+                        <th className="py-2.5 px-4 font-bold text-gray-700 dark:text-gray-300 border-b dark:border-gray-700 w-[25%] text-center">
+                          Hours/Week(L-T-P)
+                        </th>
+                        <th className="py-2.5 px-4 font-bold text-gray-700 dark:text-gray-300 border-b dark:border-gray-700 w-[15%] text-center">
+                          Credits
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <AnimatePresence mode="wait">
+                        {mcsecurriculum.find(c => c.semester === activeSemestermcse)?.courses.map((course, index) => (
+                          <motion.tr
+                            key={`${activeSemestermcse}-${course.name}`}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            transition={{ duration: 0.2, delay: index * 0.05 }}
+                            className="group border-b border-gray-100 dark:border-gray-800 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors"
+                          >
+                            <td className="py-2.5 px-4 text-gray-500 dark:text-gray-400 font-medium">
+                              {index + 1}.
+                            </td>
+                            <td className="py-2.5 px-4 font-medium text-gray-800 dark:text-gray-200 group-hover:text-accent-dark dark:group-hover:text-blue-400 transition-colors">
+                              {course.name}
+                            </td>
+                            <td className="py-2.5 px-4 text-gray-600 dark:text-gray-400 text-center font-medium">
+                              {course.hours}
+                            </td>
+                            <td className="py-2.5 px-4 text-center text-accent-dark font-bold">
+                              {course.credits}
+                            </td>
+                          </motion.tr>
+                        ))}
+                        {!mcsecurriculum.find(c => c.semester === activeSemestermcse)?.courses && (
+                          <tr>
+                            <td colSpan="4" className="py-12 text-center text-gray-500 dark:text-gray-400 italic">
+                              Curriculum details for Semester {activeSemestermcse} will be updated soon.
+                            </td>
+                          </tr>
+                        )}
+                        {mcsecurriculum.find(c => c.semester === activeSemestermcse)?.totalCredits && (
+                          <motion.tr
+                            key="total"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="bg-blue-50/80 dark:bg-blue-900/20 border-t-2 border-blue-200 dark:border-blue-800"
+                          >
+                            <td colSpan="3" className="py-2.5 px-4 text-center font-bold text-gray-800 dark:text-gray-200">
+                              Total Credits
+                            </td>
+                            <td className="py-2.5 px-4 text-center text-accent-dark font-black text-lg">
+                              {mcsecurriculum.find(c => c.semester === activeSemestermcse).totalCredits}
+                            </td>
+                          </motion.tr>
+                        )}
+                      </AnimatePresence>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+          </section>
                   <section id="mtech-ece" className="mt-12 w-full">
                     <div className="flex justify-between items-end mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                       <div>
