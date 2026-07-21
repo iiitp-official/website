@@ -185,7 +185,7 @@ const ImportantLinks = () => {
                       { name: 'Certificate for Dispatch by Speed Post', path: '/downloads/CERITIFICATE FOR DISPATCH BY SPEED POST.pdf', category: 'both' },
                       { name: 'Certificate Course Brochure', path: '/downloads/Brochure_Batch-II.pdf', category: 'student' },
                       { name: 'Sexual Harassment of Women at Workplace Act 2013', path: '/downloads/A2013-14.pdf', category: 'both' },
-                      { name: 'Hostel Application Form 2025', path: '/downloads/Hostel-application-form- 2025 _Updated.pdf', category: 'student' },
+                      { name: 'Hostel Application Form 2026', path: '/downloads/Hostel-application-form- 2026 _Updated.pdf', category: 'student' },
                       { name: 'SBI Education Loan Contact Details', path: '/downloads/SBI Education Loan Check List and Contact Details_0.pdf', category: 'student' },
                       { name: 'Indent Form for Consumable Items', path: '/downloads/Indent for stationery consumable items.pdf', category: 'faculty' },
                       { name: 'Internet Credentials Form', path: '/downloads/Internet Login Form.pdf', category: 'faculty' },
