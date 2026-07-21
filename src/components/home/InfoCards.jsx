@@ -249,7 +249,7 @@ const InfoCards = () => {
                     <a href="https://josaa.nic.in/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors">B.Tech via JoSAA/CSAB (JEE Main)</a>
                   </div>
                   <div className="pl-5 mt-1">
-                    <a href="/documents/DETAILS%20OF%20ADMISSION%20PROCESS%20FOR%20FIRST%20SEMESTER%202025-26.pdf" target="_blank" rel="noopener noreferrer" className="text-xs text-brand-red dark:text-brand-red-dark hover:underline flex items-center gap-1 font-semibold">
+                    <a href="/documents/DETAILS%20OF%20ADMISSION%20PROCESS%20FOR%20FIRST%20SEMESTER%202026-27.pdf" target="_blank" rel="noopener noreferrer" className="text-xs text-brand-red dark:text-brand-red-dark hover:underline flex items-center gap-1 font-semibold">
                       <span>• Physical Reporting Instructions: JoSAA/CSAB 2026</span>
                     </a>
                   </div>
