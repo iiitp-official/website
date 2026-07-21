@@ -7,7 +7,7 @@ import facultyDetails from "../data/faculty_details.json";
 
 const SchemeToggle = ({ activeScheme, onChange, layoutIdPrefix }) => (
   <div className="flex bg-gray-100 dark:bg-gray-800/50 p-1 rounded-xl items-center border border-gray-200 dark:border-gray-700 w-fit">
-    {['AY(2026-2027)', 'AY(2025-2026)'].map((scheme) => (
+    {['AY(2026-27)', 'AY(23-24/24-25/25-26)'].map((scheme) => (
       <button
         key={scheme}
         onClick={() => onChange(scheme)}
@@ -31,9 +31,9 @@ const SchemeToggle = ({ activeScheme, onChange, layoutIdPrefix }) => (
 );
 
 const UgPgSchemesPage = () => {
-  const [btechCseScheme, setBtechCseScheme] = useState("AY(2026-2027)");
-  const [btechEceScheme, setBtechEceScheme] = useState("AY(2026-2027)");
-  const [mtechCseScheme, setMtechCseScheme] = useState("AY(2026-2027)");
+  const [btechCseScheme, setBtechCseScheme] = useState("AY(2026-27)");
+  const [btechEceScheme, setBtechEceScheme] = useState("AY(2026-27)");
+  const [mtechCseScheme, setMtechCseScheme] = useState("AY(2026-27)");
   const [activeSemester, setActiveSemester] = useState(1);
   const location = useLocation();
 
@@ -329,12 +329,12 @@ const UgPgSchemesPage = () => {
       semester: 7,
       totalCredits: 19,
       courses: [
-        { name: "Elective 1 / MOOC", hours: "3-0-0", credits: 3 },
-        { name: "Elective 2 / MOOC", hours: "3-0-0", credits: 3 },
-        { name: "Elective 3 / MOOC", hours: "3-0-0", credits: 3 },
-        { name: "Elective 4 / MOOC", hours: "3-0-0", credits: 3 },
-        { name: "Major Project-I", hours: "0-0-8", credits: 4 },
-        { name: "Internship", hours: "0-0-6", credits: 3 },
+        { name: "Big Data Analytics", hours: "3-0-0", credits: 3 },
+        { name: "High Performance Computing", hours: "3-0-0", credits: 3 },
+        { name: "Elective 1 (DE)", hours: "3-0-0", credits: 3 },
+        { name: "Elective 2 (OE)", hours: "3-0-0", credits: 3 },
+        { name: "Major Project-I", hours: "0-0-6", credits: 3 },
+        { name: "Internship-I", hours: "0-0-4", credits: 2 },
       ]
     },
     {
