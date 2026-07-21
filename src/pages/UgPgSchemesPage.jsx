@@ -334,7 +334,7 @@ const UgPgSchemesPage = () => {
         { name: "Elective 1 (DE)", hours: "3-0-0", credits: 3 },
         { name: "Elective 2 (OE)", hours: "3-0-0", credits: 3 },
         { name: "Major Project-I", hours: "0-0-6", credits: 3 },
-        { name: "Internship-I", hours: "0-0-4", credits: 2 },
+        { name: "Internship-I", hours: "0-0-8", credits: 4 },
       ]
     },
     {
@@ -809,7 +809,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                 <SchemeToggle activeScheme={btechCseScheme} onChange={setBtechCseScheme} layoutIdPrefix="btech-cse" />
               </div>
 
-              {btechCseScheme === "AY(2026-2027)" ? (
+              {btechCseScheme === "AY(2026-27)" ? (
                 <>
                   {/* Semester Tabs */}
                   <div className="flex overflow-x-auto gap-2 mb-6 pb-4">
