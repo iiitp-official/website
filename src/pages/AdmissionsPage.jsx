@@ -63,6 +63,10 @@ const AdmissionsPage = () => {
               <div className="space-y-4">
                 {[
                   {
+                    title: "Physical Reporting Instructions: JoSAA/CSAB 2026",
+                    link: "/documents/DETAILS%20OF%20ADMISSION%20PROCESS%20FOR%20FIRST%20SEMESTER%202026-27.pdf"
+                  },
+                  {
                     title: "Physical Reporting Details of Admission Process for M.Tech through CCMT First Semester (AY 2026-27)",
                     link: "/documents/PHYSICAL_REPORTING_DETAILS_OF_ADMISSION_PROCESS_FOR_MTECH_THROUGH_CCMT_FIRST_SEMESTER_2026-27.pdf"
                   },

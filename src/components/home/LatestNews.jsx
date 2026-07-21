@@ -16,6 +16,14 @@ const LatestNews = () => {
       .catch(() => {
         setNews([
           {
+            id: 103,
+            title: "Physical Reporting Instructions: JoSAA/CSAB 2026",
+            date: "21-07-2026",
+            excerpt:
+              "Physical Reporting Instructions for B.Tech candidates admitted through JoSAA/CSAB 2026 are now available.",
+            link: "/documents/DETAILS%20OF%20ADMISSION%20PROCESS%20FOR%20FIRST%20SEMESTER%202026-27.pdf",
+          },
+          {
             id: 1,
             title: "Admissions for B.Tech 2025-26 are now open",
             date: "May 15, 2025",
