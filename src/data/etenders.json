@@ -1,22 +1,13 @@
 {
   "live": [
     {
-      "title": "Invitation of Quotations for Printing of Answer Sheets for Indian Institute of Information Technology Pune - Result of Financial Evaluation",
-      "tenderNumber": "2026_IIITP_915207_1",
-      "fileUrl": "/assets/etenders/Notice_Answer sheet (1).pdf",
+      "title": "Tender for Allotment of Shops in the Institute Shopping Complex",
+      "tenderNumber": "2026_IIITP_918263_1",
+      "fileUrl": "/assets/etenders/Shop_Tender.pdf",
       "fileText": "Document",
       "corrigendumUrl": "",
       "corrigendumText": "",
-      "submissionDate": "11-07-2026 - 17:00"
-    },
-    {
-      "title": "Invitation of Quotations for Passive Networking Work for Installation of Wireless Access Point (Wi-Fi) Network at the Hostels of Indian Institute of Information Technology Pune.",
-      "tenderNumber": "IIITP/Purchase/Hostel Passive Networking/2026/2635",
-      "fileUrl": "/assets/etenders/Internet  Passive Work RFQ.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "11-07-2026 - 17:00"
+      "submissionDate": "28-07-2026, 17:00"
     },
     {
       "title": "GeM Bid for Empanelment of Service Providers for Hiring of Cars",
@@ -28,15 +19,6 @@
       "submissionDate": "16-07-2026 - 11:30"
     },
     {
-      "title": "Invitation of Quotations for Printing of Answer Sheets for Indian Institute of Information Technology Pune",
-      "tenderNumber": "2026_IIITP_915207_1",
-      "fileUrl": "/assets/etenders/CPPP RFQ for Answer Sheets.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "/assets/etenders/Corri.pdf",
-      "corrigendumText": "",
-      "submissionDate": "06-07-2026 - 17:00"
-    },
-    {
       "title": "GeM Bid for  Hiring of Consultants -Internationalization, Global Academic Alliances, International Mobility Programs and Strategic Global Partnerships",
       "tenderNumber": " GEM/2026/B/7709388 dated 27.06.2026",
       "fileUrl": "/assets/etenders/Consultant- IR.pdf",
@@ -44,24 +26,6 @@
       "corrigendumUrl": "",
       "corrigendumText": "",
       "submissionDate": "18-07-2026 - 12:30"
-    },
-    {
-      "title": "CPPP bid for Development of Temporary Ground behind Academic Building and Near Shopping Complex IIIT Pune Campus",
-      "tenderNumber": "2026_IIITP_914727_1",
-      "fileUrl": "/assets/etenders/Development of Ground.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "03-07-2026 - 17:00"
-    },
-    {
-      "title": "GeM Bid For Empanelment of Service Providers for Hiring of Bus Services",
-      "tenderNumber": "GEM/2026/B/7678945 dated 18.06.2026",
-      "fileUrl": "/assets/etenders/GeM bid For Empanelment of Service Providers for Hiring of Bus Services.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "02-07-2026 - 11:30"
     },
     {
       "title": "GeM bid for hiring of Security Manpower on outsourced basis",
@@ -83,6 +47,51 @@
     }
   ],
   "archive": [
+    {
+      "title": "Invitation of Quotations for Printing of Answer Sheets for Indian Institute of Information Technology Pune - Result of Financial Evaluation",
+      "tenderNumber": "2026_IIITP_915207_1",
+      "fileUrl": "/assets/etenders/Notice_Answer sheet (1).pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "11-07-2026 - 17:00"
+    },
+    {
+      "title": "Invitation of Quotations for Passive Networking Work for Installation of Wireless Access Point (Wi-Fi) Network at the Hostels of Indian Institute of Information Technology Pune.",
+      "tenderNumber": "IIITP/Purchase/Hostel Passive Networking/2026/2635",
+      "fileUrl": "/assets/etenders/Internet  Passive Work RFQ.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "11-07-2026 - 17:00"
+    },
+    {
+      "title": "Invitation of Quotations for Printing of Answer Sheets for Indian Institute of Information Technology Pune",
+      "tenderNumber": "2026_IIITP_915207_1",
+      "fileUrl": "/assets/etenders/CPPP RFQ for Answer Sheets.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "/assets/etenders/Corri.pdf",
+      "corrigendumText": "",
+      "submissionDate": "06-07-2026 - 17:00"
+    },
+    {
+      "title": "CPPP bid for Development of Temporary Ground behind Academic Building and Near Shopping Complex IIIT Pune Campus",
+      "tenderNumber": "2026_IIITP_914727_1",
+      "fileUrl": "/assets/etenders/Development of Ground.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "03-07-2026 - 17:00"
+    },
+    {
+      "title": "GeM Bid For Empanelment of Service Providers for Hiring of Bus Services",
+      "tenderNumber": "GEM/2026/B/7678945 dated 18.06.2026",
+      "fileUrl": "/assets/etenders/GeM bid For Empanelment of Service Providers for Hiring of Bus Services.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "02-07-2026 - 11:30"
+    },
     {
       "title": "GeM bid for Supply and Installation of MS Grills in Balconies",
       "tenderNumber": "GEM/2026/B/7515930 dated  08-05-2026",
