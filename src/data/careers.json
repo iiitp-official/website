@@ -1,6 +1,20 @@
 {
   "live": [
     {
+      "title": "CSE - Assistant Prof. (Temporary)",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "/careers-documents/CSE - Assistant Prof. (Temporary).pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://iiitprec.samarth.edu.in/"
+        }
+      ],
+      "date": "21-07-2026"
+    },
+    {
       "title": "Advertisement for Hiring of Manpower through M/s Eagle Security & Personnel Services",
       "buttons": [
         {
