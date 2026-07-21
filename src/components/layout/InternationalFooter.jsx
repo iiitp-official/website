@@ -232,6 +232,7 @@ const InternationalFooter = () => {
             </div>
           </div>
           
+          {/*
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
             <div className="flex items-center space-x-3">
               <span className="text-gray-400 uppercase tracking-wider text-xs font-semibold">Visitors</span>
@@ -255,6 +256,7 @@ const InternationalFooter = () => {
               </div>
             </div>
           </div>
+          */}
         </div>
       </div>
     </footer>
