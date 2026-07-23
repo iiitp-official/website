@@ -576,15 +576,15 @@ const UgPgSchemesPage = () => {
 
   const [activeSemester1, setActiveSemester1] = useState(1);
 
-    const curriculum1 = [
+    const newEceCurriculum = [
     {
       semester: 1,
       totalCredits: 19,
       courses: [
         { name: "Basic Electronics Engineering", hours: "3-0-2", credits: 4 },
-        { name: "Foundations of Computer Science", hours: "3-0-0", credits: 3 },
+        { name: "Foundation of Computer Science", hours: "3-0-0", credits: 3 },
+        { name: "Engineering Calculus", hours: "3-0-0", credits: 3 },
         { name: "Computer Programming Concept & Practice", hours: "3-0-2", credits: 4 },
-        { name: "Engineering Mathematics-I", hours: "3-0-0", credits: 3 },
         { name: "Language & Writing Skills", hours: "2-0-0", credits: 2 },
         { name: "Innovation", hours: "1-0-0", credits: 1 },
         { name: "Environmental Science", hours: "2-0-0", credits: 2 }
@@ -605,14 +605,14 @@ const UgPgSchemesPage = () => {
     },
     {
       semester: 3,
-      totalCredits: 21,
+      totalCredits: 20,
       courses: [
         { name: "Design and Analysis of Algorithms", hours: "3-0-2", credits: 4 },
         { name: "Computer Organization and Architecture", hours: "3-0-0", credits: 3 },
-        { name: "Network Analysis and Theory", hours: "3-0-0", credits: 3 },
-        { name: "Database Management System", hours: "3-0-2", credits: 4 },
-        { name: "Python Programming", hours: "3-0-2", credits: 4 },
-        { name: "Probability and Random Process", hours: "3-0-0", credits: 3 }
+        { name: "Signals and Systems", hours: "3-0-0", credits: 3 },
+        { name: "Probability and Random Process", hours: "3-0-0", credits: 3 },
+        { name: "Network Theory and Analysis", hours: "3-0-0", credits: 3 },
+        { name: "Python Programming", hours: "3-0-2", credits: 4 }
       ]
     },
     {
@@ -630,15 +630,15 @@ const UgPgSchemesPage = () => {
     },
     {
       semester: 5,
-      totalCredits: 24,
+      totalCredits: 22,
       courses: [
+        { name: "Electromagnetic Theory and Applications", hours: "3-0-0", credits: 3 },
         { name: "Digital Communication", hours: "3-0-2", credits: 4 },
         { name: "VLSI Design", hours: "3-0-2", credits: 4 },
-        { name: "Antenna and RF Microwave", hours: "3-0-2", credits: 4 },
-        { name: "Elective 1 (DE)", hours: "3-0-0", credits: 3 },
-        { name: "Elective 2 (OE)", hours: "3-0-0", credits: 3 },
-        { name: "Linear and Nonlinear Optimization", hours: "3-0-0", credits: 3 },
-        { name: "Minor Project-II", hours: "0-0-6", credits: 3 }
+        { name: "Machine learning (Elective 1)", hours: "3-0-0", credits: 3 },
+        { name: "Image Processing (Elective 2)", hours: "3-0-0", credits: 3 },
+        { name: "Modelling and Synthesis with Verilog HDL (Elective 3)", hours: "3-0-0", credits: 3 },
+        { name: "Minor Project-II", hours: "0-0-4", credits: 2 }
       ]
     },
     {
@@ -658,12 +658,12 @@ const UgPgSchemesPage = () => {
       semester: 7,
       totalCredits: 17,
       courses: [
-        { name: "Intelligent Systems and Robotics", hours: "3-0-0", credits: 3 },
-        { name: "Internet of Things", hours: "3-0-0", credits: 3 },
-        { name: "Elective 1 (DE)", hours: "3-0-0", credits: 3 },
-        { name: "Elective 2 (OE)", hours: "3-0-0", credits: 3 },
-        { name: "Major Project-I", hours: "0-0-6", credits: 3 },
-        { name: "Internship", hours: "0-0-4", credits: 2 }
+        { name: "Advanced Wireless Communication", hours: "3-0-0", credits: 3 },
+        { name: "Cyber Physical System", hours: "3-0-0", credits: 3 },
+        { name: "Wireless Sensor Network (Elective 1)", hours: "3-0-0", credits: 3 },
+        { name: "Deep Learning (Elective 2)", hours: "3-0-0", credits: 3 },
+        { name: "Internship-I", hours: "0-0-4", credits: 2 },
+        { name: "Major Project-I", hours: "0-0-6", credits: 3 }
       ]
     },
     {
@@ -1166,16 +1166,15 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
               <div className="flex flex-col md:flex-row justify-between md:items-end gap-4 mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
                   <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
-                    B. Tech. (Electronics & Communication Engineering)
-                    {/* B. Tech. (Electronics & <br /> Communication Engineering) */}
+                    B. Tech. (Electronics & <br /> Communication Engineering)
                   </h2>
                   
                   <p className="text-gray-600 dark:text-gray-400 mt-2">Explore the semester-wise course structure.</p>
                 </div>
-                {/* <SchemeToggle activeScheme={btechEceScheme} onChange={setBtechEceScheme} layoutIdPrefix="btech-ece" /> */}
+                <SchemeToggle activeScheme={btechEceScheme} onChange={setBtechEceScheme} layoutIdPrefix="btech-ece" />
               </div>
 
-              {btechEceScheme === "AY(2026-2027)" ? (
+              {btechEceScheme === "AY(2026-27)" ? (
                 <>
                   {/* Semester Tabs */}
                   <div className="flex overflow-x-auto gap-2 mb-6 pb-4">
@@ -1207,7 +1206,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                     </thead>
                     <tbody>
                       <AnimatePresence mode="wait">
-                        {curriculum1.find(c => c.semester === activeSemester1)?.courses.map((course, idx) => (
+                        {newEceCurriculum.find(c => c.semester === activeSemester1)?.courses.map((course, idx) => (
                           <motion.tr
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -1227,7 +1226,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                             </td>
                           </tr>
                         )}
-                        {curriculum1.find(c => c.semester === activeSemester1)?.totalCredits && (
+                        {newEceCurriculum.find(c => c.semester === activeSemester1)?.totalCredits && (
                           <motion.tr
                             key="total"
                             initial={{ opacity: 0 }}
@@ -1239,7 +1238,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                               Total Credits
                             </td>
                             <td className="py-2.5 px-4 text-center text-accent-dark font-black text-lg">
-                              {curriculum1.find(c => c.semester === activeSemester1).totalCredits}
+                              {newEceCurriculum.find(c => c.semester === activeSemester1).totalCredits}
                             </td>
                           </motion.tr>
                         )}
@@ -1251,7 +1250,7 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                 </>
               ) : (
                 <div className="py-12 text-center text-gray-500 dark:text-gray-400 italic bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
-                  Data for syllabus AY(2025-2026) will be updated soon.
+                  Data for syllabus AY(23-24/24-25/25-26) will be updated soon.
                 </div>
               )}
             </div>

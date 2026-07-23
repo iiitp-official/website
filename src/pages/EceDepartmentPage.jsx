@@ -54,9 +54,9 @@ const EceDepartmentPage = () => {
       totalCredits: 19,
       courses: [
         { name: "Basic Electronics Engineering", hours: "3-0-2", credits: 4 },
-        { name: "Foundations of Computer Science", hours: "3-0-0", credits: 3 },
+        { name: "Foundation of Computer Science", hours: "3-0-0", credits: 3 },
+        { name: "Engineering Calculus", hours: "3-0-0", credits: 3 },
         { name: "Computer Programming Concept & Practice", hours: "3-0-2", credits: 4 },
-        { name: "Engineering Mathematics-I", hours: "3-0-0", credits: 3 },
         { name: "Language & Writing Skills", hours: "2-0-0", credits: 2 },
         { name: "Innovation", hours: "1-0-0", credits: 1 },
         { name: "Environmental Science", hours: "2-0-0", credits: 2 }
@@ -77,14 +77,14 @@ const EceDepartmentPage = () => {
     },
     {
       semester: 3,
-      totalCredits: 21,
+      totalCredits: 20,
       courses: [
-        { name: "Analysis & Design of Algorithm", hours: "3-0-2", credits: 4 },
+        { name: "Design and Analysis of Algorithms", hours: "3-0-2", credits: 4 },
         { name: "Computer Organization and Architecture", hours: "3-0-0", credits: 3 },
-        { name: "Network Analysis and Theory", hours: "3-0-0", credits: 3 },
-        { name: "Database Management System", hours: "3-0-2", credits: 4 },
-        { name: "Python Programming", hours: "3-0-2", credits: 4 },
-        { name: "Probability and Random Process", hours: "3-0-0", credits: 3 }
+        { name: "Signals and Systems", hours: "3-0-0", credits: 3 },
+        { name: "Probability and Random Process", hours: "3-0-0", credits: 3 },
+        { name: "Network Theory and Analysis", hours: "3-0-0", credits: 3 },
+        { name: "Python Programming", hours: "3-0-2", credits: 4 }
       ]
     },
     {
@@ -102,15 +102,15 @@ const EceDepartmentPage = () => {
     },
     {
       semester: 5,
-      totalCredits: 24,
+      totalCredits: 22,
       courses: [
+        { name: "Electromagnetic Theory and Applications", hours: "3-0-0", credits: 3 },
         { name: "Digital Communication", hours: "3-0-2", credits: 4 },
         { name: "VLSI Design", hours: "3-0-2", credits: 4 },
-        { name: "Antenna and RF Microwave", hours: "3-0-2", credits: 4 },
-        { name: "Elective 1 (DE)", hours: "3-0-0", credits: 3 },
-        { name: "Elective 2 (OE)", hours: "3-0-0", credits: 3 },
-        { name: "Linear and Nonlinear Optimization", hours: "3-0-0", credits: 3 },
-        { name: "Minor Project-II", hours: "0-0-6", credits: 3 }
+        { name: "Machine learning, (Elective 1)", hours: "3-0-0", credits: 3 },
+        { name: "Image Processing, (Elective 2)", hours: "3-0-0", credits: 3 },
+        { name: "Modelling and Synthesis with Verilog HDL, (Elective 3)", hours: "3-0-0", credits: 3 },
+        { name: "Minor Project-II", hours: "0-0-4", credits: 2 }
       ]
     },
     {
@@ -130,12 +130,12 @@ const EceDepartmentPage = () => {
       semester: 7,
       totalCredits: 17,
       courses: [
-        { name: "Intelligent Systems and Robotics", hours: "3-0-0", credits: 3 },
-        { name: "Internet of Things", hours: "3-0-0", credits: 3 },
-        { name: "Elective 1 (DE)", hours: "3-0-0", credits: 3 },
-        { name: "Elective 2 (OE)", hours: "3-0-0", credits: 3 },
-        { name: "Major Project-I", hours: "0-0-6", credits: 3 },
-        { name: "Internship", hours: "0-0-4", credits: 2 }
+        { name: "Advanced Wireless Communication", hours: "3-0-0", credits: 3 },
+        { name: "Cyber Physical System", hours: "3-0-0", credits: 3 },
+        { name: "Wireless Sensor Network, (Elective 1)", hours: "3-0-0", credits: 3 },
+        { name: "Deep Learning, (Elective 2)", hours: "3-0-0", credits: 3 },
+        { name: "Internship-I", hours: "0-0-4", credits: 2 },
+        { name: "Major Project-I", hours: "0-0-6", credits: 3 }
       ]
     },
     {
