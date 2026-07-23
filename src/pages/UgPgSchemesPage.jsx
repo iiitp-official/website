@@ -1166,12 +1166,13 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
               <div className="flex flex-col md:flex-row justify-between md:items-end gap-4 mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
                 <div>
                   <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
-                    B. Tech. (Electronics & <br /> Communication Engineering)
+                    {/* B. Tech. (Electronics & <br /> Communication Engineering) */}
+                    B. Tech. (Electronics & Communication Engineering)
                   </h2>
                   
                   <p className="text-gray-600 dark:text-gray-400 mt-2">Explore the semester-wise course structure.</p>
                 </div>
-                <SchemeToggle activeScheme={btechEceScheme} onChange={setBtechEceScheme} layoutIdPrefix="btech-ece" />
+                {/* <SchemeToggle activeScheme={btechEceScheme} onChange={setBtechEceScheme} layoutIdPrefix="btech-ece" /> */}
               </div>
 
               {btechEceScheme === "AY(2026-27)" ? (
