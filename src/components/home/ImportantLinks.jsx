@@ -155,6 +155,7 @@ const ImportantLinks = () => {
                   </div>
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 max-h-[240px] overflow-y-auto pr-2 custom-scrollbar">
                     {[
+                      { name: 'Hostel Application Form 2026', path: '/downloads/Hostel Application Form.pdf', category: 'student' },
                       { name: 'Medical Reimbursement Claim Form', path: '/downloads/Medical reimbursement CLAIM FORM.pdf', category: 'faculty' },
                       { name: 'M.Tech. CCMT Physical Reporting Details (AY 2026-27)', path: '/documents/PHYSICAL_REPORTING_DETAILS_OF_ADMISSION_PROCESS_FOR_MTECH_THROUGH_CCMT_FIRST_SEMESTER_2026-27.pdf', category: 'student' },
                       { name: 'Children Education Allowance Form', path: '/downloads/cea-form-iiitp.pdf', category: 'faculty' },
@@ -185,7 +186,6 @@ const ImportantLinks = () => {
                       { name: 'Certificate for Dispatch by Speed Post', path: '/downloads/CERITIFICATE FOR DISPATCH BY SPEED POST.pdf', category: 'both' },
                       { name: 'Certificate Course Brochure', path: '/downloads/Brochure_Batch-II.pdf', category: 'student' },
                       { name: 'Sexual Harassment of Women at Workplace Act 2013', path: '/downloads/A2013-14.pdf', category: 'both' },
-                      { name: 'Hostel Application Form 2026', path: '/downloads/Hostel-application-form-2026.pdf', category: 'student' },
                       { name: 'SBI Education Loan Contact Details', path: '/downloads/SBI Education Loan Check List and Contact Details_0.pdf', category: 'student' },
                       { name: 'Indent Form for Consumable Items', path: '/downloads/Indent for stationery consumable items.pdf', category: 'faculty' },
                       { name: 'Internet Credentials Form', path: '/downloads/Internet Login Form.pdf', category: 'faculty' },
