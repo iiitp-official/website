@@ -2,6 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const slidesData = [
   {
+    image: '/carousel/IR02.jpg',
+    alt: 'IR02',
+    caption: 'IIIT Pune International Relations Event',
+    date: '28th August 2026'
+  },
+  {
     image: '/carousel/IR01.png',
     alt: 'IR01',
     caption: 'IIIT Pune Hosts Campus France for Interaction on Higher Education Opportunities',
