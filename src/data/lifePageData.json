@@ -986,6 +986,86 @@
   ],
   "EVENTS": [
     {
+      "name": "IIIT Pune Celebrates National Sports Day",
+      "type": "Sports",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "IIIT Pune celebrated National Sports Day with enthusiastic participation from the Institute community, reaffirming its commitment to holistic student development and a vibrant sporting culture. Organised under the guidance of Director Prof. Vineet Kansal, the celebrations featured table tennis, basketball, volleyball, badminton, chess, carrom, an 800m run, and a 3 km marathon. Beyond competition, the activities highlighted the values of teamwork, discipline, resilience, sportsmanship, and physical well-being. The celebration reinforced the importance of sports in building healthier and well-rounded individuals, aligning with SDG 3 – Good Health and Well-being and SDG 4 – Quality Education.",
+      "images": [
+        "/assets/lifepage/NS01.jpg",
+        "/assets/lifepage/NS02.jpg",
+        "/assets/lifepage/NS03.jpg",
+        "/assets/lifepage/NS04.jpg",
+        "/assets/lifepage/NS05.jpg",
+        "/assets/lifepage/NS06.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune celebrated National Sports Day with enthusiastic participation from the Institute community",
+        "The celebrations featured table tennis, basketball, volleyball, badminton, chess, carrom, an 800m run, and a 3 km marathon",
+        "The activities highlighted teamwork, discipline, resilience, sportsmanship, and physical well-being",
+        "The celebration reinforced the importance of sports in building healthier and well-rounded individuals, aligning with SDG 3 (Good Health and Well-being) and SDG 4 (Quality Education)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Explores Academic Collaboration with Aivancity, Paris",
+      "type": "Academic Collaboration",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "IIIT Pune hosted Prof. (Dr.) Amod Bhat from Aivancity School of AI & Data for Business & Society, Paris, for discussions aimed at strengthening India–France academic collaboration. The institutional interaction explored opportunities for joint research in AI, technology and business, student and faculty exchanges, academic partnerships, and potential dual-degree programmes. Prof. Bhat also interacted with students on the future of Artificial Intelligence, discussing its impact on startups and entrepreneurship, emerging career opportunities, innovation, and the importance of responsible and ethical AI for societal benefit. The visit strengthened IIIT Pune’s growing international academic outreach and aligns with SDG 4 – Quality Education, SDG 9 – Industry, Innovation and Infrastructure, and SDG 17 – Partnerships for the Goals.",
+      "images": [
+        "/assets/lifepage/Aivancity01.jpg",
+        "/assets/lifepage/Aivancity02.jpg",
+        "/assets/lifepage/Aivancity03.jpg",
+        "/assets/lifepage/Aivancity04.jpg",
+        "/assets/lifepage/Aivancity05.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune hosted Prof. (Dr.) Amod Bhat from Aivancity School of AI & Data for Business & Society, Paris, for discussions on strengthening India–France academic collaboration",
+        "Exploration of opportunities for joint research in AI, technology and business, student and faculty exchanges, academic partnerships, and potential dual-degree programmes",
+        "Prof. Bhat interacted with students on the future of Artificial Intelligence, including its impact on startups and entrepreneurship, emerging career opportunities, innovation, and responsible and ethical AI for societal benefit",
+        "The visit strengthened IIIT Pune’s growing international academic outreach and aligned with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Observes Anti-Ragging Week 2026",
+      "type": "Awareness",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "IIIT Pune observed Anti-Ragging Week from 17–22 August 2026, reaffirming its commitment to fostering a safe, respectful, inclusive, and student-friendly campus. The week featured a range of awareness activities, including essay and slogan writing, a signature campaign, skit competition, poetry writing, and poster painting, encouraging students to creatively engage with the values of dignity, empathy, and mutual respect. A key highlight was the Anti-Ragging Pledge, administered to all students as a collective commitment against ragging and towards responsible conduct. The initiative reinforced the message that every student has the right to a campus environment founded on safety, dignity, equality, respect, and inclusion, aligning particularly with SDG 4 – Quality Education and SDG 16 – Peace, Justice and Strong Institutions. Say No to Ragging. Say Yes to Respect and Inclusion.",
+      "images": [
+        "/assets/lifepage/Antirag01.jpg",
+        "/assets/lifepage/Antirag02.jpg",
+        "/assets/lifepage/Antirag03.jpg",
+        "/assets/lifepage/Antirag04.jpg",
+        "/assets/lifepage/Antirag05.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune observed Anti-Ragging Week from 17–22 August 2026 to promote a safe, respectful, inclusive, and student-friendly campus",
+        "Awareness activities included essay and slogan writing, a signature campaign, skit competition, poetry writing, and poster painting",
+        "The Anti-Ragging Pledge was administered to all students as a collective commitment against ragging and towards responsible conduct",
+        "The initiative promoted safety, dignity, equality, respect, and inclusion while aligning with SDG 4 (Quality Education) and SDG 16 (Peace, Justice and Strong Institutions)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Organises “Re-Engineering Mind” Session for Students",
+      "type": "Student Development",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "IIIT Pune organised an engaging session titled “Re-Engineering Mind”, featuring Mr. Shrikant Awate from Google India. The session focused on understanding the human mind, its influence on thoughts and choices, and developing greater self-awareness and emotional intelligence. The concepts were creatively presented through a pantomime performance, offering students an experiential perspective on the relationship between thoughts, senses, and actions. The initiative reflected IIIT Pune’s emphasis on holistic student development, complementing technical education with self-awareness, emotional well-being, and personal growth. The initiative also aligns with SDG 3 – Good Health and Well-being and SDG 4 – Quality Education, promoting mental well-being, self-awareness, and holistic learning as integral components of student development.",
+      "images": [
+        "/assets/lifepage/Reeng01.jpg",
+        "/assets/lifepage/Reeng02.jpg",
+        "/assets/lifepage/Reeng03.jpg",
+        "/assets/lifepage/Reeng04.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune organised the “Re-Engineering Mind” session featuring Mr. Shrikant Awate from Google India",
+        "The session focused on understanding the human mind, its influence on thoughts and choices, self-awareness, and emotional intelligence",
+        "Concepts were creatively presented through a pantomime performance, providing students with an experiential perspective on the relationship between thoughts, senses, and actions",
+        "The initiative promoted holistic student development, self-awareness, emotional well-being, personal growth, and aligned with SDG 3 (Good Health and Well-being) and SDG 4 (Quality Education)"
+      ],
+      "links": []
+    },
+    {
       "name": "IIIT Pune Organises ICC Orientation on POSH, Women’s Rights and Workplace Safety",
       "type": "Orientation",
       "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
