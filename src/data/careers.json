@@ -1,6 +1,21 @@
 {
   "live": [
     {
+      "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "/careers-documents/Advertisment-IIIT 28-08-2026.pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://forms.gle/X7LjpZqnk1jxENb9A"
+        }
+      ],
+      "date": "01-09-2026",
+      "lastDate": "12-09-2026"
+    },
+    {
       "title": "ADVERTISEMENT FOR POSITIONS IN START-UP & INCUBATION CELL IN INSTITUTE",
       "buttons": [
         {
