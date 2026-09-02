@@ -27,6 +27,21 @@ const InternationalHomePage = () => {
               <h2 className="section-headline">What's New &amp; Announcements</h2>
               
               <div className="news-feed">
+                  <article className="news-item bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-l-4 border-blue-600 mb-6 transition-shadow hover:shadow-md">
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+                    IIIT Pune Explores Academic Collaboration with Aivancity, Paris 
+                  </h3>
+                  <div className="text-xs font-semibold text-blue-600 mb-3 uppercase tracking-wider">28th August 2026</div>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
+                    IIIT Pune hosted Prof. (Dr.) Amod Bhat from Aivancity School of AI & Data for Business & Society, Paris, for discussions aimed at strengthening India–France academic collaboration. The institutional interaction explored opportunities for joint research in AI, technology and business, student and faculty exchanges, academic partnerships, and potential dual-degree programmes.
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
+                    Prof. Bhat also interacted with students on the future of Artificial Intelligence, discussing its impact on startups and entrepreneurship, emerging career opportunities, innovation, and the importance of responsible and ethical AI for societal benefit. 
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
+                    The visit strengthened IIIT Pune’s growing international academic outreach and aligns with SDG 4 – Quality Education, SDG 9 – Industry, Innovation and Infrastructure, and SDG 17 – Partnerships for the Goals.                 
+                  </p>
+                </article>
                 <article className="news-item bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-l-4 border-blue-600 mb-6 transition-shadow hover:shadow-md">
                   <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">
                     Campus France Delegate Visits IIIT Pune to Explore Academic Collaboration with France
