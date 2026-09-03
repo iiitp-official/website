@@ -986,6 +986,54 @@
   ],
   "EVENTS": [
     {
+      "name": "IIIT Pune Hosts Dr. Virendra Singh from IIT Bombay Under Micro-Credits Programme",
+      "type": "Academic Collaboration",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "IIIT Pune hosted Dr. Virendra Singh from the Indian Institute of Technology Bombay as part of the Micro-Credits Programme, an initiative through which distinguished faculty from premier institutions deliver credit-bearing lectures to IIIT Pune students. Dr. Singh delivered a series of expert lectures on VLSI Design, a domain of critical national importance in the context of India's growing semiconductor ecosystem and the country's focus on domestic chip design and manufacturing. The visit also included a productive faculty interaction session, where potential areas of joint research collaboration between IIT Bombay and IIIT Pune were explored. The Micro-Credits Programme reflects IIIT Pune's commitment to providing students with current, relevant, and expert-led education beyond the regular curriculum, while strengthening academic partnerships and bringing leading expertise into the classroom.",
+      "images": [
+        "/assets/lifepage/VirendraSingh01.jpg",
+        "/assets/lifepage/VirendraSingh02.jpg",
+        "/assets/lifepage/VirendraSingh03.jpg",
+        "/assets/lifepage/VirendraSingh04.jpg",
+        "/assets/lifepage/VirendraSingh05.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune hosted Dr. Virendra Singh from IIT Bombay under the Micro-Credits Programme, enabling students to benefit from expert-led, credit-bearing lectures",
+        "Dr. Singh delivered a series of expert lectures on VLSI Design, with a focus on a critical domain linked to India's growing semiconductor ecosystem",
+        "The visit included a faculty interaction session exploring potential areas of joint research collaboration between IIT Bombay and IIIT Pune",
+        "The Micro-Credits Programme strengthens IIIT Pune's commitment to current, relevant and expert-led education beyond the regular curriculum",
+        "The initiative supports stronger academic partnerships and aligns with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Strengthens Competitive Programming Ecosystem Through CodeChef Interaction",
+      "type": "Industry Interaction",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "IIIT Pune hosted Mr. Suraj Sharma, Director of Operations at CodeChef, for a day-long visit on 27/08/2026 aimed at strengthening the institute's competitive programming ecosystem and exploring avenues for deeper collaboration between CodeChef and IIIT Pune. The visit included discussions with the Director, ICPC Nodal Officer, HOD CSE, TPO, SAC In-charge and Mr. Sharma on strengthening the partnership and developing future collaborative initiatives. He also interacted with 25+ coding club members on improving the coding culture on campus and encouraging greater female participation in ICPC. An interactive session with around 350 students focused on transitioning from a school mindset to an engineering mindset, the importance of problem solving and Data Structures and Algorithms in the age of AI, common myths about learning to code, and the value of consistent active learning through problem solving and project building. The visit concluded with an interaction with around 25+ faculty members on strengthening the coding culture at IIIT Pune, reflecting the institute's continued commitment to competitive programming and meaningful industry partnerships.",
+      "images": [
+        "/assets/lifepage/CodeChef01.JPG",
+        "/assets/lifepage/CodeChef02.JPG",
+        "/assets/lifepage/CodeChef03.JPG",
+        "/assets/lifepage/CodeChef04.JPG",
+        "/assets/lifepage/CodeChef05.JPG",
+        "/assets/lifepage/CodeChef06.JPG"
+      ],
+      "highlights": [
+        "IIIT Pune hosted Mr. Suraj Sharma, Director of Operations at CodeChef, on 27/08/2026 to strengthen the competitive programming ecosystem and explore deeper institutional collaboration",
+        "Discussions with the Director, ICPC Nodal Officer, HOD CSE, TPO, SAC In-charge and Mr. Sharma focused on strengthening the CodeChef–IIIT Pune partnership and future collaborative initiatives",
+        "Mr. Sharma interacted with 25+ coding club members on improving coding culture and encouraging greater female participation in ICPC",
+        "An interactive session with around 350 students covered the transition from a school mindset to an engineering mindset, coding in the age of AI, problem solving, Data Structures and Algorithms, and common myths around learning to code",
+        "The visit concluded with an interaction with around 25+ faculty members on strengthening the coding culture at IIIT Pune, reaffirming the institute's commitment to competitive programming and meaningful industry partnerships"
+      ],
+      "links": [
+                {
+          "label": "View Report",
+          "url": "/assets/lifepage/CodeChef Event.pdf"
+        }
+      ]
+    },
+    {
       "name": "IIIT Pune Celebrates National Sports Day",
       "type": "Sports",
       "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
