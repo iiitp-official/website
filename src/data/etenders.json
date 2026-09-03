@@ -1,6 +1,15 @@
 {
   "live": [
     {
+      "title": "Annual Maintenance Contract for Networking Devices (Version 2)",
+      "tenderNumber": "GEM/2026/B/7991907 ",
+      "fileUrl": "/assets/etenders/GeM bid for AMC of Network Devices.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "24-09-2026 ; 13:00 PM"
+    },
+    {
       "title": "GeM Bid for Hiring of CAG Empaneled/Experienced CA Services",
       "tenderNumber": "GEM/2026/B/7930005",
       "fileUrl": "/assets/etenders/GeM bid for CA Services.pdf",
@@ -17,15 +26,6 @@
       "corrigendumUrl": "/assets/etenders/Corr_Lib.pdf",
       "corrigendumText": "Document",
       "submissionDate": "25-08-2026, 19:00"
-    },
-    {
-      "title": "GEM bid for A3 Size Multifunction Printer (MFP)",
-      "tenderNumber": "GEM/2026/B/7821194",
-      "fileUrl": "/assets/etenders/GeM bid for Multi Finction Printer MFP.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "03-08-2026, 12:30"
     },
     {
       "title": "Gem bid for Printing Of Degree Certificate",
@@ -47,7 +47,16 @@
     }
   ],
   "archive": [
-        {
+    {
+      "title": "GEM bid for A3 Size Multifunction Printer (MFP)",
+      "tenderNumber": "GEM/2026/B/7821194",
+      "fileUrl": "/assets/etenders/GeM bid for Multi Finction Printer MFP.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "03-08-2026, 12:30"
+    },
+   {
       "title": "GeM Bid for Empanelment of Service Providers for Hiring of Cars",
       "tenderNumber": "GEM/2026/B/7734352",
       "fileUrl": "/assets/etenders/GeM Bid for Empanelment of Service Providers for Hiring of Cars copy.pdf",
