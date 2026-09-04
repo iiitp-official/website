@@ -25,7 +25,7 @@
       "fileText": "Document",
       "corrigendumUrl": "",
       "corrigendumText": "",
-      "submissionDate": "24-09-2026 ; 13:00 PM"
+      "submissionDate": "24-09-2026 ; 13:00"
     },
     {
       "title": "GeM Bid for Hiring of CAG Empaneled/Experienced CA Services",
@@ -34,7 +34,7 @@
       "fileText": "Document",
       "corrigendumUrl": "/assets/etenders/Cori_CA.pdf",
       "corrigendumText": "Document",
-      "submissionDate": "01.09.2026; 13:30"
+      "submissionDate": "09.09.2026; 13:00"
     },
     {
       "title": "GeM Bid for Steel Almirah / Cabinets (Library Racks)",
@@ -43,8 +43,10 @@
       "fileText": "Document",
       "corrigendumUrl": "/assets/etenders/Corr_Lib.pdf",
       "corrigendumText": "Document",
-      "submissionDate": "25-08-2026, 19:00"
-    },
+      "submissionDate": "05-09-2026, 19:00"
+    }
+  ],
+  "archive": [
     {
       "title": "Gem bid for Printing Of Degree Certificate",
       "tenderNumber": "GEM/2026/B/7826380",
@@ -62,9 +64,7 @@
       "corrigendumUrl": "",
       "corrigendumText": "",
       "submissionDate": "28-07-2026, 17:00"
-    }
-  ],
-  "archive": [
+    },
     {
       "title": "GEM bid for A3 Size Multifunction Printer (MFP)",
       "tenderNumber": "GEM/2026/B/7821194",
