@@ -88,6 +88,7 @@ const AlumniHomePage = lazy(() => import("./pages/AlumniHomePage"));
 const AlumniAboutPage = lazy(() => import("./pages/AlumniAboutPage"));
 const AlumniEventsPage = lazy(() => import("./pages/AlumniEventsPage"));
 const AlumniNetworkPage = lazy(() => import("./pages/AlumniNetworkPage"));
+const AlumniHallOfFamePage = lazy(() => import("./pages/AlumniHallOfFamePage"));
 const AlumniGetInvolvedPage = lazy(() => import("./pages/AlumniGetInvolvedPage"));
 const AlumniResourcesPage = lazy(() => import("./pages/AlumniResourcesPage"));
 const AlumniContactPage = lazy(() => import("./pages/AlumniContactPage"));
@@ -206,6 +207,7 @@ function AppContent() {
             <Route path="/alumni/about" element={<AlumniAboutPage />} />
             <Route path="/alumni/events" element={<AlumniEventsPage />} />
             <Route path="/alumni/network" element={<AlumniNetworkPage />} />
+            <Route path="/alumni/hall-of-fame" element={<AlumniHallOfFamePage />} />
             <Route path="/alumni/get-involved" element={<AlumniGetInvolvedPage />} />
             <Route path="/alumni/resources" element={<AlumniResourcesPage />} />
             <Route path="/alumni/contact" element={<AlumniContactPage />} />
