@@ -4,16 +4,32 @@ import LifePageLayout from '../components/life/LifePageLayout';
 
 const newsletters = [
   {
+    meta: "Volume 2 | Edition I | MAY-AUGUST 2026",
+    title: "ECLECTIC TIMES",
+    desc: (
+      <>
+        The third edition of <strong className="text-gray-800 dark:text-gray-200">ECLECTIC TIMES</strong> covers the latest developments at IIIT Pune,
+        including student achievements, research highlights, cultural events, and campus activities. This edition also features interviews with
+        prominent faculty members and showcases the innovative projects undertaken by students.
+      </>
+    ),
+    link: "/newsletter-docs-images/Eclectic Times Volume 2 Edition I.pdf",
+    downloadLink: "/newsletter-docs-images/Eclectic Times Volume 2 Edition I.pdf",
+    img: "/newsletter-docs-images/Volume II - Edition 1.png"
+  },
+  {
     meta: "Volume 1 | Edition II | April 2026",
     title: "ECLECTIC TIMES",
     desc: (
       <>
-        The second edition of <strong className="text-gray-800 dark:text-gray-200">ECLECTIC TIMES</strong> highlights major institute
-        developments, student achievements, sports accomplishments, research contributions,
-        creative writings, cultural activities, and campus events. This edition features
-        the assumption of charge by Prof. Vineet Kansal as Director of IIIT Pune,
-        celebrations of Dr. B. R. Ambedkar Jayanti, Inter-IIIT Sports Meet achievements,
-        international conference participation, and inspiring stories from the IIIT Pune community.
+         The first edition of <strong className="text-gray-800 dark:text-gray-200">ECLECTIC TIMES</strong> for Volume 2
+          captures the vibrant academic, research, industry, international, and student
+          activities at IIIT Pune. This edition highlights major research publications and
+          funded projects, industry and academic collaborations, international engagements,
+          expert talks, workshops, MoUs, hackathons, student competitions, sports activities,
+          and new initiatives including NSS and TEDx IIIT Pune. It reflects the Institute’s
+          continued commitment to innovation, excellence, collaboration, and the holistic
+          development of its students and community.
       </>
     ),
     link: "/newsletter-docs-images/Newsletter Edition II.pdf",
