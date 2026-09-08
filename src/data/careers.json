@@ -1,6 +1,21 @@
 {
   "live": [
     {
+      "title": "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "/careers-documents/AP (CSE) Temp.pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://iiitprec.samarth.edu.in/"
+        }
+      ],
+      "date": "08-09-2026",
+      "lastDate": "Nill"
+    },
+    {
       "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
       "buttons": [
         {

@@ -16,6 +16,13 @@ const LatestNews = () => {
       .catch(() => {
         setNews([
           {
+            id: 110,
+            title: "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)",
+            date: "08-09-2026",
+            excerpt: "Applications are invited for the position of Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE) at IIIT Pune.",
+            link: "/careers-documents/AP (CSE) Temp.pdf"
+          },
+          {
             id: 109,
             title: "SAC Club Heads and Co-Heads for the Academic Year 2026–27",
             date: "21-08-2026",

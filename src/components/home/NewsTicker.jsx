@@ -15,6 +15,7 @@ const NewsTicker = () => {
       .catch(() => {
         // Fallback mock news
         setNews([
+          {id: 110, title: "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)", link: "/careers-documents/AP (CSE) Temp.pdf" },
           {id: 109, title: "SAC Club Heads and Co-Heads for the Academic Year 2026–27", link: "/documents/SAC Club Heads and Co-Heads.pdf" },
           {id: 108, title: "Orientation Programme for B.Tech./ M.Tech I Year (AY 2026-27)", link: "/docs/Final orientation.pdf" },
           {id: 107, title: "Institte_Bus_Service_Extra Running_Bus-32A_13th_August2026", link: "/documents/Institte_Bus_Service_Extra Running_Bus-32A_13th_August2026..pdf" },
