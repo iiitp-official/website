@@ -77,37 +77,28 @@ const AlumniEventsPage = () => {
                           <article className="rounded-3xl border border-gray-200 dark:border-gray-700 bg-slate-50 dark:bg-slate-900 p-6">
                 <div className="mb-2 flex items-start justify-between gap-3">
                   <h3 className="text-xl font-semibold">
-                    Upcoming Chapter: 2nd Alumni Interaction - Bangalore Chapter (05 September 2026)
+                    Second Alumni Interaction : Bangalore Chapter (05 September 2026)
                   </h3>
                   <span className="inline-flex shrink-0 rounded-full bg-primary px-3 py-1 text-xs font-semibold uppercase text-white">
-                    Upcoming
+                    Completed
                   </span>
                 </div>
                 <p className="text-gray-700 dark:text-gray-300 leading-7">
-                  Building on the success of the inaugural Pune Chapter, IIIT Pune is delighted to host the{' '}
+                  IIIT Pune successfully hosted its{' '}
                   <span className="rounded-md bg-amber-100 px-2 py-0.5 font-semibold text-amber-900 dark:bg-amber-900/40 dark:text-amber-200">
-                    2nd Alumni Interaction - Bangalore Chapter on 5 September 2026.
+                    second Alumni Meet in Bangalore on 5 September 2026, 
                   </span>
+                
+                <span className="text-gray-700 dark:text-gray-300 leading-7 mt-4">
+                  bringing together alumni and senior faculty members to reconnect, reminisce, and strengthen their continuing association with the Institute.
+                </span>
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-7 mt-4">
-                  The event will bring together alumni working across Bengaluru's vibrant technology ecosystem, providing a platform to reconnect with the Institute, exchange professional experiences, foster meaningful industry-academia connections, and strengthen the growing IIIT Pune alumni network.
+                  The gathering came alive through stories, shared memories, and experiences, as senior faculty members and alumni reflected on the Institute’s journey and the diverse professional paths its graduates have pursued. The interaction created a warm space for reconnection, knowledge exchange, professional networking, and meaningful conversations between the Institute and its alumni community. 
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-7 mt-4">
-                  Through networking, mentorship, and shared insights, the gathering aims to inspire future collaborations and reinforce lifelong ties with the Institute.
+                  Building on the success of the first Alumni Interaction held in Pune, the Bangalore meet marked another important step towards nurturing a strong and enduring alumni network centred on mentorship, collaboration, and continued engagement with the Institute. 
                 </p>
-                <div className="mt-5 rounded-xl border border-blue-200 bg-blue-50 p-4 dark:border-blue-800 dark:bg-blue-950/30">
-                  <p className="text-sm font-semibold text-blue-800 dark:text-blue-300">
-                    Registration deadline: 31st Aug 2026
-                  </p>
-                  <a
-                    href="https://forms.gle/J8NeaD2WroumxTTm6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 inline-flex text-sm font-medium text-primary hover:underline"
-                  >
-                    Register for 2nd Alumni Interaction - Bangalore Chapter
-                  </a>
-                </div>
               </article>
               
               <article className="mb-8 rounded-3xl border border-gray-200 dark:border-gray-700 bg-slate-50 dark:bg-slate-900 p-6">
