@@ -2,6 +2,11 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const slidesData = [
   {
+    image: '/carousel/alumni_3.JPG',
+    alt: 'IIIT Pune Alumni Event',
+    caption: 'Second Alumni Interaction: Bangalore Chapter - Alumni, Director, Faculty, and Staff',
+  },
+  {
     image: '/carousel/alumni_2.JPG',
     alt: 'IIIT Pune Academic Session',
     caption: 'First Alumni Interaction: Pune Chapter - Alumni, Director, Faculty, and Staff',

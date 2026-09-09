@@ -27,14 +27,14 @@ const AlumniHomePage = () => {
               </div>
 
               <div className="about-block">
-                <h2 className="section-headline">Upcoming Alumni Events</h2>
+                <h2 className="section-headline">Recent Alumni Events</h2>
                 <article className="border border-gray-200 dark:border-gray-700 rounded-2xl bg-slate-50 dark:bg-slate-900 p-6">
                   <div className="mb-3 flex items-start justify-between gap-3">
                     <h3 className="text-xl font-semibold">2nd Alumni Interaction – Bangalore Chapter</h3>
                     <p className="shrink-0 text-sm text-gray-500 dark:text-gray-400">05 September 2026</p>
                   </div>
                   <p className="leading-7 text-gray-700 dark:text-gray-300">
-                    Building on the success of the Pune chapter, the Bangalore alumni interaction is planned to deepen relationships and foster new collaborations among IIIT Pune alumni.
+                    IIIT Pune successfully hosted its second Alumni Meet in Bangalore on 5 September 2026,bringing together alumni and senior faculty members to reconnect, reminisce, and strengthen their continuing association with the Institute.
                   </p>
                   <Link
                     to="/alumni/events"
@@ -46,7 +46,7 @@ const AlumniHomePage = () => {
                 <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
 
                 </p > 
-                <h2 className="section-headline">Recent Alumni Events</h2>
+                
                 <article className="border border-gray-200 dark:border-gray-700 rounded-2xl bg-slate-50 dark:bg-slate-900 p-6 mb-6">
                   <div className="mb-3 flex items-start justify-between gap-3">
                     <h3 className="text-xl font-semibold">First-Ever Alumni Interaction: Pune Chapter</h3>

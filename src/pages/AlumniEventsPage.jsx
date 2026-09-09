@@ -16,16 +16,26 @@ const AlumniEventsPage = () => {
     '/assets/lifepage/linkedin_img_1785173090941_23.jpg',
     '/assets/lifepage/linkedin_img_1785173090972_24.jpg',
   ];
+  const bangaloreChapterImages = Array.from(
+    { length: 19 },
+    (_, index) => `/assets/lifepage/Alumni/Blr_${String(index + 1).padStart(2, '0')}.JPG`,
+  );
 
   const [isLightboxOpen, setIsLightboxOpen] = React.useState(false);
+  const [activeGalleryImages, setActiveGalleryImages] = React.useState([]);
+  const [activeGalleryLabel, setActiveGalleryLabel] = React.useState('Alumni event');
   const [activeImageIndex, setActiveImageIndex] = React.useState(0);
 
   const totalPuneImages = puneChapterImages.length;
   const shouldCollapseGallery = totalPuneImages > 6;
   const visiblePuneImages = shouldCollapseGallery ? puneChapterImages.slice(0, 6) : puneChapterImages;
   const extraImagesCount = shouldCollapseGallery ? totalPuneImages - 5 : 0;
+  const visibleBangaloreImages = bangaloreChapterImages.slice(0, 6);
+  const extraBangaloreImagesCount = bangaloreChapterImages.length - 5;
 
-  const openLightbox = (index) => {
+  const openLightbox = (images, index, label) => {
+    setActiveGalleryImages(images);
+    setActiveGalleryLabel(label);
     setActiveImageIndex(index);
     setIsLightboxOpen(true);
   };
@@ -35,11 +45,13 @@ const AlumniEventsPage = () => {
   };
 
   const showNextImage = () => {
-    setActiveImageIndex((prevIndex) => (prevIndex + 1) % totalPuneImages);
+    setActiveImageIndex((prevIndex) => (prevIndex + 1) % activeGalleryImages.length);
   };
 
   const showPreviousImage = () => {
-    setActiveImageIndex((prevIndex) => (prevIndex - 1 + totalPuneImages) % totalPuneImages);
+    setActiveImageIndex(
+      (prevIndex) => (prevIndex - 1 + activeGalleryImages.length) % activeGalleryImages.length,
+    );
   };
 
   React.useEffect(() => {
@@ -74,7 +86,7 @@ const AlumniEventsPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden p-8 md:p-12 alumni-page">
           <section className="space-y-8">
-                          <article className="rounded-3xl border border-gray-200 dark:border-gray-700 bg-slate-50 dark:bg-slate-900 p-6">
+              <article className="rounded-3xl border border-gray-200 dark:border-gray-700 bg-slate-50 dark:bg-slate-900 p-6">
                 <div className="mb-2 flex items-start justify-between gap-3">
                   <h3 className="text-xl font-semibold">
                     Second Alumni Interaction : Bangalore Chapter (05 September 2026)
@@ -99,6 +111,39 @@ const AlumniEventsPage = () => {
                 <p className="text-gray-700 dark:text-gray-300 leading-7 mt-4">
                   Building on the success of the first Alumni Interaction held in Pune, the Bangalore meet marked another important step towards nurturing a strong and enduring alumni network centred on mentorship, collaboration, and continued engagement with the Institute. 
                 </p>
+                <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {visibleBangaloreImages.map((image, index) => {
+                    const isMoreTile = index === 5;
+
+                    return (
+                      <button
+                        key={image}
+                        type="button"
+                        onClick={() =>
+                          openLightbox(
+                            bangaloreChapterImages,
+                            index,
+                            'Second Alumni Interaction Bangalore Chapter',
+                          )
+                        }
+                        className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white text-left dark:border-gray-700 dark:bg-slate-900"
+                        aria-label={`Open Second Alumni Interaction Bangalore Chapter photo ${index + 1}`}
+                      >
+                        <img
+                          src={image}
+                          alt={`Second Alumni Interaction Bangalore Chapter photo ${index + 1}`}
+                          className="h-48 w-full object-cover"
+                          loading="lazy"
+                        />
+                        {isMoreTile && (
+                          <span className="absolute inset-0 flex items-center justify-center bg-black/55 text-3xl font-semibold text-white">
+                            +{extraBangaloreImagesCount}
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
               </article>
               
               <article className="mb-8 rounded-3xl border border-gray-200 dark:border-gray-700 bg-slate-50 dark:bg-slate-900 p-6">
@@ -135,7 +180,13 @@ const AlumniEventsPage = () => {
                     <button
                       key={image}
                       type="button"
-                      onClick={() => openLightbox(index)}
+                      onClick={() =>
+                        openLightbox(
+                          puneChapterImages,
+                          index,
+                          'First-Ever Alumni Interaction Pune Chapter',
+                        )
+                      }
                       className="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 text-left"
                       aria-label={`Open First-Ever Alumni Interaction Pune Chapter photo ${index + 1}`}
                     >
@@ -178,8 +229,8 @@ const AlumniEventsPage = () => {
                 </button>
 
                 <img
-                  src={puneChapterImages[activeImageIndex]}
-                  alt={`First-Ever Alumni Interaction Pune Chapter large photo ${activeImageIndex + 1}`}
+                  src={activeGalleryImages[activeImageIndex]}
+                  alt={`${activeGalleryLabel} large photo ${activeImageIndex + 1}`}
                   className="mx-auto max-h-[80vh] w-auto rounded-2xl object-contain"
                 />
 
@@ -192,7 +243,7 @@ const AlumniEventsPage = () => {
                     Previous
                   </button>
                   <p className="text-sm font-medium text-white">
-                    {activeImageIndex + 1} / {totalPuneImages}
+                    {activeImageIndex + 1} / {activeGalleryImages.length}
                   </p>
                   <button
                     type="button"
