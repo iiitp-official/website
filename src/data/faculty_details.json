@@ -4365,5 +4365,97 @@
     "researchLinks": [
     ],
     "department": "ECE"
+  },
+  "shekhar-kumar-yadav": {
+    "designation": "Assistant Professor (T)",
+    "image": "/assets/faculty_photos/shekharkyadav.JPG",
+    "bio": "Dr. Shekhar Kumar Yadav is an Assistant Professor (T) in the Department of Electronics and Communication Engineering at the Indian Institute of Information Technology (IIIT) Pune. He received his Ph.D. in Electrical Engineering from the Indian Institute of Technology (IIT) Gandhinagar, where his research focused on array and multi-channel signal processing, direction-of-arrival (DOA) estimation, source localization, and beamforming. After his Ph.D., he served as a Research Associate I in the ISRO RESPOND project at IIT Gandhinagar from April 2023 to July 2024. From July 2024 to July 2026, he was a postdoctoral research fellow at the Technical University of Munich, Germany. He completed his M.Tech. in Electronics Engineering with a specialization in Communication Systems from Sardar Vallabhbhai National Institute of Technology (SVNIT), Bhopal, and his B.E. in Electrical and Electronics Engineering from Birla Institute of Technology and Science (BITS) Pilani, Pilani campus. His research interests include multi-channel and array signal processing, spherical microphone array processing, acoustic beamforming, automatic speech recognition, hearing aids and binaural beamforming, speech enhancement based on statistical signal processing, sound source localization, and DOA estimation. He has published research articles in reputed international journals and conferences and actively reviews manuscripts for leading journals and conferences in signal processing and wireless communication.",
+    "education": "Ph.D. (Electrical Engineering), M.Tech. (Electronics Engineering), B.E. (Electrical and Electronics Engineering)",
+    "publications": [
+      {
+        "title": "Adaptive Root-Finding Framework for DOA Estimation in Uniform Circular Arrays",
+        "link": "https://ieeexplore.ieee.org/abstract/document/11599678"
+      },
+      {
+        "title": "Fourier Domain Gradient Descent Total Least Square/Fourth Algorithm for Efficient Adaptive Direction of Arrival Estimation",
+        "link": "https://ieeexplore.ieee.org/abstract/document/11125973"
+      },
+      {
+        "title": "Integrated Approach for Efficient Adaptive Underdetermined DOA Estimation: Coarray LMS With Covariance Matrix Error Removal",
+        "link": "https://ieeexplore.ieee.org/abstract/document/11097050"
+      },
+      {
+        "title": "Adaptive Direction of Arrival Estimation Using Sparsity Constrained Complex NLMS Algorithm With Variable Penalty Factor",
+        "link": "https://ieeexplore.ieee.org/document/10944581"
+      },
+      {
+        "title": "Near-Field Source Localization and Beamforming in the Spherical Sector Harmonics Domain",
+        "link": "https://ieeexplore.ieee.org/abstract/document/10637690"
+      },
+      {
+        "title": "Enhanced Bias-Compensated NLMS for Adaptive DOA Estimation",
+        "link": "https://ieeexplore.ieee.org/abstract/document/10505791"
+      },
+      {
+        "title": "Adaptive Low-Rank DOA Estimation Using Complex Kronecker Product Decomposition",
+        "link": "https://ieeexplore.ieee.org/abstract/document/10423080"
+      },
+      {
+        "title": "Enhanced DOA Estimation Through Coprime Planar Coarray Interpolation via Alternating Projection",
+        "link": "https://ieeexplore.ieee.org/abstract/document/10423135"
+      },
+      {
+        "title": "Coarray LMS: Adaptive Underdetermined DOA Estimation With Increased Degrees of Freedom",
+        "link": "https://ieeexplore.ieee.org/abstract/document/10419000"
+      },
+      {
+        "title": "Joint Dereverberation and Beamforming With Blind Estimation of the Shape Parameter of the Desired Source Prior",
+        "link": "https://ieeexplore.ieee.org/abstract/document/10323510"
+      },
+      {
+        "title": "Sparse Distortionless Modal Beamforming for Spherical Microphone Arrays",
+        "link": "https://ieeexplore.ieee.org/abstract/document/9905924"
+      },
+      {
+        "title": "Underdetermined DOA Estimation Using Arbitrary Planar Arrays via Coarray Manifold Separation",
+        "link": "https://ieeexplore.ieee.org/abstract/document/9842380"
+      },
+      {
+        "title": "An Improved Constrained LMS Algorithm for Fast Adaptive Beamforming Based on a Low Rank Approximation",
+        "link": "https://ieeexplore.ieee.org/abstract/document/9729877"
+      },
+      {
+        "title": "Coarray MUSIC-Group Delay: High-Resolution Source Localization Using Non-Uniform Arrays",
+        "link": "https://ieeexplore.ieee.org/abstract/document/9502944"
+      },
+      {
+        "title": "Underdetermined Direction-of-Arrival Estimation Using Sparse Circular Arrays on a Rotating Platform",
+        "link": "https://ieeexplore.ieee.org/abstract/document/9385891"
+      },
+      {
+        "title": "Fast Direction-of-Arrival Estimation via Coarray Interpolation Based on Truncated Nuclear Norm Regularization",
+        "link": "https://ieeexplore.ieee.org/document/9201520"
+      }
+    ],
+    "resume": "/assets/resume/shekhar_k_yadav_resume.pdf",
+    "expertise": "Multi-channel and array signal processing, spherical microphone array processing, acoustic beamforming, automatic speech recognition, hearing aids and binaural beamforming, speech enhancement, sound source localization, and DOA estimation",
+    "google_scholar": "https://scholar.google.com/citations?user=Oq9JwbgAAAAJ&hl=en&authuser=1",
+    "orcid": "https://orcid.org/0000-0002-0048-6499",
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57222574007",
+    "books_chapters": "",
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "email": "shekhar@iiitp.ac.in",
+    "phone": "8780443287",
+    "linkedin": "",
+    "researchLinks": [
+      {
+        "title": "Research page",
+        "url": "https://sites.google.com/view/shekharkumaryadav/research?authuser=0"
+      }
+    ],
+    "department": "ECE"
   }
 }
