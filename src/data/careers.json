@@ -63,8 +63,10 @@
       ],
       "date": "11-08-2026",
       "lastDate": "25-08-2026"
-    },
-    {
+    }
+  ],
+  "archive": [
+        {
       "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
       "buttons": [
         {
@@ -158,9 +160,7 @@
       ],
       "date": "07-07-2026",
       "lastDate": "01-08-2026"
-    }
-  ],
-  "archive": [
+    },
     {
     "title": "Advertisement for the Post of Project Associate-I under the Project SMDP-Chips to Startup (C2S)",
       "buttons": [
