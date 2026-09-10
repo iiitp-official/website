@@ -13,7 +13,8 @@ const students = [
     university: 'University of Glasgow',
     country: 'United Kingdom',
     countryCode: '🇬🇧',
-    avatar: 'S1',
+    avatar: '/assets/hall-of-fame/Sanskar Hasija.png',
+    linkedin: 'https://www.linkedin.com/in/sanskar-hasija/',
   },
   {
     id: 2,
@@ -23,37 +24,55 @@ const students = [
     currentAffiliation: 'Google',
     role: 'Software Engineer',
     abroadDegree: 'MS in Computer Science',
-    university: 'University of London',
-    country: 'United Kingdom',
-    countryCode: '🇬🇧',
-    avatar: 'S2',
+    university: 'New York University',
+    country: 'United States',
+    countryCode: '🇺🇸',
+    avatar: '/assets/hall-of-fame/akash_peddaputha.jpeg',
+    linkedin: 'https://www.linkedin.com/in/akashpeddaputha/',
   },
   {
     id: 3,
     name: 'Saksham Mahajan',
-    degree: 'B.Tech in Computer Science & Engineering',
-    graduationYear: '2020',
-    currentAffiliation: 'Microsoft',
+    degree: 'B.Tech in Electronics and Communication Engineering',
+    graduationYear: '2023',
+    currentAffiliation: 'JP Morgan',
     role: 'Product Engineer',
-    abroadDegree: 'MS in Computer Science',
+    abroadDegree: 'MS',
     university: 'University of North Carolina at Charlotte',
     country: 'United States',
     countryCode: '🇺🇸',
-    avatar: 'S3',
+    avatar: '/assets/hall-of-fame/saksham_mahajan.jpeg',
+    linkedin: 'https://www.linkedin.com/in/saksham-mahajan/',
   },
   {
     id: 4,
     name: 'Bharadwaj Dhornala',
     degree: 'B.Tech in Computer Science & Engineering',
-    graduationYear: '2021',
-    currentAffiliation: 'University of Massachusetts Amherst',
-    role: 'Graduate Student',
+    graduationYear: '2020',
+    currentAffiliation: 'Nuts.com',
+    role: 'Data Engineer',
     abroadDegree: 'MS in Computer Science',
     university: 'University of Massachusetts Amherst',
     country: 'United States',
     countryCode: '🇺🇸',
-    avatar: 'S4',
+    avatar: '/assets/hall-of-fame/bharadwaj_dhornala.png',
+    linkedin: 'https://www.linkedin.com/in/bharadwajd/',
+
   },
+  {
+    id: 5,
+    name: 'Rohan Prakash Lekhwani',
+    degree: 'B.Tech in Computer Science & Engineering',
+    graduationYear: '2021',
+    currentAffiliation: 'Amazon',
+    role: 'Software Engineer',
+    abroadDegree: 'MS in Computer Science',
+    university: 'Stanford University',
+    country: 'United States',
+    countryCode: '🇺🇸',
+    avatar: '/assets/hall-of-fame/rohan_lekhwani.jpeg',
+    linkedin: 'https://www.linkedin.com/in/rohanlekhwani/',
+  }
 ];
 
 const AlumniHallOfFamePage = () => {
@@ -65,12 +84,6 @@ const AlumniHallOfFamePage = () => {
       />
 
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mb-8 flex items-center justify-between gap-4 rounded-2xl border border-amber-200 bg-gradient-to-r from-amber-50 to-yellow-50 px-5 py-4 text-amber-900 dark:border-amber-700/60 dark:from-amber-900/20 dark:to-yellow-900/20 dark:text-amber-100">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em]">Featured Alumni</p>
-            <h2 className="mt-1 text-2xl font-bold">4 Student Profiles</h2>
-          </div>
-        </div>
 
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
           {students.map((student) => (
@@ -78,16 +91,24 @@ const AlumniHallOfFamePage = () => {
               key={student.id}
               className="group flex h-full flex-col overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_18px_40px_rgba(15,23,42,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_55px_rgba(15,23,42,0.12)] dark:border-slate-700 dark:bg-slate-900"
             >
-              <div className="relative flex h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-slate-800 via-slate-700 to-blue-700 p-5 text-white">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.15),transparent_45%)]" />
-                <div className="relative flex h-full w-full items-center justify-center rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm">
-                  <div className="flex h-28 w-28 items-center justify-center rounded-full border-4 border-white/25 bg-white/10 text-3xl font-bold tracking-wider shadow-2xl">
-                    {student.avatar}
-                  </div>
-                </div>
-                <div className="absolute bottom-4 left-4 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-50 backdrop-blur-sm">
-                  Alumni Photograph
-                </div>
+              <div className="relative flex h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-slate-800 via-slate-700 to-blue-700 text-white">
+                {student.avatar.startsWith('/') ? (
+                  <img
+                    src={student.avatar}
+                    alt={student.name}
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                ) : (
+                  <>
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.15),transparent_45%)]" />
+                    <div className="relative flex h-full w-full items-center justify-center rounded-2xl border border-white/20 bg-white/5 p-5 backdrop-blur-sm">
+                      <div className="flex h-28 w-28 items-center justify-center rounded-full border-4 border-white/25 bg-white/10 text-3xl font-bold tracking-wider shadow-2xl">
+                        {student.avatar}
+                      </div>
+                    </div>
+                  </>
+                )}
+
               </div>
 
               <div className="flex flex-1 flex-col p-6">
@@ -120,13 +141,25 @@ const AlumniHallOfFamePage = () => {
                 </div>
 
                 <div className="mt-auto pt-6">
-                  {/* <button
-                    type="button"
-                    className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-700 dark:bg-blue-600 dark:hover:bg-blue-500"
-                  >
-                    View Profile
-                    <span aria-hidden="true">→</span>
-                  </button> */}
+                  {student.linkedin ? (
+                    <a
+                      href={student.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-700 dark:bg-blue-600 dark:hover:bg-blue-500"
+                    >
+                      View Profile
+                      <span aria-hidden="true">→</span>
+                    </a>
+                  ) : (
+                    <button
+                      type="button"
+                      className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-700 dark:bg-blue-600 dark:hover:bg-blue-500"
+                    >
+                      View Profile
+                      <span aria-hidden="true">→</span>
+                    </button>
+                  )}
                 </div>
               </div>
             </article>
