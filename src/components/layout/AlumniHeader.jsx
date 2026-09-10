@@ -96,7 +96,7 @@ const AlumniHeader = () => {
        // { name: 'Stay Connected with IIIT Pune', path: '/alumni/network#stay-connected' },
      // ],
     },
-    // { name: 'Hall of Fame', path: '/alumni/hall-of-fame' },
+     { name: 'Hall of Fame', path: '/alumni/hall-of-fame' },
     {
       name: 'Engage',
       path: '/alumni/get-involved',
