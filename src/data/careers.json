@@ -1,6 +1,25 @@
 {
   "live": [
     {
+      "title": "Advertisement for the Post of Junior Research Fellow (JRF) in ISRO Sponsored Project",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "/careers-documents/Advertisement_ISRO.pdf"
+        },
+        {
+          "label": "Application Form",
+          "file": "/careers-documents/Application_Form_JRF.pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://forms.gle/UuuW41P1EDD65JR7A"
+        }
+      ],
+      "date": "10-09-2026",
+      "lastDate": "25-09-2026"
+    },
+    {
       "title": "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)",
       "buttons": [
         {

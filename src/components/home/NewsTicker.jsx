@@ -15,6 +15,7 @@ const NewsTicker = () => {
       .catch(() => {
         // Fallback mock news
         setNews([
+          {id: 111, title: "Advertisement for the Post of Junior Research Fellow (JRF) in ISRO Sponsored Project", link: "/careers-documents/Advertisement_ISRO.pdf" },
           {id: 110, title: "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)", link: "/careers-documents/AP (CSE) Temp.pdf" },
           {id: 109, title: "SAC Club Heads and Co-Heads for the Academic Year 2026–27", link: "/documents/SAC Club Heads and Co-Heads.pdf" },
           {id: 108, title: "Orientation Programme for B.Tech./ M.Tech I Year (AY 2026-27)", link: "/docs/Final orientation.pdf" },
