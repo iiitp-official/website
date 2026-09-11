@@ -132,6 +132,17 @@ const SdgThreePage = lazy(() => import("./pages/SdgThreePage"));
 const SdgFourPage = lazy(() => import("./pages/SdgFourPage"));
 const SdgFivePage = lazy(() => import("./pages/SdgFivePage"));
 const SdgSixPage = lazy(() => import("./pages/SdgSixPage"));
+const SdgSevenPage = lazy(() => import("./pages/SdgSevenPage"));
+const SdgEightPage = lazy(() => import("./pages/SdgEightPage"));
+const SdgNinePage = lazy(() => import("./pages/SdgNinePage"));
+const SdgTenPage = lazy(() => import("./pages/SdgTenPage"));
+const SdgElevenPage = lazy(() => import("./pages/SdgElevenPage"));
+const SdgTwelvePage = lazy(() => import("./pages/SdgTwelevPage"));
+const SdgThirteenPage = lazy(() => import("./pages/SdgThirteenPage"));
+const SdgFourteenPage = lazy(() => import("./pages/SdgForteenPage"));
+const SdgFifteenPage = lazy(() => import("./pages/SdgFifteenPage"));
+const SdgSixteenPage = lazy(() => import("./pages/SdgSixteenPage"));
+const SdgSeventeenPage = lazy(() => import("./pages/SdgSeventeenPage"));
 
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 const StudentAchievementsPage = lazy(
@@ -460,6 +471,28 @@ function AppContent() {
             <Route path="/sdg-5" element={<SdgFivePage />} />
             <Route path="/sdg/6" element={<SdgSixPage />} />
             <Route path="/sdg-6" element={<SdgSixPage />} />
+            <Route path="/sdg/7" element={<SdgSevenPage />} />
+            <Route path="/sdg-7" element={<SdgSevenPage />} />
+            <Route path="/sdg/8" element={<SdgEightPage />} />
+            <Route path="/sdg-8" element={<SdgEightPage />} />
+            <Route path="/sdg/9" element={<SdgNinePage />} />
+            <Route path="/sdg-9" element={<SdgNinePage />} />
+            <Route path="/sdg/10" element={<SdgTenPage />} />
+            <Route path="/sdg-10" element={<SdgTenPage />} />
+            <Route path="/sdg/11" element={<SdgElevenPage />} />
+            <Route path="/sdg-11" element={<SdgElevenPage />} />
+            <Route path="/sdg/12" element={<SdgTwelvePage />} />
+            <Route path="/sdg-12" element={<SdgTwelvePage />} />
+            <Route path="/sdg/13" element={<SdgThirteenPage />} />
+            <Route path="/sdg-13" element={<SdgThirteenPage />} />
+            <Route path="/sdg/14" element={<SdgFourteenPage />} />
+            <Route path="/sdg-14" element={<SdgFourteenPage />} />
+            <Route path="/sdg/15" element={<SdgFifteenPage />} />
+            <Route path="/sdg-15" element={<SdgFifteenPage />} />
+            <Route path="/sdg/16" element={<SdgSixteenPage />} />
+            <Route path="/sdg-16" element={<SdgSixteenPage />} />
+            <Route path="/sdg/17" element={<SdgSeventeenPage />} />
+            <Route path="/sdg-17" element={<SdgSeventeenPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>
