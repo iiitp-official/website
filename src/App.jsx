@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import { Suspense, lazy } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -126,6 +126,12 @@ const ScholarshipPage = lazy(() => import("./pages/ScholarshipPage"));
 const IEEEPage = lazy(() => import("./pages/IEEEPage"));
 const ACMPage = lazy(() => import("./pages/ACMPage"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
+const SdgOnePage = lazy(() => import("./pages/SdgOnePage"));
+const SdgTwoPage = lazy(() => import("./pages/SdgTwoPage"));
+const SdgThreePage = lazy(() => import("./pages/SdgThreePage"));
+const SdgFourPage = lazy(() => import("./pages/SdgFourPage"));
+const SdgFivePage = lazy(() => import("./pages/SdgFivePage"));
+const SdgSixPage = lazy(() => import("./pages/SdgSixPage"));
 
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 const StudentAchievementsPage = lazy(
@@ -442,6 +448,18 @@ function AppContent() {
             <Route path="/ieee" element={<IEEEPage />} />
             <Route path="/acm" element={<ACMPage />} />
             <Route path="/sitemap" element={<SitemapPage />} />
+            <Route path="/sdg/1" element={<SdgOnePage />} />
+            <Route path="/sdg-1" element={<SdgOnePage />} />
+            <Route path="/sdg/2" element={<SdgTwoPage />} />
+            <Route path="/sdg-2" element={<SdgTwoPage />} />
+            <Route path="/sdg/3" element={<SdgThreePage />} />
+            <Route path="/sdg-3" element={<SdgThreePage />} />
+            <Route path="/sdg/4" element={<SdgFourPage />} />
+            <Route path="/sdg-4" element={<SdgFourPage />} />
+            <Route path="/sdg/5" element={<SdgFivePage />} />
+            <Route path="/sdg-5" element={<SdgFivePage />} />
+            <Route path="/sdg/6" element={<SdgSixPage />} />
+            <Route path="/sdg-6" element={<SdgSixPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>

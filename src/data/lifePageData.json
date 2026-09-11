@@ -986,6 +986,54 @@
   ],
   "EVENTS": [
     {
+      "name": "IIIT Pune Hosts Delegation from Binghamton University, USA",
+      "type": "International Academic Engagement",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) hosted a delegation from Binghamton University, New York, USA, a leading public research university and part of the State University of New York (SUNY) system. The visit brought together two enriching engagements focused on emerging technological research and international opportunities for higher education. The first engagement featured an expert talk by Prof. Aravind Prakash on “Leveraging AI for Robust and Resilient Software Systems.” The session introduced students to the application of Artificial Intelligence and Machine Learning research in developing secure, robust, and resilient software systems, while providing practical insights into how advances in machine learning are being translated into production-grade systems and security applications. The second engagement focused on graduate education opportunities at Binghamton University. Ms. Johanna Brozinsky, M.S., Director of Graduate Recruitment, interacted with IIIT Pune students and provided valuable information about graduate programmes, admission pathways, scholarships, and opportunities available to students seeking higher education in the United States. The visit provided a valuable platform for students to engage with cutting-edge research and global academic opportunities while interacting with experts from an internationally recognised institution. The initiative strengthens international academic engagement and aligns with SDG 4 – Quality Education, SDG 9 – Industry, Innovation and Infrastructure, and SDG 17 – Partnerships for the Goals.",
+      "images": [],
+      "highlights": [
+        "IIIT Pune hosted a delegation from Binghamton University, New York, USA, bringing international academic and research engagement to students",
+        "Prof. Aravind Prakash delivered an expert talk on leveraging Artificial Intelligence for robust and resilient software systems",
+        "Students gained practical insights into the application of AI and Machine Learning in production-grade systems and security applications",
+        "Ms. Johanna Brozinsky, Director of Graduate Recruitment, provided information on graduate programmes, admissions, scholarships, and higher-education opportunities in the United States",
+        "The initiative promoted advanced learning, international academic engagement, technological innovation, and institutional partnerships, aligning with SDG 4, SDG 9, and SDG 17"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Organises Four Sessions for the Holistic Growth of Students",
+      "type": "Student Development & Well-being",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) organised a series of four enriching sessions aimed at promoting the holistic development of students by fostering self-awareness, emotional well-being, purposeful decision-making, curiosity, and mindful use of technology. The first session, “The Game of Life,” explored awareness, purpose, and decision-making, encouraging students to reflect on the relationship between the mind, soul, and senses. An interactive quiz provided students with an engaging opportunity to apply the concepts discussed, with top performers being felicitated. The second session, “Discover Inner Self,” encouraged students to look beyond external achievements and focus on clarity, self-awareness, and inner growth, while also recognising 14 students who qualified for certification from faculty members of IIT Kharagpur under the Evolve360 programme. The third session, “Discover Ultimate Genius,” encouraged students to think beyond conventional boundaries and explore their potential through curiosity, imagination, deeper thinking, and self-discovery. The fourth session, “Who Is the Master: You or Your Mobile?”, organised by ManSamvaad – The Wellness Club, addressed mindful technology use and digital well-being, encouraging students to consciously manage their attention and relationship with mobile devices and social media. Together, the four sessions reinforced IIIT Pune’s commitment to developing self-aware, emotionally intelligent, purpose-driven, and technically proficient individuals. The initiative aligns with SDG 3 – Good Health and Well-being and SDG 4 – Quality Education.",
+      "images": [],
+      "highlights": [
+        "IIIT Pune organised four sessions focused on holistic student development, self-awareness, emotional well-being, purposeful decision-making, curiosity, and mindful technology use",
+        "“The Game of Life” encouraged students to reflect on awareness, purpose, decision-making, and the relationship between the mind, soul, and senses",
+        "“Discover Inner Self” focused on clarity, self-awareness, and inner growth, with 14 students recognised for qualifying for Evolve360 certification from IIT Kharagpur faculty members",
+        "“Discover Ultimate Genius” encouraged curiosity, imagination, deeper thinking, creativity, and self-discovery beyond conventional boundaries",
+        "“Who Is the Master: You or Your Mobile?” promoted mindful use of mobile devices and social media and highlighted the importance of digital well-being",
+        "The initiative supports SDG 3 (Good Health and Well-being) and SDG 4 (Quality Education) through mental well-being, purposeful learning, and holistic education"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Organises Industry Insights Session with Senior Software Engineer from AMD India",
+      "type": "Industry Interaction",
+      "typeColor": "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) organised an engaging Industry Insights session featuring Mr. Madhab Sharma, Senior Software Engineer at AMD India and former Senior Software Engineer at Qualcomm. The session provided students and faculty with valuable first-hand insights into professional practices, engineering culture, and expectations of the global semiconductor and software industry. During the expert lecture, Mr. Sharma shared his experiences of working on real-world engineering projects at AMD and Qualcomm and familiarised students with workflows, methodologies, and problem-solving approaches followed in large-scale technology organisations. The session focused on software engineering practices in industry, complex engineering problems, and the skills and technical areas students should develop during their academic years. An important feature was the interactive problem-solving component, where students engaged with practical problem statements and discussed possible approaches and solutions, helping them understand how engineering concepts are applied to real-world challenges. The programme was followed by an enthusiastic student interaction and Q&A session covering career pathways, industry expectations, skill development, and ways to make engineering education more meaningful and industry-oriented. The session concluded with a faculty interaction exploring possibilities for student-industry collaboration and potential projects involving real-world problem solving. The initiative strengthens the connection between academic learning and industry practices and aligns with SDG 4 – Quality Education, SDG 8 – Decent Work and Economic Growth, SDG 9 – Industry, Innovation and Infrastructure, and SDG 17 – Partnerships for the Goals.",
+      "images": [],
+      "highlights": [
+        "IIIT Pune organised an Industry Insights session featuring Mr. Madhab Sharma, Senior Software Engineer at AMD India and former Senior Software Engineer at Qualcomm",
+        "Students and faculty gained first-hand insights into professional practices, engineering culture, and expectations of the global semiconductor and software industry",
+        "The session covered real-world engineering workflows, methodologies, complex problem-solving approaches, and technical skills required in large-scale technology organisations",
+        "Students participated in an interactive problem-solving activity using practical engineering problem statements",
+        "The Q&A interaction addressed career pathways, industry expectations, skill development, and building a strong technical foundation during college",
+        "Faculty discussions explored opportunities for student-industry collaboration and potential real-world problem-solving projects",
+        "The initiative aligns with SDG 4, SDG 8, SDG 9, and SDG 17 by promoting industry exposure, skill development, innovation, employability, and stronger academia-industry partnerships"
+      ],
+      "links": []
+    },
+    {
       "name": "IIIT Pune Hosts Dr. Virendra Singh from IIT Bombay Under Micro-Credits Programme",
       "type": "Academic Collaboration",
       "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
