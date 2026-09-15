@@ -1,6 +1,25 @@
 {
   "live": [
     {
+     "title": "Advertisement for various research positions under (ANRF-PAIR) initiative",
+     "buttons": [
+      {
+        "label": "Details",
+        "file": "/careers-documents/Sept_ANRF-PAIR_Manpower_Advertisement.pdf"
+      },
+      {
+        "label": "Apply Now",
+        "link": "https://forms.gle/EtAebirY9agMuasd8"
+      },
+      {
+        "label": "Application Form",
+        "file": "/careers-documents/Sept_ANRF-PAIR_Manpower_Application_Form.pdf"
+      }
+     ],
+     "date": "09-09-2026",
+     "lastDate": "25-09-2026"
+    },
+    {
       "title": "Advertisement for the Post of Junior Research Fellow (JRF) in ISRO Sponsored Project",
       "buttons": [
         {
