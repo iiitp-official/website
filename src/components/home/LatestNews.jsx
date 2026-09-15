@@ -19,7 +19,7 @@ const LatestNews = () => {
             id: 112,
             title: "Advertisement for various research positions under (ANRF-PAIR)",
             date: "09-09-2026",
-            excerpt: "Applications are invited for various research positions under the (ANRF-PAIR) initiative at IIIT Pune.",
+            excerpt: "Applications are invited for various research positions under the (ANRF-PAIR) at IIIT Pune.",
             link: "/careers-documents/Sept_ANRF-PAIR_Manpower_Advertisement.pdf"
           },
           {
