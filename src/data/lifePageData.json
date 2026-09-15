@@ -986,6 +986,73 @@
   ],
   "EVENTS": [
     {
+    "name": "IIIT Pune Hosts Internal Hackathon to Select Teams for Smart India Hackathon 2026",
+    "type": "Innovation, Hackathon & Student Development",
+    "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+    "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) recently hosted its Internal Hackathon, a competitive and structured selection event to identify and nominate the best student teams to represent the Institute at the Smart India Hackathon (SIH) 2026, India’s flagship national-level hackathon initiative. A total of 96 teams participated in the internal competition and were evaluated by 12 expert panels across emerging technology domains including Robotics, Agentic AI, Deep Learning, Cybersecurity, and Explainable Artificial Intelligence (XAI). The top-performing teams successfully cleared the internal selection rounds and were registered on the national SIH portal, earning the opportunity to compete at the national level. The event highlighted the innovative spirit, technical capabilities, problem-solving skills, and student leadership at IIIT Pune, with participating teams working on solutions addressing real-world and national challenges. Through this initiative, IIIT Pune continues to foster innovation, entrepreneurship, collaborative problem-solving, and technology-driven nation building while providing students with a platform to showcase their ideas on a national stage. The initiative aligns with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), SDG 11 (Sustainable Cities and Communities), and SDG 17 (Partnerships for the Goals).",
+    "images": [
+    "/assets/lifepage/sih_internal_hackathon_01.jpg",
+    "/assets/lifepage/sih_internal_hackathon_02.jpg",
+    "/assets/lifepage/sih_internal_hackathon_03.jpg",
+    "/assets/lifepage/sih_internal_hackathon_04.jpg",
+    "/assets/lifepage/sih_internal_hackathon_05.jpg",
+    "/assets/lifepage/sih_internal_hackathon_06.jpg"
+    ],
+    "highlights": [
+    "IIIT Pune hosted an Internal Hackathon to select and nominate the best student teams for the Smart India Hackathon (SIH) 2026",
+    "A total of 96 student teams participated in the competitive internal selection process",
+    "The teams were evaluated through 12 expert evaluation panels across multiple emerging technology domains",
+    "Key domains included Robotics, Agentic AI, Deep Learning, Cybersecurity, and Explainable Artificial Intelligence (XAI)",
+    "The top-performing teams successfully cleared the internal rounds and were registered on the national SIH portal to compete at the national level",
+    "The initiative promoted innovation, technical excellence, student leadership, real-world problem solving, and nation-building while supporting SDG 4, SDG 9, SDG 11, and SDG 17"
+    ],
+    "links": []
+    },
+    {
+    "name": "IIIT Pune Organises Two-Day Micro-Credit Session on Cryptography and Network Security",
+    "type": "Academic Enrichment & Micro-Credits Programme",
+    "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+    "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) successfully conducted a two-day Micro-Credit session on Cryptography and Network Security on 12–13 September 2026 under its Micro-Credits Programme, an initiative designed to bring distinguished faculty from premier institutions directly to IIIT Pune students. The sessions were conducted by Dr. Somitra Sanadhya, Professor at the Wadhwani School of AI & Intelligent Systems, IIT Kanpur, and a leading researcher in cryptography and information security. The programme covered key topics including the Foundations of Cryptography, Post-Quantum Cryptography (PQC), and Quantum-Resilient Security. With quantum computing rapidly advancing, Post-Quantum Cryptography is emerging as a critical area of modern cybersecurity, and the session provided students with valuable exposure to these emerging challenges and technologies. The Micro-Credits Programme reflects IIIT Pune’s commitment to ensuring that students remain informed about developments in advanced computing, cybersecurity, and information security while gaining insights from experts from leading institutions. The initiative also supports the objectives of NEP 2020 and aligns with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), SDG 16 (Peace, Justice and Strong Institutions), and SDG 17 (Partnerships for the Goals).",
+    "images": [
+    "/assets/lifepage/cryptography_01.jpg",
+    "/assets/lifepage/cryptography_02.jpg",
+    "/assets/lifepage/cryptography_03.jpg",
+    "/assets/lifepage/cryptography_04.jpg",
+    "/assets/lifepage/cryptography_05.jpg"
+    ],
+    "highlights": [
+    "IIIT Pune successfully conducted a two-day Micro-Credit session on Cryptography and Network Security on 12–13 September 2026",
+    "The programme was organised under IIIT Pune’s Micro-Credits Programme to bring distinguished faculty from premier institutions directly to students",
+    "Dr. Somitra Sanadhya, Professor at the Wadhwani School of AI & Intelligent Systems, IIT Kanpur, conducted the sessions and shared his expertise in cryptography and information security",
+    "The sessions covered Foundations of Cryptography, Post-Quantum Cryptography (PQC), and Quantum-Resilient Security",
+    "Students gained exposure to emerging cybersecurity challenges associated with the advancement of quantum computing and the growing importance of Post-Quantum Cryptography",
+    "The initiative strengthened IIIT Pune’s commitment to advanced technical learning and collaboration with leading institutions and aligns with NEP 2020, SDG 4, SDG 9, SDG 16, and SDG 17"
+    ],
+    "links": []
+    },
+    {
+    "name": "IIIT Pune Hosts Grand “Saaz Ka Sangam Evam Kavi Sammelan” During Hindi Month 2026",
+    "type": "Hindi Month & Cultural Programme",
+    "typeColor": "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300",
+    "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) successfully organised the grand “Saaz Ka Sangam Evam Rashtriya Kavi Sammelan” on 11 September 2026 at 6:30 PM as part of Hindi Month 2026. Organised under the inspiration and guidance of Director Prof. Vineet Kansal, the cultural evening featured eminent poets from different parts of the country who captivated the audience with powerful, भावपूर्ण, हास्य and व्यंग्य प्रस्तुतियाँ. The कवि सम्मेलन featured Shri Pawan Aagri, Shri Om Prakash Kalyane, Dr. Ganesh Shankar Srivastava ‘Rishi’, Dr. Vinamra Sen Singh, and Shri Shambhu Shikhar. The evening was enriched by melodious musical performances along with engaging हास्य-व्यंग्य presentations, creating a vibrant and memorable cultural experience. Faculty members, staff, and their families participated enthusiastically in the celebration, reflecting the institute’s commitment to promoting Hindi language, literature, cultural heritage, and an inclusive campus community. The event contributed to the United Nations Sustainable Development Goals, particularly SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), SDG 11 (Sustainable Cities and Communities), and SDG 16 (Peace, Justice and Strong Institutions).",
+    "images": [
+    "/assets/lifepage/saaz_ka_sangam_01.jpg",
+    "/assets/lifepage/saaz_ka_sangam_02.jpg",
+    "/assets/lifepage/saaz_ka_sangam_03.jpg",
+    "/assets/lifepage/saaz_ka_sangam_04.jpg",
+    "/assets/lifepage/saaz_ka_sangam_05.jpg"
+    ],
+    "highlights": [
+    "IIIT Pune successfully organised the grand “Saaz Ka Sangam Evam Kavi Sammelan” on 11 September 2026 at 6:30 PM under Hindi Month 2026",
+    "The programme was organised under the inspiration and guidance of Director Prof. Vineet Kansal and brought together eminent poets from different parts of the country",
+    "The कवि सम्मेलन featured Shri Pawan Aagri, Shri Om Prakash Kalyane, Dr. Ganesh Shankar Srivastava ‘Rishi’, Dr. Vinamra Sen Singh, and Shri Shambhu Shikhar",
+    "Powerful poetic recitations, melodious musical performances, and हास्य-व्यंग्य presentations captivated the audience and created a memorable cultural evening",
+    "Faculty members, staff, and their families participated enthusiastically, strengthening the spirit of cultural inclusion and community engagement at IIIT Pune",
+    "The event promoted Hindi language, literature, cultural heritage, and inclusive community values while supporting SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), SDG 11 (Sustainable Cities and Communities), and SDG 16 (Peace, Justice and Strong Institutions)"
+    ],
+    "links": []
+    },
+    {
       "name": "IIIT Pune Organises Four Sessions for the Holistic Growth of Students",
       "type": "Student Development & Well-being",
       "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
