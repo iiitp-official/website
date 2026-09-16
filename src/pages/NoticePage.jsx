@@ -2,15 +2,25 @@ import React, { useState, useEffect } from 'react';
 import PageHeader from '../components/shared/PageHeader';
 import { Search, Filter, Download } from 'lucide-react';
 import { Link } from 'react-router';
+import { fetchNotices } from '../api/content';
 
 const NoticePage = () => {
   const [notices, setNotices] = useState([]);
   const [filter, setFilter] = useState('All');
 
   useEffect(() => {
+    let cancelled = false;
+
     import('../data/notices.json')
-      .then((data) => setNotices(data.default))
+      .then((data) => { if (!cancelled) setNotices(data.default); })
       .catch(() => console.log('Error loading notices'));
+
+    // Live API overrides the bundled JSON when reachable; silently ignored otherwise.
+    fetchNotices()
+      .then((data) => { if (!cancelled && data.length) setNotices(data); })
+      .catch(() => {});
+
+    return () => { cancelled = true; };
   }, []);
 
   const filteredNotices = filter === 'All' 

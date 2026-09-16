@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Navigate } from 'react-router';
 import PageHeader from '../components/shared/PageHeader';
 import { Download, ExternalLink, ChevronLeft, ChevronRight, Loader2 } from 'lucide-react';
+import { fetchEtenders } from '../api/content';
 
 const ITEMS_PER_PAGE = 15;
 
@@ -27,6 +28,15 @@ const ETenderPage = () => {
         console.error("Failed to load tender data:", err);
         if (isMounted) setLoading(false);
       });
+
+    // Live API overrides the bundled JSON when reachable; silently ignored otherwise.
+    fetchEtenders()
+      .then((liveData) => {
+        if (isMounted && (liveData.live.length || liveData.archive.length)) {
+          setData(liveData);
+        }
+      })
+      .catch(() => {});
       
     return () => { isMounted = false; };
   }, []);

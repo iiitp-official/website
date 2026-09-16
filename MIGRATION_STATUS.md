@@ -38,15 +38,15 @@
 
 | File | DB Table(s) | Seed Script | API Routes | Frontend Migration | Status |
 |---|---|---|---|---|---|
-| `notices.json` | `notices` | 🟢 `notices.seed.ts` | 🔴 | ⏭️ Phase 5 | 🔴 |
-| `news.json` | `news` | 🟢 `news.seed.ts` | 🔴 | ⏭️ Phase 5 | 🔴 |
-| `careers.json` | `careers` + `career_buttons` | 🟢 `careers.seed.ts` | 🔴 | ⏭️ Phase 5 | 🔴 |
-| `etenders.json` | `etenders` | 🟢 `etenders.seed.ts` | 🔴 | ⏭️ Phase 5 | 🔴 |
-| Media upload endpoint | `media_files` | — | 🔴 | — | 🔴 |
-| Admin: Notices Manager screen | — | — | — | — | 🔴 |
-| Admin: News Manager screen | — | — | — | — | 🔴 |
-| Admin: Careers Manager screen | — | — | — | — | 🔴 |
-| Admin: E-Tenders Manager screen | — | — | — | — | 🔴 |
+| `notices.json` | `notices` | 🟢 `notices.seed.ts` | � | ⏭️ Phase 5 | 🟢 |
+| `news.json` | `news` | 🟢 `news.seed.ts` | 🟢 | ⏭️ Phase 5 | 🟢 |
+| `careers.json` | `careers` + `career_buttons` | 🟢 `careers.seed.ts` | 🟢 | ⏭️ Phase 5 | 🟢 |
+| `etenders.json` | `etenders` | 🟢 `etenders.seed.ts` | 🟢 | ⏭️ Phase 5 | 🟢 |
+| Media upload endpoint | `media_files` | — | 🟢 | — | 🟢 |
+| Admin: Notices Manager screen | — | — | — | — | 🟢 |
+| Admin: News Manager screen | — | — | — | — | 🟢 |
+| Admin: Careers Manager screen | — | — | — | — | 🟢 |
+| Admin: E-Tenders Manager screen | — | — | — | — | 🟢 |
 
 ---
 
@@ -90,10 +90,10 @@
 ### 5B. Frontend API Integration
 | Target Page / Component | Endpoint(s) Used | Replaces Data File | Status |
 |---|---|---|---|
-| `NoticePage.jsx` | `GET /notices` | `src/data/notices.json` | 🔴 |
-| `NewsPage.jsx` | `GET /news` | `src/data/news.json` | 🔴 |
-| `CareersPage.jsx` | `GET /careers` | `src/data/careers.json` | 🔴 |
-| `ETenderPage.jsx` | `GET /etenders` | `src/data/etenders.json` | 🔴 |
+| `NoticePage.jsx` | `GET /v1/notices` | `src/data/notices.json` | 🟡 (live fetch wired, JSON kept as fallback — needs deployed+seeded backend to verify) |
+| `NewsPage.jsx` | `GET /v1/news` | `src/data/news.json` | 🟡 (live fetch wired, JSON kept as fallback — needs deployed+seeded backend to verify) |
+| `CareersPage.jsx` | `GET /v1/careers` | `src/data/careers.json` | 🟡 (live fetch wired, JSON kept as fallback — needs deployed+seeded backend to verify) |
+| `ETenderPage.jsx` | `GET /v1/etenders` | `src/data/etenders.json` | 🟡 (live fetch wired, JSON kept as fallback — needs deployed+seeded backend to verify) |
 | `FacultyPage.jsx` | `GET /faculty` | `src/data/faculty_details.json` | 🔴 |
 | `FacultyProfilePage.jsx` | `GET /faculty/:slug` | `src/data/faculty_details.json` | 🔴 |
 | `Life Pages (Activities, Clubs, Events)` | `GET /life-events` | `src/data/lifePageData.json` | 🔴 |

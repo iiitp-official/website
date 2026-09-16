@@ -2,14 +2,24 @@ import React, { useState, useEffect } from 'react';
 import PageHeader from '../components/shared/PageHeader';
 import { Calendar, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router';
+import { fetchNews } from '../api/content';
 
 const NewsPage = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
+    let cancelled = false;
+
     import('../data/news.json')
-      .then((data) => setNews(data.default))
+      .then((data) => { if (!cancelled) setNews(data.default); })
       .catch(() => console.log('Error loading news'));
+
+    // Live API overrides the bundled JSON when reachable; silently ignored otherwise.
+    fetchNews()
+      .then((data) => { if (!cancelled && data.length) setNews(data); })
+      .catch(() => {});
+
+    return () => { cancelled = true; };
   }, []);
 
   return (

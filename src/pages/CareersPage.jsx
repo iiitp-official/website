@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 import PageHeader from '../components/shared/PageHeader';
-import careersData from '../data/careers.json';
+import careersDataJson from '../data/careers.json';
+import { fetchCareers } from '../api/content';
 
 const CareersPage = () => {
   const [activeTab, setActiveTab] = useState('live');
+  const [careersData, setCareersData] = useState(careersDataJson);
   const expiredRecruitmentMessage = 'You missed the opportunity. The recruitment date has ended for this position. Please keep checking our careers page for upcoming positions.';
+
+  useEffect(() => {
+    let cancelled = false;
+
+    // Live API overrides the bundled JSON when reachable; silently ignored otherwise.
+    fetchCareers()
+      .then((data) => { if (!cancelled && (data.live.length || data.archive.length)) setCareersData(data); })
+      .catch(() => {});
+
+    return () => { cancelled = true; };
+  }, []);
 
   const parseDmyDate = (value) => {
     if (!value || typeof value !== 'string') {
