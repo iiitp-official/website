@@ -360,6 +360,16 @@
     "type": "Contract"
   },
   {
+    "name": "Hemant Thorat",
+    "designation": "Associate Engineer (Civil)",
+    "department": "Civil",
+    "departmentShort": "Civil",
+    "image": "/assets/nonteachingstaff_photos/hemantthorat.jpg",
+    "description": "",
+    "email": "hemant@iiitp.ac.in",
+    "type": "Contract"
+  },
+  {
     "name": "Aditya Raj Gupta",
     "designation": "Lab Technician",
     "department": "Department of Computer Science and Engineering",
