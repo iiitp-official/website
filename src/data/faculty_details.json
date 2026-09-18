@@ -4285,5 +4285,146 @@
       }
     ],
     "department": "ECE"
+  },
+  "saurabh-kumar": {
+    "name": "Saurabh Kumar",
+    "designation": "Assistant Professor (T)",
+    "image": "/assets/faculty_photos/saurabhkumar.jpg",
+    "bio": "Dr. Saurabh Kumar is an Assistant Professor (T) in the Department of Electronics and Communication Engineering at the Indian Institute of Information Technology Pune (IIIT Pune). He holds a Ph.D. in Electronics and Communication Engineering. His research interests include Semiconductor Devices, FET-Based Biosensors, Low-Power VLSI, Analog and Mixed-Signal IC Design, and Energy-Efficient Integrated Circuit Design.\n\nPrior to joining IIIT Pune, he was awarded the Visvesvaraya Post-Doctoral Fellowship under the Visvesvaraya PhD Scheme for Electronics and IT, sponsored by the Ministry of Electronics and Information Technology (MeitY), Government of India. He carried out his postdoctoral research at Motilal Nehru National Institute of Technology Allahabad, Prayagraj. He has also worked as a Senior Project Associate under the MeitY-sponsored Chip-to-Startup (C2S) Programme.\n\nHis research and technical expertise encompass semiconductor device design and simulation, transistor-level IC design, low-power VLSI circuits, analog and mixed-signal IC design, IC layout, and ASIC implementation. His work spans both device- and circuit-level research, with an emphasis on developing advanced semiconductor devices and energy-efficient integrated circuits.",
+    "education": "Ph.D. in Electronics and Communication Engineering",
+    "books_chapters": [
+      {
+        "title": "A Perspective View for Detection of COVID-19 Causative Virus (SARS-Cov-2) Using Dielectric Modulated Field Effect Transistors",
+        "link": "https://doi.org/10.1201/9781003431138-12"
+      },
+      {
+        "title": "Domino logic buffer circuit with reduced voltage swing for energy efficient application",
+        "link": "https://doi.org/10.1201/9781003350057-77"
+      },
+      {
+        "title": "Minimization of switching energy of domino logic circuits with T-NOT gate",
+        "link": "https://doi.org/10.1201/9781003350057-24"
+      },
+      {
+        "title": "Improved Digital Performance of Modified Source-Drain FDSOI by Optimization of Buried Oxide Properties",
+        "link": "https://doi.org/10.1007/978-981-19-0312-0_73"
+      }
+    ],
+    "publications": [
+      {
+        "title": "Performance enhancement of methylammonium tin iodide perovskite photodetectors through device optimization",
+        "link": "https://doi.org/10.1016/j.solener.2025.113874"
+      },
+      {
+        "title": "Synergistic impact of parametric variation and gate misalignment on gate-oxide stacked junctionless MOSFETs for biosensing applications",
+        "link": "https://doi.org/10.1016/j.aeue.2025.156006"
+      },
+      {
+        "title": "Sensitivity Enhancement of Dual Gate FET Based Biosensor Using Modulated Dielectric for Covid Detection",
+        "link": "https://doi.org/10.1007/s12633-022-01865-7"
+      },
+      {
+        "title": "Biosensor sensitivity and steric hindrance: A comparison of InGaAs pocket and conventional TFET designs",
+        "link": "https://doi.org/10.1016/j.micrna.2023.207644"
+      },
+      {
+        "title": "Tweaking the Performance of Dielectric Modulated Junctionless Double Gate Metal Oxide Field Effect Transistor-Based Label-Free Biosensor",
+        "link": "https://iopscience.iop.org/article/10.1149/1945-7111/ad1c19/meta"
+      },
+      {
+        "title": "Unveiling the potential of organometal halide perovskite materials in enhancing photodetector performance",
+        "link": "https://doi.org/10.1007/s11082-023-05127-7"
+      },
+      {
+        "title": "Performance analysis of dielectric modulated underlap FD-SOI MOSFET for biomolecules detection",
+        "link": "https://doi.org/10.1007/s00339-022-06260-y"
+      },
+      {
+        "title": "Performance up-gradation of CIGS solar cell using Ag2S quantum dot as buffer layer",
+        "link": "https://doi.org/10.1557/s43578-023-00992-0"
+      },
+      {
+        "title": "Investigating Ag2S quantum dot buffer layer in CZTSSe photovoltaics for enhanced performance",
+        "link": "https://doi.org/10.1088/1402-4896/ad06fa"
+      },
+      {
+        "title": "Design a double-gate perfectly aligned impact ionization mosfet for rf and analog applications",
+        "link": "https://doi.org/10.1088/1402-4896/ade01e"
+      },
+      {
+        "title": "Non-toxic materials for high efficiency thin-film solar cells: CZTSSe with In2S3 buffer layer",
+        "link": "https://doi.org/10.1007/s12648-024-03194-4"
+      },
+      {
+        "title": "Design of energy efficient domino logic circuit using lector technique",
+        "link": "https://doi.org/10.1080/00207217.2022.2145500"
+      },
+      {
+        "title": "Design of energy efficient VCO for PLL application",
+        "link": "https://doi.org/10.1007/s10470-022-02122-y"
+      },
+      {
+        "title": "Investigating the 20T Hybrid Full Adder Design for Low Power and High-Performance Computing",
+        "link": "https://doi.org/10.1080/03772063.2024.2387292"
+      },
+      {
+        "title": "A Novel Dielectric Modulated Misaligned Double-Gate Junctionless MOSFET as a Label-Free Biosensor",
+        "link": "https://doi.org/10.3390/IECB2023-14578"
+      },
+      {
+        "title": "Design and Performance Comparison of 6T, 8T and 11T SRAM Cells using TSMC and UMC 65nm CMOS Technology",
+        "link": "https://doi.org/10.1080/00207217.2026.2664246"
+      },
+      {
+        "title": "Design and Analysis of an Enhanced Current-Starved Ring VCO Using NMOS-Only Stacked Delay Cells",
+        "link": "https://doi.org/10.1109/GCON69192.2026.11648886"
+      },
+      {
+        "title": "Impact of Different Technology Node on the Delay and Power Dissipation of 6T SRAM Cell",
+        "link": "https://doi.org/10.1109/ICSC53193.2021.9673326"
+      },
+      {
+        "title": "Optimizing Absorber Layer in Photodetectors with CH3NH3SnI3 Organometal Halide Perovskite: A Simulation-Based Approach",
+        "link": "https://doi.org/10.1109/ICICAT57735.2023.10263656"
+      },
+      {
+        "title": "Analysis of the Proposed Dynamic XNOR Circuit using Dual Keeper with Twist-Connected Transistors",
+        "link": "https://doi.org/10.1109/DELCON54057.2022.9753211"
+      },
+      {
+        "title": "Design of Half Adder Domino Circuit Using Sleep and Twist-Connected Transistors with Dual Keeper",
+        "link": "https://doi.org/10.1109/DELCON54057.2022.9753457"
+      },
+      {
+        "title": "Low Power SRAM cell Design Using MTCMOS and Stacking Techniques",
+        "link": "https://doi.org/10.1109/ICICAT62666.2024.10923332"
+      },
+      {
+        "title": "CNTFET-based SRAM cell Designing and Analysis by using Verilog-A code",
+        "link": "https://doi.org/10.1109/ICICAT62666.2024.10922889"
+      },
+      {
+        "title": "Design and Simulation of Low Power Leakage Controlled SRAM Cell",
+        "link": "https://doi.org/10.1109/ICSC64553.2025.10968384"
+      },
+      {
+        "title": "Machine Learning-Assisted Optimization of Power Amplifier for Wireless Applications",
+        "link": "https://doi.org/10.1109/ICVCS69586.2026.11683167"
+      }
+    ],
+    "patents": "",
+    "seminars": [],
+    "projects": "",
+    "supervisions": "",
+    "resume": "/assets/resume/saurabhkumar_resume.pdf",
+    "expertise": "Semiconductor Devices, FET-Based Biosensors, Low-Power VLSI, Analog and Mixed-Signal IC Design, Energy-Efficient Integrated Circuit Design",
+    "email": "saurabh@iiitp.ac.in",
+    "phone": "7905090422",
+    "linkedin": "https://www.linkedin.com/in/saurabh-kumar-48522545/",
+    "researchLinks": [],
+    "google_scholar": "https://scholar.google.com/citations?hl=en&user=eA87IZwAAAAJ&view_op=list_works&gmla=AKCpqFxfulsfSG5ZRLZAOb1ql041FeVay2LxcQVnoyV1PUFz4u-vRRvM52XWIMZ-TbIETdEkzldInSDt4K-0zFCq",
+    "orcid": "https://orcid.org/0000-0003-4912-7435",
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58262579100",
+    "department": "ECE"
   }
 }
