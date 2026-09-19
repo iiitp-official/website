@@ -1,6 +1,21 @@
 {
   "live": [
     {
+      "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "/careers-documents/ADVERTISEMENT FOR HIRING OF MANPOWER.pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://forms.gle/RksouGYmXkWy9kMa8"
+        }
+      ],
+      "date": "19-09-2026",
+      "lastDate": "25-09-2026"
+    },
+    {
      "title": "Advertisement for various research positions under (ANRF-PAIR) initiative",
      "buttons": [
       {
