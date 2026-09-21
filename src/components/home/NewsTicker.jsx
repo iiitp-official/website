@@ -15,6 +15,7 @@ const NewsTicker = () => {
       .catch(() => {
         // Fallback mock news
         setNews([
+          {id: 113, title: "PhD and PostDoc Position under Visvesvaraya Scheme", link: "/documents/Visvesvaraya_PhD_PostDoc_Brochure_Oct_2026_IIIT_Pune.pdf" },
           {id: 112, title: "Advertisement for various research positions under (ANRF-PAIR)", link: "/careers-documents/Sept_ANRF-PAIR_Manpower_Advertisement.pdf" },
           {id: 111, title: "Advertisement for the Post of Junior Research Fellow (JRF) in ISRO Sponsored Project", link: "/careers-documents/Advertisement_ISRO.pdf" },
           {id: 110, title: "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)", link: "/careers-documents/AP (CSE) Temp.pdf" },

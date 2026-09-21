@@ -32,6 +32,13 @@ const AdmissionsPage = () => {
 
   const specialPrograms = [
     {
+      title: "PhD and PostDoc Position",
+      applicationLink: "https://forms.gle/L52Z3maiurjAEdMi9",
+      brochureLink: "/documents/Visvesvaraya_PhD_PostDoc_Brochure_Oct_2026_IIIT_Pune.pdf",
+      spotLink: "/documents/Visvesvaraya_PhD_PostDoc_Brochure_Oct_2026_IIIT_Pune.pdf",
+      spotTitle: "Full-time PhD/Part-time PhD/PostDoc Position under Visvesvaraya PhD Scheme for Electronics & IT: Phase II (With Scholarship)",
+    },
+    {
       title: "MTech (Without Scholarship)",
       applicationLink: "/documents/Application form Jul 2026-M.Tech.pdf",
       brochureLink: "/documents/M.Tech. Brochure July-2026.pdf",
