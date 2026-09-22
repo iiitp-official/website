@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -173,6 +173,16 @@ const InternationalContactPage = lazy(
 );
 const HRSummitPage = lazy(() => import("./pages/HRSummit"));
 
+const CourseAdmissionRedirect = () => {
+  useEffect(() => {
+    window.location.replace(
+      "/documents/Visvesvaraya_PhD_PostDoc_Brochure_Oct_2026_IIIT_Pune.pdf",
+    );
+  }, []);
+
+  return <LoadingFallback />;
+};
+
 function AppContent() {
   const location = useLocation();
   const isInternational = location.pathname.startsWith("/international");
@@ -246,6 +256,10 @@ function AppContent() {
 
             {/* Admissions */}
             <Route path="/admissions" element={<AdmissionsPage />} />
+            <Route
+              path="/course-admission"
+              element={<CourseAdmissionRedirect />}
+            />
 
             {/* About */}
             <Route
