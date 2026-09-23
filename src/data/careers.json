@@ -57,6 +57,10 @@
       "title": "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)",
       "buttons": [
         {
+          "label": "Shortlistings",
+          "link": "/careers-documents/Shortlisting Notice - Rolling.pdf"
+        },
+        {
           "label": "Details",
           "file": "/careers-documents/AP (CSE) Temp.pdf"
         },
