@@ -986,6 +986,29 @@
   ],
   "EVENTS": [
     {
+      "name": "IIIT Pune Participates in Swachhata Hi Seva 2026",
+      "type": "Social Responsibility, Cleanliness & Environmental Sustainability",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) actively participated in the national Swachhata Hi Seva 2026 campaign by organizing a campus-wide cleanliness drive. The initiative brought together students, faculty, and staff in a collective effort to promote cleanliness, environmental responsibility, and sustainable campus practices. The cleanliness drive covered campus grounds, hostels, and common areas, encouraging active participation and reinforcing the importance of maintaining a clean, healthy, and environmentally responsible campus. The initiative reflected IIIT Pune’s commitment to fostering environmental consciousness, civic responsibility, and collective action towards a cleaner and greener campus. Through this campaign, the Institute emphasized the importance of community participation and individual responsibility in maintaining a healthy and sustainable environment. The initiative aligns with SDG 11 (Sustainable Cities and Communities) and SDG 3 (Good Health and Well-being), highlighting how small, collective actions can contribute to building a cleaner, greener, and more responsible campus.",
+      "images": [
+        "/assets/lifepage/swachhata_hi_seva_2026_01.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_02.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_03.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_04.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_05.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_06.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune participated in the national Swachhata Hi Seva 2026 campaign through a campus-wide cleanliness drive",
+        "Students, faculty, and staff came together to promote cleanliness and environmental responsibility",
+        "The cleanliness drive covered campus grounds, hostels, and common areas",
+        "The initiative encouraged active participation and reinforced the importance of maintaining a clean and healthy campus",
+        "The campaign promoted environmental consciousness, civic responsibility, and sustainable campus practices",
+        "The initiative aligned with SDG 11 (Sustainable Cities and Communities) and SDG 3 (Good Health and Well-being), emphasizing collective action for a cleaner and greener campus"
+      ],
+      "links": []
+    },
+    {
     "name": "IIIT Pune Hosts Internal Hackathon to Select Teams for Smart India Hackathon 2026",
     "type": "Innovation, Hackathon & Student Development",
     "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
