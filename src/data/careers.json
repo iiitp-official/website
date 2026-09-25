@@ -13,7 +13,8 @@
         }
       ],
       "date": "19-09-2026",
-      "lastDate": "25-09-2026"
+      "lastDate": "25-09-2026",
+      "lastUpdate": "26-09-2026"
     },
     {
      "title": "Advertisement for various research positions under (ANRF-PAIR) initiative",
@@ -36,7 +37,8 @@
       }
      ],
      "date": "09-09-2026",
-     "lastDate": "04-10-2026"
+    "lastDate": "04-10-2026",
+    "lastUpdate": "25-09-2026"
     },
     {
       "title": "Advertisement for the Post of Junior Research Fellow (JRF) in ISRO Sponsored Project",
@@ -55,7 +57,8 @@
         }
       ],
       "date": "10-09-2026.",
-      "lastDate": "30-09-2026"
+      "lastDate": "30-09-2026",
+      "lastUpdate": "10-09-2026"
     },
     {
       "title": "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)",
@@ -78,7 +81,8 @@
         }
       ],
       "date": "08-09-2026",
-      "lastDate": "Nill"
+      "lastDate": "Nill",
+      "lastUpdate": "23-09-2026"
     }
   ],
   "archive": [
@@ -95,7 +99,8 @@
             }
           ],
           "date": "01-09-2026",
-          "lastDate": "12-09-2026"
+          "lastDate": "12-09-2026",
+          "lastUpdate": ""
         },
         {
           "title": "ADVERTISEMENT FOR POSITIONS IN START-UP & INCUBATION CELL IN INSTITUTE",
@@ -114,7 +119,8 @@
             }
           ],
           "date": "11-08-2026",
-          "lastDate": "25-08-2026"
+          "lastDate": "25-08-2026",
+          "lastUpdate": ""
         },
         {
       "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
@@ -129,7 +135,8 @@
         }
       ],
       "date": "30-07-2026",
-      "lastDate": "08-08-2026"
+      "lastDate": "08-08-2026",
+      "lastUpdate": ""
     },
 
     {
@@ -153,7 +160,8 @@
         }
       ],
       "date": "29-07-2026",
-      "lastDate": "7-08-2026"
+      "lastDate": "7-08-2026",
+      "lastUpdate": ""
     },
     {
       "title": "RECRUITMENT NOTICE FOR THE POST OF ASSISTANT PROFESSOR (TEMPORARY)",
@@ -176,7 +184,8 @@
         }
       ],
       "date": "21-07-2026",
-      "lastDate": "07-08-2026"
+      "lastDate": "07-08-2026",
+      "lastUpdate": ""
     },
     {
       "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
@@ -186,7 +195,9 @@
           "file": "careers-documents/IIIT Advertise (1).pdf"
         }
       ],
-      "date": "8-7-2026"
+      "date": "8-7-2026",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "Advertisement for Positions in Start-up and Incubation Cell on contract basis",
@@ -209,7 +220,8 @@
         }
       ],
       "date": "07-07-2026",
-      "lastDate": "01-08-2026"
+      "lastDate": "01-08-2026",
+      "lastUpdate": ""
     },
     {
     "title": "Advertisement for the Post of Project Associate-I under the Project SMDP-Chips to Startup (C2S)",
@@ -219,7 +231,9 @@
           "file": "/careers-documents/IIIT_Pune_Project_Associate_Advertisement.pdf"
         }
       ],
-      "date": "23-06-2026"
+      "date": "23-06-2026",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "Advertisement for various research positions under Anusandhan National Research Foundation - Partnerships for Accelerated Innovation and Research (ANRF-PAIR) Initiative",
@@ -233,7 +247,9 @@
           "file": "/careers-documents/CORRIGENDUM - ANRF.pdf"
         }
       ],
-      "date": "20-06-2026"
+      "date": "20-06-2026",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "RECRUITMENT NOTICE FOR THE POST OF ASSISTANT PROFESSOR (TEMPORARY)",
@@ -256,7 +272,9 @@
           "file": "/careers-documents/CORRIGENDUM (Recruitment to the post of Assistant Proffesor) temporary on contractual basis. .pdf"
         }
       ],
-      "date": "16-06-2026"
+      "date": "16-06-2026",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "Cancellation of Advertisement for the Post of Assistant Registrar",
@@ -270,7 +288,9 @@
           "file": "/careers-documents/2.pdf"
         }
       ],
-      "date": "10-06-2026"
+      "date": "10-06-2026",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "Advertisement for various research positions under Anusandhan National Research Foundation -Partnerships for Accelerated Innovation and Research (ANRF-PAIR) initiative",
@@ -288,7 +308,9 @@
           "file": "/careers-documents/5.pdf"
         }
       ],
-      "date": "--"
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "Advertisement for the Post of Project Associate-I under the Project SMDP-Chips to Startup (C2S)",
@@ -302,7 +324,9 @@
           "file": "/careers-documents/7.pdf"
         }
       ],
-      "date": "--"
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "Advertisement for the Post of Junior Research Fellow (JRF) in Sponsored Project",
@@ -316,7 +340,9 @@
           "file": "/careers-documents/9.pdf"
         }
       ],
-      "date": "--"
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "RECRUITMENT NOTICE FOR THE POST OF ADJUNCT ASSISTANT PROFESSOR (AAP) (ON TEMPORARY BASIS)",
@@ -334,7 +360,9 @@
           "file": "/careers-documents/12.pdf"
         }
       ],
-      "date": "--"
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "WALK-IN-INTERVIEW FOR THE POST OF ADVISOR (CIVIL) ON CONTRACT BASIS – THROUGH OUTSOURCING AGENCY",
@@ -352,7 +380,9 @@
           "file": "/careers-documents/15.pdf"
         }
       ],
-      "date": "--"
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "Advertisement for the Post of Research Associate-I in Sponsored Project",
@@ -366,7 +396,9 @@
           "file": "/careers-documents/17.pdf"
         }
       ],
-      "date": "--"
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
     },
     {
       "title": "Advertisement for the Post of Intern in Sponsored Project",
@@ -380,7 +412,9 @@
           "file": "/careers-documents/19.pdf"
         }
       ],
-      "date": "--"
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
     }
   ]
 }

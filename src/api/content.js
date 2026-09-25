@@ -51,6 +51,7 @@ export async function fetchCareers() {
     title: job.title,
     date: formatDate(job.post_date),
     lastDate: formatDate(job.last_date),
+    lastUpdate: formatDate(job.updated_at),
     buttons: (job.buttons || []).map(mapCareerButton),
   });
 

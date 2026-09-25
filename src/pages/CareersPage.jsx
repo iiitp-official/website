@@ -95,39 +95,50 @@ const CareersPage = () => {
               jobs.map((job, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col md:flex-row items-start md:items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors last:border-b-0"
+                  className="flex flex-col gap-3 p-6 border-b border-gray-200 dark:border-gray-800 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors last:border-b-0"
                 >
-                  <div className="flex-1 mb-4 md:mb-0 md:pr-8">
+                  <div className="min-w-0">
                     <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 leading-relaxed mb-2">
                       {job.title}
                     </h3>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">
-                      <span className="font-medium text-gray-600 dark:text-gray-300">Date of Upload:</span> {job.date}
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      {job.buttons.map((btn, bidx) => (
+                        btn.isInternalRoute ? (
+                          <Link
+                            key={bidx}
+                            to={btn.link}
+                            onClick={btn.label?.toLowerCase() === 'apply now' && isRecruitmentEnded(job, btn) ? handleApplyNowClick : undefined}
+                            className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-xs font-semibold py-2 px-4 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95 text-center"
+                          >
+                            {btn.label}
+                          </Link>
+                        ) : (
+                          <a
+                            key={bidx}
+                            href={btn.link || btn.file}
+                            target="_blank" rel="noopener noreferrer"
+                            onClick={btn.label?.toLowerCase() === 'apply now' && isRecruitmentEnded(job, btn) ? handleApplyNowClick : undefined}
+                            className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-xs font-semibold py-2 px-4 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95 text-center"
+                          >
+                            {btn.label}
+                          </a>
+                        )
+                      ))}
                     </div>
                   </div>
-                  <div className="flex flex-wrap items-center gap-2 shrink-0">
-                    {job.buttons.map((btn, bidx) => (
-                      btn.isInternalRoute ? (
-                        <Link
-                          key={bidx}
-                          to={btn.link}
-                          onClick={btn.label?.toLowerCase() === 'apply now' && isRecruitmentEnded(job, btn) ? handleApplyNowClick : undefined}
-                          className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-xs font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95 text-center"
-                        >
-                          {btn.label}
-                        </Link>
-                      ) : (
-                        <a
-                          key={bidx}
-                          href={btn.link || btn.file}
-                          target="_blank" rel="noopener noreferrer"
-                          onClick={btn.label?.toLowerCase() === 'apply now' && isRecruitmentEnded(job, btn) ? handleApplyNowClick : undefined}
-                          className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white text-xs font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 shadow-sm hover:shadow active:scale-95 text-center"
-                        >
-                          {btn.label}
-                        </a>
-                      )
-                    ))}
+                  <div className="grid grid-cols-[minmax(0,1.2fr)_minmax(0,1.4fr)_minmax(0,1fr)] items-center gap-6 text-xs text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center gap-1 whitespace-nowrap">
+                      <span className="font-medium text-gray-600 dark:text-gray-300">Date of Upload:</span>
+                      <span>{job.date || '—'}</span>
+                    </div>
+                    <div className="flex items-center gap-1 whitespace-nowrap">
+                      <span className="font-medium text-gray-600 dark:text-gray-300">Last Date to Apply:</span>
+                      <span>{job.lastDate || '—'}</span>
+                    </div>
+                    <div className="flex items-center gap-1 whitespace-nowrap">
+                      <span className="font-medium text-gray-600 dark:text-gray-300">Last Update:</span>
+                      <span>{job.lastUpdate || '—'}</span>
+                    </div>
                   </div>
                 </div>
               ))
