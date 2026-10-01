@@ -112,6 +112,7 @@ const ContactPage = lazy(() => import("./pages/ContactPage"));
 const NIRFPage = lazy(() => import("./pages/NIRFPage"));
 const SuoMotuPage = lazy(() => import("./pages/SuoMotuPage"));
 const RTIPage = lazy(() => import("./pages/RTIPage"));
+const ReservationPolicyPage = lazy(() => import("./pages/ReservationPolicyPage"));
 const RajbhashaPage = lazy(() => import("./pages/RajbhashaPage"));
 const RajbhashaDetailPage = lazy(() => import("./pages/RajbhashaDetailPage"));
 const RajbhashaGalleryPage = lazy(() => import("./pages/RajbhashaGalleryPage"));
@@ -459,6 +460,7 @@ function AppContent() {
             <Route path="/nirf" element={<NIRFPage />} />
             <Route path="/suo-motu" element={<SuoMotuPage />} />
             <Route path="/rti" element={<RTIPage />} />
+            <Route path="/rti/reservation-policy" element={<ReservationPolicyPage />} />
             <Route path="/rajbhasha" element={<RajbhashaPage />} />
             <Route path="/rajbhasha/prashikshan" element={<RajbhashaDetailPage />} />
             <Route path="/rajbhasha/chitra-dirgha" element={<RajbhashaGalleryPage />} />
