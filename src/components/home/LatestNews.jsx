@@ -16,6 +16,13 @@ const LatestNews = () => {
       .catch(() => {
         setNews([  
           {
+            id: 114,
+            title: "Shortlisted Candidates for JRF Position under ISRO RESPOND Project",
+            date: "15-09-2026",
+            excerpt: "The shortlisted candidates for the Junior Research Fellow (JRF) position under the ISRO RESPOND Project at IIIT Pune have been announced.",
+            link: "/careers-documents/shortlisted candidate for isro project.pdf"
+          },
+          {
             id: 113,
             title: "PhD and PostDoc Position under Visvesvaraya Scheme",
             date: "21-09-2026",
@@ -42,80 +49,6 @@ const LatestNews = () => {
             date: "08-09-2026",
             excerpt: "Applications are invited for the position of Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE) at IIIT Pune.",
             link: "/careers-documents/AP (CSE) Temp.pdf"
-          },
-          {
-            id: 109,
-            title: "SAC Club Heads and Co-Heads for the Academic Year 2026–27",
-            date: "21-08-2026",
-            excerpt: "The Student Activity Council (SAC) has announced the Club Heads and Co-Heads for the Academic Year 2026–27.",
-            link: "/documents/SAC Club Heads and Co-Heads.pdf"
-          },
-          {
-            id: 108,
-            title: "Orientation Programme for B.Tech./ M.Tech I Year (AY 2026-27)",
-            date: "19-08-2026",
-            excerpt: "Orientation Programme for B.Tech./ M.Tech I Year students for the Academic Year 2026-27.",
-            link: "/documents/Final orientation.pdf"
-          },
-          {
-            id: 107,
-            title: "Institute Bus Service: Extra Running Bus-32A on 13th August 2026",
-            date: "13-08-2026",
-            excerpt: "Extra running bus service for Bus-32A has been arranged on 13th August 2026.",
-            link: "/documents/Institte_Bus_Service_Extra Running_Bus-32A_13th_August2026..pdf"
-          },
-          {
-            id: 106,
-            title: "ADVERTISEMENT FOR POSITIONS IN START-UP & INCUBATION CELL IN INSTITUTE",
-            date: "11-08-2026",
-            excerpt:"Applications are invited for the positions of CEO, CIO, and Manager in the Start-up & Incubation Cell at IIIT Pune.",
-            link: "/careers-documents/Advt. for CEO, CIO, Manager.pdf",
-          },
-          {
-            id: 105,
-            title: "Shortlisted Candidates for Stage - II (Presentation)in Start-up & Incubation Centre",
-            date: "07-08-2026",
-            excerpt: "List of Shortlisted Candidates for Second Stage of Selection Process (Presentation) in Start-up & Incubation Centre (S&IC), IIIT Pune",
-            link: "https://www.iiitp.ac.in/careers-documents/2nd%20Stage%20of%20Selection%20-%20Presentation.pdf",
-          },
-          {
-            id: 104,
-            title: "SPOT Admission for M.Tech. (Without Scholarship) Programme 2026-27",
-            date: "06-08-2026",
-            excerpt: "SPOT Admission for M.Tech. (Without Scholarship) Programme 2026-27 has been announced.",
-            link: "/admissions",
-          },
-          {
-            id: 101,
-            title: "Assistant Professor (Temporary) in the Department of Electronics and Communication Engineering (ECE)",
-            date: "29-07-2026",
-            excerpt:
-              "Applications are invited for the position of Assistant Professor (Temporary) in the Department of Electronics and Communication Engineering (ECE) at IIIT Pune.",
-            link: "/careers-documents/ECE - AP Temp advt.pdf",
-          },
-          {
-            id: 103,
-            title: "Physical Reporting Instructions: JoSAA/CSAB 2026",
-            date: "21-07-2026",
-            excerpt:
-              "Physical Reporting Instructions for B.Tech candidates admitted through JoSAA/CSAB 2026 are now available.",
-            link: "/documents/DETAILS%20OF%20ADMISSION%20PROCESS%20FOR%20FIRST%20SEMESTER%202026-27.pdf",
-          },
-          {
-            id: 2,
-            title: "IIIT Pune secures top rank in recent Hackathon",
-            date: "May 10, 2025",
-            excerpt:
-              "Our students demonstrated excellent problem-solving skills at the national level hackathon.",
-            link: "/notice",
-          },
-          {
-            id: 3,
-            title: "New AI Research lab inaugurated by the Director",
-            date: "May 02, 2025",
-            excerpt:
-              "The new laboratory is equipped with state-of-the-art GPUs for deep learning research.",
-            link: "/notice",
           },
         ]);
       });

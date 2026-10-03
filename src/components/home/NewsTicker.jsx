@@ -15,20 +15,11 @@ const NewsTicker = () => {
       .catch(() => {
         // Fallback mock news
         setNews([
+          {id: 114, title: "Shortlisted Candidates for JRF Position under ISRO RESPOND Project", link: "/careers-documents/shortlisted candidate for isro project.pdf" },
           {id: 113, title: "PhD and PostDoc Position under Visvesvaraya Scheme", link: "/documents/Visvesvaraya_PhD_PostDoc_Brochure_Oct_2026_IIIT_Pune.pdf" },
           {id: 112, title: "Advertisement for various research positions under (ANRF-PAIR)", link: "/careers-documents/Sept_ANRF-PAIR_Manpower_Advertisement.pdf" },
           {id: 111, title: "Advertisement for the Post of Junior Research Fellow (JRF) in ISRO Sponsored Project", link: "/careers-documents/Advertisement_ISRO.pdf" },
           {id: 110, title: "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)", link: "/careers-documents/AP (CSE) Temp.pdf" },
-          {id: 109, title: "SAC Club Heads and Co-Heads for the Academic Year 2026–27", link: "/documents/SAC Club Heads and Co-Heads.pdf" },
-          {id: 108, title: "Orientation Programme for B.Tech./ M.Tech I Year (AY 2026-27)", link: "/docs/Final orientation.pdf" },
-          {id: 107, title: "Institte_Bus_Service_Extra Running_Bus-32A_13th_August2026", link: "/documents/Institte_Bus_Service_Extra Running_Bus-32A_13th_August2026..pdf" },
-          { id: 106, title: "ADVERTISEMENT FOR POSITIONS IN START-UP & INCUBATION CELL IN INSTITUTE", link: "/careers-documents/Advt. for CEO, CIO, Manager.pdf" },
-          { id: 105, title: "Shortlisted Candidates for Stage - II (Presentation) in Start-up & Incubation Centre", link: "https://www.iiitp.ac.in/careers-documents/2nd%20Stage%20of%20Selection%20-%20Presentation.pdf" },
-          { id: 104, title: "SPOT Admission for M.Tech. (Without Scholarship) Programme 2026-27", link: "/admissions" },
-          { id: 101, title: "Assistant Professor (Temporary) in the Department of Electronics and Communication Engineering (ECE)", link: "/careers-documents/ECE - AP Temp advt.pdf" },
-          { id: 103, title: "Physical Reporting Instructions: JoSAA/CSAB 2026", link: "/documents/DETAILS%20OF%20ADMISSION%20PROCESS%20FOR%20FIRST%20SEMESTER%202026-27.pdf" },
-          { id: 2, title: "IIIT Pune secures top rank in National Smart India Hackathon 2024" },
-          { id: 3, title: "New AI & Robotics Research lab inaugurated by the Director" },
         ]);
       });
   }, []);
