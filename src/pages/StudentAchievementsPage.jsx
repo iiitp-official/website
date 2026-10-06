@@ -20,6 +20,86 @@ const StudentAchievementsPage = () => {
       <PageHeader title="Students' Achievements" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <section id="rofies-mindspark-2026" className="scroll-mt-24">
+          <article className="overflow-hidden rounded-2xl border border-gray-150 bg-white shadow-lg dark:border-gray-800 dark:bg-surface-dark">
+            <div className="space-y-8 p-6 md:p-10">
+              <div className="space-y-4">
+                <span className="inline-flex rounded-full bg-accent/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent dark:text-accent-dark">
+                  ROFIES · COEP MindSpark 2026
+                </span>
+                <h2 className="text-3xl font-bold font-serif leading-tight text-primary dark:text-white md:text-4xl">
+                  ROFIES shines at COEP MindSpark 2026
+                </h2>
+                <p className="max-w-4xl leading-relaxed text-gray-600 dark:text-gray-300">
+                  The Robotics Club of IIIT Pune competed in Robo Race and Neural Nexus, putting its skills in robotics, embedded systems, control, and artificial intelligence to the test.
+                </p>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-3">
+                <div className="rounded-xl border border-orange-100 bg-orange-50 p-5 dark:border-orange-900/30 dark:bg-orange-950/20">
+                  <p className="mb-2 text-sm font-bold text-orange-700 dark:text-orange-300">🥉 Robo Race · 3rd Place</p>
+                  <h3 className="font-bold text-gray-800 dark:text-gray-100">Team Robo Rangers</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                    Rishit, Shubholaxmi Adhikary, Rajashekhar Avarageremath, and Vedika Trimbake
+                  </p>
+                </div>
+
+                <div className="rounded-xl border border-blue-100 bg-blue-50 p-5 dark:border-blue-900/30 dark:bg-blue-950/20">
+                  <p className="mb-2 text-sm font-bold text-blue-700 dark:text-blue-300">🤖 Robo Race · Semi-finalists</p>
+                  <h3 className="font-bold text-gray-800 dark:text-gray-100">Team Eclipse</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                    Aryan Meshram, Abhinav Deshmukh, Ankush Singh, and Ryaan Roy
+                  </p>
+                </div>
+
+                <div className="rounded-xl border border-indigo-100 bg-indigo-50 p-5 dark:border-indigo-900/30 dark:bg-indigo-950/20">
+                  <p className="mb-2 text-sm font-bold text-indigo-700 dark:text-indigo-300">🧠 Neural Nexus · 4th Place</p>
+                  <h3 className="font-bold text-gray-800 dark:text-gray-100">Team Ghumi Ghumi Time</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                    Jemin Morabiya and Surabhi Pandey
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <img
+                  src="/assets/student_achievements/rofies_1.jpg"
+                  alt="Robots built by ROFIES members"
+                  loading="lazy"
+                  className="aspect-[4/3] w-full rounded-xl object-cover"
+                />
+                <img
+                  src="/assets/student_achievements/rofies_2.jpeg"
+                  alt="ROFIES members celebrating together"
+                  loading="lazy"
+                  className="aspect-[4/3] w-full rounded-xl object-cover"
+                />
+                <img
+                  src="/assets/student_achievements/rofies_3.jpeg"
+                  alt="ROFIES members and their robotics projects"
+                  loading="lazy"
+                  className="aspect-[4/3] w-full rounded-xl object-cover"
+                />
+                <img
+                  src="/assets/student_achievements/rofies_4.jpeg"
+                  alt="The ROFIES robotics club team"
+                  loading="lazy"
+                  className="aspect-[4/3] w-full rounded-xl object-cover"
+                />
+              </div>
+
+              <div className="space-y-3 border-t border-gray-100 pt-6 dark:border-gray-800">
+                <p className="leading-relaxed text-gray-600 dark:text-gray-300">
+                  Robo Race challenged teams in robot building, control, electronics, and teamwork, while Neural Nexus tested their understanding and application of artificial intelligence. From building robots from scratch to competing on a challenging platform, these results reflect ROFIES’ technical spirit, teamwork, and culture of learning.
+                </p>
+                <p className="text-sm font-semibold text-accent dark:text-accent-dark">
+                  #ROFIES #IIITPune #COEPMindSpark2026 #Robotics #RoboRace #ArtificialIntelligence #Engineering #StudentAchievements #TeamROFIES
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
         
         {/* Section 1: Sports Meet */}
         <section id="sports" className="scroll-mt-24">
