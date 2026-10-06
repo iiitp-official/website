@@ -985,7 +985,107 @@
     }
   ],
   "EVENTS": [
-    
+    {
+      "name": "IIIT Pune Celebrates Gandhi Jayanti & Lal Bahadur Shastri Jayanti",
+      "type": "National Celebrations, Values & Civic Responsibility",
+      "typeColor": "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) commemorated Gandhi Jayanti and Lal Bahadur Shastri Jayanti on 2nd October, celebrating the birth anniversaries of two of India's most iconic leaders and reflecting on their enduring contributions to the nation. The IIIT Pune community marked the occasion through engaging discussions on the lives, values, and legacies of Mahatma Gandhi and Lal Bahadur Shastri. The discussions highlighted Mahatma Gandhi's unwavering commitment to truth, non-violence, self-reliance, and Satyagraha, along with Lal Bahadur Shastri's values of simplicity, integrity, resilience, and dedicated public service. An interactive quiz was also organised to bring history to life and encourage students to engage with the rich legacy of the two national leaders. The programme provided students with an opportunity to reflect on the values that shaped India's freedom movement, nation-building journey, and democratic ethos. IIIT Pune believes that great engineers and innovators must also be informed, responsible, and socially conscious citizens. Through such commemorative activities, the Institute encourages students to connect technical education with values, civic responsibility, ethical leadership, and nation-building. The occasion concluded with warm tributes from the entire IIIT Pune family to Mahatma Gandhi and Lal Bahadur Shastri, whose ideals continue to inspire generations. The initiative aligns with SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), and SDG 16 (Peace, Justice and Strong Institutions).",
+      "images": [
+        "/assets/lifepage/gandhi_1.jpg",
+        "/assets/lifepage/gandhi_2.jpg",
+        "/assets/lifepage/gandhi_3.jpg",
+        "/assets/lifepage/gandhi_4.jpg",
+        "/assets/lifepage/gandhi_5.jpg",
+        "/assets/lifepage/gandhi_6.jpg",
+        "/assets/lifepage/gandhi_7.jpg",
+        "/assets/lifepage/gandhi_8.jpg",
+        "/assets/lifepage/gandhi_9.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune commemorated Gandhi Jayanti and Lal Bahadur Shastri Jayanti on 2nd October",
+        "The IIIT Pune community reflected on the lives, values, and enduring legacies of Mahatma Gandhi and Lal Bahadur Shastri",
+        "Discussions highlighted Gandhi's principles of truth, non-violence, Satyagraha, and self-reliance",
+        "The programme highlighted Lal Bahadur Shastri's values of simplicity, integrity, resilience, and dedicated public service",
+        "An interactive quiz was organised to encourage students to engage with the history and legacy of the two national leaders",
+        "The programme encouraged students to connect technical education with civic responsibility, ethical leadership, and nation-building",
+        "The celebration reinforced the importance of developing responsible and socially conscious citizens alongside skilled engineers and innovators",
+        "IIIT Pune paid warm tributes to Mahatma Gandhi and Lal Bahadur Shastri and their lasting contributions to modern India",
+        "The initiative aligned with SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), and SDG 16 (Peace, Justice and Strong Institutions)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Organises SafaiMitra Suraksha Evam Samman Shivir under Swachhata Hi Seva 2026",
+      "type": "Social Responsibility, SafaiMitra Welfare & Sustainable Campus",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "As part of the national Swachhata Hi Seva 2026 campaign, Indian Institute of Information Technology, Pune (IIIT Pune) organised a SafaiMitra Suraksha Evam Samman Shivir, creating a meaningful platform for interaction between Swachchata Doots and students. The initiative placed dignity, safety, respect, and sustainability at the centre of the conversation. During the interaction, Swachchata Doots shared their experiences and perspectives, helping students understand the challenging and essential nature of the work that contributes to maintaining a clean and healthy campus every day. The interaction highlighted the importance of recognising and respecting the contribution of SafaiMitras and Swachchata Doots to the Institute's campus environment. A key focus of the programme was the importance of proper waste segregation at source. Effective segregation can directly reduce the burden of manual waste sorting, make the work of SafaiMitras safer, and contribute to their dignity, health, and overall well-being. The initiative reinforced IIIT Pune's commitment to building a sustainable campus based on shared responsibility, where students, faculty members, staff, and Swachchata Doots work together to create a cleaner, safer, healthier, and more respectful environment. Through this initiative, IIIT Pune encouraged responsible waste management practices and greater awareness of the social and environmental dimensions of cleanliness. The programme contributes to the broader objectives of the Swachh Bharat Mission and aligns with the Sustainable Development Goals, particularly SDG 3 (Good Health and Well-being), SDG 6 (Clean Water and Sanitation), SDG 11 (Sustainable Cities and Communities), SDG 12 (Responsible Consumption and Production), and SDG 13 (Climate Action).",
+      "images": [
+        "/assets/lifepage/safaimitra_1.jpg",
+        "/assets/lifepage/safaimitra_2.jpg",
+        "/assets/lifepage/safaimitra_3.jpg",
+        "/assets/lifepage/safaimitra_4.jpg",
+        "/assets/lifepage/safaimitra_5.jpg",
+        "/assets/lifepage/safaimitra_6.jpg",
+        "/assets/lifepage/safaimitra_7.jpg",
+        "/assets/lifepage/safaimitra_8.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune organised a SafaiMitra Suraksha Evam Samman Shivir as part of the national Swachhata Hi Seva 2026 campaign",
+        "The programme facilitated meaningful interaction between Swachchata Doots and students",
+        "Swachchata Doots shared their experiences and perspectives on the essential work of maintaining a clean campus",
+        "The initiative highlighted the importance of dignity, safety, respect, and well-being of SafaiMitras",
+        "Students were sensitised to the importance of proper waste segregation at source",
+        "Waste segregation at source helps reduce the burden of manual sorting and contributes to safer working conditions for SafaiMitras",
+        "The initiative promoted shared responsibility among students, faculty, staff, and Swachchata Doots for maintaining a sustainable campus",
+        "The programme reinforced IIIT Pune's commitment to cleanliness, environmental responsibility, and a respectful campus culture",
+        "The initiative supports the objectives of Swachh Bharat and aligns with SDG 3 (Good Health and Well-being), SDG 6 (Clean Water and Sanitation), SDG 11 (Sustainable Cities and Communities), SDG 12 (Responsible Consumption and Production), and SDG 13 (Climate Action)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Hosts Insightful Interaction with Dr. R. (Venki) Venkateswaran of ACM India",
+      "type": "Academic Collaboration, Leadership Interaction & Student Development",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) was privileged to welcome Dr. R. (Venki) Venkateswaran from ACM India for a productive and insightful interaction with the Institute's leadership team on 25th September 2026. The interaction focused on strengthening collaboration between IIIT Pune and ACM India and exploring opportunities for meaningful academic and professional engagement. Key areas of discussion included organizing expert talks, workshops, and mentorship programmes, along with fostering stronger industry-academia interactions to enrich the learning ecosystem for students and faculty. The engagement provided an opportunity to discuss initiatives that can support student development, professional growth, research, innovation, and exposure to leading experts from the computing and technology community. IIIT Pune expressed its gratitude to Dr. Venki Venkateswaran for his valuable time, insights, and encouragement, and looks forward to building a strong and growing partnership with ACM India in the months ahead. The initiative reflects IIIT Pune's commitment to strengthening academic and professional collaborations, creating meaningful learning opportunities, and connecting students and faculty with the broader computing and technology ecosystem. The collaboration aligns with SDG 4 (Quality Education), SDG 8 (Decent Work and Economic Growth), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals).",
+      "images": [
+        "/assets/lifepage/venki_interaction_1.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune welcomed Dr. R. (Venki) Venkateswaran from ACM India for an insightful interaction with the Institute's leadership team",
+        "The interaction was held on 25th September 2026",
+        "Discussions focused on strengthening collaboration between IIIT Pune and ACM India",
+        "Opportunities for expert talks, workshops, and mentorship programmes were explored",
+        "The interaction emphasized fostering meaningful industry-academia engagement for students and faculty",
+        "The initiative aims to support student development, professional development, research, and innovation",
+        "IIIT Pune expressed its gratitude to Dr. Venki Venkateswaran for his valuable insights and encouragement",
+        "The engagement supports IIIT Pune's commitment to building strong academic and professional partnerships",
+        "The initiative aligns with SDG 4 (Quality Education), SDG 8 (Decent Work and Economic Growth), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Micro-Credits Programme on Supervised Machine Learning with IIT Kharagpur",
+      "type": "Academic Excellence, Micro-Credits & Industry-Academia Collaboration",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) hosted Prof. Sourangshu Bhattacharya from the Indian Institute of Technology, Kharagpur (IIT Kharagpur), as part of its Micro-Credits Programme, an initiative designed to bring distinguished faculty from premier institutions directly to IIIT Pune students. The programme featured a focused 7-hour lecture conducted over two days on Supervised Machine Learning, providing B.Tech. students from the Computer Science and Engineering (CSE) and Electronics and Communication Engineering (ECE) programmes with an opportunity to engage with advanced concepts in machine learning. The sessions went beyond conventional classroom instruction, covering rigorous theoretical concepts, mathematical foundations, and research-oriented perspectives from an expert in the field. Key areas included Supervised Learning, Support Vector Machines (SVM), Decision Trees, Logistic Regression, Karush-Kuhn-Tucker (KKT) conditions, and other foundational concepts in machine learning. The initiative provided students with valuable exposure to advanced academic perspectives while strengthening institutional collaboration between IIIT Pune and IIT Kharagpur. The Micro-Credits Programme reflects IIIT Pune’s commitment to providing students with high-quality academic experiences, interdisciplinary learning opportunities, and exposure to leading experts from premier institutions. The initiative also supports the objectives of NEP 2020 and contributes to SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals).",
+      "images": [
+        "/assets/lifepage/micro_credits01.jpg",
+        "/assets/lifepage/micro_credits03.jpg",
+        "/assets/lifepage/micro_credits05.jpg",
+        "/assets/lifepage/micro_credits06.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune conducted a Micro-Credits Programme featuring Prof. Sourangshu Bhattacharya from IIT Kharagpur",
+        "A focused 7-hour lecture on Supervised Machine Learning was conducted over two days",
+        "B.Tech. students from CSE and ECE participated in the academic sessions",
+        "Students gained exposure to advanced theoretical concepts, rigorous mathematical foundations, and research-oriented perspectives",
+        "Key topics included Support Vector Machines (SVM), Decision Trees, Logistic Regression, and Karush-Kuhn-Tucker (KKT) conditions",
+        "The programme provided direct academic interaction with distinguished faculty from a premier institution",
+        "The initiative strengthened academic collaboration between IIIT Pune and IIT Kharagpur",
+        "The Micro-Credits Programme aligns with the objectives of NEP 2020 and supports SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
     {
       "name": "IIIT Pune Participates in Swachhata Hi Seva 2026",
       "type": "Social Responsibility, Cleanliness & Environmental Sustainability",
