@@ -986,6 +986,33 @@
   ],
   "EVENTS": [
     {
+      "name": "IIIT Pune Hosts Expert Talk by Dr. Prashant Goswami on AI and Human-Centered Computing",
+      "type": "Expert Talk, Artificial Intelligence & Human-Centered Computing",
+      "typeColor": "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) hosted Dr. Prashant Goswami from the Department of Computer Science (DIDA), Blekinge Institute of Technology (BTH), Sweden, for a thought-provoking expert talk exploring the cutting edge of Artificial Intelligence and Human-Centered Computing (HCC). The session examined how Artificial Intelligence and Human-Centered Computing are reshaping the ways in which humans interact with digital systems and emerging technologies. The talk also highlighted computer graphics as an enabling technology, with discussions and examples spanning physics-based simulation, real-time rendering, and AI-enabled Extended Reality (XR) applications for industrial systems and digital health. Dr. Goswami's research spans Human-Centered Computing, Artificial Intelligence, Extended Reality, computer graphics, visualization, and interactive systems, with applications across industrial systems, digital health, and interactive digital experiences. The session provided students with valuable exposure to emerging research directions and demonstrated how interdisciplinary technologies can be combined to develop innovative, human-centred digital solutions. The expert interaction encouraged students to explore the convergence of AI, graphics, visualization, XR, and interactive technologies while gaining insights into contemporary research and applications from an international academic expert. The programme reflects IIIT Pune's commitment to providing students with exposure to global research perspectives, emerging technologies, and distinguished experts from leading academic institutions. The initiative aligns with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals).",
+      "images": [
+        "/assets/lifepage/ai_hcc_1.jpg",
+        "/assets/lifepage/ai_hcc_2.jpg",
+        "/assets/lifepage/ai_hcc_3.jpg",
+        "/assets/lifepage/ai_hcc_4.jpg",
+        "/assets/lifepage/ai_hcc_5.jpg",
+        "/assets/lifepage/ai_hcc_6.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune hosted Dr. Prashant Goswami from Blekinge Institute of Technology (BTH), Sweden, for an expert talk",
+        "The session focused on Artificial Intelligence and Human-Centered Computing (HCC)",
+        "The talk explored how AI and HCC are transforming human interaction with digital systems",
+        "Computer graphics was highlighted as an enabling technology through physics-based simulation and real-time rendering",
+        "The session covered AI-enabled Extended Reality (XR) applications for industrial systems and digital health",
+        "Dr. Goswami's research spans HCC, AI, XR, computer graphics, visualization, and interactive systems",
+        "Students gained exposure to contemporary research directions and interdisciplinary applications of emerging technologies",
+        "The interaction highlighted applications in industrial systems, digital health, and interactive digital experiences",
+        "The expert talk strengthened international academic engagement and exposure to global research perspectives",
+        "The initiative aligned with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
+    {
       "name": "IIIT Pune Celebrates Gandhi Jayanti & Lal Bahadur Shastri Jayanti",
       "type": "National Celebrations, Values & Civic Responsibility",
       "typeColor": "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300",
