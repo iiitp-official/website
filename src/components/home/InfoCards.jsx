@@ -19,7 +19,7 @@ import FadeInSection from '../shared/FadeInSection';
 const studentAchievements = [
   {
     category: "Sports",
-    title: "8th Inter-IIIT Sports Meet 2026",
+    title: "8th Inter-IIIT Sports Meet 2025",
     description: "IIIT Pune secured a historic 7th place overall at IIITM Gwalior, winning 11 medals (5 Gold, 3 Silver, 3 Bronze) with outstanding athletic & team performances.",
     detail: "Gold in Shot Put & Javelin (Parth Shukla), Weightlifting (Khush Meena), Aquatics (Atharv Patil), and Men's Tug-of-War."
   },

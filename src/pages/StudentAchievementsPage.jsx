@@ -108,7 +108,7 @@ const StudentAchievementsPage = () => {
               
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold font-serif text-primary dark:text-white leading-tight">
-                  8th Inter-IIIT Sports Meet 2026
+                  8th Inter-IIIT Sports Meet 2025
                 </h2>
                 
                 <div className="flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400">
