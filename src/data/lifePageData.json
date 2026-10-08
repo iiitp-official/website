@@ -986,6 +986,28 @@
   ],
   "EVENTS": [
     {
+      "name": "Micro-Credits Part II at IIIT Pune | Post-Quantum Cryptography with IIT Kanpur",
+      "type": "Micro-Credits, Cybersecurity & Post-Quantum Cryptography",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) continued its Micro-Credits Programme by welcoming Dr. Somitra Sanadhya from the Indian Institute of Technology Kanpur (IIT Kanpur) for an advanced session on Post-Quantum Cryptography (PQC). Building upon the foundation established in Part I, which focused on Cryptography and Network Security, the second session took students deeper into the emerging field of quantum-safe security. The session focused on Post-Quantum Cryptography, an increasingly important area of cybersecurity research as advances in quantum computing pose potential challenges to widely used classical cryptographic systems. Through this two-part Micro-Credits series, Dr. Sanadhya provided students with research-oriented exposure to modern cryptography, progressing from classical cryptographic foundations and network security concepts to the emerging technologies and techniques required for a quantum-resilient future. The programme provided students with valuable insights into contemporary areas of information security, including Post-Quantum Cryptography, lattice-based cryptography, code-based cryptography, and the broader efforts towards developing secure cryptographic standards. The initiative offered students an exceptional opportunity to learn directly from an expert from IIT Kanpur and gain a deeper understanding of the challenges and opportunities emerging at the intersection of cryptography and quantum computing. IIIT Pune expressed its gratitude to Dr. Somitra Sanadhya for his continued commitment to the Institute's students and for bringing IIT Kanpur's expertise and research perspectives directly to the campus. The two-part Micro-Credits series reflects IIIT Pune's commitment to advanced technical education, research-oriented learning, cybersecurity awareness, and academic collaboration with premier institutions. The initiative aligns with the objectives of NEP 2020 and supports SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), SDG 16 (Peace, Justice and Strong Institutions), and SDG 17 (Partnerships for the Goals).",
+      "images": [
+        "/assets/lifepage/microcredits_1.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune hosted Dr. Somitra Sanadhya from IIT Kanpur for Part II of the Micro-Credits Programme",
+        "The advanced session focused on Post-Quantum Cryptography (PQC) and quantum-safe security",
+        "Part II built upon the foundation established during Part I on Cryptography and Network Security",
+        "Students gained research-oriented exposure to modern cryptography and emerging quantum-resilient security approaches",
+        "The programme covered contemporary areas including Post-Quantum Cryptography, lattice-based cryptography, and code-based cryptography",
+        "The session highlighted the growing importance of quantum-safe cybersecurity as quantum computing advances",
+        "The two-part series provided students with a progression from classical cryptographic foundations to the quantum-resilient future",
+        "Students benefited from direct academic interaction with an expert from IIT Kanpur",
+        "The programme strengthened academic collaboration between IIIT Pune and IIT Kanpur",
+        "The initiative supported the objectives of NEP 2020 and aligned with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), SDG 16 (Peace, Justice and Strong Institutions), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
+    {
       "name": "IIIT Pune Hosts Expert Talk by Dr. Prashant Goswami on AI and Human-Centered Computing",
       "type": "Expert Talk, Artificial Intelligence & Human-Centered Computing",
       "typeColor": "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300",
