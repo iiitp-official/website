@@ -15,6 +15,7 @@ const NewsTicker = () => {
       .catch(() => {
         // Fallback mock news
         setNews([
+          {id: 115, title: "Advisory Regarding Unauthorized Drone Workshop at IIIT Pune", link: "/careers-documents/Advisory - Drone related workshop.pdf" },
           {id: 114, title: "Shortlisted Candidates for JRF Position under ISRO RESPOND Project", link: "/careers-documents/shortlisted candidate for isro project.pdf" },
           {id: 113, title: "PhD and PostDoc Position under Visvesvaraya Scheme", link: "/documents/Visvesvaraya_PhD_PostDoc_Brochure_Oct_2026_IIIT_Pune.pdf" },
           {id: 112, title: "Advertisement for various research positions under (ANRF-PAIR)", link: "/careers-documents/Sept_ANRF-PAIR_Manpower_Advertisement.pdf" },

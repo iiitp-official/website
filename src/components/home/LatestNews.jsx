@@ -16,6 +16,13 @@ const LatestNews = () => {
       .catch(() => {
         setNews([  
           {
+              id: 115,
+              title: "Advisory Regarding Unauthorized Drone Workshop at IIIT Pune",
+              date: "08-10-2026",
+              excerpt: "IIIT Pune clarifies that it has no association with the Drone Workshop purportedly scheduled for 11 October 2026 at the IIIT Pune campus. The Institute has neither organized nor approved the event and advises everyone to exercise due caution and verify such programmes through official channels.",
+              link: "/careers-documents/Advisory - Drone related workshop.pdf"
+          },
+          {
             id: 114,
             title: "Shortlisted Candidates for JRF Position under ISRO RESPOND Project",
             date: "15-09-2026",
