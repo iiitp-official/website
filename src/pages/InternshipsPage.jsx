@@ -122,7 +122,7 @@ const InternshipsPage = () => {
             {/* Internship Fees */}
             <div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Internship Fees</h3>
-              <p className="mb-3">The internship registration fee is ₹5,000 per student per semester. This fee does not apply to students of IIIT Pune.</p>
+              <p className="mb-3">The internship registration fee is ₹2,000+18% GST = ₹ 2,360 per student per semester. This fee does not apply to students of IIIT Pune.</p>
               <p className="mb-1">Payment Link:</p>
               <a href="https://payments.billdesk.com/bdcollect/bd/indianinstituteofinformationtechnologypuneii/16417" target="_blank" rel="noopener noreferrer"  className="text-brand-red dark:text-blue-400 hover:underline break-all mb-4 inline-block">
                 https://payments.billdesk.com/bdcollect/bd/indianinstituteofinformationtechnologypuneii/16417
@@ -157,7 +157,7 @@ const InternshipsPage = () => {
             </div>
             
             <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-800 text-right text-sm text-gray-500 dark:text-gray-400">
-              Last Updated: 25-04-2026
+              Last Updated: 10-10-2026
             </div>
           </div>
         </div>
