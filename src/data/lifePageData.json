@@ -761,6 +761,55 @@
         "website": "https://www.iiitp.ac.in/page/q-riocity"
       },
       "flyer": "/assets/clubs/qriocity_flyer.jpg"
+    },
+    "tedxiiitpune": {
+      "name": "TEDxIIITPune",
+      "desc": "TEDxIIITPune is a premium, high-octane platform built on a foundation of absolute perseverance, relentless grit, and unyielding ambition. Officially established in August 2026, the club was born from a visionary blueprint laid down by student founders Meanas Chiwande and Kunal Jangid during their first year. Through months of rigorous trials, global webinars, and intense industry benchmarking, their vision transitioned into a powerhouse campus reality.\n\nLed entirely by young, forward-thinking minds, TEDxIIITPune bridges the gap between our campus and the global stage. Every single student who steps up to build this community today belongs to our elite Founding Team. Together, this history-making crew is leveraging the immense prestige of the global TEDx brand to scale our institute's network, providing a highly professional launchpad that connects IIIT Pune with top-tier external pioneers, industry leaders, and global changemakers.\n\nThe Catalyst: Why We Brought TEDx to IIIT Pune\nWe founded this club because a world-class institute deserves a world-class stage. TEDxIIITPune was created to serve as a rising tide that lifts every single individual on our campus, yielding massive, multi-dimensional benefits:\n\n* For the Students: It provides an elite training ground. Beyond technical skills, students gain direct exposure to corporate networking, high-level event production, and premium public speaking. It shifts the mindset from local competition to global leadership, preparing every individual to command international rooms.\n* For the Campus Culture: It breaks the boundaries of traditional classrooms. By introducing diverse, ground-breaking ideas across technology, entertainment, and design, it cultivates an environment of intense curiosity, creative collaboration, and intellectual vibrance.\n* For the Institute: It fundamentally scales IIIT Pune's global footprint. Hosting a licensed TEDx event attaches a highly prestigious international badge to our college name, firmly anchoring IIIT Pune as a premier hub of innovation and thought leadership.\n\nUpcoming Flagship Events: The Inaugural TEDxIIITPune Annual Conference\nAs a freshly established, powerhouse addition to the campus directory, TEDxIIITPune is entering the arena with unmatched momentum. While we are brand new and currently preparing for our debut, we are entirely certain of one thing: our upcoming flagship conference is strategically positioned to be one of the finest events.\n\nDriven by our dedicated Founding Team, this landmark gathering will converge elite global trailblazers, corporate visionaries, and pristine student minds for a high-prestige day of live, fast-paced talks. This won't just be an event; it will be a massive cultural and professional catalyst designed to shift perspectives, unlock premium career networks, and inspire generations of leaders to come.",
+      "tags": [
+        "THE FOUNDING LEGACY",
+        "GLOBAL CONNECTIVITY",
+        "PREMIUM PLATFORM",
+        "IDEAS WORTH SPREADING"
+      ],
+      "flagship": [
+        {
+          "title": "The Inaugural TEDxIIITPune Annual Conference",
+          "desc": "A flagship annual conference designed to bring together elite global trailblazers, corporate visionaries, and ambitious student minds for a high-prestige day of live, fast-paced talks, premium networking, and transformative ideas."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Leadership & Event Production Bootcamp",
+          "desc": "Training modules focused on public speaking, speaker curation, event execution, networking, and high-impact communication for student leaders."
+        },
+        {
+          "title": "Global Ideas & Speaker Outreach Lab",
+          "desc": "Workshops centered on identifying disruptive ideas, benchmarking against global TEDx standards, and forming meaningful collaborations with influential voices."
+        }
+      ],
+      "achievements": [
+        "Officially established in August 2026 as a student-led TEDx club at IIIT Pune",
+        "Built a dedicated Founding Team committed to creating a globally recognized campus platform for ideas and leadership",
+        "Positioned TEDxIIITPune as a premium catalyst for networking, innovation, and professional growth",
+        "Created a high-visibility launchpad connecting IIIT Pune with external pioneers, industry leaders, and global changemakers"
+      ],
+      "images": [],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Meanas Chiwande",
+            "role": "Founder & Head"
+          },
+          {
+            "name": "Kunal Jangid",
+            "role": "Founder & Co-Head"
+          }
+        ],
+        "email": "tedx@iiitp.ac.in",
+        "instagram": "@tedxiiitpune",
+        "website": "https://www.ted.com/tedx/events/70574"
+      },
+      "flyer": "/assets/clubs/tedxiiitpune_flyer.png"
     }
   },
   "ACTIVITIES": [
