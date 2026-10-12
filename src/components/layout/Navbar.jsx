@@ -379,6 +379,7 @@ const Navbar = () => {
       path: "#",
       hasDropdown: true,
       subLinks: [
+        { name: "Research Groups", path: "/research/groups" },
         { name: "Internship @IIIT Pune", path: "/research/internships" },
         {
           name: "Funded Projects",

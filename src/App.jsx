@@ -79,6 +79,7 @@ const ResearchScholarGraduatedPage = lazy(
   () => import("./pages/ResearchScholarGraduatedPage"),
 );
 const ResearchPage = lazy(() => import("./pages/ResearchPage"));
+const ResearchGroupsPage = lazy(() => import("./pages/ResearchGroupsPage"));
 const PeoplePage = lazy(() => import("./pages/PeoplePage"));
 const FacultyPage = lazy(() => import("./pages/FacultyPage"));
 const FacultyProfilePage = lazy(() => import("./pages/FacultyProfilePage"));
@@ -365,6 +366,10 @@ function AppContent() {
 
             {/* Research */}
             <Route path="/research" element={<ResearchPage />} />
+            <Route
+              path="/research/groups"
+              element={<ResearchGroupsPage />}
+            />
             <Route path="/research/centres" element={<CentresPage />} />
             <Route path="/research/internships" element={<InternshipsPage />} />
             <Route
