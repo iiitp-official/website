@@ -540,44 +540,135 @@
     "education": "Ph.D., M.Tech",
     "publications": [
       {
-        "title": "M. S. Chaudhari, S. Kumar, R. Gupta, M. Kumar, and S. Majhi, “Implementation and measurement of blind receiver for OFDM systems\", IEEE Transactions on Instrumentation and MeasurementsI, November 2021. (Impact factor: 4.016), DOI: 10.1109/TIM.2021.3124833",
+        "title": "Energy-efficient multi-robot coverage path planning with workload balancing and turn minimization",
+        "authors": "H. Sharma, R. Tiwari, S. Shukla, and Sushant Kumar",
+        "journal": "Journal publication · International Journal of Intelligent Robotics and Applications (2026) · Impact factor: 3.0",
+        "link": "https://doi.org/10.1007/s41315-026-00579-y"
+      },
+      {
+        "title": "Transformer-enhanced deep Q-Learning for adaptive robot path planning in dynamic environments",
+        "authors": "Harish Sharma, Ritu Tiwari, Shubham Shukla, and Sushant Kumar",
+        "journal": "Journal publication · Cluster Computing, vol. 29, article 271 (2026) · Impact factor: 4.1",
+        "link": "https://doi.org/10.1007/s10586-026-06072-2"
+      },
+      {
+        "title": "Dynamic multi-robot coverage framework via A*-optimized region patrolling and localized re-planning",
+        "authors": "Harish Sharma, Ritu Tiwari, Shubham Shukla, and Sushant Kumar",
+        "journal": "Journal publication · International Journal of Advanced Robotic Systems, vol. 23, issue 2 (March 2026) · Impact factor: 2.1",
+        "link": "https://journals.sagepub.com/doi/10.1177/17298806261429541"
+      },
+      {
+        "title": "Reward shaping of deep reinforcement learning algorithm for autonomous navigation in a structured environment",
+        "authors": "Anu Priya, Ritu Tiwari, Pooja Agrawal, and Sushant Kumar",
+        "journal": "Journal publication · Intelligent Service Robotics, vol. 19, article 8 (December 2025) · Impact factor: 4.3",
+        "link": "https://doi.org/10.1007/s11370-025-00673-3"
+      },
+      {
+        "title": "A reward shaping approach used for end-to-end mapless navigation using deep reinforcement learning algorithm",
+        "authors": "Anu Priya, Ritu Tiwari, Pooja Agrawal, and Sushant Kumar",
+        "journal": "Journal publication · Cluster Computing, vol. 28, article 803 (September 2025) · Impact factor: 4.1",
+        "link": "https://doi.org/10.1007/s10586-025-05522-7"
+      },
+      {
+        "title": "Blind Carrier Frequency Offset Estimation Techniques for Next-Generation Multicarrier Communication Systems: Challenges, Comparative Analysis, and Future Prospects",
+        "authors": "S. Singh, Sushant Kumar, S. Majhi, U. Satija, and C. Yuen",
+        "journal": "Journal publication · IEEE Communications Surveys & Tutorials, vol. 27, no. 1, pp. 1–36 (February 2025) · Impact factor: 46.70",
+        "link": "https://doi.org/10.1109/COMST.2024.3472109"
+      },
+      {
+        "title": "Blind CFOs Estimation by Capon Method for Multi-User MIMO-OFDMA Uplink System",
+        "authors": "S. Singh, Sushant Kumar, S. Majhi, and U. Satija",
+        "journal": "Journal publication · IEEE Signal Processing Letters, vol. 31, pp. 2545–2549 (September 2024) · Impact factor: 5.40",
+        "link": "https://doi.org/10.1109/LSP.2024.3458793"
+      },
+      {
+        "title": "Design and testbed implementation of multiuser CFOs estimation for MIMO SC-FDMA system",
+        "authors": "S. Kumar and S. Majhi",
+        "journal": "Journal publication · IEEE Transactions on Signal Processing, vol. 70, pp. 1880–1889 (April 2022) · Impact factor: 4.60",
+        "link": "https://doi.org/10.1109/TSP.2022.3165761"
+      },
+      {
+        "title": "Implementation and measurement of blind receiver for OFDM systems",
+        "authors": "M. S. Chaudhari, S. Kumar, R. Gupta, M. Kumar, and S. Majhi",
+        "journal": "Journal publication · IEEE Transactions on Instrumentation and Measurement, vol. 71, pp. 1–11 (2022; published November 2021) · Impact factor: 5.60",
         "link": "https://doi.org/10.1109/TIM.2021.3124833"
       },
       {
-        "title": "K. Pathy, A. Kumar, R. Gupta, S. Kumar, and S. Majhi, “Design and implementation of blind modulation classification for asynchronous MIMO-OFDM system\", EEE Transactions on Instrumentation and Measurement, vol. 70, pp. 1-11, 2021, Art no. 5504011. (Impact factor: 4.016), DOI: 10.1109/TIM.2021.3109737",
+        "title": "Design and implementation of blind modulation classification for asynchronous MIMO-OFDM system",
+        "authors": "K. Pathy, A. Kumar, R. Gupta, S. Kumar, and S. Majhi",
+        "journal": "Journal publication · IEEE Transactions on Instrumentation and Measurement, vol. 70, pp. 1–11, article 5504011 (2021) · Impact factor: 5.60",
         "link": "https://doi.org/10.1109/TIM.2021.3109737"
       },
       {
-        "title": "S. Kumar, M. S. Chaudhari, R. Gupta, and S. Majhi, “Multiple CFOs Estimation and Implementation of SC-FDMA Uplink System Using Oversampling and Iterative Method\", IEEE Transactions on Vehicular Technology, vol. 69, no. 6, pp. 6254-6263, June 2020. (Impact factor: 5. 978), DOI: 10.1109/TVT.2020.2984059",
-        "link": "https://doi.org/10.1109/TVT.2020.2984059"
+        "title": "Multiple CFOs Estimation and Implementation of SC-FDMA Uplink System Using Oversampling and Iterative Method",
+        "authors": "S. Kumar, M. S. Chaudhari, R. Gupta, and S. Majhi",
+        "journal": "Journal publication · IEEE Transactions on Vehicular Technology, vol. 69, no. 6, pp. 6254–6263 (June 2020) · Impact factor: 6.80",
+        "link": "https://ieeexplore.ieee.org/document/9055161"
       },
       {
-        "title": "R. Gupta, S. Kumar, and S. Majhi, “Blind modulation classification for asynchronous OFDM systems over unknown signal parameters and channel statistics\", IEEE Transactions on Vehicular Technology, vol. 69, no. 5, pp. 5281-5292, May 2020. (Impact factor: 5.978), DOI: 10.1109/TVT.2020.2981935",
-        "link": "https://doi.org/10.1109/TVT.2020.2981935"
+        "title": "Blind modulation classification for asynchronous OFDM systems over unknown signal parameters and channel statistics",
+        "authors": "R. Gupta, S. Kumar, and S. Majhi",
+        "journal": "Journal publication · IEEE Transactions on Vehicular Technology, vol. 69, no. 5, pp. 5281–5292 (May 2020) · Impact factor: 6.80",
+        "link": "https://ieeexplore.ieee.org/document/9042348"
       },
       {
-        "title": "S. Kumar, S. Majhi and C. Yuen, “Multi-user CFOs estimation for SC-FDMA system over frequency selective fading channels,\" IEEE Access, vol. 6, pp. 43146-43156, Aug. 2018. (Impact factor: 3.745), DOI: 10.1109/ACCESS.2018.2856578",
-        "link": "https://doi.org/10.1109/ACCESS.2018.2856578"
+        "title": "Multi-user CFOs estimation for SC-FDMA system over frequency selective fading channels",
+        "authors": "S. Kumar, S. Majhi, and C. Yuen",
+        "journal": "Journal publication · IEEE Access, vol. 6, pp. 43146–43156 (August 2018) · Impact factor: 3.9",
+        "link": "https://ieeexplore.ieee.org/document/8430732"
       },
       {
         "title": "Blind symbol timing offset estimation for offset-QPSK modulated signals",
-        "authors": "S. Kumar, and S. Majhi",
-        "journal": "Wiley ETRI Journal, vol. 42, no. 3, pp. 324-332, November 2019. (Impact factor: 1.347), DOI: 10.4218/etrij.2019-0199. Manuscripts under review",
-        "link": "https://doi.org/10.4218/etrij.2019-0199"
+        "authors": "S. Kumar and S. Majhi",
+        "journal": "Journal publication · Wiley ETRI Journal, vol. 42, no. 3, pp. 324–332 (November 2019) · Impact factor: 1.40",
+        "link": "https://onlinelibrary.wiley.com/doi/full/10.4218/etrij.2019-0199"
       },
       {
-        "title": "S. Kumar, and S. Majhi, “Design and testbed implementation of multiuser CFOs estimation for MIMO SC-FDMA system\", communicated to IEEE Transactions on Signal Processing"
+        "title": "Feature Extraction and Fusion of ECG Signals Using MFCC and DWT for Cardiovascular Disease Diagnosis",
+        "authors": "Vaibhav Vasudevarao Gijare and Sushant Kumar",
+        "journal": "Journal publication · Frontiers in Health Informatics (June 2024)"
       },
       {
-        "title": "R. Gupta, S. Kumar, and S. Majhi, “Blind modulation classification for OFDM in the presence of timing, frequency, and phase offsets\", in Proc. 90th IEEE VTC Fall, 2019"
+        "title": "Land Cover Classification and Route Planning Using Hyperspectral-Lidar Fusion and Optimizer",
+        "authors": "Priti Nahar, Sushant Kumar, and Anupam Shukla",
+        "journal": "Journal publication · Lex Localis, vol. 22, issue S4, pp. 2090–2108 (2024)",
+        "link": "https://doi.org/10.52152/cvexv134"
       },
       {
-        "title": "Harsha, S. Kumar, and S. Majhi, “Blind CFO Estimation for Multi-user in SC-FDMA Uplink Systems Using Variance Minimization\", in Proc 17th IEEE IWCMC 2021, Harbin, China, pp. 1971-1976. DOI: 10.1109/IWCMC51323.2021.9498739",
+        "title": "Autonomous Transmission Line Route Optimization With CNN-R2-Net And Optimizer",
+        "authors": "Priti Nahar, Sushant Kumar, and Anupam Shukla",
+        "journal": "Journal publication · Lex Localis, vol. 22, issue S4, pp. 2090–2108 (2024)",
+        "link": "https://doi.org/10.52152/cvexv134"
+      },
+      {
+        "title": "Federated Learning Driven Framework for Healthcare Data Traffic Congestion Management and Performance Enhancement",
+        "authors": "Vaibhav Vasudevrao Gijare, Sushant Kumar, and Anagha Khiste",
+        "journal": "Journal publication · Journal of Intelligent Decision Making and Information Science (April 2026)",
+        "link": "https://doi.org/10.59543/jidmis.v3.464"
+      },
+      {
+        "title": "Joint Symbol Timing and Frequency Offset Estimation Using Zero Correlation Zone Sequence for RIS-assisted OFDM Systems",
+        "authors": "S. Singh, S. K. Jha, and S. Kumar",
+        "journal": "Conference publication · 2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT), Kamand, India, pp. 1–6 (2024)",
+        "link": "https://doi.org/10.1109/ICCCNT61001.2024.10723899"
+      },
+      {
+        "title": "CFO Estimation for Multi-user Uplink SC-FDMA Using Null Subcarrier and Deterministic Approach",
+        "authors": "Harsha, S. Kumar, S. Singh, and S. Majhi",
+        "journal": "Conference publication · 4th IEEE International Conference on Information and Communications Technology (ICOIACT), pp. 23–28 (2021)",
+        "link": "https://doi.org/10.1109/ICOIACT53268.2021.9563970"
+      },
+      {
+        "title": "Blind CFO Estimation for Multi-user in SC-FDMA Uplink Systems Using Variance Minimization",
+        "authors": "Harsha, S. Kumar, and S. Majhi",
+        "journal": "Conference publication · 17th IEEE International Wireless Communications and Mobile Computing Conference (IWCMC), Harbin, China, pp. 1971–1976 (2021)",
         "link": "https://doi.org/10.1109/IWCMC51323.2021.9498739"
       },
       {
-        "title": "Harsha, S. Kumar, S Singh and S. Majhi, “CFO Estimation for Multi-user Uplink SC-FDMA Using Null Subcarrier and Deterministic Approach\", accepted in 4th IEEE International Conference on Information and Communications Technology (ICOIACT) 2021. DOI: 10.1109/ICOIACT53268.2021.9563970 Awards/Achievements:  Qualified GATE in 2013 with all India rank 800.  Qualified UGC-NET June–2015 in electronics Science.  Obtained 100% in Mathematics in class 10, CBSE.  Merit Fellowship (2007-2011) during B. Tech at ICFAI University. International Travel Grant:  Received travel grant from MHRD, New Delhi India, to attend the 90th IEEE Vehicular Technology Conference (VTC2019-Fall) during 22–25 September 2019 at Honolulu, Hawaii, USA. Professional Services: (Publons Profile)  IEEE Transactions on Vehicular Technology  IEEE Communications letters  SPRINGER: Circuits, Systems, and Signal Processing",
-        "link": "https://doi.org/10.1109/ICOIACT53268.2021.9563970"
+        "title": "Blind modulation classification for OFDM in the presence of timing, frequency, and phase offsets",
+        "authors": "R. Gupta, S. Kumar, and S. Majhi",
+        "journal": "Conference publication · 90th IEEE Vehicular Technology Conference (VTC Fall), pp. 1–5 (2019)",
+        "link": "https://doi.org/10.1109/VTCFall.2019.8891251"
       }
     ],
     "resume": "/assets/resume/sushantkumar_resume.pdf",
