@@ -191,6 +191,11 @@ const ImportantLinks = () => {
                       { name: 'Internet Credentials Form', path: '/downloads/Internet Login Form.pdf', category: 'faculty' },
                       { name : 'Leave Form for Project Staff', path: '/downloads/Leave Form for Project Staff.pdf', category: 'project staff' },
                       { name: 'No Dues Certificate (For Faculty/Staff)', path: '/downloads/No_Dues_Certificate_Bilingual.pdf', category: 'faculty' },
+                      { name: 'CPDA_Form_A_Conference related', path: '/downloads/CPDA_Form_A_Conference related.docx', category: 'faculty' },
+                      { name: 'CPDA_Form_B', path: '/downloads/CPDA_Form_B.docx', category: 'faculty' },
+                      { name: 'CPDA_Form_C_ Contingency expenses', path: '/downloads/CPDA_Form_C_ Contingency expenses.doc', category: 'faculty' },
+                      { name: 'IPR Policy_IIIT Pune', path: '/downloads/IPR Policy_IIIT Pune.docx', category: 'both' }
+
                     ]
                     .filter(doc => docFilter === 'all' || doc.category === docFilter || doc.category === 'both')
                     .map((doc, idx) => (
