@@ -14,7 +14,22 @@ import {
   Users,
   Waves,
 } from "lucide-react";
+import { Link } from "react-router";
 import PageHeader from "../components/shared/PageHeader";
+import facultyDetails from "../data/faculty_details.json";
+
+const normalizeFacultyName = (name) =>
+  name
+    .toLowerCase()
+    .replace(/^(dr|mr|ms)\.?\s*/, "")
+    .replace(/[^a-z0-9]/g, "");
+
+const facultyProfileSlugs = Object.fromEntries(
+  Object.keys(facultyDetails).map((slug) => [
+    normalizeFacultyName(slug),
+    slug,
+  ]),
+);
 
 const researchGroups = [
   {
@@ -35,10 +50,10 @@ const researchGroups = [
     faculty: [
       "Dr Sanjeev Sharma",
       "Dr Sanga Chaki",
-      "Dr Sumit Gupta",
+      "Dr Sumit Kumar Gupta",
       "Dr Mahendra Pratap Yadav",
       "Dr Shrikant Salve",
-      "Dr Minish Kumar",
+      "Dr Manish Kumar",
       "Mr Prithwish Sen",
       "Ms Anupama Arun",
     ],
@@ -96,8 +111,8 @@ const researchGroups = [
       "Dr Sushant Kumar",
       "Dr Dheeraj Dubey",
       "Dr Dipen Bepari",
-      "Dr M. A. Rahman",
-      "Dr Soumen Mandal",
+      "Dr Mohammad Akhlaqur Rahman",
+      "Dr Soumen Mondal",
       "Dr Dhawal Salwan",
       "Dr Shekhar Kumar Yadav",
     ],
@@ -113,10 +128,10 @@ const researchGroups = [
     faculty: [
       "Dr Nagendra Kushwaha",
       "Dr Shubham Shukla",
-      "Dr Tushar Gawande",
+      "Dr Tushar Prakash Gawande",
       "Dr Ashish Singh",
       "Dr Saurabh Kumar",
-      "Dr Seenivasan M.A.",
+      "Dr M A Seenivasan.",
     ],
     accent: "from-rose-500 to-orange-400",
     iconStyle: "bg-rose-50 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300",
@@ -129,7 +144,7 @@ const researchGroups = [
     areas: ["RF / Microwave", "Antennas", "Electromagnetic Systems"],
     faculty: [
       "Dr Nagendra Kushwaha",
-      "Dr Divya Chaturvedi",
+      "Dr Km Divya Chaturvedi",
       "Dr Amartya Paul",
     ],
     accent: "from-indigo-600 to-blue-500",
@@ -152,7 +167,7 @@ const researchGroups = [
       "Word Maps",
       "Optimization",
     ],
-    faculty: ["Dr Anagha Khiste", "Dr Jatin Majithia", "Dr Rahul Kaushik"],
+    faculty: ["Dr Anagha Uday Khiste", "Dr Jatin Majithia", "Dr Rahul Kaushik"],
     accent: "from-emerald-600 to-teal-500",
     iconStyle: "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
   },
@@ -174,7 +189,7 @@ const researchGroups = [
       "Finite Difference and Finite Element Methods",
       "Computational Fluid Dynamics",
     ],
-    faculty: ["Dr Chandrakant Guled", "Dr Sonu Bose"],
+    faculty: ["Dr Chandrakant Narayan Guled", "Dr Sonu Bose"],
     accent: "from-teal-600 to-emerald-500",
     iconStyle: "bg-teal-50 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300",
   },
@@ -421,7 +436,16 @@ const ResearchGroupsPage = () => {
                                 aria-hidden="true"
                                 className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-r ${group.accent}`}
                               />
-                              {member}
+                              {facultyProfileSlugs[normalizeFacultyName(member)] ? (
+                                <Link
+                                  to={`/people/faculty/${facultyProfileSlugs[normalizeFacultyName(member)]}`}
+                                  className="rounded-sm underline decoration-transparent underline-offset-4 transition hover:text-blue-700 hover:decoration-current focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:hover:text-blue-300 dark:focus-visible:ring-offset-surface-dark"
+                                >
+                                  {member}
+                                </Link>
+                              ) : (
+                                member
+                              )}
                             </li>
                           ))}
                         </ul>
