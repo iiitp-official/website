@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Image } from 'lucide-react';
 import LifePageLayout from '../components/life/LifePageLayout';
 import lifePageData from '../data/lifePageData.json';
@@ -6,18 +6,68 @@ import lifePageData from '../data/lifePageData.json';
 const { EVENTS } = lifePageData;
 
 const LifeEventsPage = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedGallery, setSelectedGallery] = useState(null);
+  const [scrollingGallery, setScrollingGallery] = useState(null);
+  const [expandedEvents, setExpandedEvents] = useState(() => new Set());
+  const scrollTimeout = useRef(null);
+  const pageScrollTimeout = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    const page = document.documentElement;
+    page.classList.add('college-events-page');
+
+    const handlePageScroll = () => {
+      page.classList.add('is-scrolling');
+      clearTimeout(pageScrollTimeout.current);
+      pageScrollTimeout.current = setTimeout(() => {
+        page.classList.remove('is-scrolling');
+      }, 1000);
+    };
+
+    window.addEventListener('scroll', handlePageScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handlePageScroll);
+      clearTimeout(pageScrollTimeout.current);
+      page.classList.remove('college-events-page', 'is-scrolling');
+    };
+  }, []);
+
+  useEffect(() => () => clearTimeout(scrollTimeout.current), []);
+
+  const handleGalleryScroll = (galleryIndex) => {
+    setScrollingGallery(galleryIndex);
+    clearTimeout(scrollTimeout.current);
+    scrollTimeout.current = setTimeout(() => setScrollingGallery(null), 1000);
+  };
+
+  const toggleEventDetails = (eventIndex) => {
+    setExpandedEvents((current) => {
+      const next = new Set(current);
+      if (next.has(eventIndex)) {
+        next.delete(eventIndex);
+      } else {
+        next.add(eventIndex);
+      }
+      return next;
+    });
+  };
+
+  const changeGalleryImage = (index) => {
+    setSelectedGallery((current) => current ? { ...current, index } : current);
+  };
+
   return (
     <LifePageLayout 
       title="Student Life" 
       breadcrumb="Life"
-      selectedImage={selectedImage}
-      setSelectedImage={setSelectedImage}
+      imageGallery={selectedGallery}
+      setImageGallery={setSelectedGallery}
+      onGalleryIndexChange={changeGalleryImage}
     >
       <div className="space-y-8">
         <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 shadow-sm">
@@ -75,40 +125,72 @@ const LifeEventsPage = () => {
                           );
                         })}
                       </div>
-                      <div className="text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify">
-                        {evt.desc && evt.desc.includes('\n\n**') ? (
-                          <>
-                            <p>{evt.desc.split('\n\n**')[0]}</p>
-                            <p className="font-bold mt-3">{evt.desc.split('\n\n**')[1].replace('**', '')}</p>
-                          </>
-                        ) : (
-                          <p>{evt.desc}</p>
-                        )}
-                      </div>
+                      {evt.desc && (
+                        <div>
+                          <p
+                            id={`event-description-${idx}`}
+                            className={`text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify${expandedEvents.has(idx) ? '' : ' line-clamp-4'}`}
+                          >
+                            {evt.desc.includes('\n\n**') ? (
+                              <>
+                                {evt.desc.split('\n\n**')[0]}{' '}
+                                <strong>{evt.desc.split('\n\n**')[1].replace('**', '')}</strong>
+                              </>
+                            ) : evt.desc}
+                          </p>
+                          {!expandedEvents.has(idx) && (
+                            <button
+                              type="button"
+                              onClick={() => toggleEventDetails(idx)}
+                              aria-expanded="false"
+                              aria-controls={`event-description-${idx}`}
+                              className="mt-2 text-sm font-semibold text-primary hover:underline dark:text-blue-300"
+                            >
+                              Read more
+                            </button>
+                          )}
+                        </div>
+                      )}
                     </div>
                     
-                    <div className="mt-4">
-                      <h4 className="text-sm font-bold text-gray-800 dark:text-white uppercase tracking-wide mb-3">Highlights</h4>
-                      <div className="grid grid-cols-2 gap-y-2 gap-x-4">
-                        {evt.highlights.map((h, hidx) => (
-                          <div key={hidx} className="flex items-center gap-2">
-                            <span className={`w-1.5 h-1.5 rounded-full ${evt.typeColor.split(' ')[0]}`} />
-                            <span className="text-sm dark:text-gray-400">{h}</span>
-                          </div>
-                        ))}
+                    {expandedEvents.has(idx) && (
+                      <div id={`event-details-${idx}`} className="mt-4">
+                        <h4 className="text-sm font-bold text-gray-800 dark:text-white uppercase tracking-wide mb-3">Highlights</h4>
+                        <div className="grid grid-cols-2 gap-y-2 gap-x-4">
+                          {evt.highlights.map((h, hidx) => (
+                            <div key={hidx} className="flex items-center gap-2">
+                              <span className={`w-1.5 h-1.5 rounded-full ${evt.typeColor.split(' ')[0]}`} />
+                              <span className="text-sm dark:text-gray-400">{h}</span>
+                            </div>
+                          ))}
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => toggleEventDetails(idx)}
+                          aria-expanded="true"
+                          aria-controls={`event-description-${idx} event-details-${idx}`}
+                          className="mt-3 text-sm font-semibold text-primary hover:underline dark:text-blue-300"
+                        >
+                          Read less
+                        </button>
                       </div>
-                    </div>
+                    )}
                   </div>
                 </div>
                 
                 {evt.images && evt.images.length > 0 && (
                   <div className="mt-6">
-                    <div className="grid grid-cols-3 gap-4">
+                    <div
+                      className={`college-event-gallery${scrollingGallery === idx ? ' is-scrolling' : ''}`}
+                      aria-label={`${evt.name} photos`}
+                      onScroll={() => handleGalleryScroll(idx)}
+                      tabIndex={0}
+                    >
                       {evt.images.map((imgUrl, iidx) => (
                         <div 
                           key={iidx} 
-                          onClick={() => setSelectedImage(imgUrl)}
-                          className="group relative aspect-video rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm cursor-pointer"
+                          onClick={() => setSelectedGallery({ images: evt.images, index: iidx })}
+                          className="college-event-gallery-item group relative aspect-video rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm cursor-pointer"
                         >
                           <img 
                             src={imgUrl} 

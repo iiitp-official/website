@@ -75,6 +75,46 @@ html {
   scrollbar-width: none;
 }
 
+html.college-events-page {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+html.college-events-page::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+}
+
+html.college-events-page::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html.college-events-page::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color 150ms ease;
+}
+
+html.college-events-page:hover,
+html.college-events-page.is-scrolling {
+  scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+}
+
+html.college-events-page:hover::-webkit-scrollbar-thumb,
+html.college-events-page.is-scrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+}
+
+html.dark.college-events-page:hover,
+html.dark.college-events-page.is-scrolling {
+  scrollbar-color: rgba(75, 85, 99, 0.5) transparent;
+}
+
+html.dark.college-events-page:hover::-webkit-scrollbar-thumb,
+html.dark.college-events-page.is-scrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(75, 85, 99, 0.5);
+}
+
 /* Custom scrollbar for horizontally scrollable components */
 .custom-scrollbar {
   scrollbar-width: thin;
@@ -95,6 +135,70 @@ html {
   scrollbar-color: rgba(75, 85, 99, 0.5) transparent;
 }
 .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(75, 85, 99, 0.5);
+}
+
+.college-event-gallery {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.college-event-gallery::-webkit-scrollbar {
+  display: block;
+  height: 6px;
+}
+
+.college-event-gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.college-event-gallery::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color 150ms ease;
+}
+
+.college-event-gallery:hover,
+.college-event-gallery:focus-within,
+.college-event-gallery.is-scrolling {
+  scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+}
+
+.college-event-gallery:hover::-webkit-scrollbar-thumb,
+.college-event-gallery:focus-within::-webkit-scrollbar-thumb,
+.college-event-gallery.is-scrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+}
+
+.college-event-gallery-item {
+  flex: 0 0 80%;
+}
+
+@media (min-width: 640px) {
+  .college-event-gallery-item {
+    flex-basis: calc((100% - 1rem) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .college-event-gallery-item {
+    flex-basis: calc((100% - 2rem) / 3);
+  }
+}
+
+.dark .college-event-gallery:hover,
+.dark .college-event-gallery:focus-within,
+.dark .college-event-gallery.is-scrolling {
+  scrollbar-color: rgba(75, 85, 99, 0.5) transparent;
+}
+
+.dark .college-event-gallery:hover::-webkit-scrollbar-thumb,
+.dark .college-event-gallery:focus-within::-webkit-scrollbar-thumb,
+.dark .college-event-gallery.is-scrolling::-webkit-scrollbar-thumb {
   background-color: rgba(75, 85, 99, 0.5);
 }
 
