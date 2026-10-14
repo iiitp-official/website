@@ -50,7 +50,7 @@ const PgProgramsPage = () => {
           <div className="flex items-center gap-3 border-b border-gray-100 dark:border-gray-800 pb-4">
             <div>
               <h2 className="text-xl sm:text-2xl font-bold font-serif text-gray-900 dark:text-white">
-                Seat Matrix (Session 2025-26)
+                Seat Matrix (Session 2026-27)
               </h2>
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                 Approved seat distribution across various postgraduate engineering programs at IIIT Pune

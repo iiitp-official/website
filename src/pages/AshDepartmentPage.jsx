@@ -134,11 +134,11 @@ const hodProfile = {
                 <span className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-wider">Established Year</span>
               </div>
               <div className="bg-slate-50 dark:bg-gray-850 p-5 rounded-2xl border border-gray-100 dark:border-gray-800 flex flex-col items-center justify-center text-center">
-                <span className="text-3xl font-extrabold text-primary dark:text-accent font-serif mb-1">2</span>
+                <span className="text-3xl font-extrabold text-primary dark:text-accent font-serif mb-1">1</span>
                 <span className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-wider">Academic Programs</span>
               </div>
               <div className="bg-slate-50 dark:bg-gray-850 p-5 rounded-2xl border border-gray-100 dark:border-gray-800 flex flex-col items-center justify-center text-center">
-                <span className="text-3xl font-extrabold text-primary dark:text-accent font-serif mb-1">10+</span>
+                <span className="text-3xl font-extrabold text-primary dark:text-accent font-serif mb-1">8+</span>
                 <span className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-wider">Faculty & Researchers</span>
               </div>
             </div>
