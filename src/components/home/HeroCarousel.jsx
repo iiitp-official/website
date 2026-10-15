@@ -5,6 +5,7 @@ import { Link } from 'react-router';
 import { image } from 'framer-motion/client';
 
 const slides = [
+  {id: 0, image: '/carousel/slide_22.png', alt: 'IIIT Pune campus with students and greenery', caption: 'IIIT Pune campus showcasing students and greenery', date: '15-08-2026' },
   { id: 1, image: '/carousel/slide_21.png', alt: 'IIIT Pune campus with students and greenery', caption: 'IIIT Pune campus showcasing students and greenery', date: '15-08-2026' },
   { id: 2, image: '/carousel/slide_14.png', alt: 'IIIT Pune campus with students and greenery', caption: 'IIIT Pune campus showcasing students and greenery', date: '15-08-2026' },
   { id: 3, image: '/carousel/slide_1.jpeg', alt: 'IIIT Pune academic building and campus view', caption: 'IIIT Pune academic building and campus environment', date: '2026' },
