@@ -93,7 +93,6 @@ const researchGroups = [
     areas: [],
     faculty: [
       "Dr Sonam Maurya",
-      "Dr Habila Basumatary",
       "Dr Priyank Jain",
       "Ms Anupriya",
       "Ms Debadreeta Das",

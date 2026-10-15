@@ -31,7 +31,6 @@ const BoardOfStudiesPage = () => {
     { srNo: 13, name: "Dr. Sumit Kumar Gupta", affiliation: "Assistant Professor, IIIT Pune", designation: "Member" },
     { srNo: 14, name: "Dr. Kaptan Singh", affiliation: "Assistant Professor, IIIT Pune", designation: "Member" },
     { srNo: 15, name: "Dr. Shivangi Shukla", affiliation: "Assistant Professor, IIIT Pune", designation: "Member" },
-    { srNo: 16, name: "Dr. Habila Basumatary", affiliation: "Assistant Professor, IIIT Pune", designation: "Member" },
     { srNo: 17, name: "Dr. Sanga Chaki", affiliation: "Assistant Professor, IIIT Pune", designation: "Member" },
     { srNo: 18, name: "Dr. Mahesh Joshi", affiliation: "Assistant Professor, IIIT Pune", designation: "Member" },
   ];

@@ -31,7 +31,7 @@ const TimetablePage = () => {
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <section className="bg-white dark:bg-surface-dark rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800 p-8 md:p-12">
           <h2 className="text-3xl font-bold font-serif text-primary dark:text-blue-400 mb-2 text-center">
-            Examination Timetables
+            Timetables
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-center mb-10">
             Select your programme and semester to view the timetable.
