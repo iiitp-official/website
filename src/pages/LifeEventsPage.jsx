@@ -69,21 +69,21 @@ const LifeEventsPage = () => {
       setImageGallery={setSelectedGallery}
       onGalleryIndexChange={changeGalleryImage}
     >
-      <div className="space-y-8">
-        <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-6 shadow-sm">
-          <h3 className="text-xl font-bold font-serif text-gray-800 dark:text-white mb-2">Flagship College Events</h3>
-          <p className="text-xs text-gray-500 dark:text-gray-400">Discover the major annual festivals and technical conclaves that bring the campus to life.</p>
+      <div className="space-y-5 sm:space-y-8">
+        <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 sm:p-6 shadow-sm">
+          <h3 className="text-lg sm:text-xl font-bold font-serif text-gray-800 dark:text-white mb-2">Flagship College Events</h3>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Discover the major annual festivals and technical conclaves that bring the campus to life.</p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-5 sm:space-y-8">
           {EVENTS.map((evt, idx) => (
-            <div key={idx} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div key={idx} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className={`h-1.5 ${evt.typeColor.split(' ')[0]}`} />
-              <div className="p-6 md:p-8">
-                <div className="flex flex-col md:flex-row gap-8">
+              <div className="p-4 sm:p-6 md:p-8">
+                <div className="flex flex-col md:flex-row gap-5 sm:gap-8">
                   <div className="flex-1">
                     <div className="mb-4">
-                      <div className="flex items-center gap-3 mb-3">
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-3">
                         <span className={`inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide ${evt.typeColor}`}>
                           {evt.type}
                         </span>
@@ -93,8 +93,8 @@ const LifeEventsPage = () => {
                           </span>
                         )}
                       </div>
-                      <div className="flex flex-wrap items-center justify-between gap-4 mb-3">
-                        <h3 className="text-2xl font-bold font-serif text-gray-800 dark:text-white">
+                      <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 mb-3">
+                        <h3 className="min-w-0 text-xl sm:text-2xl leading-tight font-bold font-serif text-gray-800 dark:text-white break-words">
                           {evt.name}
                         </h3>
                         {evt.links && evt.links.slice(0, 1).map((link, idx) => {
@@ -117,7 +117,7 @@ const LifeEventsPage = () => {
                               href={link.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className={`inline-flex items-center gap-2 px-4 py-1.5 text-sm font-semibold rounded-full border transition-colors ${buttonClass}`}
+                              className={`inline-flex shrink-0 items-center gap-2 px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-full border transition-colors ${buttonClass}`}
                             >
                               View Report
                               <ExternalLink size={14} />
@@ -129,7 +129,7 @@ const LifeEventsPage = () => {
                         <div>
                           <p
                             id={`event-description-${idx}`}
-                            className={`text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-justify${expandedEvents.has(idx) ? '' : ' line-clamp-4'}`}
+                            className={`text-sm text-gray-650 dark:text-gray-300 leading-relaxed text-left sm:text-justify${expandedEvents.has(idx) ? '' : ' line-clamp-4'}`}
                           >
                             {evt.desc.includes('\n\n**') ? (
                               <>
@@ -156,7 +156,7 @@ const LifeEventsPage = () => {
                     {expandedEvents.has(idx) && (
                       <div id={`event-details-${idx}`} className="mt-4">
                         <h4 className="text-sm font-bold text-gray-800 dark:text-white uppercase tracking-wide mb-3">Highlights</h4>
-                        <div className="grid grid-cols-2 gap-y-2 gap-x-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4">
                           {evt.highlights.map((h, hidx) => (
                             <div key={hidx} className="flex items-center gap-2">
                               <span className={`w-1.5 h-1.5 rounded-full ${evt.typeColor.split(' ')[0]}`} />
