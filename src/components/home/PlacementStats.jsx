@@ -109,7 +109,7 @@ const PlacementStats = () => {
             </h2>
           </div>
           <a
-            href="https://placements.iiitp.ac.in/"
+            href="https://placement.iiitp.ac.in/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-blue-300 hover:text-white transition-colors group"
