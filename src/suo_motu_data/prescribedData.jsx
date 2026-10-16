@@ -90,7 +90,7 @@ export const prescribedData = [
       </>
     ),
     details: (
-      <a href="/assets/suo_motu/Office%20Memorandum-%20Instutute-level%20Responsibilities.pdf" target="_blank" rel="noopener noreferrer" className="link">
+      <a href="/assets/suo_motu/Annexure-I,  INSTITUTE-LEVEL RESPONSIBILITIES.pdf" target="_blank" rel="noopener noreferrer" className="link">
         Click here for more details
       </a>
     ),
