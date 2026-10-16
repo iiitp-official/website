@@ -2,6 +2,26 @@
   {
     "id": 1,
     "year": 2026,
+    "organization": "IIIT Pune and SGPGIMS Lucknow Sign MoU",
+    "logo": "/Mougallery/logo SGPGIMS.png",
+    "department": "Institute Level",
+    "signedDate": "12 August 2026",
+    "validTill": "11 August 2031",
+    "description": "Memorandum of Understanding (MoU) between the Indian Institute of Information Technology Pune (IIIT Pune) and the Sanjay Gandhi Postgraduate Institute of Medical Sciences (SGPGIMS), Lucknow, to collaborate on artificial intelligence-driven healthcare research, innovation, and education, fostering interdisciplinary collaboration and the development of AI-based healthcare solutions.",
+    "tags": [
+      "Artificial Intelligence",
+      "Healthcare Research",
+      "Medical Innovation",
+      "Academic Collaboration",
+      "MoU"
+    ],
+    "gallery": [
+      
+    ]
+  },
+  {
+    "id": 2,
+    "year": 2026,
     "organization": "IIIT Pune and IIT Bombay Sign MoU",
     "logo": "/Mougallery/logo IIT b.png",
     "department": "Institute Level",
@@ -22,7 +42,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "year": 2026,
     "organization": "IIIT Pune Signs MoU with TrustLab, IIT Bombay",
     "logo": "/Mougallery/logo IIT b.png",

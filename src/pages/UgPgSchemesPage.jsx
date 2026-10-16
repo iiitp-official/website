@@ -575,6 +575,7 @@ const UgPgSchemesPage = () => {
   ];
 
   const [activeSemester1, setActiveSemester1] = useState(1);
+  const [activeSemesterMvd, setActiveSemesterMvd] = useState(1);
 
     const newEceCurriculum = [
     {
@@ -1254,6 +1255,88 @@ const [activeSemestermcse, setActiveSemestermcse] = useState(1);
                   Data for syllabus AY(23-24/24-25/25-26) will be updated soon.
                 </div>
               )}
+            </div>
+          </section>
+          <section id="btech-microelectronics-vlsi" className="mt-12 w-full">
+            <div className="bg-white dark:bg-surface-dark rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-8 md:p-10 overflow-hidden">
+              <div className="mb-8 border-b pb-4 border-gray-200 dark:border-gray-800">
+                <h2 className="text-2xl font-bold font-serif text-primary dark:text-white">
+                  B. Tech. (Microelectronics and VLSI Design)
+                </h2>
+                <p className="text-gray-600 dark:text-gray-400 mt-2">Explore the semester-wise course structure.</p>
+              </div>
+
+              <div className="flex overflow-x-auto gap-2 mb-6 pb-4">
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
+                  <button
+                    key={sem}
+                    onClick={() => setActiveSemesterMvd(sem)}
+                    className={`px-5 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all duration-200 ${
+                      activeSemesterMvd === sem
+                        ? "bg-brand-red text-white shadow-md dark:bg-brand-red-dark"
+                        : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+                    }`}
+                  >
+                    Semester {sem}
+                  </button>
+                ))}
+              </div>
+
+              <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="bg-gray-50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300">
+                        <th className="w-[60%] py-2.5 px-4 font-bold text-sm tracking-wider border-b border-gray-200 dark:border-gray-700">Course Name</th>
+                        <th className="w-[25%] py-2.5 px-4 font-bold text-sm tracking-wider border-b border-gray-200 dark:border-gray-700 text-center whitespace-nowrap">Hours/Week(L-T-P)</th>
+                        <th className="w-[15%] py-2.5 px-4 font-bold text-sm tracking-wider border-b border-gray-200 dark:border-gray-700 text-center">Credits</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <AnimatePresence mode="wait">
+                        {activeSemesterMvd <= 2 ? (
+                          <>
+                            {newEceCurriculum.find(c => c.semester === activeSemesterMvd)?.courses.map((course, idx) => (
+                              <motion.tr
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -10 }}
+                                transition={{ duration: 0.2, delay: idx * 0.05 }}
+                                key={course.name}
+                                className="border-b border-gray-100 dark:border-gray-800 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors"
+                              >
+                                <td className="py-2.5 px-4 text-gray-800 dark:text-gray-200 font-medium">{course.name}</td>
+                                <td className="py-2.5 px-4 text-center text-gray-700 dark:text-gray-300 font-bold">{course.hours}</td>
+                                <td className="py-2.5 px-4 text-center text-accent-dark font-bold">{course.credits}</td>
+                              </motion.tr>
+                            ))}
+                            <motion.tr
+                              key="total"
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              exit={{ opacity: 0 }}
+                              className="bg-blue-50/80 dark:bg-blue-900/20 border-t-2 border-blue-200 dark:border-blue-800"
+                            >
+                              <td colSpan="2" className="py-2.5 px-4 text-center font-bold text-gray-800 dark:text-gray-200">
+                                Total Credits
+                              </td>
+                              <td className="py-2.5 px-4 text-center text-accent-dark font-black text-lg">
+                                {newEceCurriculum.find(c => c.semester === activeSemesterMvd)?.totalCredits}
+                              </td>
+                            </motion.tr>
+                          </>
+                        ) : (
+                          <tr>
+                            <td colSpan="3" className="py-12 text-center text-gray-500 dark:text-gray-400 italic">
+                              Curriculum details for Semester {activeSemesterMvd} will be uploaded soon.
+                            </td>
+                          </tr>
+                        )}
+                      </AnimatePresence>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </section>
           <section id="mtech-cse" className="mt-12 w-full">
