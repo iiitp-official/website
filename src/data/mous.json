@@ -1,6 +1,27 @@
 [
-  {
+{
     "id": 1,
+    "year": 2026,
+    "organization": "IIIT Pune and i4C Sign MoU",
+    "logo": "/Mougallery/logo i4C.png",
+    "department": "Institute Level",
+    "signedDate": "14 October 2026",
+    "validTill": "13 October 2028",
+    "description": "Memorandum of Understanding (MoU) between the Indian Institute of Information Technology Pune (IIIT Pune) and the Inter Institutional Inclusive Innovations Center (i4C) to strengthen the institute-wide innovation ecosystem, foster students' curiosity and employability, introduce innovative approaches to curriculum-based learning, empower student clubs, and guide students in participating in the Smart India Hackathon and other hackathon initiatives.",
+    "tags": [
+      "Student Innovation",
+      "Industry-Academia Collaboration",
+      "Employability",
+      "Smart India Hackathon",
+      "Academic Innovation",
+      "MoU"
+    ],
+    "gallery": [
+      "/Mougallery/i4C_MoU_1.jpg"
+    ]
+  },
+  {
+    "id": 2,
     "year": 2026,
     "organization": "IIIT Pune and SGPGIMS Lucknow Sign MoU",
     "logo": "/Mougallery/logo SGPGIMS.png",
@@ -20,7 +41,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "year": 2026,
     "organization": "IIIT Pune and IIT Bombay Sign MoU",
     "logo": "/Mougallery/logo IIT b.png",
@@ -42,7 +63,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "year": 2026,
     "organization": "IIIT Pune Signs MoU with TrustLab, IIT Bombay",
     "logo": "/Mougallery/logo IIT b.png",
