@@ -16,6 +16,13 @@ const LatestNews = () => {
       .catch(() => {
         setNews([  
           {
+            id: 116,
+            title: "Corrigendum PhD and PostDoc Position under Visvesvaraya Scheme",
+            date: "16-10-2026",
+            excerpt: "Status of Applications and Schedule for Written Test & Interview for Full-Time Ph.D., Part-Time Ph.D., and Post-Doctoral Fellowship (PDF) Admissions (October-2026).",
+            link: "/documents/Corrigendum_PhD_PDF.pdf"
+          },
+          {
               id: 115,
               title: "Advisory Regarding Unauthorized Drone Workshop at IIIT Pune",
               date: "08-10-2026",
