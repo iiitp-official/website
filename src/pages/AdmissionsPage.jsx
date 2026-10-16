@@ -35,6 +35,7 @@ const AdmissionsPage = () => {
       title: "PhD and PostDoc Position",
       applicationLink: "https://forms.gle/L52Z3maiurjAEdMi9",
       brochureLink: "/documents/Visvesvaraya_PhD_PostDoc_Brochure_Oct_2026_IIIT_Pune.pdf",
+      corrigendum: "/documents/Corrigendum_PhD_PDF.pdf",
       spotLink: "/documents/Visvesvaraya_PhD_PostDoc_Brochure_Oct_2026_IIIT_Pune.pdf",
       spotTitle: "Full-time PhD/Part-time PhD/PostDoc Position under Visvesvaraya PhD Scheme for Electronics & IT: Phase II (With Scholarship)",
     },
@@ -135,6 +136,17 @@ const AdmissionsPage = () => {
                         <FileText size={18} />
                         Brochure
                       </a>
+                      {prog.corrigendum && (
+                        <a
+                          href={prog.corrigendum}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-medium py-2.5 px-6 rounded-lg transition-colors"
+                        >
+                          <FileText size={18} />
+                          Corrigendum
+                        </a>
+                      )}
                     </div>
                   </div>
                   {prog.spotLink && (
