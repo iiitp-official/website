@@ -3,6 +3,25 @@ import { ExternalLink, Download } from 'lucide-react';
 import LifePageLayout from '../components/life/LifePageLayout';
 
 const newsletters = [
+{
+  meta: "Volume II | Edition II | SEPTEMBER 2026",
+  title: "ECLECTIC TIMES",
+  desc: (
+    <>
+      The second edition of Volume II of{" "}
+      <strong className="text-gray-800 dark:text-gray-200">
+        ECLECTIC TIMES
+      </strong>{" "}
+      highlights the latest developments at IIIT Pune, including Ganeshotsav
+      celebrations, faculty-led academic sessions, industry interactions,
+      international collaborations, alumni engagement, Rajbhasha Mahotsav,
+      NSS initiatives, student achievements, and campus sports activities.
+    </>
+  ),
+  link: "/newsletter-docs-images/Volume 2 Edition II.pdf",
+  downloadLink: "/newsletter-docs-images/Volume 2 Edition II.pdf",
+  img: "/newsletter-docs-images/Volume II - Edition II.png"
+},
   {
     meta: "Volume 2 | Edition I | MAY-AUGUST 2026",
     title: "ECLECTIC TIMES",
