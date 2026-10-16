@@ -3303,59 +3303,6 @@
     "researchLinks": [],
     "department": "CSE"
   },
-  "shamal-kashid": {
-    "designation": "Adjunct Assistant Professor",
-    "image": "/assets/faculty_photos/shamalkashid.jpg",
-    "bio": "Dr. Shamal Kashid works as an Adjunct Assistant Professor in the Department of Computer Science and Engineering at the Indian Institute of Information Technology (IIIT), Pune, Maharashtra. She complited her PhD thesis, titled “Novel Approaches For Identifying, Summarizing and Securing Non Revealing Content in Multimedia,” at the National Institute of Technology, Uttarakhand. Her research interests are Machine Learning, Deep Learning, Multimedia Summarization, and Security. In these areas, she authored several technical research articles in reputed international conferences and journals. Also, she serves as a reviewer for esteemed international journals and conferences.",
-    "education": "Ph.D. (CSE), M.Tech.(CSE), B.E.(CSE)",
-    "publications": [
-      {
-        "title": "STVS: Spatio-Temporal feature fusion for Video Summarization",
-        "authors": "Shamal Kashid, Lalit K. Awasthi, Krishan Berwal, Parul Saini",
-        "journal": "IEEE Multimedia, July 2024, pp. 1-7",
-        "link": "https://doi.org/10.1109/MMUL.2024.3428933"
-      },
-      {
-        "title": "Security to Text (S2T): multi-layered based Security approaches for Secret Text content",
-        "authors": "Shamal Kashid, Lalit K. Awasthi, Krishan Berwal",
-        "journal": "Springer Multimedia Tools and Applications, June 2024, pp. 1-21",
-        "link": "https://doi.org/10.1007/s11042-024-19669-9"
-      },
-      {
-        "title": "STKVS: secure technique for keyframes-based video summarization model",
-        "authors": "Saini, Parul, Krishan Berwal, Shamal Kashid, and Alok Negi",
-        "journal": "Springer Multimedia Tools and Applications, May 2024, pp. 1-34",
-        "link": "https://doi.org/10.1007/s11042-024-18909-2"
-      },
-      {
-        "title": "Video summarization using deep learning techniques: a detailed analysis and investigation",
-        "authors": "Saini Parul, Krishan Kumar, Shamal Kashid, Ashray Saini, Alok Negi",
-        "journal": "Springer Artificial Intelligence Review March 2023, 56(11), pages 12347-12385",
-        "link": "https://doi.org/10.1007/s10462-023-10444-0"
-      },
-      {
-        "title": "SOMVS: SOM based Video Summarization Using Ensemble of Deep Learned Features",
-        "authors": "Shamal Kashid, Lalit K. Awasthi, Krishan Berwal",
-        "journal": "Elsevier Computers and Electrical Engineering Volume 130, 2026, 110884, ISSN 0045-7906",
-        "link": ""
-      }
-    ],
-    "resume": "/assets/resume/shamalkashid_resume.pdf",
-    "expertise": "Machine Learning, Deep Learning, Multimedia Security, Multimedia Summarization",
-    "google_scholar": "https://scholar.google.com/citations?user=1Hc_cwgAAAAJ",
-    "orcid": "https://orcid.org/0000-0001-8974-2702",
-    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57946032800",
-    "books_chapters": "",
-    "patents": "",
-    "seminars": [],
-    "projects": "",
-    "supervisions": "",
-    "email": "shamalkashid@iiitp.ac.in",
-    "phone": "8605298915",
-    "linkedin": "",
-    "researchLinks": [],
-    "department": "CSE"
-  },
   "anupama-arun": {
     "designation": "Adjunct Assistant Professor",
     "image": "/assets/faculty_photos/anupamaarun.jpg",
@@ -3389,65 +3336,6 @@
     "phone": "9893096267",
     "linkedin": "",
     "researchLinks": [],
-    "department": "CSE"
-  },
-  "sabah-tazeen": {
-    "designation": "Adjunct Assistant Professor",
-    "image": "/assets/faculty_photos/sabahtazeen.jpg",
-    "bio": "Mrs Sabah Tazeen received her B.E. degree in Computer Engineering from Savitribai Phule Pune University, India, in 2013. She received her M. Tech. degree in Computer Science and Engineering from the International Institute of Information Technology (IIIT), Bhubaneswar, India, in 2017. She has pursued Ph.D. in Computer Science and Engineering from the Dept of CSE, National Institute of Technology (NIT) Patna and has submitted her PhD thesis on \"Mobile-Vehicle based Charging and Data Gathering Schemes in Wireless Sensor Networks\". Her research interests are in data gathering problems in wireless sensor networks, rechargeable sensor networks, and Mobile Ad Hoc Networks.",
-    "education": "Ph.D., M.Tech.(CSE), B.E.(CSE)",
-    "publications": [
-      {
-        "title": "A combined strategy of data collection and charge scheduling to maximize sensor lifetime in a WRSN",
-        "authors": "S. Tazeen and D. Dash",
-        "journal": "Wireless Networks (Springer), 32, pp. 1401–1418 (2026)",
-        "link": "https://link.springer.com/article/10.1007/s11276-026-04116-4"
-      },
-      {
-        "title": "A heuristic greedy approach to reduce the dead periods of the sensor nodes in an on-demand WRSN",
-        "authors": "S. Tazeen and D. Dash",
-        "journal": "SN Computer Science (Springer) 6, pp. 223:1–223:20 (2025)",
-        "link": "https://link.springer.com/article/10.1007/s42979-025-03679-x"
-      },
-      {
-        "title": "Periodic data collection from mobile sensors with unpredictable motion along road networks",
-        "authors": "S. Tazeen, D. Dash & S. De",
-        "journal": "Wireless Networks (Springer) 28, pp. 1505-1520 (2022)",
-        "link": "https://link.springer.com/article/10.1007/s11276-022-02915-z"
-      },
-      {
-        "title": "MSGR: A Mode-Switched Grid-based Sustainable Routing Protocol for Wireless Sensor Networks",
-        "authors": "S. Sharma, D. Puthal, S. Tazeen et al",
-        "journal": "IEEE Access 5, pp. 19864–19875 (2017)",
-        "link": "https://ieeexplore.ieee.org/abstract/document/8022687"
-      },
-      {
-        "title": "Mode-switched Grid-based routing for Wireless Sensor Networks",
-        "authors": "S. Tazeen and S. Sharma",
-        "journal": "IEEE International Conference on Computing, Communication and Automation (ICCCA) (2017), pp. 464–469",
-        "link": "https://ieeexplore.ieee.org/abstract/document/8229845"
-      }
-    ],
-    "resume": "/assets/resume/sabahtazeen_resume.pdf",
-    "expertise": "Data Gathering and Recharging in Wireless Sensor Networks",
-    "google_scholar": "https://scholar.google.com/citations?hl=en&user=o6ytHb8AAAAJ",
-    "orcid": "https://orcid.org/0000-0002-6251-2226",
-    "scopus": "",
-    "books_chapters": "",
-    "patents": [
-      {
-        "title": "SYSTEM AND METHOD FOR WIRELESS CHARGING AND WIRE-LESS DATA TRANSFER, Application No. 202531036456, 2025 (in hearing)."
-      }
-    ],
-    "seminars": [],
-    "projects": "",
-    "supervisions": "",
-    "email": "sabah@iiitp.ac.in",
-    "phone": "6299637482",
-    "linkedin": "",
-    "researchLinks": [
-      "https://www.researchgate.net/profile/Sabah-Tazeen"
-    ],
     "department": "CSE"
   },
   "ashish-singh": {
