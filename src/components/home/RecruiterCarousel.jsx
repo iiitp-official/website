@@ -75,7 +75,7 @@ const RecruiterCarousel = () => {
       {/* Mobile CTA */}
       <div className="flex justify-center mt-6 sm:hidden">
         <a
-          href="https://placements.iiitp.ac.in/"
+          href="https://placement.iiitp.ac.in/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent dark:text-accent-dark hover:underline"
