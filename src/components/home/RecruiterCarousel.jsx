@@ -43,7 +43,7 @@ const RecruiterCarousel = () => {
             </h2>
           </div>
           <a
-            href="https://placements.iiitp.ac.in/"
+            href="https://placement.iiitp.ac.in/"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-accent dark:text-accent-dark hover:underline group"
