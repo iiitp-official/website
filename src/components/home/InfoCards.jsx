@@ -310,6 +310,9 @@ const InfoCards = () => {
                     <a href="/documents/Visvesvaraya_PhD_PostDoc_Brochure_Oct_2026_IIIT_Pune.pdf" target="_blank" rel="noopener noreferrer" className="text-xs text-brand-red dark:text-brand-red-dark hover:underline flex items-center gap-1 font-semibold">
                       <span>• Full-time PhD/Part-time PhD/PostDoc Position under Visvesvaraya PhD Scheme for Electronics & IT</span>
                     </a>
+                    <a href="/documents/Corrigendum_PhD_PDF.pdf" target="_blank" rel="noopener noreferrer" className="text-xs text-brand-red dark:text-brand-red-dark hover:underline flex items-center gap-1 font-semibold">
+                      <span>• Corrigendum PhD and PostDoc Position under Visvesvaraya Scheme</span>
+                    </a>
                   </div>
                 </li>
 
