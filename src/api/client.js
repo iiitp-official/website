@@ -28,3 +28,31 @@ export async function apiGet(path, params = {}) {
     clearTimeout(timeoutId);
   }
 }
+
+export async function apiRequest(path, options = {}) {
+  const headers = { ...(options.headers || {}) };
+  const method = (options.method || 'GET').toUpperCase();
+  if (!['GET', 'HEAD', 'OPTIONS'].includes(method)) {
+    const csrf = document.cookie
+      .split('; ')
+      .find((item) => item.startsWith('csrfToken='))
+      ?.split('=')[1];
+    if (csrf) headers['x-csrf-token'] = decodeURIComponent(csrf);
+  }
+
+  if (!(options.body instanceof FormData) && !headers['Content-Type']) {
+    headers['Content-Type'] = 'application/json';
+  }
+
+  const response = await fetch(`${API_BASE_URL}${path}`, {
+    ...options,
+    credentials: 'include',
+    headers,
+  });
+  const contentType = response.headers.get('content-type');
+  const data = contentType?.includes('application/json')
+    ? await response.json()
+    : await response.text();
+  if (!response.ok) throw new Error(data?.error || `Request failed with status ${response.status}`);
+  return data;
+}
