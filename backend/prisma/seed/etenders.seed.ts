@@ -23,6 +23,8 @@ interface RawEtender {
 interface RawEtendersFile {
   live?: RawEtender[];
   past?: RawEtender[];
+  /** Frontend JSON uses `archive`; accept it as an alias of `past`. */
+  archive?: RawEtender[];
 }
 
 export async function seedEtenders(): Promise<number> {
@@ -34,7 +36,7 @@ export async function seedEtenders(): Promise<number> {
 
   const rawData: RawEtendersFile = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   const liveList = rawData.live || [];
-  const pastList = rawData.past || [];
+  const pastList = rawData.past || rawData.archive || [];
 
   logger.info(`Found ${liveList.length} live and ${pastList.length} past e-tenders in JSON to seed...`);
 

@@ -145,6 +145,8 @@ const SdgFourteenPage = lazy(() => import("./pages/SdgForteenPage"));
 const SdgFifteenPage = lazy(() => import("./pages/SdgFifteenPage"));
 const SdgSixteenPage = lazy(() => import("./pages/SdgSixteenPage"));
 const SdgSeventeenPage = lazy(() => import("./pages/SdgSeventeenPage"));
+const LoginPage = lazy(() => import("./pages/LoginPage"));
+const DashboardPage = lazy(() => import("./pages/DashboardPage"));
 
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 const StudentAchievementsPage = lazy(
@@ -189,6 +191,20 @@ function AppContent() {
   const location = useLocation();
   const isInternational = location.pathname.startsWith("/international");
   const isAlumni = location.pathname.startsWith("/alumni");
+  const isAdminArea =
+    location.pathname === "/login" || location.pathname.startsWith("/dashboard");
+
+  if (isAdminArea) {
+    return (
+      <Suspense fallback={<LoadingFallback />}>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/dashboard/*" element={<DashboardPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
+    );
+  }
 
   if (isInternational) {
     return (

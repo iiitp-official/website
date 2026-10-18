@@ -21,6 +21,7 @@ import {
   assignEditorSections,
   removeEditorSection,
 } from '../controllers/admin.controller';
+import { listAuditLogs } from '../controllers/audit.controller';
 
 const router = Router();
 
@@ -40,5 +41,6 @@ router.delete('/users/:id/sections/:section', removeEditorSection);
 router.get('/invites', listInvites);
 router.post('/invites', createInvite);
 router.delete('/invites/:id', revokeInvite);
+router.get('/audit-logs', listAuditLogs);
 
 export default router;

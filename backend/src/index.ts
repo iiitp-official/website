@@ -8,6 +8,7 @@
 import './config/env';  // ← must be first — validates all env vars at startup
 
 import express from 'express';
+import fs from 'fs';
 import helmet from 'helmet';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
@@ -26,6 +27,8 @@ import newsRouter from './routes/news.routes';
 import careersRouter from './routes/careers.routes';
 import etendersRouter from './routes/etenders.routes';
 import mediaRouter from './routes/media.routes';
+import facultyRouter from './routes/faculty.routes';
+import { csrfToken } from './middlewares/csrf';
 
 const app = express();
 
@@ -53,6 +56,7 @@ app.use(cors({
 app.use(cookieParser());
 app.use(express.json({ limit: '2mb' }));
 app.use(express.urlencoded({ extended: true, limit: '2mb' }));
+app.use(csrfToken);
 
 // Serve dev sandbox UI from public/
 app.use(express.static(path.join(__dirname, '../public')));
@@ -129,6 +133,14 @@ app.use('/v1/news', newsRouter);
 app.use('/v1/careers', careersRouter);
 app.use('/v1/etenders', etendersRouter);
 app.use('/v1/media', mediaRouter);
+app.use('/v1/faculty', facultyRouter);
+app.get('/v1/life-events', async (req, res) => {
+  const data = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), '../src/data/lifePageData.json'), 'utf8'));
+  const events = data.EVENTS || [];
+  const search = String(req.query.search || '').toLowerCase();
+  const filtered = search ? events.filter((e: any) => JSON.stringify(e).toLowerCase().includes(search)) : events;
+  res.json({ events: filtered });
+});
 
 // ── 404 handler ───────────────────────────────────────────────────────────────
 app.use((_req, res) => {

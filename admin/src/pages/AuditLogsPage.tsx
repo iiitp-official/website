@@ -2,9 +2,13 @@ import React from 'react';
 import { ClipboardList } from 'lucide-react';
 import { useAuth } from '../context/useAuth';
 import { AccessDenied } from '../components/AccessDenied';
+import { useEffect, useState } from 'react';
+import { apiRequest } from '../api/client';
 
 export const AuditLogsPage: React.FC = () => {
   const { isAdmin } = useAuth();
+  const [logs, setLogs] = useState<any[]>([]);
+  useEffect(() => { if (isAdmin) apiRequest<{ logs: any[] }>('/v1/admin/audit-logs?limit=100').then((r) => setLogs(r.logs)); }, [isAdmin]);
 
   if (!isAdmin) {
     return <AccessDenied sectionName="Audit Logs" />;
@@ -20,7 +24,7 @@ export const AuditLogsPage: React.FC = () => {
       </div>
 
       <div className="table-card">
-        <div className="empty-state-box">
+        {logs.length ? <table><thead><tr><th>Time</th><th>User</th><th>Action</th><th>Resource</th></tr></thead><tbody>{logs.map((l) => <tr key={l.id}><td>{new Date(l.created_at).toLocaleString()}</td><td>{l.user_email || '—'}</td><td>{l.action}</td><td>{l.resource} {l.resource_id || ''}</td></tr>)}</tbody></table> : <div className="empty-state-box">
           <div className="empty-state-icon">
             <ClipboardList size={40} strokeWidth={1.5} color="#9ca3af" />
           </div>
@@ -28,7 +32,7 @@ export const AuditLogsPage: React.FC = () => {
           <p className="empty-state-desc">
             All CMS operations (create, draft updates, publish, archive, delete) are actively recorded in the audit_logs database table with IP snapshots and action diffs.
           </p>
-        </div>
+        </div>}
       </div>
     </div>
   );

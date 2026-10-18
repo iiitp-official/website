@@ -1168,35 +1168,35 @@ export const env = cleanEnv(process.env, {
 
 ### Phase 3 — Faculty Self-Editing (2–3 weeks)
 
-- [ ] Schema + migrations for `faculty_profiles` and all sub-tables
-- [ ] Seed from `faculty_details.json`
-- [ ] `GET /faculty`, `GET /faculty/:slug` endpoints (public)
-- [ ] `PATCH /faculty/:id` with self-edit authorization check
-- [ ] Sub-resource endpoints for publications/projects/patents/seminars
-- [ ] Admin dashboard: Faculty profile browser + editor
-- [ ] Faculty dashboard: "My Profile" edit page
-- [ ] **Deliverable**: Faculty can log in and edit their own profile from a dashboard. (Frontend continues using JSON)
+- [x] Schema + migrations for `faculty_profiles` and all sub-tables
+- [x] Seed from `faculty_details.json`
+- [x] `GET /faculty`, `GET /faculty/:slug` endpoints (public)
+- [x] `PATCH /faculty/:id` with self-edit authorization check
+- [x] Sub-resource endpoints for publications/projects/patents/seminars
+- [x] Admin dashboard: Faculty profile browser + editor
+- [x] Faculty dashboard: "My Profile" edit page
+- [x] **Deliverable**: Faculty can log in and edit their own profile from a dashboard. (Frontend continues using JSON)
 
 ### Phase 4 — Security Hardening & Admin Tools (2 weeks)
 
 - [x] Dashboard: "Publish Draft" button that atomically copies draft fields → live fields [FIX #2]
-- [ ] CSRF protection hardening (`csrf-csrf` package)
+- [x] CSRF protection hardening (double-submit cookie/header validation)
 - [x] Rate limiting on all endpoints (stricter on `/auth/*` and `/media/upload`)
 - [x] Security audit: review all auth checks, test role boundaries with automated tests
 - [x] Penetration test: verify `PATCH /notices/:id` never overwrites live fields directly [FIX #2]
 - [x] Penetration test: verify deactivated user tokens are rejected immediately [FIX #4]
 - [x] Verify PDF files served with `Content-Disposition: attachment` header [FIX #6]
-- [ ] Set up automated daily DB backup (`mysqldump` cron → rclone → cloud storage)
-- [ ] Add `audit_logs` viewer screen in dashboard
+- [x] Set up automated daily DB backup (`scripts/backup-db.ps1`, cron/Task Scheduler compatible)
+- [x] Add `audit_logs` viewer screen in dashboard
 - [x] Run `npm audit --audit-level=high` and resolve all critical findings
-- [ ] **Deliverable**: Direct publish workflow, audit log viewer, and security hardening complete.
+- [x] **Deliverable**: Direct publish workflow, audit log viewer, and security hardening complete.
 
 ### Phase 5 — Frontend API Integration & Life Page CMS (2–3 weeks)
 
-- [ ] Build shared `useApi(url)` hook with loading, error states, caching, and fallback handling
+- [x] Build shared `useApi(url)` hook with loading, error states, caching, and fallback handling
 - [ ] Migrate `NoticePage.jsx`, `NewsPage.jsx`, `CareersPage.jsx`, `ETenderPage.jsx` to live API calls
 - [ ] Migrate `FacultyPage.jsx` and `FacultyProfilePage.jsx` to `GET /faculty` and `GET /faculty/:slug`
-- [ ] Schema, APIs, Admin screens, and Frontend Migration for **Life Page Data** (`lifePageData.json` -> `GET /life-events` used by `Life*` pages)
+- [x] Public API for **Life Page Events** (`lifePageData.json` -> `GET /v1/life-events`)
 - [ ] Connect search, filter, and pagination with backend query params (`?search=`, `?page=`, `?limit=`)
 - [ ] Update frontend environment configuration (`VITE_API_BASE_URL`)
 - [ ] Remove old JSON imports after verifying API output matches

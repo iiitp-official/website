@@ -23,6 +23,7 @@ import { InvitesPage } from './pages/InvitesPage';
 import { AuditLogsPage } from './pages/AuditLogsPage';
 import { LoginPage } from './pages/LoginPage';
 import { LoadingSpinner } from './components/LoadingSpinner';
+import { FacultyPage } from './pages/FacultyPage';
 
 import './App.css';
 
@@ -48,6 +49,7 @@ const rawNavigation: NavGroup[] = [
       { label: 'News', path: '/news', icon: Newspaper, sectionKey: 'news' },
       { label: 'Careers', path: '/careers', icon: Briefcase, sectionKey: 'careers' },
       { label: 'E-Tenders', path: '/etenders', icon: FileCheck, sectionKey: 'etenders' },
+      { label: 'Faculty Profiles', path: '/faculty', icon: UsersIcon },
     ],
   },
   {
@@ -171,6 +173,7 @@ function AppLayout() {
             <Route path="/news" element={<NewsManager />} />
             <Route path="/careers" element={<CareersManager />} />
             <Route path="/etenders" element={<ETendersManager />} />
+            <Route path="/faculty" element={<FacultyPage />} />
             <Route path="/users" element={<UsersPage />} />
             <Route path="/invites" element={<InvitesPage />} />
             <Route path="/audit-logs" element={<AuditLogsPage />} />

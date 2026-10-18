@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { authenticateJWT, optionalAuthenticateJWT } from '../middlewares/auth';
+import { requireRole } from '../middlewares/role';
+import { listFaculty, getFaculty, updateFaculty, updateFacultyChild, deleteFacultyChild } from '../controllers/faculty.controller';
+const router = Router();
+router.get('/', optionalAuthenticateJWT, listFaculty); router.get('/:slug', optionalAuthenticateJWT, getFaculty);
+router.patch('/:id', authenticateJWT, requireRole(['admin', 'faculty']), updateFaculty);
+router.post('/:id/:resource', authenticateJWT, requireRole(['admin', 'faculty']), updateFacultyChild);
+router.patch('/:id/:resource/:childId', authenticateJWT, requireRole(['admin', 'faculty']), updateFacultyChild);
+router.delete('/:id/:resource/:childId', authenticateJWT, requireRole(['admin', 'faculty']), deleteFacultyChild);
+export default router;

@@ -11,6 +11,12 @@ import { seedNotices } from './notices.seed';
 import { seedNews } from './news.seed';
 import { seedCareers } from './careers.seed';
 import { seedEtenders } from './etenders.seed';
+import { seed as seedFaculty } from './faculty.seed';
+import { seed as seedScholarships } from './scholarships.seed';
+import { seed as seedStaff } from './non_teaching_staff.seed';
+import { seed as seedAlumni } from './alumni.seed';
+import { seed as seedMous } from './mous.seed';
+import { seed as seedPress } from './press.seed';
 
 async function main() {
   logger.info('🚀 Starting Database Seeding from static JSON files...');
@@ -22,6 +28,12 @@ async function main() {
     const newsCount = await seedNews();
     const careersCount = await seedCareers();
     const etendersCount = await seedEtenders();
+    await seedFaculty(prisma);
+    await seedScholarships(prisma);
+    await seedStaff(prisma);
+    await seedAlumni(prisma);
+    await seedMous(prisma);
+    await seedPress(prisma);
 
     const duration = ((Date.now() - startTime) / 1000).toFixed(2);
     logger.info(`✨ Database Seeding Completed in ${duration}s! Summary:
@@ -29,6 +41,7 @@ async function main() {
   - News:      ${newsCount}
   - Careers:   ${careersCount}
   - E-Tenders: ${etendersCount}
+  - Faculty + Scholarships + Staff + Alumni + MoUs + Press: done
 `);
   } catch (err) {
     logger.error('❌ Error during database seeding', { err });

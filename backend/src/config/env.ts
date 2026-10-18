@@ -23,6 +23,7 @@ export const env = cleanEnv(process.env, {
   COOKIE_SECURE:      bool({ default: true }),
   NODE_ENV:           str({ choices: ['development', 'production', 'test'] }),
   PORT:               port({ default: 4000 }),
+  SUPER_ADMIN_EMAILS: str({ default: '112415074@cse.iiitp.ac.in' }),
   // Local file storage (Hostinger VPS disk)
   UPLOAD_DIR:         str({ default: './uploads' }),
   UPLOAD_BASE_URL:    str({ default: 'http://localhost:4000/uploads' }),

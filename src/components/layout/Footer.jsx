@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router";
-import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, ExternalLink, Lock } from "lucide-react";
+import { useAuth } from "../../context/AuthContext.jsx";
 
 // Social Icons
 const FacebookIcon = ({ size }) => (
@@ -50,6 +51,9 @@ const YoutubeIcon = ({ size }) => (
 const Footer = () => {
   const [hits, setHits] = useState(0);
   const [visitors, setVisitors] = useState(0);
+  let authUser = null;
+  const authCtx = useAuth();
+  authUser = authCtx?.user || null;
 
   useEffect(() => {
     // Simulated base counts
@@ -146,6 +150,18 @@ const Footer = () => {
                 <Link to="/sitemap" className="hover:text-brand-red transition-colors flex items-start group">
                   <ExternalLink size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
                   <span className="leading-tight">Sitemap</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={authUser ? "/dashboard" : "/login"}
+                  className="hover:text-brand-red transition-colors flex items-start group"
+                  title={authUser ? `Signed in as ${authUser.email} (${authUser.role})` : "Sign in to the CMS"}
+                >
+                  <Lock size={14} className="mr-2 mt-1 shrink-0 text-[#0d6efd]" />
+                  <span className="leading-tight">
+                    {authUser ? `CMS Dashboard (${authUser.role})` : "CMS Login"}
+                  </span>
                 </Link>
               </li>
               {/* <li>

@@ -26,6 +26,8 @@ interface RawCareer {
 interface RawCareersFile {
   live?: RawCareer[];
   past?: RawCareer[];
+  /** Frontend JSON uses `archive`; accept it as an alias of `past`. */
+  archive?: RawCareer[];
 }
 
 function parseLastDate(dateStr?: string): Date | null {
@@ -53,7 +55,7 @@ export async function seedCareers(): Promise<number> {
 
   const rawData: RawCareersFile = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   const liveList = rawData.live || [];
-  const pastList = rawData.past || [];
+  const pastList = rawData.past || rawData.archive || [];
 
   logger.info(`Found ${liveList.length} live and ${pastList.length} past careers in JSON to seed...`);
 
@@ -67,11 +69,13 @@ export async function seedCareers(): Promise<number> {
       if (!item.title) continue;
 
       const lastDate = parseLastDate(item.lastDate);
+      const postDate = parseLastDate(item.date);
 
       const career = await prisma.career.create({
         data: {
           title: item.title.trim(),
           career_type: type,
+          post_date: postDate,
           last_date: lastDate,
           status: ContentStatus.published,
           draft_title: item.title.trim(),

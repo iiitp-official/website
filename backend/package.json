@@ -13,6 +13,8 @@
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
     "db:seed": "tsx prisma/seed/index.ts",
+    "db:bootstrap-admin": "tsx scripts/bootstrap-admin.ts",
+    "db:backfill": "tsx scripts/backfill-archives.ts",
     "test": "jest --runInBand",
     "test:watch": "jest --watch",
     "test:coverage": "jest --runInBand --coverage"

@@ -92,6 +92,14 @@ export async function googleLogin(req: Request, res: Response): Promise<void> {
 
   const { sub: googleSub, email, name, picture } = googleProfile;
 
+  // Super-admin bootstrap: comma-separated allowlist, no invite required.
+  // The designated main admin is always auto-created / auto-promoted to admin.
+  const superAdmins = (env.SUPER_ADMIN_EMAILS || '')
+    .split(',')
+    .map((e) => e.trim().toLowerCase())
+    .filter(Boolean);
+  const isSuperAdmin = superAdmins.includes(email.toLowerCase());
+
   try {
     // 2. Upsert user within a DB transaction
     const { user, isNewUser } = await prisma.$transaction(async (tx) => {
@@ -104,6 +112,9 @@ export async function googleLogin(req: Request, res: Response): Promise<void> {
           throw Object.assign(new Error('Account is deactivated. Contact administrator.'), { statusCode: 403 });
         }
 
+        // Auto-promote bootstrap admin even if row already exists
+        const needsPromotion = isSuperAdmin && existing.role !== 'admin';
+
         const updatedUser = await tx.user.update({
           where: { id: existing.id },
           data: {
@@ -112,13 +123,31 @@ export async function googleLogin(req: Request, res: Response): Promise<void> {
             // Update avatar/name only if they have changed from what Google reports
             ...(name && name !== existing.name ? { name } : {}),
             ...(picture && picture !== existing.avatar_url ? { avatar_url: picture } : {}),
+            ...(needsPromotion ? { role: 'admin' as const } : {}),
           },
         });
 
         return { user: updatedUser, isNewUser: false };
       }
 
-      // 2b. New user — must have a valid unclaimed invite
+      // 2b(i). Bootstrap super-admin — no invite required
+      if (isSuperAdmin) {
+        const newAdmin = await tx.user.create({
+          data: {
+            email,
+            name,
+            google_sub: googleSub,
+            avatar_url: picture,
+            role: 'admin',
+            is_active: true,
+            token_version: 0,
+            last_login_at: new Date(),
+          },
+        });
+        return { user: newAdmin, isNewUser: true };
+      }
+
+      // 2b(ii). New user — must have a valid unclaimed invite
       const invite = await tx.invite.findUnique({ where: { email } });
 
       if (!invite) {

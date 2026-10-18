@@ -9,6 +9,10 @@ export async function apiRequest<T>(
   const headers: Record<string, string> = {
     ...(options.headers as Record<string, string> || {}),
   };
+  if (options.method && !['GET', 'HEAD', 'OPTIONS'].includes(options.method.toUpperCase())) {
+    const csrf = document.cookie.split('; ').find((item) => item.startsWith('csrfToken='))?.split('=')[1];
+    if (csrf) headers['x-csrf-token'] = decodeURIComponent(csrf);
+  }
 
   if (!isFormData && !headers['Content-Type']) {
     headers['Content-Type'] = 'application/json';

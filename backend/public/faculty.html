@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIIT Pune CMS — Faculty API Playground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(18, 26, 44, 0.75);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --success: #10b981;
+      --danger: #ef4444;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e293b 0%, var(--bg) 75%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .header { text-align: center; margin-bottom: 32px; }
+    .badge {
+      display: inline-block; padding: 4px 12px; border-radius: 9999px; font-size: 12px;
+      font-weight: 600; background: rgba(16, 185, 129, 0.15); color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3); margin-bottom: 12px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 28px; font-weight: 800; letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px;
+    }
+    .subtitle { color: var(--text-muted); font-size: 14px; }
+    .subtitle a { color: #60a5fa; }
+    .container { width: 100%; max-width: 1000px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 768px) { .container { grid-template-columns: 1fr; } }
+    .card {
+      background: var(--card-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border); border-radius: 16px; padding: 24px;
+      display: flex; flex-direction: column; gap: 12px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    }
+    .card h2 { font-size: 18px; font-weight: 700; }
+    .card p.desc { font-size: 13px; color: var(--text-muted); }
+    .input-group { display: flex; flex-direction: column; gap: 6px; }
+    label { font-size: 13px; font-weight: 600; color: var(--text-muted); }
+    input, select, textarea {
+      background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border); color: var(--text);
+      padding: 10px 14px; border-radius: 8px; font-size: 14px; outline: none; transition: all 0.2s;
+      font-family: inherit;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--border-focus); box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .btn {
+      padding: 10px 16px; border-radius: 8px; font-size: 14px; font-weight: 600;
+      cursor: pointer; border: none; transition: all 0.2s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-hover); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.08); color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: rgba(255, 255, 255, 0.12); }
+    .console-wrapper { grid-column: 1 / -1; background: #050811; border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+    .console-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .console-title { font-size: 14px; font-weight: 700; }
+    .console-status { font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 6px; }
+    .status-idle { background: rgba(148, 163, 184, 0.1); color: var(--text-muted); }
+    .status-success { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+    .status-error { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+    pre {
+      font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.5; color: #cbd5e1;
+      max-height: 400px; overflow-y: auto; white-space: pre-wrap; word-break: break-word;
+    }
+    .alert { padding: 12px 14px; border-radius: 8px; font-size: 13px; line-height: 1.4; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #93c5fd; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="badge">Phase 3 Dev Sandbox</div>
+    <h1>Faculty API Playground</h1>
+    <p class="subtitle">Test the faculty CMS endpoints. Reads are public — writes need a login session from the <a href="/">Auth Playground</a> (same browser, cookies are shared).</p>
+  </div>
+
+  <div class="container">
+
+    <!-- 1. List / search -->
+    <div class="card">
+      <h2>1. List Faculty — GET /v1/faculty</h2>
+      <p class="desc">Public. Supports <code>?search=</code>, <code>?page=</code>, <code>?limit=</code>.</p>
+      <div class="row">
+        <div class="input-group">
+          <label for="listSearch">Search (name / department)</label>
+          <input type="text" id="listSearch" placeholder="e.g. singh or CSE" />
+        </div>
+        <div class="input-group">
+          <label for="listLimit">Limit</label>
+          <select id="listLimit">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+      </div>
+      <button id="btnList" class="btn btn-primary">🔍 Fetch Faculty List</button>
+    </div>
+
+    <!-- 2. Detail -->
+    <div class="card">
+      <h2>2. Profile Detail — GET /v1/faculty/:slug</h2>
+      <p class="desc">Public. Returns profile + publications, projects, patents, seminars, supervisions.</p>
+      <div class="input-group">
+        <label for="detailSlug">Slug (click "Fetch List" first, then copy a slug)</label>
+        <input type="text" id="detailSlug" placeholder="e.g. bhupendra-singh" />
+      </div>
+      <button id="btnDetail" class="btn btn-primary">👤 Fetch Profile Detail</button>
+    </div>
+
+    <!-- 3. Update profile (auth) -->
+    <div class="card">
+      <h2>3. Edit Profile — PATCH /v1/faculty/:id 🔒</h2>
+      <p class="desc">Requires login as <strong>admin</strong> or the <strong>faculty owner</strong> (same email). Log in via the <a href="/" style="color:#60a5fa">Auth Playground</a> first.</p>
+      <div class="row">
+        <div class="input-group">
+          <label for="editId">Profile ID (number)</label>
+          <input type="number" id="editId" placeholder="e.g. 1" />
+        </div>
+        <div class="input-group">
+          <label for="editDesignation">New designation</label>
+          <input type="text" id="editDesignation" placeholder="e.g. Associate Professor" />
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="editBio">New bio (optional)</label>
+        <textarea id="editBio" rows="2" placeholder="Short bio text…"></textarea>
+      </div>
+      <button id="btnEdit" class="btn btn-secondary">✏️ PATCH Profile</button>
+    </div>
+
+    <!-- 4. Child sub-resource (auth) -->
+    <div class="card">
+      <h2>4. Add Publication — POST /v1/faculty/:id/publications 🔒</h2>
+      <p class="desc">Same auth rule. Resources: <code>publications</code>, <code>projects</code>, <code>patents</code>, <code>seminars</code>, <code>supervisions</code>.</p>
+      <div class="row">
+        <div class="input-group">
+          <label for="childId">Profile ID</label>
+          <input type="number" id="childId" placeholder="e.g. 1" />
+        </div>
+        <div class="input-group">
+          <label for="childResource">Resource</label>
+          <select id="childResource">
+            <option value="publications">publications</option>
+            <option value="projects">projects</option>
+            <option value="patents">patents</option>
+            <option value="seminars">seminars</option>
+            <option value="supervisions">supervisions</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="childTitle">Title</label>
+        <input type="text" id="childTitle" placeholder="Test publication — delete me" />
+      </div>
+      <button id="btnChild" class="btn btn-secondary">➕ POST Child Item</button>
+      <div class="alert">To test DELETE: create an item, copy its <code>id</code> from the console, then run<br><code>DELETE /v1/faculty/:id/:resource/:childId</code> via the console button below.</div>
+      <div class="row">
+        <div class="input-group">
+          <label for="delChildId">Child item ID</label>
+          <input type="number" id="delChildId" placeholder="e.g. 12" />
+        </div>
+        <div class="input-group">
+          <label>&nbsp;</label>
+          <button id="btnDelChild" class="btn btn-secondary">🗑️ DELETE Child Item</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Console -->
+    <div class="console-wrapper">
+      <div class="console-header">
+        <div class="console-title">⚡ Live API Response Console</div>
+        <div id="consoleStatus" class="console-status status-idle">IDLE</div>
+      </div>
+      <pre id="output">// Use the cards above. 401/403 on 🔒 actions means you need to log in via the Auth Playground first.</pre>
+    </div>
+
+  </div>
+
+  <script>
+    const BASE_URL = window.location.origin;
+
+    function setConsole(status, statusType, data) {
+      const badge = document.getElementById('consoleStatus');
+      badge.textContent = status;
+      badge.className = 'console-status status-' + statusType;
+      document.getElementById('output').textContent = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+    }
+
+    async function callApi(label, path, options) {
+      setConsole(label + '…', 'idle', { action: label + ' ' + path });
+      try {
+        const res = await fetch(BASE_URL + path, { credentials: 'include', ...(options || {}) });
+        const text = await res.text();
+        let data;
+        try { data = JSON.parse(text); } catch { data = text; }
+        if (res.ok) setConsole(label + ' — ' + res.status + ' OK', 'success', data);
+        else setConsole(label + ' — ERROR ' + res.status, 'error', data);
+      } catch (err) {
+        setConsole('NETWORK ERROR', 'error', { error: err.message });
+      }
+    }
+
+    document.getElementById('btnList').addEventListener('click', () => {
+      const search = document.getElementById('listSearch').value.trim();
+      const limit = document.getElementById('listLimit').value;
+      let path = '/v1/faculty?page=1&limit=' + limit;
+      if (search) path += '&search=' + encodeURIComponent(search);
+      callApi('GET', path);
+    });
+
+    document.getElementById('btnDetail').addEventListener('click', () => {
+      const slug = document.getElementById('detailSlug').value.trim();
+      if (!slug) { alert('Enter a slug first (e.g. from the list response)'); return; }
+      callApi('GET', '/v1/faculty/' + encodeURIComponent(slug));
+    });
+
+    document.getElementById('btnEdit').addEventListener('click', () => {
+      const id = document.getElementById('editId').value.trim();
+      if (!id) { alert('Enter a profile ID'); return; }
+      const body = {};
+      const desig = document.getElementById('editDesignation').value.trim();
+      const bio = document.getElementById('editBio').value.trim();
+      if (desig) body.designation = desig;
+      if (bio) body.bio = bio;
+      if (!Object.keys(body).length) { alert('Enter at least a designation or bio to update'); return; }
+      callApi('PATCH', '/v1/faculty/' + id, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+    });
+
+    document.getElementById('btnChild').addEventListener('click', () => {
+      const id = document.getElementById('childId').value.trim();
+      const resource = document.getElementById('childResource').value;
+      const title = document.getElementById('childTitle').value.trim();
+      if (!id || !title) { alert('Enter a profile ID and a title'); return; }
+      const body = resource === 'supervisions' ? { student_name: title } : { title };
+      callApi('POST', '/v1/faculty/' + id + '/' + resource, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+    });
+
+    document.getElementById('btnDelChild').addEventListener('click', () => {
+      const id = document.getElementById('childId').value.trim();
+      const resource = document.getElementById('childResource').value;
+      const childId = document.getElementById('delChildId').value.trim();
+      if (!id || !childId) { alert('Enter profile ID and child item ID'); return; }
+      callApi('DELETE', '/v1/faculty/' + id + '/' + resource + '/' + childId, { method: 'DELETE' });
+    });
+  </script>
+</body>
+</html>
