@@ -76,7 +76,7 @@ const importantContacts = [
     phone: "02114-224501"
   },
   {
-    name: "Mr. Rajendra Daiya",
+    name: "----",
     designation: "Registrar PA",
     department: "Administration",
     email: "patoreg@iiitp.ac.in",
@@ -84,7 +84,7 @@ const importantContacts = [
   },
   {
     name: "Dr. Sanjeev Sharma",
-    designation: "Associate Dean (Academics) / Chief Vigilance Officer (CVO)",
+    designation: "Head of Department (CSE), Associate Dean (Academics) / Chief Vigilance Officer (CVO)",
     department: "Administration",
     email: "sanjeevsharma@iiitp.ac.in",
     phone: "02114-224504"
@@ -98,7 +98,7 @@ const importantContacts = [
   },
   {
     name: "Dr. Bhupendra Singh",
-    designation: "HoD (CSE), Admission (JoSAA/CSAB), Associate Dean (Infrastructure, Admin & Finance)",
+    designation: "Admission (JoSAA/CSAB), Associate Dean (Infrastructure, Admin & Finance), Faculty In-Charge (T&P, Internships & Alumni Relations)",
     department: "Administration",
     email: "bhupendra@iiitp.ac.in",
     phone: "02114-224505"
@@ -119,11 +119,11 @@ const importantContacts = [
   },
   // Hostels
   {
-    name: "Dr. Shubam Shukla",
+    name: "Dr. Mahendra Pratap Yadav",
     designation: "Chief Warden",
     department: "Hostels & Wardens",
-    email: "shubhamshukla@iiitp.ac.in",
-    phone: "+91 9532523961"
+    email: "mahendra@iiitp.ac.in",
+    phone: "+91-9125933765"
   },
   {
     name: "Dr. Dheeraj Dubey",
@@ -134,17 +134,17 @@ const importantContacts = [
   },
   {
     name: "Dr. Mahesh Joshi",
-    designation: "Co-ordinator (PG/ Ph.D.), Boys' Hostel 2 Warden",
+    designation: "Boys' Hostel 2 Warden",
     department: "Hostels & Wardens",
     email: "mahesh.joshi@iiitp.ac.in",
     phone: "+91 8886844737"
   },
   {
-    name: "Dr. Habila Basumatary",
-    designation: "Warden (Girls)",
+    name: "Dr. Sanga Chaki",
+    designation: "Indrayani Warden",
     department: "Hostels & Wardens",
-    email: "habila@iiitp.ac.in",
-    phone: "+91 8133911040"
+    email: "sanga.chaki@iiitp.ac.in",
+    phone: "+91--"
   },
   {
     name: "Mr. Laxman Shinde",
@@ -161,14 +161,14 @@ const importantContacts = [
     phone: "02114-224511"
   },
   {
-    name: "Boy's Hostel 1 Office",
+    name: "Bramhaputra Hostel Office",
     designation: "Boys' Hostel 1 Desk",
     department: "Hostels & Wardens",
     email: "",
     phone: "02114-224512"
   },
   {
-    name: "Boy's Hostel 2 Office",
+    name: "Krishna Hostel Office",
     designation: "Boys' Hostel 2 Desk",
     department: "Hostels & Wardens",
     email: "",
@@ -181,13 +181,6 @@ const importantContacts = [
     department: "Placements",
     email: "placements@iiitp.ac.in",
     phone: "02114-224508, +91 9326479440"
-  },
-  {
-    name: "Dr. Kaptan Singh",
-    designation: "Faculty I/C Training & Placement",
-    department: "Placements",
-    email: "kaptansingh@iiitp.ac.in",
-    phone: "+91 9826524212"
   },
   // Purchase/Procurement
   {

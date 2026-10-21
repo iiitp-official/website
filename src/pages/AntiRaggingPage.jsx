@@ -4,7 +4,7 @@ import PageHeader from '../components/shared/PageHeader';
 const AntiRaggingPage = () => {
   const committeeData = [
     { sno: 1, name: "Dr. Nagendra Kushwaha", designation: "Chairperson", contact: "+91-9881457120", email: "nagendra@iiitp.ac.in" },
-    { sno: 2, name: "Bhramputra Warden", designation: "Member", contact: "+91-8840677530", email: "warden_bhramputra@iiitp.ac.in" },
+    { sno: 2, name: "Bramhaputra Warden", designation: "Member", contact: "+91-8840677530", email: "warden_brahmaputra@iiitp.ac.in" },
     { sno: 3, name: "Krishna Warden", designation: "Member", contact: "+91-8886844737", email: "warden_krishna@iiitp.ac.in" },
     { sno: 4, name: "Indrani Warden", designation: "Member", contact: "+91---", email: "warden_indrani@iiitp.ac.in" },
     { sno: 5, name: "Dr. Shivangi Shukla", designation: "Member", contact: "+91-9451180932", email: "shivangi@iiitp.ac.in" }
