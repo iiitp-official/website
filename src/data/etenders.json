@@ -1,6 +1,15 @@
 {
   "live": [
     {
+      "title": "Expression of Interest - Development of Sports Ground",
+      "tenderNumber": "IIITP/Works/EOI/2026/2841",
+      "fileUrl": "/assets/etenders/EoI - Sports Ground.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "27-10-2026 ; 17:00"
+    },
+    {
       "title": "GeM bid for Manpower Services - Non Consulting",
       "tenderNumber": "GEM/2026/B/8089169",
       "fileUrl": "/assets/etenders/GeM bid for Manpower Services - Non Consulting.pdf",
@@ -19,15 +28,6 @@
       "submissionDate": "04-11-2026 ; 15:00"
     },
     {
-      "title": "GeM bid for the Purchase of 120 High End Computers",
-      "tenderNumber": "GEM/2026/B/8115423",
-      "fileUrl": "/assets/etenders/GeM bid for 120 Desktop Computers.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "22-10-2026 ; 14:00"
-    },
-    {
       "title": "Digital Forensic Workstation (Q2)",
       "tenderNumber": "GEM/2026/B/8097677",
       "fileUrl": "/assets/etenders/GeM bid for Digital Forensic Workstation.pdf",
@@ -35,33 +35,6 @@
       "corrigendumUrl": "",
       "corrigendumText": "",
       "submissionDate": "19-10-2026 ; 16:00"
-    },
-    {
-      "title": "Tender for Development of Sports Ground",
-      "tenderNumber": "2026_IIITP_927847_1",
-      "fileUrl": "/assets/etenders/Tender for Development of Sports Ground.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "03-10-2026 ; 17:00"
-    },
-    {
-      "title": "RFQ FOR SUPPLY AND INSTALLATION OF 22 KV METERING CUBICAL CT REPLACEMENT AND LOAD REDUCTION WORK - Through CPPP",
-      "tenderNumber": "2026_IIITP_926560_1",
-      "fileUrl": "/assets/etenders/RFQ FOR SUPPLY AND INSTALLATION OF 22 KV METERING CUBICAL CT REPLACEMENT AND LOADREDUCTION WORK.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "24-09-2026 ; 17:00"
-    },
-    {
-      "title": "GeM bid for the Purchase of Network Switch & Other Accessories",
-      "tenderNumber": "GEM/2026/B/8045059",
-      "fileUrl": "/assets/etenders/GeM bid for the Purchase of Network Switch & Other Accessories.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "08-10-2026 ; 11:00"
     },
     {
       "title": "GeM bid for the Purchase of Multi Function Printer",
@@ -91,15 +64,6 @@
       "submissionDate": "14-09-2026; 15:00"
     },
     {
-      "title": "Operation and Maintenance of Effluent/Sewage Treatment Plant (STP)",
-      "tenderNumber": "GEM/2026/B/7994155",
-      "fileUrl": "/assets/etenders/GeM bid for O&M of 200 KLD STP.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "",
-      "corrigendumText": "",
-      "submissionDate": "17-09-2026 ; 17:00"
-    },
-    {
       "title": "A3 Size Multifunction Printer (MFP) (Q2)",
       "tenderNumber": "GEM/2026/B/7993211",
       "fileUrl": "/assets/etenders/GEM bid for A3 Size Multifunction Printer (MFP).pdf",
@@ -118,15 +82,6 @@
       "submissionDate": "01-10-2026 ; 14:00"
     },
     {
-      "title": "GeM Bid for Hiring of CAG Empaneled/Experienced CA Services",
-      "tenderNumber": "GEM/2026/B/7930005",
-      "fileUrl": "/assets/etenders/GeM bid for CA Services.pdf",
-      "fileText": "Document",
-      "corrigendumUrl": "/assets/etenders/Cori_CA.pdf",
-      "corrigendumText": "Document",
-      "submissionDate": "09-09-2026; 13:00"
-    },
-    {
       "title": "GeM Bid for Steel Almirah / Cabinets (Library Racks)",
       "tenderNumber": "GEM/2026/B/7922478",
       "fileUrl": "/assets/etenders/GeM bid for the Library Racks.pdf",
@@ -137,6 +92,60 @@
     }
   ],
   "archive": [
+    {
+      "title": "GeM bid for the Purchase of 120 High End Computers",
+      "tenderNumber": "GEM/2026/B/8115423",
+      "fileUrl": "/assets/etenders/GeM bid for 120 Desktop Computers.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "22-10-2026 ; 14:00"
+    },
+    {
+      "title": "RFQ FOR SUPPLY AND INSTALLATION OF 22 KV METERING CUBICAL CT REPLACEMENT AND LOAD REDUCTION WORK - Through CPPP",
+      "tenderNumber": "2026_IIITP_926560_1",
+      "fileUrl": "/assets/etenders/RFQ FOR SUPPLY AND INSTALLATION OF 22 KV METERING CUBICAL CT REPLACEMENT AND LOADREDUCTION WORK.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "24-09-2026 ; 17:00"
+    },
+    {
+      "title": "Tender for Development of Sports Ground",
+      "tenderNumber": "2026_IIITP_927847_1",
+      "fileUrl": "/assets/etenders/Tender for Development of Sports Ground.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "03-10-2026 ; 17:00"
+    },
+    {
+      "title": "GeM bid for the Purchase of Network Switch & Other Accessories",
+      "tenderNumber": "GEM/2026/B/8045059",
+      "fileUrl": "/assets/etenders/GeM bid for the Purchase of Network Switch & Other Accessories.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "08-10-2026 ; 11:00"
+    },
+    {
+      "title": "Operation and Maintenance of Effluent/Sewage Treatment Plant (STP)",
+      "tenderNumber": "GEM/2026/B/7994155",
+      "fileUrl": "/assets/etenders/GeM bid for O&M of 200 KLD STP.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "",
+      "corrigendumText": "",
+      "submissionDate": "17-09-2026 ; 17:00"
+    },
+    {
+      "title": "GeM Bid for Hiring of CAG Empaneled/Experienced CA Services",
+      "tenderNumber": "GEM/2026/B/7930005",
+      "fileUrl": "/assets/etenders/GeM bid for CA Services.pdf",
+      "fileText": "Document",
+      "corrigendumUrl": "/assets/etenders/Cori_CA.pdf",
+      "corrigendumText": "Document",
+      "submissionDate": "09-09-2026; 13:00"
+    },
     {
       "title": "Gem bid for Printing Of Degree Certificate",
       "tenderNumber": "GEM/2026/B/7826380",

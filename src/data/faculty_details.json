@@ -1,6 +1,6 @@
 {
   "bhupendra-singh": {
-    "designation": "Assistant Professor\nHead of Department(CSE)\nAssociate Dean (Infrastructure, Administration & Finance)",
+    "designation": "Assistant Professor\nAssociate Dean (Infrastructure, Administration & Finance)\nFaculty In-Charge, T&P, Internships and Alumini Relations",
     "image": "/assets/faculty_photos/bhupendrasingh.jpg",
     "bio": "Dr. Bhupendra Singh is serving as an Assistant Professor in the Department of Computer Science & Engineering, IIIT Pune. He is also heading the CSE department. He is a Computer Hacking Forensic Certificate (CHFIv12) certified professional. His area of interest includes digital forensics, Windows forensics, database forensics, and Cyber Security Technologies. His research contribution involves the development of custom tools for various Operating Systems and metadata forensics in the field of digital forensics for crime investigation.\n\nHe has published several research articles in peer-reviewed journals and book chapters. He serves on the Technical Program Committee member of many international conferences on Digital Forensics and Cyber Security. He has taught Cyber Security and Digital Forensics, Python programming, and Cloud Computing to undergraduate students. Singh holds a Ph.D. in Computer Science & Engineering from Defence Institute of Advanced Technology (DIAT) Pune and M.Tech. from Central University of Rajasthan in Computer Science and Engineering. Dr. Singh has successfully guided one Ph.D. student and has recently secured a research grant of INR 4.2 crore from the Cyber Security Division, MeitY, for a project entitled \"Next Generation Data Carving and Preservation Techniques for Storage Drive Forensics\", in collaboration with NIT Raipur.",
     "education": "Ph.D. (CSE), M.Tech. (CSE), B.E. (CSE)",
@@ -74,7 +74,7 @@
     "department": "CSE"
   },
   "sanjeev-sharma": {
-    "designation": "Assistant Professor\nAssociate Dean (Academics and Student Welfare)",
+    "designation": "Assistant Professor\nHead of Department(CSE)\nAssociate Dean (Academics)",
     "image": "/assets/faculty_photos/sanjeevsharma.jpg",
     "bio": "Dr. Sanjeev Sharma is an Assistant Professor (Level 12) at the Indian Institute of Information Technology, Pune (IIIT Pune). He holds a Ph.D. in Information Technology from ABV-IIITM Gwalior, specializing in multi-robot path planning and nature-inspired algorithms. His research interests include Artificial Intelligence, Deep Learning, Robotics, and Generative AI.With over 15 years of academic and research experience, Dr. Sharma has taught courses such as Operating Systems, Database Management Systems, and Deep Learning. He has published over 60 research papers in reputed SCI/SCIE-indexed journals and international conferences in domains such as medical imaging, agriculture, and autonomous systems. He also serves as a reviewer for prestigious journals including Swarm Intelligence (Springer) and the IEEE Sensors Journal.In addition to teaching and research, Dr. Sharma has contributed significantly to academic administration in multiple roles, including Associate Dean, Senate Member, Assistant Registrar (Academics), and Examination Superintendent. He is also a Senate-nominated member of the Board of Governors at IIIT Pune.\\n\\nRESEARCH EXPERIENCE: Senior Project Associate, Nov. 2014 - Aug. 2016 Center for Robotics and Artificial Intelligence, Indian Institute of Information Technology and Management Gwalior, M. P., 474015, India.",
     "education": "Ph.D. (CS/IT), M.Tech (CSE)",
@@ -534,7 +534,7 @@
     "department": "ECE"
   },
   "sushant-kumar": {
-    "designation": "Assistant Professor\nAssociate Dean (R&D and Faculty Welfare)",
+    "designation": "Assistant Professor\nAssociate Dean (R&D and Faculty Welfare)\nCoordinator PG/ Ph.D.",
     "image": "/assets/faculty_photos/sushantkumar.jpg",
     "bio": "Dr. Sushant Kumar is an Assistant Professor in the Department of Electronics and Communication Engineering, Indian Institute of Information Technology (IIIT) Pune. He has completed his Ph.D. and M.Tech from Indian Institute of Technology (IIT) Patna, India, in 2020 and 2015, respectively. His research interest is signal processing for wireless communication, synchronization parameters estimation, modulation classification, MIMO, OFDM, MIMO-OFDM, SC-FDMA, Massive MIMO.",
     "education": "Ph.D., M.Tech",
@@ -710,7 +710,7 @@
     "department": "ECE"
   },
   "anagha-uday-khiste": {
-    "designation": "Assistant Professor\nLibrary / Digital Library In-Charge",
+    "designation": "Assistant Professor",
     "image": "/assets/faculty_photos/anaghakhiste.jpeg",
     "bio": "Dr. Anagha Khiste is currently working as an assistant professor at Indian Institute of Information and Technology, Pune, she is an academician and researcher with expertise in Mathematics and its applications to engineering and sciences. She is actively involved in teaching, research, student mentoring and academic administration. Her research interests include Discrete Mathematics, Lattice Theory, Graph theory, Algebra, Combinatorics, Optimization Techniques. She has published research articles in reputed journals and regularly contributes to curriculum development, project supervision and scholarly activities. She qualified the CSIR-NET with an All India Rank of 102. She is a recipient of the “Padmashree Late N. S. Venkatesan Gold Medal” for Best Ph.D. Thesis (2014-15) from Savitribai Phule Pune University (SPPU), Pune. She has also been awarded the Junior Research Fellowship (2011-2013) and the Eklavya Scholarship during her postgraduate studies.",
     "education": "Ph.D. (Lattice Theory), M.Sc., B.Sc.",
@@ -876,7 +876,7 @@
     "department": "ASH"
   },
   "mahendra-pratap-yadav": {
-    "designation": "Assistant Professor",
+    "designation": "Assistant Professor\nChief Warden",
     "image": "/assets/faculty_photos/mahendrayadav.jpg",
     "bio": "Dr. Mahendra Pratap Yadav is working as an Assistant Professor in Department of Computer Science and Engineering at Indian Institute of Information Technology (IIIT) Pune. He has completed his Doctorate program (Ph. D) in computer science and engineering as well as his post-graduation program (M. Tech.) with specialization in Information Security from Motilal Nehru National Institute of Technology Allahabad. He has completed his graduation (B. Tech.) in Information Technology form Uttar Pradesh Technical University Lucknow Uttar Pradesh. He has served in different academic and administrative roles in various academic institutions. He has published several research articles in reputed journals as well as presented various research papers in reputed conferences. He is active reviewers of different reputed journals. His areas of specialization include Cloud Computing, Machine Learning, AI, Data Mining, Software Engineering and Formal Methods.",
     "education": "Ph.D. (Cloud Computing), M.Tech. (Information Security), B.Tech. (IT)",
@@ -1005,7 +1005,7 @@
     "department": "CSE"
   },
   "shrikant-salve": {
-    "designation": "Assistant Professor\nSports In-Charge",
+    "designation": "Assistant Professor",
     "image": "/assets/faculty_photos/shrikantsalve.png",
     "bio": "Dr. Shrikant Salve is an Assistant Professor in Department of Computer Science and Engineering at Indian Institute of Information Technology Pune, India, specializing in Human-Computer Interaction (HCI), User-Centred AI, Augmented Reality. He earned his Ph.D. in HCI from Indian Institute of Technology Guwahati, where his research focused on reducing data-entry errors in rural Indian contexts. With over 15 years of academic and research experience, he has taught courses including HCI, Deep Learning, Machine Learning and Java Programming. His research bridges human-centered design and emerging AI technologies, particularly for education, accessibility, and rural development. Dr. Salve has authored numerous journal articles, book chapters, and international conference publications in HCI and AI-related domains. He currently serves as Vice Chair of IFIP Working Group 13.1, contributing to global HCI education initiatives. He is also a reviewer for leading journals, including The Lancet Southeast Asia and Behaviour & Information Technology. Dr. Salve has secured funding from organizations such as ACM SIGCHI and the Ministry of Electronics and Information Technology for AI and HCI initiatives. He actively mentors Ph.D. scholars working in AI, cybersecurity, education, and agriculture. His work is driven by a commitment to designing inclusive, usable, and socially impactful digital technologies.",
     "education": "PhD (HCI), M.E. (CSE), B.E. (IT)",
@@ -1476,7 +1476,7 @@
     "department": "CSE"
   },
   "dheeraj-dubey": {
-    "designation": "Assistant Professor\nBrahmaputra Boy's Hostel Warden",
+    "designation": "Assistant Professor\nBrahmaputra Hostel Warden",
     "image": "/assets/faculty_photos/dheerajdubey.jpg",
     "bio": "Dr. Dheeraj Dubey earned his doctorate from Motilal Nehru National Institute of Technology (MNNIT) Allahabad, where he developed a passion for cutting-edge communication technologies. He went on to serve at NIT Raipur, where he spent two academic years shaping young minds in the Electronics and Communication Engineering (ECE) and Information Technology (IT) departments. Before stepping into his current role as Assistant Professor at IIIT Pune, Dheeraj was a Research Scientist at IIT Bombay, contributing to a groundbreaking MEITY-funded project focused on \"Next Generation Wireless Research and Standardization on 5G and Beyond\" His work during this time pushed the boundaries of wireless communication. With a keen interest in 5G communication and beyond, Dheeraj's research spans machine learning optimization and the performance enhancement of satellite and terrestrial communication systems through Free Space Optics (FSO). His efforts have consistently aimed at unlocking the future of connectivity, merging innovation with practical solutions that shape the evolution of modern communication networks.",
     "education": "Ph.D., M.Tech. (ECE), B.Tech. (ECE)",
@@ -1585,7 +1585,7 @@
     "department": "ECE"
   },
   "sumit-kumar-gupta": {
-    "designation": "Assistant Professor\nAssistant Registrar (Academics)\nGodavari Boy's Hostel Warden",
+    "designation": "Assistant Professor\nAssistant Registrar (Academics)\nGodavari Hostel Warden",
     "image": "/assets/faculty_photos/sumitgupta.jpeg",
     "bio": "Dr. Sumit Kumar Gupta is an Assistant Professor in the Department of Computer Science & Engineering at Indian Institute of Information Technology Pune, where he also serves as Assistant Registrar (Academics). He holds a Ph.D. in Computer Science & Engineering from Maulana Azad National Institute of Technology Bhopal. With over a decade of academic and research experience, Dr. Gupta has made significant contributions to the fields of Graph Mining, Community Detection, Machine Learning Security, and Deep Learning. He has authored several high-impact research publications in reputed SCIE journals, Scopus-indexed journals, and leading international conferences. He is also the author of a book on Data Structures and holds a granted Australian patent in the domain of IoT-based intelligent traffic systems. In addition, he has two Indian patents currently under review for grant, further reflecting his ongoing innovation and research contributions. Dr. Gupta has an outstanding academic track record, having qualified the GATE examination 14 times and UGC-NET examination twice, reflecting his strong foundational knowledge and consistency in academic excellence. A Senior Member of IEEE, he actively contributes to the research community as a reviewer, session chair, and jury member at various prestigious IEEE and international conferences. He has chaired technical sessions at leading conferences and continues to support scholarly activities through peer review and mentorship. He has played a key role in establishing the IEEE Student Branch at IIIT Pune and currently serves as the Branch Counselor, guiding students toward innovation, research excellence, and professional development. Dr. Gupta is deeply committed to teaching and mentorship, currently supervising multiple Ph.D., postgraduate, and undergraduate students working on advanced research problems.",
     "education": "Ph.D. (CSE), M.Tech. (CSE)",
@@ -1770,7 +1770,7 @@
     "department": "CSE"
   },
   "kaptan-singh": {
-    "designation": "Assistant Professor\nFaculty In-Charge, T&P\nFaculty In-Charge, Website Management\nAlumini Affairs",
+    "designation": "Assistant Professor\nFaculty In-Charge, Library / Digital Library",
     "image": "/assets/faculty_photos/kaptansingh.jpg",
     "bio": "Dr. Kaptan Singh is currently working as an Assistant Professor in the Department of Computer Science & Engineering at the Indian Institute of Information Technology, Pune, Maharashtra. He holds a Ph.D. in Computer Science & Engineering from the Maulana Azad National Institute of Technology, Bhopal (NIT Bhopal), which he earned in 2022. Dr. Singh completed his M.E. in Computer Science & Engineering at the Truba Institute of Engineering and Information Technology, Bhopal, in 2012, and his B.E. at the University Institute of Technology, Barkatullah University, Bhopal, in 2005.Dr. Kaptan's areas of specialization include the Web of Things, Cyber Security, Algorithms, and Theoretical Computer Science. Dr. Singh has made significant contributions to the academic community through his publications in prestigious international conferences, international journals, and national conferences.Dr. Kaptan's has over 14 years of academic experience, having served as an Assistant Professor at various institutes. Dr. Singh has published more than 20 Scopus-indexed research papers in reputable journals and conferences, as well as more than 30 research papers in peer-reviewed and UGC-approved journals. Additionally, he has served as a reviewer for numerous reputed international journals and conferences.",
     "education": "Ph.D. (CSE)",
@@ -2149,7 +2149,7 @@
     "department": "CSE"
   },
   "shubham-shukla": {
-    "designation": "Assistant Professor\nChief Warden",
+    "designation": "Assistant Professor",
     "image": "/assets/faculty_photos/shubhamshukla.jpg",
     "bio": "Dr. Shubham Shukla is an accomplished academic and researcher with a strong foundation in engineering and technology. He completed his B.Tech from Uttar Pradesh Technical University and furthered his studies with an M.Tech and PhD from the Department of Electronics at the Central University of Allahabad. With over 8 years of experience, Dr. Shukla has made significant contributions to the fields of Robotics, Artificial Intelligence, Embedded Systems, and Cyber-Physical Systems.\n\nHe has held positions at various engineering institutions and has been invited to deliver guest lectures on Robotics at prestigious institutions such as NIT Srinagar, Delhi Technological University, IIIT Pune, and Christ University. He has published research paper in world reputed journals Nature, as well as conference proceedings and national patents.\n\nDr. Shubham has important collaborations, signing MoUs with companies and institutions like NOKIA and MNNIT Allahabad. He has played a pivotal role in establishing Bio Medical Labs and Centres of Robotics at his previous institutions. His commitment to advancing the field is further demonstrated by his organization of various national and international conferences, Faculty Development Programs (FDPs), and workshops on Robotics.\n\nGoogle Scholar: https://scholar.google.com/citations?user=lY3WsHEAAAAJ&hl=en&oi=ao",
     "education": "PhD in Electronics and Communication Engineering Department of Electronics and Communication Engineering Central University of Allahabad, M.Tech in Communication Technology",
@@ -2171,7 +2171,7 @@
     "department": "ECE"
   },
   "dipen-bepari": {
-    "designation": "Assistant Professor",
+    "designation": "Assistant Professor\nSports In-Charge",
     "image": "/assets/faculty_photos/dipenbepari.png",
     "bio": "Dr. Dipen Bepari is currently working as an Assistant Professor in the Department of Electronics and Communication Engineering at the Indian Institute of Information Technology, Pune, Maharashtra. He received his B.Tech degree in Electronics and Communication Engineering from Jalpaiguri Government Engineering College, West Bengal, and his M.Tech from the National Institute of Technology, Durgapur, in 2008 and 2010, respectively. He earned his Ph.D. in Wireless Communication from the Department of Electronics Engineering, IIT (ISM), Dhanbad, in 2017.\n\nDr. Bepari's areas of expertise include Cognitive Radio, Non-Orthogonal Multiple Access (NOMA), Intelligent Reflective Surfaces (IRS), Energy Harvesting, and 5G and beyond communications. He has made significant contributions to the academic and research communities, publishing in prestigious SCI journals such as IEEE Communications Surveys & Tutorials and international conferences. Dr. Bepari has collaborated with globally recognized researchers and served as a reviewer for esteemed journals, including the IEEE Internet of Things Journal, IEEE Transactions on Vehicular Technology, and IEEE Communications Letters.",
     "education": "PhD, ME",
@@ -2443,7 +2443,7 @@
     "department": "CSE"
   },
   "km-divya-chaturvedi": {
-    "designation": "Assistant Professor\nSindhu Girl's Hostel Warden",
+    "designation": "Assistant Professor\nSindhu Hostel Warden",
     "image": "/assets/faculty_photos/kmchaturvedi.jpg",
     "bio": "Dr. Divya is currently working as an Assistant Professor in the Department of Electronics and Communication Engineering at the Indian Institute of Information Technology, Pune, Maharashtra. She received her B. Tech degree in Electronics and Communication Engineering from Uttar Pradesh Technical University, Lucknow, and her M. Tech from Pondicherry Central University, in 2011 and 2015, respectively. She earned her Ph.D. degree in RF/Microwave Engineering and from the Department of Electronics and Communication Engineering, NIT Trichy in 2019. Dr. Divya's areas of expertise include Substrate Integrated Waveguide (SIW) based Cavity-backed Multi-band Antennas with Intrinsically Isolated Ports, Antenna-Array Sensors for breast Cancer Detection, Smart Antenna Design with IoT enabled devices, Beamforming Antenna array for 5G applications, Fluid based antenna for 6G communication. She has been cited in top 2% scientist declared by Stanford University, 2023 and 2024, and 2025. She has received multiple projects as Principal Investigator from various reputed agencies like SERB, CSIR, ISRO, and DOT. She has received young scientist award from DST to present her work in international conferences APMC 2018 at Japan, EuCAP 2019 at Poland, and PIERS 2023 at Czech Republic. She has published more than 35 IEEE/SCI indexed journal papers including various national and international conferences.  She has received Best Researcher award in the Experimental category from SRM University-AP with Emoluments of 50K. She has also made significant contributions to the academic and research communities, publishing in prestigious IEEE transactions /Letters, and other SCI journals. Dr. Divya has served as TPC member for different conferences such as MAPCON, APMC, also invited to present her work in “Women in Engineering” at MAPCON 2023, Bangalore. Currently, she is an active and senior member of IEEE and WiE.",
     "education": "PhD, M.Tech",
@@ -2701,7 +2701,7 @@
     "department": "ECE"
   },
   "sanga-chaki": {
-    "designation": "Assistant Professor",
+    "designation": "Assistant Professor\nIndrayani Hostel Warden",
     "image": "/assets/faculty_photos/sangachaki.jpg",
     "bio": "Dr. Sanga Chaki is currently working as an Assistant Professor in the Department of Computer Science and Engineering at Indian Institute of Information Technology (IIIT), Pune, Maharashtra. Prior to that she has worked as an Assistant Professor in the department of Computer Science and Engineering, ITER, Siksha O Anusandhan, Bhubaneswar. She received her Ph.D. degree from the Indian Institute of Technology, Kharagpur in 2023. Dr. Chaki completed her M.E. and B.E. in Information Technology (IT) from Bengal Engineering and Science University Shibpur (IIEST), and West Bengal University of Technology in 2012 and 2010 respectively.\n\nDr. Sanga's areas of interest include Explainable Machine Learning, Deep Learning, Affective Computing, Sound and Music Computing, and Trustworthy AI.\n\nGoogle Scholar: https://scholar.google.co.in/citations?user=OzF5WawAAAAJ&hl=en/a>\nScopus: https://www.scopus.com/authid/detail.uri?authorId=55321929600",
     "education": "Ph.D., M.Tech. (IT), B.Tech. (IT)",
@@ -3010,7 +3010,7 @@
     "department": "CSE"
   },
   "mahesh-joshi": {
-    "designation": "Assistant Professor\nCoordinator PG/ Ph.D.\nKrishna Boys' Hostel Warden",
+    "designation": "Assistant Professor\nKrishna Hostel Warden",
     "image": "/assets/faculty_photos/maheshjoshi.jpg",
     "bio": "Dr. Mahesh Joshi is currently working as an Assistant Professor in the department of Computer Science and Engineering at the Indian Institute of Information Technology (IIIT), Pune, Maharashtra. Prior to that he has worked as an Assistant Professor in the department of Computer Science and Engineering at Dr Vishwanath Karad MIT World Peace University Pune, Vignan’s Foundation for Science Technology and Research University Guntur, and St. Vincent Pallotti College of Engg. and Tech. (Autonomous) Nagpur. He has received Ph.D. degree from Indian Institute of Technology (IIT), Indore. He has completed M.Tech (CSE) and B.E. (IT) from Visveswaraya National Institute of Technology (VNIT) Nagpur, Maharashtra and Sant Gadge Baba Amravati University, Amravati, Maharashtra, respectively. Dr. Mahesh's area of specialization includes biometric security, partial fingerprint identification, Internet-of-Things (IoT) security. His research papers are published in reputed international journals, books, and conference. He serves as a reviewer for renowned international journals and international conferences.",
     "education": "Ph.D. (CSE), B.E. (IT)",
@@ -3444,7 +3444,7 @@
     "department": "CSE"
   },
   "sohini-gayen": {
-    "designation": "Adjunct Assistant Professor",
+    "designation": "Adjunct Assistant Professor\nIndrayani Hostel Associate Warden",
     "image": "/assets/faculty_photos/sohinigayen.jpg",
     "bio": "Dr. Sohini Gayen is an Adjunct Assistant Professor in the Department of Applied Science and Humanities at IIIT Pune. She holds a Ph.D. from the Indian Institute of Technology Gandhinagar, Gujarat. At IIT Gandhinagar, she was working as a UGC Senior Research Fellow. Her research interests include Comparative Literature, Bakhtin Studies and Short-stories of rural India. Her work has been published in reputed peer-reviewed journals, including Short Fiction in Theory & Practice, Asian Literature and Translation (ALT), and The IACLALS Journal: Indian Association for Commonwealth Literature and Language Studies. Dr. Gayen has also presented her doctoral research at several national and international conferences.",
     "education": "Ph.D., M.A. (English Literature), B.A. (English)",
@@ -3681,7 +3681,7 @@
     "department": "CSE"
   },
   "rahul-kaushik": {
-  "designation": "Assistant Professor(T)",
+  "designation": "Assistant Professor(T)\nKrishna Boys' Hostel Associate Warden",
   "image": "/assets/faculty_photos/rahulkaushik.jpeg",
   "bio": "Dr. Rahul Kaushik is an Assistant Professor(T) of Mathematics in the Department of Applied Sciences and Humanities (ASH) at IIIT Pune. He obtained his Ph.D. in Mathematics from the Harish-Chandra Research Institute (HRI), Prayagraj, under the supervision of Prof. Manoj K. Yadav. Prior to joining IIIT Pune, he served as an NBHM Postdoctoral Fellow and Institute Postdoctoral Fellow at IISER Pune, followed by a Postdoctoral Fellowship at NISER Bhubaneswar. His research interests include finite p-groups, the Matrix Waring Problem, Lie algebras, word maps, and group theory. His research has been published in reputed journals such as the Journal of Algebra, Journal of Algebra and Its Applications, and Linear Algebra and Its Applications. He has presented his work at several national and international conferences and has received the NBHM Postdoctoral Fellowship, the Harish-Chandra Memorial Award, and secured AIR 14 in the CSIR-JRF/NET examination.",
   "education": "Ph.D. (Mathematics)",
@@ -3856,7 +3856,7 @@
   },
 
   "sonu-bose": {
-    "designation": "Assistant Professor(T)",
+    "designation": "Assistant Professor(T)\nBrahmaputra Hostel Associate Warden",
     "image": "/assets/faculty_photos/sonubose.jpeg",
     "bio": "Dr. Sonu Bose is an Assistant Professor(T) in the Department of Applied Sciences and Humanities at the Indian Institute of Information Technology (IIIT) Pune. He received his Ph.D. in Applied Mathematics from the Indian Institute of Space Science and Technology (IIST), Thiruvananthapuram. His research interests include numerical analysis, scientific computing, systems of singularly perturbed differential equations, higher-dimensional time-delay partial differential equations, adaptive mesh methods, finite difference and finite element methods, numerical approximation of diffusive fluxes, and computational fluid dynamics. His research has been published in reputed international peer-reviewed journals and conference proceedings.",
     "education": "Ph.D. (Applied Mathematics)",
