@@ -222,13 +222,15 @@ export const FacultyPage: React.FC = () => {
       setSaving(true);
       setFormError(null);
       const payload = { ...form, name: String(form.name).trim() };
-      const res = await apiRequest<{ faculty: FacultyDetail }>(`/v1/faculty/${detail.id}`, {
-        method: 'PATCH',
+      const isNew = detail.id === 0;
+      const res = await apiRequest<{ faculty: FacultyDetail }>(isNew ? '/v1/faculty' : `/v1/faculty/${detail.id}`, {
+        method: isNew ? 'POST' : 'PATCH',
         body: JSON.stringify(payload),
       });
       setDetail(res.faculty);
-      setSavedNote('Profile saved.');
-      fetchList(pagination.page);
+      setSavedNote(isNew ? 'Profile created.' : 'Profile saved.');
+      fetchList(1);
+      window.alert(isNew ? 'Faculty profile created successfully.' : 'Faculty profile saved successfully.');
     } catch (err: unknown) {
       setFormError(err instanceof Error ? err.message : 'Failed to save profile');
     } finally {
@@ -302,6 +304,12 @@ export const FacultyPage: React.FC = () => {
   const canEditRow = (row: FacultyRow) =>
     user?.role === 'admin' || user?.email?.toLowerCase() === row.email?.toLowerCase();
 
+  const openCreate = () => {
+    setForm({ ...EMPTY_PROFILE, email: '' });
+    setDetail({ id: 0, slug: '', name: '', email: '', publications: [], projects: [], patents: [], seminars: [], supervisions: [] });
+    setFormError(null); setSavedNote(''); setActiveTab('profile');
+  };
+
   return (
     <div className="page">
       <div className="page-header">
@@ -309,9 +317,10 @@ export const FacultyPage: React.FC = () => {
           <h1>Faculty Profiles</h1>
           <p>Browse profiles — click Edit for the full popup editor (details, links, publications, projects, patents, talks, supervisions).</p>
         </div>
-        <button type="button" className="secondary-button" onClick={() => fetchList(1)} disabled={loading}>
-          <RefreshCw size={16} /> Refresh
-        </button>
+        <div style={{ display: 'flex', gap: 8 }}>
+          {user?.role === 'admin' && <button type="button" className="primary-button" onClick={openCreate}><Plus size={16} /> Add Faculty</button>}
+          <button type="button" className="secondary-button" onClick={() => fetchList(1)} disabled={loading}><RefreshCw size={16} /> Refresh</button>
+        </div>
       </div>
 
       <div className="filter-card">
@@ -439,6 +448,10 @@ export const FacultyPage: React.FC = () => {
                     <label className="form-label">Full Name <span className="required-star">*</span></label>
                     <input type="text" className="form-input" required value={form.name} onChange={(e) => set('name', e.target.value)} />
                   </div>
+                  <div className="form-group full-width">
+                    <label className="form-label">Institute Email <span className="required-star">*</span></label>
+                    <input type="email" className="form-input" required value={detail.id === 0 ? (form.email || '') : detail.email} readOnly={detail.id !== 0} onChange={(e) => set('email', e.target.value)} placeholder="name@iiitp.ac.in or name@cse.iiitp.ac.in" />
+                  </div>
                   <div className="form-group">
                     <label className="form-label">Designation</label>
                     <input type="text" className="form-input" value={form.designation} onChange={(e) => set('designation', e.target.value)} placeholder="e.g. Assistant Professor" />
@@ -484,10 +497,15 @@ export const FacultyPage: React.FC = () => {
                     <label className="form-label">Scopus URL</label>
                     <input type="url" className="form-input" value={form.scopus_url} onChange={(e) => set('scopus_url', e.target.value)} />
                   </div>
-                  <div className="form-group">
-                    <label className="form-label">Resume URL</label>
-                    <input type="url" className="form-input" value={form.resume_url} onChange={(e) => set('resume_url', e.target.value)} />
-                  </div>
+                  <FileUploadInput
+                    value={form.resume_url || ''}
+                    onChange={(v) => set('resume_url', v)}
+                    context="faculty-resume"
+                    label="Resume (URL or Upload)"
+                    placeholder="/uploads/resume.pdf or https://..."
+                    helperText="Upload a PDF (max 20MB), or paste an existing resume URL."
+                    accept=".pdf,application/pdf"
+                  />
                   <FileUploadInput
                     value={form.photo_url || ''}
                     onChange={(v) => set('photo_url', v)}

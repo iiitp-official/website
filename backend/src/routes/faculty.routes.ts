@@ -1,9 +1,9 @@
 import { Router } from 'express';
 import { authenticateJWT, optionalAuthenticateJWT } from '../middlewares/auth';
 import { requireRole } from '../middlewares/role';
-import { listFaculty, getFaculty, updateFaculty, updateFacultyChild, deleteFacultyChild } from '../controllers/faculty.controller';
+import { listFaculty, getFaculty, createFaculty, updateFaculty, updateFacultyChild, deleteFacultyChild } from '../controllers/faculty.controller';
 const router = Router();
-router.get('/', optionalAuthenticateJWT, listFaculty); router.get('/:slug', optionalAuthenticateJWT, getFaculty);
+router.get('/', optionalAuthenticateJWT, listFaculty); router.post('/', authenticateJWT, requireRole(['admin']), createFaculty); router.get('/:slug', optionalAuthenticateJWT, getFaculty);
 router.patch('/:id', authenticateJWT, requireRole(['admin', 'faculty']), updateFaculty);
 router.post('/:id/:resource', authenticateJWT, requireRole(['admin', 'faculty']), updateFacultyChild);
 router.patch('/:id/:resource/:childId', authenticateJWT, requireRole(['admin', 'faculty']), updateFacultyChild);

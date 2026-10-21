@@ -14,6 +14,12 @@ import { OAuth2Client, TokenPayload } from 'google-auth-library';
 import { UserRole } from '@prisma/client';
 import { env } from '../config/env';
 
+export function isAllowedInstituteEmail(email: string, allowedDomain = env.ALLOWED_DOMAIN): boolean {
+  const domain = email.trim().toLowerCase().split('@').pop() || '';
+  const root = allowedDomain.trim().toLowerCase().replace(/^@/, '');
+  return domain === root || domain.endsWith(`.${root}`);
+}
+
 // ── Types ───────────────────────────────────────────────────────────────────
 
 export interface AccessTokenPayload extends JwtPayload {
@@ -142,9 +148,8 @@ export async function verifyGoogleToken(
 
   // Domain enforcement
   const emailDomain = payload.email.split('@')[1];
-  if (env.ALLOWED_DOMAIN && emailDomain !== env.ALLOWED_DOMAIN) {
-    // If ALLOWED_DOMAIN is set (e.g. iiitp.ac.in), strictly enforce it
-    throw new Error(`Unauthorized domain: @${emailDomain}. Only @${env.ALLOWED_DOMAIN} accounts are permitted.`);
+  if (env.ALLOWED_DOMAIN && !isAllowedInstituteEmail(payload.email)) {
+    throw new Error(`Unauthorized domain: @${emailDomain}. Only @${env.ALLOWED_DOMAIN} and its subdomains are permitted.`);
   }
 
   return {

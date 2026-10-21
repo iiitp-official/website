@@ -23,6 +23,7 @@ import { invalidateUserAuthCache } from "../middlewares/auth";
 import { invalidateEditorSectionCache } from "../middlewares/role";
 import { createAuditLog } from "../middlewares/audit";
 import { logger } from "../utils/logger";
+import { isAllowedInstituteEmail } from "../utils/auth";
 
 // ── 1. GET /v1/admin/users ───────────────────────────────────────────────────
 
@@ -255,9 +256,9 @@ export async function createInvite(req: Request, res: Response): Promise<void> {
 
     // Domain validation
     const emailDomain = cleanEmail.split("@")[1];
-    if (env.ALLOWED_DOMAIN && emailDomain !== env.ALLOWED_DOMAIN) {
+    if (env.ALLOWED_DOMAIN && !isAllowedInstituteEmail(cleanEmail)) {
       res.status(400).json({
-        error: `Invalid domain: @${emailDomain}. Only @${env.ALLOWED_DOMAIN} addresses can be invited.`,
+        error: `Invalid domain: @${emailDomain}. Only @${env.ALLOWED_DOMAIN} and its subdomains can be invited.`,
       });
       return;
     }

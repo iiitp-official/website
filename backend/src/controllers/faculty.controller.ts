@@ -1,6 +1,8 @@
 import { Request, Response } from "express";
 import { Prisma } from "@prisma/client";
 import prisma from "../config/prisma";
+import { createAuditLog } from "../middlewares/audit";
+import { isAllowedInstituteEmail } from "../utils/auth";
 
 const models = {
   publications: "facultyPublication",
@@ -100,13 +102,28 @@ export async function updateFaculty(req: Request, res: Response) {
   const data: Record<string, unknown> = {};
   for (const key of allowed)
     if (req.body[key] !== undefined) data[key] = req.body[key];
-  res.json({
-    faculty: await prisma.facultyProfile.update({
+  const before = await prisma.facultyProfile.findUnique({ where: { id }, include });
+  const faculty = await prisma.facultyProfile.update({
       where: { id },
       data,
       include,
-    }),
-  });
+    });
+  await createAuditLog({ req, action: "UPDATE", resource: "faculty_profile", resourceId: id, oldValue: before, newValue: faculty });
+  res.json({ faculty });
+}
+
+export async function createFaculty(req: Request, res: Response) {
+  const { email, name, slug, ...rest } = req.body || {};
+  if (typeof email !== "string" || typeof name !== "string" || !email.trim() || !name.trim()) return void res.status(400).json({ error: "Name and email are required." });
+  const cleanEmail = email.trim().toLowerCase();
+  if (!isAllowedInstituteEmail(cleanEmail)) return void res.status(400).json({ error: "Faculty email must use @iiitp.ac.in or an institute subdomain." });
+  const generatedSlug = String(slug || name).trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  try {
+    const linkedUser = await prisma.user.findUnique({ where: { email: cleanEmail }, select: { id: true } });
+    const faculty = await prisma.facultyProfile.create({ data: { email: cleanEmail, name: name.trim(), slug: generatedSlug, user_id: linkedUser?.id, ...rest }, include });
+    await createAuditLog({ req, action: "CREATE", resource: "faculty_profile", resourceId: faculty.id, newValue: faculty });
+    res.status(201).json({ faculty });
+  } catch (err: any) { if (err?.code === "P2002") return void res.status(409).json({ error: "A faculty profile with this email or slug already exists." }); throw err; }
 }
 export async function updateFacultyChild(req: Request, res: Response) {
   const model = models[req.params.resource as keyof typeof models];
