@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router';
+import { Navigate, useSearchParams } from 'react-router';
 import { Image } from 'lucide-react';
 import LifePageLayout from '../components/life/LifePageLayout';
 import lifePageData from '../data/lifePageData.json';
@@ -15,6 +15,10 @@ const LifeActivitiesPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  if (activeActKey === 'nss') {
+    return <Navigate to="/life/nss" replace />;
+  }
 
   return (
     <LifePageLayout 
