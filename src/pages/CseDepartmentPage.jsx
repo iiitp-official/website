@@ -40,7 +40,7 @@ const CseDepartmentPage = () => {
   }, []);
 
   // HOD Profile URL & details helper
-  const originalHod = cseFaculty.find(f => f.slug === "bhupendra-singh");
+  const originalHod = cseFaculty.find(f => f.slug === "sanjeev-sharma") || {};
 
 const hodProfile = {
   ...originalHod,

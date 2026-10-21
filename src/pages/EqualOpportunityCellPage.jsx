@@ -11,11 +11,11 @@ const EqualOpportunityCellPage = () => {
   const eocData = [
     {
       sno: 1,
-      name: "Dr. Mahesh Joshi",
-      slug: "mahesh-joshi",
+      name: "Dr. Shrikant Salve",
+      slug: "shrikant-salve",
       position: "FiC/Coordinator",
-      email: "mahesh.joshi@iiitp.ac.in",
-      contact: "8886844737"
+      email: "srikant.salve@iiitp.ac.in",
+      contact: "+91-9422008318"
     }
   ];
 

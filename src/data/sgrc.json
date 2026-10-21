@@ -1,55 +1,51 @@
 [
   {
     "sr": 1,
-    "name": "Dr. Sanjeev Sharma",
-    "designation": "Chairperson",
-    "email": "sanjeevsharma@iiitp.ac.in",
-    "slug": "sanjeev-sharma"
-  },
-  {
-    "sr": 2,
     "name": "Dr. Bhupendra Singh",
-    "designation": "Member",
+    "designation": "Chairperson",
     "email": "bhupendra@iiitp.ac.in",
     "slug": "bhupendra-singh"
   },
   {
-    "sr": 3,
-    "name": "Dr. Nagendra Kushwaha",
+    "sr": 2,
+    "name": "HoD CSE",
     "designation": "Member",
-    "email": "nagendra@iiitp.ac.in",
+    "email": "hodcse@iiitp.ac.in",
+    "slug": "sanjeev-sharma"
+  },
+  {
+    "sr": 3,
+    "name": "HoD ECE",
+    "designation": "Member",
+    "email": "hodece@iiitp.ac.in",
     "slug": "nagendra-kushwaha"
   },
   {
     "sr": 4,
-    "name": "Dr. Chandrakant Narayan Guled",
+    "name": "CoE",
     "designation": "Member",
-    "email": "chandrakantguled@iiitp.ac.in",
+    "email": "coe@iiitp.ac.in",
     "slug": "chandrakant-narayan-guled"
   },
   {
     "sr": 5,
-    "name": "Dr. Habila Basumatary",
+    "name": "Indrani Warden",
     "designation": "Member",
-    "email": "habila@iiitp.ac.in"
+    "email": "warden_indrani@iiitp.ac.in",
+    "slug": "sanga-chaki"
   },
   {
     "sr": 6,
-    "name": "Dr. Sumit Kumar Gupta",
+    "name": "Shindu Warden",
     "designation": "Member",
-    "email": "sumitgupta@iiitp.ac.in",
-    "slug": "sumit-kumar-gupta"
+    "email": "warden_shindu@iiitp.ac.in",
+    "slug": "km-divya-chaturvedi"
   },
   {
     "sr": 7,
-    "name": "Grandhi Lakshmikanth (112416027)",
-    "designation": "Special Invitee",
-    "email": "112416027@ece.iiitp.ac.in"
-  },
-  {
-    "sr": 8,
-    "name": "Jadhav Sampada Baban (112415086)",
-    "designation": "Special Invitee",
-    "email": "112415086@cse.iiitp.ac.in"
+    "name": "Assistant Registrar (Academics)",
+    "designation": "Member Secretary ",
+    "email": "ar@iiitp.ac.in",
+    "slug": "sumit-kumar-gupta"
   }
 ]
