@@ -1,4 +1,19 @@
 [
+  {
+    "date": "18th October 2026",
+    "title": "IIIT Pune Students Develop Game-Changing Voice-Guided App for the Visually Impaired!",
+    "desc": "Students from the Indian Institute of Information Technology (IIIT) Pune have developed a revolutionary voice-guided app designed to assist the visually impaired in navigating their surroundings more effectively. This innovative solution leverages advanced speech recognition and spatial awareness technologies to provide real-time guidance and enhance the independence of users.",
+    "articles": [
+      {
+        "publisher": "Navarashtra Times",
+        "link": "/press/Navarashtra_studentapp.jpeg"
+      },
+      {
+        "publisher": "Dainik Bhaskar",
+        "link": "/press/dainik bhaskar_studentapp.jpeg"
+      }
+    ]
+  },
   {  
     "date": "16th October 2026",
     "title": "Interview of Dr. Divya Chaturvedi with the Editor of Navarashtra Times, Pune",
