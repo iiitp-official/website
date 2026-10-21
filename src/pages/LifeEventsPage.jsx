@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Image } from 'lucide-react';
+import { Link } from 'react-router';
 import LifePageLayout from '../components/life/LifePageLayout';
 import lifePageData from '../data/lifePageData.json';
 
-const { EVENTS } = lifePageData;
+const { ACTIVITIES, EVENTS } = lifePageData;
 
 const LifeEventsPage = ({ hackathonsOnly = false, nssOnly = false }) => {
   const [selectedGallery, setSelectedGallery] = useState(null);
@@ -78,26 +79,60 @@ const LifeEventsPage = ({ hackathonsOnly = false, nssOnly = false }) => {
       setImageGallery={setSelectedGallery}
       onGalleryIndexChange={changeGalleryImage}
     >
-      <div className="space-y-5 sm:space-y-8">
-        <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 sm:p-6 shadow-sm">
-          <h3 className="text-lg sm:text-xl font-bold font-serif text-gray-800 dark:text-white mb-2">
-            {hackathonsOnly
-              ? "College Hackathons"
-              : nssOnly
-                ? "NSS Events"
-                : "Flagship College Events"}
-          </h3>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            {hackathonsOnly
-              ? "Explore hackathons hosted at IIIT Pune, including event details, highlights, and photos."
-              : nssOnly
-                ? "Explore community service, cleanliness, and outreach initiatives at IIIT Pune."
-                : "Discover the major annual festivals and technical conclaves that bring the campus to life."}
-          </p>
-        </div>
+      <div className="flex flex-col lg:flex-row gap-8">
+        {nssOnly && (
+          <div className="w-full lg:w-64 shrink-0">
+            <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 shadow-sm lg:sticky lg:top-44 self-start w-full space-y-4">
+              <h3 className="text-gray-800 dark:text-white font-bold font-serif px-2 pb-2 border-b border-gray-100 dark:border-gray-800 text-base">
+                National Initiatives
+              </h3>
+              <div className="flex flex-row overflow-x-auto gap-2 no-scrollbar lg:flex-col lg:max-h-[60vh] lg:overflow-y-auto lg:pr-1 pb-2 lg:pb-0">
+                {ACTIVITIES.map((item) => {
+                  const isSelected = item.id === 'nss';
+                  const path = isSelected
+                    ? '/life/nss'
+                    : `/life/activities?act=${item.id}`;
+                  return (
+                    <Link
+                      key={item.id}
+                      to={path}
+                      aria-current={isSelected ? 'page' : undefined}
+                      className={`shrink-0 lg:shrink lg:w-full flex items-center gap-2 px-4 py-2 lg:px-3.5 lg:py-3 rounded-full lg:rounded-xl text-left transition-all border ${
+                        isSelected
+                          ? 'bg-primary text-white border-primary shadow-sm'
+                          : 'text-gray-700 dark:text-gray-300 bg-transparent border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-855 hover:border-gray-200 dark:hover:border-gray-700'
+                      }`}
+                    >
+                      <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isSelected ? 'bg-white' : 'bg-primary'}`} />
+                      <span className="font-bold text-xs lg:text-sm truncate">{item.name}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        )}
 
-        <div className="space-y-5 sm:space-y-8">
-          {displayedEvents.map((evt, idx) => (
+        <div className="flex-1 space-y-5 sm:space-y-8">
+          <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 sm:p-6 shadow-sm">
+              <h3 className="text-lg sm:text-xl font-bold font-serif text-gray-800 dark:text-white mb-2">
+                {hackathonsOnly
+                  ? "College Hackathons"
+                  : nssOnly
+                    ? "NSS Events"
+                    : "Flagship College Events"}
+              </h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {hackathonsOnly
+                  ? "Explore hackathons hosted at IIIT Pune, including event details, highlights, and photos."
+                  : nssOnly
+                    ? "Explore community service, cleanliness, and outreach initiatives at IIIT Pune."
+                    : "Discover the major annual festivals and technical conclaves that bring the campus to life."}
+              </p>
+          </div>
+
+          <div className="space-y-5 sm:space-y-8">
+            {displayedEvents.map((evt, idx) => (
             <div key={idx} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className={`h-1.5 ${evt.typeColor.split(' ')[0]}`} />
               <div className="p-4 sm:p-6 md:p-8">
@@ -224,14 +259,15 @@ const LifeEventsPage = ({ hackathonsOnly = false, nssOnly = false }) => {
                             </div>
                           </div>
                         </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
                 )}
               </div>
             </div>
           ))}
         </div>
+      </div>
       </div>
     </LifePageLayout>
   );

@@ -451,10 +451,6 @@ const Navbar = () => {
             { name: "Unity Day", path: "/life/activities?act=unity" },
             { name: "Yoga Day", path: "/life/activities?act=yoga" },
             { name: "Youth Day", path: "/life/activities?act=youth" },
-            {
-              name: "AI Talent Hackathon",
-              path: "/life/activities?act=ai-talent",
-            },
             { name: "NSS", path: "/life/nss" },
           ],
         },

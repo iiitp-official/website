@@ -931,19 +931,19 @@
       ]
     },
     {
-      "id": "ai-talent",
-      "name": "AI Talent Hackathon (Thinking Machine)",
+      "id": "nss",
+      "name": "NSS (National Service Scheme)",
       "paragraphs": [
-        "IIIT Pune successfully hosted the national-level “Thinking Machine” Hackathon from 10–13 February 2026. The technical extravaganza witnessed an overwhelming response with more than 330 registrations from colleges across India. After rigorous evaluation rounds, 8 finalist teams advanced to present their innovative AI-driven solutions during the grand finale.",
-        "The event was inaugurated by Dr. Sushant Kumar, Associate Dean (R&D), with valuable guidance extended by Dr. Sanjeev Sharma and Dr. Bhupendra Singh. Dr. Priyank Jain coordinated the hackathon, and the jury panel comprised internal faculty members Dr. Priyank Jain, Dr. Shrikant Salve, Dr. Sonam Maurya, alongside external industry veteran Mr. Manoj Mishra from Zensar Technologies.",
-        "After highly competitive rounds, Team Bit Misfit from VIT secured 1st Place. Cypherforce from MMCOE, Mumbai and Dev Sters from IIIT Pune were jointly awarded 2nd Place, while Team Weights of Sin from DJSCE, Mumbai secured 3rd Place out of the prize pool of over ₹20,000."
+        "The National Service Scheme (NSS) at IIIT Pune encourages students to contribute to society through community service, social awareness, and environmental responsibility.",
+        "Institute initiatives include cleanliness drives, outreach and awareness campaigns, and activities that promote health and civic responsibility. Students, faculty, and staff work together to build a cleaner, healthier, and more inclusive community.",
+        "Recent initiatives have included the Swachhata Hi Seva campaign, interaction with SafaiMitras to promote dignity and safer waste management, and the Nasha Mukt Yuva campaign, featuring a marathon, walkathon, and signature campaign."
       ],
       "images": [
-        "/assets/lifepage/1_0.jpg",
-        "/assets/lifepage/2.jpg",
-        "/assets/lifepage/3.jpg",
-        "/assets/lifepage/4.jpg",
-        "/assets/lifepage/5_0.jpg"
+        "/assets/lifepage/nasha_mukt_1.jpg",
+        "/assets/lifepage/nasha_mukt_2.JPG",
+        "/assets/lifepage/nasha_mukt_3.JPG",
+        "/assets/lifepage/safaimitra_1.jpg",
+        "/assets/lifepage/safaimitra_2.jpg"
       ]
     }
   ],
