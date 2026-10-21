@@ -5,7 +5,7 @@ import lifePageData from '../data/lifePageData.json';
 
 const { EVENTS } = lifePageData;
 
-const LifeEventsPage = () => {
+const LifeEventsPage = ({ hackathonsOnly = false, nssOnly = false }) => {
   const [selectedGallery, setSelectedGallery] = useState(null);
   const [scrollingGallery, setScrollingGallery] = useState(null);
   const [expandedEvents, setExpandedEvents] = useState(() => new Set());
@@ -60,10 +60,19 @@ const LifeEventsPage = () => {
   const changeGalleryImage = (index) => {
     setSelectedGallery((current) => current ? { ...current, index } : current);
   };
+  const displayedEvents = hackathonsOnly
+    ? EVENTS.filter((event) => /hackathon/i.test(`${event.name} ${event.type}`))
+    : nssOnly
+      ? EVENTS.filter((event) =>
+          /safaimitra|swachhata hi seva|nasha mukt yuva|world environment day/i.test(
+            `${event.name} ${event.type} ${event.desc}`,
+          ),
+        )
+      : EVENTS;
 
   return (
     <LifePageLayout 
-      title="Student Life" 
+      title={hackathonsOnly ? "Hackathons" : nssOnly ? "NSS Activities" : "Student Life"}
       breadcrumb="Life"
       imageGallery={selectedGallery}
       setImageGallery={setSelectedGallery}
@@ -71,12 +80,24 @@ const LifeEventsPage = () => {
     >
       <div className="space-y-5 sm:space-y-8">
         <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl p-4 sm:p-6 shadow-sm">
-          <h3 className="text-lg sm:text-xl font-bold font-serif text-gray-800 dark:text-white mb-2">Flagship College Events</h3>
-          <p className="text-sm text-gray-500 dark:text-gray-400">Discover the major annual festivals and technical conclaves that bring the campus to life.</p>
+          <h3 className="text-lg sm:text-xl font-bold font-serif text-gray-800 dark:text-white mb-2">
+            {hackathonsOnly
+              ? "College Hackathons"
+              : nssOnly
+                ? "NSS Events"
+                : "Flagship College Events"}
+          </h3>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            {hackathonsOnly
+              ? "Explore hackathons hosted at IIIT Pune, including event details, highlights, and photos."
+              : nssOnly
+                ? "Explore community service, cleanliness, and outreach initiatives at IIIT Pune."
+                : "Discover the major annual festivals and technical conclaves that bring the campus to life."}
+          </p>
         </div>
 
         <div className="space-y-5 sm:space-y-8">
-          {EVENTS.map((evt, idx) => (
+          {displayedEvents.map((evt, idx) => (
             <div key={idx} className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className={`h-1.5 ${evt.typeColor.split(' ')[0]}`} />
               <div className="p-4 sm:p-6 md:p-8">
@@ -217,3 +238,6 @@ const LifeEventsPage = () => {
 };
 
 export default LifeEventsPage;
+
+export const LifeHackathonsPage = () => <LifeEventsPage hackathonsOnly />;
+export const LifeNssPage = () => <LifeEventsPage nssOnly />;

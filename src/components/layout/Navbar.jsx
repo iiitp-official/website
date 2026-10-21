@@ -399,15 +399,7 @@ const Navbar = () => {
         { name: "MoUs", path: "/research/MoUs" },
         { name: "Patents", path: "/research/patents" },
         { name: "Publications", path: "/research/publications" },
-        // {
-        //   name: "Research Scholar",
-        //   hasDropdown: true,
-        //   subLinks: [
-        //     { name: "Institute Scheme", path: "/research/scholar/institute" },
-        //     { name: "Visvesvaraya Scheme", path: "/research/scholar/visvesvaraya" },
-        //     { name: "Graduated PhD Students", path: "/research/scholar/graduated" }
-        //   ]
-        // },
+        { name: "PhD", path: "/research/phd" },
         // { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
       ],
     },
@@ -424,21 +416,6 @@ const Navbar = () => {
           subLinks: [
             { name: "Regular", path: "/people/non-teaching-staff/regular" },
             { name: "Contract", path: "/people/non-teaching-staff/contract" },
-          ],
-        },
-        {
-          name: "Research Scholar",
-          hasDropdown: true,
-          subLinks: [
-            { name: "Institute Scheme", path: "/research/scholar/institute" },
-            {
-              name: "Visvesvaraya Scheme",
-              path: "/research/scholar/visvesvaraya",
-            },
-            {
-              name: "Graduated PhD Students",
-              path: "/research/scholar/graduated",
-            },
           ],
         },
         { name: "PostDoc Fellow", path: "/research/postdoc-fellow" },
@@ -478,10 +455,12 @@ const Navbar = () => {
               name: "AI Talent Hackathon",
               path: "/life/activities?act=ai-talent",
             },
+            { name: "NSS", path: "/life/nss" },
           ],
         },
         { name: "Photo Gallery", path: "/life/gallery" },
         { name: "College Events", path: "/life/events" },
+        { name: "Hackathon", path: "/life/hackathons" },
         {
           name: "HR Summit",
           path: "#",

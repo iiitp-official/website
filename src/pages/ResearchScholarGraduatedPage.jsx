@@ -1,5 +1,6 @@
 import React from 'react';
 import PageHeader from '../components/shared/PageHeader';
+import PhdResearchTabs from '../components/shared/PhdResearchTabs';
 
 const ResearchScholarGraduatedPage = () => {
   const data = [
@@ -43,7 +44,9 @@ const ResearchScholarGraduatedPage = () => {
 
   return (
     <div className="min-h-screen transition-colors duration-200">
-      <PageHeader title="Graduated PhD Students" />
+      <PageHeader title="Graduated PhD Students">
+        <PhdResearchTabs />
+      </PageHeader>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white dark:bg-surface-dark rounded-xl shadow-md border border-gray-100 dark:border-gray-800 overflow-hidden">
           <div className="overflow-x-auto">
