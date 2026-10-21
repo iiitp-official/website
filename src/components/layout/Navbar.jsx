@@ -614,7 +614,61 @@ const Navbar = () => {
 
           {/* Right Controls */}
           <div className="flex flex-col items-end gap-1 md:gap-1.5">
-            {/* Top Row: Dark mode + Language + Text Size + Mobile menu */}
+            {/* Top Row: Quick Links (Desktop only) */}
+            <div className="hidden md:flex items-center gap-1">
+              <Link
+                to="/life/events"
+                className="text-[15px] text-blue-200 hover:text-white transition-colors px-1.5 py-0.5"
+              >
+                College Events
+              </Link>
+              <span className="text-blue-700 dark:text-gray-600 text-[10px]">|</span>
+              <div className="relative group/media">
+                <button
+                  className="text-[15px] text-blue-200 hover:text-white transition-colors px-1.5 py-0.5 flex items-center gap-0.5"
+                >
+                  Media Center
+                  <ChevronDown className="w-3 h-3 opacity-70 transition-transform group-hover/media:rotate-180" />
+                </button>
+                <div className="absolute top-full left-0 mt-1 w-40 bg-white dark:bg-surface-dark rounded-md shadow-lg border border-gray-100 dark:border-gray-800 opacity-0 invisible group-hover/media:opacity-100 group-hover/media:visible transition-all duration-200 z-50">
+                  <Link
+                    to="/life/magazine"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors rounded-t-md"
+                  >
+                    Magazine
+                  </Link>
+                  <Link
+                    to="/life/newsletter"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors"
+                  >
+                    Newsletter
+                  </Link>
+                  <Link
+                    to="/life/press"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors rounded-b-md"
+                  >
+                    Press
+                  </Link>
+                </div>
+              </div>
+              <span className="text-blue-700 dark:text-gray-600 text-[10px]">|</span>
+              <Link
+                to="/international"
+                className="text-[15px] text-blue-200 hover:text-white transition-colors px-1.5 py-0.5"
+              >
+                International Relations
+              </Link>
+              <span className="text-blue-700 dark:text-gray-600 text-[10px]">|</span>
+              <a
+                href="https://iiitp.webpointsolutions.in/StudentPortal/index.html#!/Login"
+                target="_blank" rel="noopener noreferrer"
+                className="text-[15px] text-blue-200 hover:text-white transition-colors px-1.5 py-0.5"
+              >
+                Student Portal
+              </a>
+            </div>
+
+            {/* Bottom Row: Dark mode + Social Icons + Language + Text Size + Search + Mobile menu */}
             <div className="flex items-center gap-2 md:gap-3">
               {/* Dark Mode */}
               <button
@@ -720,38 +774,11 @@ const Navbar = () => {
                 </button>
               </div>
 
-              {/* Mobile Menu Button */}
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200"
-                aria-label="Toggle menu"
-              >
-                {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-6 h-6" />}
-              </button>
-            </div>
-
-            {/* Bottom Row: Social Icons + Search (Desktop only) */}
-            <div className="hidden md:flex items-center gap-1.5">
-              <Link
-                to="/international"
-                className="bg-brand-red hover:bg-red-700 text-white px-3 py-1.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide mr-2"
-              >
-                International Relations
-              </Link>
-              <a
-                href="https://iiitp.webpointsolutions.in/StudentPortal/index.html#!/Login"
-                target="_blank" rel="noopener noreferrer"
-
-                className="bg-brand-red hover:bg-red-700 text-white px-3 py-1.5 rounded-md text-xs font-bold shadow-md transition-all duration-200 uppercase tracking-wide mr-2"
-              >
-                Student Portal
-              </a>
-
-              {/* Search */}
-              <div className="relative flex items-center">
+              {/* Search (moved next to A- A A+) */}
+              <div className="hidden md:block relative">
                 <button
                   onClick={() => setShowSearch(!showSearch)}
-                  className="flex items-center justify-center p-2 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
+                  className="flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
                   aria-label="Search"
                   title="Search"
                 >
@@ -801,6 +828,15 @@ const Navbar = () => {
                   )}
                 </AnimatePresence>
               </div>
+
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="md:hidden flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200"
+                aria-label="Toggle menu"
+              >
+                {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-6 h-6" />}
+              </button>
             </div>
           </div>
         </div>
