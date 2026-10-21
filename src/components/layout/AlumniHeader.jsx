@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router';
-import { Sun, Moon, Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const FacebookIcon = ({ size }) => (
@@ -49,41 +49,14 @@ const YoutubeIcon = ({ size }) => (
 );
 
 const AlumniHeader = () => {
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('darkMode') === 'true';
-    }
-    return false;
-  });
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileDropdowns, setMobileDropdowns] = useState({});
   const location = useLocation();
 
   useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('darkMode', 'true');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('darkMode', 'false');
-    }
-  }, [isDark]);
-
-  useEffect(() => {
     setIsMobileMenuOpen(false);
     setMobileDropdowns({});
   }, [location.pathname]);
-
-  const toggleDarkMode = () => setIsDark(!isDark);
-
-  const handleTextSize = (action) => {
-    const root = document.documentElement;
-    const current = parseFloat(getComputedStyle(root).fontSize);
-    if (action === 'increase') root.style.fontSize = Math.min(current + 1, 20) + 'px';
-    else if (action === 'decrease') root.style.fontSize = Math.max(current - 1, 14) + 'px';
-    else root.style.fontSize = '16px';
-  };
 
   const navLinks = [
     { name: 'About Us', path: '/alumni/about' },
@@ -155,49 +128,12 @@ const AlumniHeader = () => {
 
           <div className="flex flex-col items-end gap-1 md:gap-1.5">
             <div className="flex items-center gap-2 md:gap-3">
-              <button
-                onClick={toggleDarkMode}
-                className="flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
-                aria-label="Toggle dark mode"
-                title={isDark ? 'Light Mode' : 'Dark Mode'}
-              >
-                {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              </button>
-
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
-
               <div className="hidden md:flex items-center gap-2">
                 <a href="https://www.facebook.com/share/14dmnHML9Tm/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"><FacebookIcon size={18} /></a>
                 <a href="https://x.com/IIIT_Pune" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"><TwitterIcon size={18} /></a>
                 <a href="https://www.linkedin.com/school/iiitpune/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"><LinkedinIcon size={18} /></a>
                 <a href="https://www.instagram.com/iiit_pune_official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"><InstagramIcon size={18} /></a>
                 <a href="https://youtube.com/@iiitpune25" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="opacity-80 hover:opacity-100 transition-opacity p-1.5 text-white"><YoutubeIcon size={18} /></a>
-              </div>
-
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
-
-              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                <button
-                  onClick={() => handleTextSize('decrease')}
-                  className="px-1.5 py-0.5 rounded text-xs font-light text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Decrease Text Size"
-                >
-                  A-
-                </button>
-                <button
-                  onClick={() => handleTextSize('reset')}
-                  className="px-1.5 py-0.5 rounded text-xs font-medium text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Default Text Size"
-                >
-                  A
-                </button>
-                <button
-                  onClick={() => handleTextSize('increase')}
-                  className="px-1.5 py-0.5 rounded text-sm font-bold text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Increase Text Size"
-                >
-                  A+
-                </button>
               </div>
 
               <button

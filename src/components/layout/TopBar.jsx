@@ -14,18 +14,6 @@ const TopBar = () => {
             <a href="#" aria-label="Twitter" className="hover:text-accent dark:hover:text-accent-dark transition-colors"><TwitterIcon size={16} /></a>
             <a href="#" aria-label="LinkedIn" className="hover:text-accent dark:hover:text-accent-dark transition-colors"><LinkedinIcon size={16} /></a>
           </div>
-          <div className="h-3 w-px bg-gray-300 dark:bg-gray-700"></div>
-          <div className="flex items-center space-x-2">
-            <button className="hover:text-accent dark:hover:text-accent-dark transition-colors font-medium">EN</button>
-            <span className="text-gray-400 dark:text-gray-600">|</span>
-            <button className="hover:text-accent dark:hover:text-accent-dark transition-colors font-medium">हिं</button>
-          </div>
-          <div className="h-3 w-px bg-gray-300 dark:bg-gray-700"></div>
-          <div className="flex items-center space-x-2">
-            <button className="hover:text-accent dark:hover:text-accent-dark transition-colors font-medium">A-</button>
-            <button className="hover:text-accent dark:hover:text-accent-dark transition-colors font-medium">A</button>
-            <button className="hover:text-accent dark:hover:text-accent-dark transition-colors font-medium">A+</button>
-          </div>
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ import Footer from "./components/layout/Footer";
 import LoadingFallback from "./components/shared/LoadingFallback";
 
 import GlobalLoader from "./components/common/GlobalLoader";
+import AccessibilityWidget from "./components/common/AccessibilityWidget";
 
 // International sub-layout components
 import InternationalHeader from "./components/layout/InternationalHeader";
@@ -528,6 +529,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <GlobalLoader />
+      <AccessibilityWidget />
       <AppContent />
     </Router>
   );

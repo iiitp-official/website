@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link, useLocation, useNavigate } from "react-router";
-import { Search, Sun, Moon, Menu, X, ChevronDown } from "lucide-react";
+import { Search, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import noticesData from "../../data/notices.json";
 
@@ -50,13 +50,6 @@ const YoutubeIcon = ({ size }) => (
   </svg>
 );
 const Navbar = () => {
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("darkMode") === "true";
-    }
-    return false;
-  });
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -99,17 +92,6 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("darkMode", "true");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("darkMode", "false");
-    }
-  }, [isDark]);
-
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setOpenDropdowns({});
@@ -118,57 +100,12 @@ const Navbar = () => {
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
-  const toggleDarkMode = () => setIsDark(!isDark);
-
   const toggleDropdown = (name, e) => {
     e.preventDefault();
     setOpenDropdowns((prev) => ({
       ...prev,
       [name]: !prev[name],
     }));
-  };
-
-  // Text size control
-  const handleTextSize = (action) => {
-    const root = document.documentElement;
-    const current = parseFloat(getComputedStyle(root).fontSize);
-    if (action === "increase") root.style.fontSize = Math.min(current + 1, 20) + "px";
-    else if (action === "decrease") root.style.fontSize = Math.max(current - 1, 14) + "px";
-    else root.style.fontSize = "16px";
-  };
-
-  useEffect(() => {
-    // Reset to English by default for new sessions (if they haven't explicitly set language this session)
-    if (!sessionStorage.getItem('langSet') && document.cookie.includes('googtrans')) {
-      changeLanguage('en');
-    }
-  }, []);
-
-  // Language control
-  const changeLanguage = (lang) => {
-    const host = window.location.hostname;
-    const currentPath = window.location.pathname;
-    const pathsToClear = ['/', currentPath];
-
-    if (lang === 'en') {
-      pathsToClear.forEach(p => {
-        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=${p};`;
-        if (host !== 'localhost' && host !== '127.0.0.1') {
-          document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${host}; path=${p};`;
-          document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.${host}; path=${p};`;
-        }
-      });
-      sessionStorage.removeItem('langSet');
-    } else {
-      document.cookie = `googtrans=/en/${lang}; path=/`;
-      if (host !== 'localhost' && host !== '127.0.0.1') {
-        document.cookie = `googtrans=/en/${lang}; domain=${host}; path=/`;
-        document.cookie = `googtrans=/en/${lang}; domain=.${host}; path=/`;
-      }
-      sessionStorage.setItem('langSet', 'true');
-    }
-
-    window.location.reload();
   };
 
   const primaryLinks = [
@@ -614,20 +551,8 @@ const Navbar = () => {
 
           {/* Right Controls */}
           <div className="flex flex-col items-end gap-1 md:gap-1.5">
-            {/* Top Row: Dark mode + Language + Text Size + Mobile menu */}
+            {/* Top Row: Social Icons + Mobile menu */}
             <div className="flex items-center gap-2 md:gap-3">
-              {/* Dark Mode */}
-              <button
-                onClick={toggleDarkMode}
-                className="flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
-                aria-label="Toggle dark mode"
-                title={isDark ? "Light Mode" : "Dark Mode"}
-              >
-                {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              </button>
-
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
-
               {/* Social Icons */}
               <div className="hidden md:flex items-center gap-2">
                 <a
@@ -670,54 +595,6 @@ const Navbar = () => {
                 >
                   <YoutubeIcon size={18} />
                 </a>
-              </div>
-
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
-
-              {/* Language Selector */}
-              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5 notranslate">
-                <button
-                  onClick={() => changeLanguage('en')}
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
-                  title="English"
-                >
-                  EN
-                </button>
-                <span className="text-gray-400 dark:text-gray-500 text-xs font-light">|</span>
-                <button
-                  onClick={() => changeLanguage('hi')}
-                  className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
-                  title="Hindi"
-                >
-                  हिं
-                </button>
-              </div>
-
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
-
-              {/* Text Size */}
-              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                <button
-                  onClick={() => handleTextSize("decrease")}
-                  className="px-1.5 py-0.5 rounded text-xs font-light text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Decrease Text Size"
-                >
-                  A-
-                </button>
-                <button
-                  onClick={() => handleTextSize("reset")}
-                  className="px-1.5 py-0.5 rounded text-xs font-medium text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Default Text Size"
-                >
-                  A
-                </button>
-                <button
-                  onClick={() => handleTextSize("increase")}
-                  className="px-1.5 py-0.5 rounded text-sm font-bold text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Increase Text Size"
-                >
-                  A+
-                </button>
               </div>
 
               {/* Mobile Menu Button */}
@@ -1076,38 +953,6 @@ const Navbar = () => {
                 </a>
               </div>
 
-              {/* Language & Text Size - Line 2 */}
-              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10">
-                <div className="flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5 notranslate">
-                  <button onClick={() => changeLanguage('en')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
-                    EN
-                  </button>
-                  <span className="text-gray-400 text-xs">|</span>
-                  <button onClick={() => changeLanguage('hi')} className="px-1.5 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors">
-                    हिं
-                  </button>
-                </div>
-                <div className="flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                  <button
-                    onClick={() => handleTextSize("decrease")}
-                    className="px-1 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors"
-                  >
-                    A-
-                  </button>
-                  <button
-                    onClick={() => handleTextSize("reset")}
-                    className="px-1 py-0.5 rounded text-xs text-white hover:bg-blue-700 transition-colors"
-                  >
-                    A
-                  </button>
-                  <button
-                    onClick={() => handleTextSize("increase")}
-                    className="px-1 py-0.5 rounded text-xs font-bold text-white hover:bg-blue-700 transition-colors"
-                  >
-                    A+
-                  </button>
-                </div>
-              </div>
 
               {/* Primary Links */}
               <div>

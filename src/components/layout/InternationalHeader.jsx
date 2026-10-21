@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link, useLocation, useNavigate } from "react-router";
-import { Search, Sun, Moon, Menu, X, ChevronDown } from "lucide-react";
+import { Search, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Social Icons
@@ -50,34 +50,15 @@ const YoutubeIcon = ({ size }) => (
 );
 
 const InternationalHeader = () => {
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("darkMode") === "true";
-    }
-    return false;
-  });
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState({});
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("darkMode", "true");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("darkMode", "false");
-    }
-  }, [isDark]);
-
-  useEffect(() => {
     setIsMobileMenuOpen(false);
     setOpenDropdowns({});
   }, [location.pathname]);
-
-  const toggleDarkMode = () => setIsDark(!isDark);
 
   const toggleDropdown = (name, e) => {
     e.preventDefault();
@@ -85,15 +66,6 @@ const InternationalHeader = () => {
       ...prev,
       [name]: !prev[name],
     }));
-  };
-
-  // Text size control
-  const handleTextSize = (action) => {
-    const root = document.documentElement;
-    const current = parseFloat(getComputedStyle(root).fontSize);
-    if (action === "increase") root.style.fontSize = Math.min(current + 1, 20) + "px";
-    else if (action === "decrease") root.style.fontSize = Math.max(current - 1, 14) + "px";
-    else root.style.fontSize = "16px";
   };
 
   const primaryLinks = [
@@ -147,18 +119,6 @@ const InternationalHeader = () => {
           {/* Right Controls */}
           <div className="flex flex-col items-end gap-1 md:gap-1.5">
             <div className="flex items-center gap-2 md:gap-3">
-              {/* Dark Mode */}
-              <button
-                onClick={toggleDarkMode}
-                className="flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
-                aria-label="Toggle dark mode"
-                title={isDark ? "Light Mode" : "Dark Mode"}
-              >
-                {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              </button>
-
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
-
               {/* Social Icons */}
               <div className="hidden md:flex items-center gap-2">
                 <a
@@ -201,33 +161,6 @@ const InternationalHeader = () => {
                 >
                   <YoutubeIcon size={18} />
                 </a>
-              </div>
-
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
-
-              {/* Text Size */}
-              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
-                <button
-                  onClick={() => handleTextSize("decrease")}
-                  className="px-1.5 py-0.5 rounded text-xs font-light text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Decrease Text Size"
-                >
-                  A-
-                </button>
-                <button
-                  onClick={() => handleTextSize("reset")}
-                  className="px-1.5 py-0.5 rounded text-xs font-medium text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Default Text Size"
-                >
-                  A
-                </button>
-                <button
-                  onClick={() => handleTextSize("increase")}
-                  className="px-1.5 py-0.5 rounded text-sm font-bold text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
-                  title="Increase Text Size"
-                >
-                  A+
-                </button>
               </div>
 
               {/* Mobile Menu Button */}
