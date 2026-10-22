@@ -235,7 +235,7 @@
     "department": "Purchase Department",
     "departmentShort": "Purchase",
     "image": "/assets/nonteachingstaff_photos/meenataijadhav.jpg",
-    "description": "",
+    "description": "Handles purchasing orders.",
     "email": "asstt1.procurement@iiitp.ac.in",
     "type": "Contract"
   },
@@ -245,7 +245,7 @@
     "department": "Department of Computer Science and Engineering",
     "departmentShort": "CSE",
     "image": "/assets/nonteachingstaff_photos/sejalbhujbal.jpeg",
-    "description": "",
+    "description": "Lab Assistant (CSE) with responsibilities in managing computer labs, assisting faculty and students during practical sessions, and ensuring smooth technical operations.",
     "email": "sejal.bhujbal@iiitp.ac.in",
     "type": "Contract"
   },
@@ -255,7 +255,7 @@
     "department": "Library",
     "departmentShort": "Library",
     "image": "/assets/nonteachingstaff_photos/shoobhimehrotra.jpg",
-    "description": "",
+    "description": "Issues and returns books, helps students find materials and answers their queries, and supports the library's daily operations.",
     "email": "asstt1.library@iiitp.ac.in",
     "type": "Contract"
   },
@@ -275,7 +275,7 @@
     "department": "Department of Electronic Communication and Engineering",
     "departmentShort": "ECE",
     "image": "/assets/nonteachingstaff_photos/kanchanjoshi.jpg",
-    "description": "",
+    "description": "Dedicated lab assistant in the ECE department at IIIT Pune. Sets up lab equipment, components, and kits for scheduled experiments and practicals, and helps ensure lab safety.",
     "email": "kanchan.joshi@iiitp.ac.in",
     "type": "Contract"
   },
@@ -285,7 +285,7 @@
     "department": "Academic",
     "departmentShort": "Academic",
     "image": "/assets/nonteachingstaff_photos/aratikalbande.jpg",
-    "description": "",
+    "description": "Manages day-to-day clerical tasks, maintains records, supports smooth office operations, and assists staff and students with documentation and administrative needs.",
     "email": "asst3.academics@iiitp.ac.in",
     "type": "Contract"
   },
@@ -295,7 +295,7 @@
     "department": "Examination Cell",
     "departmentShort": "Examination Cell",
     "image": "/assets/nonteachingstaff_photos/sudhirkumar.jpeg",
-    "description": "",
+    "description": "Part of the Examination Cell at IIIT Pune, assisting with examination organization and related records to support smooth and transparent exam operations.",
     "email": "asstt2.examination@iiitp.ac.in",
     "type": "Contract"
   },
@@ -315,7 +315,7 @@
     "department": "Hostel",
     "departmentShort": "Hostel",
     "image": "/assets/nonteachingstaff_photos/borgechandrakant.jpeg",
-    "description": "",
+    "description": "Handles office work in the hostel under the Warden and Chief Warden.",
     "email": "angadborge691@gmail.com",
     "type": "Contract"
   },
@@ -325,7 +325,7 @@
     "department": "Hostel",
     "departmentShort": "Hostel",
     "image": "/assets/nonteachingstaff_photos/shriramkharade.jpeg",
-    "description": "",
+    "description": "Handles hostel office work.",
     "email": "shriramkharade1999@gmail.com",
     "type": "Contract"
   },
@@ -335,7 +335,7 @@
     "department": "Hostel",
     "departmentShort": "Hostel",
     "image": "/assets/nonteachingstaff_photos/minakshimaurya.jpg",
-    "description": "",
+    "description": "Performs night duty in the girls' hostel.",
     "email": "minakshimaurya2004@gmail.com",
     "type": "Contract"
   },
@@ -345,7 +345,7 @@
     "department": "Hostel",
     "departmentShort": "Hostel",
     "image": "/assets/nonteachingstaff_photos/krushnasurvase.jpg",
-    "description": "",
+    "description": "Handles office work in the hostel.",
     "email": "krushnasurvase747421@gmail.com",
     "type": "Contract"
   },
