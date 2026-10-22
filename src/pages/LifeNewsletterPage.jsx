@@ -23,7 +23,7 @@ const newsletters = [
   img: "/newsletter-docs-images/Volume II - Edition II.png"
 },
   {
-    meta: "Volume 2 | Edition I | MAY-AUGUST 2026",
+    meta: "Volume II | Edition I | MAY-AUGUST 2026",
     title: "ECLECTIC TIMES",
     desc: (
       <>
@@ -37,7 +37,7 @@ const newsletters = [
     img: "/newsletter-docs-images/Volume II - Edition 1.png"
   },
   {
-    meta: "Volume 1 | Edition II | April 2026",
+    meta: "Volume I| Edition II | April 2026",
     title: "ECLECTIC TIMES",
     desc: (
       <>
@@ -56,7 +56,7 @@ const newsletters = [
     img: "/newsletter-docs-images/2.jpeg"
   },
   {
-    meta: "Volume 1 | Edition I | November 2025",
+    meta: "Volume I | Edition I | November 2025",
     title: "ECLECTIC TIMES",
     desc: (
       <>
