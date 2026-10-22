@@ -378,5 +378,84 @@
     "description": "",
     "email": "adityagupta@iiitp.ac.in",
     "type": "Contract"
+  },
+  {
+    "name": "Ravi Kumar",
+    "designation": "Hostel Staff",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "/assets/nonteachingstaff_photos/ravikumar.jpg",
+    "description": "Hostel responsibility and visitor management and gate pass and outing system.",
+    "email": "ravikumarch997@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Ramdas Vyankat Boinwad",
+    "designation": "Electrician",
+    "department": "Maintenance Dept",
+    "departmentShort": "Maintenance",
+    "image": "/assets/nonteachingstaff_photos/ramdasboinwad.jpg",
+    "description": "Electrical repairing and maintenance work.",
+    "email": "ramanuboinwad9050@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Saurabh Kr Singh",
+    "designation": "Office Executive",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "/assets/nonteachingstaff_photos/saurabh singh.jpg",
+    "description": "Oversees daily residential operations, student safety, and facility upkeep.",
+    "email": "saurabhkumar78540@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Akanksha Shekokar",
+    "designation": "Office Executive",
+    "department": "Purchase",
+    "departmentShort": "Purchase",
+    "image": "/assets/nonteachingstaff_photos/akankshashekokar.jpg",
+    "description": "Postgraduate in MBA working as an office executive in the Purchase Department.",
+    "email": "deulkarakanksha0@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Vikas Vilas Gore",
+    "designation": "Hostel Attendant",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "/assets/nonteachingstaff_photos/vikasgore.jpeg",
+    "description": "Supervises hostel operations, coordinates student needs, maintains room-allocation records, and supports hostel maintenance, security, and discipline.",
+    "email": "vikasgore8584@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Krishna Kumar",
+    "designation": "Hostel Attendant",
+    "department": "Hostel",
+    "departmentShort": "Hostel",
+    "image": "/assets/nonteachingstaff_photos/krishnakumar.jpeg",
+    "description": "Manages day-to-day clerical tasks, maintains records, supports office operations, and assists staff and students with documentation and administrative needs.",
+    "email": "krishna969680@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Sandeep Shankar Sutar",
+    "designation": "Electrician",
+    "department": "Electrical Maintenance",
+    "departmentShort": "Maintenance",
+    "image": "/assets/nonteachingstaff_photos/sandeepputar.jpeg",
+    "description": "A dedicated electrical maintenance professional focused on safe, reliable systems, efficient troubleshooting, quality work, and teamwork.",
+    "email": "sandipsutar01@gmail.com",
+    "type": "Contract"
+  },
+  {
+    "name": "Kaushal Prajapati",
+    "designation": "Electrical Maintenance",
+    "department": "Electrician",
+    "departmentShort": "Maintenance",
+    "image": "/assets/nonteachingstaff_photos/kaushalprajapati.jpeg",
+    "description": "Working as an Electrician at IIIT Pune, responsible for electrical maintenance and repair work. Ensuring electrical safety, smooth operation, and timely resolution of complaints.",
+    "email": "kaushalprajapati024@gmail.com"
   }
 ]
