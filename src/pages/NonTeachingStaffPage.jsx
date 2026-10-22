@@ -1,8 +1,8 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useParams, Navigate } from 'react-router';
 import PageHeader from '../components/shared/PageHeader';
 import Breadcrumb from '../components/shared/Breadcrumb';
-import { Mail, User } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import nonTeachingStaffData from '../data/non_teaching_staff.json';
@@ -18,6 +18,7 @@ const NonTeachingStaffPage = () => {
   // App.jsx handles the redirect from `/people/non-teaching-staff` to `/people/non-teaching-staff/regular`
   
   const [selectedDepartment, setSelectedDepartment] = useState('All');
+  const [selectedStaffName, setSelectedStaffName] = useState(null);
 
   // Filter staff by Type
   const typeFilteredStaff = useMemo(() => {
@@ -89,63 +90,79 @@ const NonTeachingStaffPage = () => {
                   key={staff.name + index}
                   className="bg-white dark:bg-surface-dark rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-800 flex flex-col h-full group relative"
                 >
+                  <button
+                    type="button"
+                    onClick={() => setSelectedStaffName(
+                      selectedStaffName === staff.name ? null : staff.name
+                    )}
+                    aria-expanded={selectedStaffName === staff.name}
+                    aria-label={`${selectedStaffName === staff.name ? 'Hide' : 'Show'} ${staff.name}'s profile description`}
+                    className="w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary"
+                  >
+                    <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mt-6 bg-gray-100 dark:bg-gray-800 relative overflow-hidden rounded-full shadow-md border-4 border-white dark:border-gray-800 shrink-0">
+                      {staff.image ? (
+                        <img
+                          src={staff.image}
+                          alt=""
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                          onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src = "https://ui-avatars.com/api/?name=" + encodeURIComponent(staff.name) + "&background=1B3A6B&color=fff&size=512";
+                          }}
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center bg-blue-50 dark:bg-gray-800 text-primary dark:text-gray-400">
+                          <span className="text-5xl font-serif opacity-30">{staff.name.charAt(0)}</span>
+                        </div>
+                      )}
+                    </div>
 
-                  {/* Image Section */}
-                  <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mt-6 bg-gray-100 dark:bg-gray-800 relative overflow-hidden rounded-full shadow-md border-4 border-white dark:border-gray-800 shrink-0">
-                    {staff.image ? (
-                      <img 
-                        src={staff.image}
-                        alt={staff.name}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                        onError={(e) => {
-                          e.target.onerror = null;
-                          e.target.src = "https://ui-avatars.com/api/?name=" + encodeURIComponent(staff.name) + "&background=1B3A6B&color=fff&size=512";
-                        }}
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center bg-blue-50 dark:bg-gray-800 text-primary dark:text-gray-400">
-                        <span className="text-5xl font-serif opacity-30">{staff.name.charAt(0)}</span>
+                    <div className="p-3 flex-grow flex flex-col items-center text-center bg-white dark:bg-surface-dark z-10 w-full mt-1">
+                      <h3 className="text-lg font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors line-clamp-1 w-full">
+                        {staff.name}
+                      </h3>
+
+                      <div className="h-14 flex flex-col items-center justify-start w-full mb-1">
+                        <p className="text-sm text-brand-red font-medium whitespace-pre-line line-clamp-2 leading-tight mb-0.5">
+                          {staff.designation || 'Staff Member'}
+                        </p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 font-medium truncate w-full px-2">
+                          {staff.departmentShort}
+                        </p>
                       </div>
+                    </div>
+                  </button>
+
+                  <div className="h-12 w-full flex flex-col items-center px-3">
+                    <div className="w-8 h-px bg-gray-200 dark:bg-gray-700 mb-1.5 mt-0.5 shrink-0"></div>
+                    {staff.email && (
+                      <a
+                        href={`mailto:${staff.email}`}
+                        className="flex items-center text-xs text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors w-full justify-center px-2"
+                      >
+                        <Mail className="w-3.5 h-3.5 mr-1.5 shrink-0" />
+                        <span className="truncate">{staff.email}</span>
+                      </a>
                     )}
                   </div>
 
-                  {/* Content Section */}
-                  <div className="p-3 flex-grow flex flex-col items-center text-center bg-white dark:bg-surface-dark z-10 w-full mt-1">
-                    <h3 className="text-lg font-bold font-serif text-gray-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors line-clamp-1 w-full">
-                      {staff.name}
-                    </h3>
-
-                    {/* Fixed height container for designation and department */}
-                    <div className="h-14 flex flex-col items-center justify-start w-full mb-1">
-                      <p className="text-sm text-brand-red font-medium whitespace-pre-line line-clamp-2 leading-tight mb-0.5">
-                        {staff.designation || 'Staff Member'}
-                      </p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 font-medium truncate w-full px-2">
-                        {staff.departmentShort}
-                      </p>
-                    </div>
-
-                    {/* Fixed height container for extra details / email */}
-                    <div className="h-12 w-full flex flex-col items-center">
-                      <div className="w-8 h-px bg-gray-200 dark:bg-gray-700 mb-1.5 mt-0.5 shrink-0"></div>
-                      
-                      {staff.email ? (
-                        <a 
-                          href={`mailto:${staff.email}`}
-                          className="flex items-center text-xs text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors w-full justify-center px-2"
-                        >
-                          <Mail className="w-3.5 h-3.5 mr-1.5 shrink-0" />
-                          <span className="truncate">{staff.email}</span>
-                        </a>
-                      ) : staff.description ? (
-                        <p className="text-xs text-gray-600 dark:text-gray-400 font-medium leading-relaxed line-clamp-2 px-2 w-full">
-                          {staff.description}
+                  <AnimatePresence initial={false}>
+                    {selectedStaffName === staff.name && (
+                      <motion.div
+                        id={`staff-description-${index}`}
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden"
+                      >
+                        <p className="px-4 pb-4 text-sm leading-relaxed text-gray-600 dark:text-gray-300 text-center">
+                          {staff.description || 'No description available.'}
                         </p>
-                      ) : null}
-                    </div>
-                  </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </motion.div>
               ))}
             </AnimatePresence>
