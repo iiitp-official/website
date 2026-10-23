@@ -600,7 +600,7 @@ const IEEEPage = () => {
             </section>
 
             <div className="mt-16 text-right text-sm text-gray-500 dark:text-gray-400">
-              Last Updated: 20-06-2026
+              Last Updated: 23-10-2026
             </div>
 
           </div>
