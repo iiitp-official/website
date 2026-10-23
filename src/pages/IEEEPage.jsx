@@ -1,7 +1,212 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
+import { X } from 'lucide-react';
 import PageHeader from '../components/shared/PageHeader';
 
+const chapterContent = {
+  aps: {
+    title: 'IEEE APS Student Branch Chapter',
+    image: '/ieee/IEEE%20APS.png',
+    description: (
+      <>
+        An <strong>IEEE Antenna Propagation society Chapter</strong> covers
+        various activities under the areas of Antenna and propagation
+        engineering, RF circuits, devices, radar, wireless systems, mmWave/THz
+        technologies, and related areas.
+      </>
+    ),
+    sections: [
+      {
+        description: (
+          <>
+            The activities and events will be managed by an{' '}
+            <strong>elected student committee</strong>, consisting of the Chair,
+            Vice Chair, Secretary, Treasurer, and other student volunteers. The
+            committee will be responsible for planning, publicity, participant
+            registration, logistics, budgeting, execution, and documentation of
+            each activity, under the guidance and supervision of the Faculty
+            Advisor.
+          </>
+        ),
+      },
+      {
+        description: 'The chapter will adopt the following mechanism:',
+        items: [
+          {
+            title: 'Annual Activity Plan',
+            text: 'A structured calendar of technical talks, workshops, hands-on training sessions, competitions, hackathons, industry interactions, and student project demonstrations will be prepared.',
+          },
+          {
+            title: 'Student-Led Management',
+            text: 'Each event will be assigned to a team of student volunteers, giving students practical experience in leadership, teamwork, event management, and professional communication.',
+          },
+          {
+            title: 'Financial Management',
+            text: 'The Treasurer will maintain proper records of income and expenditure, while all financial activities will be carried out in accordance with IEEE and Institute guidelines.',
+          },
+          {
+            title: 'Industry Sponsorship and Collaboration',
+            text: 'The chapter will approach relevant RF, microwave, antenna, semiconductor, communication, and defence industries for sponsorship, technical support, expert lectures, equipment demonstrations, and collaborative activities.',
+          },
+          {
+            title: 'Institutional and IEEE Support',
+            text: 'Wherever applicable, the chapter will seek support through Institute resources and IEEE/AP-S programs, grants, and student-oriented initiatives.',
+          },
+          {
+            title: 'Annual Review',
+            text: 'At the end of each academic year, the committee will review the activities, participation, financial status, outcomes, and student feedback and prepare a plan for the following year.',
+          },
+        ],
+      },
+      {
+        description: (
+          <>
+            The role of the <strong>faculty Advisor</strong>, to promote IEEE
+            MTT-S among students and create awareness about its academic,
+            research, technical, and professional opportunities. During the
+            first year, the following initiatives will be undertaken:
+          </>
+        ),
+      },
+      {
+        description: (
+          <>
+            The collaboration between the{' '}
+            <strong>IEEE Section and IEEE APS Society</strong> will be maintained
+            through regular communication, joint planning, and coordinated
+            activities.
+          </>
+        ),
+      },
+    ],
+  },
+  mtts: {
+    title: 'IEEE MTTS Student Branch Chapter',
+    image: '/ieee/IEEE%20MTTS.jpeg',
+    description: (
+      <>
+        As MTTS covers RF circuits, Active devices, radar, wireless systems,
+        Antennas, mmWave/THz technologies, and related areas, we will create a
+        good balance of{' '}
+        <strong>
+          technical, hands-on, research, competition, and industry-oriented
+          activities
+        </strong>
+        .
+      </>
+    ),
+    sections: [
+      {
+        description: (
+          <>
+            The activities and events will be managed by an{' '}
+            <strong>elected student committee</strong>, consisting of the Chair,
+            Vice Chair, Secretary, joint secretary, Treasurer, and other student
+            volunteers. The committee will be responsible for planning,
+            publicity, participant registration, logistics, budgeting,
+            execution, and documentation of each activity, under the guidance
+            and supervision of the Faculty Advisor.
+          </>
+        ),
+      },
+      {
+        description: 'The Student Branch Chapter will:',
+        items: [
+          {
+            text: (
+              <>
+                Maintain regular communication with both the{' '}
+                <strong>IEEE Section and MTT-S Society representatives</strong>{' '}
+                and follow their respective guidelines.
+              </>
+            ),
+          },
+          {
+            text: (
+              <>
+                Prepare and share an <strong>annual activity plan and reports</strong>{' '}
+                with both parent units.
+              </>
+            ),
+          },
+          {
+            text: (
+              <>
+                Organize relevant{' '}
+                <strong>
+                  joint technical talks, workshops, competitions, and industry
+                  interactions
+                </strong>{' '}
+                with the support of the Section and Society.
+              </>
+            ),
+          },
+          {
+            text: (
+              <>
+                Encourage students to participate in{' '}
+                <strong>
+                  IEEE Section- and MTT-S-sponsored programs, conferences,
+                  competitions, and awards
+                </strong>
+                .
+              </>
+            ),
+          },
+          {
+            text: (
+              <>
+                Ensure <strong>transparent documentation and reporting</strong>{' '}
+                of chapter activities, membership, and achievements
+              </>
+            ),
+          },
+        ],
+      },
+      {
+        description: (
+          <strong>
+            The role of Faculty advisor is to conduct IEEE MTT-S awareness and
+            membership drives for students.
+          </strong>
+        ),
+        items: [
+          {
+            text: 'Form student teams for RF integrated circuits, microwave components, antenna, and wireless communication projects.',
+          },
+          {
+            text: 'Organize antenna/RF design challenges, technical quizzes, workshops, and project competitions.',
+          },
+          {
+            text: 'Encourage students to participate in IEEE conferences, design contests, and student competitions such as MAPCON, IMS, EuCAP, SPACE, WAMS, and other relevant events.',
+          },
+          {
+            text: 'Mentor students in research projects, conference paper preparation, and technical presentations.',
+          },
+          {
+            text: 'Encourage students to apply for IEEE MTT-S awards, scholarships, travel grants, and other student opportunities.',
+          },
+        ],
+      },
+    ],
+  },
+};
+
 const IEEEPage = () => {
+  const [activeChapter, setActiveChapter] = useState('aps');
+  const [isImageOpen, setIsImageOpen] = useState(false);
+  const selectedChapter = chapterContent[activeChapter];
+
+  useEffect(() => {
+    if (!isImageOpen) return undefined;
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') setIsImageOpen(false);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isImageOpen]);
+
   return (
     <div className="min-h-screen transition-colors duration-200">
       <PageHeader title="IEEE Student Branch" />
@@ -163,6 +368,91 @@ const IEEEPage = () => {
               </div>
             </section>
 
+            {/* Student Branch Chapters */}
+            <section className="mb-12" aria-labelledby="chapter-section-title">
+              <h3
+                id="chapter-section-title"
+                className="text-3xl font-bold text-primary dark:text-white mb-6 pb-2"
+              >
+                Student Branch Chapters
+              </h3>
+
+              <div
+                className="flex flex-wrap gap-3 mb-6"
+                role="group"
+                aria-label="IEEE student branch chapters"
+              >
+                {[
+                  { id: 'aps', label: 'IEEE APS' },
+                  { id: 'mtts', label: 'IEEE MTTS' },
+                ].map((chapter) => {
+                  const isSelected = activeChapter === chapter.id;
+                  return (
+                    <button
+                      key={chapter.id}
+                      type="button"
+                      onClick={() => setActiveChapter(chapter.id)}
+                      aria-pressed={isSelected}
+                      className={`rounded-lg px-5 py-3 font-semibold transition-colors ${
+                        isSelected
+                          ? 'bg-primary text-white shadow-md'
+                          : 'border border-gray-200 bg-gray-50 text-gray-700 hover:border-primary hover:text-primary dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:text-white'
+                      }`}
+                    >
+                      {chapter.label}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <div className="rounded-2xl border border-gray-100 bg-gray-50 p-6 dark:border-gray-800 dark:bg-gray-800/50 md:p-8">
+                <h4 className="text-2xl font-bold text-primary dark:text-white mb-4">
+                  {selectedChapter.title}
+                </h4>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                  {selectedChapter.description}
+                </p>
+
+                <div className="space-y-6">
+                  {selectedChapter.sections.map((section, sectionIndex) => (
+                    <section key={`${activeChapter}-section-${sectionIndex}`}>
+                      {section.description && (
+                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
+                          {section.description}
+                        </p>
+                      )}
+                      {section.items && (
+                        <ul className="list-disc space-y-3 pl-5 text-gray-700 dark:text-gray-300 leading-relaxed">
+                          {section.items.map((item, itemIndex) => (
+                            <li key={`${activeChapter}-item-${sectionIndex}-${itemIndex}`}>
+                              {item.title && (
+                                <strong className="text-gray-900 dark:text-white">
+                                  {item.title}:{' '}
+                                </strong>
+                              )}
+                              {item.text}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </section>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setIsImageOpen(true)}
+                  aria-label={`Open ${selectedChapter.title} image`}
+                  className="mt-8 block w-fit cursor-zoom-in"
+                >
+                  <img
+                    src={selectedChapter.image}
+                    alt={`${selectedChapter.title} chapter`}
+                    className="h-auto max-h-64 max-w-xs rounded-xl object-contain"
+                  />
+                </button>
+              </div>
+            </section>
+
             {/* How to Join */}
             <section className="mb-12">
               <h3 className="text-3xl font-bold text-primary dark:text-white mb-6 pb-2">
@@ -316,6 +606,30 @@ const IEEEPage = () => {
           </div>
         </div>
       </div>
+      {isImageOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${selectedChapter.title} image preview`}
+          onClick={() => setIsImageOpen(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+        >
+          <button
+            type="button"
+            onClick={() => setIsImageOpen(false)}
+            aria-label="Close image"
+            className="absolute right-4 top-4 rounded-full bg-white p-2 text-gray-900 shadow-lg transition-colors hover:bg-gray-200"
+          >
+            <X size={24} />
+          </button>
+          <img
+            src={selectedChapter.image}
+            alt={`${selectedChapter.title} chapter`}
+            onClick={(event) => event.stopPropagation()}
+            className="max-h-[90vh] max-w-[95vw] object-contain"
+          />
+        </div>
+      )}
     </div>
   );
 };
