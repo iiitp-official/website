@@ -5,7 +5,7 @@
     "department": "Department of Computer Science and Engineering",
     "departmentShort": "CSE",
     "image": "/assets/nonteachingstaff_photos/mukeshnandanwar.JPG",
-    "description": "",
+    "description": "Supports administrative and office operations related to the STO role, ensuring smooth coordination and timely execution of institutional tasks.",
     "email": "mukesh.nandanwar@iiitp.ac.in",
     "type": "Regular"
   },
@@ -15,7 +15,7 @@
     "department": "Establishment",
     "departmentShort": "Establishment",
     "image": "/assets/nonteachingstaff_photos/anandmohan.JPG",
-    "description": "",
+    "description": "Handles establishment-related administrative and personnel functions, ensuring smooth office coordination and compliance with institutional procedures.",
     "email": "js1.estt@iiitp.ac.in",
     "type": "Regular"
   },
@@ -25,7 +25,7 @@
     "department": "Store and Purchase",
     "departmentShort": "Store and Purchase",
     "image": "/assets/nonteachingstaff_photos/amanankur.jpg",
-    "description": "",
+    "description": "Manages store-and-purchase procedures, procurement documentation, and material coordination to support institutional requirements efficiently.",
     "email": "js1.procurement@iiitp.ac.in",
     "type": "Regular"
   },
@@ -35,7 +35,7 @@
     "department": "Department of Electronic and Communication Engineering",
     "departmentShort": "ECE",
     "image": "/assets/nonteachingstaff_photos/prachijunghare.jpeg",
-    "description": "",
+    "description": "Assists with laboratory and technical support in the ECE department, helping maintain equipment, practical facilities, and academic operations.",
     "email": "jt1.ece@iiitp.ac.in",
     "type": "Regular"
   },
@@ -45,7 +45,7 @@
     "department": "Library",
     "departmentShort": "Library",
     "image": "/assets/nonteachingstaff_photos/mdansari.jpg",
-    "description": "",
+    "description": "Supports library services by maintaining records, assisting students with reading resources, and helping with day-to-day library operations.",
     "email": "jt.library@iiitp.ac.in",
     "type": "Regular"
   },
@@ -55,7 +55,7 @@
     "department": "Sports",
     "departmentShort": "Sports",
     "image": "/assets/nonteachingstaff_photos/rajatkhangar.jpg",
-    "description": "",
+    "description": "Coordinates physical training and yoga activities, promoting student well-being, fitness, and an active campus culture.",
     "email": "sports@iiitp.ac.in",
     "type": "Regular"
   },
@@ -65,7 +65,7 @@
     "department": "Examination Cell",
     "departmentShort": "Examination Cell",
     "image": "/assets/nonteachingstaff_photos/harikrishnans.jpeg",
-    "description": "",
+    "description": "Supports examination cell operations by assisting with records, procedures, and administrative tasks required for smooth exam workflows.",
     "email": "asstt1.examination@iiitp.ac.in",
     "type": "Regular"
   },
@@ -75,7 +75,7 @@
     "department": "Academic",
     "departmentShort": "Director Office",
     "image": "/assets/nonteachingstaff_photos/sandipmandal.jpeg",
-    "description": "",
+    "description": "Provides clerical and administrative support in the academic office, assisting with documentation, communication, and day-to-day academic operations.",
     "email": "pa.director@iiitp.ac.in",
     "type": "Regular"
   },
@@ -85,7 +85,7 @@
     "department": "Academic",
     "departmentShort": "Academic",
     "image": "/assets/nonteachingstaff_photos/rishikadakhale.jpeg",
-    "description": "",
+    "description": "Helps manage academic administrative tasks, including records, coordination, and support for smooth institutional functioning.",
     "email": "asst2.academics@iiitp.ac.in",
     "type": "Regular"
   },
@@ -95,7 +95,7 @@
     "department": "Accounts and Finance",
     "departmentShort": "Accounts and Finance",
     "image": "/assets/nonteachingstaff_photos/jaisingh.jpg",
-    "description": "",
+    "description": "Assists with accounts and finance office processes, maintaining records, supporting financial documentation, and facilitating routine administrative tasks.",
     "email": "asstt2.accounts@iiitp.ac.in",
     "type": "Regular"
   },
@@ -105,7 +105,7 @@
     "department": "Establishment",
     "departmentShort": "Establishment",
     "image": "/assets/nonteachingstaff_photos/sudarshanchivate.JPG",
-    "description": "",
+    "description": "Supports establishment-related administration by handling documentation, coordination, and office tasks to ensure smooth institutional functioning.",
     "email": "asstt1.estt@iiitp.ac.in",
     "type": "Regular"
   },
@@ -115,7 +115,7 @@
     "department": "Accounts and Finance",
     "departmentShort": "Accounts and Finance",
     "image": "/assets/nonteachingstaff_photos/johngonsalves.jpg",
-    "description": "",
+    "description": "Supports accounts and finance operations by assisting with accounting procedures, record maintenance, and office coordination.",
     "email": "aosd.aa@iiitp.ac.in",
     "type": "Contract"
   },
@@ -125,7 +125,7 @@
     "department": "Accounts and Finance",
     "departmentShort": "Accounts and Finance",
     "image": "/assets/nonteachingstaff_photos/adityasharma.jpg",
-    "description": "",
+    "description": "Handles office executive responsibilities in accounts and finance, supporting documentation, financial records, and day-to-day administrative workflow.",
     "email": "asstt1.accounts@iiitp.ac.in",
     "type": "Contract"
   },
@@ -135,7 +135,7 @@
     "department": "ECE",
     "departmentShort": "ECE",
     "image": "/assets/nonteachingstaff_photos/arjunsurvase.jpg",
-    "description": "",
+    "description": "Provides technical assistance in the ECE department, maintaining equipment and supporting academic and laboratory activities.",
     "email": "arjunsurvase@iiitp.ac.in",
     "type": "Contract"
   },
@@ -145,7 +145,7 @@
     "department": "Examination cell",
     "departmentShort": "Examination Cell",
     "image": "/assets/nonteachingstaff_photos/phulchandchavan.jpg",
-    "description": "",
+    "description": "Supports examination cell administration by managing office work, records, and coordination essential to efficient exam operations.",
     "email": "phulchandchavan@iiitp.ac.in",
     "type": "Contract"
   },
@@ -155,7 +155,7 @@
     "department": "Civil",
     "departmentShort": "Civil",
     "image": "/assets/nonteachingstaff_photos/ranjittambe.JPG",
-    "description": "",
+    "description": "Works on civil engineering support and maintenance activities, helping manage infrastructure-related tasks and campus facilities.",
     "email": "jecivil@iiitp.ac.in",
     "type": "Contract"
   },
@@ -165,7 +165,7 @@
     "department": "Hostel",
     "departmentShort": "Hostel",
     "image": "/assets/nonteachingstaff_photos/navinthakur.jpg",
-    "description": "",
+    "description": "Supports hostel operations by assisting with day-to-day welfare, maintenance, and resident support services.",
     "email": "navinnavinthakur@iiitp.ac.in",
     "type": "Contract"
   },
@@ -175,7 +175,7 @@
     "department": "Hostel",
     "departmentShort": "Hostel",
     "image": "/assets/nonteachingstaff_photos/laxmanshinde.jpg",
-    "description": "",
+    "description": "Handles hostel office functions, documentation, and coordination to ensure smooth residential administration.",
     "email": "laxmanshinde@iiitp.ac.in",
     "type": "Contract"
   },
@@ -185,7 +185,7 @@
     "department": "Department of Computer Science and Engineering",
     "departmentShort": "CSE",
     "image": "/assets/nonteachingstaff_photos/bhumikapatankar.jpg",
-    "description": "",
+    "description": "Supports laboratory work in the CSE department by maintaining technical facilities, assisting students, and helping with practical sessions.",
     "email": "bhumika.patankar@iiitp.ac.in",
     "type": "Contract"
   },
@@ -195,7 +195,7 @@
     "department": "Department of Computer Science and Engineering",
     "departmentShort": "CSE",
     "image": "/assets/nonteachingstaff_photos/pallavisane.jpeg",
-    "description": "",
+    "description": "Assists in CSE laboratory operations by maintaining equipment, supporting practical work, and ensuring a smooth learning environment.",
     "email": "pallavi.sane@iiitp.ac.in",
     "type": "Contract"
   },
@@ -205,7 +205,7 @@
     "department": "Store and Purchase",
     "departmentShort": "Store and Purchase",
     "image": "/assets/nonteachingstaff_photos/girishk.jpg",
-    "description": "",
+    "description": "Supervises housekeeping and security operations, ensuring campus safety, discipline, and proper maintenance of facilities.",
     "email": "supervisor.hks@iiitp.ac.in",
     "type": "Contract"
   },
@@ -215,7 +215,7 @@
     "department": "Maintenance",
     "departmentShort": "Maintenance",
     "image": "/assets/nonteachingstaff_photos/vishnurupnawar.jpg",
-    "description": "",
+    "description": "Performs electrical maintenance and repair work, ensuring safe and reliable campus infrastructure and utility services.",
     "email": "senior.electrician@iiitp.ac.in",
     "type": "Contract"
   },
@@ -225,7 +225,7 @@
     "department": "Establishment",
     "departmentShort": "Establishment",
     "image": "/assets/nonteachingstaff_photos/rajendradaiya.jpg",
-    "description": "",
+    "description": "Supports establishment office administration through documentation, coordination, and routine clerical tasks.",
     "email": "asstt2.estt@iiitp.ac.in",
     "type": "Contract"
   },
@@ -265,7 +265,7 @@
     "department": "Registrar Office",
     "departmentShort": "Academic",
     "image": "/assets/nonteachingstaff_photos/virajlohakare.jpg",
-    "description": "",
+    "description": "Assists with registrar office and academic administration, handling documentation and support tasks for institutional operations.",
     "email": "asst1.academics@iiitp.ac.in",
     "type": "Contract"
   },
@@ -305,7 +305,7 @@
     "department": "Maintenance",
     "departmentShort": "Maintenance",
     "image": "/assets/nonteachingstaff_photos/ajaysirsat.jpg",
-    "description": "",
+    "description": "Carries out carpentry and maintenance work to support campus facilities, repairs, and infrastructure upkeep.",
     "email": "",
     "type": "Contract"
   },
@@ -355,7 +355,7 @@
     "department": "Training and Placements",
     "departmentShort": "Training and Placement",
     "image": "/assets/nonteachingstaff_photos/kedarbhogshetti.jpg",
-    "description": "",
+    "description": "Coordinates placement-related activities, student support, and industry engagement processes to strengthen internship and placement opportunities.",
     "email": "placements@iiitp.ac.in",
     "type": "Contract"
   },
@@ -365,7 +365,7 @@
     "department": "Civil",
     "departmentShort": "Civil",
     "image": "/assets/nonteachingstaff_photos/hemantthorat.jpg",
-    "description": "",
+    "description": "Supports civil engineering and maintenance work, helping manage infrastructure-related tasks and timely campus upkeep.",
     "email": "hemant@iiitp.ac.in",
     "type": "Contract"
   },
@@ -375,7 +375,7 @@
     "department": "Department of Computer Science and Engineering",
     "departmentShort": "CSE",
     "image": "/assets/nonteachingstaff_photos/adityagupta.jpg",
-    "description": "",
+    "description": "He is responsible for driving the institute’s digital presence through strategic website management, content development, and continuous digital improvements. He manages the official institute and placement websites of IIIT Pune, oversees the publication of institutional updates, and ensures accessible, responsive, and user-friendly digital experiences that enhance institutional communication and visibility. In addition, he oversees laboratory operations, provides technical support, and assists in conducting practical sessions to support students’ academic growth and technical development.",
     "email": "adityagupta@iiitp.ac.in",
     "type": "Contract"
   },

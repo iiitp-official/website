@@ -157,9 +157,11 @@ const NonTeachingStaffPage = () => {
                         exit={{ height: 0, opacity: 0 }}
                         className="overflow-hidden"
                       >
-                        <p className="px-4 pb-4 text-sm leading-relaxed text-gray-600 dark:text-gray-300 text-center">
-                          {staff.description || 'No description available.'}
-                        </p>
+                        <div className="flex w-full justify-between px-4 pb-4">
+                          <p className="w-full text-sm leading-relaxed text-gray-600 dark:text-gray-300 text-justify">
+                            {staff.description || 'No description available.'}
+                          </p>
+                        </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
