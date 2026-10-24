@@ -139,12 +139,12 @@ const LifeEventsPage = ({ hackathonsOnly = false, nssOnly = false }) => {
                 <div className="flex flex-col md:flex-row gap-5 sm:gap-8">
                   <div className="flex-1">
                     <div className="mb-4">
-                      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-3">
+                      <div className="flex justify-between items-center gap-3 mb-4 border-b border-gray-100 dark:border-gray-800 pb-2">
                         <span className={`inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide ${evt.typeColor}`}>
                           {evt.type}
                         </span>
                         {evt.date && (
-                          <span className="text-sm font-semibold text-gray-600 dark:text-gray-400">
+                          <span className="shrink-0 text-sm font-medium text-gray-500 dark:text-gray-400">
                             {evt.date}
                           </span>
                         )}

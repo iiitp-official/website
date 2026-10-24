@@ -455,7 +455,6 @@ const Navbar = () => {
           ],
         },
         { name: "Photo Gallery", path: "/life/gallery" },
-        { name: "College Events", path: "/life/events" },
         { name: "Hackathon", path: "/life/hackathons" },
         {
           name: "HR Summit",
@@ -473,16 +472,6 @@ const Navbar = () => {
               isExternal: true
             }
           ]
-        },
-        {
-          name: "Media Center",
-          hasDropdown: true,
-          path: "/#",
-          subLinks: [
-            { name: "Magazine", path: "/life/magazine" },
-            { name: "Newsletter", path: "/life/newsletter" },
-            { name: "Press", path: "/life/press" },
-          ],
         },
         { name: "Campus Tour", path: "/life/campus" },
         {
