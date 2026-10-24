@@ -455,7 +455,6 @@ const Navbar = () => {
           ],
         },
         { name: "Photo Gallery", path: "/life/gallery" },
-        { name: "Hackathon", path: "/life/hackathons" },
         {
           name: "HR Summit",
           path: "#",
@@ -484,6 +483,25 @@ const Navbar = () => {
           ],
         },
         // { name: "Sports & Gymnasium", path: "/#" },
+      ],
+    },
+    {
+      name: "Events",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "College Events", path: "/life/events" },
+        { name: "Hackathons", path: "/life/hackathons" },
+      ],
+    },
+    {
+      name: "Media",
+      path: "#",
+      hasDropdown: true,
+      subLinks: [
+        { name: "Magazine", path: "/life/magazine" },
+        { name: "Newsletter", path: "/life/newsletter" },
+        { name: "Press", path: "/life/press" },
       ],
     },
     {
@@ -579,19 +597,33 @@ const Navbar = () => {
           {/* Right Controls */}
           <div className="flex flex-col items-end gap-1 md:gap-1.5">
             {/* Top Row: Quick Links (Desktop only) */}
-            <div className="hidden md:flex items-center gap-1">
-              <Link
-                to="/life/events"
-                className="text-[15px] text-blue-200 hover:text-white transition-colors px-1.5 py-0.5"
-              >
-                College Events
-              </Link>
+            <div className="hidden xl:flex items-center gap-1">
+              <div className="relative group/event">
+                <button className="text-[15px] text-blue-200 hover:text-white transition-colors px-1.5 py-0.5 flex items-center gap-0.5">
+                  Events
+                  <ChevronDown className="w-3 h-3 opacity-70 transition-transform group-hover/event:rotate-180" />
+                </button>
+                <div className="absolute top-full left-0 mt-1 w-40 bg-white dark:bg-surface-dark rounded-md shadow-lg border border-gray-100 dark:border-gray-800 opacity-0 invisible group-hover/event:opacity-100 group-hover/event:visible transition-all duration-200 z-50">
+                  <Link
+                    to="/life/events"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors rounded-t-md"
+                  >
+                    College Events
+                  </Link>
+                  <Link
+                    to="/life/hackathons"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-red/10 hover:text-brand-red dark:hover:text-brand-red-dark transition-colors rounded-b-md"
+                  >
+                    Hackathons
+                  </Link>
+                </div>
+              </div>
               <span className="text-blue-700 dark:text-gray-600 text-[10px]">|</span>
               <div className="relative group/media">
                 <button
                   className="text-[15px] text-blue-200 hover:text-white transition-colors px-1.5 py-0.5 flex items-center gap-0.5"
                 >
-                  Media Center
+                  Media
                   <ChevronDown className="w-3 h-3 opacity-70 transition-transform group-hover/media:rotate-180" />
                 </button>
                 <div className="absolute top-full left-0 mt-1 w-40 bg-white dark:bg-surface-dark rounded-md shadow-lg border border-gray-100 dark:border-gray-800 opacity-0 invisible group-hover/media:opacity-100 group-hover/media:visible transition-all duration-200 z-50">
@@ -644,10 +676,10 @@ const Navbar = () => {
                 {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
               </button>
 
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
+              <div className="hidden xl:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
 
               {/* Social Icons */}
-              <div className="hidden md:flex items-center gap-2">
+              <div className="hidden xl:flex items-center gap-2">
                 <a
                   href="https://www.facebook.com/share/14dmnHML9Tm/"
                   target="_blank" rel="noopener noreferrer"
@@ -690,10 +722,10 @@ const Navbar = () => {
                 </a>
               </div>
 
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
+              <div className="hidden xl:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
 
               {/* Language Selector */}
-              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5 notranslate">
+              <div className="hidden xl:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5 notranslate">
                 <button
                   onClick={() => changeLanguage('en')}
                   className="px-1.5 py-0.5 rounded font-medium text-xs text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors"
@@ -711,10 +743,10 @@ const Navbar = () => {
                 </button>
               </div>
 
-              <div className="hidden md:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
+              <div className="hidden xl:block h-5 w-px bg-blue-700 dark:bg-gray-600" />
 
               {/* Text Size */}
-              <div className="hidden md:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
+              <div className="hidden xl:flex items-center bg-blue-900/40 dark:bg-gray-800/40 rounded-lg px-1.5 py-1 gap-0.5">
                 <button
                   onClick={() => handleTextSize("decrease")}
                   className="px-1.5 py-0.5 rounded text-xs font-light text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-colors leading-none"
@@ -739,7 +771,7 @@ const Navbar = () => {
               </div>
 
               {/* Search (moved next to A- A A+) */}
-              <div className="hidden md:block relative">
+              <div className="hidden xl:block relative">
                 <button
                   onClick={() => setShowSearch(!showSearch)}
                   className="flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200 hover:scale-110"
@@ -796,7 +828,7 @@ const Navbar = () => {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200"
+                className="xl:hidden flex items-center justify-center p-1.5 rounded-lg text-white hover:bg-blue-700 dark:hover:bg-gray-700 transition-all duration-200"
                 aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-6 h-6" />}
@@ -807,9 +839,9 @@ const Navbar = () => {
       </div>
 
       {/* Row 2: Primary Nav Links (Desktop) */}
-      <nav className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="hidden xl:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center items-center py-1 gap-x-2">
-          {primaryLinks.filter(link => link.name !== "International Relations" && link.name !== "Student Portal").map((link) => (
+          {primaryLinks.filter(link => !["International Relations", "Student Portal", "Events", "Media"].includes(link.name)).map((link) => (
             <div key={link.name} className="relative group">
               {link.isExternal ? (
                 <a
@@ -982,7 +1014,7 @@ const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden overflow-hidden bg-primary dark:bg-surface-dark border-t border-blue-800/50 dark:border-gray-800 shadow-xl"
+            className="xl:hidden overflow-hidden bg-primary dark:bg-surface-dark border-t border-blue-800/50 dark:border-gray-800 shadow-xl"
           >
             <div className="px-4 py-4 space-y-4 max-h-[70vh] overflow-y-auto">
               {/* Mobile Search */}
